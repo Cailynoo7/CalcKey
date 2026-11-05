@@ -6,7 +6,13 @@
     "cad_identifier": "KS-9H10B045NN-X14-FB",
     "variant": "KS-9 Red, full-height, 3-pin, ordinary mechanical contact",
     "fb_meaning": null,
-    "fb_equivalence_evidence": null
+    "fb_equivalence_evidence": {
+      "source": "user",
+      "statement": "我核对过了，一样的",
+      "scope": "KS-9H10B045NN-X14与当前官方CAD标识KS-9H10B045NN-X14-FB对应一致",
+      "date": "2026-11-05"
+    },
+    "cad_equivalence_confirmed": true
   },
   "sample_plan": {
     "quantity": 3,
@@ -198,7 +204,7 @@
     "nominal_pressed_cap_gap_mm": 1.5
   },
   "closure_criteria": [
-    "Traceable complete delivered part identity and variant; unresolved FB relationship retained explicitly",
+    "Part-to-CAD identity correspondence confirmed by user; preserve the same variant when purchasing.",
     "Physical coupon shoulder seating, clip return and retention",
     "Keycap insertion, full travel/return and no crack",
     "Disconnected passive contact test",

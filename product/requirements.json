@@ -1,0 +1,300 @@
+{
+  "requirements": {
+    "product_name": {
+      "value": "CalcKey",
+      "source": "default"
+    },
+    "product_class": {
+      "value": "electronics",
+      "source": "default"
+    },
+    "product_goal": {
+      "value": "一台既能作为电脑扩展数字键盘，又能在不连接电脑时独立计算的桌面设备",
+      "source": "user"
+    },
+    "design_reference": {
+      "value": "https://wiki.lceda.cn/zh-hans/course-projects/mcu32/32-rp2350-eda-keypad/eda-keypad-introduce.html",
+      "source": "user"
+    },
+    "base_board": {
+      "value": "raspberrypi/pico-2",
+      "source": "default"
+    },
+    "host_interface": {
+      "value": "USB HID 标准数字键盘，采用主控板原生 USB 数据接口",
+      "source": "default"
+    },
+    "host_os": {
+      "value": [
+        "Windows 11",
+        "macOS",
+        "Linux"
+      ],
+      "source": "default"
+    },
+    "calculator_functions": {
+      "value": [
+        "十进制加减乘除",
+        "小数",
+        "负数结果",
+        "退格",
+        "全部清除",
+        "除零提示",
+        "数值溢出提示"
+      ],
+      "source": "default"
+    },
+    "calculation_semantics": {
+      "value": "桌面计算器式逐步计算，不支持表达式优先级；8个字符位，非负结果最多8位数字，负号占一位，小数点用独立段；超出显示范围报溢出，十进制四舍五入，0.1+0.2显示0.3。",
+      "source": "default"
+    },
+    "key_layout": {
+      "value": [
+        [
+          "NumLock",
+          "÷",
+          "×",
+          "Backspace"
+        ],
+        [
+          "7",
+          "8",
+          "9",
+          "−"
+        ],
+        [
+          "4",
+          "5",
+          "6",
+          "+"
+        ],
+        [
+          "1",
+          "2",
+          "3",
+          "Enter/="
+        ],
+        [
+          "Mode",
+          "0",
+          ".",
+          "AC"
+        ]
+      ],
+      "source": "default"
+    },
+    "keys": {
+      "value": "20 个机械按键，4 列 5 行，首版允许焊接及手工矩阵接线",
+      "source": "default"
+    },
+    "display": {
+      "value": "GDM0103，HT1621B驱动8位TN段码LCD，明确订购3.3V版本、6点钟视角；可视区60.5×13.5mm，8位七段数字及小数点；初版不接背光。",
+      "source": "default"
+    },
+    "mode_control": {
+      "value": "USB完成主机枚举后默认键盘模式；仅接USB电源未连接主机时默认计算器模式；Mode键允许接电脑时本机计算；本机计算不向电脑发键",
+      "source": "default"
+    },
+    "usb_state_handling": {
+      "value": "通过 USB 枚举及连接状态判断主机，不以 USB 有电作为连接电脑的依据；切换模式时释放所有 HID 按键；主机挂起时不反复切换模式",
+      "source": "default"
+    },
+    "enclosure": {
+      "value": "紧凑数字键盘，减少按键周边留白，屏幕靠近按键；顶面与侧壁一体，独立底部盖板维护",
+      "source": "user"
+    },
+    "manufacturing_method": {
+      "value": "fdm",
+      "source": "default"
+    },
+    "first_version_scope": {
+      "value": "首版采用现成主控板和模块；默认不含蓝牙、RGB 灯效、旋钮、科学计算和电脑上位机",
+      "source": "default"
+    },
+    "reference_hardware": {
+      "value": {
+        "controller": "ColorEasyPico2 RP2350",
+        "display": "SSD1306 0.91 英寸",
+        "switches": "热插拔机械轴",
+        "knob": "EC11",
+        "lighting": "WS2812"
+      },
+      "source": "research"
+    },
+    "reference_power_behavior": {
+      "value": "参考页面描述连接主机时为 USB-HID，连接电源时为计算器；未给出内置电池方案",
+      "source": "research"
+    },
+    "standalone_power": {
+      "value": "外接USB充电器供电，取消干电池、电池盒与电池仓",
+      "source": "user"
+    },
+    "thickness_preference": {
+      "value": "减薄机身",
+      "source": "user"
+    },
+    "external_power_supply": {
+      "value": "通过主控原生Micro-USB-B口输入5V；配USB-A输出5V/1A充电器与数据线，可复用已有适配器",
+      "source": "default"
+    },
+    "power_behavior": {
+      "value": "USB接电脑并完成枚举时默认数字键盘；仅接USB充电器时默认本机计算器；断开USB即关机，不含电池或充电电路",
+      "source": "default"
+    },
+    "enclosure_body_height_target_mm": {
+      "value": 21,
+      "source": "default"
+    },
+    "compact_layout": {
+      "value": "缩小平面尺寸和按键四周边框，屏幕移近按键",
+      "source": "user"
+    },
+    "service_cover": {
+      "value": "独立底部盖板，从底部拆装维护",
+      "source": "user"
+    },
+    "enclosure_outer_dimensions_mm": {
+      "value": {
+        "w": 89,
+        "d": 130,
+        "h": 21
+      },
+      "source": "default"
+    },
+    "display_installation": {
+      "value": "78×26×10mm最大整板包络；PCB底面局部z7.4，四处边缘托架座面z7.25，0.15mm绝缘丙烯酸胶片粘接；左右及前侧限位，向下随底盖维护；不用未标清尺寸的PCB安装孔，P1-P5短软线直焊，不装直立排针。",
+      "source": "default"
+    },
+    "usb_port_position": {
+      "value": "Pico横放按键下方，原生Micro-B从右侧接入",
+      "source": "default"
+    },
+    "foot_pad_thickness_mm": {
+      "value": 2,
+      "source": "default"
+    },
+    "estimated_overall_height_mm": {
+      "value": 41.6,
+      "source": "default"
+    },
+    "appearance_style": {
+      "value": "外壳增加简洁的科技感造型，避免复杂装饰",
+      "source": "user"
+    },
+    "keyboard_tilt": {
+      "value": "后高前低，两档高度；展开后脚略向后倾，降低受压时误折回的可能",
+      "source": "user"
+    },
+    "rear_support_shape": {
+      "value": "两个有厚度的可翻折角柱后脚；收起略垫高，向后斜立时垫高更多；最高接近原半圆脚，展开脚底与水平桌面贴合",
+      "source": "user"
+    },
+    "keyboard_tilt_deg": {
+      "value": 4,
+      "source": "default"
+    },
+    "rear_support_construction": {
+      "value": {
+        "type": "PETG翻折角柱脚，独立打印销轴与盲帽，底盖一体轴耳与两端实体限位",
+        "quantity": 2,
+        "width_mm": 10,
+        "body_length_mm": 8.5,
+        "body_thickness_mm": 3.6,
+        "rotation_range_deg": [
+          0,
+          110
+        ],
+        "rearward_lean_from_world_vertical_deg": 24,
+        "hinge_pin_diameter_mm": 2.4,
+        "hinge_hole_diameter_mm": 2.8,
+        "retention": "盲帽只与轴端胶接；负载力矩分别压向收起/展开限位，不是卸载自锁铰链"
+      },
+      "source": "default"
+    },
+    "display_window_profile": {
+      "value": "显示计算结果的屏幕区域前后纵深缩短一些",
+      "source": "user"
+    },
+    "keyboard_stowed_tilt_deg": {
+      "value": 2.4110297466112307,
+      "source": "default"
+    },
+    "screen_window_depth_mm": {
+      "value": 16,
+      "source": "default"
+    },
+    "estimated_stowed_overall_height_mm": {
+      "value": 39.0,
+      "source": "default"
+    },
+    "hinge_cap_appearance": {
+      "value": "轴端盲帽短一点，和另一头的挡头大小接近",
+      "source": "user"
+    },
+    "rear_foot_spacing_preference": {
+      "value": "两个后支脚向内靠近一点点",
+      "source": "user"
+    },
+    "rear_foot_pivot_offset_x_mm": {
+      "value": 29.5,
+      "source": "default"
+    },
+    "hinge_cap_dimensions_mm": {
+      "value": {
+        "diameter": 5,
+        "length": 2.4,
+        "socket_depth": 1.2,
+        "closed_floor": 1.2,
+        "axle_insertion": 1
+      },
+      "source": "default"
+    },
+    "keycap_manufacture": {
+      "value": "20个实际键帽采用3D打印，自行设计帽体和MX十字插座",
+      "source": "user"
+    },
+    "keycap_design_defaults": {
+      "value": {
+        "profile": "等高1U自定义平顶键帽；不标作厂家DSA标准件",
+        "width_mm": 18.2,
+        "top_width_mm": 14.4,
+        "height_mm": 7,
+        "wall_mm": 1.2,
+        "roof_mm": 1.6,
+        "socket_outer_diameter_mm": 5.6,
+        "socket_span_mm": 4.1,
+        "socket_arm_mm": 1.4,
+        "socket_depth_mm": 3.3,
+        "socket_mouth_inset_mm": 1.4,
+        "socket_stop_z_mm": 4.7,
+        "socket_lead_in_mm": 0.1,
+        "material": "PETG",
+        "process": "FDM，默认0.2mm喷嘴、0.1mm层高，先做三种孔隙试配",
+        "socket_neck_width_mm": 4.8,
+        "socket_neck_top_mm": 5.1
+      },
+      "source": "default"
+    },
+    "display_width_preference": {
+      "value": "显示屏加宽到接近当前两倍，以市售8位LCD为标准，选择最合适型号；屏幕长宽均可调整",
+      "source": "user"
+    },
+    "display_status_policy": {
+      "value": "段码屏不常驻完整运算符及模式文字；切换时短暂显示PC或CALC，错误用Err；上述交互及8位格式将在新LCD固件中实现，现有OLED固件未适配。",
+      "source": "default"
+    },
+    "screen_window_width_mm": {
+      "value": 64,
+      "source": "default"
+    },
+    "switch_family": {
+      "value": "GATERON KS-9 三脚红轴，普通机械触点、手焊矩阵",
+      "source": "user"
+    },
+    "switch_variant": {
+      "value": "KS-9H10B045NN-X14；用户已核对并确认与官方CAD标识KS-9H10B045NN-X14-FB对应一致",
+      "source": "user"
+    }
+  },
+  "open_questions": []
+}
