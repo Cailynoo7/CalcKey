@@ -1,0 +1,214 @@
+{
+  "date": "2026-11-05",
+  "selected_switch": {
+    "manufacturer": "GATERON",
+    "purchasing_identifier": "KS-9H10B045NN-X14",
+    "cad_identifier": "KS-9H10B045NN-X14-FB",
+    "variant": "KS-9 Red, full-height, 3-pin, ordinary mechanical contact",
+    "fb_meaning": null,
+    "fb_equivalence_evidence": null
+  },
+  "sample_plan": {
+    "quantity": 3,
+    "source": "default",
+    "same_mpn_and_batch": true,
+    "sample_ids": [
+      "S01",
+      "S02",
+      "S03"
+    ],
+    "baseline_sample": "S01",
+    "fit_sample": "S02",
+    "repeat_and_spare_sample": "S03",
+    "finished_product_quantity": 20,
+    "bom_quantity_changed": false
+  },
+  "evidence": {
+    "manufacturer_product_url": "https://www.gateron.com/products/gateron-ks-9-switch-set",
+    "manufacturer_cad_page": "https://www.gateron.com/pages/3d",
+    "cad_download_url": "https://gateron.com/u_file/2306/26/file/KS-9SwitchKS-9H10B045NN-X14-FB.rar",
+    "asset_sha256": "29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d",
+    "dimension_source": "Read-only CAD inspection of official asset in enclosure revision 67af996f9732e49153b8da3a5e57e785c98db95eb10a3d218c56e957fc0919c0",
+    "fb_search_scope": "Official KS-9/3D page and targeted exact suffix searches; no manufacturer explanation identified. This is not proof that none exists."
+  },
+  "supplier_response": {
+    "received_in_project": false,
+    "complete_delivered_mpn": null,
+    "fb_explanation": null,
+    "manufacturer_equivalence_document": null,
+    "drawing_number_and_revision": null,
+    "package_label_photo": null,
+    "top_bottom_side_photos": null,
+    "batch": null,
+    "housing_material_and_colour": null,
+    "lubrication_state": null,
+    "minimum_order_quantity": null,
+    "quote": null
+  },
+  "reference_dimensions": [
+    {
+      "id": "a_to_free_stem_tip",
+      "label": "A面至自由轴芯顶",
+      "unit": "mm",
+      "cad_reference_value": 10.2,
+      "manufacturer_tolerance": null,
+      "measurement_note": "高度基准用法兰支承底面；不压轴芯",
+      "source": "manufacturer_step_measurement",
+      "acceptance_limit": false
+    },
+    {
+      "id": "envelope_x",
+      "label": "含凸筋最大外廓X",
+      "unit": "mm",
+      "cad_reference_value": 16.220963111712514,
+      "manufacturer_tolerance": null,
+      "measurement_note": "先拍照标方向；勿压缩卡扣",
+      "source": "manufacturer_step_measurement",
+      "acceptance_limit": false
+    },
+    {
+      "id": "envelope_y",
+      "label": "含凸筋最大外廓Y",
+      "unit": "mm",
+      "cad_reference_value": 15.719880429921602,
+      "manufacturer_tolerance": null,
+      "measurement_note": "不是安装孔尺寸；勿压缩卡扣",
+      "source": "manufacturer_step_measurement",
+      "acceptance_limit": false
+    },
+    {
+      "id": "overall_height",
+      "label": "最低点至自由轴芯顶总高",
+      "unit": "mm",
+      "cad_reference_value": 18.6,
+      "manufacturer_tolerance": null,
+      "measurement_note": "含引脚；记录有无弯脚",
+      "source": "manufacturer_step_measurement",
+      "acceptance_limit": false
+    },
+    {
+      "id": "a_to_lowest",
+      "label": "A面至最低点",
+      "unit": "mm",
+      "cad_reference_value": 8.4,
+      "manufacturer_tolerance": null,
+      "measurement_note": "含引脚；不是下壳本体高度",
+      "source": "manufacturer_step_measurement",
+      "acceptance_limit": false
+    },
+    {
+      "id": "stem_span_x",
+      "label": "十字总跨X",
+      "unit": "mm",
+      "cad_reference_value": 4,
+      "manufacturer_tolerance": null,
+      "measurement_note": "参考截面在A面上方8mm；勿只量倒角",
+      "source": "manufacturer_step_measurement",
+      "acceptance_limit": false
+    },
+    {
+      "id": "stem_span_y",
+      "label": "十字总跨Y",
+      "unit": "mm",
+      "cad_reference_value": 4,
+      "manufacturer_tolerance": null,
+      "measurement_note": "臂端/圆角另拍近照",
+      "source": "manufacturer_step_measurement",
+      "acceptance_limit": false
+    },
+    {
+      "id": "actuator_root_x",
+      "label": "活动轴芯根部外廓X",
+      "unit": "mm",
+      "cad_reference_value": 5,
+      "manufacturer_tolerance": null,
+      "measurement_note": "难测留空，不拆轴猜值",
+      "source": "manufacturer_step_measurement",
+      "acceptance_limit": false
+    },
+    {
+      "id": "actuator_root_y",
+      "label": "活动轴芯根部外廓Y",
+      "unit": "mm",
+      "cad_reference_value": 6.55,
+      "manufacturer_tolerance": null,
+      "measurement_note": "不是十字孔尺寸",
+      "source": "manufacturer_step_measurement",
+      "acceptance_limit": false
+    },
+    {
+      "id": "a_to_root_top",
+      "label": "A面至活动轴芯根部顶",
+      "unit": "mm",
+      "cad_reference_value": 6.6,
+      "manufacturer_tolerance": null,
+      "measurement_note": "难测留空，不拆轴猜值",
+      "source": "manufacturer_step_measurement",
+      "acceptance_limit": false
+    },
+    {
+      "id": "clip_hook",
+      "label": "卡扣钩及夹持台阶",
+      "unit": "mm",
+      "cad_reference_value": null,
+      "manufacturer_tolerance": null,
+      "measurement_note": "记录厂家图号/允许板厚；量不到附侧照",
+      "source": "manufacturer_step_measurement",
+      "acceptance_limit": false
+    },
+    {
+      "id": "terminal_position",
+      "label": "两电触点及中心柱位置",
+      "unit": "mm",
+      "cad_reference_value": null,
+      "manufacturer_tolerance": null,
+      "measurement_note": "以厂家图或底视实测坐标为准；标注基准",
+      "source": "manufacturer_step_measurement",
+      "acceptance_limit": false
+    }
+  ],
+  "current_printed_interfaces": {
+    "hole_mm": 14.2,
+    "land_mm": 1.5,
+    "lower_pocket_mm": 16.4,
+    "source": "project_trial_dimensions_not_manufacturer_limits",
+    "keycaps": [
+      {
+        "sample": "P0",
+        "span_mm": 4.1,
+        "arm_mm": 1.4
+      },
+      {
+        "sample": "P5",
+        "span_mm": 4.15,
+        "arm_mm": 1.45
+      },
+      {
+        "sample": "P10",
+        "span_mm": 4.2,
+        "arm_mm": 1.5
+      }
+    ],
+    "socket_depth_mm": 3.3,
+    "min_entry_wall_range_mm": [
+      0.2,
+      0.25
+    ],
+    "nominal_released_cap_gap_mm": 5.5,
+    "nominal_pressed_cap_gap_mm": 1.5
+  },
+  "closure_criteria": [
+    "Traceable complete delivered part identity and variant; unresolved FB relationship retained explicitly",
+    "Physical coupon shoulder seating, clip return and retention",
+    "Keycap insertion, full travel/return and no crack",
+    "Disconnected passive contact test",
+    "Repeat sample and subsequent purchase batch correspondence"
+  ],
+  "actions_performed": {
+    "supplier_message_sent": false,
+    "order_placed": false,
+    "cad_modified": false,
+    "bom_modified": false,
+    "physical_measurements_recorded": false
+  }
+}

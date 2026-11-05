@@ -1,0 +1,7 @@
+﻿station,hole_nominal_mm,clip_land_nominal_mm,pocket_nominal_mm,actual_hole_x_mm,actual_hole_y_mm,actual_clip_land_mm,switch_model,switch_sample_id,material,nozzle_mm,layer_mm,first_layer_mm,slicer_compensation,insertion_fit,shoulder_seated,clips_released,rocking,retention,removal_after_releasing_clips,crack_check,status,notes
+A,14.00,1.50,16.4,,,,GATERON KS-9H10B045NN-X14,,PLA,0.4,0.15,0.15,,,,,,,,,待测,
+B,14.10,1.50,16.4,,,,GATERON KS-9H10B045NN-X14,,PLA,0.4,0.15,0.15,,,,,,,,,待测,
+C,14.20,1.50,16.4,,,,GATERON KS-9H10B045NN-X14,,PLA,0.4,0.15,0.15,,,,,,,,,待测,C为当前主壳基准
+D,14.30,1.50,16.4,,,,GATERON KS-9H10B045NN-X14,,PLA,0.4,0.15,0.15,,,,,,,,,待测,
+E,14.20,1.35,16.4,,,,GATERON KS-9H10B045NN-X14,,PLA,0.4,0.15,0.15,,,,,,,,,待测,
+F,14.20,1.65,16.4,,,,GATERON KS-9H10B045NN-X14,,PLA,0.4,0.15,0.15,,,,,,,,,待测,
