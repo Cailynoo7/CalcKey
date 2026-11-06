@@ -1,0 +1,419 @@
+{
+  "units": "mm",
+  "coordinate_system": "器件与底盖布局均为未倾斜的壳体局部坐标；显示/导出的整机再统一施加enclosure_cad.standing_pose",
+  "controller": {
+    "bom_id": "controller",
+    "pcb_bbox_mm": {
+      "w": 21,
+      "d": 51
+    },
+    "pcb_thickness_mm": 1,
+    "board_retention": "两孔固定，USB侧被动承托；横放，原生+Y旋转到机身+X",
+    "native_usb": "Micro-B",
+    "step_path": "product/references/pico2-vendor.step",
+    "step_sha256": "d49ada10d893cfcb07cb4abced0a0a0cadca4c4150f153d874268ca06171a24f",
+    "source": "research",
+    "evidence": "Pico 2 数据手册PDF第8页；原生STEP",
+    "mounting_holes": [
+      {
+        "x": -5.7,
+        "y": -23.5,
+        "diameter_mm": 2.1
+      },
+      {
+        "x": -5.7,
+        "y": 23.5,
+        "diameter_mm": 2.1
+      },
+      {
+        "x": 5.7,
+        "y": -23.5,
+        "diameter_mm": 2.1
+      },
+      {
+        "x": 5.7,
+        "y": 23.5,
+        "diameter_mm": 2.1
+      }
+    ],
+    "mounting_hole_coordinate_frame": "板中心原点，x为21mm宽方向，y为51mm长方向；USB在+y端",
+    "step_note": "厂商STEP原始资产副本，与下载返回sha256相同；CAD阶段直接导入。"
+  },
+  "display": {
+    "bom_id": "display",
+    "model": "GDM0103",
+    "driver": "HT1621B",
+    "logic_supply_V": 3.3,
+    "source": "research",
+    "evidence": "https://www.radiomag.com.de/datasheets/gdm0103_specification.pdf#page=7",
+    "reserve_bbox_mm": {
+      "w": 78,
+      "d": 26,
+      "h": 10
+    },
+    "board_bbox_mm": {
+      "w": 78,
+      "d": 26
+    },
+    "board_thickness_mm": 1.6,
+    "view_area_mm": {
+      "w": 60.5,
+      "h": 13.5
+    },
+    "active_area_mm": {
+      "w": 57.15,
+      "h": 10.7
+    },
+    "panel_center_mm": {
+      "x": 0,
+      "y": 0
+    },
+    "mounting_holes": [],
+    "mounting_note": "不依赖手册未完整标注孔径/基准的安装孔；边缘托架+绝缘胶片；四处座面x±38.2，y49±8，z7.25；PCB底面z7.4；胶厚0.15；左右挡边内侧x±39.3，前限位y35.7。",
+    "mounting_source": "default",
+    "connection_note": "P1-P5低位焊线，P6 /INT及P7-P9背光端分别绝缘悬空；3.3V/6点钟版本。",
+    "wiring_keepout_mm": {
+      "size": [
+        6,
+        18,
+        1.5
+      ],
+      "centres": [
+        [
+          -34,
+          49,
+          6.65
+        ],
+        [
+          34,
+          49,
+          6.65
+        ]
+      ],
+      "source": "default",
+      "note": "位于PCB背面z5.9至7.4，短软线朝板内折，边界不侵入托架。"
+    },
+    "step_note": "无精确STEP；只读临时包络检查，不发布假模块。",
+    "z_source": "default",
+    "mechanical_pages": [
+      3,
+      7
+    ],
+    "pin_page": 8,
+    "upper_clearance_budget_mm": 10,
+    "underside_keepout_mm": {
+      "size": [
+        74,
+        22,
+        2.8
+      ],
+      "center": [
+        0,
+        49,
+        6.0
+      ],
+      "source": "default",
+      "note": "额外保守背面元件避空；两侧各2mm为待实物确认的PCB承托带，不据此宣称背面器件实测。"
+    },
+    "note": "手册整板最大厚10mm；CAD额外保守地在PCB底以上留10mm、中央背面再留2.8mm。边缘粘接带、背面凸起和板背焊点需到货确认。"
+  },
+  "keys": {
+    "rows": 5,
+    "columns": 4,
+    "pitch_mm": 19.05,
+    "keycap_max_bbox_mm": {
+      "w": 18.5,
+      "d": 18.5,
+      "h": 10
+    },
+    "switch_plate_cutout_mm": {
+      "w": 14.2,
+      "d": 14.2
+    },
+    "plate_clip_land_thickness_mm": 1.5,
+    "travel_mm": 4,
+    "under_plate_wiring_clearance_mm": 10,
+    "source": "default",
+    "note": "按标准MX结构预留；轴孔、夹持台阶需在CAD阶段用实际轴体/厂商机械资料确认并做配合试片",
+    "pitch_source": "default",
+    "pitch_evidence": "Retained project layout, not a GATERON tolerance claim",
+    "mounting_interface_note": "官方STEP支承底面z16.2、轴顶z26.4；距面板10.2。14.2孔侧筋名义干涉0.1374mm、单轴0.15936mm3，弹性和保持力待实配。",
+    "keycap_design": {
+      "profile": "等高1U自定义平顶键帽；不标作厂家DSA标准件",
+      "width_mm": 18.2,
+      "top_width_mm": 14.4,
+      "height_mm": 7,
+      "wall_mm": 1.2,
+      "roof_mm": 1.6,
+      "socket_outer_diameter_mm": 5.6,
+      "socket_span_mm": 4.1,
+      "socket_arm_mm": 1.4,
+      "socket_depth_mm": 3.3,
+      "socket_mouth_inset_mm": 1.4,
+      "socket_stop_z_mm": 4.7,
+      "socket_lead_in_mm": 0,
+      "material": "PETG",
+      "process": "FDM，默认0.2mm喷嘴、0.1mm层高；正式20帽，跳过打印试配",
+      "socket_neck_width_mm": 4.9,
+      "socket_neck_top_mm": 5.1
+    },
+    "keycap_source": "project",
+    "keycap_mounting_note": "止挡z4.7，帽底距面板5.5；沿轴芯偏心+0.05/-0.000674mm对齐；全压名义余1.5。局部薄壁、实际内部运动待实配。",
+    "switch_model": "KS-9H10B045NN-X14",
+    "switch_cad_identity": "KS-9H10B045NN-X14-FB",
+    "step_path": "product/references/gateron-ks9/KS-9 Switch KS-9H10B045NN-X14-FB.stp",
+    "step_sha256": "29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d",
+    "prototype_policy": "用户跳过打印试配；正式交付采用既定尺寸，试配设计仅保留为历史可选资料。"
+  },
+  "ports": [
+    {
+      "id": "host_usb",
+      "connector": "Pico 2原生Micro-B",
+      "face": "right",
+      "cutout_mm": {
+        "w": 13,
+        "h": 9.5
+      },
+      "external_plug_straight_keepout_mm": 25,
+      "source": "default",
+      "center_mm": [
+        44.5,
+        -10,
+        7.15
+      ],
+      "note": "U形口下缘z2.4由底盖形成，上缘z11.9，便于向下拆盖。"
+    }
+  ],
+  "wall_thickness_mm": 2.4,
+  "wiring_bend_clearance_mm": 5,
+  "fasteners": {
+    "case": "4 x ISO7380-1 M3x8; two D12x2 front pads and two folding rear feet; lowest metal high/low 1.788/1.217mm above table",
+    "board": "2 x ISO4762 M2x4, Pico only; LCD bonded onto four PCB edge seats",
+    "joint_strategy": "printed-screw-joint-v1; PLA self-forming polygonal holes, no inserts"
+  },
+  "open_questions": [],
+  "enclosure_cad": {
+    "design_id": "enclosure",
+    "outer_mm": {
+      "w": 89,
+      "d": 130,
+      "h": 21
+    },
+    "material": "PLA main housing and base; PETG folding feet, axles and end caps",
+    "wall_mm": 2.4,
+    "printed_object_ids": [
+      "base",
+      "top",
+      "rear_foot_left",
+      "rear_foot_right",
+      "hinge_axle_left",
+      "hinge_axle_right",
+      "hinge_cap_left",
+      "hinge_cap_right",
+      "key_01",
+      "key_02",
+      "key_03",
+      "key_04",
+      "key_05",
+      "key_06",
+      "key_07",
+      "key_08",
+      "key_09",
+      "key_10",
+      "key_11",
+      "key_12",
+      "key_13",
+      "key_14",
+      "key_15",
+      "key_16",
+      "key_17",
+      "key_18",
+      "key_19",
+      "key_20"
+    ],
+    "cut_acrylic_object_id": "screen_lens",
+    "reference_only": "Pico厂商STEP不打印；键帽为打印件；MX轴体和GDM0103无精确STEP，未用假模型替代。",
+    "foot_pad_thickness_mm": 2,
+    "controller_pcb_z_mm": 5.3,
+    "estimated_overall_with_reference_caps_and_feet_mm": 41.597412043781056,
+    "architecture": "integral top and side walls; bottom service cover",
+    "bottom_cover_thickness_mm": 2.4,
+    "controller_position_mm": [
+      16.4,
+      -10,
+      5.3
+    ],
+    "controller_rotation_deg": [
+      0,
+      0,
+      -90
+    ],
+    "key_grid_top_y_mm": 24.6,
+    "display_y_mm": 49,
+    "cut_acrylic_size_mm": [
+      67.6,
+      19.6,
+      1
+    ],
+    "standing_pose": {
+      "rotation_deg": [
+        4,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        6.459542420143668
+      ],
+      "source": "default",
+      "note": "展示与STEP采用展开姿态；全部器件局部安装坐标保持不变，后脚另绕本地X转110°"
+    },
+    "rear_supports": {
+      "source": "default",
+      "type": "folding angular feet with printed pin and bonded blind cap",
+      "part_ids": [
+        "rear_foot_left",
+        "rear_foot_right"
+      ],
+      "local_pivot_mm": [
+        [
+          -29.5,
+          50,
+          -3.2
+        ],
+        [
+          29.5,
+          50,
+          -3.2
+        ]
+      ],
+      "width_mm": 10,
+      "stem_length_mm": 8.5,
+      "stem_thickness_mm": 3.6,
+      "hub_radius_mm": 2.6,
+      "hinge_pin_diameter_mm": 2.4,
+      "hinge_hole_diameter_mm": 2.8,
+      "side_gap_mm": 0.25,
+      "ear_thickness_mm": 3,
+      "ear_outer_radius_mm": 3,
+      "rotation_range_deg": [
+        0,
+        110
+      ],
+      "rearward_lean_world_deg": 24,
+      "stop_at_each_end": true,
+      "stowed_depth_mm": 6.8,
+      "pin_cap_radial_bond_gap_mm": 0.1,
+      "pin_cap_end_clearance_mm": 0.2,
+      "pin_end_clearance_to_ears_mm": 0.15,
+      "cap_outer_diameter_mm": 5,
+      "cap_length_mm": 2.4,
+      "cap_socket_diameter_mm": 2.6,
+      "cap_socket_depth_mm": 1.2,
+      "sole_contact_area_low_high_mm2": [
+        16.01417654503404,
+        27.30669614005362
+      ],
+      "ground_force_moment_arm_low_high_mm": [
+        -0.6492640651014128,
+        2.516309691015998
+      ],
+      "note": "承重力矩把两档脚压向各自实体限位；抬起后不是锁定机构，不声称零载自锁",
+      "axle_shaft_length_mm": 17.8,
+      "axle_cap_insertion_mm": 1,
+      "nominal_key_centre_projection_margin_low_high_mm": [
+        6.751833832696758,
+        6.8663852410573964
+      ]
+    },
+    "front_pads": {
+      "quantity": 2,
+      "diameter_mm": 12,
+      "thickness_mm": 2,
+      "local_centres_mm": [
+        [
+          -38,
+          -58,
+          -1
+        ],
+        [
+          38,
+          -58,
+          -1
+        ]
+      ],
+      "source": "default"
+    },
+    "styling": {
+      "outer_top_chamfer_mm": 0.4,
+      "front_engrave_depth_mm": 0.35,
+      "front_engrave": "CALC及四条短斜线",
+      "remaining_front_wall_mm": 2.05,
+      "remaining_upper_edge_wall_mm": 2.0,
+      "source": "default"
+    },
+    "stowed_pose": {
+      "rotation_deg": [
+        2.4110297466112307,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        4.690580827709079
+      ],
+      "rear_foot_rotation_deg": 0,
+      "overall_height_mm": 38.99912975316323,
+      "source": "default"
+    },
+    "display_window_size_mm": [
+      64,
+      16
+    ],
+    "lens_pocket_size_mm": [
+      68,
+      20,
+      1.35
+    ],
+    "lens_adhesive": {
+      "thickness_mm": 0.15,
+      "outer_mm": [
+        67.6,
+        19.6
+      ],
+      "opening_mm": [
+        64,
+        16
+      ]
+    },
+    "printing_note": "底盖带向外轴耳与限位，外侧朝下时底板下方需支撑；脚以X端面贴床；销轴轴线竖直、100%填充，盲帽闭口端贴床；先作铰链配合试片，不能沿整机倾斜姿态直接打印",
+    "lcd_pcb_z_mm": 7.4
+  },
+  "power": {
+    "source": "default",
+    "mode": "external_usb_only",
+    "input_V": 5,
+    "adapter_rating_A": 1,
+    "connector": "Pico2 native Micro-USB-B",
+    "notes": "取消所有外部电池支路、仓盖及电池开关",
+    "decision_source": "user"
+  },
+  "wiring_service_allowance_mm": 150,
+  "wiring_storage": {
+    "frame": "unrotated enclosure local coordinates",
+    "center_mm": [
+      -26,
+      -15,
+      5.25
+    ],
+    "size_mm": [
+      20,
+      50,
+      4.5
+    ],
+    "source": "default",
+    "note": "只读空间预算已检查；已绝缘余线平铺并用10mm胶带固定，不将全长线束实体或拉力当作已验证。"
+  }
+}

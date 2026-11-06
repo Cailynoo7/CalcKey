@@ -263,5 +263,6 @@
     "statement": "我核对过了，一样的",
     "scope": "KS-9H10B045NN-X14与当前官方CAD标识KS-9H10B045NN-X14-FB对应一致",
     "date": "2026-11-05"
-  }
+  },
+  "superseded_for_formal_production_by": "product/production/design-verification.json"
 }

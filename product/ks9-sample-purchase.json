@@ -216,5 +216,12 @@
     "cad_modified": false,
     "bom_modified": false,
     "physical_measurements_recorded": false
+  },
+  "document_scope": "Optional historical sample plan; excluded from the formal production BOM and completion gate.",
+  "current_policy": {
+    "source": "user",
+    "skip_printed_trials": true,
+    "formal_switch_quantity": 20,
+    "flashing_allowed": false
   }
 }

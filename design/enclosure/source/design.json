@@ -1,0 +1,2596 @@
+{
+  "schemaVersion": 1,
+  "units": "mm",
+  "coordinateFrame": "replicator-world-z-up",
+  "targets": [
+    {
+      "id": "imports",
+      "label": "imports",
+      "cells": [
+        {
+          "id": "pico2",
+          "target": "imports",
+          "order": 0,
+          "path": "design/enclosure/source/parts/imports/000-pico2.py",
+          "sha256": "9f34e292f3e513037c32443077ed19b99ebc716af683cd28143be019d41a1164"
+        },
+        {
+          "id": "sw_01",
+          "target": "imports",
+          "order": 1,
+          "path": "design/enclosure/source/parts/imports/001-sw_01.py",
+          "sha256": "1815cc270822ff63bdaca5966c79bbdbe1064f0a03974278078b3aaed08063aa"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "base",
+      "label": "base",
+      "cells": [
+        {
+          "id": "base",
+          "target": "base",
+          "order": 0,
+          "path": "design/enclosure/source/parts/base/000-base.py",
+          "sha256": "47334b4ed11264b41e3a0065cc785291d15bed35b717162ef5844eb23d5576aa"
+        }
+      ],
+      "dependencies": [
+        "rear_foot_left"
+      ]
+    },
+    {
+      "id": "top",
+      "label": "top",
+      "cells": [
+        {
+          "id": "top",
+          "target": "top",
+          "order": 0,
+          "path": "design/enclosure/source/parts/top/000-top.py",
+          "sha256": "dd85eec314e6a5c5872fa7b97e6f719ae9b4c926f9c0ea536ed497eea8b782d4"
+        }
+      ],
+      "dependencies": [
+        "base"
+      ]
+    },
+    {
+      "id": "hardware",
+      "label": "hardware",
+      "cells": [
+        {
+          "id": "hardware",
+          "target": "hardware",
+          "order": 0,
+          "path": "design/enclosure/source/parts/hardware/000-hardware.py",
+          "sha256": "8abca34cb28e4c4e9616c841ccf205cec120484fc8a4242d9bd71e81e96ec6f2"
+        }
+      ],
+      "dependencies": [
+        "base"
+      ]
+    },
+    {
+      "id": "keycaps",
+      "label": "keycaps",
+      "cells": [
+        {
+          "id": "keycaps",
+          "target": "keycaps",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycaps/000-keycaps.py",
+          "sha256": "5862d3e320d6ba15f869ae8e97b901792b4ded14dc3e9c020405bafe53f549aa"
+        }
+      ],
+      "dependencies": [
+        "base"
+      ]
+    },
+    {
+      "id": "screen_lens",
+      "label": "screen_lens",
+      "cells": [
+        {
+          "id": "screen_lens",
+          "target": "screen_lens",
+          "order": 0,
+          "path": "design/enclosure/source/parts/screen_lens/000-screen_lens.py",
+          "sha256": "fa8278a96e401a9f046e9998631fded0b95af6c325dc5ecbb9f73f513fa4a3eb"
+        }
+      ],
+      "dependencies": [
+        "base"
+      ]
+    },
+    {
+      "id": "rear_foot_left",
+      "label": "rear_foot_left",
+      "cells": [
+        {
+          "id": "rear_foot_left",
+          "target": "rear_foot_left",
+          "order": 0,
+          "path": "design/enclosure/source/parts/rear_foot_left/000-rear_foot_left.py",
+          "sha256": "66104a09850759b66d5a40acebbfe3a57d8b669f4d2f21704585a00d1a86763d"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "rear_foot_right",
+      "label": "rear_foot_right",
+      "cells": [
+        {
+          "id": "rear_foot_right",
+          "target": "rear_foot_right",
+          "order": 0,
+          "path": "design/enclosure/source/parts/rear_foot_right/000-rear_foot_right.py",
+          "sha256": "b741e17896928fb86d392403eaf9e577b2a54c6476a554d05bcaa92e998c8863"
+        }
+      ],
+      "dependencies": [
+        "rear_foot_left"
+      ]
+    },
+    {
+      "id": "hinge_axle_left",
+      "label": "hinge_axle_left",
+      "cells": [
+        {
+          "id": "hinge_axle_left",
+          "target": "hinge_axle_left",
+          "order": 0,
+          "path": "design/enclosure/source/parts/hinge_axle_left/000-hinge_axle_left.py",
+          "sha256": "40c2aa0ed12c6b766b926f69644b40ae34728d58b0d7cd90677b0294124c080f"
+        }
+      ],
+      "dependencies": [
+        "rear_foot_left"
+      ]
+    },
+    {
+      "id": "hinge_axle_right",
+      "label": "hinge_axle_right",
+      "cells": [
+        {
+          "id": "hinge_axle_right",
+          "target": "hinge_axle_right",
+          "order": 0,
+          "path": "design/enclosure/source/parts/hinge_axle_right/000-hinge_axle_right.py",
+          "sha256": "27ab835acf24d0a1e28f16fa85c865c4df381263b8eed2c0d23f42de5e0168bf"
+        }
+      ],
+      "dependencies": [
+        "hinge_axle_left"
+      ]
+    },
+    {
+      "id": "hinge_cap_left",
+      "label": "hinge_cap_left",
+      "cells": [
+        {
+          "id": "hinge_cap_left",
+          "target": "hinge_cap_left",
+          "order": 0,
+          "path": "design/enclosure/source/parts/hinge_cap_left/000-hinge_cap_left.py",
+          "sha256": "7616f169b66d7bc4b8244e49c19ae7e02c285f130dd10bc77ac89fccf9288a82"
+        }
+      ],
+      "dependencies": [
+        "rear_foot_left",
+        "hinge_axle_left"
+      ]
+    },
+    {
+      "id": "hinge_cap_right",
+      "label": "hinge_cap_right",
+      "cells": [
+        {
+          "id": "hinge_cap_right",
+          "target": "hinge_cap_right",
+          "order": 0,
+          "path": "design/enclosure/source/parts/hinge_cap_right/000-hinge_cap_right.py",
+          "sha256": "ced4fdb435ede99efbad2a773f478fe8bd08934590c6cda268668e59afac17aa"
+        }
+      ],
+      "dependencies": [
+        "hinge_cap_left"
+      ]
+    },
+    {
+      "id": "keycap_02",
+      "label": "keycap_02",
+      "cells": [
+        {
+          "id": "keycap_02",
+          "target": "keycap_02",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_02/000-keycap_02.py",
+          "sha256": "c205946123a5cd882ee44aebf3fc542f647ec6a91a9555c49e98dfcb8a5023eb"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_03",
+      "label": "keycap_03",
+      "cells": [
+        {
+          "id": "keycap_03",
+          "target": "keycap_03",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_03/000-keycap_03.py",
+          "sha256": "cd6c071ca4b1a8ff54d123fdfe8b302fb0d9e7cddad9f04cecd3f7d153a6ea11"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_04",
+      "label": "keycap_04",
+      "cells": [
+        {
+          "id": "keycap_04",
+          "target": "keycap_04",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_04/000-keycap_04.py",
+          "sha256": "0004a1637e74b2b57c925d8195b70c05b2f456546ba703ce0de340cca07c6b1a"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_05",
+      "label": "keycap_05",
+      "cells": [
+        {
+          "id": "keycap_05",
+          "target": "keycap_05",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_05/000-keycap_05.py",
+          "sha256": "35aeee8ebd74bc3156a4c254f97a40ccca39db453e7e4fa0ba461476f55ab0e6"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_06",
+      "label": "keycap_06",
+      "cells": [
+        {
+          "id": "keycap_06",
+          "target": "keycap_06",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_06/000-keycap_06.py",
+          "sha256": "126bed5ca631f351b131bf19ca961b5969e43614670c7af63e3152f15219ab83"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_07",
+      "label": "keycap_07",
+      "cells": [
+        {
+          "id": "keycap_07",
+          "target": "keycap_07",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_07/000-keycap_07.py",
+          "sha256": "ee8d3b67b834ea5cf9518723d011b17ae37ab05fdc5621251ab0fe433f0e3c49"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_08",
+      "label": "keycap_08",
+      "cells": [
+        {
+          "id": "keycap_08",
+          "target": "keycap_08",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_08/000-keycap_08.py",
+          "sha256": "6286fb198fc257de1cb0ac2c98f329dea95578b9b94e6003dae66b1806752d87"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_09",
+      "label": "keycap_09",
+      "cells": [
+        {
+          "id": "keycap_09",
+          "target": "keycap_09",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_09/000-keycap_09.py",
+          "sha256": "9292793d02c64010e95f4d0b8635c6a0f5cebe764d4f478570a411b34145d054"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_10",
+      "label": "keycap_10",
+      "cells": [
+        {
+          "id": "keycap_10",
+          "target": "keycap_10",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_10/000-keycap_10.py",
+          "sha256": "66928ca35ecc746f70a6ba2391110ef0ed75ffc97d89d9ebb7fb11d364472d8e"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_11",
+      "label": "keycap_11",
+      "cells": [
+        {
+          "id": "keycap_11",
+          "target": "keycap_11",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_11/000-keycap_11.py",
+          "sha256": "a6b4af017b12292c9d1f5799d2595c431c779bcd32400f7ae7d1af98df43cac5"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_12",
+      "label": "keycap_12",
+      "cells": [
+        {
+          "id": "keycap_12",
+          "target": "keycap_12",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_12/000-keycap_12.py",
+          "sha256": "8dac5fed24b13637a3c3dbbc8ec632bf04881f27f8982138f87bc92abfa03229"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_13",
+      "label": "keycap_13",
+      "cells": [
+        {
+          "id": "keycap_13",
+          "target": "keycap_13",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_13/000-keycap_13.py",
+          "sha256": "ce9082c85385c80155bf8905e8fedf2a784430a17a3773e401d1c3c258f6aba2"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_14",
+      "label": "keycap_14",
+      "cells": [
+        {
+          "id": "keycap_14",
+          "target": "keycap_14",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_14/000-keycap_14.py",
+          "sha256": "c593781f5aaae9472af0270996a17dd26f5769e618fc0b69505d8972a4413e5a"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_15",
+      "label": "keycap_15",
+      "cells": [
+        {
+          "id": "keycap_15",
+          "target": "keycap_15",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_15/000-keycap_15.py",
+          "sha256": "7d52399218f203dfcf523b292bb2d8cd04b8fbc78c9e9cb91ea911dbf22098db"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_16",
+      "label": "keycap_16",
+      "cells": [
+        {
+          "id": "keycap_16",
+          "target": "keycap_16",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_16/000-keycap_16.py",
+          "sha256": "a3572a0dc5a1daeea564d1d9362335f83660448c276291aa5007f8a1c35bc952"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_17",
+      "label": "keycap_17",
+      "cells": [
+        {
+          "id": "keycap_17",
+          "target": "keycap_17",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_17/000-keycap_17.py",
+          "sha256": "846e8e93129d718ae3621cf09cf427d8879b59ae8fb4073dcd21a0bdf458329e"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_18",
+      "label": "keycap_18",
+      "cells": [
+        {
+          "id": "keycap_18",
+          "target": "keycap_18",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_18/000-keycap_18.py",
+          "sha256": "d872fadbf35de0122072ac8bcbfa78e3e1600a42be9ded6a7d8ea53390d12022"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_19",
+      "label": "keycap_19",
+      "cells": [
+        {
+          "id": "keycap_19",
+          "target": "keycap_19",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_19/000-keycap_19.py",
+          "sha256": "ed10b2f9600af56bbf582795d0abca89899b73191e5236f000bae7a7429fbf0d"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_20",
+      "label": "keycap_20",
+      "cells": [
+        {
+          "id": "keycap_20",
+          "target": "keycap_20",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_20/000-keycap_20.py",
+          "sha256": "d6c4ac3aeed895c453eb53c9c302004ae16210f3cc8db58cd5e7b9a4ffc486c5"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "switch_02",
+      "label": "switch_02",
+      "cells": [
+        {
+          "id": "switch_02",
+          "target": "switch_02",
+          "order": 0,
+          "path": "design/enclosure/source/parts/switch_02/000-switch_02.py",
+          "sha256": "3890b66170249cbdefcc15dcb6fdd93751825cee9b02a9e05b8deddb85c2bbe5"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "switch_03",
+      "label": "switch_03",
+      "cells": [
+        {
+          "id": "switch_03",
+          "target": "switch_03",
+          "order": 0,
+          "path": "design/enclosure/source/parts/switch_03/000-switch_03.py",
+          "sha256": "bb40b4c5ed9549edfb92298608929318618cf797a881f3b20ac9f8a6c8cf9a27"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "switch_04",
+      "label": "switch_04",
+      "cells": [
+        {
+          "id": "switch_04",
+          "target": "switch_04",
+          "order": 0,
+          "path": "design/enclosure/source/parts/switch_04/000-switch_04.py",
+          "sha256": "a20e8f4d63af8c398aafa560b3be939a2a9d22a9a065c46b8b7b918a87c808c4"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "switch_05",
+      "label": "switch_05",
+      "cells": [
+        {
+          "id": "switch_05",
+          "target": "switch_05",
+          "order": 0,
+          "path": "design/enclosure/source/parts/switch_05/000-switch_05.py",
+          "sha256": "5e2873d6a23309b0e8e0abd5d247240c331dba00c031f828c084d093320e7476"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "switch_06",
+      "label": "switch_06",
+      "cells": [
+        {
+          "id": "switch_06",
+          "target": "switch_06",
+          "order": 0,
+          "path": "design/enclosure/source/parts/switch_06/000-switch_06.py",
+          "sha256": "16321387b0e37a8bdac39900ffa7d58ecfb0e676aa83d9e57945cb8b3da95204"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "switch_07",
+      "label": "switch_07",
+      "cells": [
+        {
+          "id": "switch_07",
+          "target": "switch_07",
+          "order": 0,
+          "path": "design/enclosure/source/parts/switch_07/000-switch_07.py",
+          "sha256": "76fea78965fd42de5ef48c3a2d57b8d75f8c30f69398f0acd480701a5069122d"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "switch_08",
+      "label": "switch_08",
+      "cells": [
+        {
+          "id": "switch_08",
+          "target": "switch_08",
+          "order": 0,
+          "path": "design/enclosure/source/parts/switch_08/000-switch_08.py",
+          "sha256": "2bd6535ea728600d570a7c8a4c88df55bc3a4a8920b95fb6e3036b478a81b73d"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "switch_09",
+      "label": "switch_09",
+      "cells": [
+        {
+          "id": "switch_09",
+          "target": "switch_09",
+          "order": 0,
+          "path": "design/enclosure/source/parts/switch_09/000-switch_09.py",
+          "sha256": "79bced113ac07bf8ce115269b876da5b6b605d54982085c17b388259f2b639af"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "switch_10",
+      "label": "switch_10",
+      "cells": [
+        {
+          "id": "switch_10",
+          "target": "switch_10",
+          "order": 0,
+          "path": "design/enclosure/source/parts/switch_10/000-switch_10.py",
+          "sha256": "fa74faa32f6a52829074a1281a01e41d2e15a7542296313e70e5285e1ea434a5"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "switch_11",
+      "label": "switch_11",
+      "cells": [
+        {
+          "id": "switch_11",
+          "target": "switch_11",
+          "order": 0,
+          "path": "design/enclosure/source/parts/switch_11/000-switch_11.py",
+          "sha256": "706171157cb7f14a22aab4889bc5e75c75c52cee0cc293ebf39181ee19c241bf"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "switch_12",
+      "label": "switch_12",
+      "cells": [
+        {
+          "id": "switch_12",
+          "target": "switch_12",
+          "order": 0,
+          "path": "design/enclosure/source/parts/switch_12/000-switch_12.py",
+          "sha256": "c7a48b0861ae4accf20d2362ae26683bd52425b25c1126a72efbcda7b5bcf424"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "switch_13",
+      "label": "switch_13",
+      "cells": [
+        {
+          "id": "switch_13",
+          "target": "switch_13",
+          "order": 0,
+          "path": "design/enclosure/source/parts/switch_13/000-switch_13.py",
+          "sha256": "51e3346ea83e2401be3d7490841afc042138e1aff9f5865a3d857b85dac3ab33"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "switch_14",
+      "label": "switch_14",
+      "cells": [
+        {
+          "id": "switch_14",
+          "target": "switch_14",
+          "order": 0,
+          "path": "design/enclosure/source/parts/switch_14/000-switch_14.py",
+          "sha256": "99c254492dc5e21e33176a58901d9a8a57d2b8441046e1c09be2800ef59892e0"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "switch_15",
+      "label": "switch_15",
+      "cells": [
+        {
+          "id": "switch_15",
+          "target": "switch_15",
+          "order": 0,
+          "path": "design/enclosure/source/parts/switch_15/000-switch_15.py",
+          "sha256": "92a2f2b6feba444224db56c022169e353d3d89846293465e99c4677048077c10"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "switch_16",
+      "label": "switch_16",
+      "cells": [
+        {
+          "id": "switch_16",
+          "target": "switch_16",
+          "order": 0,
+          "path": "design/enclosure/source/parts/switch_16/000-switch_16.py",
+          "sha256": "2bd36670b0390e62676daf1ff3aa2b9fb3b91d1f93e2aecbc7a58a2aa5f1f031"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "switch_17",
+      "label": "switch_17",
+      "cells": [
+        {
+          "id": "switch_17",
+          "target": "switch_17",
+          "order": 0,
+          "path": "design/enclosure/source/parts/switch_17/000-switch_17.py",
+          "sha256": "26334ff014198835e210343e0ab641eff65796fef37827cc767941dac0a4762c"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "switch_18",
+      "label": "switch_18",
+      "cells": [
+        {
+          "id": "switch_18",
+          "target": "switch_18",
+          "order": 0,
+          "path": "design/enclosure/source/parts/switch_18/000-switch_18.py",
+          "sha256": "9008efeb7c182470b2b797ee8b83116612800a31528d9e44a35d0320c67f2793"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "switch_19",
+      "label": "switch_19",
+      "cells": [
+        {
+          "id": "switch_19",
+          "target": "switch_19",
+          "order": 0,
+          "path": "design/enclosure/source/parts/switch_19/000-switch_19.py",
+          "sha256": "eca91256e24809ab0da3465f10f98237e713d473246627c365d2db203f11faac"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "switch_20",
+      "label": "switch_20",
+      "cells": [
+        {
+          "id": "switch_20",
+          "target": "switch_20",
+          "order": 0,
+          "path": "design/enclosure/source/parts/switch_20/000-switch_20.py",
+          "sha256": "9db18cb3c46de787279297d027733f097013e7224a9e06744d70234985cdb40d"
+        }
+      ],
+      "dependencies": []
+    }
+  ],
+  "objects": [
+    {
+      "id": "pico2",
+      "target": "imports",
+      "label": "Pico 2 reference",
+      "kind": "imported",
+      "shapeHash": "a8d533438f83154dda464653adf342b827c2579e1f8f311f5a5252468c32505f",
+      "transform": {
+        "positionMm": [
+          16.4,
+          -10.345349813442107,
+          11.049067149079484
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          -90
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "sw_01",
+      "target": "imports",
+      "label": "KS9 red 01",
+      "kind": "imported",
+      "shapeHash": "7eb785ad97b0fb22149a7ee84418410d07afe7b99b323ddb90e6b55532b6ee78",
+      "transform": {
+        "positionMm": [
+          -78.4754975124378,
+          110.06523495791716,
+          18.967774517353856
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "base",
+      "target": "base",
+      "label": "Bottom service cover",
+      "material": "pla",
+      "kind": "generated",
+      "shapeHash": "5745969626bd301a144934ba36f8826f72890f2de7eaf7ac59b25eb075c1f0a9",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          6.459542420143668
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "top",
+      "target": "top",
+      "label": "Main key housing",
+      "material": "pla",
+      "kind": "generated",
+      "shapeHash": "f3bb29cef42aa9fdd7b46f1aa240b0bf3323c4f1d4a9c24373210fb8e4cc7f34",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          6.459542420143668
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "screws",
+      "target": "hardware",
+      "label": "Assembly screws",
+      "material": "stainless_steel",
+      "role": "fastener",
+      "kind": "generated",
+      "shapeHash": "5a50e1884c93c89e9477fb1bcd86c37ccea3dfbe06f6016835cff481bd64325f",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          6.459542420143668
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_01",
+      "target": "keycaps",
+      "label": "Key Num",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "a8b66bed9cb24f82e4af69d0b545979d0b047f48a595f25a0df7fb8f2d5f48d2",
+      "transform": {
+        "positionMm": [
+          -28.525000000172298,
+          22.69085664957732,
+          34.610951985066876
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "screen_lens",
+      "target": "screen_lens",
+      "label": "Acrylic display lens",
+      "material": "acrylic",
+      "kind": "generated",
+      "shapeHash": "3be155ac7309c590f4c02a0520358d499f2e68889cc7a4edac415f03ff87e254",
+      "transform": {
+        "positionMm": [
+          0,
+          47.6110706405883,
+          28.03327534833461
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "rear_foot_left",
+      "target": "rear_foot_left",
+      "label": "Left folding foot",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "c557b2242c33c0f90f24c29e4bfcbeb8c9dc220b2bd340356f90104ee4a24a9c",
+      "transform": {
+        "positionMm": [
+          -29.5,
+          50.10142322897241,
+          6.755161146518494
+        ],
+        "rotationDeg": [
+          114,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "rear_foot_right",
+      "target": "rear_foot_right",
+      "label": "Right folding foot",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "998e548d018ff631d26c243a14934b22e9ac004e35f5762de450dd1df24c84a6",
+      "transform": {
+        "positionMm": [
+          29.5,
+          50.10142322897241,
+          6.755161146518494
+        ],
+        "rotationDeg": [
+          114,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "hinge_axle_left",
+      "target": "hinge_axle_left",
+      "label": "Left hinge axle",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "8591dad3e53ed4b5ddd45c4e5d61fdaa6e5ce71431696be425b7d8e97dfc2b85",
+      "transform": {
+        "positionMm": [
+          -29.5,
+          50.10142322897241,
+          6.755161146518494
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          180
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "hinge_axle_right",
+      "target": "hinge_axle_right",
+      "label": "Right hinge axle",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "bed273cb651f37ccb4419ae4e35895a93909f78851f92565d9b2bf3550180762",
+      "transform": {
+        "positionMm": [
+          29.5,
+          50.10142322897241,
+          6.755161146518494
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "hinge_cap_left",
+      "target": "hinge_cap_left",
+      "label": "Left axle end cap",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "c9689b55a0185e5eab352ebadf67ea31be24a5af43fd512c78e3782c20735d73",
+      "transform": {
+        "positionMm": [
+          -29.5,
+          50.10142322897241,
+          6.755161146518494
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          180
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "hinge_cap_right",
+      "target": "hinge_cap_right",
+      "label": "Right axle end cap",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "cdb36b3a082f1b687b76db1281a6fa999959da810d6921760e18cd77d190c776",
+      "transform": {
+        "positionMm": [
+          29.5,
+          50.10142322897241,
+          6.755161146518494
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_02",
+      "target": "keycap_02",
+      "label": "Key /",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "c4ab00e46cc257e765df8df8eecd741920b7ef9f77c7a63c852d337fad3e66af",
+      "transform": {
+        "positionMm": [
+          -9.4750000001723,
+          22.69085664957732,
+          34.610951985066876
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_03",
+      "target": "keycap_03",
+      "label": "Key *",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "22f3d767f61758c602eecbaa73eca60eeb045d0a4c7e436a4be3e0bb7ec42647",
+      "transform": {
+        "positionMm": [
+          9.574999999827702,
+          22.69085664957732,
+          34.610951985066876
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_04",
+      "target": "keycap_04",
+      "label": "Key Bk",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "200cb3dbadb8e9904e07f74fdb9c5f8ae379dd82d7b704321cfbd78e161a250f",
+      "transform": {
+        "positionMm": [
+          28.624999999827708,
+          22.69085664957732,
+          34.610951985066876
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_05",
+      "target": "keycap_05",
+      "label": "Key 7",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "a3ec218c2f38780ea4861900f01e27d107130807465888f569d18c4dd5cb303a",
+      "transform": {
+        "positionMm": [
+          -28.525000000172298,
+          3.6872614921276674,
+          33.282091160241286
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_06",
+      "target": "keycap_06",
+      "label": "Key 8",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "bc6b7c1bb79e13d27d5108bec95a0bba6638e9e13bf1f86913f5a95af3406af3",
+      "transform": {
+        "positionMm": [
+          -9.4750000001723,
+          3.6872614921276674,
+          33.282091160241286
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_07",
+      "target": "keycap_07",
+      "label": "Key 9",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "80b6036cb54f7f30f54ebb3cb364fa566243948fd45c963c56f2bb0ebba6cad3",
+      "transform": {
+        "positionMm": [
+          9.574999999827702,
+          3.6872614921276674,
+          33.282091160241286
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_08",
+      "target": "keycap_08",
+      "label": "Key -",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "be053259b5481030f8e2ccd52299d9eeb0b2355c0df7da43ab40723f687b1a3a",
+      "transform": {
+        "positionMm": [
+          28.624999999827708,
+          3.6872614921276674,
+          33.282091160241286
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_09",
+      "target": "keycap_09",
+      "label": "Key 4",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "ddfd170e920a344af5b825f6031dff7a1e4a428e64aac99a03e3e39aadd21379",
+      "transform": {
+        "positionMm": [
+          -28.525000000172298,
+          -15.316333665321983,
+          31.9532303354157
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_10",
+      "target": "keycap_10",
+      "label": "Key 5",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "e8cd20bdaa060421c7bacaea09de50e8e38f5956c1a7977029cc5496d7461b70",
+      "transform": {
+        "positionMm": [
+          -9.4750000001723,
+          -15.316333665321983,
+          31.9532303354157
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_11",
+      "target": "keycap_11",
+      "label": "Key 6",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "4d736a075870db3184df71cb122869a28a5ba3a9a5e5c903f794652c7bffbb64",
+      "transform": {
+        "positionMm": [
+          9.574999999827702,
+          -15.316333665321983,
+          31.9532303354157
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_12",
+      "target": "keycap_12",
+      "label": "Key +",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "b335d0a0545ace7d04c1d53d55df09e3f39906065adb7fc90c3dbb278a54b40e",
+      "transform": {
+        "positionMm": [
+          28.624999999827708,
+          -15.316333665321983,
+          31.9532303354157
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_13",
+      "target": "keycap_13",
+      "label": "Key 1",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "ecbb2c1e61703024e1953f52a6764e6726a02b1ae2ffe19cfec5095dc0821020",
+      "transform": {
+        "positionMm": [
+          -28.525000000172298,
+          -34.31992882277164,
+          30.624369510590114
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_14",
+      "target": "keycap_14",
+      "label": "Key 2",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "41ef62a454a552defddc7ff23a610449201f77d70ecae78dfced8224a0f4c544",
+      "transform": {
+        "positionMm": [
+          -9.4750000001723,
+          -34.31992882277164,
+          30.624369510590114
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_15",
+      "target": "keycap_15",
+      "label": "Key 3",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "993f16a8233eb25e21da500383855ac2c497497669e77ed83313a5fa279aaa1e",
+      "transform": {
+        "positionMm": [
+          9.574999999827702,
+          -34.31992882277164,
+          30.624369510590114
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_16",
+      "target": "keycap_16",
+      "label": "Key =",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "3f8fe89d60639420ba1f94c38971b24b832e4eac6883b05798a2bb3e87b351c7",
+      "transform": {
+        "positionMm": [
+          28.624999999827708,
+          -34.31992882277164,
+          30.624369510590114
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_17",
+      "target": "keycap_17",
+      "label": "Key Mode",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "786cdcfb6d85e28c3de02e094c7ef573b35c326e1e3bec79b49ee53d9382958b",
+      "transform": {
+        "positionMm": [
+          -28.525000000172298,
+          -53.32352398022128,
+          29.295508685764528
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_18",
+      "target": "keycap_18",
+      "label": "Key 0",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "2f03e320ecbf99e3a0fb6ba333412e600532d547eb896846b78a4617f8ca77d1",
+      "transform": {
+        "positionMm": [
+          -9.4750000001723,
+          -53.32352398022128,
+          29.295508685764528
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_19",
+      "target": "keycap_19",
+      "label": "Key .",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "0eceb7d596b72cc659398e870e73fdfd939893340ca2e45ab5cb64a38bf18d07",
+      "transform": {
+        "positionMm": [
+          9.574999999827702,
+          -53.32352398022128,
+          29.295508685764528
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_20",
+      "target": "keycap_20",
+      "label": "Key AC",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "aa2ee4d787e1ee804fea64ff1cfc82f85ebbc0fb87eae42ae7fb6fdc1a30312c",
+      "transform": {
+        "positionMm": [
+          28.624999999827708,
+          -53.32352398022128,
+          29.295508685764528
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "sw_02",
+      "target": "switch_02",
+      "label": "KS9 red 2",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "a7186cdf5e98db35a1110b0d5ca5bff6c2a1231c98d2d57257df5438206db674",
+      "transform": {
+        "positionMm": [
+          -59.4254975124378,
+          110.06523495791716,
+          18.967774517353856
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "sw_03",
+      "target": "switch_03",
+      "label": "KS9 red 3",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "c6a7fb5a8702b1e316871c3b892d6b94b0e71e3beacfb77cb5c0c266a6d74789",
+      "transform": {
+        "positionMm": [
+          -40.3754975124378,
+          110.06523495791716,
+          18.967774517353856
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "sw_04",
+      "target": "switch_04",
+      "label": "KS9 red 4",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "bc06befb7789bf38dcdc6ef5cea27e59c32669f9be377587b06d0afc9d6d5905",
+      "transform": {
+        "positionMm": [
+          -21.325497512437796,
+          110.06523495791716,
+          18.967774517353856
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "sw_05",
+      "target": "switch_05",
+      "label": "KS9 red 5",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "48ef46aafca85816b376e470f7a43bac21a5db92d3669d9bc2cdb325c68717b3",
+      "transform": {
+        "positionMm": [
+          -78.4754975124378,
+          91.06163980046749,
+          17.63891369252827
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "sw_06",
+      "target": "switch_06",
+      "label": "KS9 red 6",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "c9557adbf00ff1b7257d50e2224769aa25820056510ae1457b63c43e3effcd39",
+      "transform": {
+        "positionMm": [
+          -59.4254975124378,
+          91.06163980046749,
+          17.63891369252827
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "sw_07",
+      "target": "switch_07",
+      "label": "KS9 red 7",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "48c15cb090dedbb1f1402d26c8c8802229395ac1d16b02bacc283292364f044b",
+      "transform": {
+        "positionMm": [
+          -40.3754975124378,
+          91.06163980046749,
+          17.63891369252827
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "sw_08",
+      "target": "switch_08",
+      "label": "KS9 red 8",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "a985f1bc50af28dcc620067eae009675f0599d0c92626e5de62e1ca34bad0c63",
+      "transform": {
+        "positionMm": [
+          -21.325497512437796,
+          91.06163980046749,
+          17.63891369252827
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "sw_09",
+      "target": "switch_09",
+      "label": "KS9 red 9",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "9a71cc0d00fcbf6e887e9e49105dbad5697bef523e8323f3ec0f224485c8ced6",
+      "transform": {
+        "positionMm": [
+          -78.4754975124378,
+          72.05804464301785,
+          16.31005286770268
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "sw_10",
+      "target": "switch_10",
+      "label": "KS9 red 10",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "972ad05a36a9eaff706c091df20898ca21d01a10dc63f58fc0fafb3c42ec5d39",
+      "transform": {
+        "positionMm": [
+          -59.4254975124378,
+          72.05804464301785,
+          16.31005286770268
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "sw_11",
+      "target": "switch_11",
+      "label": "KS9 red 11",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "7a76a2e975cd0d2d450867830fbf33befab88475c70dbca879677b502e7f6fd4",
+      "transform": {
+        "positionMm": [
+          -40.3754975124378,
+          72.05804464301785,
+          16.31005286770268
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "sw_12",
+      "target": "switch_12",
+      "label": "KS9 red 12",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "25ce9a3a33061c3aa3e271e2b2358f0112bfb74988aca5645faa2ebdcd546fb9",
+      "transform": {
+        "positionMm": [
+          -21.325497512437796,
+          72.05804464301785,
+          16.31005286770268
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "sw_13",
+      "target": "switch_13",
+      "label": "KS9 red 13",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "ec93193398ce8732718346a57e4fdb1c073e8bf55432b1e90bc03d464c152d85",
+      "transform": {
+        "positionMm": [
+          -78.4754975124378,
+          53.05444948556819,
+          14.981192042877094
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "sw_14",
+      "target": "switch_14",
+      "label": "KS9 red 14",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "6464ad5b0db622f490ddee6f9656d7ae2c8a55b489fe6af8d6c3469e2cdb4439",
+      "transform": {
+        "positionMm": [
+          -59.4254975124378,
+          53.05444948556819,
+          14.981192042877094
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "sw_15",
+      "target": "switch_15",
+      "label": "KS9 red 15",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "4648e7e984a18c2f36c8ae697d5186ee048d75db855249061da0c488bc7fcdc6",
+      "transform": {
+        "positionMm": [
+          -40.3754975124378,
+          53.05444948556819,
+          14.981192042877094
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "sw_16",
+      "target": "switch_16",
+      "label": "KS9 red 16",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "9162a7dda903eca3b7ea18e966dc8954c3779923027f24999f2b793fc18da8c9",
+      "transform": {
+        "positionMm": [
+          -21.325497512437796,
+          53.05444948556819,
+          14.981192042877094
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "sw_17",
+      "target": "switch_17",
+      "label": "KS9 red 17",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "cdfc7dfa40285a9da8641a2f986e6a5a2577c14e21b57fd9ab448e9efbef2498",
+      "transform": {
+        "positionMm": [
+          -78.4754975124378,
+          34.05085432811855,
+          13.652331218051508
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "sw_18",
+      "target": "switch_18",
+      "label": "KS9 red 18",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "3fd552c9a947a8748a407f714e6d02fc9ca21367fb9b0db3213ab8be94bb7b75",
+      "transform": {
+        "positionMm": [
+          -59.4254975124378,
+          34.05085432811855,
+          13.652331218051508
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "sw_19",
+      "target": "switch_19",
+      "label": "KS9 red 19",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "60ed3a7969edf0516437d8f3aba8ee38c3e6b64eba316d3abcd098dbafc2e5fe",
+      "transform": {
+        "positionMm": [
+          -40.3754975124378,
+          34.05085432811855,
+          13.652331218051508
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "sw_20",
+      "target": "switch_20",
+      "label": "KS9 red 20",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "6b4d8011812312e3fed7f0481f780111a793e2200ec5367d813ed5c2392254c8",
+      "transform": {
+        "positionMm": [
+          -21.325497512437796,
+          34.05085432811855,
+          13.652331218051508
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "pico2",
+      "kind": "step",
+      "path": "design/enclosure/source/assets/d49ada10d893cfcb07cb4abced0a0a0cadca4c4150f153d874268ca06171a24f.step",
+      "sha256": "d49ada10d893cfcb07cb4abced0a0a0cadca4c4150f153d874268ca06171a24f",
+      "label": "Pico 2 reference",
+      "provenance": {
+        "sourcePath": "product/references/pico2-vendor.step",
+        "provider": "Raspberry Pi",
+        "sourceUrl": "https://pip.raspberrypi.com/documents/RP-009061-CA",
+        "declaredSha256": "d49ada10d893cfcb07cb4abced0a0a0cadca4c4150f153d874268ca06171a24f"
+      }
+    },
+    {
+      "id": "sw_01",
+      "kind": "step",
+      "path": "design/enclosure/source/assets/29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d.step",
+      "sha256": "29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d",
+      "label": "KS9 red 01",
+      "provenance": {
+        "sourcePath": "product/references/gateron-ks9/KS-9 Switch KS-9H10B045NN-X14-FB.stp",
+        "provider": "GATERON",
+        "sourceUrl": "https://gateron.com/u_file/2306/26/file/KS-9SwitchKS-9H10B045NN-X14-FB.rar",
+        "sourceVersion": "KS-9H10B045NN-X14-FB, manufacturer file 2023-06",
+        "declaredSha256": "29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d"
+      }
+    }
+  ],
+  "fits": [
+    {
+      "kind": "compliant",
+      "budget_mm": 0.16,
+      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
+      "a": "sw_01",
+      "b": "top"
+    },
+    {
+      "kind": "compliant",
+      "budget_mm": 0.16,
+      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
+      "a": "sw_02",
+      "b": "top"
+    },
+    {
+      "kind": "compliant",
+      "budget_mm": 0.16,
+      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
+      "a": "sw_03",
+      "b": "top"
+    },
+    {
+      "kind": "compliant",
+      "budget_mm": 0.16,
+      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
+      "a": "sw_04",
+      "b": "top"
+    },
+    {
+      "kind": "compliant",
+      "budget_mm": 0.16,
+      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
+      "a": "sw_05",
+      "b": "top"
+    },
+    {
+      "kind": "compliant",
+      "budget_mm": 0.16,
+      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
+      "a": "sw_06",
+      "b": "top"
+    },
+    {
+      "kind": "compliant",
+      "budget_mm": 0.16,
+      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
+      "a": "sw_07",
+      "b": "top"
+    },
+    {
+      "kind": "compliant",
+      "budget_mm": 0.16,
+      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
+      "a": "sw_08",
+      "b": "top"
+    },
+    {
+      "kind": "compliant",
+      "budget_mm": 0.16,
+      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
+      "a": "sw_09",
+      "b": "top"
+    },
+    {
+      "kind": "compliant",
+      "budget_mm": 0.16,
+      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
+      "a": "sw_10",
+      "b": "top"
+    },
+    {
+      "kind": "compliant",
+      "budget_mm": 0.16,
+      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
+      "a": "sw_11",
+      "b": "top"
+    },
+    {
+      "kind": "compliant",
+      "budget_mm": 0.16,
+      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
+      "a": "sw_12",
+      "b": "top"
+    },
+    {
+      "kind": "compliant",
+      "budget_mm": 0.16,
+      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
+      "a": "sw_13",
+      "b": "top"
+    },
+    {
+      "kind": "compliant",
+      "budget_mm": 0.16,
+      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
+      "a": "sw_14",
+      "b": "top"
+    },
+    {
+      "kind": "compliant",
+      "budget_mm": 0.16,
+      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
+      "a": "sw_15",
+      "b": "top"
+    },
+    {
+      "kind": "compliant",
+      "budget_mm": 0.16,
+      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
+      "a": "sw_16",
+      "b": "top"
+    },
+    {
+      "kind": "compliant",
+      "budget_mm": 0.16,
+      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
+      "a": "sw_17",
+      "b": "top"
+    },
+    {
+      "kind": "compliant",
+      "budget_mm": 0.16,
+      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
+      "a": "sw_18",
+      "b": "top"
+    },
+    {
+      "kind": "compliant",
+      "budget_mm": 0.16,
+      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
+      "a": "sw_19",
+      "b": "top"
+    },
+    {
+      "kind": "compliant",
+      "budget_mm": 0.16,
+      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
+      "a": "sw_20",
+      "b": "top"
+    }
+  ],
+  "updatedAt": "2026-11-05T14:33:18.570Z",
+  "parameters": {
+    "imports": {},
+    "base": {
+      "case_width": 89,
+      "case_depth": 130,
+      "base_height": 18,
+      "wall_thickness": 2.4,
+      "floor_thickness": 2.4,
+      "corner_radius": 6,
+      "top_panel_thickness": 3,
+      "pico_x": 16.4,
+      "pico_y": -10,
+      "pico_pcb_z": 5.3,
+      "usb_cutout_width": 13,
+      "usb_cutout_height": 9,
+      "usb_cutout_z": 7.3,
+      "display_y": 49,
+      "key_grid_top_y": 24.6,
+      "display_mount_recess": 9,
+      "bottom_alignment_depth": 2,
+      "bottom_alignment_clearance": 0.3,
+      "bottom_alignment_wall": 1.4,
+      "lcd_pcb_bottom": 7.4,
+      "lcd_board_width": 78,
+      "lcd_board_depth": 26,
+      "lcd_board_thickness": 1.6,
+      "lcd_module_max_thickness": 10,
+      "lcd_mount_adhesive": 0.15,
+      "lcd_seat_width": 2.4,
+      "lcd_seat_depth": 4,
+      "lcd_fence_thickness": 2,
+      "lcd_edge_clearance": 0.3,
+      "lcd_seat_offset_y": 8
+    },
+    "top": {
+      "key_hole_size": 14.2,
+      "key_clip_pocket": 16.4,
+      "key_clip_land_thickness": 1.5,
+      "screen_window_width": 64,
+      "screen_window_depth": 16,
+      "lens_pocket_depth": 1.35,
+      "lens_pocket_width": 68,
+      "lens_pocket_depth_y": 20,
+      "outer_edge_bevel": 0.4,
+      "front_engrave_depth": 0.35,
+      "front_mark_height": 3.2,
+      "front_mark_z": 10.8
+    },
+    "hardware": {
+      "hardware_reference_scale": 1,
+      "fastener_display_z_offset": 0
+    },
+    "keycaps": {
+      "keycap_reference_width": 18.2,
+      "keycap_reference_top_width": 14.4,
+      "keycap_reference_height": 7,
+      "keycap_legend_size": 3.1,
+      "keycap_reference_wall_thickness": 1.2,
+      "keycap_reference_roof_thickness": 1.6,
+      "keycap_socket_outer_diameter": 5.6,
+      "keycap_socket_span": 4.1,
+      "keycap_socket_arm": 1.4,
+      "keycap_socket_depth": 3.3,
+      "keycap_socket_mouth_inset": 1.4,
+      "keycap_socket_fit_delta": 0,
+      "keycap_socket_lead_in": 0,
+      "keycap_legend_depth": 0.35,
+      "keycap_socket_neck_width": 4.9,
+      "keycap_socket_neck_top": 5.1
+    },
+    "screen_lens": {
+      "lens_width": 67.6,
+      "lens_depth": 19.6,
+      "lens_thickness": 1,
+      "lens_corner_radius": 1
+    },
+    "rear_foot_left": {
+      "rear_foot_width": 10,
+      "rear_foot_length": 8.5,
+      "rear_foot_thickness": 3.6,
+      "hinge_hub_radius": 2.6,
+      "hinge_pin_diameter": 2.4,
+      "hinge_diameter_clearance": 0.4,
+      "hinge_x": 29.5,
+      "hinge_y": 50,
+      "hinge_z": -3.2,
+      "deployment_angle": 110,
+      "keyboard_high_tilt": 4,
+      "stowed_rear_depth": 6.8,
+      "front_support_y": 64,
+      "front_pad_thickness": 2,
+      "hinge_ear_thickness": 3,
+      "hinge_ear_radius": 3,
+      "hinge_side_gap": 0.25,
+      "stop_cam_half_width": 0.8,
+      "stop_cam_reach": 3.8,
+      "foot_edge_break": 0.2
+    },
+    "rear_foot_right": {
+      "right_foot_edge_break": 0.2
+    },
+    "hinge_axle_left": {
+      "axle_head_diameter": 5,
+      "axle_head_thickness": 1.5,
+      "axle_end_gap": 0.15,
+      "axle_cap_insertion": 1
+    },
+    "hinge_axle_right": {
+      "right_axle_head_thickness": 1.5
+    },
+    "hinge_cap_left": {
+      "axle_cap_outer_diameter": 5,
+      "axle_cap_length": 2.4,
+      "axle_cap_socket_depth": 1.2,
+      "axle_cap_socket_diameter": 2.6
+    },
+    "hinge_cap_right": {
+      "right_cap_outer_diameter": 5
+    },
+    "keycap_02": {
+      "keycap_02_legend_size": 3.1,
+      "keycap_02_legend_depth": 0.35
+    },
+    "keycap_03": {
+      "keycap_03_legend_size": 3.1,
+      "keycap_03_legend_depth": 0.35
+    },
+    "keycap_04": {
+      "keycap_04_legend_size": 3.1,
+      "keycap_04_legend_depth": 0.35
+    },
+    "keycap_05": {
+      "keycap_05_legend_size": 3.1,
+      "keycap_05_legend_depth": 0.35
+    },
+    "keycap_06": {
+      "keycap_06_legend_size": 3.1,
+      "keycap_06_legend_depth": 0.35
+    },
+    "keycap_07": {
+      "keycap_07_legend_size": 3.1,
+      "keycap_07_legend_depth": 0.35
+    },
+    "keycap_08": {
+      "keycap_08_legend_size": 3.1,
+      "keycap_08_legend_depth": 0.35
+    },
+    "keycap_09": {
+      "keycap_09_legend_size": 3.1,
+      "keycap_09_legend_depth": 0.35
+    },
+    "keycap_10": {
+      "keycap_10_legend_size": 3.1,
+      "keycap_10_legend_depth": 0.35
+    },
+    "keycap_11": {
+      "keycap_11_legend_size": 3.1,
+      "keycap_11_legend_depth": 0.35
+    },
+    "keycap_12": {
+      "keycap_12_legend_size": 3.1,
+      "keycap_12_legend_depth": 0.35
+    },
+    "keycap_13": {
+      "keycap_13_legend_size": 3.1,
+      "keycap_13_legend_depth": 0.35
+    },
+    "keycap_14": {
+      "keycap_14_legend_size": 3.1,
+      "keycap_14_legend_depth": 0.35
+    },
+    "keycap_15": {
+      "keycap_15_legend_size": 3.1,
+      "keycap_15_legend_depth": 0.35
+    },
+    "keycap_16": {
+      "keycap_16_legend_size": 3.1,
+      "keycap_16_legend_depth": 0.35
+    },
+    "keycap_17": {
+      "keycap_17_legend_size": 3.1,
+      "keycap_17_legend_depth": 0.35
+    },
+    "keycap_18": {
+      "keycap_18_legend_size": 3.1,
+      "keycap_18_legend_depth": 0.35
+    },
+    "keycap_19": {
+      "keycap_19_legend_size": 3.1,
+      "keycap_19_legend_depth": 0.35
+    },
+    "keycap_20": {
+      "keycap_20_legend_size": 3.1,
+      "keycap_20_legend_depth": 0.35
+    },
+    "switch_02": {
+      "sw_02_orientation_deg": 0
+    },
+    "switch_03": {
+      "sw_03_orientation_deg": 0
+    },
+    "switch_04": {
+      "sw_04_orientation_deg": 0
+    },
+    "switch_05": {
+      "sw_05_orientation_deg": 0
+    },
+    "switch_06": {
+      "sw_06_orientation_deg": 0
+    },
+    "switch_07": {
+      "sw_07_orientation_deg": 0
+    },
+    "switch_08": {
+      "sw_08_orientation_deg": 0
+    },
+    "switch_09": {
+      "sw_09_orientation_deg": 0
+    },
+    "switch_10": {
+      "sw_10_orientation_deg": 0
+    },
+    "switch_11": {
+      "sw_11_orientation_deg": 0
+    },
+    "switch_12": {
+      "sw_12_orientation_deg": 0
+    },
+    "switch_13": {
+      "sw_13_orientation_deg": 0
+    },
+    "switch_14": {
+      "sw_14_orientation_deg": 0
+    },
+    "switch_15": {
+      "sw_15_orientation_deg": 0
+    },
+    "switch_16": {
+      "sw_16_orientation_deg": 0
+    },
+    "switch_17": {
+      "sw_17_orientation_deg": 0
+    },
+    "switch_18": {
+      "sw_18_orientation_deg": 0
+    },
+    "switch_19": {
+      "sw_19_orientation_deg": 0
+    },
+    "switch_20": {
+      "sw_20_orientation_deg": 0
+    }
+  }
+}

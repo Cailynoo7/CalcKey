@@ -45,7 +45,7 @@
       "description": "2个电触点+中心塑料柱；线性45±15gf、预行程2.0±0.6mm、总行程最大4mm；不接LED。",
       "source_url": "https://www.gateron.com/products/gateron-ks-9-switch-set",
       "selection_reason": "用户选择并核对一致的KS-9三脚红轴；使用官方STEP补齐20轴，保留现有手焊矩阵与打印键帽接口。",
-      "supply_risk": "用户已核对并确认本轴体与KS-9H10B045NN-X14-FB官方CAD对应一致；FB不再作为待确认选型项。后续保持同型号，打印孔扣、键帽薄壁强度和松紧仍按试配记录确认。",
+      "supply_risk": "用户已确认本轴体与所用官方CAD对应一致；按用户要求跳过打印试配。卡扣弹性、保持力和实际插拔配合未实测。",
       "product_url": "https://www.gateron.com/products/gateron-ks-9-switch-set",
       "cad_relevance": "官方STEP支承底面z16.2、轴顶z26.4；20轴实例，14.2孔/1.5台阶仍需实配。",
       "procurement_status": "external_procurement_required",
@@ -59,10 +59,10 @@
       "manufacturer": "CalcKey",
       "part_number": "enclosure:key_01..key_20",
       "source": "project",
-      "description": "18.2×18.2×7mm；插座外径5.6，下段两侧削平宽4.8至帽内z5.1；十字孔4.10/1.40、深3.3，入口内缩1.4，止挡z4.7。",
-      "selection_reason": "用户选择实际键帽3D打印；20键全1U，无稳定器，刻字一体凹刻；先试配小样再批量打印。",
+      "description": "20只18.2×18.2×7mm PETG键帽；十字孔4.10/1.40、深3.3，止挡4.7；插座下段削平宽4.9至z5.1，入口不扩口，最小名义壁0.40mm。",
+      "selection_reason": "用户要求键帽3D打印并跳过试配，直接完成整机；保留20键、19.05mm网格，刻字与帽体融合。",
       "cad_relevance": "沿官方轴芯偏心+0.05/-0.000674mm对齐；松开帽底距面板5.5mm、全压名义余1.5mm。",
-      "supply_risk": "细喷嘴试配件；削平段入口局部最薄壁P0约0.25、P10约0.20mm。强度及松紧需实测，先做小样。",
+      "supply_risk": "细喷嘴FDM默认0.2mm/0.1mm；跳过试配为用户选择。几何最薄壁0.40mm不是强度保证，打印收缩和实际轴芯插拔力未实测。",
       "part_identity": "2dfcc4049600cad5"
     },
     {
@@ -314,18 +314,6 @@
       "part_identity": "5e0c0ef731a326fe"
     },
     {
-      "id": "keycap_fit_samples",
-      "role": "printed_part",
-      "name": "CalcKey 键帽孔隙试配帽，PETG，P0/P5/P10",
-      "quantity": 3,
-      "manufacturer": "CalcKey",
-      "part_number": "keycap_fit:fit_00,fit_05,fit_10",
-      "source": "project",
-      "description": "与正式帽同一帽体/插座深度；孔总长与臂宽分别增加0、0.05、0.10mm。",
-      "selection_reason": "在实际KS-9H10B045NN-X14上标定打印孔隙和就位高度，避免直接批量20件。",
-      "part_identity": "78a6a2af93efb7a2"
-    },
-    {
       "id": "lcd_mount_tape",
       "role": "adhesive",
       "name": "绝缘丙烯酸双面压敏胶片，0.15mm厚，2×4mm小片",
@@ -338,17 +326,15 @@
       "part_identity": "6e1c1545a72793d2"
     },
     {
-      "id": "switch_fit_coupon",
-      "role": "printed_part",
-      "name": "CalcKey 六孔机械轴安装与卡扣试配片，PLA，70×60×3mm",
+      "id": "wire_retaining_tape",
+      "role": "assembly_material",
+      "name": "聚酰亚胺胶带，宽10mm、总厚不大于0.1mm，1卷",
       "quantity": 1,
-      "manufacturer": "CalcKey",
-      "part_number": "switch_fit:plate",
-      "source": "project",
-      "description": "A/B/C/D孔14.0/14.1/14.2/14.3mm，夹持1.50；E/F孔14.2mm，夹持1.35/1.65；全部下侧16.4mm避空。",
-      "selection_reason": "用户要求先做小试片，配合P0/P5/P10键帽核对轴孔、原轴卡扣及全行程，不打印整套壳。",
-      "supply_risk": "所有尺寸为试配默认，C复制现有主壳；打印误差、真实轴体配合和卡扣保持仍待测。",
-      "part_identity": "15568400f4c669ad"
+      "source": "default",
+      "description": "固定已经绝缘的线束；折返余线分层铺在底盖左侧，束高不大于4.5mm。",
+      "selection_reason": "补齐底盖线束固定材料，减少维护下放时焊点承受的拉力。",
+      "supply_risk": "胶带仅固定线束；裸铜及二极管脚继续使用热缩绝缘，黏附力未实测。",
+      "part_identity": "709e80c88487a241"
     }
   ],
   "alternatives": [
@@ -373,8 +359,8 @@
   "supply_risks": [
     "两档总高按自制键帽暂定安装位置估算约39.0/41.6mm；64×16mm为LCD外壳窗口，模组更换为GDM0103。",
     "PETG销轴、2.8mm铰链孔、限位与盲帽胶粘需试打印验证间隙、承载、耐久和防滑；抬起后不是自锁铰链。 端帽胶合插入1mm，必须实物验证轴向保持力。",
-    "自制键帽十字孔与实际KS-9H10B045NN-X14的松紧、止挡高度和反复插拔强度需用三种试配帽确认；不代表轴体卡扣已验收。",
-    "GDM0103明确购买3.3V/6点钟视角；初版背光不接。原OLED固件与旧OLED焊接图不适用于LCD。"
+    "GDM0103明确购买3.3V/6点钟视角；初版背光不接。原OLED固件与旧OLED焊接图不适用于LCD。",
+    "用户选择跳过打印试配；物理配合、LCD实际承托带、胶保持力、翻脚承载和整机电气性能没有实测结果。"
   ],
   "unresolved_items": [],
   "bom_ready": true,
@@ -400,5 +386,5 @@
     ],
     "catalog_result": "平台索引/元件目录/STEP检索无精确型号，按原厂手册设计，不伪造索引id或STEP。"
   },
-  "requirements_digest": "b6f2dbada54c5134ed6ec4f4839de0d9835b981b0787941e1ef1b5e03d9504d9"
+  "requirements_digest": "79e6d471260bc9270362223a63983e0a641e090d131aaf942bbdbfc06b0314bd"
 }

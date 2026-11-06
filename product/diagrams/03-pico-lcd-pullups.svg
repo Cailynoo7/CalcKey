@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 1680 1188">
+<title>Pico 2 与 GDM0103｜针脚和四个上拉</title>
+<desc>Generated from CalcKey wiring.json. Illustrative wiring; not a drill or switch footprint template.</desc>
+<rect x="0" y="0" width="1680" height="1188" rx="0" fill="#ffffff" stroke="none" stroke-width="2"/>
+<text x="56" y="67" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="38" fill="#203346" text-anchor="start">Pico 2 与 GDM0103｜针脚和四个上拉</text>
+<text x="56" y="111" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21" fill="#5e6d7a" text-anchor="start">Pico为元件面朝上、USB端向上的顶视图；物理针脚Pxx不是GPIO的GPxx。全程断电，不烧录。</text>
+<text x="1620" y="66" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22" fill="#5e6d7a" text-anchor="end">3 / 4</text>
+<line x1="56" y1="132" x2="1624" y2="132" stroke="#cfdae3" stroke-width="2" stroke-linecap="round"/>
+<text x="56" y="183" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="26" fill="#203346" text-anchor="start">A  Pico 2：14个实际使用的针脚</text>
+<rect x="495" y="224" width="210" height="681" rx="18" fill="#deece7" stroke="#317063" stroke-width="2"/>
+<rect x="555" y="203" width="90" height="67" rx="6" fill="#e2e7ec" stroke="#203346" stroke-width="2"/>
+<text x="600" y="245" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22" fill="#203346" text-anchor="middle">USB</text>
+<text x="600" y="481" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="32" fill="#203346" text-anchor="middle">Pico 2</text>
+<text x="600" y="523" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22" fill="#203346" text-anchor="middle">顶视图</text>
+<text x="600" y="568" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" fill="#203346" text-anchor="middle">USB口朝上</text>
+<rect x="463" y="277" width="32" height="16" rx="0" fill="#ffffff" stroke="#2276ad" stroke-width="2"/>
+<line x1="340" y1="285" x2="463" y2="285" stroke="#2276ad" stroke-width="3" stroke-linecap="round"/>
+<text x="66" y="292" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21" fill="#2276ad" text-anchor="start">P01  GP0 → LCD DATA</text>
+<rect x="705" y="277" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="746" y="291" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#a9b7b5" text-anchor="start">40</text>
+<rect x="463" y="307" width="32" height="16" rx="0" fill="#ffffff" stroke="#107e85" stroke-width="2"/>
+<line x1="340" y1="315" x2="463" y2="315" stroke="#107e85" stroke-width="3" stroke-linecap="round"/>
+<text x="66" y="322" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21" fill="#107e85" text-anchor="start">P02  GP1 → LCD /WR</text>
+<rect x="705" y="307" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="746" y="321" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#a9b7b5" text-anchor="start">39</text>
+<rect x="463" y="337" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="453" y="351" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#5e6d7a" text-anchor="end">3</text>
+<rect x="705" y="337" width="32" height="16" rx="0" fill="#ffffff" stroke="#343d49" stroke-width="2"/>
+<text x="746" y="333" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#343d49" text-anchor="start">38</text>
+<line x1="737" y1="345" x2="841" y2="345" stroke="#343d49" stroke-width="3" stroke-linecap="round"/>
+<circle cx="841" cy="345" r="5" fill="#343d49" stroke="#343d49" stroke-width="2"/>
+<text x="782" y="333" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="19" fill="#343d49" text-anchor="start">GND</text>
+<rect x="463" y="367" width="32" height="16" rx="0" fill="#ffffff" stroke="#b15a13" stroke-width="2"/>
+<line x1="340" y1="375" x2="463" y2="375" stroke="#b15a13" stroke-width="3" stroke-linecap="round"/>
+<text x="66" y="382" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21" fill="#b15a13" text-anchor="start">P04  GP2 → R0</text>
+<rect x="705" y="367" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="746" y="381" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#a9b7b5" text-anchor="start">37</text>
+<rect x="463" y="397" width="32" height="16" rx="0" fill="#ffffff" stroke="#b83e5c" stroke-width="2"/>
+<line x1="340" y1="405" x2="463" y2="405" stroke="#b83e5c" stroke-width="3" stroke-linecap="round"/>
+<text x="66" y="412" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21" fill="#b83e5c" text-anchor="start">P05  GP3 → R1</text>
+<rect x="705" y="397" width="32" height="16" rx="0" fill="#ffffff" stroke="#bf3642" stroke-width="2"/>
+<text x="746" y="393" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#bf3642" text-anchor="start">36</text>
+<line x1="737" y1="405" x2="841" y2="405" stroke="#bf3642" stroke-width="3" stroke-linecap="round"/>
+<circle cx="841" cy="405" r="5" fill="#bf3642" stroke="#bf3642" stroke-width="2"/>
+<text x="782" y="393" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="19" fill="#bf3642" text-anchor="start">3V3</text>
+<rect x="463" y="427" width="32" height="16" rx="0" fill="#ffffff" stroke="#7552a1" stroke-width="2"/>
+<line x1="340" y1="435" x2="463" y2="435" stroke="#7552a1" stroke-width="3" stroke-linecap="round"/>
+<text x="66" y="442" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21" fill="#7552a1" text-anchor="start">P06  GP4 → R2</text>
+<rect x="705" y="427" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="746" y="441" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#a9b7b5" text-anchor="start">35</text>
+<rect x="463" y="457" width="32" height="16" rx="0" fill="#ffffff" stroke="#2c7954" stroke-width="2"/>
+<line x1="340" y1="465" x2="463" y2="465" stroke="#2c7954" stroke-width="3" stroke-linecap="round"/>
+<text x="66" y="472" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21" fill="#2c7954" text-anchor="start">P07  GP5 → R3</text>
+<rect x="705" y="457" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="746" y="471" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#a9b7b5" text-anchor="start">34</text>
+<rect x="463" y="487" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="453" y="501" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#5e6d7a" text-anchor="end">8</text>
+<rect x="705" y="487" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="746" y="501" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#a9b7b5" text-anchor="start">33</text>
+<rect x="463" y="517" width="32" height="16" rx="0" fill="#ffffff" stroke="#817112" stroke-width="2"/>
+<line x1="340" y1="525" x2="463" y2="525" stroke="#817112" stroke-width="3" stroke-linecap="round"/>
+<text x="66" y="532" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21" fill="#817112" text-anchor="start">P09  GP6 → R4</text>
+<rect x="705" y="517" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="746" y="531" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#a9b7b5" text-anchor="start">32</text>
+<rect x="463" y="547" width="32" height="16" rx="0" fill="#ffffff" stroke="#2276ad" stroke-width="2"/>
+<line x1="340" y1="555" x2="463" y2="555" stroke="#2276ad" stroke-width="3" stroke-linecap="round"/>
+<text x="66" y="562" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21" fill="#2276ad" text-anchor="start">P10  GP7 → C0</text>
+<rect x="705" y="547" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="746" y="561" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#a9b7b5" text-anchor="start">31</text>
+<rect x="463" y="577" width="32" height="16" rx="0" fill="#ffffff" stroke="#2276ad" stroke-width="2"/>
+<line x1="340" y1="585" x2="463" y2="585" stroke="#2276ad" stroke-width="3" stroke-linecap="round"/>
+<text x="66" y="592" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21" fill="#2276ad" text-anchor="start">P11  GP8 → C1</text>
+<rect x="705" y="577" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="746" y="591" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#a9b7b5" text-anchor="start">30</text>
+<rect x="463" y="607" width="32" height="16" rx="0" fill="#ffffff" stroke="#2276ad" stroke-width="2"/>
+<line x1="340" y1="615" x2="463" y2="615" stroke="#2276ad" stroke-width="3" stroke-linecap="round"/>
+<text x="66" y="622" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21" fill="#2276ad" text-anchor="start">P12  GP9 → C2</text>
+<rect x="705" y="607" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="746" y="621" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#a9b7b5" text-anchor="start">29</text>
+<rect x="463" y="637" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="453" y="651" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#5e6d7a" text-anchor="end">13</text>
+<rect x="705" y="637" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="746" y="651" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#a9b7b5" text-anchor="start">28</text>
+<rect x="463" y="667" width="32" height="16" rx="0" fill="#ffffff" stroke="#2276ad" stroke-width="2"/>
+<line x1="340" y1="675" x2="463" y2="675" stroke="#2276ad" stroke-width="3" stroke-linecap="round"/>
+<text x="66" y="682" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21" fill="#2276ad" text-anchor="start">P14  GP10 → C3</text>
+<rect x="705" y="667" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="746" y="681" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#a9b7b5" text-anchor="start">27</text>
+<rect x="463" y="697" width="32" height="16" rx="0" fill="#ffffff" stroke="#7552a1" stroke-width="2"/>
+<line x1="340" y1="705" x2="463" y2="705" stroke="#7552a1" stroke-width="3" stroke-linecap="round"/>
+<text x="66" y="712" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21" fill="#7552a1" text-anchor="start">P15  GP11 → LCD /CS</text>
+<rect x="705" y="697" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="746" y="711" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#a9b7b5" text-anchor="start">26</text>
+<rect x="463" y="727" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="453" y="741" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#5e6d7a" text-anchor="end">16</text>
+<rect x="705" y="727" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="746" y="741" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#a9b7b5" text-anchor="start">25</text>
+<rect x="463" y="757" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="453" y="771" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#5e6d7a" text-anchor="end">17</text>
+<rect x="705" y="757" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="746" y="771" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#a9b7b5" text-anchor="start">24</text>
+<rect x="463" y="787" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="453" y="801" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#5e6d7a" text-anchor="end">18</text>
+<rect x="705" y="787" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="746" y="801" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#a9b7b5" text-anchor="start">23</text>
+<rect x="463" y="817" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="453" y="831" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#5e6d7a" text-anchor="end">19</text>
+<rect x="705" y="817" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="746" y="831" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#a9b7b5" text-anchor="start">22</text>
+<rect x="463" y="847" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="453" y="861" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#5e6d7a" text-anchor="end">20</text>
+<rect x="705" y="847" width="32" height="16" rx="0" fill="#ffffff" stroke="#a9b7b5" stroke-width="2"/>
+<text x="746" y="861" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#a9b7b5" text-anchor="start">21</text>
+<text x="56" y="925" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17" fill="#5e6d7a" text-anchor="start">Pico焊接背面左右相反；实装USB在机身右侧。</text>
+<text x="56" y="948" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17" fill="#5e6d7a" text-anchor="start">其余针脚不接；LCD不用VBUS、VSYS或I²C上拉。</text>
+<rect x="868" y="205" width="756" height="430" rx="14" fill="#edf3f7" stroke="none" stroke-width="2"/>
+<text x="891" y="248" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="25" fill="#203346" text-anchor="start">B  GDM0103 / HT1621B · 3.3V版本</text>
+<text x="892" y="294" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" fill="#5e6d7a" text-anchor="start">LCD端子</text>
+<text x="1062" y="294" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" fill="#5e6d7a" text-anchor="start">信号</text>
+<text x="1237" y="294" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" fill="#5e6d7a" text-anchor="start">Pico信号</text>
+<text x="1450" y="294" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" fill="#5e6d7a" text-anchor="start">物理针脚</text>
+<line x1="890" y1="313" x2="1600" y2="313" stroke="#cfdae3" stroke-width="2" stroke-linecap="round"/>
+<text x="892" y="348" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="23" fill="#7552a1" text-anchor="start">P1</text>
+<text x="1062" y="348" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="23" fill="#7552a1" text-anchor="start">/CS</text>
+<text x="1237" y="348" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="23" fill="#7552a1" text-anchor="start">GP11</text>
+<text x="1450" y="348" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="23" fill="#7552a1" text-anchor="start">P15</text>
+<text x="892" y="387" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="23" fill="#107e85" text-anchor="start">P2</text>
+<text x="1062" y="387" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="23" fill="#107e85" text-anchor="start">/WR</text>
+<text x="1237" y="387" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="23" fill="#107e85" text-anchor="start">GP1</text>
+<text x="1450" y="387" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="23" fill="#107e85" text-anchor="start">P2</text>
+<text x="892" y="426" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="23" fill="#2276ad" text-anchor="start">P3</text>
+<text x="1062" y="426" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="23" fill="#2276ad" text-anchor="start">DATA</text>
+<text x="1237" y="426" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="23" fill="#2276ad" text-anchor="start">GP0</text>
+<text x="1450" y="426" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="23" fill="#2276ad" text-anchor="start">P1</text>
+<text x="892" y="465" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="23" fill="#343d49" text-anchor="start">P4</text>
+<text x="1062" y="465" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="23" fill="#343d49" text-anchor="start">VSS</text>
+<text x="1237" y="465" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="23" fill="#343d49" text-anchor="start">GND</text>
+<text x="1450" y="465" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="23" fill="#343d49" text-anchor="start">P38</text>
+<text x="892" y="504" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="23" fill="#bf3642" text-anchor="start">P5</text>
+<text x="1062" y="504" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="23" fill="#bf3642" text-anchor="start">VDD</text>
+<text x="1237" y="504" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="23" fill="#bf3642" text-anchor="start">3V3(OUT)</text>
+<text x="1450" y="504" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="23" fill="#bf3642" text-anchor="start">P36</text>
+<text x="892" y="550" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="19" fill="#203346" text-anchor="start">P6 /INT、P7 BL+、P8 BL−、P9 Ctrl分别绝缘不接。低位直焊P1–P5；端子方向见</text>
+<text x="892" y="577" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="19" fill="#203346" text-anchor="start">第4页。</text>
+<text x="892" y="679" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="23" fill="#203346" text-anchor="start">C  每列一个10kΩ，上端共接3V3 / P36</text>
+<line x1="902" y1="713" x2="1585" y2="713" stroke="#bf3642" stroke-width="4" stroke-linecap="round"/>
+<circle cx="940" cy="713" r="5" fill="#bf3642" stroke="#bf3642" stroke-width="2"/>
+<line x1="940" y1="713" x2="940" y2="732" stroke="#bf3642" stroke-width="3" stroke-linecap="round"/>
+<rect x="927" y="732" width="26" height="54" rx="0" fill="#ffffff" stroke="#203346" stroke-width="2"/>
+<text x="965" y="752" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#5e6d7a" text-anchor="start">RPU0</text>
+<text x="965" y="779" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18" fill="#203346" text-anchor="start">10kΩ</text>
+<line x1="940" y1="786" x2="940" y2="822" stroke="#2276ad" stroke-width="3" stroke-linecap="round"/>
+<circle cx="940" cy="822" r="5" fill="#2276ad" stroke="#2276ad" stroke-width="2"/>
+<text x="940" y="859" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21" fill="#2276ad" text-anchor="middle">C0 / GP7</text>
+<text x="940" y="891" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" fill="#5e6d7a" text-anchor="middle">P10</text>
+<circle cx="1130" cy="713" r="5" fill="#bf3642" stroke="#bf3642" stroke-width="2"/>
+<line x1="1130" y1="713" x2="1130" y2="732" stroke="#bf3642" stroke-width="3" stroke-linecap="round"/>
+<rect x="1117" y="732" width="26" height="54" rx="0" fill="#ffffff" stroke="#203346" stroke-width="2"/>
+<text x="1155" y="752" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#5e6d7a" text-anchor="start">RPU1</text>
+<text x="1155" y="779" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18" fill="#203346" text-anchor="start">10kΩ</text>
+<line x1="1130" y1="786" x2="1130" y2="822" stroke="#2276ad" stroke-width="3" stroke-linecap="round"/>
+<circle cx="1130" cy="822" r="5" fill="#2276ad" stroke="#2276ad" stroke-width="2"/>
+<text x="1130" y="859" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21" fill="#2276ad" text-anchor="middle">C1 / GP8</text>
+<text x="1130" y="891" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" fill="#5e6d7a" text-anchor="middle">P11</text>
+<circle cx="1320" cy="713" r="5" fill="#bf3642" stroke="#bf3642" stroke-width="2"/>
+<line x1="1320" y1="713" x2="1320" y2="732" stroke="#bf3642" stroke-width="3" stroke-linecap="round"/>
+<rect x="1307" y="732" width="26" height="54" rx="0" fill="#ffffff" stroke="#203346" stroke-width="2"/>
+<text x="1345" y="752" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#5e6d7a" text-anchor="start">RPU2</text>
+<text x="1345" y="779" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18" fill="#203346" text-anchor="start">10kΩ</text>
+<line x1="1320" y1="786" x2="1320" y2="822" stroke="#2276ad" stroke-width="3" stroke-linecap="round"/>
+<circle cx="1320" cy="822" r="5" fill="#2276ad" stroke="#2276ad" stroke-width="2"/>
+<text x="1320" y="859" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21" fill="#2276ad" text-anchor="middle">C2 / GP9</text>
+<text x="1320" y="891" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" fill="#5e6d7a" text-anchor="middle">P12</text>
+<circle cx="1510" cy="713" r="5" fill="#bf3642" stroke="#bf3642" stroke-width="2"/>
+<line x1="1510" y1="713" x2="1510" y2="732" stroke="#bf3642" stroke-width="3" stroke-linecap="round"/>
+<rect x="1497" y="732" width="26" height="54" rx="0" fill="#ffffff" stroke="#203346" stroke-width="2"/>
+<text x="1535" y="752" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" fill="#5e6d7a" text-anchor="start">RPU3</text>
+<text x="1535" y="779" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18" fill="#203346" text-anchor="start">10kΩ</text>
+<line x1="1510" y1="786" x2="1510" y2="822" stroke="#2276ad" stroke-width="3" stroke-linecap="round"/>
+<circle cx="1510" cy="822" r="5" fill="#2276ad" stroke="#2276ad" stroke-width="2"/>
+<text x="1510" y="859" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21" fill="#2276ad" text-anchor="middle">C3 / GP10</text>
+<text x="1510" y="891" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" fill="#5e6d7a" text-anchor="middle">P14</text>
+<rect x="56" y="957" width="755" height="171" rx="12" fill="#edf3f7" stroke="none" stroke-width="2"/>
+<rect x="840" y="957" width="784" height="171" rx="12" fill="#edf3f7" stroke="none" stroke-width="2"/>
+<text x="77" y="993" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24" fill="#203346" text-anchor="start">焊接顺序</text>
+<text x="77" y="1026" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" fill="#203346" text-anchor="start">① 单键 → ② 成行/列并逐键检查 → ③ 四个上拉</text>
+<text x="77" y="1059" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" fill="#203346" text-anchor="start">④ LCD五线单独测通 → ⑤ 最后接Pico共14针</text>
+<text x="77" y="1092" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" fill="#203346" text-anchor="start">⑥ 绝缘、断电复查；仍不插USB、不烧录。</text>
+<text x="861" y="993" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24" fill="#203346" text-anchor="start">测量必须分阶段</text>
+<text x="861" y="1026" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" fill="#203346" text-anchor="start">先独立矩阵三态；装上拉后列间约20kΩ正常。</text>
+<text x="861" y="1059" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" fill="#203346" text-anchor="start">接Pico/LCD后不能要求所有不同网络均为OL。</text>
+<text x="861" y="1092" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" fill="#203346" text-anchor="start">电源持续近零阻先分段排查；不以短暂蜂鸣判定。</text>
+<line x1="56" y1="1138" x2="1624" y2="1138" stroke="#cfdae3" stroke-width="2" stroke-linecap="round"/>
+<text x="56" y="1169" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17" fill="#5e6d7a" text-anchor="start">CalcKey · 现有GPIO / GDM0103 / 固件v0.2.0 · 仅接线示意，非1:1脚位或加工图</text>
+<text x="1624" y="1169" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17" fill="#5e6d7a" text-anchor="end">图纸LCD-B  |  3/4</text>
+</svg>

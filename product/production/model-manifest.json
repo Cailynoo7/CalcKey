@@ -1,0 +1,967 @@
+{
+  "source_receipt": "manufacturing/enclosure/releases/export-6c3912e110909b3a860c481fa0c90123/receipt.json",
+  "revision": "e29faaf07ec70bf7b65795e9035e3935c892f001dd0cdb50afa772fe0bd46970",
+  "export_id": "export-6c3912e110909b3a860c481fa0c90123",
+  "source_step_sha256": "cfb94e5ce8b9b026b91f8a6a9d78c3f1ec335ae6c4b40388ec432fba3cfdc743",
+  "conversion_only": true,
+  "tolerance_mm_by_object": true,
+  "angular_tolerance_rad": 0.05,
+  "units": "mm",
+  "printed_objects": 28,
+  "meshes": [
+    {
+      "object_id": "base",
+      "file": "product/production/models/base.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "nozzle_mm": 0.4,
+      "layer_mm": 0.15,
+      "local_print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        89.0,
+        130.0,
+        15.500000000000124
+      ],
+      "min_z_mm": -4.440892098500626e-16,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 29913.19232552181,
+      "bytes": 1225684,
+      "sha256": "fb64efe7421f8cb365e4d19410d404b668118b3694f820bd0272e34ef552f753",
+      "triangles": 24512,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "top",
+      "file": "product/production/models/top.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "nozzle_mm": 0.4,
+      "layer_mm": 0.15,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        89.0,
+        130.00000010000014,
+        18.6000001
+      ],
+      "min_z_mm": -5.023146163975381e-16,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 34106.55738806651,
+      "bytes": 1303184,
+      "sha256": "e1f85cd4e0721439e73412cb12f3358d46f2920168509fd178707f55f3f0f2b5",
+      "triangles": 26062,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "rear_foot_left",
+      "file": "product/production/models/rear_foot_left.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.4,
+      "layer_mm": 0.15,
+      "local_print_rotation_deg": [
+        0,
+        90,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        6.200000000000005,
+        10.35000000000062,
+        10.00000000000674
+      ],
+      "min_z_mm": -1.0078839350582087e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 347.9159269622337,
+      "bytes": 90284,
+      "sha256": "bbcb5a1f1f3fa0bdce6daf1746f113fc14a234f8cd8b0bfb8a98969f93142866",
+      "triangles": 1804,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "rear_foot_right",
+      "file": "product/production/models/rear_foot_right.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.4,
+      "layer_mm": 0.15,
+      "local_print_rotation_deg": [
+        0,
+        90,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        6.200000000000005,
+        10.35000000000062,
+        10.00000000000674
+      ],
+      "min_z_mm": 2.5448297437422923e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 347.9159269622337,
+      "bytes": 90284,
+      "sha256": "11a77dc9681bc6aca2c54b5041b04a271560deba90c1843d7c13632ae579c7e4",
+      "triangles": 1804,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "hinge_axle_left",
+      "file": "product/production/models/hinge_axle_left.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.4,
+      "layer_mm": 0.15,
+      "local_print_rotation_deg": [
+        0,
+        -90,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        5.0,
+        5.0,
+        19.3
+      ],
+      "min_z_mm": -1.776356839400339e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 109.97773402421633,
+      "bytes": 100684,
+      "sha256": "6d62b491d0eae5af62c8d0b261496954481df8c39fd8c43ddcd0eb505d834228",
+      "triangles": 2012,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "hinge_axle_right",
+      "file": "product/production/models/hinge_axle_right.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.4,
+      "layer_mm": 0.15,
+      "local_print_rotation_deg": [
+        0,
+        -90,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        5.0,
+        5.0,
+        19.3
+      ],
+      "min_z_mm": -1.776356839400329e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 109.97773402421632,
+      "bytes": 100684,
+      "sha256": "cab6359550d32c7578f75439939392900b6020c89a62110c40979fc3e020f599",
+      "triangles": 2012,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "hinge_cap_left",
+      "file": "product/production/models/hinge_cap_left.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.4,
+      "layer_mm": 0.15,
+      "local_print_rotation_deg": [
+        0,
+        90,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        5.000000000000001,
+        5.0,
+        2.400000000000002
+      ],
+      "min_z_mm": 2.442490654175425e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 40.75273990236719,
+      "bytes": 100684,
+      "sha256": "7c7bfcf810ecefe4f16ed65cfb4400197b5ced9b3f9e1de838116febfa1ce284",
+      "triangles": 2012,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "hinge_cap_right",
+      "file": "product/production/models/hinge_cap_right.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.4,
+      "layer_mm": 0.15,
+      "local_print_rotation_deg": [
+        0,
+        90,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        5.000000000000001,
+        5.0,
+        2.400000000000002
+      ],
+      "min_z_mm": 2.4424906541754225e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 40.75273990236717,
+      "bytes": 100684,
+      "sha256": "8e212d049ec6ae9c2f20e0d824d7cd13396b8e42b3d4e76749afa13113a9b206",
+      "triangles": 2012,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_01",
+      "file": "product/production/models/key_01.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 813.0196223494559,
+      "bytes": 615384,
+      "sha256": "ba8d829a6ea9734b54e8d2e40b85652ae1e51076f78d37655811710805dd020a",
+      "triangles": 12306,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_02",
+      "file": "product/production/models/key_02.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 814.4121634014406,
+      "bytes": 159084,
+      "sha256": "ffeb3e773485195fc3431fc1a830a0b46848312ecfffa1a67db1a31878b5e47a",
+      "triangles": 3180,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_03",
+      "file": "product/production/models/key_03.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 814.4409283141276,
+      "bytes": 175584,
+      "sha256": "9ef6be14b77a954df859c990c3bf37a9185d5e8732df8313e0fc8b2619d74a24",
+      "triangles": 3510,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_04",
+      "file": "product/production/models/key_04.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 813.4860320510097,
+      "bytes": 445384,
+      "sha256": "767ccc23a4f3f1abda7c7651d7fe54e9629c81daa667f304acd9f2169adebe65",
+      "triangles": 8906,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_05",
+      "file": "product/production/models/key_05.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 814.2572338480456,
+      "bytes": 174484,
+      "sha256": "49e6072b7f8300a39132b73d2df17a3b7cb198dad54b987b0a3887279cef4e21",
+      "triangles": 3488,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_06",
+      "file": "product/production/models/key_06.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 814.0484339253903,
+      "bytes": 792184,
+      "sha256": "4ac16eb1e46ada77070e6fc6727d456b3fcb48b1952c31702ebe83c083532208",
+      "triangles": 15842,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_07",
+      "file": "product/production/models/key_07.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 814.0655159475459,
+      "bytes": 583284,
+      "sha256": "4f6f8bebe7e11ca688e72d245eddd622a2239b362141080cee723cc8a5310e1e",
+      "triangles": 11664,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_08",
+      "file": "product/production/models/key_08.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 814.5075671278981,
+      "bytes": 159584,
+      "sha256": "972d60b53661177a525df38fd41e5fdfee09e2ec37aa030b23b433f80fe04996",
+      "triangles": 3190,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_09",
+      "file": "product/production/models/key_09.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 814.1578308961464,
+      "bytes": 161084,
+      "sha256": "798e73956d613496abc0e9452bf7087d9667a4a4a1453541c881b7d955d27f47",
+      "triangles": 3220,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_10",
+      "file": "product/production/models/key_10.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 814.1091861918017,
+      "bytes": 411584,
+      "sha256": "7ea669b6163d2e56b77e9e7368a9913b419844475f1ff80ed11d3f96c8759e43",
+      "triangles": 8230,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_11",
+      "file": "product/production/models/key_11.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 814.0611681855935,
+      "bytes": 578984,
+      "sha256": "42558d12800d905852d2dcb0b665c98256361a7b3d402590e361261f4d1fb979",
+      "triangles": 11578,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_12",
+      "file": "product/production/models/key_12.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 814.3482242371813,
+      "bytes": 160684,
+      "sha256": "6b27c7711df6c6713283014ff7e18008e6f189f7263addf63d5a0dc5d4cb0b70",
+      "triangles": 3212,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_13",
+      "file": "product/production/models/key_13.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 814.3217639886618,
+      "bytes": 174084,
+      "sha256": "7e12bfe34bbbdff1522ff8ec334ee3dd6ef490cced95e9d5e5790e28de226bbb",
+      "triangles": 3480,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_14",
+      "file": "product/production/models/key_14.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 814.1361210298244,
+      "bytes": 366284,
+      "sha256": "b97a14680f21a8ed897c42359d08620396d514c2efabbfa1cd2ae481d2ef7f82",
+      "triangles": 7324,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_15",
+      "file": "product/production/models/key_15.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 814.1560034048433,
+      "bytes": 609384,
+      "sha256": "bea226eaab00e49a9769d6f9a403e3afbd1ddce0c0ee9b04d0fd840e1e3bcf90",
+      "triangles": 12186,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_16",
+      "file": "product/production/models/key_16.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 814.32701040594,
+      "bytes": 159884,
+      "sha256": "03e2150c4354008c1b559db2047165ffbc18004202cf473f0ecd0e3cb2109bec",
+      "triangles": 3196,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_17",
+      "file": "product/production/models/key_17.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 812.4951998408111,
+      "bytes": 1010084,
+      "sha256": "35ed411f95cc2517b29fc871b1578e5455b3498a05a8db08d223afa212349190",
+      "triangles": 20200,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_18",
+      "file": "product/production/models/key_18.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 814.1077373674805,
+      "bytes": 452084,
+      "sha256": "3d4fad236466b567216e57c1af408aec63a22f9e7ca6149979a96d5d780186eb",
+      "triangles": 9040,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_19",
+      "file": "product/production/models/key_19.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 814.554133070186,
+      "bytes": 159084,
+      "sha256": "784337bc2fd48ddb680e24d84fd74946700897ea40c98128262e7c4ff1ef7816",
+      "triangles": 3180,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_20",
+      "file": "product/production/models/key_20.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 813.5678664037325,
+      "bytes": 378584,
+      "sha256": "d38e216276eaf87c0dd8bf6ca674cd4a947a39afc1886717149622894ef2b774",
+      "triangles": 7570,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    }
+  ],
+  "printer_started": false,
+  "sliced": false
+}

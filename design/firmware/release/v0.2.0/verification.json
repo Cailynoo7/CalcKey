@@ -1,0 +1,215 @@
+{
+  "version": "0.2.0",
+  "board": "pico2",
+  "platform": "rp2350-arm-s",
+  "display": "GDM0103 / HT1621B, 3.3V",
+  "lcd_gpio": {
+    "data": 0,
+    "wr": 1,
+    "cs": 11
+  },
+  "display_cells": 8,
+  "flashed": false,
+  "display_ack_available": false,
+  "built_utc": "2026-11-05T14:17:45.754177+00:00",
+  "compiler": "arm-none-eabi-gcc (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 14.2.1 20241119",
+  "host_test_counts": [
+    93,
+    47270,
+    2500,
+    3023
+  ],
+  "uf2_blocks": 385,
+  "uf2_application_blocks": 384,
+  "uf2_rp2350_e10_ignored_blocks": 1,
+  "uf2_families": [
+    "0xe48bff57",
+    "0xe48bff59"
+  ],
+  "picotool_info": "File /Users/xonar/Documents/Replicator/CalcKey/.work/firmware-build/calckey.uf2\nfamily ID 'rp2350-arm-s':\n\nProgram Information\n name:                CalcKey\n version:             0.2.0\n binary start:        0x10000000\n binary end:          0x10017f84\n target chip:         RP2350\n image type:          ARM Secure\n\nFixed Pin Information\n none\n\nBuild Information\n sdk version:         2.2.0\n pico_board:          pico2\n boot2_name:          boot2_w25q080\n build date:          Nov  5 2026\n build attributes:    Release\n\nMetadata Block 1\n address:             0x10000138\n next block address:  0x10017f70\n block type:          image def\n target chip:         RP2350\n image type:          ARM Secure\n\nMetadata Block 2\n address:             0x10017f70\n next block address:  0x10000138\n block type:          ignored\n",
+  "size_output": "   text\t   data\t    bss\t    dec\t    hex\tfilename\n 104324\t      0\t   3768\t 108092\t  1a63c\t/Users/xonar/Documents/Replicator/CalcKey/.work/firmware-build/calckey.elf\n",
+  "hardware_tested": false,
+  "artifacts": {
+    "calckey-pico2-v0.2.0.uf2": {
+      "bytes": 197120,
+      "sha256": "bcee532edc517227efc67c50582ff501331b898b9abefdd787bb19791952b662"
+    },
+    "calckey-pico2-v0.2.0.elf": {
+      "bytes": 1125020,
+      "sha256": "388ba5d3de92867b4a2edb9f0bf39367afcaee16b71107bf1d39bd8344902e07"
+    },
+    "calckey-pico2-v0.2.0.bin": {
+      "bytes": 98180,
+      "sha256": "68414547dec308ec0d153eee6f71722491a248a9c30b2a91c2c4d4851aafe6a4"
+    }
+  },
+  "source_hashes": {
+    "design/firmware/README.md": "f573ccdde0f6038483839758d09071d7333d26553d9e735f21d69c6fdd8b246b",
+    "design/firmware/bootstrap.py": "83e46f1aee05237ab9dc86f7a332d0532f060dd1f94cc0874b04378acffa5521",
+    "design/firmware/build.py": "6768eb5799863a0937f83db031d65c752fc5dc6058e4e3b29d2cd00b5433fcfb",
+    "design/firmware/check_wiring.py": "2da5f77fe50822688b5626605bfb9e7897316d797757414dbcde0a9893c94bd3",
+    "design/firmware/dependencies.lock.json": "c7232f0ab494f90036a13dbe794cf4656827605beb09dc93f89c3b3ecfa78a5d",
+    "design/firmware/source/CMakeLists.txt": "ddf6a449431f3602cb746408450292a90774d2c33ca22f18f1dc16ee4c26f1a1",
+    "design/firmware/source/application.cpp": "a88c12a7d5c8df99f72921ac944836eab3d18354cd6ddbc090561bf9aae338a5",
+    "design/firmware/source/board_config.hpp": "c1a7148c127f99e477a89444ba9242b9bb749eec8028d3db9983b9ef2766d558",
+    "design/firmware/source/core.hpp": "74dcb1b5408a1f20e4d098dc9720f2f185bdd60a166f5be30503012f2ea3b750",
+    "design/firmware/source/decimal.cpp": "1d563c208957064a0f851d9197d6d80c5a9fdcf73fa48f3b12ffb8d39add4247",
+    "design/firmware/source/lcd.cpp": "b84080ad670d017485dce82e6e4c0bf912c2a6b634e0f61ba25192cb72a697cc",
+    "design/firmware/source/lcd.hpp": "fe60b6c398882d015cdead7f037f90b1ce72853e6a84f853227d9a180c721a90",
+    "design/firmware/source/main.cpp": "f829999a008af4ded6db1254363151c6cb2947620e75fc6dc83a92a1290fbfe7",
+    "design/firmware/source/tusb_config.h": "692e9a873c3934f30e8b9d30f505cbf2df948d787487d4cea913079d55295be2",
+    "design/firmware/source/usb_descriptors.cpp": "2a2a0ddae1f959ea528ef8183f68fbf5107ded3c1d55791b3db8b0753db2195c",
+    "design/firmware/tests/core_tests.cpp": "b9770c972308d592a6bf24a5f172de385c2d3d08e6c95206e0c69f06decc5d93",
+    "design/firmware/tests/decimal_cli.cpp": "80f15038cbd910486fa55a6c701e211feadb9f135b1238d5fecb961f1eaae886",
+    "design/firmware/tests/decimal_oracle.py": "8c92e5f5e1eba08ca18327909fa4866a80f37ad3f9d00dbc1adb8a4474e46c82",
+    "design/firmware/tests/fakes/hardware/gpio.h": "027346a5ca24a0b767e51fe59372e56a7bf9fb569acd43cce4f575610e4118f4",
+    "design/firmware/tests/fakes/pico/time.h": "513cdf2d7da7f5cd616c29555772b6825eb8679cc1e99c42e012173ad5590041",
+    "design/firmware/tests/lcd_decimal_cli.cpp": "d89824020241cd12908fd8ca93b4d0fb0adc80a4b0ed34f4b6a801fa484c9314",
+    "design/firmware/tests/lcd_decimal_oracle.py": "8e1a18c52b9b4a1d4be6a0fe861e4df1b720e1c83e4b5720e099d1654056b430",
+    "design/firmware/tests/lcd_tests.cpp": "10d0e1dee907eda937a1f1e70d704db9363eac8b9d8543b980f5b550edc087de",
+    "design/enclosure/source/wiring.json": "ba92aa5d7554b7d56ab5506cac6462c8b075e56c1b9bc9547d3a93b939c08cb8",
+    "product/requirements.json": "fc48aea598ec3a6a8e56c04a610f3aa1895fff257581b300e213dfa63c5007d8",
+    "product/references/gdm0103-specification.pdf": "5a99da5743955683150a6527b8757073570189a4aa4ce2f4131a8d0baec73ba8",
+    "product/references/ht1621-v340.pdf": "e066c0d4f202324656e074f935e50cc49dfa87debd8af27c893309c4c5eb4e76"
+  },
+  "commands": [
+    {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "/Users/xonar/Documents/Replicator/CalcKey/design/firmware/check_wiring.py"
+      ],
+      "exit_code": 0,
+      "output": "PASS LCD GPIO/power/unused terminals, 20 switches/diodes and 4 pullups match wiring.json\n"
+    },
+    {
+      "command": [
+        "clang++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fsanitize=address,undefined",
+        "-g",
+        "-I",
+        "/Users/xonar/Documents/Replicator/CalcKey/design/firmware/source",
+        "/Users/xonar/Documents/Replicator/CalcKey/design/firmware/source/decimal.cpp",
+        "/Users/xonar/Documents/Replicator/CalcKey/design/firmware/source/application.cpp",
+        "/Users/xonar/Documents/Replicator/CalcKey/design/firmware/tests/core_tests.cpp",
+        "-o",
+        "/Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tests/core_tests"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "/Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tests/core_tests"
+      ],
+      "exit_code": 0,
+      "output": "PASS 93 core assertions\n"
+    },
+    {
+      "command": [
+        "clang++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fsanitize=address,undefined",
+        "-g",
+        "-I",
+        "/Users/xonar/Documents/Replicator/CalcKey/design/firmware/source",
+        "/Users/xonar/Documents/Replicator/CalcKey/design/firmware/source/decimal.cpp",
+        "/Users/xonar/Documents/Replicator/CalcKey/design/firmware/source/application.cpp",
+        "-I",
+        "/Users/xonar/Documents/Replicator/CalcKey/design/firmware/tests/fakes",
+        "/Users/xonar/Documents/Replicator/CalcKey/design/firmware/source/lcd.cpp",
+        "/Users/xonar/Documents/Replicator/CalcKey/design/firmware/tests/lcd_tests.cpp",
+        "-o",
+        "/Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tests/lcd_tests"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "/Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tests/lcd_tests"
+      ],
+      "exit_code": 0,
+      "output": "PASS 47270 LCD waveform, segment mapping and mode assertions\n"
+    },
+    {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "/Users/xonar/Documents/Replicator/CalcKey/design/firmware/tests/decimal_oracle.py"
+      ],
+      "exit_code": 0,
+      "output": "PASS 2500 seeded arithmetic cases against Python decimal (12 significant digits)\n"
+    },
+    {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "/Users/xonar/Documents/Replicator/CalcKey/design/firmware/tests/lcd_decimal_oracle.py"
+      ],
+      "exit_code": 0,
+      "output": "PASS 3023 LCD signed/rounding/overflow cases against Python decimal\n"
+    },
+    {
+      "command": [
+        "/Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tools/python/cmake/data/bin/cmake",
+        "-S",
+        "/Users/xonar/Documents/Replicator/CalcKey/design/firmware/source",
+        "-B",
+        "/Users/xonar/Documents/Replicator/CalcKey/.work/firmware-build",
+        "-G",
+        "Ninja",
+        "-DCMAKE_MAKE_PROGRAM=/Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tools/python/bin/ninja",
+        "-DPICO_BOARD=pico2",
+        "-DPICO_SDK_PATH=/Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tools/pico-sdk-2.2.0",
+        "-DPICO_TOOLCHAIN_PATH=/Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tools/arm-gnu-toolchain-14.2.rel1-darwin-arm64-arm-none-eabi",
+        "-DPICO_TINYUSB_PATH=/Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tools/tinyusb-0.18.0",
+        "-Dpicotool_DIR=/Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tools/picotool-install/picotool",
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "exit_code": 0,
+      "output": "PICO_SDK_PATH is /Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tools/pico-sdk-2.2.0\nTarget board (PICO_BOARD) is 'pico2'.\nUsing board configuration from /Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tools/pico-sdk-2.2.0/src/boards/include/boards/pico2.h\nPico Platform (PICO_PLATFORM) is 'rp2350-arm-s'.\nBuild type is Release\nUsing picotool from /Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tools/picotool-install/picotool/picotool\nTinyUSB available at /Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tools/tinyusb-0.18.0/hw/bsp/rp2040; enabling build support for USB.\n-- Configuring done (0.3s)\n-- Generating done (0.1s)\n-- Build files have been written to: /Users/xonar/Documents/Replicator/CalcKey/.work/firmware-build\n"
+    },
+    {
+      "command": [
+        "/Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tools/python/cmake/data/bin/cmake",
+        "--build",
+        "/Users/xonar/Documents/Replicator/CalcKey/.work/firmware-build",
+        "--parallel",
+        "6"
+      ],
+      "exit_code": 0,
+      "output": "ninja: no work to do.\n"
+    },
+    {
+      "command": [
+        "/Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tools/picotool-install/picotool/picotool",
+        "info",
+        "-a",
+        "/Users/xonar/Documents/Replicator/CalcKey/.work/firmware-build/calckey.uf2"
+      ],
+      "exit_code": 0,
+      "output": "File /Users/xonar/Documents/Replicator/CalcKey/.work/firmware-build/calckey.uf2\nfamily ID 'rp2350-arm-s':\n\nProgram Information\n name:                CalcKey\n version:             0.2.0\n binary start:        0x10000000\n binary end:          0x10017f84\n target chip:         RP2350\n image type:          ARM Secure\n\nFixed Pin Information\n none\n\nBuild Information\n sdk version:         2.2.0\n pico_board:          pico2\n boot2_name:          boot2_w25q080\n build date:          Nov  5 2026\n build attributes:    Release\n\nMetadata Block 1\n address:             0x10000138\n next block address:  0x10017f70\n block type:          image def\n target chip:         RP2350\n image type:          ARM Secure\n\nMetadata Block 2\n address:             0x10017f70\n next block address:  0x10000138\n block type:          ignored\n"
+    },
+    {
+      "command": [
+        "/Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tools/arm-gnu-toolchain-14.2.rel1-darwin-arm64-arm-none-eabi/bin/arm-none-eabi-size",
+        "/Users/xonar/Documents/Replicator/CalcKey/.work/firmware-build/calckey.elf"
+      ],
+      "exit_code": 0,
+      "output": "   text\t   data\t    bss\t    dec\t    hex\tfilename\n 104324\t      0\t   3768\t 108092\t  1a63c\t/Users/xonar/Documents/Replicator/CalcKey/.work/firmware-build/calckey.elf\n"
+    },
+    {
+      "command": [
+        "/Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tools/arm-gnu-toolchain-14.2.rel1-darwin-arm64-arm-none-eabi/bin/arm-none-eabi-gcc",
+        "--version"
+      ],
+      "exit_code": 0,
+      "output": "arm-none-eabi-gcc (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 14.2.1 20241119\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "title": "CalcKey GDM0103 soldering, insulation and unpowered checks",
+  "version": "LCD-B",
+  "firmware": "0.2.0",
+  "wiring_sha256": "ba92aa5d7554b7d56ab5506cac6462c8b075e56c1b9bc9547d3a93b939c08cb8",
+  "pdf_pages": 9,
+  "key_branches_checked": 20,
+  "external_pullups_checked": 4,
+  "pico_pins_checked": 14,
+  "record_rows": {
+    "components": 44,
+    "keys": 20,
+    "pullups_and_pairs": 10,
+    "wires_and_lcd_nc": 18,
+    "stages": 18
+  },
+  "physical_assembly_tested": false,
+  "flashed": false,
+  "lcd_connected_pads": 5,
+  "lcd_nc_pads": 4,
+  "physical_record_initial_status": "待测",
+  "sources": [
+    {
+      "title": "Pico 2物理针脚：官方数据表PDF第5页图2",
+      "url": "https://pip.raspberrypi.com/documents/RP-008299-DS"
+    },
+    {
+      "title": "GDM0103厂商手册PDF第7/8页：端子及方向",
+      "url": "https://www.radiomag.com.de/datasheets/gdm0103_specification.pdf"
+    },
+    {
+      "title": "Vishay 1N4148黑环K：PDF第1页",
+      "url": "https://www.vishay.com/docs/81857/1n4148.pdf"
+    },
+    {
+      "title": "Fluke：断电与二极管正反向测量/在路影响",
+      "url": "https://www.fluke.com/en-gb/learn/blog/digital-multimeters/how-to-test-diodes"
+    },
+    {
+      "title": "Kester FAQ：工艺温度取决于焊接材料",
+      "url": "https://www.kester.com/knowledge-base/faq"
+    }
+  ],
+  "files": {
+    "README.md": "3d61a98b4795fe11cee2a83bb60aaf11d618c7f863982215a1f333b300e5cfc0",
+    "calckey-soldering-procedure.pdf": "646b23ad84d5edb7f397a9aee2e2837b833d9b1912017053224964765e75a6b5",
+    "component-check-record.csv": "c23220377216b8d44a9fecd89539dfab3b588ae90cc99b0076c96019e9513ca5",
+    "generate_soldering_guide.py": "e2d99b619adc739ce2f24f469469504c78be09f56c35b89bda0109230c2b15d9",
+    "key-check-record.csv": "e373dfc20c8da336fac99ed5d9d035b10401bc3c5b0b033e7a3b991e9291ef73",
+    "pullup-check-record.csv": "0c1a9790b927f8e5614044a3bd0bea29cf7d847818c16a3026fde4c4736c29bf",
+    "soldering-procedure.md": "bc7e7f987ea22687ad6047df0359ee939dc2e9431c10f0aadd9ffe691029c90f",
+    "stage-check-record.csv": "3c9b280248cf3d72a84fe24ec66ac522af2bd2d66cab806961c27a6e7ffa140e",
+    "wire-check-record.csv": "c8a53126077e156a5fa2e8ee5fda6b174027e2e537466a8a0f5f2bce034a8ede"
+  }
+}

@@ -1,0 +1,1539 @@
+{
+  "parts": [
+    {
+      "ref": "MCU",
+      "platform": "raspberrypi/pico-2",
+      "quantity": 1
+    },
+    {
+      "ref": "LCD",
+      "name": "Good Display GDM0103，HT1621B，3.3V/6点钟视角，初版不接背光",
+      "quantity": 1
+    },
+    {
+      "ref": "USB",
+      "name": "电脑USB接口或5V USB-A充电器，通过USB-A至Micro-B数据线连接；两者择一",
+      "quantity": 1
+    },
+    {
+      "ref": "SW01",
+      "name": "GATERON KS-9 Red KS-9H10B045NN-X14 三脚；R0C0 NumLock",
+      "quantity": 1
+    },
+    {
+      "ref": "D01",
+      "name": "Vishay 1N4148-TAP DO-35，色环为K",
+      "quantity": 1
+    },
+    {
+      "ref": "SW02",
+      "name": "GATERON KS-9 Red KS-9H10B045NN-X14 三脚；R0C1 ÷",
+      "quantity": 1
+    },
+    {
+      "ref": "D02",
+      "name": "Vishay 1N4148-TAP DO-35，色环为K",
+      "quantity": 1
+    },
+    {
+      "ref": "SW03",
+      "name": "GATERON KS-9 Red KS-9H10B045NN-X14 三脚；R0C2 ×",
+      "quantity": 1
+    },
+    {
+      "ref": "D03",
+      "name": "Vishay 1N4148-TAP DO-35，色环为K",
+      "quantity": 1
+    },
+    {
+      "ref": "SW04",
+      "name": "GATERON KS-9 Red KS-9H10B045NN-X14 三脚；R0C3 Backspace",
+      "quantity": 1
+    },
+    {
+      "ref": "D04",
+      "name": "Vishay 1N4148-TAP DO-35，色环为K",
+      "quantity": 1
+    },
+    {
+      "ref": "SW05",
+      "name": "GATERON KS-9 Red KS-9H10B045NN-X14 三脚；R1C0 7",
+      "quantity": 1
+    },
+    {
+      "ref": "D05",
+      "name": "Vishay 1N4148-TAP DO-35，色环为K",
+      "quantity": 1
+    },
+    {
+      "ref": "SW06",
+      "name": "GATERON KS-9 Red KS-9H10B045NN-X14 三脚；R1C1 8",
+      "quantity": 1
+    },
+    {
+      "ref": "D06",
+      "name": "Vishay 1N4148-TAP DO-35，色环为K",
+      "quantity": 1
+    },
+    {
+      "ref": "SW07",
+      "name": "GATERON KS-9 Red KS-9H10B045NN-X14 三脚；R1C2 9",
+      "quantity": 1
+    },
+    {
+      "ref": "D07",
+      "name": "Vishay 1N4148-TAP DO-35，色环为K",
+      "quantity": 1
+    },
+    {
+      "ref": "SW08",
+      "name": "GATERON KS-9 Red KS-9H10B045NN-X14 三脚；R1C3 −",
+      "quantity": 1
+    },
+    {
+      "ref": "D08",
+      "name": "Vishay 1N4148-TAP DO-35，色环为K",
+      "quantity": 1
+    },
+    {
+      "ref": "SW09",
+      "name": "GATERON KS-9 Red KS-9H10B045NN-X14 三脚；R2C0 4",
+      "quantity": 1
+    },
+    {
+      "ref": "D09",
+      "name": "Vishay 1N4148-TAP DO-35，色环为K",
+      "quantity": 1
+    },
+    {
+      "ref": "SW10",
+      "name": "GATERON KS-9 Red KS-9H10B045NN-X14 三脚；R2C1 5",
+      "quantity": 1
+    },
+    {
+      "ref": "D10",
+      "name": "Vishay 1N4148-TAP DO-35，色环为K",
+      "quantity": 1
+    },
+    {
+      "ref": "SW11",
+      "name": "GATERON KS-9 Red KS-9H10B045NN-X14 三脚；R2C2 6",
+      "quantity": 1
+    },
+    {
+      "ref": "D11",
+      "name": "Vishay 1N4148-TAP DO-35，色环为K",
+      "quantity": 1
+    },
+    {
+      "ref": "SW12",
+      "name": "GATERON KS-9 Red KS-9H10B045NN-X14 三脚；R2C3 +",
+      "quantity": 1
+    },
+    {
+      "ref": "D12",
+      "name": "Vishay 1N4148-TAP DO-35，色环为K",
+      "quantity": 1
+    },
+    {
+      "ref": "SW13",
+      "name": "GATERON KS-9 Red KS-9H10B045NN-X14 三脚；R3C0 1",
+      "quantity": 1
+    },
+    {
+      "ref": "D13",
+      "name": "Vishay 1N4148-TAP DO-35，色环为K",
+      "quantity": 1
+    },
+    {
+      "ref": "SW14",
+      "name": "GATERON KS-9 Red KS-9H10B045NN-X14 三脚；R3C1 2",
+      "quantity": 1
+    },
+    {
+      "ref": "D14",
+      "name": "Vishay 1N4148-TAP DO-35，色环为K",
+      "quantity": 1
+    },
+    {
+      "ref": "SW15",
+      "name": "GATERON KS-9 Red KS-9H10B045NN-X14 三脚；R3C2 3",
+      "quantity": 1
+    },
+    {
+      "ref": "D15",
+      "name": "Vishay 1N4148-TAP DO-35，色环为K",
+      "quantity": 1
+    },
+    {
+      "ref": "SW16",
+      "name": "GATERON KS-9 Red KS-9H10B045NN-X14 三脚；R3C3 Enter/=",
+      "quantity": 1
+    },
+    {
+      "ref": "D16",
+      "name": "Vishay 1N4148-TAP DO-35，色环为K",
+      "quantity": 1
+    },
+    {
+      "ref": "SW17",
+      "name": "GATERON KS-9 Red KS-9H10B045NN-X14 三脚；R4C0 Mode",
+      "quantity": 1
+    },
+    {
+      "ref": "D17",
+      "name": "Vishay 1N4148-TAP DO-35，色环为K",
+      "quantity": 1
+    },
+    {
+      "ref": "SW18",
+      "name": "GATERON KS-9 Red KS-9H10B045NN-X14 三脚；R4C1 0",
+      "quantity": 1
+    },
+    {
+      "ref": "D18",
+      "name": "Vishay 1N4148-TAP DO-35，色环为K",
+      "quantity": 1
+    },
+    {
+      "ref": "SW19",
+      "name": "GATERON KS-9 Red KS-9H10B045NN-X14 三脚；R4C2 .",
+      "quantity": 1
+    },
+    {
+      "ref": "D19",
+      "name": "Vishay 1N4148-TAP DO-35，色环为K",
+      "quantity": 1
+    },
+    {
+      "ref": "SW20",
+      "name": "GATERON KS-9 Red KS-9H10B045NN-X14 三脚；R4C3 AC",
+      "quantity": 1
+    },
+    {
+      "ref": "D20",
+      "name": "Vishay 1N4148-TAP DO-35，色环为K",
+      "quantity": 1
+    },
+    {
+      "ref": "RPU0",
+      "name": "10kΩ ±1% 1/8W 轴向上拉电阻",
+      "quantity": 1
+    },
+    {
+      "ref": "RPU1",
+      "name": "10kΩ ±1% 1/8W 轴向上拉电阻",
+      "quantity": 1
+    },
+    {
+      "ref": "RPU2",
+      "name": "10kΩ ±1% 1/8W 轴向上拉电阻",
+      "quantity": 1
+    },
+    {
+      "ref": "RPU3",
+      "name": "10kΩ ±1% 1/8W 轴向上拉电阻",
+      "quantity": 1
+    }
+  ],
+  "connections": [
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GND"
+      },
+      "to": {
+        "part": "LCD",
+        "pin": "P4 VSS"
+      },
+      "bus": "power",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.radiomag.com.de/datasheets/gdm0103_specification.pdf#page=8"
+      ],
+      "notes": "Pico物理pin38 → LCD P4 VSS；三线位操作写入，不是I2C；3.3V，低位短软线直焊，焊后突出板背≤1.5mm，150mm维护余量。LCD P6 /INT、P7 BL+、P8 BL-、P9 Ctrl分别绝缘不接。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "3V3"
+      },
+      "to": {
+        "part": "LCD",
+        "pin": "P5 VDD"
+      },
+      "bus": "power",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.radiomag.com.de/datasheets/gdm0103_specification.pdf#page=8"
+      ],
+      "notes": "Pico物理pin36 → LCD P5 VDD；三线位操作写入，不是I2C；3.3V，低位短软线直焊，焊后突出板背≤1.5mm，150mm维护余量。LCD P6 /INT、P7 BL+、P8 BL-、P9 Ctrl分别绝缘不接。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP11"
+      },
+      "to": {
+        "part": "LCD",
+        "pin": "P1 /CS"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.radiomag.com.de/datasheets/gdm0103_specification.pdf#page=8"
+      ],
+      "notes": "Pico物理pin15 → LCD P1 /CS；三线位操作写入，不是I2C；3.3V，低位短软线直焊，焊后突出板背≤1.5mm，150mm维护余量。LCD P6 /INT、P7 BL+、P8 BL-、P9 Ctrl分别绝缘不接。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP1"
+      },
+      "to": {
+        "part": "LCD",
+        "pin": "P2 /WR"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.radiomag.com.de/datasheets/gdm0103_specification.pdf#page=8"
+      ],
+      "notes": "Pico物理pin2 → LCD P2 /WR；三线位操作写入，不是I2C；3.3V，低位短软线直焊，焊后突出板背≤1.5mm，150mm维护余量。LCD P6 /INT、P7 BL+、P8 BL-、P9 Ctrl分别绝缘不接。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP0"
+      },
+      "to": {
+        "part": "LCD",
+        "pin": "P3 DATA"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.radiomag.com.de/datasheets/gdm0103_specification.pdf#page=8"
+      ],
+      "notes": "Pico物理pin1 → LCD P3 DATA；三线位操作写入，不是I2C；3.3V，低位短软线直焊，焊后突出板背≤1.5mm，150mm维护余量。LCD P6 /INT、P7 BL+、P8 BL-、P9 Ctrl分别绝缘不接。"
+    },
+    {
+      "from": {
+        "part": "USB",
+        "pin": "D+"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "USB_DP"
+      },
+      "bus": "usb",
+      "via": "other",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=10"
+      ],
+      "notes": "原生Micro-B数据口内置连接，不另焊测试点"
+    },
+    {
+      "from": {
+        "part": "USB",
+        "pin": "D-"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "USB_DM"
+      },
+      "bus": "usb",
+      "via": "other",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=10"
+      ],
+      "notes": "原生Micro-B数据口内置连接，不另焊测试点"
+    },
+    {
+      "from": {
+        "part": "USB",
+        "pin": "VBUS"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "VBUS"
+      },
+      "bus": "power",
+      "via": "other",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=16"
+      ],
+      "notes": "原生Micro-B口及板载D1 → VSYS；不得短接VBUS和VSYS"
+    },
+    {
+      "from": {
+        "part": "USB",
+        "pin": "GND"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GND"
+      },
+      "bus": "power",
+      "via": "other",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=16"
+      ],
+      "notes": "原生Micro-B口内置地连接"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP7"
+      },
+      "to": {
+        "part": "SW01",
+        "pin": "1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "C0列总线；GP7输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "SW01",
+        "pin": "2"
+      },
+      "to": {
+        "part": "D01",
+        "pin": "A"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "SW01另一触点串联二极管阳极（无色环端）；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "D01",
+        "pin": "K"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP2"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+      ],
+      "notes": "R0行总线，二极管色环朝行；扫描此行时GP2输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP8"
+      },
+      "to": {
+        "part": "SW02",
+        "pin": "1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "C1列总线；GP8输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "SW02",
+        "pin": "2"
+      },
+      "to": {
+        "part": "D02",
+        "pin": "A"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "SW02另一触点串联二极管阳极（无色环端）；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "D02",
+        "pin": "K"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP2"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+      ],
+      "notes": "R0行总线，二极管色环朝行；扫描此行时GP2输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP9"
+      },
+      "to": {
+        "part": "SW03",
+        "pin": "1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "C2列总线；GP9输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "SW03",
+        "pin": "2"
+      },
+      "to": {
+        "part": "D03",
+        "pin": "A"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "SW03另一触点串联二极管阳极（无色环端）；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "D03",
+        "pin": "K"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP2"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+      ],
+      "notes": "R0行总线，二极管色环朝行；扫描此行时GP2输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP10"
+      },
+      "to": {
+        "part": "SW04",
+        "pin": "1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "C3列总线；GP10输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "SW04",
+        "pin": "2"
+      },
+      "to": {
+        "part": "D04",
+        "pin": "A"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "SW04另一触点串联二极管阳极（无色环端）；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "D04",
+        "pin": "K"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP2"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+      ],
+      "notes": "R0行总线，二极管色环朝行；扫描此行时GP2输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP7"
+      },
+      "to": {
+        "part": "SW05",
+        "pin": "1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "C0列总线；GP7输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "SW05",
+        "pin": "2"
+      },
+      "to": {
+        "part": "D05",
+        "pin": "A"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "SW05另一触点串联二极管阳极（无色环端）；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "D05",
+        "pin": "K"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP3"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+      ],
+      "notes": "R1行总线，二极管色环朝行；扫描此行时GP3输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP8"
+      },
+      "to": {
+        "part": "SW06",
+        "pin": "1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "C1列总线；GP8输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "SW06",
+        "pin": "2"
+      },
+      "to": {
+        "part": "D06",
+        "pin": "A"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "SW06另一触点串联二极管阳极（无色环端）；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "D06",
+        "pin": "K"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP3"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+      ],
+      "notes": "R1行总线，二极管色环朝行；扫描此行时GP3输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP9"
+      },
+      "to": {
+        "part": "SW07",
+        "pin": "1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "C2列总线；GP9输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "SW07",
+        "pin": "2"
+      },
+      "to": {
+        "part": "D07",
+        "pin": "A"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "SW07另一触点串联二极管阳极（无色环端）；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "D07",
+        "pin": "K"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP3"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+      ],
+      "notes": "R1行总线，二极管色环朝行；扫描此行时GP3输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP10"
+      },
+      "to": {
+        "part": "SW08",
+        "pin": "1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "C3列总线；GP10输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "SW08",
+        "pin": "2"
+      },
+      "to": {
+        "part": "D08",
+        "pin": "A"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "SW08另一触点串联二极管阳极（无色环端）；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "D08",
+        "pin": "K"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP3"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+      ],
+      "notes": "R1行总线，二极管色环朝行；扫描此行时GP3输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP7"
+      },
+      "to": {
+        "part": "SW09",
+        "pin": "1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "C0列总线；GP7输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "SW09",
+        "pin": "2"
+      },
+      "to": {
+        "part": "D09",
+        "pin": "A"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "SW09另一触点串联二极管阳极（无色环端）；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "D09",
+        "pin": "K"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP4"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+      ],
+      "notes": "R2行总线，二极管色环朝行；扫描此行时GP4输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP8"
+      },
+      "to": {
+        "part": "SW10",
+        "pin": "1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "C1列总线；GP8输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "SW10",
+        "pin": "2"
+      },
+      "to": {
+        "part": "D10",
+        "pin": "A"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "SW10另一触点串联二极管阳极（无色环端）；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "D10",
+        "pin": "K"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP4"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+      ],
+      "notes": "R2行总线，二极管色环朝行；扫描此行时GP4输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP9"
+      },
+      "to": {
+        "part": "SW11",
+        "pin": "1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "C2列总线；GP9输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "SW11",
+        "pin": "2"
+      },
+      "to": {
+        "part": "D11",
+        "pin": "A"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "SW11另一触点串联二极管阳极（无色环端）；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "D11",
+        "pin": "K"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP4"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+      ],
+      "notes": "R2行总线，二极管色环朝行；扫描此行时GP4输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP10"
+      },
+      "to": {
+        "part": "SW12",
+        "pin": "1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "C3列总线；GP10输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "SW12",
+        "pin": "2"
+      },
+      "to": {
+        "part": "D12",
+        "pin": "A"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "SW12另一触点串联二极管阳极（无色环端）；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "D12",
+        "pin": "K"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP4"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+      ],
+      "notes": "R2行总线，二极管色环朝行；扫描此行时GP4输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP7"
+      },
+      "to": {
+        "part": "SW13",
+        "pin": "1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "C0列总线；GP7输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "SW13",
+        "pin": "2"
+      },
+      "to": {
+        "part": "D13",
+        "pin": "A"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "SW13另一触点串联二极管阳极（无色环端）；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "D13",
+        "pin": "K"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP5"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+      ],
+      "notes": "R3行总线，二极管色环朝行；扫描此行时GP5输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP8"
+      },
+      "to": {
+        "part": "SW14",
+        "pin": "1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "C1列总线；GP8输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "SW14",
+        "pin": "2"
+      },
+      "to": {
+        "part": "D14",
+        "pin": "A"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "SW14另一触点串联二极管阳极（无色环端）；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "D14",
+        "pin": "K"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP5"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+      ],
+      "notes": "R3行总线，二极管色环朝行；扫描此行时GP5输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP9"
+      },
+      "to": {
+        "part": "SW15",
+        "pin": "1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "C2列总线；GP9输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "SW15",
+        "pin": "2"
+      },
+      "to": {
+        "part": "D15",
+        "pin": "A"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "SW15另一触点串联二极管阳极（无色环端）；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "D15",
+        "pin": "K"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP5"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+      ],
+      "notes": "R3行总线，二极管色环朝行；扫描此行时GP5输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP10"
+      },
+      "to": {
+        "part": "SW16",
+        "pin": "1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "C3列总线；GP10输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "SW16",
+        "pin": "2"
+      },
+      "to": {
+        "part": "D16",
+        "pin": "A"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "SW16另一触点串联二极管阳极（无色环端）；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "D16",
+        "pin": "K"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP5"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+      ],
+      "notes": "R3行总线，二极管色环朝行；扫描此行时GP5输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP7"
+      },
+      "to": {
+        "part": "SW17",
+        "pin": "1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "C0列总线；GP7输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "SW17",
+        "pin": "2"
+      },
+      "to": {
+        "part": "D17",
+        "pin": "A"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "SW17另一触点串联二极管阳极（无色环端）；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "D17",
+        "pin": "K"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP6"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+      ],
+      "notes": "R4行总线，二极管色环朝行；扫描此行时GP6输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP8"
+      },
+      "to": {
+        "part": "SW18",
+        "pin": "1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "C1列总线；GP8输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "SW18",
+        "pin": "2"
+      },
+      "to": {
+        "part": "D18",
+        "pin": "A"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "SW18另一触点串联二极管阳极（无色环端）；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "D18",
+        "pin": "K"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP6"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+      ],
+      "notes": "R4行总线，二极管色环朝行；扫描此行时GP6输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP9"
+      },
+      "to": {
+        "part": "SW19",
+        "pin": "1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "C2列总线；GP9输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "SW19",
+        "pin": "2"
+      },
+      "to": {
+        "part": "D19",
+        "pin": "A"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "SW19另一触点串联二极管阳极（无色环端）；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "D19",
+        "pin": "K"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP6"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+      ],
+      "notes": "R4行总线，二极管色环朝行；扫描此行时GP6输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "GP10"
+      },
+      "to": {
+        "part": "SW20",
+        "pin": "1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "C3列总线；GP10输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "SW20",
+        "pin": "2"
+      },
+      "to": {
+        "part": "D20",
+        "pin": "A"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+      ],
+      "notes": "SW20另一触点串联二极管阳极（无色环端）；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "D20",
+        "pin": "K"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP6"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+      ],
+      "notes": "R4行总线，二极管色环朝行；扫描此行时GP6输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "3V3"
+      },
+      "to": {
+        "part": "RPU0",
+        "pin": "1"
+      },
+      "bus": "power",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=10"
+      ],
+      "notes": "上拉电阻一端 → 3V3"
+    },
+    {
+      "from": {
+        "part": "RPU0",
+        "pin": "2"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP7"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5"
+      ],
+      "notes": "上拉电阻另一端 → C0列线"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "3V3"
+      },
+      "to": {
+        "part": "RPU1",
+        "pin": "1"
+      },
+      "bus": "power",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=10"
+      ],
+      "notes": "上拉电阻一端 → 3V3"
+    },
+    {
+      "from": {
+        "part": "RPU1",
+        "pin": "2"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP8"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5"
+      ],
+      "notes": "上拉电阻另一端 → C1列线"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "3V3"
+      },
+      "to": {
+        "part": "RPU2",
+        "pin": "1"
+      },
+      "bus": "power",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=10"
+      ],
+      "notes": "上拉电阻一端 → 3V3"
+    },
+    {
+      "from": {
+        "part": "RPU2",
+        "pin": "2"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP9"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5"
+      ],
+      "notes": "上拉电阻另一端 → C2列线"
+    },
+    {
+      "from": {
+        "part": "MCU",
+        "pin": "3V3"
+      },
+      "to": {
+        "part": "RPU3",
+        "pin": "1"
+      },
+      "bus": "power",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=10"
+      ],
+      "notes": "上拉电阻一端 → 3V3"
+    },
+    {
+      "from": {
+        "part": "RPU3",
+        "pin": "2"
+      },
+      "to": {
+        "part": "MCU",
+        "pin": "GP10"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5"
+      ],
+      "notes": "上拉电阻另一端 → C3列线"
+    }
+  ],
+  "schema_version": 1
+}

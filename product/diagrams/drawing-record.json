@@ -1,0 +1,51 @@
+{
+  "version": "LCD-B",
+  "firmware": "0.2.0",
+  "display": "GDM0103 / HT1621B 3.3V",
+  "wiring_sha256": "ba92aa5d7554b7d56ab5506cac6462c8b075e56c1b9bc9547d3a93b939c08cb8",
+  "firmware_config_sha256": "c1a7148c127f99e477a89444ba9242b9bb749eec8028d3db9983b9ef2766d558",
+  "keys": 20,
+  "diodes": 20,
+  "column_pullups": 4,
+  "lcd_connected_pads": 5,
+  "lcd_nc_pads": 4,
+  "pico_used_pins": 14,
+  "pages": 4,
+  "netlist_checks": "20 branches, 4 pullups, 5 LCD nets, 4 NC pads and actual firmware constants matched",
+  "physical_assembly_tested": false,
+  "flashed": false,
+  "artifacts": {
+    "01-matrix-front.svg": {
+      "bytes": 50146,
+      "sha256": "264a532bc362eaa9316033ddad2fdb58eab61796966513c765bc4efc88e5f1ee"
+    },
+    "02-backside-soldering.svg": {
+      "bytes": 55968,
+      "sha256": "5d141beb38910ce744b4100bd605608496ae8f475053188857aea6c366cc93e6"
+    },
+    "03-pico-lcd-pullups.svg": {
+      "bytes": 26695,
+      "sha256": "ee017002e5d36b50dfd36d2f62b2b05968c04eadd244abd1de56c2ef7f64b785"
+    },
+    "04-lcd-front-back-wiring.svg": {
+      "bytes": 15554,
+      "sha256": "0c24bb8f7c67793cec23423922d1d4a61aeb76cd6c4ca05846df2fd95b462253"
+    },
+    "README.md": {
+      "bytes": 2634,
+      "sha256": "e812c18f95c157b652c0b708f50261a166045dfc1e0a32eac297219581a48bee"
+    },
+    "calckey-wiring-guide.pdf": {
+      "bytes": 164500,
+      "sha256": "52ac5f9fbe289629bf6a15052668d8b06a02635a78c0f261016d247e6922c312"
+    },
+    "lcd-wiring-map.csv": {
+      "bytes": 605,
+      "sha256": "132772716ec4628a40ec219efed5a98ae1b9de06f77780075754bb31adaaa4e6"
+    },
+    "soldering-map.csv": {
+      "bytes": 922,
+      "sha256": "72c6ef85c4e887a3fe1e4325ef934b768c544aa74e8a4b7e936fa148f811ee18"
+    }
+  }
+}

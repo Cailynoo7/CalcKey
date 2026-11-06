@@ -1,0 +1,105 @@
+{
+  "date": "2026-11-05",
+  "design_id": "enclosure",
+  "revision": "1a8921909f48be45a5d02566a8b252d95895c113139722146fb32324ca7933f8",
+  "display": "GDM0103 3.3V",
+  "evidence": "https://www.radiomag.com.de/datasheets/gdm0103_specification.pdf",
+  "window_mm": [
+    64,
+    16
+  ],
+  "module_max_dimensions_mm": [
+    78,
+    26,
+    10
+  ],
+  "upper_envelope_start_local_z_mm": 7.4,
+  "upper_envelope_height_mm": 10,
+  "under_board_allowance_mm": [
+    74,
+    22,
+    2.8
+  ],
+  "checks": {
+    "upper_envelope_exact_boolean": {
+      "overlap_mm3": 0,
+      "nearest_housing_mm": 0.5586187348508875,
+      "lens_gap_mm": 0.8,
+      "adhesive_seat_gap_mm": 0.15
+    },
+    "underside_and_solder_budget": {
+      "overlap_mm3": 0,
+      "boundary_contact": true,
+      "status": "default space allowance, not actual component geometry"
+    },
+    "normal_sightline": {
+      "view_mm": [
+        60.5,
+        13.5
+      ],
+      "offsets_xy_mm": [
+        -1,
+        0,
+        1
+      ],
+      "combinations": 9,
+      "blocked_mm3": 0,
+      "offset_source": "default, not manufacturer tolerance"
+    },
+    "switch_wiring_keepouts": {
+      "count": 20,
+      "dimensions_mm": [
+        16.4,
+        16.4,
+        10
+      ],
+      "overlap_mm3": 0,
+      "min_clearance_mm": 0.9
+    },
+    "key_press": {
+      "count": 20,
+      "stroke_mm": 4,
+      "batches": [
+        16,
+        4
+      ],
+      "mesh_tolerance_mm": 0.02,
+      "step_mm": 0.5,
+      "poses_each": 9,
+      "first_overlap": null,
+      "housing_min_clearance_mm": 1,
+      "lens_min_clearance_mm": 6.1717
+    },
+    "bottom_removal": {
+      "travel_mm": 30,
+      "mesh_tolerance_mm": 0.02,
+      "step_mm": 0.5,
+      "poses": 61,
+      "first_overlap": null,
+      "start_contact": "normal closed cover contact"
+    },
+    "lcd_removal": {
+      "travel_mm": 30,
+      "exact_boolean": true,
+      "step_mm": 1,
+      "poses": 31,
+      "overlap_mm3": 0,
+      "minimum_clearance_mm": 0.5586187348508822
+    },
+    "published_assembly": {
+      "objects": 31,
+      "pairs": 465,
+      "interference": 0
+    }
+  },
+  "limitations": [
+    "No exact GDM0103 STEP; temporary envelopes only.",
+    "Confirm blank PCB edge seats, backside components, solder/lead protrusion, 3.3V variant and display centre on actual unit.",
+    "Optical tests only normal sightline, not oblique viewing.",
+    "CHERRY exact switch STEP and printed fit remain pending.",
+    "No printing, flashing, power-on or physical acceptance in this task.",
+    "Existing OLED firmware and OLED screen wiring diagrams are historical; HT1621B port pending."
+  ],
+  "historical_record": true,
+  "superseded_for_formal_production_by": "product/production/design-verification.json"
+}

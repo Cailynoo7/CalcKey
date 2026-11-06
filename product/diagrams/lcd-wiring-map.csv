@@ -1,0 +1,10 @@
+﻿lcd_pad,signal,pico_gpio,pico_physical_pin,external_connection,evidence
+P1,/CS,GP11,15,低位直焊,GDM0103 PDF p7/8; Pico2 PDF p5
+P2,/WR,GP1,2,低位直焊,GDM0103 PDF p7/8; Pico2 PDF p5
+P3,DATA,GP0,1,低位直焊,GDM0103 PDF p7/8; Pico2 PDF p5
+P4,VSS,GND,38,低位直焊,GDM0103 PDF p7/8; Pico2 PDF p5
+P5,VDD,3V3,36,低位直焊,GDM0103 PDF p7/8; Pico2 PDF p5
+P6,/INT,,,不接外部线，分别绝缘,GDM0103 PDF p7/8
+P7,BL+,,,不接外部线，分别绝缘,GDM0103 PDF p7/8
+P8,BL-,,,不接外部线，分别绝缘,GDM0103 PDF p7/8
+P9,Ctrl,,,不接外部线，分别绝缘,GDM0103 PDF p7/8

@@ -1,0 +1,106 @@
+{
+  "version": 2,
+  "artifact_level": "product_kit",
+  "deliverable_intent": "manufacturing_package",
+  "summary": "89×130×21mm紧凑USB数字键盘/计算器，Pico 2、20个KS-9三脚红轴及打印键帽、GDM0103八位LCD；独立底盖与两档翻折角柱脚；交付正式整机设计，用户跳过打印试配，先不烧录。",
+  "required_interfaces": [
+    {
+      "id": "controller_fit",
+      "kind": "internal_fit",
+      "description": "固定选定的现成主控板，保留原生 USB 插拔、数据线弯曲和维护空间",
+      "source": "contract_interface",
+      "required": true
+    },
+    {
+      "id": "display_fit",
+      "kind": "internal_fit",
+      "description": "屏幕固定、可视窗口及排线空间",
+      "source": "contract_interface",
+      "required": true
+    },
+    {
+      "id": "key_fit",
+      "kind": "internal_fit",
+      "description": "4 列 5 行机械按键安装、按压行程及接线空间",
+      "source": "contract_interface",
+      "required": true
+    },
+    {
+      "id": "power_fit",
+      "kind": "internal_fit",
+      "description": "原生USB电源与数据接口，外接5V充电器；不设置电池、仓盖或电池开关",
+      "source": "contract_interface",
+      "required": true
+    },
+    {
+      "id": "keycap_stem_fit",
+      "kind": "internal_fit",
+      "description": "自制打印键帽的中心十字盲孔、插入深度及4mm按压行程；名义尺寸按当前官方模型；用户跳过试配，实际松紧和强度未实测",
+      "source": "user_requested",
+      "required": true
+    }
+  ],
+  "external_references": [
+    {
+      "id": "eda_keypad_reference",
+      "source": "user_requested",
+      "description": "嘉立创 EDA-Keypad 项目介绍；双模式功能与实现参考",
+      "path": "product/references/eda-keypad-reference.md"
+    },
+    {
+      "id": "pico2_vendor",
+      "source": "experience_pack_recommendation",
+      "description": "Raspberry Pi Pico 2 官方文档；主控能力依据，机械与引脚证据在选型阶段补齐",
+      "path": "product/references/rp-008299-ds.pdf"
+    },
+    {
+      "id": "gdm0103_vendor",
+      "source": "experience_pack_recommendation",
+      "description": "厂商署名GDM0103手册，PDF第3/7/8页：包络、机械及引脚；镜像取得",
+      "path": "product/references/gdm0103-specification.pdf"
+    },
+    {
+      "id": "gateron_ks9_vendor",
+      "source": "user_requested",
+      "description": "GATERON官方KS-9 STEP，KS-9H10B045NN-X14-FB；订货后缀关系另记录。",
+      "path": "product/references/gateron-ks9/KS-9 Switch KS-9H10B045NN-X14-FB.stp"
+    }
+  ],
+  "assembly_story": {
+    "installation": "两只后脚放入底盖轴耳，以打印销轴贯穿并在外端用少量环氧胶固定盲帽，胶不得进入转动面；固定Pico、边缘托架上粘接的GDM0103 LCD和保护片、完成矩阵接线后，从底部合壳拧4颗M3，前端贴两只D12×2mm硅胶垫。",
+    "maintenance": "拔USB、抬起或翻转设备；底部4颗M3卸下后底盖携主控、LCD及完整翻脚机构沿局部负Z移出30mm；矩阵留150mm柔性余量，完全分离需断开焊线。抬起键盘后再切换两个后脚，两脚都到限位后落桌。",
+    "user_access": [
+      "机械按键",
+      "屏幕",
+      "USB电源与数据接口"
+    ]
+  },
+  "cad": {
+    "requirement": "required",
+    "designs": [
+      {
+        "role": "enclosure",
+        "design_id": "enclosure",
+        "description": "主体89×130×21mm主壳与底盖；两只翻折角柱脚、两根销轴、两只盲帽；67.6×19.6×1mm亚克力保护片；当前整机展示展开4°姿态；含20个可单独打印的键帽",
+        "delivery_target": "manufacturing_handoff",
+        "required_formats": [
+          "step"
+        ],
+        "interface_ids": [
+          "controller_fit",
+          "display_fit",
+          "key_fit",
+          "power_fit",
+          "keycap_stem_fit"
+        ],
+        "reference_ids": [
+          "eda_keypad_reference",
+          "pico2_vendor",
+          "gdm0103_vendor",
+          "gateron_ks9_vendor"
+        ]
+      }
+    ]
+  },
+  "open_questions": []
+}

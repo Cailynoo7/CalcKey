@@ -1,0 +1,826 @@
+{
+  "generated_utc": "2026-11-06T00:54:34.891787+00:00",
+  "revision": "e29faaf07ec70bf7b65795e9035e3935c892f001dd0cdb50afa772fe0bd46970",
+  "export_id": "export-6c3912e110909b3a860c481fa0c90123",
+  "source_receipt": "manufacturing/enclosure/releases/export-6c3912e110909b3a860c481fa0c90123/receipt.json",
+  "inventory_checks": {
+    "printed_parts": 28,
+    "bom_rows": 26,
+    "wiring_pdf_pages": 4,
+    "procedure_pdf_pages": 9,
+    "firmware_version": "0.2.0",
+    "firmware_test_counts": [
+      93,
+      47270,
+      2500,
+      3023
+    ]
+  },
+  "limitations": [
+    "Physical printing, fitted retention, real insertion forces, adhesive strength and support load were not measured.",
+    "LCD checked using manufacturer drawing and conservative envelopes; no exact LCD STEP was obtained.",
+    "Static manufacturer switch STEP fuses actuator and housing. Motion test excludes a 5 x 6.55 mm actuator projection from -9 to +10.3 mm relative to mounting plane, and does not verify the internal mechanism."
+  ],
+  "physical_print_trial_skipped_by_user": true,
+  "flashed": false,
+  "printer_started": false,
+  "hardware_tested": false,
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 904,
+      "sha256": "28feb83cb1bb4bf510ada3ddde3a9f276dfa5a0abf42f6818a674b0829e253b6"
+    },
+    {
+      "file": "design/assembly.json",
+      "bytes": 522,
+      "sha256": "1f9ce0d1aa13db6b943a8b8d8373a659709a0435648467e6cae477d3027dded5"
+    },
+    {
+      "file": "design/enclosure/README.md",
+      "bytes": 16504,
+      "sha256": "02f036380fe726a22205b13f16ca6c0f7d65144527d7c1dc4f3bb1d1891b6c9e"
+    },
+    {
+      "file": "design/enclosure/source/assets/29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d.step",
+      "bytes": 1080795,
+      "sha256": "29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d"
+    },
+    {
+      "file": "design/enclosure/source/assets/d49ada10d893cfcb07cb4abced0a0a0cadca4c4150f153d874268ca06171a24f.step",
+      "bytes": 12391657,
+      "sha256": "d49ada10d893cfcb07cb4abced0a0a0cadca4c4150f153d874268ca06171a24f"
+    },
+    {
+      "file": "design/enclosure/source/design.json",
+      "bytes": 63077,
+      "sha256": "88002e86b7d4a8b3e464d978e50665994a0ca7de4209a4d29bff18fa3ca647c6"
+    },
+    {
+      "file": "design/enclosure/source/parts/base/000-base.py",
+      "bytes": 6307,
+      "sha256": "47334b4ed11264b41e3a0065cc785291d15bed35b717162ef5844eb23d5576aa"
+    },
+    {
+      "file": "design/enclosure/source/parts/hardware/000-hardware.py",
+      "bytes": 185,
+      "sha256": "8abca34cb28e4c4e9616c841ccf205cec120484fc8a4242d9bd71e81e96ec6f2"
+    },
+    {
+      "file": "design/enclosure/source/parts/hinge_axle_left/000-hinge_axle_left.py",
+      "bytes": 621,
+      "sha256": "40c2aa0ed12c6b766b926f69644b40ae34728d58b0d7cd90677b0294124c080f"
+    },
+    {
+      "file": "design/enclosure/source/parts/hinge_axle_right/000-hinge_axle_right.py",
+      "bytes": 246,
+      "sha256": "27ab835acf24d0a1e28f16fa85c865c4df381263b8eed2c0d23f42de5e0168bf"
+    },
+    {
+      "file": "design/enclosure/source/parts/hinge_cap_left/000-hinge_cap_left.py",
+      "bytes": 675,
+      "sha256": "7616f169b66d7bc4b8244e49c19ae7e02c285f130dd10bc77ac89fccf9288a82"
+    },
+    {
+      "file": "design/enclosure/source/parts/hinge_cap_right/000-hinge_cap_right.py",
+      "bytes": 241,
+      "sha256": "ced4fdb435ede99efbad2a773f478fe8bd08934590c6cda268668e59afac17aa"
+    },
+    {
+      "file": "design/enclosure/source/parts/imports/000-pico2.py",
+      "bytes": 147,
+      "sha256": "9f34e292f3e513037c32443077ed19b99ebc716af683cd28143be019d41a1164"
+    },
+    {
+      "file": "design/enclosure/source/parts/imports/001-sw_01.py",
+      "bytes": 141,
+      "sha256": "1815cc270822ff63bdaca5966c79bbdbe1064f0a03974278078b3aaed08063aa"
+    },
+    {
+      "file": "design/enclosure/source/parts/keycap_02/000-keycap_02.py",
+      "bytes": 407,
+      "sha256": "c205946123a5cd882ee44aebf3fc542f647ec6a91a9555c49e98dfcb8a5023eb"
+    },
+    {
+      "file": "design/enclosure/source/parts/keycap_03/000-keycap_03.py",
+      "bytes": 407,
+      "sha256": "cd6c071ca4b1a8ff54d123fdfe8b302fb0d9e7cddad9f04cecd3f7d153a6ea11"
+    },
+    {
+      "file": "design/enclosure/source/parts/keycap_04/000-keycap_04.py",
+      "bytes": 409,
+      "sha256": "0004a1637e74b2b57c925d8195b70c05b2f456546ba703ce0de340cca07c6b1a"
+    },
+    {
+      "file": "design/enclosure/source/parts/keycap_05/000-keycap_05.py",
+      "bytes": 407,
+      "sha256": "35aeee8ebd74bc3156a4c254f97a40ccca39db453e7e4fa0ba461476f55ab0e6"
+    },
+    {
+      "file": "design/enclosure/source/parts/keycap_06/000-keycap_06.py",
+      "bytes": 407,
+      "sha256": "126bed5ca631f351b131bf19ca961b5969e43614670c7af63e3152f15219ab83"
+    },
+    {
+      "file": "design/enclosure/source/parts/keycap_07/000-keycap_07.py",
+      "bytes": 407,
+      "sha256": "ee8d3b67b834ea5cf9518723d011b17ae37ab05fdc5621251ab0fe433f0e3c49"
+    },
+    {
+      "file": "design/enclosure/source/parts/keycap_08/000-keycap_08.py",
+      "bytes": 407,
+      "sha256": "6286fb198fc257de1cb0ac2c98f329dea95578b9b94e6003dae66b1806752d87"
+    },
+    {
+      "file": "design/enclosure/source/parts/keycap_09/000-keycap_09.py",
+      "bytes": 407,
+      "sha256": "9292793d02c64010e95f4d0b8635c6a0f5cebe764d4f478570a411b34145d054"
+    },
+    {
+      "file": "design/enclosure/source/parts/keycap_10/000-keycap_10.py",
+      "bytes": 407,
+      "sha256": "66928ca35ecc746f70a6ba2391110ef0ed75ffc97d89d9ebb7fb11d364472d8e"
+    },
+    {
+      "file": "design/enclosure/source/parts/keycap_11/000-keycap_11.py",
+      "bytes": 407,
+      "sha256": "a6b4af017b12292c9d1f5799d2595c431c779bcd32400f7ae7d1af98df43cac5"
+    },
+    {
+      "file": "design/enclosure/source/parts/keycap_12/000-keycap_12.py",
+      "bytes": 407,
+      "sha256": "8dac5fed24b13637a3c3dbbc8ec632bf04881f27f8982138f87bc92abfa03229"
+    },
+    {
+      "file": "design/enclosure/source/parts/keycap_13/000-keycap_13.py",
+      "bytes": 407,
+      "sha256": "ce9082c85385c80155bf8905e8fedf2a784430a17a3773e401d1c3c258f6aba2"
+    },
+    {
+      "file": "design/enclosure/source/parts/keycap_14/000-keycap_14.py",
+      "bytes": 407,
+      "sha256": "c593781f5aaae9472af0270996a17dd26f5769e618fc0b69505d8972a4413e5a"
+    },
+    {
+      "file": "design/enclosure/source/parts/keycap_15/000-keycap_15.py",
+      "bytes": 407,
+      "sha256": "7d52399218f203dfcf523b292bb2d8cd04b8fbc78c9e9cb91ea911dbf22098db"
+    },
+    {
+      "file": "design/enclosure/source/parts/keycap_16/000-keycap_16.py",
+      "bytes": 407,
+      "sha256": "a3572a0dc5a1daeea564d1d9362335f83660448c276291aa5007f8a1c35bc952"
+    },
+    {
+      "file": "design/enclosure/source/parts/keycap_17/000-keycap_17.py",
+      "bytes": 413,
+      "sha256": "846e8e93129d718ae3621cf09cf427d8879b59ae8fb4073dcd21a0bdf458329e"
+    },
+    {
+      "file": "design/enclosure/source/parts/keycap_18/000-keycap_18.py",
+      "bytes": 407,
+      "sha256": "d872fadbf35de0122072ac8bcbfa78e3e1600a42be9ded6a7d8ea53390d12022"
+    },
+    {
+      "file": "design/enclosure/source/parts/keycap_19/000-keycap_19.py",
+      "bytes": 407,
+      "sha256": "ed10b2f9600af56bbf582795d0abca89899b73191e5236f000bae7a7429fbf0d"
+    },
+    {
+      "file": "design/enclosure/source/parts/keycap_20/000-keycap_20.py",
+      "bytes": 409,
+      "sha256": "d6c4ac3aeed895c453eb53c9c302004ae16210f3cc8db58cd5e7b9a4ffc486c5"
+    },
+    {
+      "file": "design/enclosure/source/parts/keycaps/000-keycaps.py",
+      "bytes": 2902,
+      "sha256": "5862d3e320d6ba15f869ae8e97b901792b4ded14dc3e9c020405bafe53f549aa"
+    },
+    {
+      "file": "design/enclosure/source/parts/rear_foot_left/000-rear_foot_left.py",
+      "bytes": 2658,
+      "sha256": "66104a09850759b66d5a40acebbfe3a57d8b669f4d2f21704585a00d1a86763d"
+    },
+    {
+      "file": "design/enclosure/source/parts/rear_foot_right/000-rear_foot_right.py",
+      "bytes": 244,
+      "sha256": "b741e17896928fb86d392403eaf9e577b2a54c6476a554d05bcaa92e998c8863"
+    },
+    {
+      "file": "design/enclosure/source/parts/screen_lens/000-screen_lens.py",
+      "bytes": 332,
+      "sha256": "fa8278a96e401a9f046e9998631fded0b95af6c325dc5ecbb9f73f513fa4a3eb"
+    },
+    {
+      "file": "design/enclosure/source/parts/switch_02/000-switch_02.py",
+      "bytes": 307,
+      "sha256": "3890b66170249cbdefcc15dcb6fdd93751825cee9b02a9e05b8deddb85c2bbe5"
+    },
+    {
+      "file": "design/enclosure/source/parts/switch_03/000-switch_03.py",
+      "bytes": 307,
+      "sha256": "bb40b4c5ed9549edfb92298608929318618cf797a881f3b20ac9f8a6c8cf9a27"
+    },
+    {
+      "file": "design/enclosure/source/parts/switch_04/000-switch_04.py",
+      "bytes": 307,
+      "sha256": "a20e8f4d63af8c398aafa560b3be939a2a9d22a9a065c46b8b7b918a87c808c4"
+    },
+    {
+      "file": "design/enclosure/source/parts/switch_05/000-switch_05.py",
+      "bytes": 307,
+      "sha256": "5e2873d6a23309b0e8e0abd5d247240c331dba00c031f828c084d093320e7476"
+    },
+    {
+      "file": "design/enclosure/source/parts/switch_06/000-switch_06.py",
+      "bytes": 307,
+      "sha256": "16321387b0e37a8bdac39900ffa7d58ecfb0e676aa83d9e57945cb8b3da95204"
+    },
+    {
+      "file": "design/enclosure/source/parts/switch_07/000-switch_07.py",
+      "bytes": 307,
+      "sha256": "76fea78965fd42de5ef48c3a2d57b8d75f8c30f69398f0acd480701a5069122d"
+    },
+    {
+      "file": "design/enclosure/source/parts/switch_08/000-switch_08.py",
+      "bytes": 307,
+      "sha256": "2bd6535ea728600d570a7c8a4c88df55bc3a4a8920b95fb6e3036b478a81b73d"
+    },
+    {
+      "file": "design/enclosure/source/parts/switch_09/000-switch_09.py",
+      "bytes": 307,
+      "sha256": "79bced113ac07bf8ce115269b876da5b6b605d54982085c17b388259f2b639af"
+    },
+    {
+      "file": "design/enclosure/source/parts/switch_10/000-switch_10.py",
+      "bytes": 308,
+      "sha256": "fa74faa32f6a52829074a1281a01e41d2e15a7542296313e70e5285e1ea434a5"
+    },
+    {
+      "file": "design/enclosure/source/parts/switch_11/000-switch_11.py",
+      "bytes": 308,
+      "sha256": "706171157cb7f14a22aab4889bc5e75c75c52cee0cc293ebf39181ee19c241bf"
+    },
+    {
+      "file": "design/enclosure/source/parts/switch_12/000-switch_12.py",
+      "bytes": 308,
+      "sha256": "c7a48b0861ae4accf20d2362ae26683bd52425b25c1126a72efbcda7b5bcf424"
+    },
+    {
+      "file": "design/enclosure/source/parts/switch_13/000-switch_13.py",
+      "bytes": 308,
+      "sha256": "51e3346ea83e2401be3d7490841afc042138e1aff9f5865a3d857b85dac3ab33"
+    },
+    {
+      "file": "design/enclosure/source/parts/switch_14/000-switch_14.py",
+      "bytes": 308,
+      "sha256": "99c254492dc5e21e33176a58901d9a8a57d2b8441046e1c09be2800ef59892e0"
+    },
+    {
+      "file": "design/enclosure/source/parts/switch_15/000-switch_15.py",
+      "bytes": 308,
+      "sha256": "92a2f2b6feba444224db56c022169e353d3d89846293465e99c4677048077c10"
+    },
+    {
+      "file": "design/enclosure/source/parts/switch_16/000-switch_16.py",
+      "bytes": 308,
+      "sha256": "2bd36670b0390e62676daf1ff3aa2b9fb3b91d1f93e2aecbc7a58a2aa5f1f031"
+    },
+    {
+      "file": "design/enclosure/source/parts/switch_17/000-switch_17.py",
+      "bytes": 308,
+      "sha256": "26334ff014198835e210343e0ab641eff65796fef37827cc767941dac0a4762c"
+    },
+    {
+      "file": "design/enclosure/source/parts/switch_18/000-switch_18.py",
+      "bytes": 308,
+      "sha256": "9008efeb7c182470b2b797ee8b83116612800a31528d9e44a35d0320c67f2793"
+    },
+    {
+      "file": "design/enclosure/source/parts/switch_19/000-switch_19.py",
+      "bytes": 308,
+      "sha256": "eca91256e24809ab0da3465f10f98237e713d473246627c365d2db203f11faac"
+    },
+    {
+      "file": "design/enclosure/source/parts/switch_20/000-switch_20.py",
+      "bytes": 308,
+      "sha256": "9db18cb3c46de787279297d027733f097013e7224a9e06744d70234985cdb40d"
+    },
+    {
+      "file": "design/enclosure/source/parts/top/000-top.py",
+      "bytes": 2753,
+      "sha256": "dd85eec314e6a5c5872fa7b97e6f719ae9b4c926f9c0ea536ed497eea8b782d4"
+    },
+    {
+      "file": "design/enclosure/source/wiring.json",
+      "bytes": 45968,
+      "sha256": "ba92aa5d7554b7d56ab5506cac6462c8b075e56c1b9bc9547d3a93b939c08cb8"
+    },
+    {
+      "file": "design/firmware/README.md",
+      "bytes": 8776,
+      "sha256": "f573ccdde0f6038483839758d09071d7333d26553d9e735f21d69c6fdd8b246b"
+    },
+    {
+      "file": "design/firmware/bootstrap.py",
+      "bytes": 2852,
+      "sha256": "83e46f1aee05237ab9dc86f7a332d0532f060dd1f94cc0874b04378acffa5521"
+    },
+    {
+      "file": "design/firmware/build.py",
+      "bytes": 6859,
+      "sha256": "6768eb5799863a0937f83db031d65c752fc5dc6058e4e3b29d2cd00b5433fcfb"
+    },
+    {
+      "file": "design/firmware/check_wiring.py",
+      "bytes": 2147,
+      "sha256": "2da5f77fe50822688b5626605bfb9e7897316d797757414dbcde0a9893c94bd3"
+    },
+    {
+      "file": "design/firmware/dependencies.lock.json",
+      "bytes": 1198,
+      "sha256": "c7232f0ab494f90036a13dbe794cf4656827605beb09dc93f89c3b3ecfa78a5d"
+    },
+    {
+      "file": "design/firmware/release/v0.2.0/README.md",
+      "bytes": 8776,
+      "sha256": "f573ccdde0f6038483839758d09071d7333d26553d9e735f21d69c6fdd8b246b"
+    },
+    {
+      "file": "design/firmware/release/v0.2.0/calckey-pico2-v0.2.0.bin",
+      "bytes": 98180,
+      "sha256": "68414547dec308ec0d153eee6f71722491a248a9c30b2a91c2c4d4851aafe6a4"
+    },
+    {
+      "file": "design/firmware/release/v0.2.0/calckey-pico2-v0.2.0.elf",
+      "bytes": 1125020,
+      "sha256": "388ba5d3de92867b4a2edb9f0bf39367afcaee16b71107bf1d39bd8344902e07"
+    },
+    {
+      "file": "design/firmware/release/v0.2.0/calckey-pico2-v0.2.0.uf2",
+      "bytes": 197120,
+      "sha256": "bcee532edc517227efc67c50582ff501331b898b9abefdd787bb19791952b662"
+    },
+    {
+      "file": "design/firmware/release/v0.2.0/pico-sdk-LICENSE.TXT",
+      "bytes": 1489,
+      "sha256": "483f865953435b66c443dee7558debe3cc3cf8fcbb6a112fd9fc6a795d53f1f6"
+    },
+    {
+      "file": "design/firmware/release/v0.2.0/tinyusb-LICENSE",
+      "bytes": 1089,
+      "sha256": "b171720e8a442e7a3957d83c62cd3299dbb29da3db534cc626f9dded0de2ca44"
+    },
+    {
+      "file": "design/firmware/release/v0.2.0/verification.json",
+      "bytes": 12482,
+      "sha256": "d416610e60b313288476d74cfebf3137246521e4b37de7d02558ae650d80e8b9"
+    },
+    {
+      "file": "design/firmware/source/CMakeLists.txt",
+      "bytes": 1088,
+      "sha256": "ddf6a449431f3602cb746408450292a90774d2c33ca22f18f1dc16ee4c26f1a1"
+    },
+    {
+      "file": "design/firmware/source/application.cpp",
+      "bytes": 2734,
+      "sha256": "a88c12a7d5c8df99f72921ac944836eab3d18354cd6ddbc090561bf9aae338a5"
+    },
+    {
+      "file": "design/firmware/source/board_config.hpp",
+      "bytes": 746,
+      "sha256": "c1a7148c127f99e477a89444ba9242b9bb749eec8028d3db9983b9ef2766d558"
+    },
+    {
+      "file": "design/firmware/source/core.hpp",
+      "bytes": 1865,
+      "sha256": "74dcb1b5408a1f20e4d098dc9720f2f185bdd60a166f5be30503012f2ea3b750"
+    },
+    {
+      "file": "design/firmware/source/decimal.cpp",
+      "bytes": 7088,
+      "sha256": "1d563c208957064a0f851d9197d6d80c5a9fdcf73fa48f3b12ffb8d39add4247"
+    },
+    {
+      "file": "design/firmware/source/lcd.cpp",
+      "bytes": 5638,
+      "sha256": "b84080ad670d017485dce82e6e4c0bf912c2a6b634e0f61ba25192cb72a697cc"
+    },
+    {
+      "file": "design/firmware/source/lcd.hpp",
+      "bytes": 916,
+      "sha256": "fe60b6c398882d015cdead7f037f90b1ce72853e6a84f853227d9a180c721a90"
+    },
+    {
+      "file": "design/firmware/source/main.cpp",
+      "bytes": 3465,
+      "sha256": "f829999a008af4ded6db1254363151c6cb2947620e75fc6dc83a92a1290fbfe7"
+    },
+    {
+      "file": "design/firmware/source/tusb_config.h",
+      "bytes": 333,
+      "sha256": "692e9a873c3934f30e8b9d30f505cbf2df948d787487d4cea913079d55295be2"
+    },
+    {
+      "file": "design/firmware/source/usb_descriptors.cpp",
+      "bytes": 1654,
+      "sha256": "2a2a0ddae1f959ea528ef8183f68fbf5107ded3c1d55791b3db8b0753db2195c"
+    },
+    {
+      "file": "design/firmware/tests/core_tests.cpp",
+      "bytes": 5684,
+      "sha256": "b9770c972308d592a6bf24a5f172de385c2d3d08e6c95206e0c69f06decc5d93"
+    },
+    {
+      "file": "design/firmware/tests/decimal_cli.cpp",
+      "bytes": 226,
+      "sha256": "80f15038cbd910486fa55a6c701e211feadb9f135b1238d5fecb961f1eaae886"
+    },
+    {
+      "file": "design/firmware/tests/decimal_oracle.py",
+      "bytes": 1737,
+      "sha256": "8c92e5f5e1eba08ca18327909fa4866a80f37ad3f9d00dbc1adb8a4474e46c82"
+    },
+    {
+      "file": "design/firmware/tests/fakes/hardware/gpio.h",
+      "bytes": 160,
+      "sha256": "027346a5ca24a0b767e51fe59372e56a7bf9fb569acd43cce4f575610e4118f4"
+    },
+    {
+      "file": "design/firmware/tests/fakes/pico/time.h",
+      "bytes": 87,
+      "sha256": "513cdf2d7da7f5cd616c29555772b6825eb8679cc1e99c42e012173ad5590041"
+    },
+    {
+      "file": "design/firmware/tests/lcd_decimal_cli.cpp",
+      "bytes": 322,
+      "sha256": "d89824020241cd12908fd8ca93b4d0fb0adc80a4b0ed34f4b6a801fa484c9314"
+    },
+    {
+      "file": "design/firmware/tests/lcd_decimal_oracle.py",
+      "bytes": 2577,
+      "sha256": "8e1a18c52b9b4a1d4be6a0fe861e4df1b720e1c83e4b5720e099d1654056b430"
+    },
+    {
+      "file": "design/firmware/tests/lcd_tests.cpp",
+      "bytes": 10075,
+      "sha256": "10d0e1dee907eda937a1f1e70d704db9363eac8b9d8543b980f5b550edc087de"
+    },
+    {
+      "file": "manufacturing/enclosure/releases/export-6c3912e110909b3a860c481fa0c90123/model.step",
+      "bytes": 107871074,
+      "sha256": "cfb94e5ce8b9b026b91f8a6a9d78c3f1ec335ae6c4b40388ec432fba3cfdc743"
+    },
+    {
+      "file": "manufacturing/enclosure/releases/export-6c3912e110909b3a860c481fa0c90123/receipt.json",
+      "bytes": 20815,
+      "sha256": "442418d96dcfaa153de6909c9f374cf87c6a77e35a28df6d2f05a99b6d582ffd"
+    },
+    {
+      "file": "product/README.md",
+      "bytes": 8649,
+      "sha256": "d5b2b746f9bfd08cca6f300a090814275ebbecb10f7213191715d71fac2c7012"
+    },
+    {
+      "file": "product/assembly/README.md",
+      "bytes": 1668,
+      "sha256": "3d61a98b4795fe11cee2a83bb60aaf11d618c7f863982215a1f333b300e5cfc0"
+    },
+    {
+      "file": "product/assembly/calckey-soldering-procedure.pdf",
+      "bytes": 291646,
+      "sha256": "646b23ad84d5edb7f397a9aee2e2837b833d9b1912017053224964765e75a6b5"
+    },
+    {
+      "file": "product/assembly/component-check-record.csv",
+      "bytes": 2927,
+      "sha256": "c23220377216b8d44a9fecd89539dfab3b588ae90cc99b0076c96019e9513ca5"
+    },
+    {
+      "file": "product/assembly/generate_soldering_guide.py",
+      "bytes": 34338,
+      "sha256": "e2d99b619adc739ce2f24f469469504c78be09f56c35b89bda0109230c2b15d9"
+    },
+    {
+      "file": "product/assembly/key-check-record.csv",
+      "bytes": 2634,
+      "sha256": "e373dfc20c8da336fac99ed5d9d035b10401bc3c5b0b033e7a3b991e9291ef73"
+    },
+    {
+      "file": "product/assembly/procedure-record.json",
+      "bytes": 2271,
+      "sha256": "cd5b7ce68cc09c3bbf03ff1014bf73d3761869ece163586c5fbbd38776d3acc4"
+    },
+    {
+      "file": "product/assembly/pullup-check-record.csv",
+      "bytes": 1051,
+      "sha256": "0c1a9790b927f8e5614044a3bd0bea29cf7d847818c16a3026fde4c4736c29bf"
+    },
+    {
+      "file": "product/assembly/soldering-procedure.md",
+      "bytes": 20104,
+      "sha256": "bc7e7f987ea22687ad6047df0359ee939dc2e9431c10f0aadd9ffe691029c90f"
+    },
+    {
+      "file": "product/assembly/stage-check-record.csv",
+      "bytes": 1305,
+      "sha256": "3c9b280248cf3d72a84fe24ec66ac522af2bd2d66cab806961c27a6e7ffa140e"
+    },
+    {
+      "file": "product/assembly/wire-check-record.csv",
+      "bytes": 1826,
+      "sha256": "c8a53126077e156a5fa2e8ee5fda6b174027e2e537466a8a0f5f2bce034a8ede"
+    },
+    {
+      "file": "product/bom.csv",
+      "bytes": 10940,
+      "sha256": "7e3d40401a27e10758a4559d153a45d00f09a34f34f908a2766c0baa97299cc9"
+    },
+    {
+      "file": "product/bom.json",
+      "bytes": 17842,
+      "sha256": "f190c4f96c6577249a1ecba512e67aff39242189f3903bf91e0b27a8d13e3031"
+    },
+    {
+      "file": "product/bring-up-checklist.md",
+      "bytes": 7495,
+      "sha256": "8f20dd251d4ed3a03c4e884af139bb0e0a3cfb8e6e3c73e49dbfa358235d2dc5"
+    },
+    {
+      "file": "product/component-selection.json",
+      "bytes": 19349,
+      "sha256": "b1eb62bc830a3f1a86c867c74e039d7c88fc318722f4f589d4c5324ce7bc965d"
+    },
+    {
+      "file": "product/constraints.json",
+      "bytes": 11602,
+      "sha256": "44719b7fd631a444fca2e97fd53e23641f2787a6a8295d10892c635b07242889"
+    },
+    {
+      "file": "product/contract.json",
+      "bytes": 4176,
+      "sha256": "2c31727705804b86c5646041da0803cb697d3d72c1edaf1e3fb365c805dc5df3"
+    },
+    {
+      "file": "product/diagrams/01-matrix-front.svg",
+      "bytes": 50146,
+      "sha256": "264a532bc362eaa9316033ddad2fdb58eab61796966513c765bc4efc88e5f1ee"
+    },
+    {
+      "file": "product/diagrams/02-backside-soldering.svg",
+      "bytes": 55968,
+      "sha256": "5d141beb38910ce744b4100bd605608496ae8f475053188857aea6c366cc93e6"
+    },
+    {
+      "file": "product/diagrams/03-pico-lcd-pullups.svg",
+      "bytes": 26695,
+      "sha256": "ee017002e5d36b50dfd36d2f62b2b05968c04eadd244abd1de56c2ef7f64b785"
+    },
+    {
+      "file": "product/diagrams/04-lcd-front-back-wiring.svg",
+      "bytes": 15554,
+      "sha256": "0c24bb8f7c67793cec23423922d1d4a61aeb76cd6c4ca05846df2fd95b462253"
+    },
+    {
+      "file": "product/diagrams/README.md",
+      "bytes": 2634,
+      "sha256": "e812c18f95c157b652c0b708f50261a166045dfc1e0a32eac297219581a48bee"
+    },
+    {
+      "file": "product/diagrams/calckey-wiring-guide.pdf",
+      "bytes": 164500,
+      "sha256": "52ac5f9fbe289629bf6a15052668d8b06a02635a78c0f261016d247e6922c312"
+    },
+    {
+      "file": "product/diagrams/drawing-record.json",
+      "bytes": 1728,
+      "sha256": "682324017d940c034e86ba835425c201aa05f7952ef6d8e92ae5e2447345850c"
+    },
+    {
+      "file": "product/diagrams/generate_wiring.py",
+      "bytes": 23468,
+      "sha256": "621a50830913e8e8f1eb734a872f15224379eb823df36077d2b63f144276a66e"
+    },
+    {
+      "file": "product/diagrams/lcd-wiring-map.csv",
+      "bytes": 605,
+      "sha256": "132772716ec4628a40ec219efed5a98ae1b9de06f77780075754bb31adaaa4e6"
+    },
+    {
+      "file": "product/diagrams/soldering-map.csv",
+      "bytes": 922,
+      "sha256": "72c6ef85c4e887a3fe1e4325ef934b768c544aa74e8a4b7e936fa148f811ee18"
+    },
+    {
+      "file": "product/production/README.md",
+      "bytes": 7062,
+      "sha256": "40d64c201aa2cdf4a2cf447acd4efa22c11dda49ef3b85faa2c2e30dd0eb6400"
+    },
+    {
+      "file": "product/production/build_delivery.py",
+      "bytes": 11732,
+      "sha256": "3cb175d23c600bfc37a9d2793356bafc721c7429be139431c40a56231b5d0177"
+    },
+    {
+      "file": "product/production/design-verification.json",
+      "bytes": 20029,
+      "sha256": "dc784593e5469d784f096da2b23b689baf3469bce14b59319209a9a425775dfd"
+    },
+    {
+      "file": "product/production/generate_models.py",
+      "bytes": 5670,
+      "sha256": "04ea43e869eef552fcf1f722783cc337ce97d840cd8a03bee7a18ffd5dd3ab2f"
+    },
+    {
+      "file": "product/production/model-manifest.json",
+      "bytes": 25120,
+      "sha256": "e2bddb98ca9c24a99ef63f512254afb0611e9a81cd96f7865f3c5e79d1a4acca"
+    },
+    {
+      "file": "product/production/models/base.stl",
+      "bytes": 1225684,
+      "sha256": "fb64efe7421f8cb365e4d19410d404b668118b3694f820bd0272e34ef552f753"
+    },
+    {
+      "file": "product/production/models/hinge_axle_left.stl",
+      "bytes": 100684,
+      "sha256": "6d62b491d0eae5af62c8d0b261496954481df8c39fd8c43ddcd0eb505d834228"
+    },
+    {
+      "file": "product/production/models/hinge_axle_right.stl",
+      "bytes": 100684,
+      "sha256": "cab6359550d32c7578f75439939392900b6020c89a62110c40979fc3e020f599"
+    },
+    {
+      "file": "product/production/models/hinge_cap_left.stl",
+      "bytes": 100684,
+      "sha256": "7c7bfcf810ecefe4f16ed65cfb4400197b5ced9b3f9e1de838116febfa1ce284"
+    },
+    {
+      "file": "product/production/models/hinge_cap_right.stl",
+      "bytes": 100684,
+      "sha256": "8e212d049ec6ae9c2f20e0d824d7cd13396b8e42b3d4e76749afa13113a9b206"
+    },
+    {
+      "file": "product/production/models/key_01.stl",
+      "bytes": 615384,
+      "sha256": "ba8d829a6ea9734b54e8d2e40b85652ae1e51076f78d37655811710805dd020a"
+    },
+    {
+      "file": "product/production/models/key_02.stl",
+      "bytes": 159084,
+      "sha256": "ffeb3e773485195fc3431fc1a830a0b46848312ecfffa1a67db1a31878b5e47a"
+    },
+    {
+      "file": "product/production/models/key_03.stl",
+      "bytes": 175584,
+      "sha256": "9ef6be14b77a954df859c990c3bf37a9185d5e8732df8313e0fc8b2619d74a24"
+    },
+    {
+      "file": "product/production/models/key_04.stl",
+      "bytes": 445384,
+      "sha256": "767ccc23a4f3f1abda7c7651d7fe54e9629c81daa667f304acd9f2169adebe65"
+    },
+    {
+      "file": "product/production/models/key_05.stl",
+      "bytes": 174484,
+      "sha256": "49e6072b7f8300a39132b73d2df17a3b7cb198dad54b987b0a3887279cef4e21"
+    },
+    {
+      "file": "product/production/models/key_06.stl",
+      "bytes": 792184,
+      "sha256": "4ac16eb1e46ada77070e6fc6727d456b3fcb48b1952c31702ebe83c083532208"
+    },
+    {
+      "file": "product/production/models/key_07.stl",
+      "bytes": 583284,
+      "sha256": "4f6f8bebe7e11ca688e72d245eddd622a2239b362141080cee723cc8a5310e1e"
+    },
+    {
+      "file": "product/production/models/key_08.stl",
+      "bytes": 159584,
+      "sha256": "972d60b53661177a525df38fd41e5fdfee09e2ec37aa030b23b433f80fe04996"
+    },
+    {
+      "file": "product/production/models/key_09.stl",
+      "bytes": 161084,
+      "sha256": "798e73956d613496abc0e9452bf7087d9667a4a4a1453541c881b7d955d27f47"
+    },
+    {
+      "file": "product/production/models/key_10.stl",
+      "bytes": 411584,
+      "sha256": "7ea669b6163d2e56b77e9e7368a9913b419844475f1ff80ed11d3f96c8759e43"
+    },
+    {
+      "file": "product/production/models/key_11.stl",
+      "bytes": 578984,
+      "sha256": "42558d12800d905852d2dcb0b665c98256361a7b3d402590e361261f4d1fb979"
+    },
+    {
+      "file": "product/production/models/key_12.stl",
+      "bytes": 160684,
+      "sha256": "6b27c7711df6c6713283014ff7e18008e6f189f7263addf63d5a0dc5d4cb0b70"
+    },
+    {
+      "file": "product/production/models/key_13.stl",
+      "bytes": 174084,
+      "sha256": "7e12bfe34bbbdff1522ff8ec334ee3dd6ef490cced95e9d5e5790e28de226bbb"
+    },
+    {
+      "file": "product/production/models/key_14.stl",
+      "bytes": 366284,
+      "sha256": "b97a14680f21a8ed897c42359d08620396d514c2efabbfa1cd2ae481d2ef7f82"
+    },
+    {
+      "file": "product/production/models/key_15.stl",
+      "bytes": 609384,
+      "sha256": "bea226eaab00e49a9769d6f9a403e3afbd1ddce0c0ee9b04d0fd840e1e3bcf90"
+    },
+    {
+      "file": "product/production/models/key_16.stl",
+      "bytes": 159884,
+      "sha256": "03e2150c4354008c1b559db2047165ffbc18004202cf473f0ecd0e3cb2109bec"
+    },
+    {
+      "file": "product/production/models/key_17.stl",
+      "bytes": 1010084,
+      "sha256": "35ed411f95cc2517b29fc871b1578e5455b3498a05a8db08d223afa212349190"
+    },
+    {
+      "file": "product/production/models/key_18.stl",
+      "bytes": 452084,
+      "sha256": "3d4fad236466b567216e57c1af408aec63a22f9e7ca6149979a96d5d780186eb"
+    },
+    {
+      "file": "product/production/models/key_19.stl",
+      "bytes": 159084,
+      "sha256": "784337bc2fd48ddb680e24d84fd74946700897ea40c98128262e7c4ff1ef7816"
+    },
+    {
+      "file": "product/production/models/key_20.stl",
+      "bytes": 378584,
+      "sha256": "d38e216276eaf87c0dd8bf6ca674cd4a947a39afc1886717149622894ef2b774"
+    },
+    {
+      "file": "product/production/models/rear_foot_left.stl",
+      "bytes": 90284,
+      "sha256": "bbcb5a1f1f3fa0bdce6daf1746f113fc14a234f8cd8b0bfb8a98969f93142866"
+    },
+    {
+      "file": "product/production/models/rear_foot_right.stl",
+      "bytes": 90284,
+      "sha256": "11a77dc9681bc6aca2c54b5041b04a271560deba90c1843d7c13632ae579c7e4"
+    },
+    {
+      "file": "product/production/models/top.stl",
+      "bytes": 1303184,
+      "sha256": "e1f85cd4e0721439e73412cb12f3358d46f2920168509fd178707f55f3f0f2b5"
+    },
+    {
+      "file": "product/production/print-plan.csv",
+      "bytes": 2025,
+      "sha256": "8c12e51daba9984128579dd6942c05f3fd31db6c3dbc67dd9ddf21fbee1c5189"
+    },
+    {
+      "file": "product/references/eda-keypad-reference.md",
+      "bytes": 670,
+      "sha256": "b8cd4fbaa0bc6f121dbcb44a9cd4fb4c2b517f6be6b705526c6a0b9c57134fa4"
+    },
+    {
+      "file": "product/references/gateron-ks9/KS-9 Switch KS-9H10B045NN-X14-FB.stp",
+      "bytes": 1080795,
+      "sha256": "29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d"
+    },
+    {
+      "file": "product/references/gdm0103-specification.pdf",
+      "bytes": 3582964,
+      "sha256": "5a99da5743955683150a6527b8757073570189a4aa4ce2f4131a8d0baec73ba8"
+    },
+    {
+      "file": "product/references/ht1621-v340.pdf",
+      "bytes": 756067,
+      "sha256": "e066c0d4f202324656e074f935e50cc49dfa87debd8af27c893309c4c5eb4e76"
+    },
+    {
+      "file": "product/references/rp-008299-ds.pdf",
+      "bytes": 3016817,
+      "sha256": "cbcfaf881018c686495a2e53c7bd281e7e0a8217d79447d73eda7c8f74b7f675"
+    },
+    {
+      "file": "product/references/vishay-1n4148.pdf",
+      "bytes": 93384,
+      "sha256": "aefe85400a427ed886a4e1c88205ceabb9f9b38044b29c6acee4bb00146a44b7"
+    },
+    {
+      "file": "product/requirements.json",
+      "bytes": 9830,
+      "sha256": "fc48aea598ec3a6a8e56c04a610f3aa1895fff257581b300e213dfa63c5007d8"
+    },
+    {
+      "file": "project.manifest.json",
+      "bytes": 72,
+      "sha256": "1348d14e578a6ec7c3ff6939ce88b22220505212c866dbe209907ac35ae0933b"
+    }
+  ],
+  "manifest_self_hash_excluded": true
+}

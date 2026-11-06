@@ -174,8 +174,8 @@
       "source": "default"
     },
     "estimated_overall_height_mm": {
-      "value": 41.6,
-      "source": "default"
+      "value": 42.096147047843374,
+      "source": "research"
     },
     "appearance_style": {
       "value": "外壳增加简洁的科技感造型，避免复杂装饰",
@@ -224,8 +224,8 @@
       "source": "default"
     },
     "estimated_stowed_overall_height_mm": {
-      "value": 39.0,
-      "source": "default"
+      "value": 39.49865877163909,
+      "source": "research"
     },
     "hinge_cap_appearance": {
       "value": "轴端盲帽短一点，和另一头的挡头大小接近",
@@ -267,10 +267,10 @@
         "socket_depth_mm": 3.3,
         "socket_mouth_inset_mm": 1.4,
         "socket_stop_z_mm": 4.7,
-        "socket_lead_in_mm": 0.1,
+        "socket_lead_in_mm": 0,
         "material": "PETG",
-        "process": "FDM，默认0.2mm喷嘴、0.1mm层高，先做三种孔隙试配",
-        "socket_neck_width_mm": 4.8,
+        "process": "FDM，默认0.2mm喷嘴、0.1mm层高；正式20帽，跳过打印试配",
+        "socket_neck_width_mm": 4.9,
         "socket_neck_top_mm": 5.1
       },
       "source": "default"
@@ -280,7 +280,7 @@
       "source": "user"
     },
     "display_status_policy": {
-      "value": "段码屏不常驻完整运算符及模式文字；切换时短暂显示PC或CALC，错误用Err；上述交互及8位格式将在新LCD固件中实现，现有OLED固件未适配。",
+      "value": "段码屏不常驻完整运算符；切换短暂PC/CALC，错误Err；键盘模式常态PC 1/PC 0表示主机NumLock状态。",
       "source": "default"
     },
     "screen_window_width_mm": {
@@ -293,6 +293,14 @@
     },
     "switch_variant": {
       "value": "KS-9H10B045NN-X14；用户已核对并确认与官方CAD标识KS-9H10B045NN-X14-FB对应一致",
+      "source": "user"
+    },
+    "prototype_validation_policy": {
+      "value": "跳过打印试配，直接完成整机设计和正式制作资料；不把未实测的配合或强度记录为通过。",
+      "source": "user"
+    },
+    "flashing_policy": {
+      "value": "本次完成固件设计与编译验证，先不烧录。",
       "source": "user"
     }
   },

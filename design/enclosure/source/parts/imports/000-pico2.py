@@ -1,0 +1,1 @@
+publish("pico2", asset("design/enclosure/source/assets/d49ada10d893cfcb07cb4abced0a0a0cadca4c4150f153d874268ca06171a24f.step"), "Pico 2 reference")

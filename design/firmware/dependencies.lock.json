@@ -1,0 +1,10 @@
+{
+  "host": "darwin-arm64",
+  "python_packages": {"cmake": "3.31.6", "ninja": "1.11.1.4"},
+  "archives": [
+    {"file": "arm.tar.xz", "directory": "arm-gnu-toolchain-14.2.rel1-darwin-arm64-arm-none-eabi", "version": "14.2.Rel1", "url": "https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu/14.2.rel1/binrel/arm-gnu-toolchain-14.2.rel1-darwin-arm64-arm-none-eabi.tar.xz", "sha256": "c7c78ffab9bebfce91d99d3c24da6bf4b81c01e16cf551eb2ff9f25b9e0a3818"},
+    {"file": "pico-sdk.tar.gz", "directory": "pico-sdk-2.2.0", "version": "2.2.0", "url": "https://codeload.github.com/raspberrypi/pico-sdk/tar.gz/refs/tags/2.2.0", "sha256": "dbd8db79015aced4ef35cbaa88051b0d451775010d20202e1c7d2bee69c25b35"},
+    {"file": "tinyusb.tar.gz", "directory": "tinyusb-0.18.0", "version": "0.18.0", "url": "https://codeload.github.com/hathach/tinyusb/tar.gz/refs/tags/0.18.0", "sha256": "e7fa1bd723213749a0362c79eaccc99e84c8adea8f0a63588c4e4812608b7aa9"},
+    {"file": "picotool.tar.gz", "directory": "picotool-2.2.0", "version": "2.2.0", "url": "https://codeload.github.com/raspberrypi/picotool/tar.gz/refs/tags/2.2.0", "sha256": "aab3d82fb1e576d97156ddcb962ae7cf290518a5f20d9002ac27e628dc657620"}
+  ]
+}
