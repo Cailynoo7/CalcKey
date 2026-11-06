@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-06",
+  "design_id": "matrix",
+  "pcb_release_id": "17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727",
+  "pcb_build_id": "6a333818c3a79007ec3a24727eed3008848215ed1c5c0238051beffaecfde0e3",
+  "cad_revision": "bb0a8e71a8c0bd3bb7c53e2c2961b190d24c58ea8feda5c0ab35672099b0d8de",
+  "board_size_mm": [
+    73,
+    96,
+    1.6
+  ],
+  "board_top_local_z_mm": 16,
+  "pcb_native_to_case_translation_mm": [
+    -100,
+    86,
+    14.405
+  ],
+  "manufacturing": {
+    "layers": 2,
+    "copper_oz": 1,
+    "assembly": "manual/through-hole; empty JLC SMT placement tables",
+    "drill_NPTH_4mm": 20,
+    "drill_PTH_1_5mm": 40,
+    "drill_PTH_0_8mm": 40,
+    "via_0_3mm": 8
+  },
+  "evidence": {
+    "clearance": "CAD clearance at revision bb0a8e7: {\"pairs\":[{\"a\":\"base\",\"b\":\"screws\",\"status\":\"contact\",\"min_distance_mm\":0},{\"a\":\"pico2\",\"b\":\"base\",\"status\":\"contact\",\"min_distance_mm\":0.01},{\"a\":\"pico2\",\"b\":\"screws\",\"status\":\"separated\",\"min_distance_mm\":0.05},{\"a\":\"matrix_pcb\",\"b\":\"pico2\",\"status\":\"separated\",\"min_distance_mm\":3.015},{\"a\":\"matrix_pcb\",\"b\":\"base\",\"status\":\"separated\",\"min_distance_mm\":3.0912},{\"a\":\"matrix_pcb\",\"b\":\"screws\",\"status\":\"separated\",\"min_distance_mm\":3.5893},{\"a\":\"matrix_pcb\",\"b\":\"screen_lens\",\"status\":\"separated\",\"min_distance_mm\":5.6799},{\"a\":\"base\",\"b\":\"screen_lens\",\"status\":\"separated\",\"min_distance_mm\":9.5635},{\"a\":\"screws\",\"b\":\"screen_lens\",\"status\":\"separated\",\"min_distance_mm\":26.1803},{\"a\":\"pico2\",\"b\":\"screen_lens\",\"status\":\"separated\",\"min_distance_mm\":40.503}],\"precision\":{\"method\":\"triangle meshes (Manifold)\",\"mesh_tolerance_mm\":0.02,\"note\":\"Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.\"},\"query_ms\":568}. Geometry facts support visual judgment; they are not a quality verdict.",
+    "lcd_budget": "CAD clearance at revision bb0a8e7: {\"pairs\":[{\"a\":\"matrix_pcb\",\"b\":\"lcd_budget\",\"status\":\"separated\",\"min_distance_mm\":2}],\"precision\":{\"method\":\"triangle meshes (Manifold)\",\"mesh_tolerance_mm\":0.02,\"note\":\"Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.\"},\"query_ms\":22}. Geometry facts support visual judgment; they are not a quality verdict.",
+    "bottom_removal": "CAD path at revision bb0a8e7: {\"moving\":[\"base\",\"pico2\",\"rear_foot_left\",\"rear_foot_right\",\"hinge_axle_left\",\"hinge_axle_right\",\"hinge_cap_left\",\"hinge_cap_right\"],\"path_length_mm\":30,\"first_contact\":{\"object_id\":\"top\",\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0],\"at_start\":true},\"first_overlap\":null,\"objects\":[{\"object_id\":\"top\",\"min_clearance_mm\":0,\"min_clearance_at\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0]},\"first_contact\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0],\"at_start\":true}},{\"object_id\":\"matrix_pcb\",\"min_clearance_mm\":3.015,\"min_clearance_at\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0]}},{\"object_id\":\"screen_lens\",\"min_clearance_mm\":9.5635,\"min_clearance_at\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0]}}],\"objects_never_within\":{\"mm\":10,\"count\":0},\"precision\":{\"method\":\"triangle meshes (Manifold)\",\"mesh_tolerance_mm\":0.02,\"note\":\"Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.\",\"step_mm\":0.5,\"poses\":61,\"contact_located_within_mm\":0.002,\"sampling\":\"No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 2 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them.\"},\"query_ms\":463}. Geometry facts support visual judgment; they are not a quality verdict.",
+    "keycap_fit": "CAD eval at revision bb0a8e7, nothing committed: {\"value\":null,\"eval_ms\":26840,\"parts_run\":[],\"parts_from_cache\":[\"rear_foot_left\",\"base\",\"keycaps\"]}\n```text\n{\"switches\": 20, \"axis_error_mm\": 2.7581597604164045e-09, \"stem_tip_local_z_mm\": [31.19999999998599, 31.19999999998599], \"non_switch_highest_local_z_mm\": 16.81999999999999, \"pressed_cap_bottom_local_z_mm\": 22.5, \"pressed_cap_to_non_switch_z_budget_mm\": 5.68000000000001, \"shared_cap_blank_external_housing_max_overlap_mm3\": 0.0, \"sample_poses\": 17, \"travel_mm\": 4, \"mesh_tolerance_mm\": 0.02}\n```",
+    "printed_geometry_compare": "CAD compare at revision bb0a8e7: {\"added\":[\"matrix_pcb\"],\"changed\":[],\"removed\":[\"sw_01\",\"sw_02\",\"sw_03\",\"sw_04\",\"sw_05\",\"sw_06\",\"sw_07\",\"sw_08\",\"sw_09\",\"sw_10\",\"sw_11\",\"sw_12\",\"sw_13\",\"sw_14\",\"sw_15\",\"sw_16\",\"sw_17\",\"sw_18\",\"sw_19\",\"sw_20\"],\"topologyChanges\":[]}. Geometry facts support visual judgment; they are not a quality verdict."
+  },
+  "physical_printing": false,
+  "flashed": false,
+  "powered": false,
+  "limitations": [
+    "No physical soldering, clip retention, PCB flexure or strength test; printed fit trials skipped by user.",
+    "GDM0103 remains a manufacturer-drawing envelope; no exact model of the LCD board.",
+    "Switch actuator and housing are fused in vendor STEP. Full-stroke check uses the shared unengraved cap blank and excludes the measured actuator projection; internal switch mechanism is not independently verified.",
+    "Wire strain relief and solder fillets are assembly allowances, not measured real wire geometry."
+  ],
+  "cad_export_id": "export-b55160416169f3062f9a9062743662ea",
+  "compiled_netlist_checked": {
+    "switch_diode_branches": 20,
+    "pullups": 4,
+    "pico_wire_pads": 10,
+    "gpio_unchanged": true
+  },
+  "release_step_binding": {
+    "pcb_step_sha256": "e2474c585d2693bb16227489b4c195a5ffbfa208a89e1ee4a6da6b9e6b1f5ef2",
+    "cad_bound_step_sha256": "e2474c585d2693bb16227489b4c195a5ffbfa208a89e1ee4a6da6b9e6b1f5ef2",
+    "source_path": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/assembly.step",
+    "binding_verified": true
+  },
+  "cad_export_binding_note": "Top-level cad_revision and cad_export_id identify retained historical inspections; current_assembly_binding identifies the present handoff and its exact unchanged-object comparison.",
+  "current_assembly_binding": {
+    "cad_revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029",
+    "cad_export_id": "export-b41154b115ba9c61a396ed39b36889a5",
+    "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+    "baseline_receipt": "product/production/history/matrix-before-keycap-cad-receipt.json",
+    "retained_inspection_revision": "bb0a8e71a8c0bd3bb7c53e2c2961b190d24c58ea8feda5c0ab35672099b0d8de",
+    "unchanged_objects": [
+      "base",
+      "hinge_axle_left",
+      "hinge_axle_right",
+      "hinge_cap_left",
+      "hinge_cap_right",
+      "matrix_pcb",
+      "pico2",
+      "rear_foot_left",
+      "rear_foot_right",
+      "screen_lens",
+      "screws",
+      "top"
+    ],
+    "scope": "PCB, case, Pico, lens, fasteners and folding feet exactly unchanged; 20 caps checked separately on current revision"
+  }
+}

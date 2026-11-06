@@ -1,0 +1,515 @@
+{
+  "original_receipt_copy": "product/production/history/handwired-cad-receipt.json",
+  "original_receipt_path_in_git": "manufacturing/enclosure/releases/export-6c3912e110909b3a860c481fa0c90123/receipt.json",
+  "original_receipt_sha256": "442418d96dcfaa153de6909c9f374cf87c6a77e35a28df6d2f05a99b6d582ffd",
+  "original_mesh_manifest": "product/production/history/handwired-model-manifest.json",
+  "original_mesh_manifest_sha256": "e2bddb98ca9c24a99ef63f512254afb0611e9a81cd96f7865f3c5e79d1a4acca",
+  "original_geometry_record": "product/production/history/handwired-geometry-checks.json",
+  "original_printed_transforms": {
+    "base": {
+      "positionMm": [
+        0,
+        0,
+        6.459542420143668
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "top": {
+      "positionMm": [
+        0,
+        0,
+        6.459542420143668
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "key_01": {
+      "positionMm": [
+        -28.525000000172298,
+        22.69085664957732,
+        34.610951985066876
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "rear_foot_left": {
+      "positionMm": [
+        -29.5,
+        50.10142322897241,
+        6.755161146518494
+      ],
+      "rotationDeg": [
+        114,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "rear_foot_right": {
+      "positionMm": [
+        29.5,
+        50.10142322897241,
+        6.755161146518494
+      ],
+      "rotationDeg": [
+        114,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "hinge_axle_left": {
+      "positionMm": [
+        -29.5,
+        50.10142322897241,
+        6.755161146518494
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        180
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "hinge_axle_right": {
+      "positionMm": [
+        29.5,
+        50.10142322897241,
+        6.755161146518494
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "hinge_cap_left": {
+      "positionMm": [
+        -29.5,
+        50.10142322897241,
+        6.755161146518494
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        180
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "hinge_cap_right": {
+      "positionMm": [
+        29.5,
+        50.10142322897241,
+        6.755161146518494
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "key_02": {
+      "positionMm": [
+        -9.4750000001723,
+        22.69085664957732,
+        34.610951985066876
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "key_03": {
+      "positionMm": [
+        9.574999999827702,
+        22.69085664957732,
+        34.610951985066876
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "key_04": {
+      "positionMm": [
+        28.624999999827708,
+        22.69085664957732,
+        34.610951985066876
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "key_05": {
+      "positionMm": [
+        -28.525000000172298,
+        3.6872614921276674,
+        33.282091160241286
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "key_06": {
+      "positionMm": [
+        -9.4750000001723,
+        3.6872614921276674,
+        33.282091160241286
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "key_07": {
+      "positionMm": [
+        9.574999999827702,
+        3.6872614921276674,
+        33.282091160241286
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "key_08": {
+      "positionMm": [
+        28.624999999827708,
+        3.6872614921276674,
+        33.282091160241286
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "key_09": {
+      "positionMm": [
+        -28.525000000172298,
+        -15.316333665321983,
+        31.9532303354157
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "key_10": {
+      "positionMm": [
+        -9.4750000001723,
+        -15.316333665321983,
+        31.9532303354157
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "key_11": {
+      "positionMm": [
+        9.574999999827702,
+        -15.316333665321983,
+        31.9532303354157
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "key_12": {
+      "positionMm": [
+        28.624999999827708,
+        -15.316333665321983,
+        31.9532303354157
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "key_13": {
+      "positionMm": [
+        -28.525000000172298,
+        -34.31992882277164,
+        30.624369510590114
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "key_14": {
+      "positionMm": [
+        -9.4750000001723,
+        -34.31992882277164,
+        30.624369510590114
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "key_15": {
+      "positionMm": [
+        9.574999999827702,
+        -34.31992882277164,
+        30.624369510590114
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "key_16": {
+      "positionMm": [
+        28.624999999827708,
+        -34.31992882277164,
+        30.624369510590114
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "key_17": {
+      "positionMm": [
+        -28.525000000172298,
+        -53.32352398022128,
+        29.295508685764528
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "key_18": {
+      "positionMm": [
+        -9.4750000001723,
+        -53.32352398022128,
+        29.295508685764528
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "key_19": {
+      "positionMm": [
+        9.574999999827702,
+        -53.32352398022128,
+        29.295508685764528
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "key_20": {
+      "positionMm": [
+        28.624999999827708,
+        -53.32352398022128,
+        29.295508685764528
+      ],
+      "rotationDeg": [
+        4,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  "scope": "original conversion provenance only; current assembly binding is separately checked against new receipt"
+}

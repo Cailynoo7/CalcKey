@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 1,
+  "title": "CalcKey 20-key matrix",
+  "manufacturing": {
+    "name": "ordinary-2layer-fr4-1oz",
+    "layers": 2,
+    "copperThicknessOz": {
+      "outer": 1
+    },
+    "finishedThicknessMm": 1.6,
+    "defaultTraceWidthMm": 0.3,
+    "absoluteMinimumTraceWidthMm": 0.2,
+    "absoluteMinimumCopperClearanceMm": 0.15,
+    "preferredRoutingClearanceMm": 0.25,
+    "copperToBoardEdgeMm": 0.3,
+    "via": {
+      "diameterMm": 0.6,
+      "drillMm": 0.3
+    },
+    "waveSolderVia": {
+      "diameterMm": 0.8,
+      "drillMm": 0.4
+    }
+  },
+  "netClasses": {
+    "signal": {
+      "nominalWidthMm": 0.3,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "cpu_io": {
+      "nominalWidthMm": 0.25,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "power": {
+      "nominalWidthMm": 0.5,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "high_current": {
+      "nominalWidthMm": 0.5,
+      "minimumWidthMm": 0.4572,
+      "clearanceMm": 0.25
+    },
+    "ground": {
+      "nominalWidthMm": 0.5,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "sensitive_analog": {
+      "nominalWidthMm": 0.3,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "clock_high_speed": {
+      "nominalWidthMm": 0.3,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "differential_pair": {
+      "nominalWidthMm": 0.25,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.25
+    }
+  },
+  "nets": {
+    "ROW0": {
+      "class": "cpu_io",
+      "rationale": "GP2..GP6 scanned low or high impedance; no ground net on this passive matrix."
+    },
+    "ROW1": {
+      "class": "cpu_io",
+      "rationale": "GP2..GP6 scanned low or high impedance; no ground net on this passive matrix."
+    },
+    "ROW2": {
+      "class": "cpu_io",
+      "rationale": "GP2..GP6 scanned low or high impedance; no ground net on this passive matrix."
+    },
+    "ROW3": {
+      "class": "cpu_io",
+      "rationale": "GP2..GP6 scanned low or high impedance; no ground net on this passive matrix."
+    },
+    "ROW4": {
+      "class": "cpu_io",
+      "rationale": "GP2..GP6 scanned low or high impedance; no ground net on this passive matrix."
+    },
+    "COL0": {
+      "class": "cpu_io",
+      "rationale": "GP7..GP10 input; 10k external pullup on this PCB."
+    },
+    "COL1": {
+      "class": "cpu_io",
+      "rationale": "GP7..GP10 input; 10k external pullup on this PCB."
+    },
+    "COL2": {
+      "class": "cpu_io",
+      "rationale": "GP7..GP10 input; 10k external pullup on this PCB."
+    },
+    "COL3": {
+      "class": "cpu_io",
+      "rationale": "GP7..GP10 input; 10k external pullup on this PCB."
+    },
+    "KEY1": {
+      "class": "signal",
+      "rationale": "Switch-to-diode anode segment."
+    },
+    "KEY2": {
+      "class": "signal",
+      "rationale": "Switch-to-diode anode segment."
+    },
+    "KEY3": {
+      "class": "signal",
+      "rationale": "Switch-to-diode anode segment."
+    },
+    "KEY4": {
+      "class": "signal",
+      "rationale": "Switch-to-diode anode segment."
+    },
+    "KEY5": {
+      "class": "signal",
+      "rationale": "Switch-to-diode anode segment."
+    },
+    "KEY6": {
+      "class": "signal",
+      "rationale": "Switch-to-diode anode segment."
+    },
+    "KEY7": {
+      "class": "signal",
+      "rationale": "Switch-to-diode anode segment."
+    },
+    "KEY8": {
+      "class": "signal",
+      "rationale": "Switch-to-diode anode segment."
+    },
+    "KEY9": {
+      "class": "signal",
+      "rationale": "Switch-to-diode anode segment."
+    },
+    "KEY10": {
+      "class": "signal",
+      "rationale": "Switch-to-diode anode segment."
+    },
+    "KEY11": {
+      "class": "signal",
+      "rationale": "Switch-to-diode anode segment."
+    },
+    "KEY12": {
+      "class": "signal",
+      "rationale": "Switch-to-diode anode segment."
+    },
+    "KEY13": {
+      "class": "signal",
+      "rationale": "Switch-to-diode anode segment."
+    },
+    "KEY14": {
+      "class": "signal",
+      "rationale": "Switch-to-diode anode segment."
+    },
+    "KEY15": {
+      "class": "signal",
+      "rationale": "Switch-to-diode anode segment."
+    },
+    "KEY16": {
+      "class": "signal",
+      "rationale": "Switch-to-diode anode segment."
+    },
+    "KEY17": {
+      "class": "signal",
+      "rationale": "Switch-to-diode anode segment."
+    },
+    "KEY18": {
+      "class": "signal",
+      "rationale": "Switch-to-diode anode segment."
+    },
+    "KEY19": {
+      "class": "signal",
+      "rationale": "Switch-to-diode anode segment."
+    },
+    "KEY20": {
+      "class": "signal",
+      "rationale": "Switch-to-diode anode segment."
+    },
+    "V3V3": {
+      "class": "power",
+      "nominalWidthMm": 0.4,
+      "rationale": "Only four 10k pullups; worst-case total below 1.34mA at 3.3V. LCD remains directly on Pico."
+    }
+  },
+  "footprintExceptions": [],
+  "copperPours": {
+    "enabled": false,
+    "groundLayers": [
+      "top",
+      "bottom"
+    ],
+    "clearanceMm": 0.3,
+    "padMarginMm": 0.3,
+    "traceMarginMm": 0.3,
+    "boardEdgeMarginMm": 0.3,
+    "cutoutMarginMm": 0.5,
+    "removeIslands": true
+  },
+  "stitchingVias": [],
+  "copperAreas": [],
+  "keepouts": [],
+  "allowedOverlaps": [],
+  "allowedViaInPadComponents": [],
+  "pcbRuleExceptions": [],
+  "componentOrientations": [
+    {
+      "componentRef": "J1",
+      "vertical": true,
+      "rationale": "Wire soldered onto underside pad and dressed flat toward Pico; no mating connector or raised header."
+    },
+    {
+      "componentRef": "J2",
+      "vertical": true,
+      "rationale": "Wire soldered onto underside pad and dressed flat toward Pico; no mating connector or raised header."
+    },
+    {
+      "componentRef": "J3",
+      "vertical": true,
+      "rationale": "Wire soldered onto underside pad and dressed flat toward Pico; no mating connector or raised header."
+    },
+    {
+      "componentRef": "J4",
+      "vertical": true,
+      "rationale": "Wire soldered onto underside pad and dressed flat toward Pico; no mating connector or raised header."
+    },
+    {
+      "componentRef": "J5",
+      "vertical": true,
+      "rationale": "Wire soldered onto underside pad and dressed flat toward Pico; no mating connector or raised header."
+    },
+    {
+      "componentRef": "J6",
+      "vertical": true,
+      "rationale": "Wire soldered onto underside pad and dressed flat toward Pico; no mating connector or raised header."
+    },
+    {
+      "componentRef": "J7",
+      "vertical": true,
+      "rationale": "Wire soldered onto underside pad and dressed flat toward Pico; no mating connector or raised header."
+    },
+    {
+      "componentRef": "J8",
+      "vertical": true,
+      "rationale": "Wire soldered onto underside pad and dressed flat toward Pico; no mating connector or raised header."
+    },
+    {
+      "componentRef": "J9",
+      "vertical": true,
+      "rationale": "Wire soldered onto underside pad and dressed flat toward Pico; no mating connector or raised header."
+    },
+    {
+      "componentRef": "J10",
+      "vertical": true,
+      "rationale": "Wire soldered onto underside pad and dressed flat toward Pico; no mating connector or raised header."
+    }
+  ],
+  "bomBindings": [
+    {
+      "bomItemId": "switches",
+      "designators": [
+        "SW1",
+        "SW2",
+        "SW3",
+        "SW4",
+        "SW5",
+        "SW6",
+        "SW7",
+        "SW8",
+        "SW9",
+        "SW10",
+        "SW11",
+        "SW12",
+        "SW13",
+        "SW14",
+        "SW15",
+        "SW16",
+        "SW17",
+        "SW18",
+        "SW19",
+        "SW20"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "matrix_diodes",
+      "designators": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9",
+        "D10",
+        "D11",
+        "D12",
+        "D13",
+        "D14",
+        "D15",
+        "D16",
+        "D17",
+        "D18",
+        "D19",
+        "D20"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "column_pullups",
+      "designators": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "signal_wire",
+      "designators": [
+        "J1",
+        "J2",
+        "J3",
+        "J4",
+        "J5",
+        "J6",
+        "J7",
+        "J8",
+        "J9",
+        "J10"
+      ],
+      "populate": true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029",
+  "export_id": "export-b41154b115ba9c61a396ed39b36889a5",
+  "checks": {
+    "new_keycap_meshes": 20,
+    "unchanged_other_meshes": 8,
+    "five_recess_depth_from_stl_mm": 0.35000001164297495,
+    "five_adjacent_top_z_mm": 1.0000002202132769e-07,
+    "enter_recess_y_range_print_frame_mm": [
+      -3.6004395484924316,
+      -1.1995606422424316
+    ],
+    "equals_recess_y_range_print_frame_mm": [
+      1.27734375,
+      2.922656297683716
+    ],
+    "legend_depth_mm": 0.35
+  },
+  "mesh_hashes": {
+    "product/production/models/key_10.stl": "e879a73d1be04f53fa02b7ccfa07a612418e9cd85f69fd4fee46109172fe1357",
+    "product/production/models/key_16.stl": "8dbc2a78f35759553ce45322ae60f50b17b4f0f4ab16e8754929d3da19e9b172"
+  },
+  "physical_tests_performed": false
+}

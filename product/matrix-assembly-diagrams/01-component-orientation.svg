@@ -1,0 +1,414 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 1680 1188">
+<title>器件方向｜正反面对照</title>
+<desc>Source-derived assembly illustration; not a fabrication or 1:1 drilling template. PCB release 17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727</desc>
+<rect x="0" y="0" width="1680" height="1188" rx="0" fill="#ffffff" stroke="none" stroke-width="2"/>
+<text x="56" y="66" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="37" fill="#203346" text-anchor="start">器件方向｜正反面对照</text>
+<text x="56" y="110" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#647787" text-anchor="start">两图均保持屏幕端朝上；右图已左右镜像，按实际底面焊装，不要再次镜像。</text>
+<text x="1624" y="65" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#647787" text-anchor="end">1 / 4</text>
+<line x1="56" y1="135" x2="1624" y2="135" stroke="#ccd9e1" stroke-width="2" stroke-linecap="round"/>
+<text x="60" y="194" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="27" fill="#203346" text-anchor="start">A  按键面 / TOP</text>
+<text x="650" y="194" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="27" fill="#203346" text-anchor="start">B  焊接底面 / BOTTOM</text>
+<text x="315" y="230" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#647787" text-anchor="middle">↑ 屏幕端 / 远端</text>
+<text x="905" y="230" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#647787" text-anchor="middle">↑ 屏幕端 / 远端</text>
+<rect x="60" y="250" width="511" height="672" rx="7" fill="#dcefe4" stroke="#709d89" stroke-width="2"/>
+<rect x="66.47499999999998" y="266.79999999999995" width="98" height="98" rx="7" fill="#ffffff" stroke="#84a998" stroke-width="2"/>
+<text x="115.47499999999998" y="317.79999999999995" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">Num</text>
+<text x="115.47499999999998" y="346.79999999999995" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#647787" text-anchor="middle">SW1</text>
+<rect x="199.82500000000002" y="266.79999999999995" width="98" height="98" rx="7" fill="#ffffff" stroke="#84a998" stroke-width="2"/>
+<text x="248.82500000000002" y="317.79999999999995" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">÷</text>
+<text x="248.82500000000002" y="346.79999999999995" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#647787" text-anchor="middle">SW2</text>
+<rect x="333.175" y="266.79999999999995" width="98" height="98" rx="7" fill="#ffffff" stroke="#84a998" stroke-width="2"/>
+<text x="382.175" y="317.79999999999995" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">×</text>
+<text x="382.175" y="346.79999999999995" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#647787" text-anchor="middle">SW3</text>
+<rect x="466.5250000000001" y="266.79999999999995" width="98" height="98" rx="7" fill="#ffffff" stroke="#84a998" stroke-width="2"/>
+<text x="515.5250000000001" y="317.79999999999995" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">Bk</text>
+<text x="515.5250000000001" y="346.79999999999995" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#647787" text-anchor="middle">SW4</text>
+<rect x="66.47499999999998" y="400.15" width="98" height="98" rx="7" fill="#ffffff" stroke="#84a998" stroke-width="2"/>
+<text x="115.47499999999998" y="451.15" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">7</text>
+<text x="115.47499999999998" y="480.15" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#647787" text-anchor="middle">SW5</text>
+<rect x="199.82500000000002" y="400.15" width="98" height="98" rx="7" fill="#ffffff" stroke="#84a998" stroke-width="2"/>
+<text x="248.82500000000002" y="451.15" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">8</text>
+<text x="248.82500000000002" y="480.15" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#647787" text-anchor="middle">SW6</text>
+<rect x="333.175" y="400.15" width="98" height="98" rx="7" fill="#ffffff" stroke="#84a998" stroke-width="2"/>
+<text x="382.175" y="451.15" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">9</text>
+<text x="382.175" y="480.15" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#647787" text-anchor="middle">SW7</text>
+<rect x="466.5250000000001" y="400.15" width="98" height="98" rx="7" fill="#ffffff" stroke="#84a998" stroke-width="2"/>
+<text x="515.5250000000001" y="451.15" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">−</text>
+<text x="515.5250000000001" y="480.15" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#647787" text-anchor="middle">SW8</text>
+<rect x="66.47499999999998" y="533.5" width="98" height="98" rx="7" fill="#ffffff" stroke="#84a998" stroke-width="2"/>
+<text x="115.47499999999998" y="584.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">4</text>
+<text x="115.47499999999998" y="613.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#647787" text-anchor="middle">SW9</text>
+<rect x="199.82500000000002" y="533.5" width="98" height="98" rx="7" fill="#ffffff" stroke="#84a998" stroke-width="2"/>
+<text x="248.82500000000002" y="584.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">5</text>
+<text x="248.82500000000002" y="613.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#647787" text-anchor="middle">SW10</text>
+<rect x="333.175" y="533.5" width="98" height="98" rx="7" fill="#ffffff" stroke="#84a998" stroke-width="2"/>
+<text x="382.175" y="584.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">6</text>
+<text x="382.175" y="613.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#647787" text-anchor="middle">SW11</text>
+<rect x="466.5250000000001" y="533.5" width="98" height="98" rx="7" fill="#ffffff" stroke="#84a998" stroke-width="2"/>
+<text x="515.5250000000001" y="584.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">+</text>
+<text x="515.5250000000001" y="613.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#647787" text-anchor="middle">SW12</text>
+<rect x="66.47499999999998" y="666.8500000000001" width="98" height="98" rx="7" fill="#ffffff" stroke="#84a998" stroke-width="2"/>
+<text x="115.47499999999998" y="717.8500000000001" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">1</text>
+<text x="115.47499999999998" y="746.8500000000001" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#647787" text-anchor="middle">SW13</text>
+<rect x="199.82500000000002" y="666.8500000000001" width="98" height="98" rx="7" fill="#ffffff" stroke="#84a998" stroke-width="2"/>
+<text x="248.82500000000002" y="717.8500000000001" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">2</text>
+<text x="248.82500000000002" y="746.8500000000001" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#647787" text-anchor="middle">SW14</text>
+<rect x="333.175" y="666.8500000000001" width="98" height="98" rx="7" fill="#ffffff" stroke="#84a998" stroke-width="2"/>
+<text x="382.175" y="717.8500000000001" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">3</text>
+<text x="382.175" y="746.8500000000001" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#647787" text-anchor="middle">SW15</text>
+<rect x="466.5250000000001" y="666.8500000000001" width="98" height="98" rx="7" fill="#ffffff" stroke="#84a998" stroke-width="2"/>
+<text x="515.5250000000001" y="717.8500000000001" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">Enter/=</text>
+<text x="515.5250000000001" y="746.8500000000001" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#647787" text-anchor="middle">SW16</text>
+<rect x="66.47499999999998" y="800.1999999999999" width="98" height="98" rx="7" fill="#ffffff" stroke="#84a998" stroke-width="2"/>
+<text x="115.47499999999998" y="851.1999999999999" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">Mode</text>
+<text x="115.47499999999998" y="880.1999999999999" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#647787" text-anchor="middle">SW17</text>
+<rect x="199.82500000000002" y="800.1999999999999" width="98" height="98" rx="7" fill="#ffffff" stroke="#84a998" stroke-width="2"/>
+<text x="248.82500000000002" y="851.1999999999999" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">0</text>
+<text x="248.82500000000002" y="880.1999999999999" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#647787" text-anchor="middle">SW18</text>
+<rect x="333.175" y="800.1999999999999" width="98" height="98" rx="7" fill="#ffffff" stroke="#84a998" stroke-width="2"/>
+<text x="382.175" y="851.1999999999999" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">.</text>
+<text x="382.175" y="880.1999999999999" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#647787" text-anchor="middle">SW19</text>
+<rect x="466.5250000000001" y="800.1999999999999" width="98" height="98" rx="7" fill="#ffffff" stroke="#84a998" stroke-width="2"/>
+<text x="515.5250000000001" y="851.1999999999999" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">AC</text>
+<text x="515.5250000000001" y="880.1999999999999" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#647787" text-anchor="middle">SW20</text>
+<rect x="650" y="250" width="511" height="672" rx="7" fill="#dcefe4" stroke="#709d89" stroke-width="2"/>
+<circle cx="1105.525" cy="315.79999999999995" r="14" fill="#ffffff" stroke="#79998c" stroke-width="2"/>
+<circle cx="1141.085" cy="298.02" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1141.085" cy="298.02" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="1123.305" cy="342.47" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1123.305" cy="342.47" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="1095.525" y="350.79999999999995" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="end">SW1</text>
+<line x1="1078.855" y1="266.8" x2="1132.1950000000002" y2="266.8" stroke="#203346" stroke-width="3" stroke-linecap="round"/>
+<rect x="1073.255" y="261.2" width="11.200000000000001" height="11.200000000000001" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<circle cx="1078.855" cy="266.8" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="1132.1950000000002" cy="266.8" r="5.6000000000000005" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1132.1950000000002" cy="266.8" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<rect x="1093.525" y="259.8" width="24" height="14" rx="3" fill="#daa371" stroke="#976339" stroke-width="2"/>
+<rect x="1096.525" y="260.8" width="4" height="12" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<text x="1105.525" y="293.8" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="middle">D1</text>
+<circle cx="972.175" cy="315.79999999999995" r="14" fill="#ffffff" stroke="#79998c" stroke-width="2"/>
+<circle cx="1007.735" cy="298.02" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1007.735" cy="298.02" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="989.9549999999999" cy="342.47" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="989.9549999999999" cy="342.47" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="962.175" y="350.79999999999995" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="end">SW2</text>
+<line x1="945.505" y1="266.8" x2="998.845" y2="266.8" stroke="#203346" stroke-width="3" stroke-linecap="round"/>
+<rect x="939.905" y="261.2" width="11.200000000000001" height="11.200000000000001" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<circle cx="945.505" cy="266.8" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="998.845" cy="266.8" r="5.6000000000000005" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="998.845" cy="266.8" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<rect x="960.175" y="259.8" width="24" height="14" rx="3" fill="#daa371" stroke="#976339" stroke-width="2"/>
+<rect x="963.175" y="260.8" width="4" height="12" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<text x="972.175" y="293.8" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="middle">D2</text>
+<circle cx="838.825" cy="315.79999999999995" r="14" fill="#ffffff" stroke="#79998c" stroke-width="2"/>
+<circle cx="874.385" cy="298.02" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="874.385" cy="298.02" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="856.605" cy="342.47" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="856.605" cy="342.47" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="828.825" y="350.79999999999995" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="end">SW3</text>
+<line x1="812.155" y1="266.8" x2="865.495" y2="266.8" stroke="#203346" stroke-width="3" stroke-linecap="round"/>
+<rect x="806.555" y="261.2" width="11.200000000000001" height="11.200000000000001" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<circle cx="812.155" cy="266.8" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="865.495" cy="266.8" r="5.6000000000000005" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="865.495" cy="266.8" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<rect x="826.825" y="259.8" width="24" height="14" rx="3" fill="#daa371" stroke="#976339" stroke-width="2"/>
+<rect x="829.825" y="260.8" width="4" height="12" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<text x="838.825" y="293.8" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="middle">D3</text>
+<circle cx="705.475" cy="315.79999999999995" r="14" fill="#ffffff" stroke="#79998c" stroke-width="2"/>
+<circle cx="741.035" cy="298.02" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="741.035" cy="298.02" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="723.255" cy="342.47" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="723.255" cy="342.47" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="695.475" y="350.79999999999995" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="end">SW4</text>
+<line x1="678.805" y1="266.8" x2="732.145" y2="266.8" stroke="#203346" stroke-width="3" stroke-linecap="round"/>
+<rect x="673.2049999999999" y="261.2" width="11.200000000000001" height="11.200000000000001" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<circle cx="678.805" cy="266.8" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="732.145" cy="266.8" r="5.6000000000000005" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="732.145" cy="266.8" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<rect x="693.4749999999999" y="259.8" width="24" height="14" rx="3" fill="#daa371" stroke="#976339" stroke-width="2"/>
+<rect x="696.4749999999999" y="260.8" width="4" height="12" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<text x="705.4749999999999" y="293.8" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="middle">D4</text>
+<circle cx="1105.525" cy="449.15" r="14" fill="#ffffff" stroke="#79998c" stroke-width="2"/>
+<circle cx="1141.085" cy="431.37" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1141.085" cy="431.37" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="1123.305" cy="475.82" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1123.305" cy="475.82" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="1095.525" y="484.15" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="end">SW5</text>
+<line x1="1078.855" y1="400.15" x2="1132.1950000000002" y2="400.15" stroke="#203346" stroke-width="3" stroke-linecap="round"/>
+<rect x="1073.255" y="394.54999999999995" width="11.200000000000001" height="11.200000000000001" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<circle cx="1078.855" cy="400.15" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="1132.1950000000002" cy="400.15" r="5.6000000000000005" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1132.1950000000002" cy="400.15" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<rect x="1093.525" y="393.15" width="24" height="14" rx="3" fill="#daa371" stroke="#976339" stroke-width="2"/>
+<rect x="1096.525" y="394.15" width="4" height="12" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<text x="1105.525" y="427.15" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="middle">D5</text>
+<circle cx="972.175" cy="449.15" r="14" fill="#ffffff" stroke="#79998c" stroke-width="2"/>
+<circle cx="1007.735" cy="431.37" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1007.735" cy="431.37" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="989.9549999999999" cy="475.82" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="989.9549999999999" cy="475.82" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="962.175" y="484.15" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="end">SW6</text>
+<line x1="945.505" y1="400.15" x2="998.845" y2="400.15" stroke="#203346" stroke-width="3" stroke-linecap="round"/>
+<rect x="939.905" y="394.54999999999995" width="11.200000000000001" height="11.200000000000001" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<circle cx="945.505" cy="400.15" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="998.845" cy="400.15" r="5.6000000000000005" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="998.845" cy="400.15" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<rect x="960.175" y="393.15" width="24" height="14" rx="3" fill="#daa371" stroke="#976339" stroke-width="2"/>
+<rect x="963.175" y="394.15" width="4" height="12" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<text x="972.175" y="427.15" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="middle">D6</text>
+<circle cx="838.825" cy="449.15" r="14" fill="#ffffff" stroke="#79998c" stroke-width="2"/>
+<circle cx="874.385" cy="431.37" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="874.385" cy="431.37" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="856.605" cy="475.82" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="856.605" cy="475.82" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="828.825" y="484.15" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="end">SW7</text>
+<line x1="812.155" y1="400.15" x2="865.495" y2="400.15" stroke="#203346" stroke-width="3" stroke-linecap="round"/>
+<rect x="806.555" y="394.54999999999995" width="11.200000000000001" height="11.200000000000001" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<circle cx="812.155" cy="400.15" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="865.495" cy="400.15" r="5.6000000000000005" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="865.495" cy="400.15" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<rect x="826.825" y="393.15" width="24" height="14" rx="3" fill="#daa371" stroke="#976339" stroke-width="2"/>
+<rect x="829.825" y="394.15" width="4" height="12" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<text x="838.825" y="427.15" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="middle">D7</text>
+<circle cx="705.475" cy="449.15" r="14" fill="#ffffff" stroke="#79998c" stroke-width="2"/>
+<circle cx="741.035" cy="431.37" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="741.035" cy="431.37" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="723.255" cy="475.82" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="723.255" cy="475.82" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="695.475" y="484.15" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="end">SW8</text>
+<line x1="678.805" y1="400.15" x2="732.145" y2="400.15" stroke="#203346" stroke-width="3" stroke-linecap="round"/>
+<rect x="673.2049999999999" y="394.54999999999995" width="11.200000000000001" height="11.200000000000001" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<circle cx="678.805" cy="400.15" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="732.145" cy="400.15" r="5.6000000000000005" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="732.145" cy="400.15" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<rect x="693.4749999999999" y="393.15" width="24" height="14" rx="3" fill="#daa371" stroke="#976339" stroke-width="2"/>
+<rect x="696.4749999999999" y="394.15" width="4" height="12" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<text x="705.4749999999999" y="427.15" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="middle">D8</text>
+<circle cx="1105.525" cy="582.5" r="14" fill="#ffffff" stroke="#79998c" stroke-width="2"/>
+<circle cx="1141.085" cy="564.72" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1141.085" cy="564.72" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="1123.305" cy="609.1700000000001" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1123.305" cy="609.1700000000001" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="1095.525" y="617.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="end">SW9</text>
+<line x1="1078.855" y1="533.5" x2="1132.1950000000002" y2="533.5" stroke="#203346" stroke-width="3" stroke-linecap="round"/>
+<rect x="1073.255" y="527.9" width="11.200000000000001" height="11.200000000000001" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<circle cx="1078.855" cy="533.5" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="1132.1950000000002" cy="533.5" r="5.6000000000000005" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1132.1950000000002" cy="533.5" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<rect x="1093.525" y="526.5" width="24" height="14" rx="3" fill="#daa371" stroke="#976339" stroke-width="2"/>
+<rect x="1096.525" y="527.5" width="4" height="12" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<text x="1105.525" y="560.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="middle">D9</text>
+<circle cx="972.175" cy="582.5" r="14" fill="#ffffff" stroke="#79998c" stroke-width="2"/>
+<circle cx="1007.735" cy="564.72" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1007.735" cy="564.72" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="989.9549999999999" cy="609.1700000000001" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="989.9549999999999" cy="609.1700000000001" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="962.175" y="617.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="end">SW10</text>
+<line x1="945.505" y1="533.5" x2="998.845" y2="533.5" stroke="#203346" stroke-width="3" stroke-linecap="round"/>
+<rect x="939.905" y="527.9" width="11.200000000000001" height="11.200000000000001" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<circle cx="945.505" cy="533.5" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="998.845" cy="533.5" r="5.6000000000000005" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="998.845" cy="533.5" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<rect x="960.175" y="526.5" width="24" height="14" rx="3" fill="#daa371" stroke="#976339" stroke-width="2"/>
+<rect x="963.175" y="527.5" width="4" height="12" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<text x="972.175" y="560.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="middle">D10</text>
+<circle cx="838.825" cy="582.5" r="14" fill="#ffffff" stroke="#79998c" stroke-width="2"/>
+<circle cx="874.385" cy="564.72" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="874.385" cy="564.72" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="856.605" cy="609.1700000000001" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="856.605" cy="609.1700000000001" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="828.825" y="617.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="end">SW11</text>
+<line x1="812.155" y1="533.5" x2="865.495" y2="533.5" stroke="#203346" stroke-width="3" stroke-linecap="round"/>
+<rect x="806.555" y="527.9" width="11.200000000000001" height="11.200000000000001" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<circle cx="812.155" cy="533.5" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="865.495" cy="533.5" r="5.6000000000000005" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="865.495" cy="533.5" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<rect x="826.825" y="526.5" width="24" height="14" rx="3" fill="#daa371" stroke="#976339" stroke-width="2"/>
+<rect x="829.825" y="527.5" width="4" height="12" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<text x="838.825" y="560.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="middle">D11</text>
+<circle cx="705.475" cy="582.5" r="14" fill="#ffffff" stroke="#79998c" stroke-width="2"/>
+<circle cx="741.035" cy="564.72" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="741.035" cy="564.72" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="723.255" cy="609.1700000000001" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="723.255" cy="609.1700000000001" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="695.475" y="617.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="end">SW12</text>
+<line x1="678.805" y1="533.5" x2="732.145" y2="533.5" stroke="#203346" stroke-width="3" stroke-linecap="round"/>
+<rect x="673.2049999999999" y="527.9" width="11.200000000000001" height="11.200000000000001" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<circle cx="678.805" cy="533.5" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="732.145" cy="533.5" r="5.6000000000000005" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="732.145" cy="533.5" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<rect x="693.4749999999999" y="526.5" width="24" height="14" rx="3" fill="#daa371" stroke="#976339" stroke-width="2"/>
+<rect x="696.4749999999999" y="527.5" width="4" height="12" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<text x="705.4749999999999" y="560.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="middle">D12</text>
+<circle cx="1105.525" cy="715.8500000000001" r="14" fill="#ffffff" stroke="#79998c" stroke-width="2"/>
+<circle cx="1141.085" cy="698.07" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1141.085" cy="698.07" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="1123.305" cy="742.5200000000001" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1123.305" cy="742.5200000000001" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="1095.525" y="750.8500000000001" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="end">SW13</text>
+<line x1="1078.855" y1="666.85" x2="1132.1950000000002" y2="666.85" stroke="#203346" stroke-width="3" stroke-linecap="round"/>
+<rect x="1073.255" y="661.25" width="11.200000000000001" height="11.200000000000001" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<circle cx="1078.855" cy="666.85" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="1132.1950000000002" cy="666.85" r="5.6000000000000005" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1132.1950000000002" cy="666.85" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<rect x="1093.525" y="659.85" width="24" height="14" rx="3" fill="#daa371" stroke="#976339" stroke-width="2"/>
+<rect x="1096.525" y="660.85" width="4" height="12" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<text x="1105.525" y="693.85" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="middle">D13</text>
+<circle cx="972.175" cy="715.8500000000001" r="14" fill="#ffffff" stroke="#79998c" stroke-width="2"/>
+<circle cx="1007.735" cy="698.07" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1007.735" cy="698.07" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="989.9549999999999" cy="742.5200000000001" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="989.9549999999999" cy="742.5200000000001" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="962.175" y="750.8500000000001" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="end">SW14</text>
+<line x1="945.505" y1="666.85" x2="998.845" y2="666.85" stroke="#203346" stroke-width="3" stroke-linecap="round"/>
+<rect x="939.905" y="661.25" width="11.200000000000001" height="11.200000000000001" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<circle cx="945.505" cy="666.85" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="998.845" cy="666.85" r="5.6000000000000005" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="998.845" cy="666.85" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<rect x="960.175" y="659.85" width="24" height="14" rx="3" fill="#daa371" stroke="#976339" stroke-width="2"/>
+<rect x="963.175" y="660.85" width="4" height="12" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<text x="972.175" y="693.85" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="middle">D14</text>
+<circle cx="838.825" cy="715.8500000000001" r="14" fill="#ffffff" stroke="#79998c" stroke-width="2"/>
+<circle cx="874.385" cy="698.07" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="874.385" cy="698.07" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="856.605" cy="742.5200000000001" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="856.605" cy="742.5200000000001" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="828.825" y="750.8500000000001" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="end">SW15</text>
+<line x1="812.155" y1="666.85" x2="865.495" y2="666.85" stroke="#203346" stroke-width="3" stroke-linecap="round"/>
+<rect x="806.555" y="661.25" width="11.200000000000001" height="11.200000000000001" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<circle cx="812.155" cy="666.85" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="865.495" cy="666.85" r="5.6000000000000005" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="865.495" cy="666.85" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<rect x="826.825" y="659.85" width="24" height="14" rx="3" fill="#daa371" stroke="#976339" stroke-width="2"/>
+<rect x="829.825" y="660.85" width="4" height="12" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<text x="838.825" y="693.85" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="middle">D15</text>
+<circle cx="705.475" cy="715.8500000000001" r="14" fill="#ffffff" stroke="#79998c" stroke-width="2"/>
+<circle cx="741.035" cy="698.07" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="741.035" cy="698.07" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="723.255" cy="742.5200000000001" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="723.255" cy="742.5200000000001" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="695.475" y="750.8500000000001" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="end">SW16</text>
+<line x1="678.805" y1="666.85" x2="732.145" y2="666.85" stroke="#203346" stroke-width="3" stroke-linecap="round"/>
+<rect x="673.2049999999999" y="661.25" width="11.200000000000001" height="11.200000000000001" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<circle cx="678.805" cy="666.85" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="732.145" cy="666.85" r="5.6000000000000005" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="732.145" cy="666.85" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<rect x="693.4749999999999" y="659.85" width="24" height="14" rx="3" fill="#daa371" stroke="#976339" stroke-width="2"/>
+<rect x="696.4749999999999" y="660.85" width="4" height="12" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<text x="705.4749999999999" y="693.85" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="middle">D16</text>
+<circle cx="1105.525" cy="849.1999999999999" r="14" fill="#ffffff" stroke="#79998c" stroke-width="2"/>
+<circle cx="1141.085" cy="831.4200000000001" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1141.085" cy="831.4200000000001" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="1123.305" cy="875.87" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1123.305" cy="875.87" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="1095.525" y="884.1999999999999" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="end">SW17</text>
+<line x1="1078.855" y1="800.1999999999999" x2="1132.1950000000002" y2="800.1999999999999" stroke="#203346" stroke-width="3" stroke-linecap="round"/>
+<rect x="1073.255" y="794.5999999999999" width="11.200000000000001" height="11.200000000000001" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<circle cx="1078.855" cy="800.1999999999999" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="1132.1950000000002" cy="800.1999999999999" r="5.6000000000000005" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1132.1950000000002" cy="800.1999999999999" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<rect x="1093.525" y="793.1999999999999" width="24" height="14" rx="3" fill="#daa371" stroke="#976339" stroke-width="2"/>
+<rect x="1096.525" y="794.1999999999999" width="4" height="12" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<text x="1105.525" y="827.1999999999999" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="middle">D17</text>
+<circle cx="972.175" cy="849.1999999999999" r="14" fill="#ffffff" stroke="#79998c" stroke-width="2"/>
+<circle cx="1007.735" cy="831.4200000000001" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1007.735" cy="831.4200000000001" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="989.9549999999999" cy="875.87" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="989.9549999999999" cy="875.87" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="962.175" y="884.1999999999999" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="end">SW18</text>
+<line x1="945.505" y1="800.1999999999999" x2="998.845" y2="800.1999999999999" stroke="#203346" stroke-width="3" stroke-linecap="round"/>
+<rect x="939.905" y="794.5999999999999" width="11.200000000000001" height="11.200000000000001" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<circle cx="945.505" cy="800.1999999999999" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="998.845" cy="800.1999999999999" r="5.6000000000000005" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="998.845" cy="800.1999999999999" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<rect x="960.175" y="793.1999999999999" width="24" height="14" rx="3" fill="#daa371" stroke="#976339" stroke-width="2"/>
+<rect x="963.175" y="794.1999999999999" width="4" height="12" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<text x="972.175" y="827.1999999999999" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="middle">D18</text>
+<circle cx="838.825" cy="849.1999999999999" r="14" fill="#ffffff" stroke="#79998c" stroke-width="2"/>
+<circle cx="874.385" cy="831.4200000000001" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="874.385" cy="831.4200000000001" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="856.605" cy="875.87" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="856.605" cy="875.87" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="828.825" y="884.1999999999999" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="end">SW19</text>
+<line x1="812.155" y1="800.1999999999999" x2="865.495" y2="800.1999999999999" stroke="#203346" stroke-width="3" stroke-linecap="round"/>
+<rect x="806.555" y="794.5999999999999" width="11.200000000000001" height="11.200000000000001" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<circle cx="812.155" cy="800.1999999999999" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="865.495" cy="800.1999999999999" r="5.6000000000000005" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="865.495" cy="800.1999999999999" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<rect x="826.825" y="793.1999999999999" width="24" height="14" rx="3" fill="#daa371" stroke="#976339" stroke-width="2"/>
+<rect x="829.825" y="794.1999999999999" width="4" height="12" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<text x="838.825" y="827.1999999999999" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="middle">D19</text>
+<circle cx="705.475" cy="849.1999999999999" r="14" fill="#ffffff" stroke="#79998c" stroke-width="2"/>
+<circle cx="741.035" cy="831.4200000000001" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="741.035" cy="831.4200000000001" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="723.255" cy="875.87" r="7.700000000000001" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="723.255" cy="875.87" r="5.25" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="695.475" y="884.1999999999999" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="end">SW20</text>
+<line x1="678.805" y1="800.1999999999999" x2="732.145" y2="800.1999999999999" stroke="#203346" stroke-width="3" stroke-linecap="round"/>
+<rect x="673.2049999999999" y="794.5999999999999" width="11.200000000000001" height="11.200000000000001" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<circle cx="678.805" cy="800.1999999999999" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="732.145" cy="800.1999999999999" r="5.6000000000000005" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="732.145" cy="800.1999999999999" r="2.8000000000000003" fill="#203346" stroke="#203346" stroke-width="2"/>
+<rect x="693.4749999999999" y="793.1999999999999" width="24" height="14" rx="3" fill="#daa371" stroke="#976339" stroke-width="2"/>
+<rect x="696.4749999999999" y="794.1999999999999" width="4" height="12" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<text x="705.4749999999999" y="827.1999999999999" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#203346" text-anchor="middle">D20</text>
+<rect x="909.5124999999999" y="273.1" width="7.2" height="9.8" rx="0" fill="#9caba8" stroke="none" stroke-width="2"/>
+<rect x="922.2875" y="273.1" width="7.2" height="9.8" rx="0" fill="#9caba8" stroke="none" stroke-width="2"/>
+<rect x="915.5" y="274.5" width="8" height="7" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<rect x="881.5124999999999" y="273.1" width="7.2" height="9.8" rx="0" fill="#9caba8" stroke="none" stroke-width="2"/>
+<rect x="894.2875" y="273.1" width="7.2" height="9.8" rx="0" fill="#9caba8" stroke="none" stroke-width="2"/>
+<rect x="887.5" y="274.5" width="8" height="7" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<rect x="909.5124999999999" y="257.00000000000006" width="7.2" height="9.8" rx="0" fill="#9caba8" stroke="none" stroke-width="2"/>
+<rect x="922.2875" y="257.00000000000006" width="7.2" height="9.8" rx="0" fill="#9caba8" stroke="none" stroke-width="2"/>
+<rect x="915.5" y="258.40000000000003" width="8" height="7" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<rect x="881.5124999999999" y="257.00000000000006" width="7.2" height="9.8" rx="0" fill="#9caba8" stroke="none" stroke-width="2"/>
+<rect x="894.2875" y="257.00000000000006" width="7.2" height="9.8" rx="0" fill="#9caba8" stroke="none" stroke-width="2"/>
+<rect x="887.5" y="258.40000000000003" width="8" height="7" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<rect x="1080.5" y="904.5" width="28" height="14" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<text x="1094.5" y="898.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#92500e" text-anchor="middle">J1</text>
+<rect x="1038.5" y="904.5" width="28" height="14" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<text x="1052.5" y="898.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#b34266" text-anchor="middle">J2</text>
+<rect x="996.5" y="904.5" width="28" height="14" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<text x="1010.5" y="898.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#7652a1" text-anchor="middle">J3</text>
+<rect x="954.5" y="904.5" width="28" height="14" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<text x="968.5" y="898.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#268060" text-anchor="middle">J4</text>
+<rect x="912.5" y="904.5" width="28" height="14" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<text x="926.5" y="898.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#7c7014" text-anchor="middle">J5</text>
+<rect x="870.5" y="904.5" width="28" height="14" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<text x="884.5" y="898.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#2370ad" text-anchor="middle">J6</text>
+<rect x="828.5" y="904.5" width="28" height="14" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<text x="842.5" y="898.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#197b8d" text-anchor="middle">J7</text>
+<rect x="786.5" y="904.5" width="28" height="14" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<text x="800.5" y="898.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#5668b1" text-anchor="middle">J8</text>
+<rect x="744.5" y="904.5" width="28" height="14" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<text x="758.5" y="898.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#744886" text-anchor="middle">J9</text>
+<rect x="702.5" y="904.5" width="28" height="14" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<text x="716.5" y="898.5" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="16" fill="#c53849" text-anchor="middle">J10</text>
+<text x="315" y="959" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#647787" text-anchor="middle">近端 ↓</text>
+<text x="905" y="959" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#647787" text-anchor="middle">近端 ↓   J10 ← … → J1</text>
+<rect x="1210" y="180" width="414" height="810" rx="12" fill="#edf4f7" stroke="none" stroke-width="2"/>
+<text x="1230" y="220" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">20 × KS-9 三脚红轴</text>
+<text x="1230" y="254" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">SW1～20从正面插入。</text>
+<text x="1230" y="288" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">每轴仅焊两个金属触点；</text>
+<text x="1230" y="322" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">中心塑料柱孔不焊。</text>
+<text x="1230" y="390" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">20 × 1N4148-TAP</text>
+<text x="1230" y="424" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">二极管在底面卧装。</text>
+<text x="1230" y="458" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">黑环 K → 方形 pad1。</text>
+<text x="1230" y="492" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">本图底面：黑环一律朝左。</text>
+<text x="1230" y="560" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">4 × 10kΩ / 0805</text>
+<text x="1230" y="594" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">R1～R4在远端中央。</text>
+<text x="1230" y="628" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">无极性；位置放大见第4页。</text>
+<text x="1230" y="700" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">10 × 平面焊线点</text>
+<text x="1230" y="734" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">J1～J10在近端底面。</text>
+<text x="1230" y="768" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">每点一根绝缘软线；</text>
+<text x="1230" y="802" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">不装直立排针或插座。</text>
+<text x="1230" y="870" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="19" fill="#647787" text-anchor="start">尺寸：73 × 96 × 1.6mm</text>
+<text x="1230" y="900" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="19" fill="#647787" text-anchor="start">示意图省略走线和过孔。</text>
+<text x="1230" y="930" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="19" fill="#647787" text-anchor="start">焊盘中心来自当前发布。</text>
+<rect x="56" y="1009" width="1568" height="96" rx="10" fill="#edf4f7" stroke="none" stroke-width="2"/>
+<text x="78" y="1044" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="23" fill="#203346" text-anchor="start">正面第一排：SW1 Num、SW2 /、SW3 *、SW4 Bk；底面第一排顺序相反。</text>
+<text x="78" y="1080" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#203346" text-anchor="start">单键电路：COL → 轴触点1 → 轴触点2 → 二极管 A → K（黑环）→ ROW。铜线已由PCB连接。</text>
+<line x1="56" y1="1137" x2="1624" y2="1137" stroke="#ccd9e1" stroke-width="2" stroke-linecap="round"/>
+<text x="56" y="1167" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="17" fill="#647787" text-anchor="start">CalcKey · MATRIX A / Pico 2 / GDM0103 · 断开USB焊装 · 非1:1加工模板</text>
+<text x="1624" y="1167" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="17" fill="#647787" text-anchor="end">PCB 17123bc08553 · 2026-11-06 · 1/4</text>
+</svg>

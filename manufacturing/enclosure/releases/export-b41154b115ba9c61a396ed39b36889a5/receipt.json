@@ -2,11 +2,11 @@
   "designId": "enclosure",
   "revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029",
   "schemaVersion": 3,
-  "exportId": "export-99d34de5e31c8f3114ead4cf76d7de58",
+  "exportId": "export-b41154b115ba9c61a396ed39b36889a5",
   "generatedAt": "2026-11-06T02:48:15.382Z",
   "designSha256": "30cc466ab92844349dd41c4f98aa1e02b4d7c49aa87ef57142f201b50cac7d64",
   "role": "enclosure",
-  "stateHash": "059881c15df00eff84c98a99eb8964e8e77fd86231dd683a7f859def5b45edb8",
+  "stateHash": "acbcac01dc1d8a6dd90a4ecba1b32a13d494793a450fda1e414a8aa9517589f4",
   "stateManifest": {
     "schemaVersion": 4,
     "designId": "enclosure",
@@ -20,7 +20,7 @@
     },
     "brief": {
       "path": "design/enclosure/README.md",
-      "sha256": "770358a1fa2a2fd96869cad224d3fe0175a781df90f11628e37a7c0d93616d06"
+      "sha256": "55ff4ae4b11eb36e9ada770234e6cdfa0fda6e984617756bd9909d03563dd943"
     },
     "requirement": {
       "artifactContractPath": "product/contract.json",
@@ -63,7 +63,7 @@
         "step"
       ]
     },
-    "stateHash": "059881c15df00eff84c98a99eb8964e8e77fd86231dd683a7f859def5b45edb8"
+    "stateHash": "acbcac01dc1d8a6dd90a4ecba1b32a13d494793a450fda1e414a8aa9517589f4"
   },
   "buildArtifacts": {
     "manifestSha256": "631aa2264f0cae3c8e6cb2ff1533f566ebe335c8517c1ac2677a8b9a2ec7bc9c",
@@ -154,7 +154,7 @@
   },
   "artifacts": [
     {
-      "path": "manufacturing/enclosure/releases/export-99d34de5e31c8f3114ead4cf76d7de58/model.step",
+      "path": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/model.step",
       "role": "model/step",
       "sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc",
       "sizeBytes": 58621034
@@ -166,8 +166,8 @@
       "objects": 32,
       "pairs": 496,
       "exact": 1,
-      "mesh": 14,
-      "cached": 43,
+      "mesh": 13,
+      "cached": 44,
       "interference": 1,
       "undeclared": 0,
       "over_budget": 0,
@@ -191,9 +191,9 @@
     "algorithm": "hmac-sha256",
     "keyId": "627c73fbf61f1b303003ba996c9c2935",
     "projectId": "ea194205-8bce-4fe7-ae6f-aecccc1a553c",
-    "receiptPath": "manufacturing/enclosure/releases/export-99d34de5e31c8f3114ead4cf76d7de58/receipt.json",
-    "payloadSha256": "94f8a4ef7d3205f24a2283812a24b6afa1aeb36812ce7df961248e9a0cf31d8e",
-    "mac": "38b0d3707db713af832b692d4df499302958a79feb74c9bc9fe7d560fc53042c"
+    "receiptPath": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+    "payloadSha256": "1219b1979a38effccd181f26f731b4bd80e6f21cada0c9ca4e98d8b84f96d56d",
+    "mac": "859f7c7fb542fe2fa9ec85dd0b52e65b1beb23225af72afad9a94b2dafe2f176"
   },
   "status": "handoff"
 }

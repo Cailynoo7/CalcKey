@@ -309,14 +309,15 @@
   "change_scope": "20 keycap top faces only; no added volume outside unchanged cap blank; socket and case profiles unchanged",
   "limitations": [
     "Physical tactile feel, print shrinkage, strength, insertion force and wear not measured.",
-    "Motion checks cover the external case, bottom cover, Pico and screen lens, sampled at 0.25 mm / 17 poses / 0.02 mm mesh tolerance; they do not certify a fused vendor switch's internal mechanism.",
-    "Previous STL and complete production ZIP retain the earlier keycap geometry; current CAD STEP is the new-keycap delivery."
+    "Motion checks cover the external case, bottom cover, Pico and screen lens, sampled at 0.25 mm / 17 poses / 0.02 mm mesh tolerance; they do not certify a fused vendor switch's internal mechanism."
   ],
   "printing_started": false,
   "powered": false,
   "flashed": false,
-  "export_id": "export-99d34de5e31c8f3114ead4cf76d7de58",
-  "export_receipt": "manufacturing/enclosure/releases/export-99d34de5e31c8f3114ead4cf76d7de58/receipt.json",
+  "export_id": "export-b41154b115ba9c61a396ed39b36889a5",
+  "export_receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
   "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc",
-  "exported_state_hash": "059881c15df00eff84c98a99eb8964e8e77fd86231dd683a7f859def5b45edb8"
+  "exported_state_hash": "acbcac01dc1d8a6dd90a4ecba1b32a13d494793a450fda1e414a8aa9517589f4",
+  "measurement_original_export_id": "export-99d34de5e31c8f3114ead4cf76d7de58",
+  "mesh_feature_record": "product/production/mesh-feature-checks.json"
 }

@@ -1,13 +1,23 @@
 {
-  "generated_utc": "2026-11-06T00:54:34.891787+00:00",
-  "revision": "e29faaf07ec70bf7b65795e9035e3935c892f001dd0cdb50afa772fe0bd46970",
-  "export_id": "export-6c3912e110909b3a860c481fa0c90123",
-  "source_receipt": "manufacturing/enclosure/releases/export-6c3912e110909b3a860c481fa0c90123/receipt.json",
+  "generated_utc": "2026-11-06T03:24:14.172558+00:00",
+  "revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029",
+  "export_id": "export-b41154b115ba9c61a396ed39b36889a5",
+  "source_receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+  "pcb_release_id": "17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727",
+  "pcb_build_id": "6a333818c3a79007ec3a24727eed3008848215ed1c5c0238051beffaecfde0e3",
   "inventory_checks": {
     "printed_parts": 28,
-    "bom_rows": 26,
+    "new_keycap_meshes": 20,
+    "unchanged_other_meshes": 8,
+    "bom_rows": 28,
+    "shopping_rows": 27,
+    "matrix_leads": 10,
+    "lcd_leads": 5,
+    "wire_installed_m": 2.25,
+    "wire_purchase_default_m": 3,
     "wiring_pdf_pages": 4,
-    "procedure_pdf_pages": 9,
+    "unpowered_record_rows": 59,
+    "fabrication_files": 13,
     "firmware_version": "0.2.0",
     "firmware_test_counts": [
       93,
@@ -17,19 +27,23 @@
     ]
   },
   "limitations": [
-    "Physical printing, fitted retention, real insertion forces, adhesive strength and support load were not measured.",
-    "LCD checked using manufacturer drawing and conservative envelopes; no exact LCD STEP was obtained.",
-    "Static manufacturer switch STEP fuses actuator and housing. Motion test excludes a 5 x 6.55 mm actuator projection from -9 to +10.3 mm relative to mounting plane, and does not verify the internal mechanism."
+    "Physical tactile feel, print shrinkage, strength, insertion force and wear not measured.",
+    "Motion checks cover the external case, bottom cover, Pico and screen lens, sampled at 0.25 mm / 17 poses / 0.02 mm mesh tolerance; they do not certify a fused vendor switch's internal mechanism.",
+    "No physical soldering, clip retention, PCB flexure or strength test; printed fit trials skipped by user.",
+    "GDM0103 remains a manufacturer-drawing envelope; no exact model of the LCD board.",
+    "Switch actuator and housing are fused in vendor STEP. Full-stroke check uses the shared unengraved cap blank and excludes the measured actuator projection; internal switch mechanism is not independently verified.",
+    "Wire strain relief and solder fillets are assembly allowances, not measured real wire geometry."
   ],
   "physical_print_trial_skipped_by_user": true,
   "flashed": false,
+  "powered": false,
   "printer_started": false,
   "hardware_tested": false,
   "files": [
     {
       "file": "README.md",
-      "bytes": 904,
-      "sha256": "28feb83cb1bb4bf510ada3ddde3a9f276dfa5a0abf42f6818a674b0829e253b6"
+      "bytes": 1527,
+      "sha256": "6283a04736da2de9d5be939831a1ea78ef260499d9b94037afa76b52913047a7"
     },
     {
       "file": "design/assembly.json",
@@ -38,8 +52,8 @@
     },
     {
       "file": "design/enclosure/README.md",
-      "bytes": 16504,
-      "sha256": "02f036380fe726a22205b13f16ca6c0f7d65144527d7c1dc4f3bb1d1891b6c9e"
+      "bytes": 20417,
+      "sha256": "55ff4ae4b11eb36e9ada770234e6cdfa0fda6e984617756bd9909d03563dd943"
     },
     {
       "file": "design/enclosure/source/assets/29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d.step",
@@ -52,9 +66,14 @@
       "sha256": "d49ada10d893cfcb07cb4abced0a0a0cadca4c4150f153d874268ca06171a24f"
     },
     {
+      "file": "design/enclosure/source/assets/e2474c585d2693bb16227489b4c195a5ffbfa208a89e1ee4a6da6b9e6b1f5ef2.step",
+      "bytes": 4333285,
+      "sha256": "e2474c585d2693bb16227489b4c195a5ffbfa208a89e1ee4a6da6b9e6b1f5ef2"
+    },
+    {
       "file": "design/enclosure/source/design.json",
-      "bytes": 63077,
-      "sha256": "88002e86b7d4a8b3e464d978e50665994a0ca7de4209a4d29bff18fa3ca647c6"
+      "bytes": 39140,
+      "sha256": "876cc54da9dd28052e91da60f20072077ef338556ce073ba2e2e7dd7c58ca4e2"
     },
     {
       "file": "design/enclosure/source/parts/base/000-base.py",
@@ -92,109 +111,109 @@
       "sha256": "9f34e292f3e513037c32443077ed19b99ebc716af683cd28143be019d41a1164"
     },
     {
-      "file": "design/enclosure/source/parts/imports/001-sw_01.py",
-      "bytes": 141,
-      "sha256": "1815cc270822ff63bdaca5966c79bbdbe1064f0a03974278078b3aaed08063aa"
+      "file": "design/enclosure/source/parts/imports/001-matrix_pcb.py",
+      "bytes": 168,
+      "sha256": "44a3cb596ccdd750e4544de45d79a6652de5648e51902e4d0185632b4d2dfd1e"
     },
     {
       "file": "design/enclosure/source/parts/keycap_02/000-keycap_02.py",
-      "bytes": 407,
-      "sha256": "c205946123a5cd882ee44aebf3fc542f647ec6a91a9555c49e98dfcb8a5023eb"
+      "bytes": 399,
+      "sha256": "f31c4e7f49dcd55fdb0d43e80ef00126c27e9d111211f536b65e4177095a02d0"
     },
     {
       "file": "design/enclosure/source/parts/keycap_03/000-keycap_03.py",
-      "bytes": 407,
-      "sha256": "cd6c071ca4b1a8ff54d123fdfe8b302fb0d9e7cddad9f04cecd3f7d153a6ea11"
+      "bytes": 399,
+      "sha256": "b100d70a1659cbd99a4d5affeda0b10d1aaeede3c302a1d14745d006b86d803d"
     },
     {
       "file": "design/enclosure/source/parts/keycap_04/000-keycap_04.py",
-      "bytes": 409,
-      "sha256": "0004a1637e74b2b57c925d8195b70c05b2f456546ba703ce0de340cca07c6b1a"
+      "bytes": 395,
+      "sha256": "bc2372cc68c13817aab70a41ce7ec972071cfd7d0102f08747c73b8d0c5cb211"
     },
     {
       "file": "design/enclosure/source/parts/keycap_05/000-keycap_05.py",
-      "bytes": 407,
-      "sha256": "35aeee8ebd74bc3156a4c254f97a40ccca39db453e7e4fa0ba461476f55ab0e6"
+      "bytes": 394,
+      "sha256": "bae8b312bcd7d5eb92eadf090232e9d0b8e3e8e64e33ea8265e794a7139cf867"
     },
     {
       "file": "design/enclosure/source/parts/keycap_06/000-keycap_06.py",
-      "bytes": 407,
-      "sha256": "126bed5ca631f351b131bf19ca961b5969e43614670c7af63e3152f15219ab83"
+      "bytes": 394,
+      "sha256": "52f2e634fa50df55715363ab170dba352d9cf0f7f305628258ccd8b2c7468002"
     },
     {
       "file": "design/enclosure/source/parts/keycap_07/000-keycap_07.py",
-      "bytes": 407,
-      "sha256": "ee8d3b67b834ea5cf9518723d011b17ae37ab05fdc5621251ab0fe433f0e3c49"
+      "bytes": 394,
+      "sha256": "6d96b90a0c9f2b76b3fa865da88b2759f520e18d885e3ecd7273c85d7f367990"
     },
     {
       "file": "design/enclosure/source/parts/keycap_08/000-keycap_08.py",
-      "bytes": 407,
-      "sha256": "6286fb198fc257de1cb0ac2c98f329dea95578b9b94e6003dae66b1806752d87"
+      "bytes": 401,
+      "sha256": "43f056e4312e2c195035f2abd52530d48a2c669386cc5b856b81d9c07b9aa1ba"
     },
     {
       "file": "design/enclosure/source/parts/keycap_09/000-keycap_09.py",
-      "bytes": 407,
-      "sha256": "9292793d02c64010e95f4d0b8635c6a0f5cebe764d4f478570a411b34145d054"
+      "bytes": 394,
+      "sha256": "ad09dc592efecf85d35cf9e7ea18260782a2187aabf8c16021a6f25e10c91598"
     },
     {
       "file": "design/enclosure/source/parts/keycap_10/000-keycap_10.py",
-      "bytes": 407,
-      "sha256": "66928ca35ecc746f70a6ba2391110ef0ed75ffc97d89d9ebb7fb11d364472d8e"
+      "bytes": 966,
+      "sha256": "dccc012e781e064af02b80319374da8c6be78d8ceca1f5740dfdfa200e49a782"
     },
     {
       "file": "design/enclosure/source/parts/keycap_11/000-keycap_11.py",
-      "bytes": 407,
-      "sha256": "a6b4af017b12292c9d1f5799d2595c431c779bcd32400f7ae7d1af98df43cac5"
+      "bytes": 394,
+      "sha256": "4b1da42321c82a0439eeceffdebe97d03803de22d04e48bcb4248fff7412cf43"
     },
     {
       "file": "design/enclosure/source/parts/keycap_12/000-keycap_12.py",
-      "bytes": 407,
-      "sha256": "8dac5fed24b13637a3c3dbbc8ec632bf04881f27f8982138f87bc92abfa03229"
+      "bytes": 397,
+      "sha256": "e3d2253b831e70755bd57dd72dd3639eb15996ce13aa4ec79d8cd8a0efcba1d5"
     },
     {
       "file": "design/enclosure/source/parts/keycap_13/000-keycap_13.py",
-      "bytes": 407,
-      "sha256": "ce9082c85385c80155bf8905e8fedf2a784430a17a3773e401d1c3c258f6aba2"
+      "bytes": 394,
+      "sha256": "e5fb52890153b10ed90ce0f5f55112796ca4ad510166e7053434b8c15d0d96ac"
     },
     {
       "file": "design/enclosure/source/parts/keycap_14/000-keycap_14.py",
-      "bytes": 407,
-      "sha256": "c593781f5aaae9472af0270996a17dd26f5769e618fc0b69505d8972a4413e5a"
+      "bytes": 394,
+      "sha256": "51b4ad12d242e7aa0d469691b3a364d240ec7f0abb75ae4ffd2d3a74684e9853"
     },
     {
       "file": "design/enclosure/source/parts/keycap_15/000-keycap_15.py",
-      "bytes": 407,
-      "sha256": "7d52399218f203dfcf523b292bb2d8cd04b8fbc78c9e9cb91ea911dbf22098db"
+      "bytes": 394,
+      "sha256": "b4fb141c3824aa8b5936a25a15bebe0b0bf0a80e25cea284d41bda11b6eee4d1"
     },
     {
       "file": "design/enclosure/source/parts/keycap_16/000-keycap_16.py",
-      "bytes": 407,
-      "sha256": "a3572a0dc5a1daeea564d1d9362335f83660448c276291aa5007f8a1c35bc952"
+      "bytes": 649,
+      "sha256": "d60721b2802ecd494ae2549f4d44d4f2677ff60dc85b0ae081242d38c3080ad7"
     },
     {
       "file": "design/enclosure/source/parts/keycap_17/000-keycap_17.py",
-      "bytes": 413,
-      "sha256": "846e8e93129d718ae3621cf09cf427d8879b59ae8fb4073dcd21a0bdf458329e"
+      "bytes": 399,
+      "sha256": "8e7e53ebe8daf6e853c51ffc91add0dbed16b41cad0e03e2ad5d2fa23ba748e2"
     },
     {
       "file": "design/enclosure/source/parts/keycap_18/000-keycap_18.py",
-      "bytes": 407,
-      "sha256": "d872fadbf35de0122072ac8bcbfa78e3e1600a42be9ded6a7d8ea53390d12022"
+      "bytes": 394,
+      "sha256": "cfb6dffa88bff29519d54193954b60eca32d20e8ea87dc041f425213f9818752"
     },
     {
       "file": "design/enclosure/source/parts/keycap_19/000-keycap_19.py",
-      "bytes": 407,
-      "sha256": "ed10b2f9600af56bbf582795d0abca89899b73191e5236f000bae7a7429fbf0d"
+      "bytes": 394,
+      "sha256": "a7ee8627074bb956e5320c6e9cfbdfd539a2ba58932a8e37abf5ae6b41a69ea8"
     },
     {
       "file": "design/enclosure/source/parts/keycap_20/000-keycap_20.py",
-      "bytes": 409,
-      "sha256": "d6c4ac3aeed895c453eb53c9c302004ae16210f3cc8db58cd5e7b9a4ffc486c5"
+      "bytes": 395,
+      "sha256": "dfdc2d40f7d27f8a6272621d5cd71f6bba9fa1ef2822357a349d533d7117eee6"
     },
     {
       "file": "design/enclosure/source/parts/keycaps/000-keycaps.py",
-      "bytes": 2902,
-      "sha256": "5862d3e320d6ba15f869ae8e97b901792b4ded14dc3e9c020405bafe53f549aa"
+      "bytes": 3659,
+      "sha256": "743479890b23be5cdcf79dfc0cdffe5e9c22be94b2aba7d81f357ec2578aef89"
     },
     {
       "file": "design/enclosure/source/parts/rear_foot_left/000-rear_foot_left.py",
@@ -212,104 +231,9 @@
       "sha256": "fa8278a96e401a9f046e9998631fded0b95af6c325dc5ecbb9f73f513fa4a3eb"
     },
     {
-      "file": "design/enclosure/source/parts/switch_02/000-switch_02.py",
-      "bytes": 307,
-      "sha256": "3890b66170249cbdefcc15dcb6fdd93751825cee9b02a9e05b8deddb85c2bbe5"
-    },
-    {
-      "file": "design/enclosure/source/parts/switch_03/000-switch_03.py",
-      "bytes": 307,
-      "sha256": "bb40b4c5ed9549edfb92298608929318618cf797a881f3b20ac9f8a6c8cf9a27"
-    },
-    {
-      "file": "design/enclosure/source/parts/switch_04/000-switch_04.py",
-      "bytes": 307,
-      "sha256": "a20e8f4d63af8c398aafa560b3be939a2a9d22a9a065c46b8b7b918a87c808c4"
-    },
-    {
-      "file": "design/enclosure/source/parts/switch_05/000-switch_05.py",
-      "bytes": 307,
-      "sha256": "5e2873d6a23309b0e8e0abd5d247240c331dba00c031f828c084d093320e7476"
-    },
-    {
-      "file": "design/enclosure/source/parts/switch_06/000-switch_06.py",
-      "bytes": 307,
-      "sha256": "16321387b0e37a8bdac39900ffa7d58ecfb0e676aa83d9e57945cb8b3da95204"
-    },
-    {
-      "file": "design/enclosure/source/parts/switch_07/000-switch_07.py",
-      "bytes": 307,
-      "sha256": "76fea78965fd42de5ef48c3a2d57b8d75f8c30f69398f0acd480701a5069122d"
-    },
-    {
-      "file": "design/enclosure/source/parts/switch_08/000-switch_08.py",
-      "bytes": 307,
-      "sha256": "2bd6535ea728600d570a7c8a4c88df55bc3a4a8920b95fb6e3036b478a81b73d"
-    },
-    {
-      "file": "design/enclosure/source/parts/switch_09/000-switch_09.py",
-      "bytes": 307,
-      "sha256": "79bced113ac07bf8ce115269b876da5b6b605d54982085c17b388259f2b639af"
-    },
-    {
-      "file": "design/enclosure/source/parts/switch_10/000-switch_10.py",
-      "bytes": 308,
-      "sha256": "fa74faa32f6a52829074a1281a01e41d2e15a7542296313e70e5285e1ea434a5"
-    },
-    {
-      "file": "design/enclosure/source/parts/switch_11/000-switch_11.py",
-      "bytes": 308,
-      "sha256": "706171157cb7f14a22aab4889bc5e75c75c52cee0cc293ebf39181ee19c241bf"
-    },
-    {
-      "file": "design/enclosure/source/parts/switch_12/000-switch_12.py",
-      "bytes": 308,
-      "sha256": "c7a48b0861ae4accf20d2362ae26683bd52425b25c1126a72efbcda7b5bcf424"
-    },
-    {
-      "file": "design/enclosure/source/parts/switch_13/000-switch_13.py",
-      "bytes": 308,
-      "sha256": "51e3346ea83e2401be3d7490841afc042138e1aff9f5865a3d857b85dac3ab33"
-    },
-    {
-      "file": "design/enclosure/source/parts/switch_14/000-switch_14.py",
-      "bytes": 308,
-      "sha256": "99c254492dc5e21e33176a58901d9a8a57d2b8441046e1c09be2800ef59892e0"
-    },
-    {
-      "file": "design/enclosure/source/parts/switch_15/000-switch_15.py",
-      "bytes": 308,
-      "sha256": "92a2f2b6feba444224db56c022169e353d3d89846293465e99c4677048077c10"
-    },
-    {
-      "file": "design/enclosure/source/parts/switch_16/000-switch_16.py",
-      "bytes": 308,
-      "sha256": "2bd36670b0390e62676daf1ff3aa2b9fb3b91d1f93e2aecbc7a58a2aa5f1f031"
-    },
-    {
-      "file": "design/enclosure/source/parts/switch_17/000-switch_17.py",
-      "bytes": 308,
-      "sha256": "26334ff014198835e210343e0ab641eff65796fef37827cc767941dac0a4762c"
-    },
-    {
-      "file": "design/enclosure/source/parts/switch_18/000-switch_18.py",
-      "bytes": 308,
-      "sha256": "9008efeb7c182470b2b797ee8b83116612800a31528d9e44a35d0320c67f2793"
-    },
-    {
-      "file": "design/enclosure/source/parts/switch_19/000-switch_19.py",
-      "bytes": 308,
-      "sha256": "eca91256e24809ab0da3465f10f98237e713d473246627c365d2db203f11faac"
-    },
-    {
-      "file": "design/enclosure/source/parts/switch_20/000-switch_20.py",
-      "bytes": 308,
-      "sha256": "9db18cb3c46de787279297d027733f097013e7224a9e06744d70234985cdb40d"
-    },
-    {
       "file": "design/enclosure/source/parts/top/000-top.py",
-      "bytes": 2753,
-      "sha256": "dd85eec314e6a5c5872fa7b97e6f719ae9b4c926f9c0ea536ed497eea8b782d4"
+      "bytes": 2741,
+      "sha256": "aae529cb89b5e9520e9a92c786b9b58d4e3604256fb81d458b4a12742203bbaa"
     },
     {
       "file": "design/enclosure/source/wiring.json",
@@ -318,8 +242,8 @@
     },
     {
       "file": "design/firmware/README.md",
-      "bytes": 8776,
-      "sha256": "f573ccdde0f6038483839758d09071d7333d26553d9e735f21d69c6fdd8b246b"
+      "bytes": 9073,
+      "sha256": "77d487320d49a9f7c4ae9a032e1aff0a13aec6ddfc3239f07eb4743bebf11dde"
     },
     {
       "file": "design/firmware/bootstrap.py",
@@ -343,8 +267,8 @@
     },
     {
       "file": "design/firmware/release/v0.2.0/README.md",
-      "bytes": 8776,
-      "sha256": "f573ccdde0f6038483839758d09071d7333d26553d9e735f21d69c6fdd8b246b"
+      "bytes": 9073,
+      "sha256": "77d487320d49a9f7c4ae9a032e1aff0a13aec6ddfc3239f07eb4743bebf11dde"
     },
     {
       "file": "design/firmware/release/v0.2.0/calckey-pico2-v0.2.0.bin",
@@ -374,7 +298,7 @@
     {
       "file": "design/firmware/release/v0.2.0/verification.json",
       "bytes": 12482,
-      "sha256": "d416610e60b313288476d74cfebf3137246521e4b37de7d02558ae650d80e8b9"
+      "sha256": "73f52502fb9a2bc05c9508b1b22fdea063d7563656e8fa50ec32002f0e74a1ed"
     },
     {
       "file": "design/firmware/source/CMakeLists.txt",
@@ -467,79 +391,209 @@
       "sha256": "10d0e1dee907eda937a1f1e70d704db9363eac8b9d8543b980f5b550edc087de"
     },
     {
-      "file": "manufacturing/enclosure/releases/export-6c3912e110909b3a860c481fa0c90123/model.step",
-      "bytes": 107871074,
-      "sha256": "cfb94e5ce8b9b026b91f8a6a9d78c3f1ec335ae6c4b40388ec432fba3cfdc743"
+      "file": "design/matrix/README.md",
+      "bytes": 4088,
+      "sha256": "d85e1f8fdf42397abcc2564e334e60bcd07a2ee76f8358c6db37246fce8754cf"
     },
     {
-      "file": "manufacturing/enclosure/releases/export-6c3912e110909b3a860c481fa0c90123/receipt.json",
-      "bytes": 20815,
-      "sha256": "442418d96dcfaa153de6909c9f374cf87c6a77e35a28df6d2f05a99b6d582ffd"
+      "file": "design/matrix/assembly.md",
+      "bytes": 4534,
+      "sha256": "d7d9b7c59207aade272bb8d58b4fd0a19e1d4055f50d4e7c16def53105f7a830"
+    },
+    {
+      "file": "design/matrix/source/layout.ts",
+      "bytes": 1439,
+      "sha256": "b8a47d62b1c6d7906c9ec00cc106729472776959b7d46f5a34f951d4f06073ff"
+    },
+    {
+      "file": "design/matrix/source/lib/replicator-pcb.ts",
+      "bytes": 5078,
+      "sha256": "0b504b94740b4fd197fa3ba6e03920d24b13dfd35c47d69f88f295de8c137d9e"
+    },
+    {
+      "file": "design/matrix/source/main.tsx",
+      "bytes": 2686,
+      "sha256": "c983782b9a2ffd51a50a419151b0160d42523933094cd7f6d5b771620ef21cd8"
+    },
+    {
+      "file": "design/matrix/source/models/ks9.step",
+      "bytes": 1080795,
+      "sha256": "29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d"
+    },
+    {
+      "file": "design/matrix/source/pcb.config.json",
+      "bytes": 8420,
+      "sha256": "5f31a6189d41eee25cf9a52deb3a8362f7aeea728a3c3794c45d3dcc0aca2b03"
+    },
+    {
+      "file": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/model.step",
+      "bytes": 58621034,
+      "sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+    },
+    {
+      "file": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+      "bytes": 10775,
+      "sha256": "a9406943875e39de20f5a83bdf27f7101f1955456be0263ebad44c4045d9ea8e"
+    },
+    {
+      "file": "manufacturing/matrix/release-index.json",
+      "bytes": 394,
+      "sha256": "fce291b9305cafe82dcd2ce361a59d794b6706e4b3ec125fb366ac1d0f0373c7"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/3dmodels/matrix.3dshapes/D_DO-35_SOD27_P7.62mm_Horizontal.step",
+      "bytes": 21712,
+      "sha256": "9704292191fcb13b3dfc88c1e572df18313ac20023bb230486c878d8dddfdb54"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/3dmodels/matrix.3dshapes/R_0805_2012Metric.step",
+      "bytes": 40592,
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/3dmodels/matrix.3dshapes/ks9.step",
+      "bytes": 1080795,
+      "sha256": "29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/assembly.glb",
+      "bytes": 34253692,
+      "sha256": "1e122358d362d009b2a01ebf797f361b624def75469637d13ae71dca5fae4458"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/assembly.step",
+      "bytes": 4333285,
+      "sha256": "e2474c585d2693bb16227489b4c195a5ffbfa208a89e1ee4a6da6b9e6b1f5ef2"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/circuit.json",
+      "bytes": 850669,
+      "sha256": "8a779318bd5c6954efa04725872f7ac9e82beba712a5fcde15156b1b5dae9171"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/drill/board-NPTH.drl",
+      "bytes": 634,
+      "sha256": "3fc8f757df9607863d3c996740d24af9c689e2c87cee08304daea7480d4f2afa"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/drill/board-PTH.drl",
+      "bytes": 1819,
+      "sha256": "e31a1900f52877882f709e7c68eb62d9a4004f0ce6175f60a0ce519e6e3749fb"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/drill/matrix-drill-report.txt",
+      "bytes": 718,
+      "sha256": "c0b2196d08030025aeeacad68c1aec58cf6d0f99f069b0b1a5c0e3bce6fadcd0"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/gerbers/board-B_Cu.gbl",
+      "bytes": 14319,
+      "sha256": "77978ca152a6105eb4a884a54708df98fb08551f949321a08e574cc66d4eb4af"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/gerbers/board-B_Mask.gbs",
+      "bytes": 4957,
+      "sha256": "706916575ba375660052ae189d750247822d21ec921c68c816a11d79721ecc8c"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/gerbers/board-B_Paste.gbp",
+      "bytes": 1231,
+      "sha256": "083e48bbf651067f2321fbc3122e16484fe45ed6ef1b48fd7fd44c121cb9a969"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/gerbers/board-B_Silkscreen.gbo",
+      "bytes": 52894,
+      "sha256": "b97d58149be48ffe98439282900a2d1b8529a3604819acc22e5cf47589415ab3"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/gerbers/board-Edge_Cuts.gm1",
+      "bytes": 3880,
+      "sha256": "ddfd2b6ca573be2fc886c649bc3596040628908c7cdeb03fbc58e7df445bafcf"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/gerbers/board-F_Cu.gtl",
+      "bytes": 11161,
+      "sha256": "038b5941de4dd032d2503ee66916cdcb86ef321fd721b6b79704d540ad8a747a"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/gerbers/board-F_Mask.gts",
+      "bytes": 4156,
+      "sha256": "a300419bbc2367b58510a5e86f8b6535a8d3456a46567dd9159d1d658276d25b"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/gerbers/board-F_Paste.gtp",
+      "bytes": 450,
+      "sha256": "ba0e164fdfbd18da21cab519e25e1655a134382cd2ebdc9e254e72cf4d5cc77a"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/gerbers/board-F_Silkscreen.gto",
+      "bytes": 49252,
+      "sha256": "8b354d6d20190d8658be2e3e3288b5f070241940194aeca06c0605114dd80b3c"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/gerbers/board-job.gbrjob",
+      "bytes": 2600,
+      "sha256": "0ab65a9000892b6a203accc96c980d71bd98a51ff5020e64d91b5557b7d9d931"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/jlc-smt-bom.csv",
+      "bytes": 72,
+      "sha256": "aa1612c451e93d09b111d32b4569cc296efc2d633dfe8745feda984e6b0a473c"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/jlc-smt-placement.csv",
+      "bytes": 83,
+      "sha256": "9f7341ff1e2e3b6c2c0d7cb9ba2dfdac47befb92965ff74f99c129c23e83ff30"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/manifest.json",
+      "bytes": 19774,
+      "sha256": "a819c877fb1da7a5b98d93f5fe0a16b196e84661148f0a4a722a6d1323c401d7"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/previews/assembly-iso.png",
+      "bytes": 714003,
+      "sha256": "913d2ef9c198dc0118ceb9929eaa0c4d267190248145b3b812d90a5b5ead94ec"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/previews/gerber-bottom.png",
+      "bytes": 192440,
+      "sha256": "c87d67948c780a18c1ecc52bc1bef9a635619affb4de024a1b40f1db4615e4ec"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/previews/gerber-bottom.svg",
+      "bytes": 58085,
+      "sha256": "cacddfc1a3dad7549c040e5e8540e3db0817a34ec462318a30dc0484dd5a0304"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/previews/gerber-top.png",
+      "bytes": 318950,
+      "sha256": "06ff757980524889b79a295d524fb5d18b97af12acc1ad257735664e53cbece1"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/previews/gerber-top.svg",
+      "bytes": 49622,
+      "sha256": "9429410606bd52dac38e5d1f379532bd5cbd724907adac6359873cdcb963e02a"
+    },
+    {
+      "file": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/release-manifest.json",
+      "bytes": 5934,
+      "sha256": "9172a35ff855e1a0376d32d8fdec4b7b9c46065f73d87cf83b2dc1758306e969"
     },
     {
       "file": "product/README.md",
-      "bytes": 8649,
-      "sha256": "d5b2b746f9bfd08cca6f300a090814275ebbecb10f7213191715d71fac2c7012"
-    },
-    {
-      "file": "product/assembly/README.md",
-      "bytes": 1668,
-      "sha256": "3d61a98b4795fe11cee2a83bb60aaf11d618c7f863982215a1f333b300e5cfc0"
-    },
-    {
-      "file": "product/assembly/calckey-soldering-procedure.pdf",
-      "bytes": 291646,
-      "sha256": "646b23ad84d5edb7f397a9aee2e2837b833d9b1912017053224964765e75a6b5"
-    },
-    {
-      "file": "product/assembly/component-check-record.csv",
-      "bytes": 2927,
-      "sha256": "c23220377216b8d44a9fecd89539dfab3b588ae90cc99b0076c96019e9513ca5"
-    },
-    {
-      "file": "product/assembly/generate_soldering_guide.py",
-      "bytes": 34338,
-      "sha256": "e2d99b619adc739ce2f24f469469504c78be09f56c35b89bda0109230c2b15d9"
-    },
-    {
-      "file": "product/assembly/key-check-record.csv",
-      "bytes": 2634,
-      "sha256": "e373dfc20c8da336fac99ed5d9d035b10401bc3c5b0b033e7a3b991e9291ef73"
-    },
-    {
-      "file": "product/assembly/procedure-record.json",
-      "bytes": 2271,
-      "sha256": "cd5b7ce68cc09c3bbf03ff1014bf73d3761869ece163586c5fbbd38776d3acc4"
-    },
-    {
-      "file": "product/assembly/pullup-check-record.csv",
-      "bytes": 1051,
-      "sha256": "0c1a9790b927f8e5614044a3bd0bea29cf7d847818c16a3026fde4c4736c29bf"
-    },
-    {
-      "file": "product/assembly/soldering-procedure.md",
-      "bytes": 20104,
-      "sha256": "bc7e7f987ea22687ad6047df0359ee939dc2e9431c10f0aadd9ffe691029c90f"
-    },
-    {
-      "file": "product/assembly/stage-check-record.csv",
-      "bytes": 1305,
-      "sha256": "3c9b280248cf3d72a84fe24ec66ac522af2bd2d66cab806961c27a6e7ffa140e"
-    },
-    {
-      "file": "product/assembly/wire-check-record.csv",
-      "bytes": 1826,
-      "sha256": "c8a53126077e156a5fa2e8ee5fda6b174027e2e537466a8a0f5f2bce034a8ede"
+      "bytes": 9489,
+      "sha256": "980637e78af8a5370c3f84bf441ba7b06d4ed969d99c8489b0b67a599eff481c"
     },
     {
       "file": "product/bom.csv",
-      "bytes": 10940,
-      "sha256": "7e3d40401a27e10758a4559d153a45d00f09a34f34f908a2766c0baa97299cc9"
+      "bytes": 14097,
+      "sha256": "800d75f2d1982beaefa80e6b246c8774f4e7e41cc847c89f6461d05ae7eb3a30"
     },
     {
       "file": "product/bom.json",
-      "bytes": 17842,
-      "sha256": "f190c4f96c6577249a1ecba512e67aff39242189f3903bf91e0b27a8d13e3031"
+      "bytes": 22280,
+      "sha256": "076caa30eaedbfa50220f6725b06f4c300240a9f88c3c6ef819171018cabe222"
     },
     {
       "file": "product/bring-up-checklist.md",
@@ -547,14 +601,19 @@
       "sha256": "8f20dd251d4ed3a03c4e884af139bb0e0a3cfb8e6e3c73e49dbfa358235d2dc5"
     },
     {
+      "file": "product/calckey-firmware-v0.2.0.zip",
+      "bytes": 647794,
+      "sha256": "56e02ec26ea73f955207522585de8fd78100a220bdff2d7a2762d5c80e6e3bd3"
+    },
+    {
       "file": "product/component-selection.json",
-      "bytes": 19349,
-      "sha256": "b1eb62bc830a3f1a86c867c74e039d7c88fc318722f4f589d4c5324ce7bc965d"
+      "bytes": 23787,
+      "sha256": "dbd55a142a56335a67cc2fdca8023a8ab324ee94896f96a37189ededd016e38f"
     },
     {
       "file": "product/constraints.json",
-      "bytes": 11602,
-      "sha256": "44719b7fd631a444fca2e97fd53e23641f2787a6a8295d10892c635b07242889"
+      "bytes": 12484,
+      "sha256": "0d45083c4edcc090ae54ff16df7a477ca9eff768f3e4df427514d652dd45297b"
     },
     {
       "file": "product/contract.json",
@@ -562,79 +621,164 @@
       "sha256": "2c31727705804b86c5646041da0803cb697d3d72c1edaf1e3fb365c805dc5df3"
     },
     {
-      "file": "product/diagrams/01-matrix-front.svg",
-      "bytes": 50146,
-      "sha256": "264a532bc362eaa9316033ddad2fdb58eab61796966513c765bc4efc88e5f1ee"
+      "file": "product/keycap-usability-verification.json",
+      "bytes": 11508,
+      "sha256": "b2d79f336be0dafbd2d76469d239457012e3fb841032e09d5d3cd645df77ace7"
     },
     {
-      "file": "product/diagrams/02-backside-soldering.svg",
-      "bytes": 55968,
-      "sha256": "5d141beb38910ce744b4100bd605608496ae8f475053188857aea6c366cc93e6"
+      "file": "product/lcd-upgrade.md",
+      "bytes": 2964,
+      "sha256": "9d9f61a92c084f54fd25729cfc119c6931618fa3d43b1d90254079f026e96c6c"
     },
     {
-      "file": "product/diagrams/03-pico-lcd-pullups.svg",
-      "bytes": 26695,
-      "sha256": "ee017002e5d36b50dfd36d2f62b2b05968c04eadd244abd1de56c2ef7f64b785"
+      "file": "product/matrix-assembly-diagrams/01-component-orientation.png",
+      "bytes": 405215,
+      "sha256": "a713e7bcc24c2d902c6fae074fbb0640963e9b04288daf000a3274e491b22745"
     },
     {
-      "file": "product/diagrams/04-lcd-front-back-wiring.svg",
-      "bytes": 15554,
-      "sha256": "0c24bb8f7c67793cec23423922d1d4a61aeb76cd6c4ca05846df2fd95b462253"
+      "file": "product/matrix-assembly-diagrams/01-component-orientation.svg",
+      "bytes": 52006,
+      "sha256": "66eeb7dcbd8d9c9a73545fb2c373dbe6fb09c287ebac69b5d4d049cb0442fe63"
     },
     {
-      "file": "product/diagrams/README.md",
-      "bytes": 2634,
-      "sha256": "e812c18f95c157b652c0b708f50261a166045dfc1e0a32eac297219581a48bee"
+      "file": "product/matrix-assembly-diagrams/02-j1-j10-to-pico.png",
+      "bytes": 339765,
+      "sha256": "64681e0a679aa938a29a9659f5be7260c45ba6dc4ab632d858ff43a18c63f767"
     },
     {
-      "file": "product/diagrams/calckey-wiring-guide.pdf",
-      "bytes": 164500,
-      "sha256": "52ac5f9fbe289629bf6a15052668d8b06a02635a78c0f261016d247e6922c312"
+      "file": "product/matrix-assembly-diagrams/02-j1-j10-to-pico.svg",
+      "bytes": 28214,
+      "sha256": "db7fe05c23864403fe61557ea4c12718e40345f5b6f970fbe19fcebfba9f57a0"
     },
     {
-      "file": "product/diagrams/drawing-record.json",
-      "bytes": 1728,
-      "sha256": "682324017d940c034e86ba835425c201aa05f7952ef6d8e92ae5e2447345850c"
+      "file": "product/matrix-assembly-diagrams/03-lcd-orientation-and-wiring.png",
+      "bytes": 304488,
+      "sha256": "be1e76e024050894f7c669c489a482112d86e886f1c189e208128b8014d7647b"
     },
     {
-      "file": "product/diagrams/generate_wiring.py",
-      "bytes": 23468,
-      "sha256": "621a50830913e8e8f1eb734a872f15224379eb823df36077d2b63f144276a66e"
+      "file": "product/matrix-assembly-diagrams/03-lcd-orientation-and-wiring.svg",
+      "bytes": 15228,
+      "sha256": "c26dffa4406b69145b7075c7ab3192df89ee5183c96fa4357a3d522c34b12581"
     },
     {
-      "file": "product/diagrams/lcd-wiring-map.csv",
-      "bytes": 605,
-      "sha256": "132772716ec4628a40ec219efed5a98ae1b9de06f77780075754bb31adaaa4e6"
+      "file": "product/matrix-assembly-diagrams/04-details-and-unpowered-checks.png",
+      "bytes": 388365,
+      "sha256": "cf8299354ae3613c437fa9158174d4b7aa385fcdae3c600978aeef4a3200839f"
     },
     {
-      "file": "product/diagrams/soldering-map.csv",
-      "bytes": 922,
-      "sha256": "72c6ef85c4e887a3fe1e4325ef934b768c544aa74e8a4b7e936fa148f811ee18"
+      "file": "product/matrix-assembly-diagrams/04-details-and-unpowered-checks.svg",
+      "bytes": 13151,
+      "sha256": "9e0ef0ae86640345320db2f5c9907e9504de3fe4062ef52722a7515924273b4e"
+    },
+    {
+      "file": "product/matrix-assembly-diagrams/README.md",
+      "bytes": 6030,
+      "sha256": "27878caf144af115f56ff3c81108aeb85e175cda8682413a907070812e468f7d"
+    },
+    {
+      "file": "product/matrix-assembly-diagrams/calckey-matrix-pcb-assembly.pdf",
+      "bytes": 174432,
+      "sha256": "262a0781e60857eaa0bb4d8b134aa5393e1272f53160fe61e7ecf3070e3c6e5c"
+    },
+    {
+      "file": "product/matrix-assembly-diagrams/generate.py",
+      "bytes": 24409,
+      "sha256": "694efc4d0ea8d247437dff86742a6255a0eeb696abfdbd82c32a475ae31f0e5d"
+    },
+    {
+      "file": "product/matrix-assembly-diagrams/guided-soldering.md",
+      "bytes": 12882,
+      "sha256": "b3b31e32ee7da817621f21e71335effc306e99d51e5334b0ab252981b46026a2"
+    },
+    {
+      "file": "product/matrix-assembly-diagrams/soldering-map.csv",
+      "bytes": 1121,
+      "sha256": "80f80ed2086e7e535c792fbeeb687c360367de537facaeada32ff973f9cd73f9"
+    },
+    {
+      "file": "product/matrix-assembly-diagrams/source-checks.json",
+      "bytes": 1472,
+      "sha256": "37122062e9eaf2b36ba89a5f821cfa5d7014ee46effc4bbf1ab853f2bc963d39"
+    },
+    {
+      "file": "product/matrix-assembly-diagrams/unpowered-check-record.csv",
+      "bytes": 4229,
+      "sha256": "8627550579c2c388c7a905258edff7ee222059204ae7037fdf166a8736d5f500"
+    },
+    {
+      "file": "product/matrix-pcb-verification.json",
+      "bytes": 7730,
+      "sha256": "9cf4aacb6377401e79c80bb0922e1298673ba0523302560ff31cdeea6e1ddce6"
     },
     {
       "file": "product/production/README.md",
-      "bytes": 7062,
-      "sha256": "40d64c201aa2cdf4a2cf447acd4efa22c11dda49ef3b85faa2c2e30dd0eb6400"
+      "bytes": 12383,
+      "sha256": "a740c0696b6e471d31a010b6b097f08f55ecd0d3d8e099a2cd3f0170d4a03b11"
     },
     {
       "file": "product/production/build_delivery.py",
-      "bytes": 11732,
-      "sha256": "3cb175d23c600bfc37a9d2793356bafc721c7429be139431c40a56231b5d0177"
+      "bytes": 21817,
+      "sha256": "56d2d5becd6c352b34ce3f5ebe3902eb3aed3456f0d31f2358cec9c7b222b579"
     },
     {
       "file": "product/production/design-verification.json",
+      "bytes": 3351,
+      "sha256": "d599d6a8561d5c065504e486cd6dae1137cd653e9c1675d471639f66cca66f9c"
+    },
+    {
+      "file": "product/production/generate_models.py",
+      "bytes": 9405,
+      "sha256": "9f39a95b0a083d8482295dec5f93481982d39723f83daf1351a72f2f2a2de56c"
+    },
+    {
+      "file": "product/production/history/README.md",
+      "bytes": 367,
+      "sha256": "dc4f9cee7f48bf05e5178db3165d6eca4c6512ee556407327a527f40a74a5ef5"
+    },
+    {
+      "file": "product/production/history/handwired-cad-receipt.json",
+      "bytes": 20815,
+      "sha256": "442418d96dcfaa153de6909c9f374cf87c6a77e35a28df6d2f05a99b6d582ffd"
+    },
+    {
+      "file": "product/production/history/handwired-geometry-checks.json",
       "bytes": 20029,
       "sha256": "dc784593e5469d784f096da2b23b689baf3469bce14b59319209a9a425775dfd"
     },
     {
-      "file": "product/production/generate_models.py",
-      "bytes": 5670,
-      "sha256": "04ea43e869eef552fcf1f722783cc337ce97d840cd8a03bee7a18ffd5dd3ab2f"
+      "file": "product/production/history/handwired-model-manifest.json",
+      "bytes": 25120,
+      "sha256": "e2bddb98ca9c24a99ef63f512254afb0611e9a81cd96f7865f3c5e79d1a4acca"
+    },
+    {
+      "file": "product/production/history/matrix-before-keycap-cad-receipt.json",
+      "bytes": 10775,
+      "sha256": "33ac078c6cc6e688ecf1fe852a24b5261e296060b30a040772972e163db342b9"
+    },
+    {
+      "file": "product/production/history/matrix-before-keycap-model-manifest.json",
+      "bytes": 34702,
+      "sha256": "33a323d9aacbdfcd32cef0597c28b80ceee442e0fa678407f1846d3557068700"
+    },
+    {
+      "file": "product/production/matrix-fabrication.zip",
+      "bytes": 30045,
+      "sha256": "e6ae9edbe31d184a3f1e57cffe2535466c04d0af143dc57ccf06d5e4a0b65dc8"
+    },
+    {
+      "file": "product/production/mesh-feature-checks.json",
+      "bytes": 848,
+      "sha256": "55e3ce30e85a1adec1ca0e061d5c796152b9eb81a5437e918792064522b255f6"
+    },
+    {
+      "file": "product/production/mesh-reuse-evidence.json",
+      "bytes": 8685,
+      "sha256": "62c1a87363d71542026eeacbe77b4dbe89ec778875e21603020cc124568147e2"
     },
     {
       "file": "product/production/model-manifest.json",
-      "bytes": 25120,
-      "sha256": "e2bddb98ca9c24a99ef63f512254afb0611e9a81cd96f7865f3c5e79d1a4acca"
+      "bytes": 45091,
+      "sha256": "1a98f0a7b0c7157713ad3a7e276d49b08ed05962aea1888e05629636a2df3d82"
     },
     {
       "file": "product/production/models/base.stl",
@@ -663,103 +807,103 @@
     },
     {
       "file": "product/production/models/key_01.stl",
-      "bytes": 615384,
-      "sha256": "ba8d829a6ea9734b54e8d2e40b85652ae1e51076f78d37655811710805dd020a"
+      "bytes": 614984,
+      "sha256": "47b668f21605a484b370ae45f394189963b0950ca7c62c7ab0cc2aa03d19ca51"
     },
     {
       "file": "product/production/models/key_02.stl",
-      "bytes": 159084,
-      "sha256": "ffeb3e773485195fc3431fc1a830a0b46848312ecfffa1a67db1a31878b5e47a"
+      "bytes": 160684,
+      "sha256": "03782036bec97451708fa221977bf24764f4aa069293149883e9fb2b36ea0b23"
     },
     {
       "file": "product/production/models/key_03.stl",
-      "bytes": 175584,
-      "sha256": "9ef6be14b77a954df859c990c3bf37a9185d5e8732df8313e0fc8b2619d74a24"
+      "bytes": 160684,
+      "sha256": "b49f64adef3446512abbcee79820ae1137ab18f0844fabebfba6ab40c6e0acd1"
     },
     {
       "file": "product/production/models/key_04.stl",
-      "bytes": 445384,
-      "sha256": "767ccc23a4f3f1abda7c7651d7fe54e9629c81daa667f304acd9f2169adebe65"
+      "bytes": 498384,
+      "sha256": "4721d0c03dd6914e826f8abeaa54dec1afb5865fe9229e42990d339a7b242eb8"
     },
     {
       "file": "product/production/models/key_05.stl",
-      "bytes": 174484,
-      "sha256": "49e6072b7f8300a39132b73d2df17a3b7cb198dad54b987b0a3887279cef4e21"
+      "bytes": 173984,
+      "sha256": "19b2e8bc53dbc2debd7235e945909b3527c3e81836a39ea8bb7841992c025e2e"
     },
     {
       "file": "product/production/models/key_06.stl",
-      "bytes": 792184,
-      "sha256": "4ac16eb1e46ada77070e6fc6727d456b3fcb48b1952c31702ebe83c083532208"
+      "bytes": 695784,
+      "sha256": "52da9af08a8137ca5061c5c47d02262e8484f8d5db3d4b2e8e99efe1d22dc353"
     },
     {
       "file": "product/production/models/key_07.stl",
-      "bytes": 583284,
-      "sha256": "4f6f8bebe7e11ca688e72d245eddd622a2239b362141080cee723cc8a5310e1e"
+      "bytes": 541984,
+      "sha256": "8921fa28d16d956f57dad2ec209962a6cc070a8d087733d5cb5a4909e4e21730"
     },
     {
       "file": "product/production/models/key_08.stl",
       "bytes": 159584,
-      "sha256": "972d60b53661177a525df38fd41e5fdfee09e2ec37aa030b23b433f80fe04996"
+      "sha256": "83f584c97ee0bcadd5a4a2492d4255a566bc0d657b6e791d8056467ad27164fd"
     },
     {
       "file": "product/production/models/key_09.stl",
       "bytes": 161084,
-      "sha256": "798e73956d613496abc0e9452bf7087d9667a4a4a1453541c881b7d955d27f47"
+      "sha256": "c6ffbcc5ad3ed2cb98c84dcdc6535d833ae0e117e913c9cb2335290fbc12b666"
     },
     {
       "file": "product/production/models/key_10.stl",
-      "bytes": 411584,
-      "sha256": "7ea669b6163d2e56b77e9e7368a9913b419844475f1ff80ed11d3f96c8759e43"
+      "bytes": 746084,
+      "sha256": "e879a73d1be04f53fa02b7ccfa07a612418e9cd85f69fd4fee46109172fe1357"
     },
     {
       "file": "product/production/models/key_11.stl",
-      "bytes": 578984,
-      "sha256": "42558d12800d905852d2dcb0b665c98256361a7b3d402590e361261f4d1fb979"
+      "bytes": 541584,
+      "sha256": "0b44d249af5447622593f87cb8204f160ffa91f2be47439985aed6577a9daf88"
     },
     {
       "file": "product/production/models/key_12.stl",
       "bytes": 160684,
-      "sha256": "6b27c7711df6c6713283014ff7e18008e6f189f7263addf63d5a0dc5d4cb0b70"
+      "sha256": "af05d786f9e4fb3d9b5353386baa574ebce1b8bdea18af2d792094e1f3330e87"
     },
     {
       "file": "product/production/models/key_13.stl",
-      "bytes": 174084,
-      "sha256": "7e12bfe34bbbdff1522ff8ec334ee3dd6ef490cced95e9d5e5790e28de226bbb"
+      "bytes": 176584,
+      "sha256": "9a107cc0950d500b6869690391196ec2abbda88ec230901d79f0241b5090967d"
     },
     {
       "file": "product/production/models/key_14.stl",
-      "bytes": 366284,
-      "sha256": "b97a14680f21a8ed897c42359d08620396d514c2efabbfa1cd2ae481d2ef7f82"
+      "bytes": 327084,
+      "sha256": "e7b38470d909e23dfd9c2a25588ac49792e76efa407d9772b477fed7fb4520e7"
     },
     {
       "file": "product/production/models/key_15.stl",
-      "bytes": 609384,
-      "sha256": "bea226eaab00e49a9769d6f9a403e3afbd1ddce0c0ee9b04d0fd840e1e3bcf90"
+      "bytes": 561384,
+      "sha256": "0c04ce66c40bba7931a77e28b4eed47a9539b65daeabed9726d299e6863c21a1"
     },
     {
       "file": "product/production/models/key_16.stl",
-      "bytes": 159884,
-      "sha256": "03e2150c4354008c1b559db2047165ffbc18004202cf473f0ecd0e3cb2109bec"
+      "bytes": 847284,
+      "sha256": "8dbc2a78f35759553ce45322ae60f50b17b4f0f4ab16e8754929d3da19e9b172"
     },
     {
       "file": "product/production/models/key_17.stl",
-      "bytes": 1010084,
-      "sha256": "35ed411f95cc2517b29fc871b1578e5455b3498a05a8db08d223afa212349190"
+      "bytes": 1069184,
+      "sha256": "5906ad71e889846f8704b13930a9f975fdbe61d6b112a6c79a98837680d405e3"
     },
     {
       "file": "product/production/models/key_18.stl",
-      "bytes": 452084,
-      "sha256": "3d4fad236466b567216e57c1af408aec63a22f9e7ca6149979a96d5d780186eb"
+      "bytes": 418484,
+      "sha256": "e92fdf1e73cc3db34add5c65aa41c03285edf0483a973a7c876651591f7ad671"
     },
     {
       "file": "product/production/models/key_19.stl",
       "bytes": 159084,
-      "sha256": "784337bc2fd48ddb680e24d84fd74946700897ea40c98128262e7c4ff1ef7816"
+      "sha256": "77712f685eb1aa4cc5bceb83e261349f68bec7534f8ec8e5624520f3de47ac19"
     },
     {
       "file": "product/production/models/key_20.stl",
-      "bytes": 378584,
-      "sha256": "d38e216276eaf87c0dd8bf6ca674cd4a947a39afc1886717149622894ef2b774"
+      "bytes": 397484,
+      "sha256": "bac45ace766ecc45b29e035cab1215377c3105124db98474239f15a17b5dafdc"
     },
     {
       "file": "product/production/models/rear_foot_left.stl",
@@ -780,6 +924,56 @@
       "file": "product/production/print-plan.csv",
       "bytes": 2025,
       "sha256": "8c12e51daba9984128579dd6942c05f3fd31db6c3dbc67dd9ddf21fbee1c5189"
+    },
+    {
+      "file": "product/production/render_mesh_preview.py",
+      "bytes": 2146,
+      "sha256": "a750069878c676dacf618fad31ce86a95982648e682eb9600f860146ee2de5f5"
+    },
+    {
+      "file": "product/production/sync_delivery_records.py",
+      "bytes": 8436,
+      "sha256": "32eaff2f5ee68bd0e760fd4a01a4359e5ab032194783f634f9ab358a11f68ef1"
+    },
+    {
+      "file": "product/production/verify_mesh_features.py",
+      "bytes": 3130,
+      "sha256": "d058cf8a1220ee331968f274afd245fe0c6d6e5958e31fed5de571976eba7c1b"
+    },
+    {
+      "file": "product/purchasing/matrix/README.md",
+      "bytes": 7558,
+      "sha256": "7e592949c2303f3b746df5cde94eb21db080abc15d11eaad92f4ef895c6cdc54"
+    },
+    {
+      "file": "product/purchasing/matrix/hand-assembly-shopping.csv",
+      "bytes": 5622,
+      "sha256": "32893fa22a2e2ca73e0d9002212a31323da77fb184a50c773d98bd22d9ee30f6"
+    },
+    {
+      "file": "product/purchasing/matrix/hand-assembly-shopping.json",
+      "bytes": 16107,
+      "sha256": "16656c94fb369eb305cb9863bba43736bb3a3f36202da03ac4ecd8a6b207c2f5"
+    },
+    {
+      "file": "product/purchasing/matrix/hand-soldering-tools.csv",
+      "bytes": 1102,
+      "sha256": "d9b1d3b8febbc122f8dd71f90cad8b5b26489a5f1ef276af8afd227bb9fed302"
+    },
+    {
+      "file": "product/purchasing/matrix/pcb-order-parameters.csv",
+      "bytes": 923,
+      "sha256": "1bdeeae80e5eb72433e140bea10a00fe76fdde7a0726e9aef1e58033c88b947c"
+    },
+    {
+      "file": "product/purchasing/matrix/pcb-order-parameters.json",
+      "bytes": 3073,
+      "sha256": "e81e9861cbadce277881ca18f8469a4d0c3193ea7739296fcfe3265b74e3a00b"
+    },
+    {
+      "file": "product/purchasing/matrix/procurement-record.json",
+      "bytes": 1716,
+      "sha256": "4f475026234a9441d8bf1dd836bfd7f87dd5b287c0e1588a3ca11b6d07f5cbdc"
     },
     {
       "file": "product/references/eda-keypad-reference.md",
@@ -813,8 +1007,8 @@
     },
     {
       "file": "product/requirements.json",
-      "bytes": 9830,
-      "sha256": "fc48aea598ec3a6a8e56c04a610f3aa1895fff257581b300e213dfa63c5007d8"
+      "bytes": 11232,
+      "sha256": "eeb4210757032741d8e6a72ad7b16969b2ed32ae5ee72f4384d45e3d02f58229"
     },
     {
       "file": "project.manifest.json",

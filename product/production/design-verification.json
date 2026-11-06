@@ -1,190 +1,74 @@
 {
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "design_id": "enclosure",
-  "revision": "e29faaf07ec70bf7b65795e9035e3935c892f001dd0cdb50afa772fe0bd46970",
-  "geometry_evidence_revision": "e29faaf07ec70bf7b65795e9035e3935c892f001dd0cdb50afa772fe0bd46970",
-  "prototype_policy": {
-    "source": "user",
-    "statement": "我不做打印验证了，直接整个设计完，你把还缺的东西补充完，但先不烧录",
-    "print_trial_skipped": true
-  },
-  "measured_geometry": {
-    "printed_objects": 28,
-    "cap_neck_width_mm": 4.9,
-    "cap_entrance_lead_in_mm": 0,
-    "cap_minimum_nominal_wall_mm": 0.4,
-    "cap_released_gap_mm": 5.5,
-    "cap_pressed_gap_mm": 1.5,
-    "travel_mm": 4,
-    "mesh_tolerance_mm": 0.02,
-    "step_mm": 0.25,
-    "poses": 17,
-    "caps": [
-      {
-        "key": 1,
-        "valid": true,
-        "solids": 1,
-        "static_overlap_mm3": 0,
-        "max_external_housing_overlap_mm3": 0
-      },
-      {
-        "key": 2,
-        "valid": true,
-        "solids": 1,
-        "static_overlap_mm3": 0,
-        "max_external_housing_overlap_mm3": 0
-      },
-      {
-        "key": 3,
-        "valid": true,
-        "solids": 1,
-        "static_overlap_mm3": 0,
-        "max_external_housing_overlap_mm3": 0
-      },
-      {
-        "key": 4,
-        "valid": true,
-        "solids": 1,
-        "static_overlap_mm3": 0,
-        "max_external_housing_overlap_mm3": 0
-      },
-      {
-        "key": 5,
-        "valid": true,
-        "solids": 1,
-        "static_overlap_mm3": 0,
-        "max_external_housing_overlap_mm3": 0
-      },
-      {
-        "key": 6,
-        "valid": true,
-        "solids": 1,
-        "static_overlap_mm3": 0,
-        "max_external_housing_overlap_mm3": 0
-      },
-      {
-        "key": 7,
-        "valid": true,
-        "solids": 1,
-        "static_overlap_mm3": 0,
-        "max_external_housing_overlap_mm3": 0
-      },
-      {
-        "key": 8,
-        "valid": true,
-        "solids": 1,
-        "static_overlap_mm3": 0,
-        "max_external_housing_overlap_mm3": 0
-      },
-      {
-        "key": 9,
-        "valid": true,
-        "solids": 1,
-        "static_overlap_mm3": 0,
-        "max_external_housing_overlap_mm3": 0
-      },
-      {
-        "key": 10,
-        "valid": true,
-        "solids": 1,
-        "static_overlap_mm3": 0,
-        "max_external_housing_overlap_mm3": 0
-      },
-      {
-        "key": 11,
-        "valid": true,
-        "solids": 1,
-        "static_overlap_mm3": 0,
-        "max_external_housing_overlap_mm3": 0
-      },
-      {
-        "key": 12,
-        "valid": true,
-        "solids": 1,
-        "static_overlap_mm3": 0,
-        "max_external_housing_overlap_mm3": 0
-      },
-      {
-        "key": 13,
-        "valid": true,
-        "solids": 1,
-        "static_overlap_mm3": 0,
-        "max_external_housing_overlap_mm3": 0
-      },
-      {
-        "key": 14,
-        "valid": true,
-        "solids": 1,
-        "static_overlap_mm3": 0,
-        "max_external_housing_overlap_mm3": 0
-      },
-      {
-        "key": 15,
-        "valid": true,
-        "solids": 1,
-        "static_overlap_mm3": 0,
-        "max_external_housing_overlap_mm3": 0
-      },
-      {
-        "key": 16,
-        "valid": true,
-        "solids": 1,
-        "static_overlap_mm3": 0,
-        "max_external_housing_overlap_mm3": 0
-      },
-      {
-        "key": 17,
-        "valid": true,
-        "solids": 1,
-        "static_overlap_mm3": 0,
-        "max_external_housing_overlap_mm3": 0
-      },
-      {
-        "key": 18,
-        "valid": true,
-        "solids": 1,
-        "static_overlap_mm3": 0,
-        "max_external_housing_overlap_mm3": 0
-      },
-      {
-        "key": 19,
-        "valid": true,
-        "solids": 1,
-        "static_overlap_mm3": 0,
-        "max_external_housing_overlap_mm3": 0
-      },
-      {
-        "key": 20,
-        "valid": true,
-        "solids": 1,
-        "static_overlap_mm3": 0,
-        "max_external_housing_overlap_mm3": 0
+  "revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029",
+  "export_id": "export-b41154b115ba9c61a396ed39b36889a5",
+  "source_receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+  "pcb_release_id": "17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727",
+  "printed_parts": 28,
+  "mesh_binding": "product/production/model-manifest.json",
+  "geometry_checks": {
+    "current_keycaps": {
+      "path": "product/keycap-usability-verification.json",
+      "revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029"
+    },
+    "actual_stl_features": {
+      "path": "product/production/mesh-feature-checks.json",
+      "checks": {
+        "new_keycap_meshes": 20,
+        "unchanged_other_meshes": 8,
+        "five_recess_depth_from_stl_mm": 0.35000001164297495,
+        "five_adjacent_top_z_mm": 1.0000002202132769e-07,
+        "enter_recess_y_range_print_frame_mm": [
+          -3.6004395484924316,
+          -1.1995606422424316
+        ],
+        "equals_recess_y_range_print_frame_mm": [
+          1.27734375,
+          2.922656297683716
+        ],
+        "legend_depth_mm": 0.35
       }
-    ],
-    "overall_high_mm": 42.096147047843374,
-    "overall_stowed_mm": 39.49865877163909
-  },
-  "space_receipts": {
-    "cap_case_paths": [
-      "CAD path at revision e29faaf: {\"moving\":[\"key_01\",\"key_02\",\"key_03\",\"key_04\",\"key_05\",\"key_06\",\"key_07\",\"key_08\",\"key_09\",\"key_10\",\"key_11\",\"key_12\",\"key_13\",\"key_14\",\"key_15\",\"key_16\"],\"path_length_mm\":4,\"first_contact\":null,\"first_overlap\":null,\"objects\":[{\"object_id\":\"top\",\"min_clearance_mm\":1.5,\"min_clearance_at\":{\"step\":1,\"fraction\":1,\"travel_mm\":4,\"offset_mm\":[0,0.279,-3.99]}},{\"object_id\":\"screen_lens\",\"min_clearance_mm\":6.4146,\"min_clearance_at\":{\"step\":1,\"fraction\":1,\"travel_mm\":4,\"offset_mm\":[0,0.279,-3.99]}}],\"objects_never_within\":{\"mm\":10,\"count\":3},\"precision\":{\"method\":\"triangle meshes (Manifold)\",\"mesh_tolerance_mm\":0.02,\"note\":\"Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.\",\"step_mm\":0.25,\"poses\":17,\"contact_located_within_mm\":0.001,\"sampling\":\"No point of the moving objects travels more than 0.25 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 1 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them.\"},\"query_ms\":204}. Geometry facts support visual judgment; they are not a quality verdict.",
-      "CAD path at revision e29faaf: {\"moving\":[\"key_17\",\"key_18\",\"key_19\",\"key_20\"],\"path_length_mm\":4,\"first_contact\":null,\"first_overlap\":null,\"objects\":[{\"object_id\":\"top\",\"min_clearance_mm\":1.5,\"min_clearance_at\":{\"step\":1,\"fraction\":1,\"travel_mm\":4,\"offset_mm\":[0,0.279,-3.99]}}],\"objects_never_within\":{\"mm\":10,\"count\":4},\"precision\":{\"method\":\"triangle meshes (Manifold)\",\"mesh_tolerance_mm\":0.02,\"note\":\"Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.\",\"step_mm\":0.25,\"poses\":17,\"contact_located_within_mm\":0.001,\"sampling\":\"No point of the moving objects travels more than 0.25 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 1 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them.\"},\"query_ms\":63}. Geometry facts support visual judgment; they are not a quality verdict."
-    ],
-    "wire_budget": "CAD clearance at revision e29faaf: {\"pairs\":[{\"a\":\"base\",\"b\":\"top\",\"status\":\"contact\",\"min_distance_mm\":0},{\"a\":\"base\",\"b\":\"screws\",\"status\":\"contact\",\"min_distance_mm\":0},{\"a\":\"base\",\"b\":\"pico2\",\"status\":\"contact\",\"min_distance_mm\":0.01},{\"a\":\"pico2\",\"b\":\"screws\",\"status\":\"separated\",\"min_distance_mm\":0.05},{\"a\":\"top\",\"b\":\"screws\",\"status\":\"separated\",\"min_distance_mm\":0.0509},{\"a\":\"top\",\"b\":\"screen_lens\",\"status\":\"separated\",\"min_distance_mm\":0.15},{\"a\":\"top\",\"b\":\"pico2\",\"status\":\"separated\",\"min_distance_mm\":0.2},{\"a\":\"base\",\"b\":\"wire_storage_budget\",\"status\":\"separated\",\"min_distance_mm\":0.6},{\"a\":\"top\",\"b\":\"wire_storage_budget\",\"status\":\"separated\",\"min_distance_mm\":1.4962},{\"a\":\"screws\",\"b\":\"wire_storage_budget\",\"status\":\"separated\",\"min_distance_mm\":3.7748},{\"a\":\"pico2\",\"b\":\"wire_storage_budget\",\"status\":\"separated\",\"min_distance_mm\":6.9},{\"a\":\"base\",\"b\":\"screen_lens\",\"status\":\"separated\",\"min_distance_mm\":9.5635},{\"a\":\"screws\",\"b\":\"screen_lens\",\"status\":\"separated\",\"min_distance_mm\":26.1803},{\"a\":\"screen_lens\",\"b\":\"wire_storage_budget\",\"status\":\"separated\",\"min_distance_mm\":31.0987},{\"a\":\"pico2\",\"b\":\"screen_lens\",\"status\":\"separated\",\"min_distance_mm\":40.503}],\"precision\":{\"method\":\"triangle meshes (Manifold)\",\"mesh_tolerance_mm\":0.02,\"note\":\"Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.\"},\"query_ms\":618}. Geometry facts support visual judgment; they are not a quality verdict.",
-    "cap_switch_external_check": "CAD eval at revision e29faaf, nothing committed: {\"value\":null,\"eval_ms\":27908,\"parts_run\":[],\"parts_from_cache\":[]}\n```text\n[{\"key\": 1, \"valid\": true, \"solids\": 1, \"static_overlap_mm3\": 0, \"max_external_housing_overlap_mm3\": 0}, {\"key\": 2, \"valid\": true, \"solids\": 1, \"static_overlap_mm3\": 0, \"max_external_housing_overlap_mm3\": 0}, {\"key\": 3, \"valid\": true, \"solids\": 1, \"static_overlap_mm3\": 0, \"max_external_housing_overlap_mm3\": 0}, {\"key\": 4, \"valid\": true, \"solids\": 1, \"static_overlap_mm3\": 0, \"max_external_housing_overlap_mm3\": 0}, {\"key\": 5, \"valid\": true, \"solids\": 1, \"static_overlap_mm3\": 0, \"max_external_housing_overlap_mm3\": 0}, {\"key\": 6, \"valid\": true, \"solids\": 1, \"static_overlap_mm3\": 0, \"max_external_housing_overlap_mm3\": 0}, {\"key\": 7, \"valid\": true, \"solids\": 1, \"static_overlap_mm3\": 0, \"max_external_housing_overlap_mm3\": 0}, {\"key\": 8, \"valid\": true, \"solids\": 1, \"static_overlap_mm3\": 0, \"max_external_housing_overlap_mm3\": 0}, {\"key\": 9, \"valid\": true, \"solids\": 1, \"static_overlap_mm3\": 0, \"max_external_housing_overlap_mm3\": 0}, {\"key\": 10, \"valid\": true, \"solids\": 1, \"static_overlap_mm3\": 0, \"max_external_housing_overlap_mm3\": 0}, {\"key\": 11, \"valid\": true, \"solids\": 1, \"static_overlap_mm3\": 0, \"max_external_housing_overlap_mm3\": 0}, {\"key\": 12, \"valid\": true, \"solids\": 1, \"static_overlap_mm3\": 0, \"max_external_housing_overlap_mm3\": 0}, {\"key\": 13, \"valid\": true, \"solids\": 1, \"static_overlap_mm3\": 0, \"max_external_housing_overlap_mm3\": 0}, {\"key\": 14, \"valid\": true, \"solids\": 1, \"static_overlap_mm3\": 0, \"max_external_housing_overlap_mm3\": 0}, {\"key\": 15, \"valid\": true, \"solids\": 1, \"static_overlap_mm3\": 0, \"max_external_housing_overlap_mm3\": 0}, {\"key\": 16, \"valid\": true, \"solids\": 1, \"static_overlap_mm3\": 0, \"max_external_housing_overlap_mm3\": 0}, {\"key\": 17, \"valid\": true, \"solids\": 1, \"static_overlap_mm3\": 0, \"max_external_housing_overlap_mm3\": 0}, {\"key\": 18, \"valid\": true, \"solids\": 1, \"static_overlap_mm3\": 0, \"max_external_housing_overlap_mm3\": 0}, {\"key\": 19, \"valid\": true, \"solids\": 1, \"static_overlap_mm3\": 0, \"max_external_housing_overlap_mm3\": 0}, {\"key\": 20, \"valid\": true, \"solids\": 1, \"static_overlap_mm3\": 0, \"max_external_housing_overlap_mm3\": 0}]\n```",
-    "lcd_clearance": "CAD clearance at revision e29faaf: {\"pairs\":[{\"a\":\"base\",\"b\":\"top\",\"status\":\"contact\",\"min_distance_mm\":0},{\"a\":\"base\",\"b\":\"screws\",\"status\":\"contact\",\"min_distance_mm\":0},{\"a\":\"base\",\"b\":\"lcd_backside_budget\",\"status\":\"contact\",\"min_distance_mm\":0},{\"a\":\"base\",\"b\":\"pico2\",\"status\":\"contact\",\"min_distance_mm\":0.01},{\"a\":\"pico2\",\"b\":\"screws\",\"status\":\"separated\",\"min_distance_mm\":0.05},{\"a\":\"top\",\"b\":\"screws\",\"status\":\"separated\",\"min_distance_mm\":0.0509},{\"a\":\"base\",\"b\":\"lcd_upper_budget\",\"status\":\"separated\",\"min_distance_mm\":0.15},{\"a\":\"top\",\"b\":\"screen_lens\",\"status\":\"separated\",\"min_distance_mm\":0.15},{\"a\":\"top\",\"b\":\"pico2\",\"status\":\"separated\",\"min_distance_mm\":0.2},{\"a\":\"top\",\"b\":\"lcd_upper_budget\",\"status\":\"separated\",\"min_distance_mm\":0.5531},{\"a\":\"screen_lens\",\"b\":\"lcd_upper_budget\",\"status\":\"separated\",\"min_distance_mm\":0.8},{\"a\":\"top\",\"b\":\"lcd_backside_budget\",\"status\":\"separated\",\"min_distance_mm\":2.6},{\"a\":\"base\",\"b\":\"screen_lens\",\"status\":\"separated\",\"min_distance_mm\":9.5635},{\"a\":\"screen_lens\",\"b\":\"lcd_backside_budget\",\"status\":\"separated\",\"min_distance_mm\":10.8},{\"a\":\"screws\",\"b\":\"lcd_upper_budget\",\"status\":\"separated\",\"min_distance_mm\":19.595},{\"a\":\"screws\",\"b\":\"lcd_backside_budget\",\"status\":\"separated\",\"min_distance_mm\":20.8911},{\"a\":\"screen_lens\",\"b\":\"screws\",\"status\":\"separated\",\"min_distance_mm\":26.1803},{\"a\":\"pico2\",\"b\":\"lcd_upper_budget\",\"status\":\"separated\",\"min_distance_mm\":35.5186},{\"a\":\"pico2\",\"b\":\"lcd_backside_budget\",\"status\":\"separated\",\"min_distance_mm\":37.5},{\"a\":\"screen_lens\",\"b\":\"pico2\",\"status\":\"separated\",\"min_distance_mm\":40.503}],\"precision\":{\"method\":\"triangle meshes (Manifold)\",\"mesh_tolerance_mm\":0.02,\"note\":\"Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.\"},\"query_ms\":536}. Geometry facts support visual judgment; they are not a quality verdict.",
-    "lcd_exact": "CAD eval at revision e29faaf, nothing committed: {\"value\":null,\"eval_ms\":1167,\"parts_run\":[],\"parts_from_cache\":[]}\n```text\n{\"upper_overlap_mm3\": [0, 0, 0], \"upper_distances_mm\": [0.14999999999999858, 0.5586187348508724, 0.7999999999999936], \"backside_overlap_mm3\": 0, \"normal_sightline_blocked_mm3\": [0, 0, 0, 0, 0, 0, 0, 0, 0], \"lcd_removal_overlap_mm3\": 0}\n```",
-    "foot_path": "CAD path at revision e29faaf: {\"moving\":[\"rear_foot_left\",\"rear_foot_right\"],\"path_length_mm\":4.556,\"turned_deg\":110,\"first_contact\":{\"object_id\":\"base\",\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0],\"at_start\":true},\"first_overlap\":null,\"objects\":[{\"object_id\":\"base\",\"min_clearance_mm\":0,\"min_clearance_at\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0]},\"first_contact\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0],\"at_start\":true}},{\"object_id\":\"hinge_axle_left\",\"min_clearance_mm\":0.1961,\"min_clearance_at\":{\"step\":1,\"fraction\":0.7273,\"travel_mm\":3.314,\"offset_mm\":[0,-2.994,0.589],\"turned_deg\":80}},{\"object_id\":\"hinge_axle_right\",\"min_clearance_mm\":0.1961,\"min_clearance_at\":{\"step\":1,\"fraction\":0.7273,\"travel_mm\":3.314,\"offset_mm\":[0,-2.994,0.589],\"turned_deg\":80}},{\"object_id\":\"hinge_cap_left\",\"min_clearance_mm\":3.4,\"min_clearance_at\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0]}},{\"object_id\":\"hinge_cap_right\",\"min_clearance_mm\":3.4,\"min_clearance_at\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0]}},{\"object_id\":\"top\",\"min_clearance_mm\":8.1707,\"min_clearance_at\":{\"step\":1,\"fraction\":0.1349,\"travel_mm\":0.615,\"offset_mm\":[0,-0.57,-0.224],\"turned_deg\":14.84}}],\"objects_never_within\":{\"mm\":10,\"count\":0},\"precision\":{\"method\":\"triangle meshes (Manifold)\",\"mesh_tolerance_mm\":0.02,\"note\":\"Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.\",\"step_mm\":0.2,\"poses\":342,\"contact_located_within_mm\":0.0008,\"sampling\":\"No point of the moving objects travels more than 0.2 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 11 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them.\"},\"query_ms\":333}. Geometry facts support visual judgment; they are not a quality verdict.",
-    "bottom_removal": "CAD path at revision e29faaf: {\"moving\":[\"base\",\"pico2\",\"rear_foot_left\",\"rear_foot_right\",\"hinge_axle_left\",\"hinge_axle_right\",\"hinge_cap_left\",\"hinge_cap_right\"],\"path_length_mm\":30,\"first_contact\":{\"object_id\":\"top\",\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0],\"at_start\":true},\"first_overlap\":null,\"objects\":[{\"object_id\":\"top\",\"min_clearance_mm\":0,\"min_clearance_at\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0]},\"first_contact\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0],\"at_start\":true}},{\"object_id\":\"sw_12\",\"min_clearance_mm\":5.3052,\"min_clearance_at\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0]}},{\"object_id\":\"sw_11\",\"min_clearance_mm\":6.3665,\"min_clearance_at\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0]}},{\"object_id\":\"sw_07\",\"min_clearance_mm\":6.4683,\"min_clearance_at\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0]}},{\"object_id\":\"sw_08\",\"min_clearance_mm\":6.4683,\"min_clearance_at\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0]}},{\"object_id\":\"sw_10\",\"min_clearance_mm\":6.972,\"min_clearance_at\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0]}},{\"object_id\":\"sw_06\",\"min_clearance_mm\":7.1529,\"min_clearance_at\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0]}},{\"object_id\":\"sw_01\",\"min_clearance_mm\":7.2518,\"min_clearance_at\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0]}},{\"object_id\":\"sw_04\",\"min_clearance_mm\":7.7145,\"min_clearance_at\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0]}},{\"object_id\":\"screen_lens\",\"min_clearance_mm\":9.5635,\"min_clearance_at\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0]}},{\"object_id\":\"sw_17\",\"min_clearance_mm\":9.8408,\"min_clearance_at\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0]}},{\"object_id\":\"sw_18\",\"min_clearance_mm\":9.8408,\"min_clearance_at\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0]}},{\"object_id\":\"sw_19\",\"min_clearance_mm\":9.8408,\"min_clearance_at\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0]}},{\"object_id\":\"sw_20\",\"min_clearance_mm\":9.8408,\"min_clearance_at\":{\"step\":1,\"fraction\":0,\"travel_mm\":0,\"offset_mm\":[0,0,0]}}],\"objects_never_within\":{\"mm\":10,\"count\":28},\"precision\":{\"method\":\"triangle meshes (Manifold)\",\"mesh_tolerance_mm\":0.02,\"note\":\"Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.\",\"step_mm\":0.5,\"poses\":61,\"contact_located_within_mm\":0.002,\"sampling\":\"No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 2 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them.\"},\"query_ms\":5929}. Geometry facts support visual judgment; they are not a quality verdict."
+    },
+    "retained_pcb_assembly": {
+      "path": "product/matrix-pcb-verification.json",
+      "binding": {
+        "cad_revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029",
+        "cad_export_id": "export-b41154b115ba9c61a396ed39b36889a5",
+        "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+        "baseline_receipt": "product/production/history/matrix-before-keycap-cad-receipt.json",
+        "retained_inspection_revision": "bb0a8e71a8c0bd3bb7c53e2c2961b190d24c58ea8feda5c0ab35672099b0d8de",
+        "unchanged_objects": [
+          "base",
+          "hinge_axle_left",
+          "hinge_axle_right",
+          "hinge_cap_left",
+          "hinge_cap_right",
+          "matrix_pcb",
+          "pico2",
+          "rear_foot_left",
+          "rear_foot_right",
+          "screen_lens",
+          "screws",
+          "top"
+        ],
+        "scope": "PCB, case, Pico, lens, fasteners and folding feet exactly unchanged; 20 caps checked separately on current revision"
+      }
+    },
+    "unchanged_non_keycap_meshes": 8
   },
   "limitations": [
-    "Physical printing, fitted retention, real insertion forces, adhesive strength and support load were not measured.",
-    "LCD checked using manufacturer drawing and conservative envelopes; no exact LCD STEP was obtained.",
-    "Static manufacturer switch STEP fuses actuator and housing. Motion test excludes a 5 x 6.55 mm actuator projection from -9 to +10.3 mm relative to mounting plane, and does not verify the internal mechanism."
+    "Physical tactile feel, print shrinkage, strength, insertion force and wear not measured.",
+    "Motion checks cover the external case, bottom cover, Pico and screen lens, sampled at 0.25 mm / 17 poses / 0.02 mm mesh tolerance; they do not certify a fused vendor switch's internal mechanism.",
+    "No physical soldering, clip retention, PCB flexure or strength test; printed fit trials skipped by user.",
+    "GDM0103 remains a manufacturer-drawing envelope; no exact model of the LCD board.",
+    "Switch actuator and housing are fused in vendor STEP. Full-stroke check uses the shared unengraved cap blank and excludes the measured actuator projection; internal switch mechanism is not independently verified.",
+    "Wire strain relief and solder fillets are assembly allowances, not measured real wire geometry."
   ],
+  "physical_print_trial_skipped_by_user": true,
   "device_actions": {
     "printing_started": false,
     "flashed": false,
     "powered": false
-  },
-  "completion_check_date": "2026-11-06"
+  }
 }

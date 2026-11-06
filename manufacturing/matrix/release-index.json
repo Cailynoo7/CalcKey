@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "releases": [
+    {
+      "releaseId": "17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727",
+      "designId": "matrix",
+      "buildId": "6a333818c3a79007ec3a24727eed3008848215ed1c5c0238051beffaecfde0e3",
+      "candidateId": "a44d882026c95b0da8166e6cc65951655cfc91028900296fafa6ee146a7f0c30",
+      "approvedAt": "2026-11-06T01:17:51.092Z"
+    }
+  ]
+}

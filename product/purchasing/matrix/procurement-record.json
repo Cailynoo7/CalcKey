@@ -1,0 +1,53 @@
+{
+  "prepared_date": "2026-11-06",
+  "pcb_release_id": "17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727",
+  "source_release_manifest_sha256": "9172a35ff855e1a0376d32d8fdec4b7b9c46065f73d87cf83b2dc1758306e969",
+  "checks": {
+    "release_package_hashes_matched": true,
+    "fabrication_zip_crc_passed": true,
+    "fabrication_files_matched": 13,
+    "bom_rows_covered": 28,
+    "shopping_rows": 27,
+    "shared_wire_m": 3,
+    "wire_installed_m": 2.25,
+    "printed_parts_unchanged": 8,
+    "firmware_version": "0.2.0",
+    "updated_keycap_meshes": 20,
+    "printed_parts_total": 28
+  },
+  "files": [
+    {
+      "name": "README.md",
+      "sha256": "7e592949c2303f3b746df5cde94eb21db080abc15d11eaad92f4ef895c6cdc54"
+    },
+    {
+      "name": "pcb-order-parameters.json",
+      "sha256": "e81e9861cbadce277881ca18f8469a4d0c3193ea7739296fcfe3265b74e3a00b"
+    },
+    {
+      "name": "pcb-order-parameters.csv",
+      "sha256": "1bdeeae80e5eb72433e140bea10a00fe76fdde7a0726e9aef1e58033c88b947c"
+    },
+    {
+      "name": "hand-assembly-shopping.json",
+      "sha256": "16656c94fb369eb305cb9863bba43736bb3a3f36202da03ac4ecd8a6b207c2f5"
+    },
+    {
+      "name": "hand-assembly-shopping.csv",
+      "sha256": "32893fa22a2e2ca73e0d9002212a31323da77fb184a50c773d98bd22d9ee30f6"
+    },
+    {
+      "name": "hand-soldering-tools.csv",
+      "sha256": "d9b1d3b8febbc122f8dd71f90cad8b5b26489a5f1ef276af8afd227bb9fed302"
+    }
+  ],
+  "actions": {
+    "source_bom_modified": false,
+    "pcb_rebuilt": false,
+    "uploaded_to_supplier": false,
+    "order_placed": false,
+    "paid": false,
+    "flashed": false
+  },
+  "keycap_cad_revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029"
+}

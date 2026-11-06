@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 1680 1188">
+<title>焊装细节｜放大方向与断电核对</title>
+<desc>Source-derived assembly illustration; not a fabrication or 1:1 drilling template. PCB release 17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727</desc>
+<rect x="0" y="0" width="1680" height="1188" rx="0" fill="#ffffff" stroke="none" stroke-width="2"/>
+<text x="56" y="66" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="37" fill="#203346" text-anchor="start">焊装细节｜放大方向与断电核对</text>
+<text x="56" y="110" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#647787" text-anchor="start">全程断开USB；先测被动矩阵，合格后再焊Pico和LCD。这里没有填写任何实物测量结果。</text>
+<text x="1624" y="65" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#647787" text-anchor="end">4 / 4</text>
+<line x1="56" y1="135" x2="1624" y2="135" stroke="#ccd9e1" stroke-width="2" stroke-linecap="round"/>
+<rect x="56" y="168" width="750" height="332" rx="12" fill="#edf4f7" stroke="none" stroke-width="2"/>
+<text x="80" y="211" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="26" fill="#203346" text-anchor="start">A  底面二极管：黑环 → 左侧方形K焊盘</text>
+<line x1="135" y1="305" x2="710" y2="305" stroke="#203346" stroke-width="6" stroke-linecap="round"/>
+<rect x="117.6" y="272.6" width="64.80000000000001" height="64.80000000000001" rx="0" fill="#c49942" stroke="none" stroke-width="2"/>
+<circle cx="150" cy="305" r="12.0" fill="#203346" stroke="#203346" stroke-width="2"/>
+<circle cx="700" cy="305" r="32.400000000000006" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="700" cy="305" r="12.0" fill="#203346" stroke="#203346" stroke-width="2"/>
+<rect x="290" y="269" width="260" height="72" rx="14" fill="#daa371" stroke="#976339" stroke-width="2"/>
+<rect x="311" y="272" width="20" height="66" rx="0" fill="#203346" stroke="none" stroke-width="2"/>
+<text x="150" y="377" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="23" fill="#203346" text-anchor="middle">K / pad1 / ROW</text>
+<text x="700" y="377" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="23" fill="#203346" text-anchor="middle">A / pad2</text>
+<text x="80" y="432" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#203346" text-anchor="start">黑环与PCB的K线、方形pad1相同侧；弯脚间距7.62mm。</text>
+<text x="80" y="465" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#203346" text-anchor="start">卧装于底面；从正面剪短多余引脚。</text>
+<rect x="842" y="168" width="782" height="332" rx="12" fill="#edf4f7" stroke="none" stroke-width="2"/>
+<text x="866" y="211" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="26" fill="#203346" text-anchor="start">B  远端中央R1～R4（底面放大）</text>
+<text x="1110" y="246" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="20" fill="#647787" text-anchor="middle">↑ 屏幕端</text>
+<rect x="1162" y="345" width="52" height="30" rx="2" fill="#203346" stroke="none" stroke-width="2"/>
+<rect x="1152" y="345" width="15" height="30" rx="0" fill="#a7b9bc" stroke="none" stroke-width="2"/>
+<rect x="1209" y="345" width="15" height="30" rx="0" fill="#a7b9bc" stroke="none" stroke-width="2"/>
+<text x="1188" y="403" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#203346" text-anchor="middle">R1 / COL0</text>
+<rect x="1006" y="345" width="52" height="30" rx="2" fill="#203346" stroke="none" stroke-width="2"/>
+<rect x="996" y="345" width="15" height="30" rx="0" fill="#a7b9bc" stroke="none" stroke-width="2"/>
+<rect x="1053" y="345" width="15" height="30" rx="0" fill="#a7b9bc" stroke="none" stroke-width="2"/>
+<text x="1032" y="403" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#203346" text-anchor="middle">R2 / COL1</text>
+<rect x="1162" y="266.80000000000007" width="52" height="30" rx="2" fill="#203346" stroke="none" stroke-width="2"/>
+<rect x="1152" y="266.80000000000007" width="15" height="30" rx="0" fill="#a7b9bc" stroke="none" stroke-width="2"/>
+<rect x="1209" y="266.80000000000007" width="15" height="30" rx="0" fill="#a7b9bc" stroke="none" stroke-width="2"/>
+<text x="1188" y="324.80000000000007" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#203346" text-anchor="middle">R3 / COL2</text>
+<rect x="1006" y="266.80000000000007" width="52" height="30" rx="2" fill="#203346" stroke="none" stroke-width="2"/>
+<rect x="996" y="266.80000000000007" width="15" height="30" rx="0" fill="#a7b9bc" stroke="none" stroke-width="2"/>
+<rect x="1053" y="266.80000000000007" width="15" height="30" rx="0" fill="#a7b9bc" stroke="none" stroke-width="2"/>
+<text x="1032" y="324.80000000000007" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#203346" text-anchor="middle">R4 / COL3</text>
+<text x="1325" y="280" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">0805贴片</text>
+<text x="1325" y="319" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">10kΩ ±1%</text>
+<text x="1325" y="358" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">无极性</text>
+<text x="1325" y="397" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">不换成轴向电阻</text>
+<text x="866" y="463" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#203346" text-anchor="start">每只一端接3V3、一端接对应列；焊好后查四处锡桥。</text>
+<text x="56" y="554" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="27" fill="#203346" text-anchor="start">焊装顺序</text>
+<rect x="56" y="582" width="370" height="130" rx="10" fill="#edf4f7" stroke="none" stroke-width="2"/>
+<circle cx="85" cy="615" r="17" fill="#246eae" stroke="#246eae" stroke-width="2"/>
+<text x="85" y="622" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="23" fill="#ffffff" text-anchor="middle">1</text>
+<text x="114" y="622" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="start">R与D</text>
+<text x="73" y="670" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="20" fill="#203346" text-anchor="start">先焊4只0805及20只二极管。</text>
+<rect x="451" y="582" width="370" height="130" rx="10" fill="#edf4f7" stroke="none" stroke-width="2"/>
+<circle cx="480" cy="615" r="17" fill="#246eae" stroke="#246eae" stroke-width="2"/>
+<text x="480" y="622" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="23" fill="#ffffff" text-anchor="middle">2</text>
+<text x="509" y="622" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="start">面板与轴</text>
+<text x="468" y="670" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="20" fill="#203346" text-anchor="start">轴扣入面板、坐平，再套PCB。</text>
+<rect x="846" y="582" width="370" height="130" rx="10" fill="#edf4f7" stroke="none" stroke-width="2"/>
+<circle cx="875" cy="615" r="17" fill="#246eae" stroke="#246eae" stroke-width="2"/>
+<text x="875" y="622" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="23" fill="#ffffff" text-anchor="middle">3</text>
+<text x="904" y="622" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="start">40个触点</text>
+<text x="863" y="670" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="20" fill="#203346" text-anchor="start">底面焊轴脚；中心塑料柱不焊。</text>
+<rect x="1241" y="582" width="370" height="130" rx="10" fill="#edf4f7" stroke="none" stroke-width="2"/>
+<circle cx="1270" cy="615" r="17" fill="#246eae" stroke="#246eae" stroke-width="2"/>
+<text x="1270" y="622" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="23" fill="#ffffff" text-anchor="middle">4</text>
+<text x="1299" y="622" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="start">15根线</text>
+<text x="1258" y="670" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="20" fill="#203346" text-anchor="start">10根矩阵线＋5根LCD线。</text>
+<text x="56" y="762" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="25" fill="#203346" text-anchor="start">断电检查：先不连Pico和LCD，测矩阵；接线后再逐根对表查通断。</text>
+<rect x="56" y="781" width="1568" height="45" rx="0" fill="#edf4f7" stroke="none" stroke-width="2"/>
+<rect x="73" y="793" width="18" height="18" rx="0" fill="#ffffff" stroke="#ccd9e1" stroke-width="2"/>
+<text x="106" y="809" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">4列上拉</text>
+<text x="293" y="809" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">J6/J7/J8/J9各对J10约10kΩ；列间约20kΩ可来自两个上拉。</text>
+<text x="1596" y="809" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#647787" text-anchor="end">待测</text>
+<rect x="56" y="830" width="1568" height="45" rx="0" fill="#ffffff" stroke="none" stroke-width="2"/>
+<rect x="73" y="842" width="18" height="18" rx="0" fill="#ffffff" stroke="#ccd9e1" stroke-width="2"/>
+<text x="106" y="858" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">20键二极管</text>
+<text x="293" y="858" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">逐键按下：红表笔接列J6～J9，黑表笔接行J1～J5，测正向压降。</text>
+<text x="1596" y="858" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#647787" text-anchor="end">待测</text>
+<rect x="56" y="879" width="1568" height="45" rx="0" fill="#edf4f7" stroke="none" stroke-width="2"/>
+<rect x="73" y="891" width="18" height="18" rx="0" fill="#ffffff" stroke="#ccd9e1" stroke-width="2"/>
+<text x="106" y="907" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">交换表笔</text>
+<text x="293" y="907" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">按键保持按下再反测，应截止；在路有疑问时分离器件复测。</text>
+<text x="1596" y="907" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#647787" text-anchor="end">待测</text>
+<rect x="56" y="928" width="1568" height="45" rx="0" fill="#ffffff" stroke="none" stroke-width="2"/>
+<rect x="73" y="940" width="18" height="18" rx="0" fill="#ffffff" stroke="#ccd9e1" stroke-width="2"/>
+<text x="106" y="956" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">15根导线</text>
+<text x="293" y="956" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">逐根端到端通断；相邻裸焊点无桥接；J10/P5仅接3V3。</text>
+<text x="1596" y="956" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#647787" text-anchor="end">待测</text>
+<rect x="56" y="977" width="1568" height="45" rx="0" fill="#edf4f7" stroke="none" stroke-width="2"/>
+<rect x="73" y="989" width="18" height="18" rx="0" fill="#ffffff" stroke="#ccd9e1" stroke-width="2"/>
+<text x="106" y="1005" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">绝缘与应力</text>
+<text x="293" y="1005" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">P6～P9各自绝缘；线皮胶带固定，过孔处不留裸铜，不用焊盘承力。</text>
+<text x="1596" y="1005" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#647787" text-anchor="end">待测</text>
+<text x="56" y="1100" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#647787" text-anchor="start">每根软线约150mm留维护余量，沿底盖平铺；避开USB、合盖柱和翻脚机构。只做断电检查，不烧录。</text>
+<line x1="56" y1="1137" x2="1624" y2="1137" stroke="#ccd9e1" stroke-width="2" stroke-linecap="round"/>
+<text x="56" y="1167" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="17" fill="#647787" text-anchor="start">CalcKey · MATRIX A / Pico 2 / GDM0103 · 断开USB焊装 · 非1:1加工模板</text>
+<text x="1624" y="1167" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="17" fill="#647787" text-anchor="end">PCB 17123bc08553 · 2026-11-06 · 4/4</text>
+</svg>

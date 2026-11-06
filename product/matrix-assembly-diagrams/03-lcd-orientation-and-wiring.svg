@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 1680 1188">
+<title>GDM0103｜端子方向与独立五线</title>
+<desc>Source-derived assembly illustration; not a fabrication or 1:1 drilling template. PCB release 17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727</desc>
+<rect x="0" y="0" width="1680" height="1188" rx="0" fill="#ffffff" stroke="none" stroke-width="2"/>
+<text x="56" y="66" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="37" fill="#203346" text-anchor="start">GDM0103｜端子方向与独立五线</text>
+<text x="56" y="110" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#647787" text-anchor="start">按厂家外形图显示方向定位P1；这是HT1621B三线写接口。LCD导线直接到Pico，不经过矩阵板。</text>
+<text x="1624" y="65" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#647787" text-anchor="end">3 / 4</text>
+<line x1="56" y1="135" x2="1624" y2="135" stroke="#ccd9e1" stroke-width="2" stroke-linecap="round"/>
+<text x="435" y="191" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">A  正面：显示字符朝向你</text>
+<text x="435" y="228" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="20" fill="#647787" text-anchor="middle">↑ 显示上边</text>
+<rect x="170" y="250" width="530" height="220" rx="9" fill="#dcefe4" stroke="#709d89" stroke-width="2"/>
+<rect x="232" y="284" width="406" height="127" rx="3" fill="#d2dfc3" stroke="#6c8464" stroke-width="2"/>
+<text x="435" y="362" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="37" fill="#506446" text-anchor="middle">8 8 8 8 8 8 8 8</text>
+<circle cx="170" cy="271" r="7.0" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="170" cy="271" r="3.5" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="152" y="277" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#7652a1" text-anchor="end">P1 /CS</text>
+<circle cx="170" cy="304" r="7.0" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="170" cy="304" r="3.5" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="152" y="310" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#197b8d" text-anchor="end">P2 /WR</text>
+<circle cx="170" cy="337" r="7.0" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="170" cy="337" r="3.5" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="152" y="343" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#246eae" text-anchor="end">P3 DATA</text>
+<circle cx="170" cy="370" r="7.0" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="170" cy="370" r="3.5" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="152" y="376" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#354350" text-anchor="end">P4 VSS</text>
+<circle cx="170" cy="403" r="7.0" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="170" cy="403" r="3.5" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="152" y="409" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#c53849" text-anchor="end">P5 VDD</text>
+<circle cx="170" cy="436" r="7.0" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="170" cy="436" r="3.5" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="152" y="442" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#647787" text-anchor="end">P6 /INT</text>
+<circle cx="700" cy="286" r="7.0" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="700" cy="286" r="3.5" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="718" y="292" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#647787" text-anchor="start">P7 BL+</text>
+<circle cx="700" cy="341" r="7.0" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="700" cy="341" r="3.5" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="718" y="347" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#647787" text-anchor="start">P8 BL-</text>
+<circle cx="700" cy="396" r="7.0" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="700" cy="396" r="3.5" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="718" y="402" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#647787" text-anchor="start">P9 Ctrl</text>
+<text x="1215" y="191" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">B  背面：保持上边朝上翻转</text>
+<text x="1215" y="228" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="20" fill="#647787" text-anchor="middle">↑ 显示上边</text>
+<rect x="950" y="250" width="530" height="220" rx="9" fill="#dcefe4" stroke="#709d89" stroke-width="2"/>
+<text x="1215" y="330" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="26" fill="#647787" text-anchor="middle">PCB背面</text>
+<text x="1215" y="370" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#647787" text-anchor="middle">仅示意端子；不画背面元件</text>
+<circle cx="1480" cy="271" r="7.0" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1480" cy="271" r="3.5" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="1498" y="277" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#7652a1" text-anchor="start">P1 /CS</text>
+<circle cx="1480" cy="304" r="7.0" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1480" cy="304" r="3.5" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="1498" y="310" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#197b8d" text-anchor="start">P2 /WR</text>
+<circle cx="1480" cy="337" r="7.0" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1480" cy="337" r="3.5" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="1498" y="343" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#246eae" text-anchor="start">P3 DATA</text>
+<circle cx="1480" cy="370" r="7.0" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1480" cy="370" r="3.5" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="1498" y="376" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#354350" text-anchor="start">P4 VSS</text>
+<circle cx="1480" cy="403" r="7.0" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1480" cy="403" r="3.5" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="1498" y="409" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#c53849" text-anchor="start">P5 VDD</text>
+<circle cx="1480" cy="436" r="7.0" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="1480" cy="436" r="3.5" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="1498" y="442" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#647787" text-anchor="start">P6 /INT</text>
+<circle cx="950" cy="286" r="7.0" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="950" cy="286" r="3.5" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="932" y="292" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#647787" text-anchor="end">P7 BL+</text>
+<circle cx="950" cy="341" r="7.0" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="950" cy="341" r="3.5" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="932" y="347" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#647787" text-anchor="end">P8 BL-</text>
+<circle cx="950" cy="396" r="7.0" fill="#c49942" stroke="#c49942" stroke-width="2"/>
+<circle cx="950" cy="396" r="3.5" fill="#203346" stroke="#203346" stroke-width="2"/>
+<text x="932" y="402" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#647787" text-anchor="end">P9 Ctrl</text>
+<text x="56" y="513" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#203346" text-anchor="start">背面看：右侧自上而下P1～P6；左侧自上而下P7～P9。实物以P1丝印及厂家图共同核对。</text>
+<text x="56" y="553" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#647787" text-anchor="start">P6 /INT、P7 BL+、P8 BL-、P9 Ctrl：分别绝缘不接；不加背光连线。</text>
+<line x1="56" y1="587" x2="1624" y2="587" stroke="#ccd9e1" stroke-width="2" stroke-linecap="round"/>
+<rect x="80" y="617" width="470" height="47" rx="7" fill="#edf4f7" stroke="none" stroke-width="2"/>
+<text x="103" y="649" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="25" fill="#7652a1" text-anchor="start">LCD P1 · /CS</text>
+<line x1="550" y1="642" x2="1105" y2="642" stroke="#7652a1" stroke-width="4" stroke-linecap="round"/>
+<text x="828" y="632" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#7652a1" text-anchor="middle">独立软线 · 约150mm</text>
+<circle cx="550" cy="642" r="5" fill="#7652a1" stroke="#7652a1" stroke-width="2"/>
+<circle cx="1105" cy="642" r="5" fill="#7652a1" stroke="#7652a1" stroke-width="2"/>
+<rect x="1105" y="617" width="490" height="47" rx="7" fill="#edf4f7" stroke="none" stroke-width="2"/>
+<text x="1128" y="649" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#7652a1" text-anchor="start">Pico 物理15 · GP11</text>
+<rect x="80" y="685" width="470" height="47" rx="7" fill="#edf4f7" stroke="none" stroke-width="2"/>
+<text x="103" y="717" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="25" fill="#197b8d" text-anchor="start">LCD P2 · /WR</text>
+<line x1="550" y1="710" x2="1105" y2="710" stroke="#197b8d" stroke-width="4" stroke-linecap="round"/>
+<text x="828" y="700" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#197b8d" text-anchor="middle">独立软线 · 约150mm</text>
+<circle cx="550" cy="710" r="5" fill="#197b8d" stroke="#197b8d" stroke-width="2"/>
+<circle cx="1105" cy="710" r="5" fill="#197b8d" stroke="#197b8d" stroke-width="2"/>
+<rect x="1105" y="685" width="490" height="47" rx="7" fill="#edf4f7" stroke="none" stroke-width="2"/>
+<text x="1128" y="717" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#197b8d" text-anchor="start">Pico 物理2 · GP1</text>
+<rect x="80" y="753" width="470" height="47" rx="7" fill="#edf4f7" stroke="none" stroke-width="2"/>
+<text x="103" y="785" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="25" fill="#246eae" text-anchor="start">LCD P3 · DATA</text>
+<line x1="550" y1="778" x2="1105" y2="778" stroke="#246eae" stroke-width="4" stroke-linecap="round"/>
+<text x="828" y="768" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#246eae" text-anchor="middle">独立软线 · 约150mm</text>
+<circle cx="550" cy="778" r="5" fill="#246eae" stroke="#246eae" stroke-width="2"/>
+<circle cx="1105" cy="778" r="5" fill="#246eae" stroke="#246eae" stroke-width="2"/>
+<rect x="1105" y="753" width="490" height="47" rx="7" fill="#edf4f7" stroke="none" stroke-width="2"/>
+<text x="1128" y="785" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#246eae" text-anchor="start">Pico 物理1 · GP0</text>
+<rect x="80" y="821" width="470" height="47" rx="7" fill="#edf4f7" stroke="none" stroke-width="2"/>
+<text x="103" y="853" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="25" fill="#354350" text-anchor="start">LCD P4 · VSS</text>
+<line x1="550" y1="846" x2="1105" y2="846" stroke="#354350" stroke-width="4" stroke-linecap="round"/>
+<text x="828" y="836" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#354350" text-anchor="middle">独立软线 · 约150mm</text>
+<circle cx="550" cy="846" r="5" fill="#354350" stroke="#354350" stroke-width="2"/>
+<circle cx="1105" cy="846" r="5" fill="#354350" stroke="#354350" stroke-width="2"/>
+<rect x="1105" y="821" width="490" height="47" rx="7" fill="#edf4f7" stroke="none" stroke-width="2"/>
+<text x="1128" y="853" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#354350" text-anchor="start">Pico 物理38 · GND</text>
+<rect x="80" y="889" width="470" height="47" rx="7" fill="#edf4f7" stroke="none" stroke-width="2"/>
+<text x="103" y="921" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="25" fill="#c53849" text-anchor="start">LCD P5 · VDD</text>
+<line x1="550" y1="914" x2="1105" y2="914" stroke="#c53849" stroke-width="4" stroke-linecap="round"/>
+<text x="828" y="904" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#c53849" text-anchor="middle">独立软线 · 约150mm</text>
+<circle cx="550" cy="914" r="5" fill="#c53849" stroke="#c53849" stroke-width="2"/>
+<circle cx="1105" cy="914" r="5" fill="#c53849" stroke="#c53849" stroke-width="2"/>
+<rect x="1105" y="889" width="490" height="47" rx="7" fill="#edf4f7" stroke="none" stroke-width="2"/>
+<text x="1128" y="921" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#c53849" text-anchor="start">Pico 物理36 · 3V3 OUT</text>
+<text x="80" y="1016" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#c53849" text-anchor="start">同一3V3节点（圆点＝相连）</text>
+<line x1="500" y1="979" x2="805" y2="979" stroke="#c53849" stroke-width="4" stroke-linecap="round"/>
+<circle cx="805" cy="979" r="6" fill="#c53849" stroke="#c53849" stroke-width="2"/>
+<polyline points="805,979 805,956 1060,956" fill="none" stroke="#c53849" stroke-width="4"/>
+<polyline points="805,979 805,1011 1060,1011" fill="none" stroke="#c53849" stroke-width="4"/>
+<text x="490" y="985" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#c53849" text-anchor="end">Pico 物理36</text>
+<text x="1080" y="964" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#c53849" text-anchor="start">矩阵 J10</text>
+<text x="1080" y="1019" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#c53849" text-anchor="start">LCD P5 / VDD</text>
+<rect x="56" y="1042" width="1568" height="64" rx="9" fill="#edf4f7" stroke="none" stroke-width="2"/>
+<text x="78" y="1081" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#203346" text-anchor="start">P1～P5低位直焊，不装直立排针；板背焊点/首段导线突出≤1.5mm。P4接GND/物理38。</text>
+<line x1="56" y1="1137" x2="1624" y2="1137" stroke="#ccd9e1" stroke-width="2" stroke-linecap="round"/>
+<text x="56" y="1167" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="17" fill="#647787" text-anchor="start">CalcKey · MATRIX A / Pico 2 / GDM0103 · 断开USB焊装 · 非1:1加工模板</text>
+<text x="1624" y="1167" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="17" fill="#647787" text-anchor="end">PCB 17123bc08553 · 2026-11-06 · 3/4</text>
+</svg>

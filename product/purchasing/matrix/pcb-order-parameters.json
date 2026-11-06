@@ -1,0 +1,115 @@
+{
+  "prepared_date": "2026-11-06",
+  "for_devices": 1,
+  "pcb_release_id": "17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727",
+  "pcb_build_id": "6a333818c3a79007ec3a24727eed3008848215ed1c5c0238051beffaecfde0e3",
+  "release_manifest_sha256": "9172a35ff855e1a0376d32d8fdec4b7b9c46065f73d87cf83b2dc1758306e969",
+  "fixed_parameters": [
+    {
+      "item": "设计种类",
+      "value": "普通刚性裸PCB，1种设计",
+      "source": "current_release"
+    },
+    {
+      "item": "材料",
+      "value": "FR-4",
+      "source": "current_release"
+    },
+    {
+      "item": "层数",
+      "value": "2",
+      "source": "current_release"
+    },
+    {
+      "item": "成品板厚",
+      "value": "1.6mm",
+      "source": "current_release"
+    },
+    {
+      "item": "板框",
+      "value": "73×96mm，R1，按原Gerber",
+      "source": "current_release"
+    },
+    {
+      "item": "外层铜厚",
+      "value": "1oz / 1oz",
+      "source": "current_release"
+    },
+    {
+      "item": "过孔",
+      "value": "8个；孔径0.3mm、外径0.6mm",
+      "source": "current_release"
+    },
+    {
+      "item": "轴中心NPTH",
+      "value": "20个，直径4mm",
+      "source": "current_release"
+    },
+    {
+      "item": "轴触点PTH",
+      "value": "40个，直径1.5mm",
+      "source": "current_release"
+    },
+    {
+      "item": "二极管PTH",
+      "value": "40个，直径0.8mm",
+      "source": "current_release"
+    }
+  ],
+  "ordering_defaults": [
+    {
+      "item": "计划数量",
+      "value": "5片，其中1片装机、4片裸板备用",
+      "source": "default"
+    },
+    {
+      "item": "交付形式",
+      "value": "单片，不拼板，不加工艺边",
+      "source": "default"
+    },
+    {
+      "item": "阻焊/字符",
+      "value": "双面绿油/双面白字",
+      "source": "default"
+    },
+    {
+      "item": "表面处理",
+      "value": "无铅喷锡 / Lead-free HASL",
+      "source": "default"
+    },
+    {
+      "item": "工厂测试",
+      "value": "常规开短路测试",
+      "source": "default"
+    },
+    {
+      "item": "额外加工",
+      "value": "无阻抗控制、金手指、盲埋孔或树脂塞孔",
+      "source": "design_not_required"
+    },
+    {
+      "item": "贴片/钢网",
+      "value": "不选SMT、不买钢网；全部手工焊装",
+      "source": "current_assembly_intent"
+    }
+  ],
+  "fabrication_package": {
+    "path": "product/production/matrix-fabrication.zip",
+    "sha256": "e6ae9edbe31d184a3f1e57cffe2535466c04d0af143dc57ccf06d5e4a0b65dc8",
+    "manufacturing_files": 13,
+    "audit_files": 1,
+    "crc_checked": true,
+    "source_export_path": ".work/pcb/matrix/release/packages/fabrication.zip"
+  },
+  "vendor_capability_source": {
+    "url": "https://jlcpcb.com/capabilities/pcb-capabilities/",
+    "observed_date": "2026-11-06",
+    "scope": "Published material, thickness, copper, soldermask and finish choices; no quote or order."
+  },
+  "actions": {
+    "uploaded_to_supplier": false,
+    "order_placed": false,
+    "paid": false,
+    "flashed": false
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "schemaVersion": 3,
+  "backend": "tscircuit-kicad",
+  "designId": "matrix",
+  "candidateId": "45db76704e6d3c3462e6fd948868bb777018f1032f67f7e2a299c680bb3301b7",
+  "exportId": "45db76704e6d3c3462e6fd948868bb777018f1032f67f7e2a299c680bb3301b7",
+  "status": "ready",
+  "readyForFabrication": true,
+  "sections": [
+    {
+      "id": "fabrication",
+      "status": "ready",
+      "files": [
+        "manufacturing/drill/board-NPTH.drl",
+        "manufacturing/drill/board-PTH.drl",
+        "manufacturing/drill/matrix-drill-report.txt",
+        "manufacturing/gerbers/board-B_Cu.gbl",
+        "manufacturing/gerbers/board-B_Mask.gbs",
+        "manufacturing/gerbers/board-B_Paste.gbp",
+        "manufacturing/gerbers/board-B_Silkscreen.gbo",
+        "manufacturing/gerbers/board-Edge_Cuts.gm1",
+        "manufacturing/gerbers/board-F_Cu.gtl",
+        "manufacturing/gerbers/board-F_Mask.gts",
+        "manufacturing/gerbers/board-F_Paste.gtp",
+        "manufacturing/gerbers/board-F_Silkscreen.gto",
+        "manufacturing/gerbers/board-job.gbrjob"
+      ],
+      "blockingCodes": []
+    },
+    {
+      "id": "assembly",
+      "status": "ready",
+      "files": [
+        "manufacturing/jlc-smt-bom.csv",
+        "manufacturing/jlc-smt-placement.csv"
+      ],
+      "blockingCodes": []
+    },
+    {
+      "id": "mechanical",
+      "status": "ready",
+      "files": [
+        "manufacturing/3dmodels/matrix.3dshapes/D_DO-35_SOD27_P7.62mm_Horizontal.step",
+        "manufacturing/3dmodels/matrix.3dshapes/ks9.step",
+        "manufacturing/3dmodels/matrix.3dshapes/R_0805_2012Metric.step",
+        "manufacturing/assembly.glb",
+        "manufacturing/assembly.step"
+      ],
+      "blockingCodes": []
+    }
+  ],
+  "generatedAt": "2026-11-06T01:17:50.618Z",
+  "files": [
+    {
+      "type": "step",
+      "path": "manufacturing/3dmodels/matrix.3dshapes/D_DO-35_SOD27_P7.62mm_Horizontal.step",
+      "sha256": "9704292191fcb13b3dfc88c1e572df18313ac20023bb230486c878d8dddfdb54",
+      "sizeBytes": 21712
+    },
+    {
+      "type": "step",
+      "path": "manufacturing/3dmodels/matrix.3dshapes/ks9.step",
+      "sha256": "29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d",
+      "sizeBytes": 1080795
+    },
+    {
+      "type": "step",
+      "path": "manufacturing/3dmodels/matrix.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "sizeBytes": 40592
+    },
+    {
+      "type": "glb",
+      "path": "manufacturing/assembly.glb",
+      "sha256": "1e122358d362d009b2a01ebf797f361b624def75469637d13ae71dca5fae4458",
+      "sizeBytes": 34253692
+    },
+    {
+      "type": "step",
+      "path": "manufacturing/assembly.step",
+      "sha256": "e2474c585d2693bb16227489b4c195a5ffbfa208a89e1ee4a6da6b9e6b1f5ef2",
+      "sizeBytes": 4333285
+    },
+    {
+      "type": "manifest",
+      "path": "manufacturing/circuit.json",
+      "sha256": "8a779318bd5c6954efa04725872f7ac9e82beba712a5fcde15156b1b5dae9171",
+      "sizeBytes": 850669
+    },
+    {
+      "type": "drill",
+      "path": "manufacturing/drill/board-NPTH.drl",
+      "sha256": "3fc8f757df9607863d3c996740d24af9c689e2c87cee08304daea7480d4f2afa",
+      "sizeBytes": 634
+    },
+    {
+      "type": "drill",
+      "path": "manufacturing/drill/board-PTH.drl",
+      "sha256": "e31a1900f52877882f709e7c68eb62d9a4004f0ce6175f60a0ce519e6e3749fb",
+      "sizeBytes": 1819
+    },
+    {
+      "type": "drill",
+      "path": "manufacturing/drill/matrix-drill-report.txt",
+      "sha256": "c0b2196d08030025aeeacad68c1aec58cf6d0f99f069b0b1a5c0e3bce6fadcd0",
+      "sizeBytes": 718
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-B_Cu.gbl",
+      "sha256": "77978ca152a6105eb4a884a54708df98fb08551f949321a08e574cc66d4eb4af",
+      "sizeBytes": 14319
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-B_Mask.gbs",
+      "sha256": "706916575ba375660052ae189d750247822d21ec921c68c816a11d79721ecc8c",
+      "sizeBytes": 4957
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-B_Paste.gbp",
+      "sha256": "083e48bbf651067f2321fbc3122e16484fe45ed6ef1b48fd7fd44c121cb9a969",
+      "sizeBytes": 1231
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-B_Silkscreen.gbo",
+      "sha256": "b97d58149be48ffe98439282900a2d1b8529a3604819acc22e5cf47589415ab3",
+      "sizeBytes": 52894
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-Edge_Cuts.gm1",
+      "sha256": "ddfd2b6ca573be2fc886c649bc3596040628908c7cdeb03fbc58e7df445bafcf",
+      "sizeBytes": 3880
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-F_Cu.gtl",
+      "sha256": "038b5941de4dd032d2503ee66916cdcb86ef321fd721b6b79704d540ad8a747a",
+      "sizeBytes": 11161
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-F_Mask.gts",
+      "sha256": "a300419bbc2367b58510a5e86f8b6535a8d3456a46567dd9159d1d658276d25b",
+      "sizeBytes": 4156
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-F_Paste.gtp",
+      "sha256": "ba0e164fdfbd18da21cab519e25e1655a134382cd2ebdc9e254e72cf4d5cc77a",
+      "sizeBytes": 450
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-F_Silkscreen.gto",
+      "sha256": "8b354d6d20190d8658be2e3e3288b5f070241940194aeca06c0605114dd80b3c",
+      "sizeBytes": 49252
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-job.gbrjob",
+      "sha256": "0ab65a9000892b6a203accc96c980d71bd98a51ff5020e64d91b5557b7d9d931",
+      "sizeBytes": 2600
+    },
+    {
+      "type": "bom",
+      "path": "manufacturing/jlc-smt-bom.csv",
+      "sha256": "aa1612c451e93d09b111d32b4569cc296efc2d633dfe8745feda984e6b0a473c",
+      "sizeBytes": 72
+    },
+    {
+      "type": "pick-and-place",
+      "path": "manufacturing/jlc-smt-placement.csv",
+      "sha256": "9f7341ff1e2e3b6c2c0d7cb9ba2dfdac47befb92965ff74f99c129c23e83ff30",
+      "sizeBytes": 83
+    }
+  ],
+  "diagnostics": [
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.external_procurement_evidence_missing",
+      "message": "BOM item \"switches\" is populated on the PCB and marked for external procurement, but does not list the design evidence still needed.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/2",
+      "nextAction": "List only the design-critical evidence still missing for this PCB part (datasheet or spec PDF, package/footprint drawing, pinout). Supplier link, stock, and price are procurement reminders, not entries here.",
+      "details": {
+        "line": 45,
+        "expected": "required_user_evidence names the missing datasheet, footprint, or pinout facts"
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.external_procurement_evidence_missing",
+      "message": "BOM item \"signal_wire\" is populated on the PCB and marked for external procurement, but does not list the design evidence still needed.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/7",
+      "nextAction": "List only the design-critical evidence still missing for this PCB part (datasheet or spec PDF, package/footprint drawing, pinout). Supplier link, stock, and price are procurement reminders, not entries here.",
+      "details": {
+        "line": 210,
+        "expected": "required_user_evidence names the missing datasheet, footprint, or pinout facts"
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.external_procurement_evidence_missing",
+      "message": "BOM item \"switches\" is populated on the PCB and marked for external procurement, but does not list the design evidence still needed.",
+      "file": "product/component-selection.json",
+      "jsonPointer": "/selected_components/2",
+      "nextAction": "List only the design-critical evidence still missing for this PCB part (datasheet or spec PDF, package/footprint drawing, pinout). Supplier link, stock, and price are procurement reminders, not entries here.",
+      "details": {
+        "line": 42,
+        "expected": "required_user_evidence names the missing datasheet, footprint, or pinout facts"
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.external_procurement_evidence_missing",
+      "message": "BOM item \"signal_wire\" is populated on the PCB and marked for external procurement, but does not list the design evidence still needed.",
+      "file": "product/component-selection.json",
+      "jsonPointer": "/selected_components/7",
+      "nextAction": "List only the design-critical evidence still missing for this PCB part (datasheet or spec PDF, package/footprint drawing, pinout). Supplier link, stock, and price are procurement reminders, not entries here.",
+      "details": {
+        "line": 207,
+        "expected": "required_user_evidence names the missing datasheet, footprint, or pinout facts"
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "Plotted to '/Users/xonar/Documents/Replicator/CalcKey/manufacturing/matrix/exports/.staging/45db76704e6d3c3462e6fd948868bb777018f1032f67f7e2a299c680bb3301b7-6708e95f-86bd-402b-b65b-bc6450c35b28/gerbers/board-F_Cu.gtl'.\nPlotted to '/Users/xonar/Documents/Replicator/CalcKey/manufacturing/matrix/exports/.staging/45db76704e6d3c3462e6fd948868bb777018f1032f67f7e2a299c680bb3301b7-6708e95f-86bd-402b-b65b-bc6450c35b28/gerbers/board-B_Cu.gbl'.\nPlotted to '/Users/xonar/Documents/Replicator/CalcKey/manufacturing/matrix/exports/.staging/45db76704e6d3c3462e6fd948868bb777018f1032f67f7e2a299c680bb3301b7-6708e95f-86bd-402b-b65b-bc6450c35b28/gerbers/board-F_Paste.gtp'.\nPlotted to '/Users/xonar/Documents/Replicator/CalcKey/manufacturing/matrix/exports/.staging/45db76704e6d3c3462e6fd948868bb777018f1032f67f7e2a299c680bb3301b7-6708e95f-86bd-402b-b65b-bc6450c35b28/gerbers/board-B_Paste.gbp'.\nPlotted to '/Users/xonar/Documents/Replicator/CalcKey/manufacturing/matrix/exports/.staging/45db76704e6d3c3462e6fd948868bb777018f1032f67f7e2a299c680bb3301b7-6708e95f-86bd-402b-b65b-bc6450c35b28/gerbers/board-F_Silkscreen.gto'.\nPlotted to '/Users/xonar/Documents/Replicator/CalcKey/manufacturing/matrix/exports/.staging/45db76704e6d3c3462e6fd948868bb777018f1032f67f7e2a299c680bb3301b7-6708e95f-86bd-402b-b65b-bc6450c35b28/gerbers/board-B_Silkscreen.gbo'.\nPlotted to '/Users/xonar/Documents/Replicator/CalcKey/manufacturing/matrix/exports/.staging/45db76704e6d3c3462e6fd948868bb777018f1032f67f7e2a299c680bb3301b7-6708e95f-86bd-402b-b65b-bc6450c35b28/gerbers/board-F_Mask.gts'.\nPlotted to '/Users/xonar/Documents/Replicator/CalcKey/manufacturing/matrix/exports/.staging/45db76704e6d3c3462e6fd948868bb777018f1032f67f7e2a299c680bb3301b7-6708e95f-86bd-402b-b65b-bc6450c35b28/gerbers/board-B_Mask.gbs'.\nPlotted to '/Users/xonar/Documents/Replicator/CalcKey/manufacturing/matrix/exports/.staging/45db76704e6d3c3462e6fd948868bb777018f1032f67f7e2a299c680bb3301b7-6708e95f-86bd-402b-b65b-bc6450c35b28/gerbers/board-Edge_Cuts.gm1'.",
+      "file": "manufacturing/gerbers",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "Created file '/Users/xonar/Documents/Replicator/CalcKey/manufacturing/matrix/exports/.staging/45db76704e6d3c3462e6fd948868bb777018f1032f67f7e2a299c680bb3301b7-6708e95f-86bd-402b-b65b-bc6450c35b28/drill/board-PTH.drl'\nCreated file '/Users/xonar/Documents/Replicator/CalcKey/manufacturing/matrix/exports/.staging/45db76704e6d3c3462e6fd948868bb777018f1032f67f7e2a299c680bb3301b7-6708e95f-86bd-402b-b65b-bc6450c35b28/drill/board-NPTH.drl'\nDone.",
+      "file": "manufacturing/drill",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "Fontconfig error: Cannot load default config file: No such file: (null)\nWarning: schematic has annotation errors, please use the schematic editor to fix them\nWrote bill of materials to '/Users/xonar/Documents/Replicator/CalcKey/manufacturing/matrix/exports/.staging/45db76704e6d3c3462e6fd948868bb777018f1032f67f7e2a299c680bb3301b7-6708e95f-86bd-402b-b65b-bc6450c35b28/bom.csv'.",
+      "file": "manufacturing/bom.csv",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "Wrote position data to '/Users/xonar/Documents/Replicator/CalcKey/manufacturing/matrix/exports/.staging/45db76704e6d3c3462e6fd948868bb777018f1032f67f7e2a299c680bb3301b7-6708e95f-86bd-402b-b65b-bc6450c35b28/placement.csv'.",
+      "file": "manufacturing/placement.csv",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "Could not add 3D model for J2.\nFile not found: ${KIPRJMOD}/3dmodels/matrix.3dshapes/SolderWirePad_1x01_SMD_2x4mm.step\nCould not add 3D model for J1.\nFile not found: ${KIPRJMOD}/3dmodels/matrix.3dshapes/SolderWirePad_1x01_SMD_2x4mm.step\nCould not add 3D model for J3.\nFile not found: ${KIPRJMOD}/3dmodels/matrix.3dshapes/SolderWirePad_1x01_SMD_2x4mm.step\nCould not add 3D model for J8.\nFile not found: ${KIPRJMOD}/3dmodels/matrix.3dshapes/SolderWirePad_1x01_SMD_2x4mm.step\nCould not add 3D model for J7.\nFile not found: ${KIPRJMOD}/3dmodels/matrix.3dshapes/SolderWirePad_1x01_SMD_2x4mm.step\nCould not add 3D model for J4.\nFile not found: ${KIPRJMOD}/3dmodels/matrix.3dshapes/SolderWirePad_1x01_SMD_2x4mm.step\nCould not add 3D model for J5.\nFile not found: ${KIPRJMOD}/3dmodels/matrix.3dshapes/SolderWirePad_1x01_SMD_2x4mm.step\nCould not add 3D model for J9.\nFile not found: ${KIPRJMOD}/3dmodels/matrix.3dshapes/SolderWirePad_1x01_SMD_2x4mm.step\nCould not add 3D model for J10.\nFile not found: ${KIPRJMOD}/3dmodels/matrix.3dshapes/SolderWirePad_1x01_SMD_2x4mm.step\nCould not add 3D model for J6.\nFile not found: ${KIPRJMOD}/3dmodels/matrix.3dshapes/SolderWirePad_1x01_SMD_2x4mm.step\nSTEP file '/Users/xonar/Documents/Replicator/CalcKey/manufacturing/matrix/exports/.staging/45db76704e6d3c3462e6fd948868bb777018f1032f67f7e2a299c680bb3301b7-6708e95f-86bd-402b-b65b-bc6450c35b28/assembly.step' created.\n\nExport time 0.932 s",
+      "file": "manufacturing/assembly.step",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "assembly_step_required_models_verified",
+      "message": "Verified 24 required mounted assembly model occurrence(s) in the final KiCad STEP: D1, D10, D11, D12, D13, D14, D15, D16, D17, D18, D19, D2, D20, D3, D4, D5, D6, D7, D8, D9, R1, R2, R3, R4.",
+      "file": "manufacturing/assembly.step",
+      "details": {
+        "checked_model_refs": [
+          "D1",
+          "D10",
+          "D11",
+          "D12",
+          "D13",
+          "D14",
+          "D15",
+          "D16",
+          "D17",
+          "D18",
+          "D19",
+          "D2",
+          "D20",
+          "D3",
+          "D4",
+          "D5",
+          "D6",
+          "D7",
+          "D8",
+          "D9",
+          "R1",
+          "R2",
+          "R3",
+          "R4"
+        ]
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "assembly_surface_appearance_built",
+      "message": "Prepared deterministic board appearance for the main PCB.",
+      "file": "manufacturing/assembly-appearance.json",
+      "details": {
+        "spec_sha256": "cdcbabe755e46e8982054bf01a640f51629f88340077842daf85ab4ab944b006",
+        "overlay_ids": [
+          "main-pcb:matrix"
+        ]
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "assembly_glb_derived_from_step",
+      "message": "assembly.glb was generated from the final KiCad assembly.step, so the fabrication preview and released solid share one geometry source.",
+      "file": "manufacturing/assembly.glb",
+      "details": {
+        "source": "assembly-step",
+        "source_path": "manufacturing/assembly.step",
+        "source_step_sha256": "e2474c585d2693bb16227489b4c195a5ffbfa208a89e1ee4a6da6b9e6b1f5ef2",
+        "preview_sha256": "1e122358d362d009b2a01ebf797f361b624def75469637d13ae71dca5fae4458",
+        "appearance_spec_sha256": "cdcbabe755e46e8982054bf01a640f51629f88340077842daf85ab4ab944b006",
+        "surface_texture_overlay_ids": [
+          "main-pcb:matrix"
+        ],
+        "surface_decal_ids": [],
+        "material_override_ids": [],
+        "verified_source_material_ids": []
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "assembly_cover_rendered",
+      "message": "Rendered the assembly cover picture from the final KiCad assembly.step (205552 triangles across 96 colour runs).",
+      "file": "manufacturing/previews/assembly-iso.png",
+      "details": {
+        "source_path": "manufacturing/assembly.step",
+        "mesh_count": 96,
+        "triangle_count": 205552,
+        "runtime_ms": 1316
+      }
+    }
+  ],
+  "previews": [
+    {
+      "type": "gerber-preview-svg",
+      "path": "manufacturing/previews/gerber-top.svg",
+      "role": "fabrication",
+      "side": "top"
+    },
+    {
+      "type": "gerber-preview-png",
+      "path": "manufacturing/previews/gerber-top.png",
+      "role": "fabrication",
+      "side": "top"
+    },
+    {
+      "type": "gerber-preview-svg",
+      "path": "manufacturing/previews/gerber-bottom.svg",
+      "role": "fabrication",
+      "side": "bottom"
+    },
+    {
+      "type": "gerber-preview-png",
+      "path": "manufacturing/previews/gerber-bottom.png",
+      "role": "fabrication",
+      "side": "bottom"
+    },
+    {
+      "type": "three-d-glb",
+      "path": "manufacturing/assembly.glb",
+      "role": "assembly"
+    },
+    {
+      "type": "assembly-png",
+      "path": "manufacturing/previews/assembly-iso.png",
+      "role": "assembly"
+    }
+  ],
+  "finishedThicknessMm": 1.6,
+  "validatedBoardSpec": {
+    "layers": 2,
+    "material": "FR4",
+    "materialNote": "FR4 is the only substrate this system fabricates designs for; source/pcb.config.json has no material field to override it.",
+    "copperThicknessOz": {
+      "outer": 1
+    },
+    "capabilityProfileName": "jlcpcb-2layer-1oz",
+    "capabilityLimits": {
+      "minTrackWidthMm": 0.1,
+      "minViaDrillMm": 0.15,
+      "minViaDiameterMm": 0.25,
+      "minAnnularRingMm": 0.05,
+      "minPlatedHoleDrillMm": 0.15,
+      "minSilkLineWidthMm": 0.15,
+      "minSilkTextHeightMm": 1,
+      "minSilkPadClearanceMm": 0.15
+    },
+    "reorderWarning": "This design was DFM-validated as a 2-layer board at 1 oz outer copper (capability profile \"jlcpcb-2layer-1oz\", minimum trace width 0.1 mm). Ordering the board at a different layer count or copper weight invalidates this DFM check, because the real fabrication minimums (trace width, via drill/diameter, annular ring, plated-hole drill) change with both. To change either, edit manufacturing.layers or manufacturing.copperThicknessOz in source/pcb.config.json and re-run pcb.run(profile=\"check\")."
+  }
+}

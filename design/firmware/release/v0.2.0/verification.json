@@ -11,7 +11,7 @@
   "display_cells": 8,
   "flashed": false,
   "display_ack_available": false,
-  "built_utc": "2026-11-05T14:17:45.754177+00:00",
+  "built_utc": "2026-11-06T03:09:51.547897+00:00",
   "compiler": "arm-none-eabi-gcc (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 14.2.1 20241119",
   "host_test_counts": [
     93,
@@ -44,7 +44,7 @@
     }
   },
   "source_hashes": {
-    "design/firmware/README.md": "f573ccdde0f6038483839758d09071d7333d26553d9e735f21d69c6fdd8b246b",
+    "design/firmware/README.md": "77d487320d49a9f7c4ae9a032e1aff0a13aec6ddfc3239f07eb4743bebf11dde",
     "design/firmware/bootstrap.py": "83e46f1aee05237ab9dc86f7a332d0532f060dd1f94cc0874b04378acffa5521",
     "design/firmware/build.py": "6768eb5799863a0937f83db031d65c752fc5dc6058e4e3b29d2cd00b5433fcfb",
     "design/firmware/check_wiring.py": "2da5f77fe50822688b5626605bfb9e7897316d797757414dbcde0a9893c94bd3",
@@ -68,7 +68,7 @@
     "design/firmware/tests/lcd_decimal_oracle.py": "8e1a18c52b9b4a1d4be6a0fe861e4df1b720e1c83e4b5720e099d1654056b430",
     "design/firmware/tests/lcd_tests.cpp": "10d0e1dee907eda937a1f1e70d704db9363eac8b9d8543b980f5b550edc087de",
     "design/enclosure/source/wiring.json": "ba92aa5d7554b7d56ab5506cac6462c8b075e56c1b9bc9547d3a93b939c08cb8",
-    "product/requirements.json": "fc48aea598ec3a6a8e56c04a610f3aa1895fff257581b300e213dfa63c5007d8",
+    "product/requirements.json": "eeb4210757032741d8e6a72ad7b16969b2ed32ae5ee72f4384d45e3d02f58229",
     "product/references/gdm0103-specification.pdf": "5a99da5743955683150a6527b8757073570189a4aa4ce2f4131a8d0baec73ba8",
     "product/references/ht1621-v340.pdf": "e066c0d4f202324656e074f935e50cc49dfa87debd8af27c893309c4c5eb4e76"
   },
@@ -172,7 +172,7 @@
         "-DCMAKE_BUILD_TYPE=Release"
       ],
       "exit_code": 0,
-      "output": "PICO_SDK_PATH is /Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tools/pico-sdk-2.2.0\nTarget board (PICO_BOARD) is 'pico2'.\nUsing board configuration from /Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tools/pico-sdk-2.2.0/src/boards/include/boards/pico2.h\nPico Platform (PICO_PLATFORM) is 'rp2350-arm-s'.\nBuild type is Release\nUsing picotool from /Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tools/picotool-install/picotool/picotool\nTinyUSB available at /Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tools/tinyusb-0.18.0/hw/bsp/rp2040; enabling build support for USB.\n-- Configuring done (0.3s)\n-- Generating done (0.1s)\n-- Build files have been written to: /Users/xonar/Documents/Replicator/CalcKey/.work/firmware-build\n"
+      "output": "PICO_SDK_PATH is /Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tools/pico-sdk-2.2.0\nTarget board (PICO_BOARD) is 'pico2'.\nUsing board configuration from /Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tools/pico-sdk-2.2.0/src/boards/include/boards/pico2.h\nPico Platform (PICO_PLATFORM) is 'rp2350-arm-s'.\nBuild type is Release\nUsing picotool from /Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tools/picotool-install/picotool/picotool\nTinyUSB available at /Users/xonar/Documents/Replicator/CalcKey/.work/firmware-tools/tinyusb-0.18.0/hw/bsp/rp2040; enabling build support for USB.\n-- Configuring done (0.2s)\n-- Generating done (0.1s)\n-- Build files have been written to: /Users/xonar/Documents/Replicator/CalcKey/.work/firmware-build\n"
     },
     {
       "command": [

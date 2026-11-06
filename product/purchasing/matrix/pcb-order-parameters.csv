@@ -1,0 +1,18 @@
+﻿项目,填写值,依据
+设计种类,普通刚性裸PCB，1种设计,current_release
+材料,FR-4,current_release
+层数,2,current_release
+成品板厚,1.6mm,current_release
+板框,73×96mm，R1，按原Gerber,current_release
+外层铜厚,1oz / 1oz,current_release
+过孔,8个；孔径0.3mm、外径0.6mm,current_release
+轴中心NPTH,20个，直径4mm,current_release
+轴触点PTH,40个，直径1.5mm,current_release
+二极管PTH,40个，直径0.8mm,current_release
+计划数量,5片，其中1片装机、4片裸板备用,default
+交付形式,单片，不拼板，不加工艺边,default
+阻焊/字符,双面绿油/双面白字,default
+表面处理,无铅喷锡 / Lead-free HASL,default
+工厂测试,常规开短路测试,default
+额外加工,无阻抗控制、金手指、盲埋孔或树脂塞孔,design_not_required
+贴片/钢网,不选SMT、不买钢网；全部手工焊装,current_assembly_intent
