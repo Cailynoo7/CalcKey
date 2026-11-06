@@ -53,12 +53,13 @@ def rr(w,d,h,r):
 body=rr(case_w,case_d,floor,corner)
 roof_blank=Pos(0,0,base_h)*rr(case_w,case_d,top_t,corner)
 hood_bosses=[];hood_cuts=[];hardware=[];joint_records=[]
+# Explicit surface seats retain the legacy clearance-only holes and proud heads.
 # These columns anchor to the actual unperforated roof lands outside the key grid.
 # Explicit roof host avoids treating a nearby sidewall as material on the joint axis.
 for i,(x,y) in enumerate(body_screw_xy):
     j=make_screw_joint_v1(size="M3",at=Location((x,y,0),(180,0,0)),
         through=[(body,floor)],engage_depth=5.0,into=roof_blank,
-        head="button",material="PLA",boss=BossSpecV1(root_blend_mm=0),
+        seat="surface",head="button",material="PLA",boss=BossSpecV1(root_blend_mm=0),
         label=f"bottom:{i}")
     body=body-j.through_cuts
     hood_bosses.append(j.bosses);hood_cuts.append(j.engage_cuts)
@@ -68,7 +69,7 @@ for i,(x,y) in enumerate(pico_holes):
     board=Pos(pico_x,pico_y,pico_z+PICO_SEAT_BOTTOM)*Box(51,21,PICO_THICKNESS,align=(Align.CENTER,Align.CENTER,Align.MIN))
     j=make_screw_joint_v1(size="M2",at=Location((x,y,pico_z+0.96)),
         through=[(board,PICO_THICKNESS)],engage_depth=2.5,into=body,
-        head="socket_cap",material="PLA",label=f"pico:{i}")
+        seat="surface",head="socket_cap",material="PLA",label=f"pico:{i}")
     body=body+j.bosses-j.engage_cuts
     hardware.append(j.hardware)
     joint_records.append((f"pico:{i}",j.screw_length_mm,j.boss_length_mm,j.bom))

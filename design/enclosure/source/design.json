@@ -33,7 +33,7 @@
           "target": "base",
           "order": 0,
           "path": "design/enclosure/source/parts/base/000-base.py",
-          "sha256": "4534e32ee22bd24cad115f68e5404f09dea25c5c84fb03ca5bb4aa91c9c1a4ce"
+          "sha256": "f2366e1341930f5298b749353bab6b14798142c8591f225f202cd3a50d88df25"
         }
       ],
       "dependencies": [
@@ -536,7 +536,7 @@
       "target": "imports",
       "label": "Matrix PCB with 20 KS-9 switches",
       "kind": "imported",
-      "shapeHash": "663b350774697a0a372abf29141cd9fdb6feca92c96b7a9365ad9ee7dddcddb1",
+      "shapeHash": "ea304f9c8b442bef5ba40a58bf8e7e92b821d72f7699b62ec8a19dcfdff1eecc",
       "transform": {
         "positionMm": [
           -100,
@@ -618,7 +618,7 @@
       "material": "stainless_steel",
       "role": "fastener",
       "kind": "generated",
-      "shapeHash": "f5421fc6f55fb5099b6d53d183020d6a4c90add908c3635f90b5bbad069bb515",
+      "shapeHash": "cfe05b5a8085417aaee06efd92401381d056a0d9f5ae2aa90099a3be495f6378",
       "transform": {
         "positionMm": [
           0,
@@ -673,7 +673,7 @@
       "label": "Acrylic display lens",
       "material": "acrylic",
       "kind": "generated",
-      "shapeHash": "e179e1dbd0df7e3c766f3e15592342745a778690ee7ac49bbd85b8b031db8a37",
+      "shapeHash": "073f5485da2f07fd7e954f6370f589d2b17a4d1040c316a8d7be37ce263a1161",
       "transform": {
         "positionMm": [
           0,
@@ -700,7 +700,7 @@
       "label": "Left folding foot",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "e526afc9593fa3ce4982e4c34ad69907f18cd0c78c712efa0fea26a18d12ec0d",
+      "shapeHash": "897201121a43ae4001f468e6b9d0921956fda852f40ddae83ab1f79fecc9f4b9",
       "transform": {
         "positionMm": [
           -29.5,
@@ -727,7 +727,7 @@
       "label": "Right folding foot",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "6434b8f879b24a193d461dee23d5059efa858f2eecd9052ddccda64ebdeee9c1",
+      "shapeHash": "295dce06e3a657f86a14b4179a7aa2d9909727985bee56bc46e279a2b9c77c0d",
       "transform": {
         "positionMm": [
           29.5,
@@ -808,7 +808,7 @@
       "label": "Left axle end cap",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "c01a2228fca934d02970ed5a44a45e3a2fd42501dee9cfca7b631a61021155db",
+      "shapeHash": "5503662ca21b1d2216553e38ba0040baba33c1a03a0a2e501c49990436e9be61",
       "transform": {
         "positionMm": [
           -29.5,
@@ -835,7 +835,7 @@
       "label": "Right axle end cap",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "2ce0e3c06d900b4bb096e3fffaf5da28a3b1c637e0989ca4825ab02a0ddb1a50",
+      "shapeHash": "611a869cb5a3ea77356f3990774697484c6020655ee4a12c271ccf9f81d90f3d",
       "transform": {
         "positionMm": [
           29.5,
@@ -1423,7 +1423,7 @@
       "b": "top"
     }
   ],
-  "updatedAt": "2026-11-06T09:14:35.887Z",
+  "updatedAt": "2026-11-06T10:09:21.688Z",
   "parameters": {
     "imports": {},
     "base": {

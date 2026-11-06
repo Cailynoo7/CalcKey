@@ -1,0 +1,1647 @@
+{
+  "schemaVersion": 1,
+  "units": "mm",
+  "coordinateFrame": "makit-world-z-up",
+  "targets": [
+    {
+      "id": "imports",
+      "label": "imports",
+      "cells": [
+        {
+          "id": "pico2",
+          "target": "imports",
+          "order": 0,
+          "path": "design/enclosure/source/parts/imports/000-pico2.py",
+          "sha256": "9f34e292f3e513037c32443077ed19b99ebc716af683cd28143be019d41a1164"
+        },
+        {
+          "id": "matrix_pcb",
+          "target": "imports",
+          "order": 1,
+          "path": "design/enclosure/source/parts/imports/001-matrix_pcb.py",
+          "sha256": "44a3cb596ccdd750e4544de45d79a6652de5648e51902e4d0185632b4d2dfd1e"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "base",
+      "label": "base",
+      "cells": [
+        {
+          "id": "base",
+          "target": "base",
+          "order": 0,
+          "path": "design/enclosure/source/parts/base/000-base.py",
+          "sha256": "4534e32ee22bd24cad115f68e5404f09dea25c5c84fb03ca5bb4aa91c9c1a4ce"
+        }
+      ],
+      "dependencies": [
+        "rear_foot_left"
+      ]
+    },
+    {
+      "id": "top",
+      "label": "top",
+      "cells": [
+        {
+          "id": "top",
+          "target": "top",
+          "order": 0,
+          "path": "design/enclosure/source/parts/top/000-top.py",
+          "sha256": "6409411a5793ae942ac02e6b4d85925061a5ee4e07807d8f152979039fb96864"
+        }
+      ],
+      "dependencies": [
+        "base"
+      ]
+    },
+    {
+      "id": "hardware",
+      "label": "hardware",
+      "cells": [
+        {
+          "id": "hardware",
+          "target": "hardware",
+          "order": 0,
+          "path": "design/enclosure/source/parts/hardware/000-hardware.py",
+          "sha256": "8abca34cb28e4c4e9616c841ccf205cec120484fc8a4242d9bd71e81e96ec6f2"
+        }
+      ],
+      "dependencies": [
+        "base"
+      ]
+    },
+    {
+      "id": "keycaps",
+      "label": "keycaps",
+      "cells": [
+        {
+          "id": "keycaps",
+          "target": "keycaps",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycaps/000-keycaps.py",
+          "sha256": "743479890b23be5cdcf79dfc0cdffe5e9c22be94b2aba7d81f357ec2578aef89"
+        }
+      ],
+      "dependencies": [
+        "base"
+      ]
+    },
+    {
+      "id": "screen_lens",
+      "label": "screen_lens",
+      "cells": [
+        {
+          "id": "screen_lens",
+          "target": "screen_lens",
+          "order": 0,
+          "path": "design/enclosure/source/parts/screen_lens/000-screen_lens.py",
+          "sha256": "fa8278a96e401a9f046e9998631fded0b95af6c325dc5ecbb9f73f513fa4a3eb"
+        }
+      ],
+      "dependencies": [
+        "base"
+      ]
+    },
+    {
+      "id": "rear_foot_left",
+      "label": "rear_foot_left",
+      "cells": [
+        {
+          "id": "rear_foot_left",
+          "target": "rear_foot_left",
+          "order": 0,
+          "path": "design/enclosure/source/parts/rear_foot_left/000-rear_foot_left.py",
+          "sha256": "66104a09850759b66d5a40acebbfe3a57d8b669f4d2f21704585a00d1a86763d"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "rear_foot_right",
+      "label": "rear_foot_right",
+      "cells": [
+        {
+          "id": "rear_foot_right",
+          "target": "rear_foot_right",
+          "order": 0,
+          "path": "design/enclosure/source/parts/rear_foot_right/000-rear_foot_right.py",
+          "sha256": "b741e17896928fb86d392403eaf9e577b2a54c6476a554d05bcaa92e998c8863"
+        }
+      ],
+      "dependencies": [
+        "rear_foot_left"
+      ]
+    },
+    {
+      "id": "hinge_axle_left",
+      "label": "hinge_axle_left",
+      "cells": [
+        {
+          "id": "hinge_axle_left",
+          "target": "hinge_axle_left",
+          "order": 0,
+          "path": "design/enclosure/source/parts/hinge_axle_left/000-hinge_axle_left.py",
+          "sha256": "40c2aa0ed12c6b766b926f69644b40ae34728d58b0d7cd90677b0294124c080f"
+        }
+      ],
+      "dependencies": [
+        "rear_foot_left"
+      ]
+    },
+    {
+      "id": "hinge_axle_right",
+      "label": "hinge_axle_right",
+      "cells": [
+        {
+          "id": "hinge_axle_right",
+          "target": "hinge_axle_right",
+          "order": 0,
+          "path": "design/enclosure/source/parts/hinge_axle_right/000-hinge_axle_right.py",
+          "sha256": "27ab835acf24d0a1e28f16fa85c865c4df381263b8eed2c0d23f42de5e0168bf"
+        }
+      ],
+      "dependencies": [
+        "hinge_axle_left"
+      ]
+    },
+    {
+      "id": "hinge_cap_left",
+      "label": "hinge_cap_left",
+      "cells": [
+        {
+          "id": "hinge_cap_left",
+          "target": "hinge_cap_left",
+          "order": 0,
+          "path": "design/enclosure/source/parts/hinge_cap_left/000-hinge_cap_left.py",
+          "sha256": "7616f169b66d7bc4b8244e49c19ae7e02c285f130dd10bc77ac89fccf9288a82"
+        }
+      ],
+      "dependencies": [
+        "rear_foot_left",
+        "hinge_axle_left"
+      ]
+    },
+    {
+      "id": "hinge_cap_right",
+      "label": "hinge_cap_right",
+      "cells": [
+        {
+          "id": "hinge_cap_right",
+          "target": "hinge_cap_right",
+          "order": 0,
+          "path": "design/enclosure/source/parts/hinge_cap_right/000-hinge_cap_right.py",
+          "sha256": "ced4fdb435ede99efbad2a773f478fe8bd08934590c6cda268668e59afac17aa"
+        }
+      ],
+      "dependencies": [
+        "hinge_cap_left"
+      ]
+    },
+    {
+      "id": "keycap_02",
+      "label": "keycap_02",
+      "cells": [
+        {
+          "id": "keycap_02",
+          "target": "keycap_02",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_02/000-keycap_02.py",
+          "sha256": "f31c4e7f49dcd55fdb0d43e80ef00126c27e9d111211f536b65e4177095a02d0"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_03",
+      "label": "keycap_03",
+      "cells": [
+        {
+          "id": "keycap_03",
+          "target": "keycap_03",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_03/000-keycap_03.py",
+          "sha256": "b100d70a1659cbd99a4d5affeda0b10d1aaeede3c302a1d14745d006b86d803d"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_04",
+      "label": "keycap_04",
+      "cells": [
+        {
+          "id": "keycap_04",
+          "target": "keycap_04",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_04/000-keycap_04.py",
+          "sha256": "bc2372cc68c13817aab70a41ce7ec972071cfd7d0102f08747c73b8d0c5cb211"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_05",
+      "label": "keycap_05",
+      "cells": [
+        {
+          "id": "keycap_05",
+          "target": "keycap_05",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_05/000-keycap_05.py",
+          "sha256": "bae8b312bcd7d5eb92eadf090232e9d0b8e3e8e64e33ea8265e794a7139cf867"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_06",
+      "label": "keycap_06",
+      "cells": [
+        {
+          "id": "keycap_06",
+          "target": "keycap_06",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_06/000-keycap_06.py",
+          "sha256": "52f2e634fa50df55715363ab170dba352d9cf0f7f305628258ccd8b2c7468002"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_07",
+      "label": "keycap_07",
+      "cells": [
+        {
+          "id": "keycap_07",
+          "target": "keycap_07",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_07/000-keycap_07.py",
+          "sha256": "6d96b90a0c9f2b76b3fa865da88b2759f520e18d885e3ecd7273c85d7f367990"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_08",
+      "label": "keycap_08",
+      "cells": [
+        {
+          "id": "keycap_08",
+          "target": "keycap_08",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_08/000-keycap_08.py",
+          "sha256": "43f056e4312e2c195035f2abd52530d48a2c669386cc5b856b81d9c07b9aa1ba"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_09",
+      "label": "keycap_09",
+      "cells": [
+        {
+          "id": "keycap_09",
+          "target": "keycap_09",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_09/000-keycap_09.py",
+          "sha256": "ad09dc592efecf85d35cf9e7ea18260782a2187aabf8c16021a6f25e10c91598"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_10",
+      "label": "keycap_10",
+      "cells": [
+        {
+          "id": "keycap_10",
+          "target": "keycap_10",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_10/000-keycap_10.py",
+          "sha256": "dccc012e781e064af02b80319374da8c6be78d8ceca1f5740dfdfa200e49a782"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_11",
+      "label": "keycap_11",
+      "cells": [
+        {
+          "id": "keycap_11",
+          "target": "keycap_11",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_11/000-keycap_11.py",
+          "sha256": "4b1da42321c82a0439eeceffdebe97d03803de22d04e48bcb4248fff7412cf43"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_12",
+      "label": "keycap_12",
+      "cells": [
+        {
+          "id": "keycap_12",
+          "target": "keycap_12",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_12/000-keycap_12.py",
+          "sha256": "e3d2253b831e70755bd57dd72dd3639eb15996ce13aa4ec79d8cd8a0efcba1d5"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_13",
+      "label": "keycap_13",
+      "cells": [
+        {
+          "id": "keycap_13",
+          "target": "keycap_13",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_13/000-keycap_13.py",
+          "sha256": "e5fb52890153b10ed90ce0f5f55112796ca4ad510166e7053434b8c15d0d96ac"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_14",
+      "label": "keycap_14",
+      "cells": [
+        {
+          "id": "keycap_14",
+          "target": "keycap_14",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_14/000-keycap_14.py",
+          "sha256": "51b4ad12d242e7aa0d469691b3a364d240ec7f0abb75ae4ffd2d3a74684e9853"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_15",
+      "label": "keycap_15",
+      "cells": [
+        {
+          "id": "keycap_15",
+          "target": "keycap_15",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_15/000-keycap_15.py",
+          "sha256": "b4fb141c3824aa8b5936a25a15bebe0b0bf0a80e25cea284d41bda11b6eee4d1"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_16",
+      "label": "keycap_16",
+      "cells": [
+        {
+          "id": "keycap_16",
+          "target": "keycap_16",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_16/000-keycap_16.py",
+          "sha256": "d60721b2802ecd494ae2549f4d44d4f2677ff60dc85b0ae081242d38c3080ad7"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_17",
+      "label": "keycap_17",
+      "cells": [
+        {
+          "id": "keycap_17",
+          "target": "keycap_17",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_17/000-keycap_17.py",
+          "sha256": "8e7e53ebe8daf6e853c51ffc91add0dbed16b41cad0e03e2ad5d2fa23ba748e2"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_18",
+      "label": "keycap_18",
+      "cells": [
+        {
+          "id": "keycap_18",
+          "target": "keycap_18",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_18/000-keycap_18.py",
+          "sha256": "cfb6dffa88bff29519d54193954b60eca32d20e8ea87dc041f425213f9818752"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_19",
+      "label": "keycap_19",
+      "cells": [
+        {
+          "id": "keycap_19",
+          "target": "keycap_19",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_19/000-keycap_19.py",
+          "sha256": "a7ee8627074bb956e5320c6e9cfbdfd539a2ba58932a8e37abf5ae6b41a69ea8"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    },
+    {
+      "id": "keycap_20",
+      "label": "keycap_20",
+      "cells": [
+        {
+          "id": "keycap_20",
+          "target": "keycap_20",
+          "order": 0,
+          "path": "design/enclosure/source/parts/keycap_20/000-keycap_20.py",
+          "sha256": "dfdc2d40f7d27f8a6272621d5cd71f6bba9fa1ef2822357a349d533d7117eee6"
+        }
+      ],
+      "dependencies": [
+        "keycaps"
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "pico2",
+      "target": "imports",
+      "label": "Pico 2 reference",
+      "kind": "imported",
+      "shapeHash": "6961e1d319940ab51b8707b697ab4f76192cc345b18893eb9ed480cc62abc42a",
+      "transform": {
+        "positionMm": [
+          16.4,
+          -10.345349813442107,
+          11.049067149079484
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          -90
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "matrix_pcb",
+      "target": "imports",
+      "label": "Matrix PCB with 20 KS-9 switches",
+      "kind": "imported",
+      "shapeHash": "663b350774697a0a372abf29141cd9fdb6feca92c96b7a9365ad9ee7dddcddb1",
+      "transform": {
+        "positionMm": [
+          -100,
+          84.78566631806075,
+          26.82850930613121
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "base",
+      "target": "base",
+      "label": "Bottom service cover",
+      "material": "pla",
+      "kind": "generated",
+      "shapeHash": "85eecebb749f060a9eec5642c9fa709a35d5b5d0405e2ece79d1b4c43c812bcd",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          6.459542420143668
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "top",
+      "target": "top",
+      "label": "Main key housing",
+      "material": "pla",
+      "kind": "generated",
+      "shapeHash": "71f60600ad8ac6ac85c0fa4863f12dd9714371fb4b484bd46a81053ae89ceb33",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          6.459542420143668
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "screws",
+      "target": "hardware",
+      "label": "Assembly screws",
+      "material": "stainless_steel",
+      "role": "fastener",
+      "kind": "generated",
+      "shapeHash": "f5421fc6f55fb5099b6d53d183020d6a4c90add908c3635f90b5bbad069bb515",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          6.459542420143668
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_01",
+      "target": "keycaps",
+      "label": "Key Num",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "50204e98d0f0bb9a79705c9404445231b4240e415d04647b615612dbcc48a8b7",
+      "transform": {
+        "positionMm": [
+          -28.525000000172298,
+          22.69085664957732,
+          34.610951985066876
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "screen_lens",
+      "target": "screen_lens",
+      "label": "Acrylic display lens",
+      "material": "acrylic",
+      "kind": "generated",
+      "shapeHash": "e179e1dbd0df7e3c766f3e15592342745a778690ee7ac49bbd85b8b031db8a37",
+      "transform": {
+        "positionMm": [
+          0,
+          47.6110706405883,
+          28.03327534833461
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "rear_foot_left",
+      "target": "rear_foot_left",
+      "label": "Left folding foot",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "e526afc9593fa3ce4982e4c34ad69907f18cd0c78c712efa0fea26a18d12ec0d",
+      "transform": {
+        "positionMm": [
+          -29.5,
+          50.10142322897241,
+          6.755161146518494
+        ],
+        "rotationDeg": [
+          114,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "rear_foot_right",
+      "target": "rear_foot_right",
+      "label": "Right folding foot",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "6434b8f879b24a193d461dee23d5059efa858f2eecd9052ddccda64ebdeee9c1",
+      "transform": {
+        "positionMm": [
+          29.5,
+          50.10142322897241,
+          6.755161146518494
+        ],
+        "rotationDeg": [
+          114,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "hinge_axle_left",
+      "target": "hinge_axle_left",
+      "label": "Left hinge axle",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "65f0189a5e1df94ec70a281c0cc18586f5cf03adba6e091c5ab8c1585570e74d",
+      "transform": {
+        "positionMm": [
+          -29.5,
+          50.10142322897241,
+          6.755161146518494
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          180
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "hinge_axle_right",
+      "target": "hinge_axle_right",
+      "label": "Right hinge axle",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "0ce2dd5a1fe4f59b38c62a742b456764de1988a40138d9503e2c41d45d1592df",
+      "transform": {
+        "positionMm": [
+          29.5,
+          50.10142322897241,
+          6.755161146518494
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "hinge_cap_left",
+      "target": "hinge_cap_left",
+      "label": "Left axle end cap",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "c01a2228fca934d02970ed5a44a45e3a2fd42501dee9cfca7b631a61021155db",
+      "transform": {
+        "positionMm": [
+          -29.5,
+          50.10142322897241,
+          6.755161146518494
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          180
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "hinge_cap_right",
+      "target": "hinge_cap_right",
+      "label": "Right axle end cap",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "2ce0e3c06d900b4bb096e3fffaf5da28a3b1c637e0989ca4825ab02a0ddb1a50",
+      "transform": {
+        "positionMm": [
+          29.5,
+          50.10142322897241,
+          6.755161146518494
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_02",
+      "target": "keycap_02",
+      "label": "Key ÷",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "88f6cca3a98d9fde97e011d82cbc96b6ad9ed24745aa6838a09f6012f7d61cca",
+      "transform": {
+        "positionMm": [
+          -9.4750000001723,
+          22.69085664957732,
+          34.610951985066876
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_03",
+      "target": "keycap_03",
+      "label": "Key ×",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "6845eee5cf31762e90b123f62fb53d9b41567863e049bbde6dc6a2c8d8060467",
+      "transform": {
+        "positionMm": [
+          9.574999999827702,
+          22.69085664957732,
+          34.610951985066876
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_04",
+      "target": "keycap_04",
+      "label": "Key Bk",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "485e98b0b8f86bad936d0d695f80316505787b6ca84a733d5641fc9e2747b711",
+      "transform": {
+        "positionMm": [
+          28.624999999827708,
+          22.69085664957732,
+          34.610951985066876
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_05",
+      "target": "keycap_05",
+      "label": "Key 7",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "de771d51503154f17263234df1d6f773d3383d62354171bfa2ffd6aa9b06f6b7",
+      "transform": {
+        "positionMm": [
+          -28.525000000172298,
+          3.6872614921276674,
+          33.282091160241286
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_06",
+      "target": "keycap_06",
+      "label": "Key 8",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "c68d7316cb8fb84806df9f2cb6f6555f4cca81bd072c01aff9277098b9486b2a",
+      "transform": {
+        "positionMm": [
+          -9.4750000001723,
+          3.6872614921276674,
+          33.282091160241286
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_07",
+      "target": "keycap_07",
+      "label": "Key 9",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "40fc9bcfeab2f16612a17cbb7f8b3e58f494a18200471b8ff3ad80a0ac2d036e",
+      "transform": {
+        "positionMm": [
+          9.574999999827702,
+          3.6872614921276674,
+          33.282091160241286
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_08",
+      "target": "keycap_08",
+      "label": "Key −",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "53c02340d0038937949aec224524e3d19dbe588244f367437a36809998d42929",
+      "transform": {
+        "positionMm": [
+          28.624999999827708,
+          3.6872614921276674,
+          33.282091160241286
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_09",
+      "target": "keycap_09",
+      "label": "Key 4",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "2152dd8f42692e8d2328b708369ad5beac59ec1fde3f5ad1c8fa003c5b24d167",
+      "transform": {
+        "positionMm": [
+          -28.525000000172298,
+          -15.316333665321983,
+          31.9532303354157
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_10",
+      "target": "keycap_10",
+      "label": "Key 5",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "07ae845e7ed9ad7c42e20d2d23b5fdb6720b6688fb77afe26ffe448d150c0ffa",
+      "transform": {
+        "positionMm": [
+          -9.4750000001723,
+          -15.316333665321983,
+          31.9532303354157
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_11",
+      "target": "keycap_11",
+      "label": "Key 6",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "b1c78f60deab646304f8480e2d2267c713e89f205da28919ccbfd333505cc2a5",
+      "transform": {
+        "positionMm": [
+          9.574999999827702,
+          -15.316333665321983,
+          31.9532303354157
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_12",
+      "target": "keycap_12",
+      "label": "Key +",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "0f038ca583cbed42b9dae0fef07e5f93c1881e8e59b4111dfe1853722a380b7e",
+      "transform": {
+        "positionMm": [
+          28.624999999827708,
+          -15.316333665321983,
+          31.9532303354157
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_13",
+      "target": "keycap_13",
+      "label": "Key 1",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "21e51cb28359aa9d7296874e543541a91a31798efda1acad3098e213fe5cca6e",
+      "transform": {
+        "positionMm": [
+          -28.525000000172298,
+          -34.31992882277164,
+          30.624369510590114
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_14",
+      "target": "keycap_14",
+      "label": "Key 2",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "810ee6536c0f366b43c626baef498f3a0f5ce9da6b3a34ed2b493ee50da87cba",
+      "transform": {
+        "positionMm": [
+          -9.4750000001723,
+          -34.31992882277164,
+          30.624369510590114
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_15",
+      "target": "keycap_15",
+      "label": "Key 3",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "8f4b12d11d2db39e992148d3f418a311239b5ed4e73387de500e5839bcc61bbe",
+      "transform": {
+        "positionMm": [
+          9.574999999827702,
+          -34.31992882277164,
+          30.624369510590114
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_16",
+      "target": "keycap_16",
+      "label": "Key Enter / =",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "0cab678c09bbd88d25a39632603b0fcaab624b8b592e59268a03577ee12e2dee",
+      "transform": {
+        "positionMm": [
+          28.624999999827708,
+          -34.31992882277164,
+          30.624369510590114
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_17",
+      "target": "keycap_17",
+      "label": "Key Mode",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "b3622acb8f061ac1cd74c6d1e91fc56607c801e36b64086c151459ad524a49e0",
+      "transform": {
+        "positionMm": [
+          -28.525000000172298,
+          -53.32352398022128,
+          29.295508685764528
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_18",
+      "target": "keycap_18",
+      "label": "Key 0",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "5106bf74519f46133493cb4776600901819325906f816fe55c6eb8fee1da6fc4",
+      "transform": {
+        "positionMm": [
+          -9.4750000001723,
+          -53.32352398022128,
+          29.295508685764528
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_19",
+      "target": "keycap_19",
+      "label": "Key .",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "1ed5ff93c622c6656239f97430524182d909f62774be6d10b8bff0ab101fa371",
+      "transform": {
+        "positionMm": [
+          9.574999999827702,
+          -53.32352398022128,
+          29.295508685764528
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "key_20",
+      "target": "keycap_20",
+      "label": "Key AC",
+      "material": "petg",
+      "role": "part",
+      "kind": "generated",
+      "shapeHash": "0675dbc17bb19540d388ded50758ecf571219759dde6a3bd0d9156b3e48ef075",
+      "transform": {
+        "positionMm": [
+          28.624999999827708,
+          -53.32352398022128,
+          29.295508685764528
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "pico2",
+      "kind": "step",
+      "path": "design/enclosure/source/assets/d49ada10d893cfcb07cb4abced0a0a0cadca4c4150f153d874268ca06171a24f.step",
+      "sha256": "d49ada10d893cfcb07cb4abced0a0a0cadca4c4150f153d874268ca06171a24f",
+      "label": "Pico 2 reference",
+      "provenance": {
+        "sourcePath": "product/references/pico2-vendor.step",
+        "provider": "Raspberry Pi",
+        "sourceUrl": "https://pip.raspberrypi.com/documents/RP-009061-CA",
+        "declaredSha256": "d49ada10d893cfcb07cb4abced0a0a0cadca4c4150f153d874268ca06171a24f"
+      }
+    },
+    {
+      "id": "matrix_pcb",
+      "kind": "step",
+      "path": "design/enclosure/source/assets/e2474c585d2693bb16227489b4c195a5ffbfa208a89e1ee4a6da6b9e6b1f5ef2.step",
+      "sha256": "e2474c585d2693bb16227489b4c195a5ffbfa208a89e1ee4a6da6b9e6b1f5ef2",
+      "label": "Matrix PCB with 20 KS-9 switches",
+      "provenance": {
+        "sourcePath": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/assembly.step"
+      }
+    }
+  ],
+  "fits": [
+    {
+      "kind": "compliant",
+      "budget_mm": 0.16,
+      "reason": "Released matrix assembly contains the 20 original KS-9 locator ribs; original per-switch depth 0.1374 mm, physical retention remains untested",
+      "a": "matrix_pcb",
+      "b": "top"
+    }
+  ],
+  "updatedAt": "2026-11-06T09:14:35.887Z",
+  "parameters": {
+    "imports": {},
+    "base": {
+      "case_width": 89,
+      "case_depth": 130,
+      "base_height": 18,
+      "wall_thickness": 2.4,
+      "floor_thickness": 2.4,
+      "corner_radius": 6,
+      "top_panel_thickness": 3,
+      "pico_x": 16.4,
+      "pico_y": -10,
+      "pico_pcb_z": 5.3,
+      "usb_cutout_width": 13,
+      "usb_cutout_height": 9,
+      "usb_cutout_z": 7.3,
+      "display_y": 49,
+      "key_grid_top_y": 24.6,
+      "display_mount_recess": 9,
+      "bottom_alignment_depth": 2,
+      "bottom_alignment_clearance": 0.3,
+      "bottom_alignment_wall": 1.4,
+      "lcd_pcb_bottom": 7.4,
+      "lcd_board_width": 78,
+      "lcd_board_depth": 26,
+      "lcd_board_thickness": 1.6,
+      "lcd_module_max_thickness": 10,
+      "lcd_mount_adhesive": 0.15,
+      "lcd_seat_width": 2.4,
+      "lcd_seat_depth": 4,
+      "lcd_fence_thickness": 2,
+      "lcd_edge_clearance": 0.3,
+      "lcd_seat_offset_y": 8,
+      "tape_bridge_width": 16,
+      "tape_slot_width": 10.6,
+      "tape_slot_height": 2,
+      "tape_bridge_roof": 1.6,
+      "tape_bridge_wall": 2,
+      "tape_bridge_round": 0.4,
+      "matrix_keeper_y": -29,
+      "lcd_keeper_y": 23,
+      "loop_keeper_x": -26,
+      "loop_keeper_y": 2
+    },
+    "top": {
+      "key_hole_size": 14.2,
+      "key_clip_pocket": 16.4,
+      "key_clip_land_thickness": 1.5,
+      "screen_window_width": 64,
+      "screen_window_depth": 16,
+      "lens_pocket_depth": 1.35,
+      "lens_pocket_width": 68,
+      "lens_pocket_depth_y": 20,
+      "outer_edge_bevel": 0.4,
+      "front_engrave_depth": 0.35,
+      "front_mark_height": 3.2,
+      "front_mark_z": 10.8,
+      "matrix_relief_x": 17,
+      "matrix_relief_y": -55.7,
+      "matrix_relief_z": 5.2
+    },
+    "hardware": {
+      "hardware_reference_scale": 1,
+      "fastener_display_z_offset": 0
+    },
+    "keycaps": {
+      "keycap_reference_width": 18.2,
+      "keycap_reference_top_width": 14.4,
+      "keycap_reference_height": 7,
+      "keycap_legend_size": 3.3,
+      "keycap_reference_wall_thickness": 1.2,
+      "keycap_reference_roof_thickness": 1.6,
+      "keycap_socket_outer_diameter": 5.6,
+      "keycap_socket_span": 4.1,
+      "keycap_socket_arm": 1.4,
+      "keycap_socket_depth": 3.3,
+      "keycap_socket_mouth_inset": 1.4,
+      "keycap_socket_fit_delta": 0,
+      "keycap_socket_lead_in": 0,
+      "keycap_legend_depth": 0.35,
+      "keycap_socket_neck_width": 4.9,
+      "keycap_socket_neck_top": 5.1,
+      "keycap_digit_legend_size": 4.8,
+      "keycap_operator_legend_size": 4.8,
+      "keycap_word_legend_size": 3.3,
+      "keycap_legend_edge_margin": 1
+    },
+    "screen_lens": {
+      "lens_width": 67.6,
+      "lens_depth": 19.6,
+      "lens_thickness": 1,
+      "lens_corner_radius": 1
+    },
+    "rear_foot_left": {
+      "rear_foot_width": 10,
+      "rear_foot_length": 8.5,
+      "rear_foot_thickness": 3.6,
+      "hinge_hub_radius": 2.6,
+      "hinge_pin_diameter": 2.4,
+      "hinge_diameter_clearance": 0.4,
+      "hinge_x": 29.5,
+      "hinge_y": 50,
+      "hinge_z": -3.2,
+      "deployment_angle": 110,
+      "keyboard_high_tilt": 4,
+      "stowed_rear_depth": 6.8,
+      "front_support_y": 64,
+      "front_pad_thickness": 2,
+      "hinge_ear_thickness": 3,
+      "hinge_ear_radius": 3,
+      "hinge_side_gap": 0.25,
+      "stop_cam_half_width": 0.8,
+      "stop_cam_reach": 3.8,
+      "foot_edge_break": 0.2
+    },
+    "rear_foot_right": {
+      "right_foot_edge_break": 0.2
+    },
+    "hinge_axle_left": {
+      "axle_head_diameter": 5,
+      "axle_head_thickness": 1.5,
+      "axle_end_gap": 0.15,
+      "axle_cap_insertion": 1
+    },
+    "hinge_axle_right": {
+      "right_axle_head_thickness": 1.5
+    },
+    "hinge_cap_left": {
+      "axle_cap_outer_diameter": 5,
+      "axle_cap_length": 2.4,
+      "axle_cap_socket_depth": 1.2,
+      "axle_cap_socket_diameter": 2.6
+    },
+    "hinge_cap_right": {
+      "right_cap_outer_diameter": 5
+    },
+    "keycap_02": {
+      "keycap_02_legend_size": 3.1,
+      "keycap_02_legend_depth": 0.35
+    },
+    "keycap_03": {
+      "keycap_03_legend_size": 3.1,
+      "keycap_03_legend_depth": 0.35
+    },
+    "keycap_04": {
+      "keycap_04_legend_size": 3.1,
+      "keycap_04_legend_depth": 0.35
+    },
+    "keycap_05": {
+      "keycap_05_legend_size": 3.1,
+      "keycap_05_legend_depth": 0.35
+    },
+    "keycap_06": {
+      "keycap_06_legend_size": 3.1,
+      "keycap_06_legend_depth": 0.35
+    },
+    "keycap_07": {
+      "keycap_07_legend_size": 3.1,
+      "keycap_07_legend_depth": 0.35
+    },
+    "keycap_08": {
+      "keycap_08_legend_size": 3.1,
+      "keycap_08_legend_depth": 0.35
+    },
+    "keycap_09": {
+      "keycap_09_legend_size": 3.1,
+      "keycap_09_legend_depth": 0.35
+    },
+    "keycap_10": {
+      "keycap_10_legend_size": 3.1,
+      "keycap_10_legend_depth": 0.35,
+      "keycap_10_marker_diameter": 2,
+      "keycap_10_marker_depth": 0.35,
+      "keycap_10_marker_y": -4.6,
+      "keycap_10_digit_y": 0.6
+    },
+    "keycap_11": {
+      "keycap_11_legend_size": 3.1,
+      "keycap_11_legend_depth": 0.35
+    },
+    "keycap_12": {
+      "keycap_12_legend_size": 3.1,
+      "keycap_12_legend_depth": 0.35
+    },
+    "keycap_13": {
+      "keycap_13_legend_size": 3.1,
+      "keycap_13_legend_depth": 0.35
+    },
+    "keycap_14": {
+      "keycap_14_legend_size": 3.1,
+      "keycap_14_legend_depth": 0.35
+    },
+    "keycap_15": {
+      "keycap_15_legend_size": 3.1,
+      "keycap_15_legend_depth": 0.35
+    },
+    "keycap_16": {
+      "keycap_16_legend_size": 3.1,
+      "keycap_16_legend_depth": 0.35,
+      "keycap_16_enter_size": 3.3,
+      "keycap_16_enter_y": 2.4,
+      "keycap_16_equals_y": -2.1
+    },
+    "keycap_17": {
+      "keycap_17_legend_size": 3.1,
+      "keycap_17_legend_depth": 0.35
+    },
+    "keycap_18": {
+      "keycap_18_legend_size": 3.1,
+      "keycap_18_legend_depth": 0.35
+    },
+    "keycap_19": {
+      "keycap_19_legend_size": 3.1,
+      "keycap_19_legend_depth": 0.35
+    },
+    "keycap_20": {
+      "keycap_20_legend_size": 3.1,
+      "keycap_20_legend_depth": 0.35
+    }
+  }
+}

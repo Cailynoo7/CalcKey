@@ -1,0 +1,128 @@
+{
+  "before_revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
+  "after_revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
+  "report": {
+    "added": [],
+    "changed": [
+      "base",
+      "hinge_axle_left",
+      "hinge_axle_right",
+      "hinge_cap_left",
+      "hinge_cap_right",
+      "key_01",
+      "key_02",
+      "key_03",
+      "key_04",
+      "key_05",
+      "key_06",
+      "key_07",
+      "key_08",
+      "key_09",
+      "key_10",
+      "key_11",
+      "key_12",
+      "key_13",
+      "key_14",
+      "key_15",
+      "key_16",
+      "key_17",
+      "key_18",
+      "key_19",
+      "key_20",
+      "matrix_pcb",
+      "pico2",
+      "rear_foot_left",
+      "rear_foot_right",
+      "screen_lens",
+      "screws",
+      "top"
+    ],
+    "removed": [],
+    "topologyChanges": [
+      {
+        "objectId": "hinge_cap_left",
+        "topologyChanged": true,
+        "geometryChanged": true,
+        "bboxChanged": false,
+        "countDelta": {
+          "faceCount": 0,
+          "edgeCount": 0,
+          "vertexCount": 0,
+          "shapeCount": 0
+        }
+      },
+      {
+        "objectId": "hinge_cap_right",
+        "topologyChanged": true,
+        "geometryChanged": true,
+        "bboxChanged": false,
+        "countDelta": {
+          "faceCount": 0,
+          "edgeCount": 0,
+          "vertexCount": 0,
+          "shapeCount": 0
+        }
+      },
+      {
+        "objectId": "matrix_pcb",
+        "topologyChanged": false,
+        "geometryChanged": false,
+        "bboxChanged": false,
+        "countDelta": {
+          "faceCount": 0,
+          "edgeCount": 0,
+          "vertexCount": 0,
+          "shapeCount": 0
+        }
+      },
+      {
+        "objectId": "rear_foot_left",
+        "topologyChanged": true,
+        "geometryChanged": true,
+        "bboxChanged": false,
+        "countDelta": {
+          "faceCount": 0,
+          "edgeCount": 0,
+          "vertexCount": 0,
+          "shapeCount": 0
+        }
+      },
+      {
+        "objectId": "rear_foot_right",
+        "topologyChanged": true,
+        "geometryChanged": true,
+        "bboxChanged": false,
+        "countDelta": {
+          "faceCount": 0,
+          "edgeCount": 0,
+          "vertexCount": 0,
+          "shapeCount": 0
+        }
+      },
+      {
+        "objectId": "screen_lens",
+        "topologyChanged": true,
+        "geometryChanged": true,
+        "bboxChanged": false,
+        "countDelta": {
+          "faceCount": 0,
+          "edgeCount": 0,
+          "vertexCount": 0,
+          "shapeCount": 0
+        }
+      },
+      {
+        "objectId": "screws",
+        "topologyChanged": false,
+        "geometryChanged": false,
+        "bboxChanged": false,
+        "countDelta": {
+          "faceCount": 0,
+          "edgeCount": 0,
+          "vertexCount": 0,
+          "shapeCount": 0
+        }
+      }
+    ]
+  }
+}

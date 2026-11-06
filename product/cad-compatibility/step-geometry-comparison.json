@@ -1,0 +1,103 @@
+{
+  "before_revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
+  "after_revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
+  "before_receipt": "product/cad-compatibility/before-seat-fix-receipt.json",
+  "after_receipt": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
+  "before_step": "product/cad-compatibility/before-seat-fix.step",
+  "after_step": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/model.step",
+  "before_step_sha256": "2ed308e4af22be754961ced6498c88baff8cd9457007e27f461ae12d222934bc",
+  "after_step_sha256": "2a25d479d1fcf8d9261fa256df79eda8be7058511812ad56d7365d322c386c35",
+  "source_cells_changed": [
+    "base/base"
+  ],
+  "saved_parameters_identical": true,
+  "placements_identical": true,
+  "numeric_geometry_identical_objects": 32,
+  "normalized_step_geometry_blocks_identical": [
+    "base",
+    "hinge_axle_left",
+    "hinge_axle_right",
+    "key_01",
+    "key_02",
+    "key_03",
+    "key_04",
+    "key_05",
+    "key_06",
+    "key_07",
+    "key_08",
+    "key_09",
+    "key_10",
+    "key_11",
+    "key_12",
+    "key_13",
+    "key_14",
+    "key_15",
+    "key_16",
+    "key_17",
+    "key_18",
+    "key_19",
+    "key_20",
+    "pico2",
+    "screen_lens",
+    "top"
+  ],
+  "step_normalization": "Object number namespaces, whitespace and assembly usage identifiers normalized; colour presentation references excluded.",
+  "exact_boolean_difference_mm3": {
+    "hinge_cap_left": [
+      {
+        "removed_mm3": 0,
+        "added_mm3": 0
+      }
+    ],
+    "hinge_cap_right": [
+      {
+        "removed_mm3": 0,
+        "added_mm3": 0
+      }
+    ],
+    "rear_foot_left": [
+      {
+        "removed_mm3": 0,
+        "added_mm3": 0
+      }
+    ],
+    "rear_foot_right": [
+      {
+        "removed_mm3": 0,
+        "added_mm3": 0
+      }
+    ],
+    "screws": [
+      {
+        "removed_mm3": 0,
+        "added_mm3": 0
+      },
+      {
+        "removed_mm3": 0,
+        "added_mm3": 0
+      },
+      {
+        "removed_mm3": 0,
+        "added_mm3": 0
+      },
+      {
+        "removed_mm3": 0,
+        "added_mm3": 0
+      },
+      {
+        "removed_mm3": 0,
+        "added_mm3": 0
+      },
+      {
+        "removed_mm3": 0,
+        "added_mm3": 0
+      }
+    ]
+  },
+  "boolean_residual_tolerance_mm3": 1e-06,
+  "matrix_reference_evidence": "Same immutable STEP asset, import source cell and placement; domain compare geometryChanged=false, bboxChanged=false, topology counts unchanged.",
+  "stl_regenerated": false,
+  "printed": false,
+  "powered": false,
+  "flashed": false
+}

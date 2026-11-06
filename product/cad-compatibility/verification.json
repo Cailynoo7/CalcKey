@@ -1,0 +1,106 @@
+{
+  "kind": "cad_source_compatibility_verification",
+  "before_revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
+  "after_revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
+  "after_receipt": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
+  "root_cause": "Printed screw joint runtime now requires explicit seat keyword.",
+  "source_fix": {
+    "changed_cell": "base/base",
+    "instances": 6,
+    "call_sites": 2,
+    "seat": "surface",
+    "existing_heads": [
+      "button",
+      "socket_cap"
+    ],
+    "only_two_seat_arguments_and_explanatory_comment_added": true,
+    "all_saved_parameters_and_placements_unchanged": true
+  },
+  "rebuild": {
+    "execution_status": "completed",
+    "error_missing_seat_resolved": true,
+    "build_solids": 812,
+    "objects": 32,
+    "joint_hardware": [
+      {
+        "quantity": 4,
+        "spec": "M3-0.5 x 8 mm ISO 7380-1 button-head"
+      },
+      {
+        "quantity": 2,
+        "spec": "M2-0.4 x 4 mm ISO 4762 socket-head cap"
+      }
+    ]
+  },
+  "geometry_comparison": "product/cad-compatibility/step-geometry-comparison.json",
+  "domain_comparison": "product/cad-compatibility/domain-compare.json",
+  "geometry_result": {
+    "all_28_printed_parts_equivalent": true,
+    "all_6_screws_equivalent": true,
+    "all_32_objects_numeric_facts_identical": true,
+    "matrix_source_asset_and_placement_identical": true,
+    "undeclared_overlap_pairs": 0,
+    "declared_matrix_clip_interference_mm3": 3.187261,
+    "declared_matrix_clip_depth_mm": 0.1374,
+    "declared_budget_mm": 0.16
+  },
+  "stl_files_unchanged": {
+    "product/production/models/base.stl": "02ef41a0aa7402ce1450d1fe474c6393639520d45185a07ebf8f31fbc7bc5fd2",
+    "product/production/models/top.stl": "11b4573079e66c7cbd9e2a33620b5b34c0b12988b5628676d04ddf229ef9e41d",
+    "product/production/models/rear_foot_left.stl": "bbcb5a1f1f3fa0bdce6daf1746f113fc14a234f8cd8b0bfb8a98969f93142866",
+    "product/production/models/rear_foot_right.stl": "11a77dc9681bc6aca2c54b5041b04a271560deba90c1843d7c13632ae579c7e4",
+    "product/production/models/hinge_axle_left.stl": "6d62b491d0eae5af62c8d0b261496954481df8c39fd8c43ddcd0eb505d834228",
+    "product/production/models/hinge_axle_right.stl": "cab6359550d32c7578f75439939392900b6020c89a62110c40979fc3e020f599",
+    "product/production/models/hinge_cap_left.stl": "7c7bfcf810ecefe4f16ed65cfb4400197b5ced9b3f9e1de838116febfa1ce284",
+    "product/production/models/hinge_cap_right.stl": "8e212d049ec6ae9c2f20e0d824d7cd13396b8e42b3d4e76749afa13113a9b206",
+    "product/production/models/key_01.stl": "47b668f21605a484b370ae45f394189963b0950ca7c62c7ab0cc2aa03d19ca51",
+    "product/production/models/key_02.stl": "03782036bec97451708fa221977bf24764f4aa069293149883e9fb2b36ea0b23",
+    "product/production/models/key_03.stl": "b49f64adef3446512abbcee79820ae1137ab18f0844fabebfba6ab40c6e0acd1",
+    "product/production/models/key_04.stl": "4721d0c03dd6914e826f8abeaa54dec1afb5865fe9229e42990d339a7b242eb8",
+    "product/production/models/key_05.stl": "19b2e8bc53dbc2debd7235e945909b3527c3e81836a39ea8bb7841992c025e2e",
+    "product/production/models/key_06.stl": "52da9af08a8137ca5061c5c47d02262e8484f8d5db3d4b2e8e99efe1d22dc353",
+    "product/production/models/key_07.stl": "8921fa28d16d956f57dad2ec209962a6cc070a8d087733d5cb5a4909e4e21730",
+    "product/production/models/key_08.stl": "83f584c97ee0bcadd5a4a2492d4255a566bc0d657b6e791d8056467ad27164fd",
+    "product/production/models/key_09.stl": "c6ffbcc5ad3ed2cb98c84dcdc6535d833ae0e117e913c9cb2335290fbc12b666",
+    "product/production/models/key_10.stl": "e879a73d1be04f53fa02b7ccfa07a612418e9cd85f69fd4fee46109172fe1357",
+    "product/production/models/key_11.stl": "0b44d249af5447622593f87cb8204f160ffa91f2be47439985aed6577a9daf88",
+    "product/production/models/key_12.stl": "af05d786f9e4fb3d9b5353386baa574ebce1b8bdea18af2d792094e1f3330e87",
+    "product/production/models/key_13.stl": "9a107cc0950d500b6869690391196ec2abbda88ec230901d79f0241b5090967d",
+    "product/production/models/key_14.stl": "e7b38470d909e23dfd9c2a25588ac49792e76efa407d9772b477fed7fb4520e7",
+    "product/production/models/key_15.stl": "0c04ce66c40bba7931a77e28b4eed47a9539b65daeabed9726d299e6863c21a1",
+    "product/production/models/key_16.stl": "8dbc2a78f35759553ce45322ae60f50b17b4f0f4ab16e8754929d3da19e9b172",
+    "product/production/models/key_17.stl": "5906ad71e889846f8704b13930a9f975fdbe61d6b112a6c79a98837680d405e3",
+    "product/production/models/key_18.stl": "e92fdf1e73cc3db34add5c65aa41c03285edf0483a973a7c876651591f7ad671",
+    "product/production/models/key_19.stl": "77712f685eb1aa4cc5bceb83e261349f68bec7534f8ec8e5624520f3de47ac19",
+    "product/production/models/key_20.stl": "bac45ace766ecc45b29e035cab1215377c3105124db98474239f15a17b5dafdc"
+  },
+  "delivery_scope": {
+    "new_handoff_step": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/model.step",
+    "previous_step_archived": "product/cad-compatibility/before-seat-fix.step",
+    "complete_zip_not_rebuilt": true,
+    "firmware_unchanged": true,
+    "printing_advice_updated_to_resolved_compatibility_note": true
+  },
+  "device_actions": {
+    "printed": false,
+    "powered": false,
+    "flashed": false
+  },
+  "limits": [
+    "Digital geometry equivalence is not physical fit, load or electrical validation.",
+    "Existing complete ZIP retains pre-fix source; latest fixed source and STEP are delivered separately."
+  ],
+  "input_sha256": {
+    "product/cad-compatibility/before-seat-fix-base.py": "4534e32ee22bd24cad115f68e5404f09dea25c5c84fb03ca5bb4aa91c9c1a4ce",
+    "product/cad-compatibility/before-seat-fix-design.json": "d3a5782753c81461d2769f8dac1982fdccd5875703ec494d94c83fd7898a828d",
+    "product/cad-compatibility/before-seat-fix-facts.json": "3ef57608ef03e11ef86d4c348eb16431a9d0e567c8f78d9407641c325972acd0",
+    "product/cad-compatibility/after-seat-fix-facts.json": "3ef57608ef03e11ef86d4c348eb16431a9d0e567c8f78d9407641c325972acd0",
+    "product/cad-compatibility/domain-compare.json": "648a49c4850bfb9415b760cf752e940cc1300128b711bd5b3f7d85d005f1edb8",
+    "product/cad-compatibility/step-geometry-comparison.json": "9d5fcfb4c7e6d3c9af1a4045836613ee59cb44a79705f00f2f663135a4964f56",
+    "product/cad-compatibility/verify_geometry.py": "d65df98b1568c11ec4c5bcb0272c60f15628342b8c9ecbee97fd86fe8537a712",
+    "design/enclosure/source/parts/base/000-base.py": "f2366e1341930f5298b749353bab6b14798142c8591f225f202cd3a50d88df25",
+    "design/enclosure/source/design.json": "31db57ab267eca39b7d5f41be29e3f10e8c8a3bb017a4149e02e3726c0f3d0ef",
+    "product/production/verify_export_refresh.py": "05e6a86ba369e1df4d50b7991475fab69dd4167311b69a4558d20042539cefd8",
+    "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json": "e967f0a941c885739de18476ae323078deb9cf78db43f53430dd51d8c67d9302"
+  }
+}
