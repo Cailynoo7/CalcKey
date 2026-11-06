@@ -1,8 +1,8 @@
 {
-  "source_receipt": "manufacturing/enclosure/releases/export-6578a384546c9664928efcc137896bcd/receipt.json",
-  "revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
-  "export_id": "export-6578a384546c9664928efcc137896bcd",
-  "source_step_sha256": "2ed308e4af22be754961ced6498c88baff8cd9457007e27f461ae12d222934bc",
+  "source_receipt": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
+  "revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
+  "export_id": "export-e9d67ce8536f1f9b0574ccf294968294",
+  "source_step_sha256": "2a25d479d1fcf8d9261fa256df79eda8be7058511812ad56d7365d322c386c35",
   "conversion_only": true,
   "tolerance_mm_by_object": true,
   "angular_tolerance_rad": 0.05,
@@ -68,7 +68,7 @@
         "method": "step_tessellation",
         "receipt": "product/production/history/harness-tessellation-cad-receipt.json",
         "step_sha256": "6b862bdb6c360934ce3597fa4814218ba5fa4faf1901aa8d1a013aa055d351ec",
-        "binding_note": "Original tessellation preserved. Current export has the same revision, source and assets; export-refresh-verification.json proves per-object solid equivalence across the runtime update."
+        "binding_note": "Original tessellation preserved. Export-refresh and explicit seat-fix comparisons prove compatibility with the current source-only repair; no mesh regenerated in this update."
       },
       "triangles": 29780,
       "collapsed_triangles_at_1e5mm": 0,
@@ -133,7 +133,7 @@
         "method": "step_tessellation",
         "receipt": "product/production/history/harness-tessellation-cad-receipt.json",
         "step_sha256": "6b862bdb6c360934ce3597fa4814218ba5fa4faf1901aa8d1a013aa055d351ec",
-        "binding_note": "Original tessellation preserved. Current export has the same revision, source and assets; export-refresh-verification.json proves per-object solid equivalence across the runtime update."
+        "binding_note": "Original tessellation preserved. Export-refresh and explicit seat-fix comparisons prove compatibility with the current source-only repair; no mesh regenerated in this update."
       },
       "triangles": 29366,
       "collapsed_triangles_at_1e5mm": 0,
@@ -172,7 +172,7 @@
       "triangles": 1804,
       "collapsed_triangles_at_1e5mm": 0,
       "non_two_incidence_edges_at_1e5mm": 0,
-      "shape_sha256": "e526afc9593fa3ce4982e4c34ad69907f18cd0c78c712efa0fea26a18d12ec0d",
+      "shape_sha256": "897201121a43ae4001f468e6b9d0921956fda852f40ddae83ab1f79fecc9f4b9",
       "object_transform": {
         "positionMm": [
           -29.5,
@@ -236,7 +236,7 @@
       "triangles": 1804,
       "collapsed_triangles_at_1e5mm": 0,
       "non_two_incidence_edges_at_1e5mm": 0,
-      "shape_sha256": "6434b8f879b24a193d461dee23d5059efa858f2eecd9052ddccda64ebdeee9c1",
+      "shape_sha256": "295dce06e3a657f86a14b4179a7aa2d9909727985bee56bc46e279a2b9c77c0d",
       "object_transform": {
         "positionMm": [
           29.5,
@@ -428,7 +428,7 @@
       "triangles": 2012,
       "collapsed_triangles_at_1e5mm": 0,
       "non_two_incidence_edges_at_1e5mm": 0,
-      "shape_sha256": "c01a2228fca934d02970ed5a44a45e3a2fd42501dee9cfca7b631a61021155db",
+      "shape_sha256": "5503662ca21b1d2216553e38ba0040baba33c1a03a0a2e501c49990436e9be61",
       "object_transform": {
         "positionMm": [
           -29.5,
@@ -492,7 +492,7 @@
       "triangles": 2012,
       "collapsed_triangles_at_1e5mm": 0,
       "non_two_incidence_edges_at_1e5mm": 0,
-      "shape_sha256": "2ce0e3c06d900b4bb096e3fffaf5da28a3b1c637e0989ca4825ab02a0ddb1a50",
+      "shape_sha256": "611a869cb5a3ea77356f3990774697484c6020655ee4a12c271ccf9f81d90f3d",
       "object_transform": {
         "positionMm": [
           29.5,
@@ -1818,11 +1818,12 @@
   "printer_started": false,
   "sliced": false,
   "current_binding": {
-    "receipt": "manufacturing/enclosure/releases/export-6578a384546c9664928efcc137896bcd/receipt.json",
-    "revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
-    "export_id": "export-6578a384546c9664928efcc137896bcd",
-    "step_sha256": "2ed308e4af22be754961ced6498c88baff8cd9457007e27f461ae12d222934bc",
-    "method": "2 fixed-bridge case meshes and 26 retained meshes, verified by source, placement, mesh bytes and measured STEP equivalence across runtime refresh",
-    "tessellation_receipt": "product/production/history/harness-tessellation-cad-receipt.json"
+    "receipt": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
+    "revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
+    "export_id": "export-e9d67ce8536f1f9b0574ccf294968294",
+    "step_sha256": "2a25d479d1fcf8d9261fa256df79eda8be7058511812ad56d7365d322c386c35",
+    "method": "All 28 original meshes retained by byte hash, placement and verified export/seat-fix geometry equivalence; no retessellation in this package update",
+    "tessellation_receipt": "product/production/history/harness-tessellation-cad-receipt.json",
+    "source_compatibility_evidence": "product/cad-compatibility/verification.json"
   }
 }

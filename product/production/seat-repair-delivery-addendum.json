@@ -1,0 +1,44 @@
+{
+  "kind": "complete_delivery_after_seat_source_repair",
+  "cad_binding": {
+    "receipt": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
+    "revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
+    "export_id": "export-e9d67ce8536f1f9b0574ccf294968294",
+    "step_sha256": "2a25d479d1fcf8d9261fa256df79eda8be7058511812ad56d7365d322c386c35",
+    "method": "All 28 original meshes retained by byte hash, placement and verified export/seat-fix geometry equivalence; no retessellation in this package update",
+    "tessellation_receipt": "product/production/history/harness-tessellation-cad-receipt.json",
+    "source_compatibility_evidence": "product/cad-compatibility/verification.json"
+  },
+  "compatibility_report": "product/cad-compatibility/verification.json",
+  "supersedes_packaging_scope_only": "The compatibility report describes the pre-package stage. This handoff includes the fixed source and print preparation; original geometry measurements are unchanged.",
+  "mesh_inventory": {
+    "total": 28,
+    "regenerated_this_update": 0,
+    "reused_byte_identical": 28,
+    "historical_case_tessellation_count": 2
+  },
+  "printing_advice": {
+    "directory": "product/print-preparation",
+    "rows": 28,
+    "materials": {
+      "PLA": 2,
+      "PETG": 26
+    },
+    "machine_specific_profile": false
+  },
+  "firmware_version": "0.2.0",
+  "physical_observation_rows": 154,
+  "device_actions": {
+    "printed": false,
+    "powered": false,
+    "flashed": false
+  },
+  "input_sha256": {
+    "product/production/model-manifest.json": "d0458382a789b6beb67189ec4a1d8ea22edb69ebff3b966b78e795dff291af7b",
+    "product/cad-compatibility/verification.json": "5cb555c160024e9b78ba93b54cfff63188bb5707b1029f77283242b312d26640",
+    "product/print-preparation/source-checks.json": "ad0b3a2b57efa370e9b33282f722e002a2b4ba9439a6db846f074a819ea89614",
+    "product/production/build_delivery.py": "dc14317e7030d9346e65bdbb7d17259b0495f74def0c815a33afbe85d20f38b0",
+    "product/production/export_compatibility.py": "40949e1adb27943406a6e31f4aec85e4ae24acd149f2cd5e940ee569789c141c",
+    "product/production/verify_print_preparation.py": "59cf838e805ead6e77d62ed1a7b50afec4d4c79363a6b8fc4fd20c1353649ab4"
+  }
+}

@@ -13,7 +13,7 @@ import sys
 from pathlib import Path
 from verify_mesh_features import verify as verify_keycaps
 from verify_case_meshes import verify as verify_cases
-from export_compatibility import same_shape, same_step
+from export_compatibility import same_shape, same_step, same_revision, verify_chain
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = Path(__file__).resolve().parent
@@ -34,6 +34,7 @@ def sha(p):
 
 
 def main(receipt_path):
+    assert verify_chain()
     receipt = read(receipt_path)
     models = read('product/production/model-manifest.json')
     baseline, converted = read(BASELINE), read(TESSELLATION)
@@ -41,7 +42,8 @@ def main(receipt_path):
     origin_step = next(a for a in converted['artifacts'] if a['role'] == 'model/step')
     assert sha(step['path']) == step['sha256']
     assert same_step(step['sha256'], origin_step['sha256'])
-    assert receipt['revision'] == converted['revision'] == models['revision']
+    assert same_revision(receipt['revision'], converted['revision'])
+    assert same_revision(models['revision'], converted['revision'])
     assert receipt['shapeHashes'].keys() == converted['shapeHashes'].keys()
     assert all(same_shape(v, converted['shapeHashes'][n], n) for n, v in receipt['shapeHashes'].items())
     design = read('design/enclosure/source/design.json')
@@ -56,14 +58,15 @@ def main(receipt_path):
             assert row['derivation']['method'] == 'step_tessellation'
             assert same_step(row['derivation']['step_sha256'], step['sha256'])
             row['derivation']['receipt'] = TESSELLATION
-            row['derivation']['binding_note'] = 'Original tessellation preserved. Current export has the same revision, source and assets; export-refresh-verification.json proves per-object solid equivalence across the runtime update.'
+            row['derivation']['binding_note'] = 'Original tessellation preserved. Export-refresh and explicit seat-fix comparisons prove compatibility with the current source-only repair; no mesh regenerated in this update.'
         else:
             assert row['derivation']['method'] == 'reuse_unchanged_shape'
             assert same_shape(receipt['shapeHashes'][n], baseline['shapeHashes'][n], n)
     binding = {'receipt': receipt_path, 'revision': receipt['revision'],
                'export_id': receipt['exportId'], 'step_sha256': step['sha256'],
-               'method': '2 fixed-bridge case meshes and 26 retained meshes, verified by source, placement, mesh bytes and measured STEP equivalence across runtime refresh',
-               'tessellation_receipt': TESSELLATION}
+               'method': 'All 28 original meshes retained by byte hash, placement and verified export/seat-fix geometry equivalence; no retessellation in this package update',
+               'tessellation_receipt': TESSELLATION,
+               'source_compatibility_evidence': 'product/cad-compatibility/verification.json'}
     models.update(source_receipt=receipt_path, revision=receipt['revision'], export_id=receipt['exportId'],
                   source_step_sha256=step['sha256'], current_binding=binding)
     write('product/production/model-manifest.json', models)
@@ -72,11 +75,13 @@ def main(receipt_path):
     write('product/production/case-mesh-checks.json', case)
 
     harness = read('product/harness-routing-verification.json')
-    assert harness['revision'] == receipt['revision']
+    assert same_revision(harness['revision'], receipt['revision'])
     # Original geometric inspection export is evidence, not a new measurement.
     assert harness['export_id'] == converted['exportId']
     harness['export_receipt'] = TESSELLATION
-    harness['current_handoff_binding'] = {**binding, 'all_shapes_equivalent_to_inspection_export': True, 'export_refresh_evidence': 'product/production/export-refresh-verification.json'}
+    harness['current_handoff_binding'] = {**binding, 'all_shapes_equivalent_to_inspection_export': True,
+        'measurement_revision': harness['revision'],
+        'export_refresh_evidence': 'product/production/export-refresh-verification.json'}
     harness['limitations'] = [s for s in harness['limitations'] if not s.startswith('Old top/base STL')]
     harness['case_stl_feature_record'] = 'product/production/case-mesh-checks.json'
     write('product/harness-routing-verification.json', harness)
@@ -85,13 +90,16 @@ def main(receipt_path):
     assert keycaps['revision'] == baseline['revision']
     assert keycaps['export_id'] == baseline['exportId']
     keycaps['export_receipt'] = BASELINE
-    keycaps['current_case_check'].update(cad_export_id=receipt['exportId'])
+    # Preserve the original motion-check revision/export; bind compatibility separately.
+    keycaps['case_check_compatibility_binding'] = binding
     keycaps['current_assembly_binding'] = {**binding, 'measurement_revision': keycaps['revision'],
                                          'baseline_receipt': BASELINE, 'all_20_keycap_shapes_unchanged': True}
     write('product/keycap-usability-verification.json', keycaps)
     pcb = read('product/matrix-pcb-verification.json')
-    assert pcb['current_assembly_binding']['cad_revision'] == receipt['revision']
-    pcb['current_assembly_binding'].update(cad_export_id=receipt['exportId'], receipt=receipt_path)
+    assert same_revision(pcb['current_assembly_binding']['cad_revision'], receipt['revision'])
+    pcb['current_assembly_binding'].update(cad_revision=receipt['revision'],
+        cad_export_id=receipt['exportId'], receipt=receipt_path,
+        source_compatibility_evidence='product/cad-compatibility/verification.json')
     write('product/matrix-pcb-verification.json', pcb)
     limits = list(dict.fromkeys(keycaps['limitations'] + pcb['limitations'] + harness['limitations']))
     write('product/production/design-verification.json', {
@@ -105,7 +113,8 @@ def main(receipt_path):
             'actual_stl_keycap_features': {'path': 'product/production/mesh-feature-checks.json', 'checks': feature['checks']},
             'actual_stl_case_features': {'path': 'product/production/case-mesh-checks.json', 'changed_meshes': case['changed_meshes']},
             'retained_pcb_assembly': {'path': 'product/matrix-pcb-verification.json', 'binding': pcb['current_assembly_binding']},
-            'regenerated_case_meshes': 2, 'unchanged_meshes': 26},
+            'source_compatibility': 'product/cad-compatibility/verification.json',
+            'regenerated_case_meshes': 0, 'unchanged_meshes': 28},
         'assembly_template': {'path': 'product/final-assembly/unpowered-checklist.csv', 'rows': 154, 'physical_results': 'pending'},
         'limitations': limits, 'physical_print_trial_skipped_by_user': True,
         'device_actions': {'printing_started': False, 'flashed': False, 'powered': False}})
@@ -116,8 +125,8 @@ def main(receipt_path):
                     enclosure_cad_revision=receipt['revision'], enclosure_export_id=receipt['exportId'])
     for row in shopping['items']:
         if row['bom_item_ids'] in {'enclosure_base', 'enclosure_top'}:
-            row['category'] = '打印件（本版更新）'
-            row['notes'] = '使用含五处固定桥的新版STEP及对应主壳/底盖STL，mm、100%；两件重新转换，按整机手册安排局部支撑，不另做试片。'
+            row['category'] = '打印件'
+            row['notes'] = '使用含五处固定桥的STEP及原主壳/底盖STL，mm、100%；本次仅修复CAD源码接口，全部28件网格经几何与哈希核对复用，按打印准备说明设置局部支撑，不另做试片。'
     write(p, shopping)
     path = ROOT / 'product/purchasing/matrix/hand-assembly-shopping.csv'
     with path.open(encoding='utf-8-sig', newline='') as f:
@@ -130,10 +139,10 @@ def main(receipt_path):
     procurement = read(p)
     for key in ('printed_parts_unchanged', 'updated_keycap_meshes'):
         procurement['checks'].pop(key, None)
-    procurement['checks'].update(regenerated_case_meshes=2, unchanged_printed_meshes=26,
+    procurement['checks'].update(regenerated_case_meshes=0, unchanged_printed_meshes=28,
                                  retained_keycap_meshes=20, printed_parts_total=28)
     procurement['harness_addendum'].pop('printed_meshes_to_refresh', None)
-    procurement['harness_addendum'].update(regenerated_meshes=['base', 'top'], source_bom_sha256=sha('product/bom.json'),
+    procurement['harness_addendum'].update(regenerated_meshes=[], source_bom_sha256=sha('product/bom.json'),
                                           enclosure_export_id=receipt['exportId'], assembly_record_rows=154)
     for row in procurement['files']:
         row['sha256'] = sha('product/purchasing/matrix/' + row['name'])
@@ -145,7 +154,8 @@ def main(receipt_path):
     addendum.update(cad_export={'revision': receipt['revision'], 'export_id': receipt['exportId'],
                                'receipt': receipt_path, 'step_sha256': step['sha256']},
                     mesh_delivery={'manifest': 'product/production/model-manifest.json',
-                                   'new_case_meshes': ['base', 'top'], 'unchanged_printed_meshes': 26,
+                                   'new_case_meshes': [], 'unchanged_printed_meshes': 28,
+                                   'compatibility_record': 'product/cad-compatibility/verification.json',
                                    'original_tessellation_receipt': TESSELLATION},
                     assembly_delivery={'guide': 'product/final-assembly/README.md',
                                        'blank_record': 'product/final-assembly/unpowered-checklist.csv', 'rows': 154},
@@ -154,9 +164,10 @@ def main(receipt_path):
     path = ROOT / 'product/final-assembly/README.md'
     text = path.read_text(encoding='utf-8')
     text = re.sub(r'export-[a-f0-9]{32}', receipt['exportId'], text)
+    text = re.sub(r'(?<=几何revision `)[a-f0-9]{64}', receipt['revision'], text)
     path.write_text(text, encoding='utf-8')
     subprocess.run([sys.executable, str(ROOT/'product/final-assembly/generate.py')], check=True)
-    print('PASS delivery binding: 2 new cases, 26 byte-identical meshes, preserved inspection revisions, 154 pending records and purchasing hashes.')
+    print('PASS repaired-source delivery binding: 28 retained meshes, preserved inspection revisions, 154 pending records and purchasing hashes.')
 
 
 if __name__ == '__main__':

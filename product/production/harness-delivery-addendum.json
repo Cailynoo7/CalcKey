@@ -1,10 +1,10 @@
 {
   "date": "2026-11-06",
   "cad_export": {
-    "revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
-    "export_id": "export-6578a384546c9664928efcc137896bcd",
-    "receipt": "manufacturing/enclosure/releases/export-6578a384546c9664928efcc137896bcd/receipt.json",
-    "step_sha256": "2ed308e4af22be754961ced6498c88baff8cd9457007e27f461ae12d222934bc"
+    "revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
+    "export_id": "export-e9d67ce8536f1f9b0574ccf294968294",
+    "receipt": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
+    "step_sha256": "2a25d479d1fcf8d9261fa256df79eda8be7058511812ad56d7365d322c386c35"
   },
   "pcb_release_id": "17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727",
   "firmware_version": "0.2.0",
@@ -13,11 +13,9 @@
   "flashed": false,
   "mesh_delivery": {
     "manifest": "product/production/model-manifest.json",
-    "new_case_meshes": [
-      "base",
-      "top"
-    ],
-    "unchanged_printed_meshes": 26,
+    "new_case_meshes": [],
+    "unchanged_printed_meshes": 28,
+    "compatibility_record": "product/cad-compatibility/verification.json",
     "original_tessellation_receipt": "product/production/history/harness-tessellation-cad-receipt.json"
   },
   "assembly_delivery": {

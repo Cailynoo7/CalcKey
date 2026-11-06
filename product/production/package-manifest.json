@@ -1,14 +1,15 @@
 {
-  "generated_utc": "2026-11-06T09:53:35.326439+00:00",
-  "revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
-  "export_id": "export-6578a384546c9664928efcc137896bcd",
-  "source_receipt": "manufacturing/enclosure/releases/export-6578a384546c9664928efcc137896bcd/receipt.json",
+  "generated_utc": "2026-11-06T10:31:55.559324+00:00",
+  "revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
+  "export_id": "export-e9d67ce8536f1f9b0574ccf294968294",
+  "source_receipt": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
   "pcb_release_id": "17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727",
   "pcb_build_id": "6a333818c3a79007ec3a24727eed3008848215ed1c5c0238051beffaecfde0e3",
   "inventory_checks": {
     "printed_parts": 28,
-    "regenerated_case_meshes": 2,
-    "reused_printed_meshes": 26,
+    "regenerated_case_meshes": 0,
+    "reused_printed_meshes": 28,
+    "print_preparation_rows": 28,
     "retained_keycap_meshes": 20,
     "bom_rows": 28,
     "shopping_rows": 27,
@@ -46,8 +47,8 @@
   "files": [
     {
       "file": "README.md",
-      "bytes": 1934,
-      "sha256": "42b8df016573498b673862dabfc580e80b61a6f8f3565e55515c2a9aa362f7f6"
+      "bytes": 2265,
+      "sha256": "681eb8c1492a6afeccd2624b230456290f07ad428d0e5855fad7519e59e10a80"
     },
     {
       "file": "design/assembly.json",
@@ -56,8 +57,8 @@
     },
     {
       "file": "design/enclosure/README.md",
-      "bytes": 24871,
-      "sha256": "322b42a623848d59c955dbd592a9d1fb227afcc3e111bada52404abad4375c37"
+      "bytes": 25617,
+      "sha256": "420bda34922944f373d50c7970ce442b9002fb1b2253c0db8e33353e1b62f58c"
     },
     {
       "file": "design/enclosure/source/assets/29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d.step",
@@ -77,12 +78,12 @@
     {
       "file": "design/enclosure/source/design.json",
       "bytes": 39519,
-      "sha256": "d3a5782753c81461d2769f8dac1982fdccd5875703ec494d94c83fd7898a828d"
+      "sha256": "31db57ab267eca39b7d5f41be29e3f10e8c8a3bb017a4149e02e3726c0f3d0ef"
     },
     {
       "file": "design/enclosure/source/parts/base/000-base.py",
-      "bytes": 7884,
-      "sha256": "4534e32ee22bd24cad115f68e5404f09dea25c5c84fb03ca5bb4aa91c9c1a4ce"
+      "bytes": 7995,
+      "sha256": "f2366e1341930f5298b749353bab6b14798142c8591f225f202cd3a50d88df25"
     },
     {
       "file": "design/enclosure/source/parts/hardware/000-hardware.py",
@@ -430,14 +431,14 @@
       "sha256": "5f31a6189d41eee25cf9a52deb3a8362f7aeea728a3c3794c45d3dcc0aca2b03"
     },
     {
-      "file": "manufacturing/enclosure/releases/export-6578a384546c9664928efcc137896bcd/model.step",
-      "bytes": 58956675,
-      "sha256": "2ed308e4af22be754961ced6498c88baff8cd9457007e27f461ae12d222934bc"
+      "file": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/model.step",
+      "bytes": 58998648,
+      "sha256": "2a25d479d1fcf8d9261fa256df79eda8be7058511812ad56d7365d322c386c35"
     },
     {
-      "file": "manufacturing/enclosure/releases/export-6578a384546c9664928efcc137896bcd/receipt.json",
+      "file": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
       "bytes": 10775,
-      "sha256": "fe03cf1a2a926783b78ebee1438eb3f319aa4eda4588f8f92e1e0478e954f791"
+      "sha256": "e967f0a941c885739de18476ae323078deb9cf78db43f53430dd51d8c67d9302"
     },
     {
       "file": "manufacturing/matrix/release-index.json",
@@ -605,6 +606,61 @@
       "sha256": "8f20dd251d4ed3a03c4e884af139bb0e0a3cfb8e6e3c73e49dbfa358235d2dc5"
     },
     {
+      "file": "product/cad-compatibility/README.md",
+      "bytes": 2728,
+      "sha256": "b1929caa1b9bba2912a4d01eb1de8a61e8176fd437f49b78b92d5289750f2795"
+    },
+    {
+      "file": "product/cad-compatibility/after-seat-fix-facts.json",
+      "bytes": 12261,
+      "sha256": "3ef57608ef03e11ef86d4c348eb16431a9d0e567c8f78d9407641c325972acd0"
+    },
+    {
+      "file": "product/cad-compatibility/before-seat-fix-base.py",
+      "bytes": 7884,
+      "sha256": "4534e32ee22bd24cad115f68e5404f09dea25c5c84fb03ca5bb4aa91c9c1a4ce"
+    },
+    {
+      "file": "product/cad-compatibility/before-seat-fix-design.json",
+      "bytes": 39519,
+      "sha256": "d3a5782753c81461d2769f8dac1982fdccd5875703ec494d94c83fd7898a828d"
+    },
+    {
+      "file": "product/cad-compatibility/before-seat-fix-facts.json",
+      "bytes": 12261,
+      "sha256": "3ef57608ef03e11ef86d4c348eb16431a9d0e567c8f78d9407641c325972acd0"
+    },
+    {
+      "file": "product/cad-compatibility/before-seat-fix-receipt.json",
+      "bytes": 10775,
+      "sha256": "fe03cf1a2a926783b78ebee1438eb3f319aa4eda4588f8f92e1e0478e954f791"
+    },
+    {
+      "file": "product/cad-compatibility/before-seat-fix.step",
+      "bytes": 58956675,
+      "sha256": "2ed308e4af22be754961ced6498c88baff8cd9457007e27f461ae12d222934bc"
+    },
+    {
+      "file": "product/cad-compatibility/domain-compare.json",
+      "bytes": 2884,
+      "sha256": "648a49c4850bfb9415b760cf752e940cc1300128b711bd5b3f7d85d005f1edb8"
+    },
+    {
+      "file": "product/cad-compatibility/step-geometry-comparison.json",
+      "bytes": 2619,
+      "sha256": "9d5fcfb4c7e6d3c9af1a4045836613ee59cb44a79705f00f2f663135a4964f56"
+    },
+    {
+      "file": "product/cad-compatibility/verification.json",
+      "bytes": 6931,
+      "sha256": "5cb555c160024e9b78ba93b54cfff63188bb5707b1029f77283242b312d26640"
+    },
+    {
+      "file": "product/cad-compatibility/verify_geometry.py",
+      "bytes": 5536,
+      "sha256": "d65df98b1568c11ec4c5bcb0272c60f15628342b8c9ecbee97fd86fe8537a712"
+    },
+    {
       "file": "product/calckey-firmware-v0.2.0.zip",
       "bytes": 647965,
       "sha256": "fd983e40a2ddf9652e08916fd68f5cb5c7d7b738cf5bcdd8fecec60ee642a35e"
@@ -627,27 +683,27 @@
     {
       "file": "product/final-assembly/README.md",
       "bytes": 13814,
-      "sha256": "3422e7dd54ba0cdb41cb8f86f7009dcedd229626e85ffb69d69838131ea252a5"
+      "sha256": "8595630692ae808b977b8b9cf4888f2cc8bae095bd498d9d2c94c64dfa5647a4"
     },
     {
       "file": "product/final-assembly/generate.py",
-      "bytes": 21044,
-      "sha256": "0cc105b13f016cf24c1b5ee7bb06351001d48a610399bcded328c51ea0bbfdce"
+      "bytes": 21174,
+      "sha256": "f6a445e741ca320cf8f20fa15b01fd022f74b4e419967a6674809d8e12069fb2"
     },
     {
       "file": "product/final-assembly/source-checks.json",
       "bytes": 4066,
-      "sha256": "65a0592a7554ed8646045c63a51b1b383119a3be9d52e5eb8d10199f512035c6"
+      "sha256": "c958f32f3d5e495570d7c94213fca26572617a2018a1159b392e75c154bf861b"
     },
     {
       "file": "product/final-assembly/unpowered-checklist.csv",
       "bytes": 38011,
-      "sha256": "70d95d20c3b485abffd7afadd4cd4f700b3354d395fc9cb608d8a7668777becf"
+      "sha256": "292a4c85ae651a9fcbc732a3437268afc4e15a8e69abc5f8b40636d75ae28713"
     },
     {
       "file": "product/harness-routing-verification.json",
-      "bytes": 28510,
-      "sha256": "5d104013e8da02d1bf1e9cb98f8b8868be92d161e6fee412a7644e3522567e18"
+      "bytes": 28692,
+      "sha256": "3f957a9d0249e5873f8ffbf5051327e4cf3b7926e1f9e3c2e9751548641ec8d8"
     },
     {
       "file": "product/harness-routing.md",
@@ -656,8 +712,8 @@
     },
     {
       "file": "product/keycap-usability-verification.json",
-      "bytes": 12663,
-      "sha256": "139c4aafc735f2bcda3b149ddee2516fe9ba57f849f09a5232a335566ca581cf"
+      "bytes": 13473,
+      "sha256": "50169cb9acce3eeef800fc49d8998375f8fc904ffe7c060d4726edfb4000a782"
     },
     {
       "file": "product/lcd-upgrade.md",
@@ -741,28 +797,43 @@
     },
     {
       "file": "product/matrix-pcb-verification.json",
-      "bytes": 8775,
-      "sha256": "9eeca6d23b670f40d55b0d08ac56b66c93cd94de367407671d52e65ba695f170"
+      "bytes": 8859,
+      "sha256": "65b341aa86b482c9a6a1b02d2755e286de14745586015184d08c9692a12ffbc6"
+    },
+    {
+      "file": "product/print-preparation/README.md",
+      "bytes": 12288,
+      "sha256": "89641ba563cf82cd208a4e5cd5d6609f37fafab281285366c67851b8ab88e700"
+    },
+    {
+      "file": "product/print-preparation/part-settings.csv",
+      "bytes": 12939,
+      "sha256": "e0d29ae47d55776398bd67e0d0d22dd176af99f41972411a7db8325ede04a925"
+    },
+    {
+      "file": "product/print-preparation/source-checks.json",
+      "bytes": 9743,
+      "sha256": "ad0b3a2b57efa370e9b33282f722e002a2b4ba9439a6db846f074a819ea89614"
     },
     {
       "file": "product/production/README.md",
-      "bytes": 12652,
-      "sha256": "3dec55488813638f8e699854646593e99e68abe7937beed81e47197ee92926d4"
+      "bytes": 14245,
+      "sha256": "a6040a1ae1fa3a8ae0a98856cdc3b46d873d89debcba031b038054b5e343dafa"
     },
     {
       "file": "product/production/build_delivery.py",
-      "bytes": 26570,
-      "sha256": "c0067ea119bc84a401b2512713cfe2a5fb95c1ef320eaa26974c530fb4bbd528"
+      "bytes": 26988,
+      "sha256": "dc14317e7030d9346e65bdbb7d17259b0495f74def0c815a33afbe85d20f38b0"
     },
     {
       "file": "product/production/case-mesh-checks.json",
       "bytes": 11896,
-      "sha256": "ce1dd13df455b238f9ddd7b5cfc943b384a9a9091599c00ddf16c3d625a4fa2c"
+      "sha256": "8f8800d97a750c3ed79628bb2611033f5e49b2de04a08dc3abb6f83c11ba9c98"
     },
     {
       "file": "product/production/design-verification.json",
-      "bytes": 5196,
-      "sha256": "398c65b5eca839dbfef2dd4fb58141034e2b97874e3501b546d9bb4600bb338d"
+      "bytes": 5449,
+      "sha256": "aac53b2a10b054bd3237a7b049fe55bcf5c418f69f46ba5e4bc977490c8ecc0f"
     },
     {
       "file": "product/production/export-refresh-verification.json",
@@ -771,8 +842,8 @@
     },
     {
       "file": "product/production/export_compatibility.py",
-      "bytes": 1614,
-      "sha256": "2e8676cfc025b011ad00e329f77d7eb8372a0130162eda72d53a1d6e74b9226c"
+      "bytes": 5934,
+      "sha256": "40949e1adb27943406a6e31f4aec85e4ae24acd149f2cd5e940ee569789c141c"
     },
     {
       "file": "product/production/generate_models.py",
@@ -781,8 +852,8 @@
     },
     {
       "file": "product/production/harness-delivery-addendum.json",
-      "bytes": 1085,
-      "sha256": "5f1846b4ff0f4654c61b381c2b46babb1c744f941b179ba11f26202b750457e6"
+      "bytes": 1129,
+      "sha256": "6dd231e6f8e933aab267be8a61522e49a2e491b416a02ffbc572bb2f350acd4b"
     },
     {
       "file": "product/production/history/README.md",
@@ -813,6 +884,11 @@
       "file": "product/production/history/before-runtime-refresh.step",
       "bytes": 58977142,
       "sha256": "6b862bdb6c360934ce3597fa4814218ba5fa4faf1901aa8d1a013aa055d351ec"
+    },
+    {
+      "file": "product/production/history/before-seat-package-model-manifest.json",
+      "bytes": 55378,
+      "sha256": "fa5ad30f8181170732368217e236a84935e78e175d2012c1fdb0b724087038d5"
     },
     {
       "file": "product/production/history/handwired-cad-receipt.json",
@@ -852,7 +928,7 @@
     {
       "file": "product/production/mesh-feature-checks.json",
       "bytes": 918,
-      "sha256": "027282f0bb78aeb39b45887c72c962db300f1ca86d7b8041f0c6d363db73c110"
+      "sha256": "ec0cb4c69a4c4a605be8d437d6cdad6162aef58e7cb648e432c3a4830d3e056c"
     },
     {
       "file": "product/production/mesh-reuse-evidence.json",
@@ -861,8 +937,8 @@
     },
     {
       "file": "product/production/model-manifest.json",
-      "bytes": 55378,
-      "sha256": "fa5ad30f8181170732368217e236a84935e78e175d2012c1fdb0b724087038d5"
+      "bytes": 55442,
+      "sha256": "d0458382a789b6beb67189ec4a1d8ea22edb69ebff3b966b78e795dff291af7b"
     },
     {
       "file": "product/production/models/base.stl",
@@ -1020,9 +1096,14 @@
       "sha256": "a750069878c676dacf618fad31ce86a95982648e682eb9600f860146ee2de5f5"
     },
     {
+      "file": "product/production/seat-repair-delivery-addendum.json",
+      "bytes": 2271,
+      "sha256": "31a85f7d4a66e06e56a5905a66d75ab09a3f34744423b33b3cb7c52f34eb5455"
+    },
+    {
       "file": "product/production/sync_delivery_records.py",
-      "bytes": 10222,
-      "sha256": "a2bd3b860ed7dbd6b969002152c47ab049b156b39e8cd7570e61d969a5402d21"
+      "bytes": 10991,
+      "sha256": "25a7c540ecff575459e0e01d90196c37e0c0db96aad6418e8ae6e07e2d2c7838"
     },
     {
       "file": "product/production/verify_case_meshes.py",
@@ -1040,19 +1121,24 @@
       "sha256": "83340ff41015817fff75b19d8cd5765820926d7cbfd0af04828a92a4766c2574"
     },
     {
+      "file": "product/production/verify_print_preparation.py",
+      "bytes": 2033,
+      "sha256": "59cf838e805ead6e77d62ed1a7b50afec4d4c79363a6b8fc4fd20c1353649ab4"
+    },
+    {
       "file": "product/purchasing/matrix/README.md",
       "bytes": 8019,
       "sha256": "8f41efdabaa426cf7907d65be19a6ab94158e5302c174dc44d706f594643d244"
     },
     {
       "file": "product/purchasing/matrix/hand-assembly-shopping.csv",
-      "bytes": 5912,
-      "sha256": "c19c8a54a0b6bb4d324b3cd9af1aa3f1396a8f3946ba9629af4594c3bc04bb37"
+      "bytes": 5994,
+      "sha256": "77bc69f5f34581acbb8bd4c7aeb24aba255adab66951e5cedadb9277b50a1ea9"
     },
     {
       "file": "product/purchasing/matrix/hand-assembly-shopping.json",
-      "bytes": 16589,
-      "sha256": "a26b408f2f1e1024b2296e31994fb505e1095c84f0616fb13d1fac7426bd2cf2"
+      "bytes": 16671,
+      "sha256": "19b32676b6a354f2aab28a8f9627293ceb3e68482d8d9b97ff0f2c72052350e8"
     },
     {
       "file": "product/purchasing/matrix/hand-soldering-tools.csv",
@@ -1071,8 +1157,8 @@
     },
     {
       "file": "product/purchasing/matrix/procurement-record.json",
-      "bytes": 2181,
-      "sha256": "801d6a22c11a2133ff1f5a77d1bc687a6b2983f47b2d0fc6f716ae4b970ad5f8"
+      "bytes": 2150,
+      "sha256": "fe615dd0e39761f76e75ff64a9f0a1de6b21d382d3f855aad31eee2800283807"
     },
     {
       "file": "product/references/eda-keypad-reference.md",

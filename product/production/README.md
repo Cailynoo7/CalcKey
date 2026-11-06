@@ -1,5 +1,7 @@
 # CalcKey 正式制作交付
 
+本次完整包已同步螺钉接口兼容修复：CAD revision `2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9`、STEP `export-e9d67ce8536f1f9b0574ccf294968294`。修复后源码、STEP、28件打印准备说明/逐件CSV及兼容性证据统一收纳；全部28个STL保持原字节，没有重新转换。
+
 
 本版直接交付整机设计，按用户要求跳过打印试配，先不烧录。主方案为Pico 2、20个GATERON KS-9三脚红轴、20只自制打印键帽、GDM0103/HT1621B八位LCD；USB接电脑作数字键盘，接5V充电器作本机计算器。无电池；采用MATRIX A矩阵PCB，Pico和LCD独立安装。
 
@@ -13,6 +15,8 @@
 - 六孔板和P0/P5/P10为可选历史试配资料，未列入正式28件、采购清单或本次完成设计的前置条件。
 
 ## 打印件和工艺默认值
+
+完整建议与逐件表见[打印准备说明](../print-preparation/README.md)，本次已纳入ZIP；本节保留基本分组。材料和工艺建议未经过本机试打，仍以具体打印机/耗材配置及后续切片预览为准。
 
 | 零件 | 数量 | 材料 / 喷嘴 / 层高 | 文件已采用的方向与注意点 |
 | --- | --- | --- | --- |
@@ -68,7 +72,7 @@
 
 ## 文件取得与复现
 
-在Replicator中右键Product标签→Show in Finder可查看本正式包；当前STEP也可在enclosure设计标签→Export→One STEP或STEP per part (.zip)→选择零件→Export…。单独保护片可选screen_lens后Export STEP…。
+在Makit中右键Product标签→Show in Finder可查看本正式包；当前STEP也可在enclosure设计标签→Export→One STEP或STEP per part (.zip)→选择零件→Export…。单独保护片可选screen_lens后Export STEP…。
 
 generate_models.py只读取交付STEP，用--keycaps-only重新转换20帽并严格核对复用的8件；verify_mesh_features.py直接读取STL检查5键凹点深度与Enter/=两行槽底。sync_delivery_records.py保留旧装配检查revision并验证未变物体，不将旧检查改写成新实测。build_delivery.py核对当前CAD/PCB发布、28项BOM、采购、PCB版图纸与固件哈希并生成统一ZIP，不编译建模、不写设备或启动打印。固件重新构建由design/firmware/build.py执行，依赖在锁定记录中。完整包中的来源与哈希见model-manifest.json、design-verification.json及package-manifest.json。
 
@@ -83,17 +87,22 @@ generate_models.py只读取交付STEP，用--keycaps-only重新转换20帽并严
 
 当前模型清单绑定最新交付记录；主壳/底盖保留固定桥STEP的原始转换记录。本次CAD导出器更新使STEP字节与形状哈希改变；31个对象（包括全部28个打印件）的STEP几何实体块经编号命名空间、空白、装配实例标识及颜色引用规范化后完全一致。Pico参考件仍使用同一资产、源码和安装位置，嵌套元数据重写由当前装配检查另行覆盖；不声称其STEP实体块逐字相同。新旧导出和核对证据均保留。旧模型清单、旧导出记录仅用作来源证据，不取代当前交付。完整包逐文件检查版本、哈希和CRC，并收纳固定桥说明、整机手册和154项空白CSV；原59项被动矩阵及15线测点不改动。
 
-使用带build123d 0.10.0的CAD Python执行STEP转换；其余核对/打包脚本使用Python标准库。以下命令只处理文件，不连接设备：
+## 当前封装与复核
+
+本次只同步封装，未重新生成任何网格。源码修复只显式补入两处seat="surface"，几何与装配位置保持；28个STL保留原始转换来源并通过导出器变化、源码修复两段证据连接到当前STEP。历史检查的revision与数值不改写成新实测。
+
+兼容修复报告中“完整ZIP未同步”描述的是修复当时的交付状态；现由本次seat-repair-delivery-addendum.json和当前package-manifest.json指定的完整包取代该封装状态。原始几何验证记录继续保留。
+
+在项目根目录使用Python标准库进行以下封装检查；命令不建模、不编译、不接触设备：
 
 ```sh
-"${CAD_PYTHON}" product/production/generate_models.py manufacturing/enclosure/releases/export-6578a384546c9664928efcc137896bcd/receipt.json --case-only
-python3 product/production/verify_export_refresh.py
-python3 product/production/verify_case_meshes.py
-python3 product/production/verify_mesh_features.py
-python3 product/production/sync_delivery_records.py manufacturing/enclosure/releases/export-6578a384546c9664928efcc137896bcd/receipt.json
-python3 product/final-assembly/generate.py --check-only
-python3 product/production/build_delivery.py
-python3 product/production/build_delivery.py --check-only
+PYTHONDONTWRITEBYTECODE=1 python3 product/production/sync_delivery_records.py manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json
+PYTHONDONTWRITEBYTECODE=1 python3 product/production/verify_print_preparation.py
+PYTHONDONTWRITEBYTECODE=1 python3 product/final-assembly/generate.py --check-only
+PYTHONDONTWRITEBYTECODE=1 python3 product/production/build_delivery.py
+PYTHONDONTWRITEBYTECODE=1 python3 product/production/build_delivery.py --check-only
 ```
 
-CAD_PYTHON表示已安装且带build123d的Python解释器路径。转换复用依据保存在包内历史清单，不依赖缓存；已填写的整机检查表会被生成器保护，不能用当前空白模板覆盖实测。PCB制板ZIP保留发布原始字节，不重新布线、不下单；固件保留v0.2.0原编译记录，当前封装只核对其源文件与二进制哈希，不烧录。
+sync_delivery_records.py只更新模型/采购/装配的兼容绑定并保留检查版本；verify_print_preparation.py核对28项参数与打印建议的来源哈希；build_delivery.py独立检查当前源码、STEP、全部STL、PCB制造发布、固件二进制、采购表和154项空白装配记录，再校验ZIP目录、逐文件字节及CRC。旧的verify_export_refresh.py保留当时比较逻辑及实体块规范化函数；当前封装由export_compatibility.py从归档路径核对两段证据，不依赖已经轮换的旧manufacturing目录。
+
+若要重新做STEP实体差集，可使用已安装且带build123d 0.10.0的CAD Python运行product/cad-compatibility/verify_geometry.py；它只读取已发布导出，不重放设计源码。未指定机器时不提供机器专用切片参数，不生成G-code或打印任务。固件仍为原LCD v0.2.0，保留原编译记录与二进制，不烧录。完整包旁的.sha256文本提供整个ZIP的SHA-256，不纳入ZIP自身以避免循环哈希。

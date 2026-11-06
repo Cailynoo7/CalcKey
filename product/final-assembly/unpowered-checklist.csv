@@ -1,5 +1,5 @@
 ﻿编号,阶段,项目,红表笔,黑表笔,档位或方法,前置条件,判据,来源,实测或观察,结果,异常与处理,复查结果,操作者,日期
-A01,00 版本与准备,主壳/底盖版本,,,目视并对照导出,仅核对资料或已有实物，不启动打印,主壳前内壁2桥、底盖3桥；采用fbc7b5b0/export-6578a384546c9664928efcc137896bcd，STEP/STL与完整包按当前清单取用,design/enclosure/README.md; product/harness-routing.md,,待测,,,,
+A01,00 版本与准备,主壳/底盖版本,,,目视并对照导出,仅核对资料或已有实物，不启动打印,主壳前内壁2桥、底盖3桥；采用2eb56aac/export-e9d67ce8536f1f9b0574ccf294968294，STEP/STL与完整包按当前清单取用,design/enclosure/README.md; product/harness-routing.md,,待测,,,,
 A02,00 版本与准备,外部电源全部断开,,,目视线缆,任何电阻/通断/二极管测量之前,USB、充电器、调试器等均断开；若曾供电先测残余电压，不短接电容,design/enclosure/README.md; product/harness-routing.md,,待测,,,,
 A03,00 版本与准备,表笔插孔与表线基准,,,电阻档短接/分开表笔,红V/Ω、黑COM，待测电路无残余电压,记录表线基准Ω与分开OL，不用电流档,design/enclosure/README.md; product/harness-routing.md,,待测,,,,
 A04,00 版本与准备,28件及机构备件,,,点数/目视,已取得实物时；不在本次打印,28个打印件、单独保护片、两D12×2前垫、两后脚/短轴/盲帽齐全，孔内无残丝碎屑,design/enclosure/README.md; product/harness-routing.md,,待测,,,,

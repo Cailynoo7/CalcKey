@@ -8,8 +8,8 @@
 保留模块与外接线,usb_cable,USB-A 至 Micro-USB-B USB 2.0 数据线，1m,,,,1,件,1,件,default,,,已有符合规格的器件可复用，避免重复购买。 USB-A至Micro-B数据线，设备侧线头≤12×8mm。
 整机辅件,"signal_wire,lcd_signal_wire",26AWG柔性绝缘多股线，矩阵与LCD合并采购,,26AWG-150mm-direct-solder-lead,,15,根,3,米,default,,,装机15根，每根默认150mm，共2.25m；采购3m含0.75m余量，10根矩阵+5根LCD。
 整机辅件,heatshrink,内径2mm、3mm热缩管混合包，合计1m,,,,1,混合包,1,混合包,default,,,内径2mm/3mm混合，总长1m。
-打印件（本版更新）,enclosure_base,CalcKey 独立底部盖板，PLA，FDM打印,CalcKey,enclosure:base,,1,件,1,件,default,,,使用含五处固定桥的新版STEP及对应主壳/底盖STL，mm、100%；两件重新转换，按整机手册安排局部支撑，不另做试片。
-打印件（本版更新）,enclosure_top,CalcKey 顶侧一体主壳，PLA，FDM打印,CalcKey,enclosure:top,,1,件,1,件,default,,,使用含五处固定桥的新版STEP及对应主壳/底盖STL，mm、100%；两件重新转换，按整机手册安排局部支撑，不另做试片。
+打印件,enclosure_base,CalcKey 独立底部盖板，PLA，FDM打印,CalcKey,enclosure:base,,1,件,1,件,default,,,使用含五处固定桥的STEP及原主壳/底盖STL，mm、100%；本次仅修复CAD源码接口，全部28件网格经几何与哈希核对复用，按打印准备说明设置局部支撑，不另做试片。
+打印件,enclosure_top,CalcKey 顶侧一体主壳，PLA，FDM打印,CalcKey,enclosure:top,,1,件,1,件,default,,,使用含五处固定桥的STEP及原主壳/底盖STL，mm、100%；本次仅修复CAD源码接口，全部28件网格经几何与哈希核对复用，按打印准备说明设置局部支撑，不另做试片。
 整机辅件,screen_lens,透明亚克力保护片，67.6×19.6×1mm，四角R1,,acrylic-67.6x19.6x1-R1,,1,件,1,件,default,,,
 整机辅件,case_screws,ISO 7380-1 M3-0.5x8mm 内六角圆头机螺钉,,ISO7380-1-M3x8,,4,颗,6,颗,default,,,
 整机辅件,board_screws,ISO 4762 M2-0.4x4mm 内六角圆柱头螺钉,,ISO4762-M2x4,,2,颗,4,颗,default,,,

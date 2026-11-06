@@ -121,13 +121,15 @@
     "lcd_gpio_and_matrix_wiring_check_passed": true
   },
   "current_handoff_binding": {
-    "receipt": "manufacturing/enclosure/releases/export-6578a384546c9664928efcc137896bcd/receipt.json",
-    "revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
-    "export_id": "export-6578a384546c9664928efcc137896bcd",
-    "step_sha256": "2ed308e4af22be754961ced6498c88baff8cd9457007e27f461ae12d222934bc",
-    "method": "2 fixed-bridge case meshes and 26 retained meshes, verified by source, placement, mesh bytes and measured STEP equivalence across runtime refresh",
+    "receipt": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
+    "revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
+    "export_id": "export-e9d67ce8536f1f9b0574ccf294968294",
+    "step_sha256": "2a25d479d1fcf8d9261fa256df79eda8be7058511812ad56d7365d322c386c35",
+    "method": "All 28 original meshes retained by byte hash, placement and verified export/seat-fix geometry equivalence; no retessellation in this package update",
     "tessellation_receipt": "product/production/history/harness-tessellation-cad-receipt.json",
+    "source_compatibility_evidence": "product/cad-compatibility/verification.json",
     "all_shapes_equivalent_to_inspection_export": true,
+    "measurement_revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
     "export_refresh_evidence": "product/production/export-refresh-verification.json"
   },
   "case_stl_feature_record": "product/production/case-mesh-checks.json"

@@ -1,9 +1,9 @@
 {
   "date": "2026-11-06",
   "design_id": "enclosure",
-  "revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
-  "export_id": "export-6578a384546c9664928efcc137896bcd",
-  "source_receipt": "manufacturing/enclosure/releases/export-6578a384546c9664928efcc137896bcd/receipt.json",
+  "revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
+  "export_id": "export-e9d67ce8536f1f9b0574ccf294968294",
+  "source_receipt": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
   "pcb_release_id": "17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727",
   "printed_parts": 28,
   "mesh_binding": "product/production/model-manifest.json",
@@ -12,12 +12,13 @@
       "path": "product/keycap-usability-verification.json",
       "revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029",
       "binding": {
-        "receipt": "manufacturing/enclosure/releases/export-6578a384546c9664928efcc137896bcd/receipt.json",
-        "revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
-        "export_id": "export-6578a384546c9664928efcc137896bcd",
-        "step_sha256": "2ed308e4af22be754961ced6498c88baff8cd9457007e27f461ae12d222934bc",
-        "method": "2 fixed-bridge case meshes and 26 retained meshes, verified by source, placement, mesh bytes and measured STEP equivalence across runtime refresh",
+        "receipt": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
+        "revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
+        "export_id": "export-e9d67ce8536f1f9b0574ccf294968294",
+        "step_sha256": "2a25d479d1fcf8d9261fa256df79eda8be7058511812ad56d7365d322c386c35",
+        "method": "All 28 original meshes retained by byte hash, placement and verified export/seat-fix geometry equivalence; no retessellation in this package update",
         "tessellation_receipt": "product/production/history/harness-tessellation-cad-receipt.json",
+        "source_compatibility_evidence": "product/cad-compatibility/verification.json",
         "measurement_revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029",
         "baseline_receipt": "product/production/history/before-harness-cad-receipt.json",
         "all_20_keycap_shapes_unchanged": true
@@ -57,9 +58,9 @@
     "retained_pcb_assembly": {
       "path": "product/matrix-pcb-verification.json",
       "binding": {
-        "cad_revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
-        "cad_export_id": "export-6578a384546c9664928efcc137896bcd",
-        "receipt": "manufacturing/enclosure/releases/export-6578a384546c9664928efcc137896bcd/receipt.json",
+        "cad_revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
+        "cad_export_id": "export-e9d67ce8536f1f9b0574ccf294968294",
+        "receipt": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
         "baseline_receipt": "product/production/history/before-harness-cad-receipt.json",
         "retained_inspection_revision": "bb0a8e71a8c0bd3bb7c53e2c2961b190d24c58ea8feda5c0ab35672099b0d8de",
         "unchanged_objects": [
@@ -79,11 +80,13 @@
           "top"
         ],
         "geometry_check_record": "product/harness-routing-verification.json",
-        "scope": "PCB/Pico/lens/fasteners/feet unchanged; base and top changed with five integral tape bridges, rechecked bottom 30mm removal and cap 4mm motion."
+        "scope": "PCB/Pico/lens/fasteners/feet unchanged; base and top changed with five integral tape bridges, rechecked bottom 30mm removal and cap 4mm motion.",
+        "source_compatibility_evidence": "product/cad-compatibility/verification.json"
       }
     },
-    "regenerated_case_meshes": 2,
-    "unchanged_meshes": 26
+    "source_compatibility": "product/cad-compatibility/verification.json",
+    "regenerated_case_meshes": 0,
+    "unchanged_meshes": 28
   },
   "assembly_template": {
     "path": "product/final-assembly/unpowered-checklist.csv",

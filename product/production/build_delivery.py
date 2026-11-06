@@ -16,8 +16,8 @@ import sys
 import zipfile
 from verify_mesh_features import verify as verify_mesh_features
 from verify_case_meshes import verify as verify_case_meshes
-from export_compatibility import same_shape, same_step, evidence as export_refresh_evidence
-from verify_export_refresh import verify as verify_export_refresh
+from export_compatibility import same_shape, same_step, same_revision, verify_chain
+from verify_print_preparation import verify as verify_print_preparation
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = Path(__file__).resolve().parent
@@ -82,7 +82,8 @@ def main(check_only=False):
     step = next(a for a in receipt["artifacts"] if a["role"] == "model/step")
     verify_hash(ROOT / step["path"], step["sha256"])
     require(step["sha256"] == binding["step_sha256"], "STEP mismatch")
-    require(verify_export_refresh() == export_refresh_evidence(), 'Export refresh evidence differs')
+    require(verify_chain(), 'Export refresh/seat compatibility evidence differs')
+    print_preparation_rows = verify_print_preparation(receipt)
     design = read("design/enclosure/source/design.json")
     require({o["id"]: o["shapeHash"] for o in design["objects"]} == receipt["shapeHashes"],
             "Current CAD object hashes differ from handoff")
@@ -140,7 +141,8 @@ def main(check_only=False):
     require(verify_case_meshes() == read('product/production/case-mesh-checks.json'),
             'Actual STL bridge checks differ from recorded results')
     harness = read('product/harness-routing-verification.json')
-    require(harness['revision'] == receipt['revision']
+    require(same_revision(harness['revision'], receipt['revision'])
+            and harness['current_handoff_binding']['revision'] == receipt['revision']
             and harness['current_handoff_binding']['export_id'] == receipt['exportId'],
             'Case/harness geometry checks use another handoff')
 
@@ -356,6 +358,8 @@ def main(check_only=False):
                  "product/production/export-refresh-verification.json",
                  "product/production/export_compatibility.py",
                  "product/production/verify_export_refresh.py",
+                 "product/production/verify_print_preparation.py",
+                 "product/production/seat-repair-delivery-addendum.json",
                  "product/harness-routing.md",
                  "product/harness-routing-verification.json",
                  "product/production/build_delivery.py",
@@ -371,7 +375,7 @@ def main(check_only=False):
         add(path)
     for path in ("design/enclosure/source", "product/production/models",
                  "product/matrix-assembly-diagrams", "product/final-assembly", "product/purchasing/matrix",
-                 "product/production/history", "design/matrix",
+                 "product/production/history", "product/cad-compatibility", "product/print-preparation", "design/matrix",
                  "manufacturing/matrix/releases/"+pcb_id,
                  "design/firmware/source",
                  "design/firmware/tests", "design/firmware/release/v0.2.0"):
@@ -392,7 +396,8 @@ def main(check_only=False):
         "revision": receipt["revision"], "export_id": receipt["exportId"],
         "source_receipt": binding["receipt"],
         "pcb_release_id": pcb_id, "pcb_build_id": pcb_release['buildId'],
-        "inventory_checks": {"printed_parts": 28, "regenerated_case_meshes":2, "reused_printed_meshes":26,
+        "inventory_checks": {"printed_parts": 28, "regenerated_case_meshes":0, "reused_printed_meshes":28,
+                             "print_preparation_rows":print_preparation_rows,
                              "retained_keycap_meshes":20, "bom_rows": 28,
                              "shopping_rows": 27, "matrix_leads": 10, "lcd_leads": 5,
                              "wire_installed_m": 2.25, "wire_purchase_default_m": 3,

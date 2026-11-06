@@ -55,9 +55,9 @@
   },
   "cad_export_binding_note": "Top-level cad_revision and cad_export_id identify retained historical inspections; current_assembly_binding identifies the present handoff and its exact unchanged-object comparison.",
   "current_assembly_binding": {
-    "cad_revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
-    "cad_export_id": "export-6578a384546c9664928efcc137896bcd",
-    "receipt": "manufacturing/enclosure/releases/export-6578a384546c9664928efcc137896bcd/receipt.json",
+    "cad_revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
+    "cad_export_id": "export-e9d67ce8536f1f9b0574ccf294968294",
+    "receipt": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
     "baseline_receipt": "product/production/history/before-harness-cad-receipt.json",
     "retained_inspection_revision": "bb0a8e71a8c0bd3bb7c53e2c2961b190d24c58ea8feda5c0ab35672099b0d8de",
     "unchanged_objects": [
@@ -77,7 +77,8 @@
       "top"
     ],
     "geometry_check_record": "product/harness-routing-verification.json",
-    "scope": "PCB/Pico/lens/fasteners/feet unchanged; base and top changed with five integral tape bridges, rechecked bottom 30mm removal and cap 4mm motion."
+    "scope": "PCB/Pico/lens/fasteners/feet unchanged; base and top changed with five integral tape bridges, rechecked bottom 30mm removal and cap 4mm motion.",
+    "source_compatibility_evidence": "product/cad-compatibility/verification.json"
   },
   "previous_assembly_binding": {
     "cad_revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029",

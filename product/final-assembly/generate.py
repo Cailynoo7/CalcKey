@@ -4,6 +4,7 @@ import csv
 import hashlib
 import io
 import json
+import sys
 from collections import Counter
 from pathlib import Path
 
@@ -48,7 +49,9 @@ def prepare():
     assert cad["export_id"] == receipt["exportId"]
     assert cad["step_sha256"] == receipt["artifacts"][0]["sha256"]
     assert sha(receipt["artifacts"][0]["path"]) == cad["step_sha256"]
-    assert receipt["revision"] == "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7"
+    sys.path.insert(0, str(ROOT/'product/production'))
+    from export_compatibility import same_revision
+    assert same_revision(receipt["revision"], "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7")
     constraints = read_json("product/constraints.json")
     h = constraints["harness_retention"]
     assert h["integral_bridge_count"] == 5
