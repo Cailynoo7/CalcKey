@@ -39,11 +39,10 @@
   },
   "limitations": [
     "LCD checked with manufacturer drawing envelopes, not an exact module STEP.",
-    "Space budgets do not model the complete flexible harness or certify cable strain and tape holding force.",
-    "Old top/base STL and complete ZIP are from the preceding export; not refreshed in this CAD-only delivery."
+    "Space budgets do not model the complete flexible harness or certify cable strain and tape holding force."
   ],
   "export_id": "export-e2512c886e3d86731c45e9d47af2c1ff",
-  "export_receipt": "manufacturing/enclosure/releases/export-e2512c886e3d86731c45e9d47af2c1ff/receipt.json",
+  "export_receipt": "product/production/history/harness-tessellation-cad-receipt.json",
   "export_state_hash": "cc3d87db6b8ffbca261a5b96d7009a97bbda95908cf313e6be1904ba848c9e35",
   "exported_step_sha256": "6b862bdb6c360934ce3597fa4814218ba5fa4faf1901aa8d1a013aa055d351ec",
   "baseline_receipt": "product/production/history/before-harness-cad-receipt.json",
@@ -120,5 +119,16 @@
     "only_base_and_top_changed": true,
     "step_hash_matched": true,
     "lcd_gpio_and_matrix_wiring_check_passed": true
-  }
+  },
+  "current_handoff_binding": {
+    "receipt": "manufacturing/enclosure/releases/export-6578a384546c9664928efcc137896bcd/receipt.json",
+    "revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
+    "export_id": "export-6578a384546c9664928efcc137896bcd",
+    "step_sha256": "2ed308e4af22be754961ced6498c88baff8cd9457007e27f461ae12d222934bc",
+    "method": "2 fixed-bridge case meshes and 26 retained meshes, verified by source, placement, mesh bytes and measured STEP equivalence across runtime refresh",
+    "tessellation_receipt": "product/production/history/harness-tessellation-cad-receipt.json",
+    "all_shapes_equivalent_to_inspection_export": true,
+    "export_refresh_evidence": "product/production/export-refresh-verification.json"
+  },
+  "case_stl_feature_record": "product/production/case-mesh-checks.json"
 }

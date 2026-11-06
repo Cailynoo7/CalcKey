@@ -10,15 +10,16 @@
     "shopping_rows": 27,
     "shared_wire_m": 3,
     "wire_installed_m": 2.25,
-    "printed_parts_unchanged": 8,
     "firmware_version": "0.2.0",
-    "updated_keycap_meshes": 20,
-    "printed_parts_total": 28
+    "printed_parts_total": 28,
+    "regenerated_case_meshes": 2,
+    "unchanged_printed_meshes": 26,
+    "retained_keycap_meshes": 20
   },
   "files": [
     {
       "name": "README.md",
-      "sha256": "38bea9baa57bce1f1d2be6bab6b868959ed00c3924c623be362e9de8d3674326"
+      "sha256": "8f41efdabaa426cf7907d65be19a6ab94158e5302c174dc44d706f594643d244"
     },
     {
       "name": "pcb-order-parameters.json",
@@ -30,11 +31,11 @@
     },
     {
       "name": "hand-assembly-shopping.json",
-      "sha256": "91d5a5926d5711d3ead81b932fe851fd37ba740fc9ccd6790482383074918d2d"
+      "sha256": "a26b408f2f1e1024b2296e31994fb505e1095c84f0616fb13d1fac7426bd2cf2"
     },
     {
       "name": "hand-assembly-shopping.csv",
-      "sha256": "348ce40f45c9aec73e8008c21475bbc512c2967831bfd530e30a53e4f826510a"
+      "sha256": "c19c8a54a0b6bb4d324b3cd9af1aa3f1396a8f3946ba9629af4594c3bc04bb37"
     },
     {
       "name": "hand-soldering-tools.csv",
@@ -52,12 +53,14 @@
   "keycap_cad_revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029",
   "harness_addendum": {
     "verification": "product/harness-routing-verification.json",
-    "printed_meshes_to_refresh": [
+    "purchase_quantities_unchanged": true,
+    "pcb_release_unchanged": true,
+    "source_bom_sha256": "082d557798668b949353446e8c36873c26d1a323d3ed54d627e5c00f8375a91d",
+    "regenerated_meshes": [
       "base",
       "top"
     ],
-    "purchase_quantities_unchanged": true,
-    "pcb_release_unchanged": true,
-    "source_bom_sha256": "082d557798668b949353446e8c36873c26d1a323d3ed54d627e5c00f8375a91d"
+    "enclosure_export_id": "export-6578a384546c9664928efcc137896bcd",
+    "assembly_record_rows": 154
   }
 }

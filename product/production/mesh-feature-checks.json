@@ -1,9 +1,11 @@
 {
-  "revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029",
-  "export_id": "export-b41154b115ba9c61a396ed39b36889a5",
+  "revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
+  "export_id": "export-6578a384546c9664928efcc137896bcd",
   "checks": {
-    "new_keycap_meshes": 20,
-    "unchanged_other_meshes": 8,
+    "keycaps_with_current_legends": 20,
+    "retained_keycap_meshes": 20,
+    "updated_case_meshes": 2,
+    "unchanged_meshes": 26,
     "five_recess_depth_from_stl_mm": 0.35000001164297495,
     "five_adjacent_top_z_mm": 1.0000002202132769e-07,
     "enter_recess_y_range_print_frame_mm": [

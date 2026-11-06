@@ -56,8 +56,8 @@
   "cad_export_binding_note": "Top-level cad_revision and cad_export_id identify retained historical inspections; current_assembly_binding identifies the present handoff and its exact unchanged-object comparison.",
   "current_assembly_binding": {
     "cad_revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
-    "cad_export_id": "export-e2512c886e3d86731c45e9d47af2c1ff",
-    "receipt": "manufacturing/enclosure/releases/export-e2512c886e3d86731c45e9d47af2c1ff/receipt.json",
+    "cad_export_id": "export-6578a384546c9664928efcc137896bcd",
+    "receipt": "manufacturing/enclosure/releases/export-6578a384546c9664928efcc137896bcd/receipt.json",
     "baseline_receipt": "product/production/history/before-harness-cad-receipt.json",
     "retained_inspection_revision": "bb0a8e71a8c0bd3bb7c53e2c2961b190d24c58ea8feda5c0ab35672099b0d8de",
     "unchanged_objects": [

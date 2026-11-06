@@ -155,7 +155,7 @@
       "notes": "内径2mm/3mm混合，总长1m。"
     },
     {
-      "category": "打印件（可复用）",
+      "category": "打印件（本版更新）",
       "bom_item_ids": "enclosure_base",
       "name": "CalcKey 独立底部盖板，PLA，FDM打印",
       "manufacturer": "CalcKey",
@@ -168,10 +168,10 @@
       "procurement_quantity_source": "default",
       "product_url": "",
       "image_url": "",
-      "notes": "沿用已交付的同名打印件；不另做试片。"
+      "notes": "使用含五处固定桥的新版STEP及对应主壳/底盖STL，mm、100%；两件重新转换，按整机手册安排局部支撑，不另做试片。"
     },
     {
-      "category": "打印件（可复用）",
+      "category": "打印件（本版更新）",
       "bom_item_ids": "enclosure_top",
       "name": "CalcKey 顶侧一体主壳，PLA，FDM打印",
       "manufacturer": "CalcKey",
@@ -184,7 +184,7 @@
       "procurement_quantity_source": "default",
       "product_url": "",
       "image_url": "",
-      "notes": "沿用已交付的同名打印件；不另做试片。"
+      "notes": "使用含五处固定桥的新版STEP及对应主壳/底盖STL，mm、100%；两件重新转换，按整机手册安排局部支撑，不另做试片。"
     },
     {
       "category": "整机辅件",
@@ -446,5 +446,7 @@
   "firmware_version": "0.2.0",
   "assembly_documents": "product/matrix-assembly-diagrams",
   "keycap_cad_revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029",
-  "keycap_export_id": "export-b41154b115ba9c61a396ed39b36889a5"
+  "keycap_export_id": "export-b41154b115ba9c61a396ed39b36889a5",
+  "enclosure_cad_revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
+  "enclosure_export_id": "export-6578a384546c9664928efcc137896bcd"
 }

@@ -1,0 +1,63 @@
+{
+  "kind": "assembly_document_consistency",
+  "prepared_date": "2026-11-06",
+  "cad_revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
+  "cad_export_id": "export-6578a384546c9664928efcc137896bcd",
+  "pcb_release_id": "17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727",
+  "firmware_version": "0.2.0",
+  "row_count": 154,
+  "rows_by_phase": {
+    "00 版本与准备": 7,
+    "10 独立矩阵": 68,
+    "20 软线焊装": 20,
+    "30 机械安装": 4,
+    "40 固定与余量": 21,
+    "50 合盖前电气": 4,
+    "60 逐键回弹": 20,
+    "70 合盖与维护": 10
+  },
+  "retained_electrical_rows": 59,
+  "added_release_rows": 20,
+  "per_key_mechanical_rows": 20,
+  "per_wire_free_length_rows": 10,
+  "all_observation_fields_blank": true,
+  "all_results": "待测",
+  "physical_checks_executed": 0,
+  "scope": "Document preparation only; no printing, external power, flashing or physical assembly.",
+  "input_hashes": {
+    "product/final-assembly/generate.py": "0cc105b13f016cf24c1b5ee7bb06351001d48a610399bcded328c51ea0bbfdce",
+    "README.md": "42b8df016573498b673862dabfc580e80b61a6f8f3565e55515c2a9aa362f7f6",
+    "product/production/README.md": "3dec55488813638f8e699854646593e99e68abe7937beed81e47197ee92926d4",
+    "product/matrix-assembly-diagrams/README.md": "3640c9bb1309982dd471d01b7c65df0016d0bde5786075f71d2bef6cb320a559",
+    "product/matrix-assembly-diagrams/unpowered-check-record.csv": "8627550579c2c388c7a905258edff7ee222059204ae7037fdf166a8736d5f500",
+    "product/matrix-assembly-diagrams/soldering-map.csv": "80f80ed2086e7e535c792fbeeb687c360367de537facaeada32ff973f9cd73f9",
+    "product/matrix-assembly-diagrams/guided-soldering.md": "d7915bcbf4f2039571c64cda0f4ef95d742207b21b14a540d7002ee783e81224",
+    "product/harness-routing.md": "da11f2f2334fa53a96f904e244fe2a8fb7699b30fddc2345f10e6211a9a8f99c",
+    "design/enclosure/README.md": "322b42a623848d59c955dbd592a9d1fb227afcc3e111bada52404abad4375c37",
+    "product/constraints.json": "b08a30f3a47ca90c5ff62c3c18f85415f25ea8f66b5ecd9ef0b2ff206fe172ca",
+    "product/bom.json": "082d557798668b949353446e8c36873c26d1a323d3ed54d627e5c00f8375a91d",
+    "design/enclosure/source/wiring.json": "ba92aa5d7554b7d56ab5506cac6462c8b075e56c1b9bc9547d3a93b939c08cb8",
+    "product/harness-routing-verification.json": "5d104013e8da02d1bf1e9cb98f8b8868be92d161e6fee412a7644e3522567e18",
+    "product/production/harness-delivery-addendum.json": "5f1846b4ff0f4654c61b381c2b46babb1c744f941b179ba11f26202b750457e6",
+    "manufacturing/matrix/release-index.json": "fce291b9305cafe82dcd2ce361a59d794b6706e4b3ec125fb366ac1d0f0373c7",
+    "manufacturing/enclosure/releases/export-6578a384546c9664928efcc137896bcd/receipt.json": "fe03cf1a2a926783b78ebee1438eb3f319aa4eda4588f8f92e1e0478e954f791",
+    "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/release-manifest.json": "9172a35ff855e1a0376d32d8fdec4b7b9c46065f73d87cf83b2dc1758306e969"
+  },
+  "document_hashes": {
+    "product/final-assembly/README.md": "3422e7dd54ba0cdb41cb8f86f7009dcedd229626e85ffb69d69838131ea252a5",
+    "product/final-assembly/unpowered-checklist.csv": "70d95d20c3b485abffd7afadd4cd4f700b3354d395fc9cb608d8a7668777becf"
+  },
+  "checks": [
+    "Current STEP hash matches its domain export receipt",
+    "Five bridges, three storage zones, 150mm total/65mm free/30mm opening match constraints",
+    "All 59 original electrical rows retained with identical probes, conditions and criteria",
+    "15 wire endpoints match the existing soldering map; four LCD NC endpoints unconnected",
+    "20 release rows, 20 mechanical key rows and 10 free-length rows have unique identifiers",
+    "All physical result fields remain blank/pending"
+  ],
+  "limitations": [
+    "Documentation checks are not physical measurements or functional acceptance.",
+    "Use the current mesh/package manifests; historical exports do not identify the current delivery.",
+    "Independent-matrix criteria are not applied to a matrix already connected to Pico/LCD."
+  ]
+}

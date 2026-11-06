@@ -36,7 +36,9 @@ def verify():
     current={m['object_id']:m for m in manifest['meshes']}
     keys=['key_%02d'%i for i in range(1,21)]
     assert all(current[n]['sha256']!=old[n]['sha256'] for n in keys)
-    assert all(current[n]['sha256']==old[n]['sha256'] for n in current if n not in keys)
+    before_harness=json.loads((OUT/'history/before-harness-model-manifest.json').read_text())
+    before={m['object_id']:m for m in before_harness['meshes']}
+    assert all(current[n]['sha256']==before[n]['sha256'] for n in current if n not in {'base','top'})
     five=triangles(OUT/'models/key_10.stl')
     # STL is print-oriented with the cap top down: local (0,-4.6,7) -> (0,+4.6,0).
     center=first_z(five,0,4.6)
@@ -54,7 +56,8 @@ def verify():
     assert 2<max(v[0] for v in bottom)-min(v[0] for v in bottom)<4
     paths=['product/production/models/key_10.stl','product/production/models/key_16.stl']
     return {'revision':manifest['revision'],'export_id':manifest['export_id'],
-            'checks':{'new_keycap_meshes':20,'unchanged_other_meshes':8,
+            'checks':{'keycaps_with_current_legends':20,'retained_keycap_meshes':20,
+                      'updated_case_meshes':2,'unchanged_meshes':26,
                       'five_recess_depth_from_stl_mm':center-beside,
                       'five_adjacent_top_z_mm':beside,
                       'enter_recess_y_range_print_frame_mm':top_y,
@@ -66,4 +69,4 @@ def verify():
 if __name__=='__main__':
     report=verify()
     (OUT/'mesh-feature-checks.json').write_text(json.dumps(report,indent=2)+'\n')
-    print('PASS actual STL surfaces: 5 recess depth, separated Enter/= floors; 20 new caps, 8 unchanged meshes.')
+    print('PASS actual STL surfaces: 5 recess depth and separated Enter/= floors; 20 caps and 6 mechanisms unchanged.')

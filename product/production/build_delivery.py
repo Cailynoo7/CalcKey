@@ -11,8 +11,13 @@ import hashlib
 import json
 import struct
 import shutil
+import subprocess
+import sys
 import zipfile
 from verify_mesh_features import verify as verify_mesh_features
+from verify_case_meshes import verify as verify_case_meshes
+from export_compatibility import same_shape, same_step, evidence as export_refresh_evidence
+from verify_export_refresh import verify as verify_export_refresh
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = Path(__file__).resolve().parent
@@ -77,7 +82,10 @@ def main(check_only=False):
     step = next(a for a in receipt["artifacts"] if a["role"] == "model/step")
     verify_hash(ROOT / step["path"], step["sha256"])
     require(step["sha256"] == binding["step_sha256"], "STEP mismatch")
+    require(verify_export_refresh() == export_refresh_evidence(), 'Export refresh evidence differs')
     design = read("design/enclosure/source/design.json")
+    require({o["id"]: o["shapeHash"] for o in design["objects"]} == receipt["shapeHashes"],
+            "Current CAD object hashes differ from handoff")
     for target in design["targets"]:
         for cell in target["cells"]:
             verify_hash(ROOT / cell["path"],
@@ -116,14 +124,25 @@ def main(check_only=False):
     require(original_geometry['revision'] == original_receipt['revision'],
             'Historical geometry provenance mismatch')
     keycap_geometry = read('product/keycap-usability-verification.json')
-    require(keycap_geometry['revision'] == receipt['revision']
-            and keycap_geometry['export_id'] == receipt['exportId'], 'Keycap checks use another handoff')
+    cap_binding = keycap_geometry['current_assembly_binding']
+    require(cap_binding['revision'] == receipt['revision']
+            and cap_binding['export_id'] == receipt['exportId'], 'Keycap compatibility uses another handoff')
+    cap_baseline = read(cap_binding['baseline_receipt'])
+    require(cap_baseline['revision'] == keycap_geometry['revision'], 'Retained keycap measurement source changed')
+    require(all(same_shape(receipt['shapeHashes']['key_%02d' % i], cap_baseline['shapeHashes']['key_%02d' % i], 'key_%02d' % i)
+                for i in range(1, 21)), 'Retained keycap shape changed')
     caps = keycap_geometry['measured_geometry']['caps']
     require(len(caps) == 20 and all(c['valid'] and c['solids']==1
             and c['added_outside_blank_mm3']==0 and c['removed_min_z_mm']>=6.6499 for c in caps),
             'Current cap geometry checks failed')
     require(verify_mesh_features() == read('product/production/mesh-feature-checks.json'),
             'Actual STL feature checks differ from recorded results')
+    require(verify_case_meshes() == read('product/production/case-mesh-checks.json'),
+            'Actual STL bridge checks differ from recorded results')
+    harness = read('product/harness-routing-verification.json')
+    require(harness['revision'] == receipt['revision']
+            and harness['current_handoff_binding']['export_id'] == receipt['exportId'],
+            'Case/harness geometry checks use another handoff')
 
     expected = {"base", "top", "rear_foot_left", "rear_foot_right",
                 "hinge_axle_left", "hinge_axle_right",
@@ -137,14 +156,22 @@ def main(check_only=False):
         require(mesh['shape_sha256'] == receipt['shapeHashes'][name]
                 and mesh['object_transform'] == transforms[name], 'Mesh shape/placement binding differs: '+name)
         if mesh['derivation']['method'] == 'reuse_unchanged_shape':
-            require(not name.startswith('key_') and receipt['shapeHashes'][name] == original_receipt['shapeHashes'][name],
+            prior = read(mesh['derivation']['receipt'])
+            prior_models = read(mesh['derivation']['mesh_manifest'])
+            prior_row = next(m for m in prior_models['meshes'] if m['object_id'] == name)
+            require(same_shape(receipt['shapeHashes'][name], prior['shapeHashes'][name], name)
+                    and prior_row['sha256'] == mesh['sha256'],
                     'Reused mesh geometry changed: ' + name)
-            require(transforms[name] == reuse['original_printed_transforms'][name],
+            require(transforms[name] == prior_row['object_transform'],
                     'Reused mesh placement changed: ' + name)
         else:
-            require(name.startswith('key_') and mesh['derivation']['method'] == 'step_tessellation'
-                    and mesh['derivation']['receipt'] == binding['receipt']
-                    and mesh['derivation']['step_sha256'] == step['sha256'], 'Keycap STL uses an older STEP: '+name)
+            conversion = read(mesh['derivation']['receipt'])
+            conversion_step = next(a for a in conversion['artifacts'] if a['role'] == 'model/step')
+            require(name in {'base','top'} and mesh['derivation']['method'] == 'step_tessellation'
+                    and same_shape(conversion['shapeHashes'][name], receipt['shapeHashes'][name], name)
+                    and conversion_step['sha256'] == mesh['derivation']['step_sha256']
+                    and same_step(conversion_step['sha256'], step['sha256']),
+                    'Case STL source differs from the current STEP: '+name)
         path = ROOT / mesh["file"]
         verify_hash(path, mesh["sha256"])
         require(path.stat().st_size == mesh["bytes"], "Mesh size mismatch")
@@ -203,6 +230,23 @@ def main(check_only=False):
             "Firmware test inventory mismatch")
     require(not firmware["flashed"] and not firmware["hardware_tested"],
             "Incorrect hardware-test declaration")
+    # Refresh packaging-only documentation without changing or recompiling binaries.
+    fw_inputs = {}
+    for path in sorted(firmware_dir.iterdir()):
+        if path.is_file(): fw_inputs['CalcKey-v0.2.0/'+path.name] = path
+    for path in sorted((ROOT/'design/firmware').rglob('*')):
+        if path.is_file() and 'release' not in path.relative_to(ROOT/'design/firmware').parts and '__pycache__' not in path.parts:
+            fw_inputs['CalcKey-v0.2.0/project/'+str(path.relative_to(ROOT))] = path
+    for name in ('product/requirements.json','design/enclosure/source/wiring.json','product/lcd-upgrade.md'):
+        fw_inputs['CalcKey-v0.2.0/project/'+name] = ROOT/name
+    fw_zip = ROOT/'product/calckey-firmware-v0.2.0.zip'
+    if not check_only:
+        with zipfile.ZipFile(fw_zip,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
+            for name,path in sorted(fw_inputs.items()): z.write(path,name)
+    with zipfile.ZipFile(fw_zip) as z:
+        require(z.testzip() is None and set(z.namelist()) == set(fw_inputs), 'Firmware ZIP inventory/CRC mismatch')
+        for name,path in fw_inputs.items():
+            require(hashlib.sha256(z.read(name)).hexdigest() == digest(path), 'Firmware ZIP input differs: '+name)
     pcb_id = read('manufacturing/matrix/release-index.json')['releases'][-1]['releaseId']
     pcb_dir = ROOT / 'manufacturing/matrix/releases' / pcb_id
     pcb_release = json.loads((pcb_dir / 'release-manifest.json').read_text())
@@ -217,9 +261,12 @@ def main(check_only=False):
             and compatible['cad_export_id'] == receipt['exportId'],
             'PCB/CAD evidence mismatch')
     baseline = read(compatible['baseline_receipt'])
-    require(baseline['revision'] == pcb_geometry['cad_revision'], 'PCB evidence baseline changed')
+    retained = read('product/production/history/matrix-before-keycap-cad-receipt.json')
+    require(retained['revision'] == pcb_geometry['cad_revision']
+            and compatible['retained_inspection_revision'] == pcb_geometry['cad_revision'], 'PCB evidence baseline changed')
     for name in compatible['unchanged_objects']:
-        require(receipt['shapeHashes'][name] == baseline['shapeHashes'][name],
+        require(same_shape(receipt['shapeHashes'][name], baseline['shapeHashes'][name], name)
+                and baseline['shapeHashes'][name] == retained['shapeHashes'][name],
                 'PCB/case object differs from retained inspection: '+name)
     # Imported source bytes must be the released assembly, not a lookalike.
     pcb_step = next(a for a in pcb_release['package'] if a['path'] == 'assembly.step')
@@ -234,6 +281,12 @@ def main(check_only=False):
         physical_checks = list(csv.DictReader(f))
     require(len(physical_checks) == 59 and all(r['实测']=='' and r['结果']=='待测' for r in physical_checks),
             'Empty physical-test template must remain pending')
+    subprocess.run([sys.executable,str(ROOT/'product/final-assembly/generate.py'),'--check-only'],check=True)
+    assembly = read('product/final-assembly/source-checks.json')
+    require(assembly['cad_revision'] == receipt['revision']
+            and assembly['cad_export_id'] == receipt['exportId']
+            and assembly['row_count'] == 154 and assembly['physical_checks_executed'] == 0,
+            'Whole-device assembly template version/count differs')
     shopping = read('product/purchasing/matrix/hand-assembly-shopping.json')
     require(shopping['source_bom_sha256'] == digest(ROOT/'product/bom.json')
             and shopping['source_requirements_sha256'] == digest(ROOT/'product/requirements.json')
@@ -293,9 +346,18 @@ def main(check_only=False):
                  "product/production/README.md",
                  "product/production/generate_models.py",
                  "product/production/verify_mesh_features.py",
+                 "product/production/verify_case_meshes.py",
                  "product/production/render_mesh_preview.py",
+                 "product/production/render_case_mesh_preview.py",
                  "product/production/sync_delivery_records.py",
                  "product/production/mesh-feature-checks.json",
+                 "product/production/case-mesh-checks.json",
+                 "product/production/harness-delivery-addendum.json",
+                 "product/production/export-refresh-verification.json",
+                 "product/production/export_compatibility.py",
+                 "product/production/verify_export_refresh.py",
+                 "product/harness-routing.md",
+                 "product/harness-routing-verification.json",
                  "product/production/build_delivery.py",
                  "product/production/mesh-reuse-evidence.json",
                  "product/production/matrix-fabrication.zip",
@@ -308,7 +370,7 @@ def main(check_only=False):
                  binding["receipt"], step["path"]):
         add(path)
     for path in ("design/enclosure/source", "product/production/models",
-                 "product/matrix-assembly-diagrams", "product/purchasing/matrix",
+                 "product/matrix-assembly-diagrams", "product/final-assembly", "product/purchasing/matrix",
                  "product/production/history", "design/matrix",
                  "manufacturing/matrix/releases/"+pcb_id,
                  "design/firmware/source",
@@ -330,10 +392,12 @@ def main(check_only=False):
         "revision": receipt["revision"], "export_id": receipt["exportId"],
         "source_receipt": binding["receipt"],
         "pcb_release_id": pcb_id, "pcb_build_id": pcb_release['buildId'],
-        "inventory_checks": {"printed_parts": 28, "new_keycap_meshes":20, "unchanged_other_meshes":8, "bom_rows": 28,
+        "inventory_checks": {"printed_parts": 28, "regenerated_case_meshes":2, "reused_printed_meshes":26,
+                             "retained_keycap_meshes":20, "bom_rows": 28,
                              "shopping_rows": 27, "matrix_leads": 10, "lcd_leads": 5,
                              "wire_installed_m": 2.25, "wire_purchase_default_m": 3,
-                             "wiring_pdf_pages": 4, "unpowered_record_rows": 59,
+                             "wiring_pdf_pages": 4, "pcb_unpowered_record_rows": 59,
+                             "whole_device_unpowered_rows":154,
                              "fabrication_files": len(fab_files),
                              "firmware_version": "0.2.0",
                              "firmware_test_counts": firmware["host_test_counts"]},
@@ -348,6 +412,7 @@ def main(check_only=False):
     if check_only:
         existing = read('product/production/package-manifest.json')
         require(existing['files'] == files, 'Published package manifest is stale')
+        require(existing['inventory_checks'] == manifest['inventory_checks'], 'Package inventory counts differ')
         require(existing['export_id'] == receipt['exportId']
                 and existing['pcb_release_id'] == pcb_id, 'Package binding stale')
         expected_files = {str(p.relative_to(ROOT)) for p in selected} | {'product/production/package-manifest.json'}
@@ -370,7 +435,7 @@ def main(check_only=False):
         require(set(archive.namelist()) ==
                 {str(p.relative_to(ROOT)) for p in selected}, "ZIP inventory mismatch")
     print("PASS current STEP and PCB release, 28 closed STL meshes, 28 BOM rows, "
-          "27 shopping rows, 15 wires, 4-page PCB wiring, 59 pending checks and v0.2.0 firmware hashes")
+          "27 shopping rows, 15 wires, 4-page PCB wiring, 154 whole-device pending checks (including the original 59) and v0.2.0 firmware hashes")
     print("ZIP entries:", len(selected), "bytes:", target.stat().st_size,
           "sha256:", digest(target))
     print("No flashing, printing, slicing or device contact performed.")

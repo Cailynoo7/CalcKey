@@ -1,14 +1,15 @@
 {
-  "generated_utc": "2026-11-06T03:24:14.172558+00:00",
-  "revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029",
-  "export_id": "export-b41154b115ba9c61a396ed39b36889a5",
-  "source_receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+  "generated_utc": "2026-11-06T09:53:35.326439+00:00",
+  "revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
+  "export_id": "export-6578a384546c9664928efcc137896bcd",
+  "source_receipt": "manufacturing/enclosure/releases/export-6578a384546c9664928efcc137896bcd/receipt.json",
   "pcb_release_id": "17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727",
   "pcb_build_id": "6a333818c3a79007ec3a24727eed3008848215ed1c5c0238051beffaecfde0e3",
   "inventory_checks": {
     "printed_parts": 28,
-    "new_keycap_meshes": 20,
-    "unchanged_other_meshes": 8,
+    "regenerated_case_meshes": 2,
+    "reused_printed_meshes": 26,
+    "retained_keycap_meshes": 20,
     "bom_rows": 28,
     "shopping_rows": 27,
     "matrix_leads": 10,
@@ -16,7 +17,8 @@
     "wire_installed_m": 2.25,
     "wire_purchase_default_m": 3,
     "wiring_pdf_pages": 4,
-    "unpowered_record_rows": 59,
+    "pcb_unpowered_record_rows": 59,
+    "whole_device_unpowered_rows": 154,
     "fabrication_files": 13,
     "firmware_version": "0.2.0",
     "firmware_test_counts": [
@@ -32,7 +34,9 @@
     "No physical soldering, clip retention, PCB flexure or strength test; printed fit trials skipped by user.",
     "GDM0103 remains a manufacturer-drawing envelope; no exact model of the LCD board.",
     "Switch actuator and housing are fused in vendor STEP. Full-stroke check uses the shared unengraved cap blank and excludes the measured actuator projection; internal switch mechanism is not independently verified.",
-    "Wire strain relief and solder fillets are assembly allowances, not measured real wire geometry."
+    "Wire strain relief and solder fillets are assembly allowances, not measured real wire geometry.",
+    "LCD checked with manufacturer drawing envelopes, not an exact module STEP.",
+    "Space budgets do not model the complete flexible harness or certify cable strain and tape holding force."
   ],
   "physical_print_trial_skipped_by_user": true,
   "flashed": false,
@@ -42,18 +46,18 @@
   "files": [
     {
       "file": "README.md",
-      "bytes": 1527,
-      "sha256": "6283a04736da2de9d5be939831a1ea78ef260499d9b94037afa76b52913047a7"
+      "bytes": 1934,
+      "sha256": "42b8df016573498b673862dabfc580e80b61a6f8f3565e55515c2a9aa362f7f6"
     },
     {
       "file": "design/assembly.json",
-      "bytes": 522,
-      "sha256": "1f9ce0d1aa13db6b943a8b8d8373a659709a0435648467e6cae477d3027dded5"
+      "bytes": 517,
+      "sha256": "cdd0ca16c5dbfee7847057ca39a1958e00e6161adb19ece48c6d40837ea4e79c"
     },
     {
       "file": "design/enclosure/README.md",
-      "bytes": 20417,
-      "sha256": "55ff4ae4b11eb36e9ada770234e6cdfa0fda6e984617756bd9909d03563dd943"
+      "bytes": 24871,
+      "sha256": "322b42a623848d59c955dbd592a9d1fb227afcc3e111bada52404abad4375c37"
     },
     {
       "file": "design/enclosure/source/assets/29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d.step",
@@ -72,13 +76,13 @@
     },
     {
       "file": "design/enclosure/source/design.json",
-      "bytes": 39140,
-      "sha256": "876cc54da9dd28052e91da60f20072077ef338556ce073ba2e2e7dd7c58ca4e2"
+      "bytes": 39519,
+      "sha256": "d3a5782753c81461d2769f8dac1982fdccd5875703ec494d94c83fd7898a828d"
     },
     {
       "file": "design/enclosure/source/parts/base/000-base.py",
-      "bytes": 6307,
-      "sha256": "47334b4ed11264b41e3a0065cc785291d15bed35b717162ef5844eb23d5576aa"
+      "bytes": 7884,
+      "sha256": "4534e32ee22bd24cad115f68e5404f09dea25c5c84fb03ca5bb4aa91c9c1a4ce"
     },
     {
       "file": "design/enclosure/source/parts/hardware/000-hardware.py",
@@ -232,8 +236,8 @@
     },
     {
       "file": "design/enclosure/source/parts/top/000-top.py",
-      "bytes": 2741,
-      "sha256": "aae529cb89b5e9520e9a92c786b9b58d4e3604256fb81d458b4a12742203bbaa"
+      "bytes": 3168,
+      "sha256": "6409411a5793ae942ac02e6b4d85925061a5ee4e07807d8f152979039fb96864"
     },
     {
       "file": "design/enclosure/source/wiring.json",
@@ -426,14 +430,14 @@
       "sha256": "5f31a6189d41eee25cf9a52deb3a8362f7aeea728a3c3794c45d3dcc0aca2b03"
     },
     {
-      "file": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/model.step",
-      "bytes": 58621034,
-      "sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+      "file": "manufacturing/enclosure/releases/export-6578a384546c9664928efcc137896bcd/model.step",
+      "bytes": 58956675,
+      "sha256": "2ed308e4af22be754961ced6498c88baff8cd9457007e27f461ae12d222934bc"
     },
     {
-      "file": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+      "file": "manufacturing/enclosure/releases/export-6578a384546c9664928efcc137896bcd/receipt.json",
       "bytes": 10775,
-      "sha256": "a9406943875e39de20f5a83bdf27f7101f1955456be0263ebad44c4045d9ea8e"
+      "sha256": "fe03cf1a2a926783b78ebee1438eb3f319aa4eda4588f8f92e1e0478e954f791"
     },
     {
       "file": "manufacturing/matrix/release-index.json",
@@ -587,13 +591,13 @@
     },
     {
       "file": "product/bom.csv",
-      "bytes": 14097,
-      "sha256": "800d75f2d1982beaefa80e6b246c8774f4e7e41cc847c89f6461d05ae7eb3a30"
+      "bytes": 14296,
+      "sha256": "03038a47d5929a1e4455c7bacda798b0095010f580094e71b1f8e804b36f860d"
     },
     {
       "file": "product/bom.json",
-      "bytes": 22280,
-      "sha256": "076caa30eaedbfa50220f6725b06f4c300240a9f88c3c6ef819171018cabe222"
+      "bytes": 22508,
+      "sha256": "082d557798668b949353446e8c36873c26d1a323d3ed54d627e5c00f8375a91d"
     },
     {
       "file": "product/bring-up-checklist.md",
@@ -602,18 +606,18 @@
     },
     {
       "file": "product/calckey-firmware-v0.2.0.zip",
-      "bytes": 647794,
-      "sha256": "56e02ec26ea73f955207522585de8fd78100a220bdff2d7a2762d5c80e6e3bd3"
+      "bytes": 647965,
+      "sha256": "fd983e40a2ddf9652e08916fd68f5cb5c7d7b738cf5bcdd8fecec60ee642a35e"
     },
     {
       "file": "product/component-selection.json",
-      "bytes": 23787,
-      "sha256": "dbd55a142a56335a67cc2fdca8023a8ab324ee94896f96a37189ededd016e38f"
+      "bytes": 24015,
+      "sha256": "39ed654afc0e4b49f175c5bc0e7c1834d3160d6f8aed46f4c7aa4d091a5a0cf4"
     },
     {
       "file": "product/constraints.json",
-      "bytes": 12484,
-      "sha256": "0d45083c4edcc090ae54ff16df7a477ca9eff768f3e4df427514d652dd45297b"
+      "bytes": 14494,
+      "sha256": "b08a30f3a47ca90c5ff62c3c18f85415f25ea8f66b5ecd9ef0b2ff206fe172ca"
     },
     {
       "file": "product/contract.json",
@@ -621,14 +625,44 @@
       "sha256": "2c31727705804b86c5646041da0803cb697d3d72c1edaf1e3fb365c805dc5df3"
     },
     {
+      "file": "product/final-assembly/README.md",
+      "bytes": 13814,
+      "sha256": "3422e7dd54ba0cdb41cb8f86f7009dcedd229626e85ffb69d69838131ea252a5"
+    },
+    {
+      "file": "product/final-assembly/generate.py",
+      "bytes": 21044,
+      "sha256": "0cc105b13f016cf24c1b5ee7bb06351001d48a610399bcded328c51ea0bbfdce"
+    },
+    {
+      "file": "product/final-assembly/source-checks.json",
+      "bytes": 4066,
+      "sha256": "65a0592a7554ed8646045c63a51b1b383119a3be9d52e5eb8d10199f512035c6"
+    },
+    {
+      "file": "product/final-assembly/unpowered-checklist.csv",
+      "bytes": 38011,
+      "sha256": "70d95d20c3b485abffd7afadd4cd4f700b3354d395fc9cb608d8a7668777becf"
+    },
+    {
+      "file": "product/harness-routing-verification.json",
+      "bytes": 28510,
+      "sha256": "5d104013e8da02d1bf1e9cb98f8b8868be92d161e6fee412a7644e3522567e18"
+    },
+    {
+      "file": "product/harness-routing.md",
+      "bytes": 5362,
+      "sha256": "da11f2f2334fa53a96f904e244fe2a8fb7699b30fddc2345f10e6211a9a8f99c"
+    },
+    {
       "file": "product/keycap-usability-verification.json",
-      "bytes": 11508,
-      "sha256": "b2d79f336be0dafbd2d76469d239457012e3fb841032e09d5d3cd645df77ace7"
+      "bytes": 12663,
+      "sha256": "139c4aafc735f2bcda3b149ddee2516fe9ba57f849f09a5232a335566ca581cf"
     },
     {
       "file": "product/lcd-upgrade.md",
-      "bytes": 2964,
-      "sha256": "9d9f61a92c084f54fd25729cfc119c6931618fa3d43b1d90254079f026e96c6c"
+      "bytes": 3253,
+      "sha256": "d60c648f94c4ee27be2a3d3c1f45e3a018651de5ecb9c2722f026918a5a1761a"
     },
     {
       "file": "product/matrix-assembly-diagrams/01-component-orientation.png",
@@ -672,8 +706,8 @@
     },
     {
       "file": "product/matrix-assembly-diagrams/README.md",
-      "bytes": 6030,
-      "sha256": "27878caf144af115f56ff3c81108aeb85e175cda8682413a907070812e468f7d"
+      "bytes": 6543,
+      "sha256": "3640c9bb1309982dd471d01b7c65df0016d0bde5786075f71d2bef6cb320a559"
     },
     {
       "file": "product/matrix-assembly-diagrams/calckey-matrix-pcb-assembly.pdf",
@@ -687,8 +721,8 @@
     },
     {
       "file": "product/matrix-assembly-diagrams/guided-soldering.md",
-      "bytes": 12882,
-      "sha256": "b3b31e32ee7da817621f21e71335effc306e99d51e5334b0ab252981b46026a2"
+      "bytes": 13587,
+      "sha256": "d7915bcbf4f2039571c64cda0f4ef95d742207b21b14a540d7002ee783e81224"
     },
     {
       "file": "product/matrix-assembly-diagrams/soldering-map.csv",
@@ -707,33 +741,78 @@
     },
     {
       "file": "product/matrix-pcb-verification.json",
-      "bytes": 7730,
-      "sha256": "9cf4aacb6377401e79c80bb0922e1298673ba0523302560ff31cdeea6e1ddce6"
+      "bytes": 8775,
+      "sha256": "9eeca6d23b670f40d55b0d08ac56b66c93cd94de367407671d52e65ba695f170"
     },
     {
       "file": "product/production/README.md",
-      "bytes": 12383,
-      "sha256": "a740c0696b6e471d31a010b6b097f08f55ecd0d3d8e099a2cd3f0170d4a03b11"
+      "bytes": 12652,
+      "sha256": "3dec55488813638f8e699854646593e99e68abe7937beed81e47197ee92926d4"
     },
     {
       "file": "product/production/build_delivery.py",
-      "bytes": 21817,
-      "sha256": "56d2d5becd6c352b34ce3f5ebe3902eb3aed3456f0d31f2358cec9c7b222b579"
+      "bytes": 26570,
+      "sha256": "c0067ea119bc84a401b2512713cfe2a5fb95c1ef320eaa26974c530fb4bbd528"
+    },
+    {
+      "file": "product/production/case-mesh-checks.json",
+      "bytes": 11896,
+      "sha256": "ce1dd13df455b238f9ddd7b5cfc943b384a9a9091599c00ddf16c3d625a4fa2c"
     },
     {
       "file": "product/production/design-verification.json",
-      "bytes": 3351,
-      "sha256": "d599d6a8561d5c065504e486cd6dae1137cd653e9c1675d471639f66cca66f9c"
+      "bytes": 5196,
+      "sha256": "398c65b5eca839dbfef2dd4fb58141034e2b97874e3501b546d9bb4600bb338d"
+    },
+    {
+      "file": "product/production/export-refresh-verification.json",
+      "bytes": 17327,
+      "sha256": "993d5c1215766d9d51a27d715e2e989ff1966bd4e0e529dee85ca40f672ff3ec"
+    },
+    {
+      "file": "product/production/export_compatibility.py",
+      "bytes": 1614,
+      "sha256": "2e8676cfc025b011ad00e329f77d7eb8372a0130162eda72d53a1d6e74b9226c"
     },
     {
       "file": "product/production/generate_models.py",
-      "bytes": 9405,
-      "sha256": "9f39a95b0a083d8482295dec5f93481982d39723f83daf1351a72f2f2a2de56c"
+      "bytes": 10516,
+      "sha256": "b7a84ebd550fc6213598d8f429be468cb62fd189227a68654243409ee62c9537"
+    },
+    {
+      "file": "product/production/harness-delivery-addendum.json",
+      "bytes": 1085,
+      "sha256": "5f1846b4ff0f4654c61b381c2b46babb1c744f941b179ba11f26202b750457e6"
     },
     {
       "file": "product/production/history/README.md",
       "bytes": 367,
       "sha256": "dc4f9cee7f48bf05e5178db3165d6eca4c6512ee556407327a527f40a74a5ef5"
+    },
+    {
+      "file": "product/production/history/before-harness-cad-receipt.json",
+      "bytes": 10775,
+      "sha256": "a9406943875e39de20f5a83bdf27f7101f1955456be0263ebad44c4045d9ea8e"
+    },
+    {
+      "file": "product/production/history/before-harness-model-manifest.json",
+      "bytes": 45091,
+      "sha256": "1a98f0a7b0c7157713ad3a7e276d49b08ed05962aea1888e05629636a2df3d82"
+    },
+    {
+      "file": "product/production/history/before-runtime-refresh-cad-receipt.json",
+      "bytes": 10774,
+      "sha256": "865325b01f26a481fcf04b6cddf519084f2084b625f7fd1c10b98c348b208489"
+    },
+    {
+      "file": "product/production/history/before-runtime-refresh-design.json",
+      "bytes": 39524,
+      "sha256": "45b4828d37c9c220d8dc30be6953a15aea46c404cac95993827d2ad3e4a7fd99"
+    },
+    {
+      "file": "product/production/history/before-runtime-refresh.step",
+      "bytes": 58977142,
+      "sha256": "6b862bdb6c360934ce3597fa4814218ba5fa4faf1901aa8d1a013aa055d351ec"
     },
     {
       "file": "product/production/history/handwired-cad-receipt.json",
@@ -749,6 +828,11 @@
       "file": "product/production/history/handwired-model-manifest.json",
       "bytes": 25120,
       "sha256": "e2bddb98ca9c24a99ef63f512254afb0611e9a81cd96f7865f3c5e79d1a4acca"
+    },
+    {
+      "file": "product/production/history/harness-tessellation-cad-receipt.json",
+      "bytes": 10775,
+      "sha256": "81a4649d910e2990348c3ab1f82988c3e471795684bec782f274e9588aac2822"
     },
     {
       "file": "product/production/history/matrix-before-keycap-cad-receipt.json",
@@ -767,8 +851,8 @@
     },
     {
       "file": "product/production/mesh-feature-checks.json",
-      "bytes": 848,
-      "sha256": "55e3ce30e85a1adec1ca0e061d5c796152b9eb81a5437e918792064522b255f6"
+      "bytes": 918,
+      "sha256": "027282f0bb78aeb39b45887c72c962db300f1ca86d7b8041f0c6d363db73c110"
     },
     {
       "file": "product/production/mesh-reuse-evidence.json",
@@ -777,13 +861,13 @@
     },
     {
       "file": "product/production/model-manifest.json",
-      "bytes": 45091,
-      "sha256": "1a98f0a7b0c7157713ad3a7e276d49b08ed05962aea1888e05629636a2df3d82"
+      "bytes": 55378,
+      "sha256": "fa5ad30f8181170732368217e236a84935e78e175d2012c1fdb0b724087038d5"
     },
     {
       "file": "product/production/models/base.stl",
-      "bytes": 1225684,
-      "sha256": "fb64efe7421f8cb365e4d19410d404b668118b3694f820bd0272e34ef552f753"
+      "bytes": 1489084,
+      "sha256": "02ef41a0aa7402ce1450d1fe474c6393639520d45185a07ebf8f31fbc7bc5fd2"
     },
     {
       "file": "product/production/models/hinge_axle_left.stl",
@@ -917,13 +1001,18 @@
     },
     {
       "file": "product/production/models/top.stl",
-      "bytes": 1303184,
-      "sha256": "e1f85cd4e0721439e73412cb12f3358d46f2920168509fd178707f55f3f0f2b5"
+      "bytes": 1468384,
+      "sha256": "11b4573079e66c7cbd9e2a33620b5b34c0b12988b5628676d04ddf229ef9e41d"
     },
     {
       "file": "product/production/print-plan.csv",
       "bytes": 2025,
       "sha256": "8c12e51daba9984128579dd6942c05f3fd31db6c3dbc67dd9ddf21fbee1c5189"
+    },
+    {
+      "file": "product/production/render_case_mesh_preview.py",
+      "bytes": 2917,
+      "sha256": "af61cd0e89da63cefe28186610fc7eef890add772d79839e71d268732da9488f"
     },
     {
       "file": "product/production/render_mesh_preview.py",
@@ -932,28 +1021,38 @@
     },
     {
       "file": "product/production/sync_delivery_records.py",
-      "bytes": 8436,
-      "sha256": "32eaff2f5ee68bd0e760fd4a01a4359e5ab032194783f634f9ab358a11f68ef1"
+      "bytes": 10222,
+      "sha256": "a2bd3b860ed7dbd6b969002152c47ab049b156b39e8cd7570e61d969a5402d21"
+    },
+    {
+      "file": "product/production/verify_case_meshes.py",
+      "bytes": 6453,
+      "sha256": "3819483f2068a8a3b0841b13aacf1c4a42e300219b85310582a354d961893b92"
+    },
+    {
+      "file": "product/production/verify_export_refresh.py",
+      "bytes": 4424,
+      "sha256": "05e6a86ba369e1df4d50b7991475fab69dd4167311b69a4558d20042539cefd8"
     },
     {
       "file": "product/production/verify_mesh_features.py",
-      "bytes": 3130,
-      "sha256": "d058cf8a1220ee331968f274afd245fe0c6d6e5958e31fed5de571976eba7c1b"
+      "bytes": 3388,
+      "sha256": "83340ff41015817fff75b19d8cd5765820926d7cbfd0af04828a92a4766c2574"
     },
     {
       "file": "product/purchasing/matrix/README.md",
-      "bytes": 7558,
-      "sha256": "7e592949c2303f3b746df5cde94eb21db080abc15d11eaad92f4ef895c6cdc54"
+      "bytes": 8019,
+      "sha256": "8f41efdabaa426cf7907d65be19a6ab94158e5302c174dc44d706f594643d244"
     },
     {
       "file": "product/purchasing/matrix/hand-assembly-shopping.csv",
-      "bytes": 5622,
-      "sha256": "32893fa22a2e2ca73e0d9002212a31323da77fb184a50c773d98bd22d9ee30f6"
+      "bytes": 5912,
+      "sha256": "c19c8a54a0b6bb4d324b3cd9af1aa3f1396a8f3946ba9629af4594c3bc04bb37"
     },
     {
       "file": "product/purchasing/matrix/hand-assembly-shopping.json",
-      "bytes": 16107,
-      "sha256": "16656c94fb369eb305cb9863bba43736bb3a3f36202da03ac4ecd8a6b207c2f5"
+      "bytes": 16589,
+      "sha256": "a26b408f2f1e1024b2296e31994fb505e1095c84f0616fb13d1fac7426bd2cf2"
     },
     {
       "file": "product/purchasing/matrix/hand-soldering-tools.csv",
@@ -972,8 +1071,8 @@
     },
     {
       "file": "product/purchasing/matrix/procurement-record.json",
-      "bytes": 1716,
-      "sha256": "4f475026234a9441d8bf1dd836bfd7f87dd5b287c0e1588a3ca11b6d07f5cbdc"
+      "bytes": 2181,
+      "sha256": "801d6a22c11a2133ff1f5a77d1bc687a6b2983f47b2d0fc6f716ae4b970ad5f8"
     },
     {
       "file": "product/references/eda-keypad-reference.md",

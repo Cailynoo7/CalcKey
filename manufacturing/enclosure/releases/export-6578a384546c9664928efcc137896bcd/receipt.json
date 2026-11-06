@@ -1,0 +1,199 @@
+{
+  "designId": "enclosure",
+  "revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
+  "schemaVersion": 3,
+  "exportId": "export-6578a384546c9664928efcc137896bcd",
+  "generatedAt": "2026-11-06T09:14:35.887Z",
+  "designSha256": "50a5be028e4ae65041683880c29842146cf91a6e331104d535e87769a56799c3",
+  "role": "enclosure",
+  "stateHash": "fe97a203b0c3c64d8fb4b3af1f9df86a7cb2ccea24bc465978e1655cee6a70f5",
+  "stateManifest": {
+    "schemaVersion": 4,
+    "designId": "enclosure",
+    "role": "enclosure",
+    "design": {
+      "revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
+      "designSha256": "4d6074f50a33f4623d7807fc590d80af31ceb1168475b587e3b08f8c822f098a",
+      "manifestSha256": "360277513bac6ac0ba0ab981d21f8bc5fceeb115f4fa9fe5d4a9938652c965c2",
+      "modelSha256": "91f4b83f5b7aef3c5821d4e14be91de20c2c7f44df0cea81fd598eeb65caa34b",
+      "pcbReleases": []
+    },
+    "brief": {
+      "path": "design/enclosure/README.md",
+      "sha256": "322b42a623848d59c955dbd592a9d1fb227afcc3e111bada52404abad4375c37"
+    },
+    "requirement": {
+      "artifactContractPath": "product/contract.json",
+      "artifactContractSha256": "0a4da2a0e9d43dd3ecf3b6987f5757bcf01b62c65e92c79f7c7d1346343f2377",
+      "designRequirementSha256": "453c945873ea7d3416ac548770783f73ba4809d2dcb69180556cf8fb3245d295",
+      "inputs": [
+        {
+          "role": "external-reference",
+          "id": "eda_keypad_reference",
+          "path": "product/references/eda-keypad-reference.md",
+          "sha256": "b8cd4fbaa0bc6f121dbcb44a9cd4fb4c2b517f6be6b705526c6a0b9c57134fa4",
+          "sizeBytes": 670
+        },
+        {
+          "role": "external-reference",
+          "id": "gateron_ks9_vendor",
+          "path": "product/references/gateron-ks9/KS-9 Switch KS-9H10B045NN-X14-FB.stp",
+          "sha256": "29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d",
+          "sizeBytes": 1080795
+        },
+        {
+          "role": "external-reference",
+          "id": "gdm0103_vendor",
+          "path": "product/references/gdm0103-specification.pdf",
+          "sha256": "5a99da5743955683150a6527b8757073570189a4aa4ce2f4131a8d0baec73ba8",
+          "sizeBytes": 3582964
+        },
+        {
+          "role": "external-reference",
+          "id": "pico2_vendor",
+          "path": "product/references/rp-008299-ds.pdf",
+          "sha256": "cbcfaf881018c686495a2e53c7bd281e7e0a8217d79447d73eda7c8f74b7f675",
+          "sizeBytes": 3016817
+        }
+      ]
+    },
+    "delivery": {
+      "target": "manufacturing_handoff",
+      "formats": [
+        "step"
+      ]
+    },
+    "stateHash": "fe97a203b0c3c64d8fb4b3af1f9df86a7cb2ccea24bc465978e1655cee6a70f5"
+  },
+  "buildArtifacts": {
+    "manifestSha256": "360277513bac6ac0ba0ab981d21f8bc5fceeb115f4fa9fe5d4a9938652c965c2",
+    "modelSha256": "91f4b83f5b7aef3c5821d4e14be91de20c2c7f44df0cea81fd598eeb65caa34b"
+  },
+  "exportAlgorithm": {
+    "version": 1,
+    "bootstrapSha256": "73e2a6d20ca2ee605997d4e1a375b8831f0b363e3d66e5778b9738224ab9bcea"
+  },
+  "sourceHashes": {
+    "base/base": "4534e32ee22bd24cad115f68e5404f09dea25c5c84fb03ca5bb4aa91c9c1a4ce",
+    "hardware/hardware": "8abca34cb28e4c4e9616c841ccf205cec120484fc8a4242d9bd71e81e96ec6f2",
+    "hinge_axle_left/hinge_axle_left": "40c2aa0ed12c6b766b926f69644b40ae34728d58b0d7cd90677b0294124c080f",
+    "hinge_axle_right/hinge_axle_right": "27ab835acf24d0a1e28f16fa85c865c4df381263b8eed2c0d23f42de5e0168bf",
+    "hinge_cap_left/hinge_cap_left": "7616f169b66d7bc4b8244e49c19ae7e02c285f130dd10bc77ac89fccf9288a82",
+    "hinge_cap_right/hinge_cap_right": "ced4fdb435ede99efbad2a773f478fe8bd08934590c6cda268668e59afac17aa",
+    "imports/matrix_pcb": "44a3cb596ccdd750e4544de45d79a6652de5648e51902e4d0185632b4d2dfd1e",
+    "imports/pico2": "9f34e292f3e513037c32443077ed19b99ebc716af683cd28143be019d41a1164",
+    "keycap_02/keycap_02": "f31c4e7f49dcd55fdb0d43e80ef00126c27e9d111211f536b65e4177095a02d0",
+    "keycap_03/keycap_03": "b100d70a1659cbd99a4d5affeda0b10d1aaeede3c302a1d14745d006b86d803d",
+    "keycap_04/keycap_04": "bc2372cc68c13817aab70a41ce7ec972071cfd7d0102f08747c73b8d0c5cb211",
+    "keycap_05/keycap_05": "bae8b312bcd7d5eb92eadf090232e9d0b8e3e8e64e33ea8265e794a7139cf867",
+    "keycap_06/keycap_06": "52f2e634fa50df55715363ab170dba352d9cf0f7f305628258ccd8b2c7468002",
+    "keycap_07/keycap_07": "6d96b90a0c9f2b76b3fa865da88b2759f520e18d885e3ecd7273c85d7f367990",
+    "keycap_08/keycap_08": "43f056e4312e2c195035f2abd52530d48a2c669386cc5b856b81d9c07b9aa1ba",
+    "keycap_09/keycap_09": "ad09dc592efecf85d35cf9e7ea18260782a2187aabf8c16021a6f25e10c91598",
+    "keycap_10/keycap_10": "dccc012e781e064af02b80319374da8c6be78d8ceca1f5740dfdfa200e49a782",
+    "keycap_11/keycap_11": "4b1da42321c82a0439eeceffdebe97d03803de22d04e48bcb4248fff7412cf43",
+    "keycap_12/keycap_12": "e3d2253b831e70755bd57dd72dd3639eb15996ce13aa4ec79d8cd8a0efcba1d5",
+    "keycap_13/keycap_13": "e5fb52890153b10ed90ce0f5f55112796ca4ad510166e7053434b8c15d0d96ac",
+    "keycap_14/keycap_14": "51b4ad12d242e7aa0d469691b3a364d240ec7f0abb75ae4ffd2d3a74684e9853",
+    "keycap_15/keycap_15": "b4fb141c3824aa8b5936a25a15bebe0b0bf0a80e25cea284d41bda11b6eee4d1",
+    "keycap_16/keycap_16": "d60721b2802ecd494ae2549f4d44d4f2677ff60dc85b0ae081242d38c3080ad7",
+    "keycap_17/keycap_17": "8e7e53ebe8daf6e853c51ffc91add0dbed16b41cad0e03e2ad5d2fa23ba748e2",
+    "keycap_18/keycap_18": "cfb6dffa88bff29519d54193954b60eca32d20e8ea87dc041f425213f9818752",
+    "keycap_19/keycap_19": "a7ee8627074bb956e5320c6e9cfbdfd539a2ba58932a8e37abf5ae6b41a69ea8",
+    "keycap_20/keycap_20": "dfdc2d40f7d27f8a6272621d5cd71f6bba9fa1ef2822357a349d533d7117eee6",
+    "keycaps/keycaps": "743479890b23be5cdcf79dfc0cdffe5e9c22be94b2aba7d81f357ec2578aef89",
+    "rear_foot_left/rear_foot_left": "66104a09850759b66d5a40acebbfe3a57d8b669f4d2f21704585a00d1a86763d",
+    "rear_foot_right/rear_foot_right": "b741e17896928fb86d392403eaf9e577b2a54c6476a554d05bcaa92e998c8863",
+    "screen_lens/screen_lens": "fa8278a96e401a9f046e9998631fded0b95af6c325dc5ecbb9f73f513fa4a3eb",
+    "top/top": "6409411a5793ae942ac02e6b4d85925061a5ee4e07807d8f152979039fb96864"
+  },
+  "assetHashes": {
+    "matrix_pcb": "e2474c585d2693bb16227489b4c195a5ffbfa208a89e1ee4a6da6b9e6b1f5ef2",
+    "pico2": "d49ada10d893cfcb07cb4abced0a0a0cadca4c4150f153d874268ca06171a24f"
+  },
+  "shapeHashes": {
+    "base": "85eecebb749f060a9eec5642c9fa709a35d5b5d0405e2ece79d1b4c43c812bcd",
+    "hinge_axle_left": "65f0189a5e1df94ec70a281c0cc18586f5cf03adba6e091c5ab8c1585570e74d",
+    "hinge_axle_right": "0ce2dd5a1fe4f59b38c62a742b456764de1988a40138d9503e2c41d45d1592df",
+    "hinge_cap_left": "c01a2228fca934d02970ed5a44a45e3a2fd42501dee9cfca7b631a61021155db",
+    "hinge_cap_right": "2ce0e3c06d900b4bb096e3fffaf5da28a3b1c637e0989ca4825ab02a0ddb1a50",
+    "key_01": "50204e98d0f0bb9a79705c9404445231b4240e415d04647b615612dbcc48a8b7",
+    "key_02": "88f6cca3a98d9fde97e011d82cbc96b6ad9ed24745aa6838a09f6012f7d61cca",
+    "key_03": "6845eee5cf31762e90b123f62fb53d9b41567863e049bbde6dc6a2c8d8060467",
+    "key_04": "485e98b0b8f86bad936d0d695f80316505787b6ca84a733d5641fc9e2747b711",
+    "key_05": "de771d51503154f17263234df1d6f773d3383d62354171bfa2ffd6aa9b06f6b7",
+    "key_06": "c68d7316cb8fb84806df9f2cb6f6555f4cca81bd072c01aff9277098b9486b2a",
+    "key_07": "40fc9bcfeab2f16612a17cbb7f8b3e58f494a18200471b8ff3ad80a0ac2d036e",
+    "key_08": "53c02340d0038937949aec224524e3d19dbe588244f367437a36809998d42929",
+    "key_09": "2152dd8f42692e8d2328b708369ad5beac59ec1fde3f5ad1c8fa003c5b24d167",
+    "key_10": "07ae845e7ed9ad7c42e20d2d23b5fdb6720b6688fb77afe26ffe448d150c0ffa",
+    "key_11": "b1c78f60deab646304f8480e2d2267c713e89f205da28919ccbfd333505cc2a5",
+    "key_12": "0f038ca583cbed42b9dae0fef07e5f93c1881e8e59b4111dfe1853722a380b7e",
+    "key_13": "21e51cb28359aa9d7296874e543541a91a31798efda1acad3098e213fe5cca6e",
+    "key_14": "810ee6536c0f366b43c626baef498f3a0f5ce9da6b3a34ed2b493ee50da87cba",
+    "key_15": "8f4b12d11d2db39e992148d3f418a311239b5ed4e73387de500e5839bcc61bbe",
+    "key_16": "0cab678c09bbd88d25a39632603b0fcaab624b8b592e59268a03577ee12e2dee",
+    "key_17": "b3622acb8f061ac1cd74c6d1e91fc56607c801e36b64086c151459ad524a49e0",
+    "key_18": "5106bf74519f46133493cb4776600901819325906f816fe55c6eb8fee1da6fc4",
+    "key_19": "1ed5ff93c622c6656239f97430524182d909f62774be6d10b8bff0ab101fa371",
+    "key_20": "0675dbc17bb19540d388ded50758ecf571219759dde6a3bd0d9156b3e48ef075",
+    "matrix_pcb": "663b350774697a0a372abf29141cd9fdb6feca92c96b7a9365ad9ee7dddcddb1",
+    "pico2": "6961e1d319940ab51b8707b697ab4f76192cc345b18893eb9ed480cc62abc42a",
+    "rear_foot_left": "e526afc9593fa3ce4982e4c34ad69907f18cd0c78c712efa0fea26a18d12ec0d",
+    "rear_foot_right": "6434b8f879b24a193d461dee23d5059efa858f2eecd9052ddccda64ebdeee9c1",
+    "screen_lens": "e179e1dbd0df7e3c766f3e15592342745a778690ee7ac49bbd85b8b031db8a37",
+    "screws": "f5421fc6f55fb5099b6d53d183020d6a4c90add908c3635f90b5bbad069bb515",
+    "top": "71f60600ad8ac6ac85c0fa4863f12dd9714371fb4b484bd46a81053ae89ceb33"
+  },
+  "runtime": {
+    "manifestHash": "89fbd67628fc4aa1a6f5d4ca88257e7c32f414feb41d8a69ebbe972ad7b600a6",
+    "pythonVersion": "3.12.13",
+    "build123dVersion": "0.10.0",
+    "ocpVersion": "7.8.1.1.post1",
+    "cadpyHash": "d5e9f5168ad46e1ecf2fc58e659e9bb49f508a73b0e43b6d4d70331eb4232b74"
+  },
+  "artifacts": [
+    {
+      "path": "manufacturing/enclosure/releases/export-6578a384546c9664928efcc137896bcd/model.step",
+      "role": "model/step",
+      "sha256": "2ed308e4af22be754961ced6498c88baff8cd9457007e27f461ae12d222934bc",
+      "sizeBytes": 58956675
+    }
+  ],
+  "interference": {
+    "summary": "1 interfering pair",
+    "counts": {
+      "objects": 32,
+      "pairs": 496,
+      "exact": 34,
+      "mesh": 23,
+      "cached": 0,
+      "interference": 1,
+      "undeclared": 0,
+      "over_budget": 0,
+      "undetermined": 0
+    },
+    "overlaps": [
+      {
+        "a": "matrix_pcb",
+        "b": "top",
+        "verdict": "declared",
+        "kind": "compliant",
+        "reason": "Released matrix assembly contains the 20 original KS-9 locator ribs; original per-switch depth 0.1374 mm, physical retention remains untested",
+        "maxDepthMm": 0.1374,
+        "volumeMm3": 3.187261,
+        "budgetMm": 0.16
+      }
+    ]
+  },
+  "authority": {
+    "version": 1,
+    "algorithm": "hmac-sha256",
+    "keyId": "fd030f31395bfd9affa2deffb8feedf2",
+    "projectId": "ea194205-8bce-4fe7-ae6f-aecccc1a553c",
+    "receiptPath": "manufacturing/enclosure/releases/export-6578a384546c9664928efcc137896bcd/receipt.json",
+    "payloadSha256": "3299c87338c126becea4097da6ad373bb567044baf8ecf8536d7baa8762e3ecb",
+    "mac": "3ed60a2b7c7c9a21f5689ceddfadf29b3d46c832f7dec789015a6de03837ea13"
+  },
+  "status": "handoff"
+}

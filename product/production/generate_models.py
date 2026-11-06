@@ -6,6 +6,7 @@ CAD cells, changes no CAD geometry and never slices or contacts a printer.
 from pathlib import Path
 import argparse,csv,hashlib,json,struct,gc
 from collections import Counter
+from export_compatibility import same_shape
 from build123d import import_step,export_stl,Location,Rot,Pos
 
 ROOT=Path(__file__).resolve().parents[2]
@@ -40,7 +41,9 @@ def remove_exact_zero_area(p):
  return removed
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('receipt')
- ap.add_argument('--keycaps-only',action='store_true',help='Regenerate 20 caps; reuse 8 other meshes only after exact shape/placement/hash checks')
+ modes=ap.add_mutually_exclusive_group()
+ modes.add_argument('--keycaps-only',action='store_true',help='Regenerate 20 caps; verify and reuse the historical 8 mechanisms')
+ modes.add_argument('--case-only',action='store_true',help='Regenerate base/top; verify and reuse 26 meshes against the saved pre-harness export')
  args=ap.parse_args()
  receipt_path=(ROOT/args.receipt).resolve();r=json.loads(receipt_path.read_text())
  assert r['designId']=='enclosure'
@@ -52,14 +55,19 @@ def main():
    key=t['id']+'/'+c['id']
    assert sha(ROOT/c['path'])==r['sourceHashes'][key],key
  transforms={o['id']:o['transform'] for o in design['objects']}
- previous=json.loads((OUT/'history/matrix-before-keycap-model-manifest.json').read_text()) if args.keycaps_only else None
- prior_receipt=json.loads((ROOT/previous['source_receipt']).read_text()) if previous else None
- prior_transforms=json.loads((OUT/'mesh-reuse-evidence.json').read_text())['original_printed_transforms'] if previous else {}
+ baseline_path='product/production/history/before-harness-model-manifest.json' if args.case_only else 'product/production/history/matrix-before-keycap-model-manifest.json'
+ baseline_receipt='product/production/history/before-harness-cad-receipt.json' if args.case_only else None
+ previous=json.loads((ROOT/baseline_path).read_text()) if args.keycaps_only or args.case_only else None
+ baseline_receipt=baseline_receipt or (previous['source_receipt'] if previous else None)
+ prior_receipt=json.loads((ROOT/baseline_receipt).read_text()) if previous else None
+ prior_transforms=({m['object_id']:m['object_transform'] for m in previous['meshes']} if args.case_only else
+                   json.loads((OUT/'mesh-reuse-evidence.json').read_text())['original_printed_transforms']) if previous else {}
  previous_rows={m['object_id']:m for m in previous['meshes']} if previous else {}
  printed=['base','top','rear_foot_left','rear_foot_right','hinge_axle_left',
           'hinge_axle_right','hinge_cap_left','hinge_cap_right']
  printed += ['key_%02d'%i for i in range(1,21)]
  assert len(printed)==28 and len(set(printed))==28
+ regenerate={n for n in printed if n in {'base','top'}} if args.case_only else {n for n in printed if n.startswith('key_')} if args.keycaps_only else set(printed)
  models=OUT/'models';models.mkdir(parents=True,exist_ok=True);rows=[]
  cache_path=ROOT/'.work/production-mesh-cache.json'
  cache_key=sha(Path(__file__))+'-'+a['sha256']+'-'+sha(ROOT/'design/enclosure/source/design.json')
@@ -76,8 +84,7 @@ def main():
   cache={'key':cache_key,'entries':retained}
  valid_cached={name for name,row in cache['entries'].items()
                if (ROOT/row['file']).exists() and sha(ROOT/row['file'])==row['sha256']}
- needed={name for name in printed if not (args.keycaps_only and not name.startswith('key_'))
-         and name not in valid_cached}
+ needed=regenerate-valid_cached
  objects={}
  if needed:
   assembly=import_step(step)
@@ -90,14 +97,17 @@ def main():
   gc.collect()
   assert objects.keys()==needed
  for name in printed:
-  if args.keycaps_only and not name.startswith('key_'):
+  if name not in regenerate:
    old=previous_rows[name]
-   assert r['shapeHashes'][name]==prior_receipt['shapeHashes'][name],name+' shape changed'
+   assert same_shape(r['shapeHashes'][name],prior_receipt['shapeHashes'][name],name),name+' shape changed'
    assert transforms[name]==prior_transforms[name],name+' placement changed'
    assert sha(ROOT/old['file'])==old['sha256'],name+' mesh changed'
+   checked=validate_stl(ROOT/old['file'])
+   assert checked['non_two_incidence_edges_at_1e5mm']==checked['collapsed_triangles_at_1e5mm']==0
    row=dict(old,shape_sha256=r['shapeHashes'][name],object_transform=transforms[name],
-            derivation={'method':'reuse_unchanged_shape','receipt':previous['source_receipt'],
-                        'mesh_manifest':'product/production/history/matrix-before-keycap-model-manifest.json'})
+            derivation={'method':'reuse_unchanged_shape','receipt':baseline_receipt,
+                        'mesh_manifest':baseline_path,'source_mesh_sha256':old['sha256'],
+                        'original_derivation':old['derivation']})
    rows.append(row);print(name,'unchanged shape, placement and mesh verified',flush=True);continue
   dest=models/(name+'.stl')
   cached=cache['entries'].get(name)
@@ -110,7 +120,8 @@ def main():
   elif name.startswith('hinge_cap_') or name.startswith('rear_foot_'):rotation=(0,90,0)
   else:rotation=(0,0,0)
   part=Rot(*rotation)*local;bb=part.bounding_box()
-  part=Pos(-(bb.min.X+bb.max.X)/2,-(bb.min.Y+bb.max.Y)/2,-bb.min.Z)*part
+  print_translation=[-(bb.min.X+bb.max.X)/2,-(bb.min.Y+bb.max.Y)/2,-bb.min.Z]
+  part=Pos(*print_translation)*part
   assert part.is_valid and len(part.solids())==1,name
   if name.startswith('key_'):
    assert all(abs(v-target)<1e-4 for v,target in zip(part.bounding_box().size,(18.2,18.2,7)))
@@ -135,6 +146,7 @@ def main():
        'nozzle_mm':0.2 if name.startswith('key_') else 0.4,
        'layer_mm':0.1 if name.startswith('key_') else 0.15,
        'local_print_rotation_deg':list(rotation),'units':'mm','scale_percent':100,
+       'local_print_translation_mm':print_translation,
        'bbox_mm':list(part.bounding_box().size),'min_z_mm':part.bounding_box().min.Z,
        'tolerance_mm':tolerance,'tessellation_attempts':attempts,
        'exact_zero_area_facets_removed':zero_area_removed,
@@ -155,7 +167,7 @@ def main():
            'printer_started':False,'sliced':False}
  manifest['current_binding']={'receipt':str(receipt_path.relative_to(ROOT)),'revision':r['revision'],
           'export_id':r['exportId'],'step_sha256':a['sha256'],
-          'method':'20 caps tessellated from current STEP; 8 unchanged meshes verified by shape, transform and bytes' if args.keycaps_only else 'all parts tessellated from current STEP'}
+          'method':'base/top tessellated from current STEP; 26 unchanged meshes verified by shape, transform and bytes' if args.case_only else '20 caps tessellated from current STEP; 8 unchanged meshes verified by shape, transform and bytes' if args.keycaps_only else 'all parts tessellated from current STEP'}
  (OUT/'model-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
  with (OUT/'print-plan.csv').open('w',encoding='utf-8-sig',newline='') as f:
   fields=['object_id','file','quantity','material','nozzle_mm','layer_mm','units','scale_percent']

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "units": "mm",
-  "coordinateFrame": "replicator-world-z-up",
+  "coordinateFrame": "makit-world-z-up",
   "targets": [
     {
       "id": "imports",
@@ -506,37 +506,11 @@
   ],
   "objects": [
     {
-      "id": "matrix_pcb",
-      "target": "imports",
-      "label": "Matrix PCB with 20 KS-9 switches",
-      "kind": "imported",
-      "shapeHash": "847fdb2bce480dfbff18317d2d362377fb79495e5217c944faba2c2a2476b8b0",
-      "transform": {
-        "positionMm": [
-          -100,
-          84.78566631806075,
-          26.82850930613121
-        ],
-        "rotationDeg": [
-          4,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
       "id": "pico2",
       "target": "imports",
       "label": "Pico 2 reference",
       "kind": "imported",
-      "shapeHash": "a8d533438f83154dda464653adf342b827c2579e1f8f311f5a5252468c32505f",
+      "shapeHash": "6961e1d319940ab51b8707b697ab4f76192cc345b18893eb9ed480cc62abc42a",
       "transform": {
         "positionMm": [
           16.4,
@@ -558,12 +532,38 @@
       "datums": []
     },
     {
+      "id": "matrix_pcb",
+      "target": "imports",
+      "label": "Matrix PCB with 20 KS-9 switches",
+      "kind": "imported",
+      "shapeHash": "663b350774697a0a372abf29141cd9fdb6feca92c96b7a9365ad9ee7dddcddb1",
+      "transform": {
+        "positionMm": [
+          -100,
+          84.78566631806075,
+          26.82850930613121
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
       "id": "base",
       "target": "base",
       "label": "Bottom service cover",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "4589b3f4cbe5c84199eebcf865822ec6c600826b8bc9f47958710446339e1a03",
+      "shapeHash": "85eecebb749f060a9eec5642c9fa709a35d5b5d0405e2ece79d1b4c43c812bcd",
       "transform": {
         "positionMm": [
           0,
@@ -590,7 +590,7 @@
       "label": "Main key housing",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "ae21ea5489e84dbc5671d66cdd887911d4cba08f70db9fdf40e7bf3766c20d93",
+      "shapeHash": "71f60600ad8ac6ac85c0fa4863f12dd9714371fb4b484bd46a81053ae89ceb33",
       "transform": {
         "positionMm": [
           0,
@@ -618,7 +618,7 @@
       "material": "stainless_steel",
       "role": "fastener",
       "kind": "generated",
-      "shapeHash": "5a50e1884c93c89e9477fb1bcd86c37ccea3dfbe06f6016835cff481bd64325f",
+      "shapeHash": "f5421fc6f55fb5099b6d53d183020d6a4c90add908c3635f90b5bbad069bb515",
       "transform": {
         "positionMm": [
           0,
@@ -646,7 +646,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "8ad574ace1704147f6d040a5500686c3e7c83135687ce7f11e51b217817b42a8",
+      "shapeHash": "50204e98d0f0bb9a79705c9404445231b4240e415d04647b615612dbcc48a8b7",
       "transform": {
         "positionMm": [
           -28.525000000172298,
@@ -673,7 +673,7 @@
       "label": "Acrylic display lens",
       "material": "acrylic",
       "kind": "generated",
-      "shapeHash": "3be155ac7309c590f4c02a0520358d499f2e68889cc7a4edac415f03ff87e254",
+      "shapeHash": "e179e1dbd0df7e3c766f3e15592342745a778690ee7ac49bbd85b8b031db8a37",
       "transform": {
         "positionMm": [
           0,
@@ -700,7 +700,7 @@
       "label": "Left folding foot",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "c557b2242c33c0f90f24c29e4bfcbeb8c9dc220b2bd340356f90104ee4a24a9c",
+      "shapeHash": "e526afc9593fa3ce4982e4c34ad69907f18cd0c78c712efa0fea26a18d12ec0d",
       "transform": {
         "positionMm": [
           -29.5,
@@ -727,7 +727,7 @@
       "label": "Right folding foot",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "998e548d018ff631d26c243a14934b22e9ac004e35f5762de450dd1df24c84a6",
+      "shapeHash": "6434b8f879b24a193d461dee23d5059efa858f2eecd9052ddccda64ebdeee9c1",
       "transform": {
         "positionMm": [
           29.5,
@@ -754,7 +754,7 @@
       "label": "Left hinge axle",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "8591dad3e53ed4b5ddd45c4e5d61fdaa6e5ce71431696be425b7d8e97dfc2b85",
+      "shapeHash": "65f0189a5e1df94ec70a281c0cc18586f5cf03adba6e091c5ab8c1585570e74d",
       "transform": {
         "positionMm": [
           -29.5,
@@ -781,7 +781,7 @@
       "label": "Right hinge axle",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "bed273cb651f37ccb4419ae4e35895a93909f78851f92565d9b2bf3550180762",
+      "shapeHash": "0ce2dd5a1fe4f59b38c62a742b456764de1988a40138d9503e2c41d45d1592df",
       "transform": {
         "positionMm": [
           29.5,
@@ -808,7 +808,7 @@
       "label": "Left axle end cap",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "c9689b55a0185e5eab352ebadf67ea31be24a5af43fd512c78e3782c20735d73",
+      "shapeHash": "c01a2228fca934d02970ed5a44a45e3a2fd42501dee9cfca7b631a61021155db",
       "transform": {
         "positionMm": [
           -29.5,
@@ -835,7 +835,7 @@
       "label": "Right axle end cap",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "cdb36b3a082f1b687b76db1281a6fa999959da810d6921760e18cd77d190c776",
+      "shapeHash": "2ce0e3c06d900b4bb096e3fffaf5da28a3b1c637e0989ca4825ab02a0ddb1a50",
       "transform": {
         "positionMm": [
           29.5,
@@ -863,7 +863,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "93af95f3db59dedd437978b7221a3873a4a4f42556462be6c47568a107b8747f",
+      "shapeHash": "88f6cca3a98d9fde97e011d82cbc96b6ad9ed24745aa6838a09f6012f7d61cca",
       "transform": {
         "positionMm": [
           -9.4750000001723,
@@ -891,7 +891,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "b8a1a5dad4805df8e0e26188be94fdbc41ac7df70d3dc6bd92b5b7f910dc7dd8",
+      "shapeHash": "6845eee5cf31762e90b123f62fb53d9b41567863e049bbde6dc6a2c8d8060467",
       "transform": {
         "positionMm": [
           9.574999999827702,
@@ -919,7 +919,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "be58ecd0c016793b741b55694fb4a95199fe719e8dbef61efec50549cd6bcc21",
+      "shapeHash": "485e98b0b8f86bad936d0d695f80316505787b6ca84a733d5641fc9e2747b711",
       "transform": {
         "positionMm": [
           28.624999999827708,
@@ -947,7 +947,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "3afc49131a66da63436fabc9f6bfba2e128702def4f3fe43f095512278574768",
+      "shapeHash": "de771d51503154f17263234df1d6f773d3383d62354171bfa2ffd6aa9b06f6b7",
       "transform": {
         "positionMm": [
           -28.525000000172298,
@@ -975,7 +975,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "1a59f7456b5a2afcc673a00b1a549f64c8cde77ce7111637d62240f379c6faf5",
+      "shapeHash": "c68d7316cb8fb84806df9f2cb6f6555f4cca81bd072c01aff9277098b9486b2a",
       "transform": {
         "positionMm": [
           -9.4750000001723,
@@ -1003,7 +1003,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "ee588a4bde07793a7c6f4934be01466fe91c1e348f52c63cb9b4fc2b746dadb6",
+      "shapeHash": "40fc9bcfeab2f16612a17cbb7f8b3e58f494a18200471b8ff3ad80a0ac2d036e",
       "transform": {
         "positionMm": [
           9.574999999827702,
@@ -1031,7 +1031,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "b7e75eda6c7c3be1e399b21fc6155900eb99c75cb07a1308453a4737527f7a5c",
+      "shapeHash": "53c02340d0038937949aec224524e3d19dbe588244f367437a36809998d42929",
       "transform": {
         "positionMm": [
           28.624999999827708,
@@ -1059,7 +1059,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "5e9b5e8c697ce36c1c94cfc50f64acd68487a6e04392226fb3255adfd5fdf6c9",
+      "shapeHash": "2152dd8f42692e8d2328b708369ad5beac59ec1fde3f5ad1c8fa003c5b24d167",
       "transform": {
         "positionMm": [
           -28.525000000172298,
@@ -1087,7 +1087,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "845d73c27eab44cc9cb37f2653293872f4429a5179598bba797eed03c13ffa74",
+      "shapeHash": "07ae845e7ed9ad7c42e20d2d23b5fdb6720b6688fb77afe26ffe448d150c0ffa",
       "transform": {
         "positionMm": [
           -9.4750000001723,
@@ -1115,7 +1115,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "77259274a4020818d1ae35b373bc4b8e5b0bc59cf8d741e130d9d21f31dde469",
+      "shapeHash": "b1c78f60deab646304f8480e2d2267c713e89f205da28919ccbfd333505cc2a5",
       "transform": {
         "positionMm": [
           9.574999999827702,
@@ -1143,7 +1143,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "cca7c3e94e95ecf52f30d8eac162c636af56092fa22caee0bf64b26487a6ab11",
+      "shapeHash": "0f038ca583cbed42b9dae0fef07e5f93c1881e8e59b4111dfe1853722a380b7e",
       "transform": {
         "positionMm": [
           28.624999999827708,
@@ -1171,7 +1171,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "cbf8fbf4f26c7315f546bae98f433837a618fffcdaf64b3710f60603894a9bab",
+      "shapeHash": "21e51cb28359aa9d7296874e543541a91a31798efda1acad3098e213fe5cca6e",
       "transform": {
         "positionMm": [
           -28.525000000172298,
@@ -1199,7 +1199,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "afb28d0c7b631a4c49de6d7f627b92a38a6666cde7273cc9e7a2945847d64d95",
+      "shapeHash": "810ee6536c0f366b43c626baef498f3a0f5ce9da6b3a34ed2b493ee50da87cba",
       "transform": {
         "positionMm": [
           -9.4750000001723,
@@ -1227,7 +1227,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "612e38bc306ad523d6e8b1c43bfc7fa596c83a1314a7e000dfa97d40f2242746",
+      "shapeHash": "8f4b12d11d2db39e992148d3f418a311239b5ed4e73387de500e5839bcc61bbe",
       "transform": {
         "positionMm": [
           9.574999999827702,
@@ -1255,7 +1255,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "f5591d27bb6695b863466813764cc9e937f58893140ac7c791fc559933a9bfed",
+      "shapeHash": "0cab678c09bbd88d25a39632603b0fcaab624b8b592e59268a03577ee12e2dee",
       "transform": {
         "positionMm": [
           28.624999999827708,
@@ -1283,7 +1283,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "3f614f6bc61d754ee4e4f11bd26b1290fbac3a768d13cbca65227594cfefa4c3",
+      "shapeHash": "b3622acb8f061ac1cd74c6d1e91fc56607c801e36b64086c151459ad524a49e0",
       "transform": {
         "positionMm": [
           -28.525000000172298,
@@ -1311,7 +1311,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "5fc2a4ea1912cc94515f254125d3454fd7702f3141ba9c12bb5fde74705a99fe",
+      "shapeHash": "5106bf74519f46133493cb4776600901819325906f816fe55c6eb8fee1da6fc4",
       "transform": {
         "positionMm": [
           -9.4750000001723,
@@ -1339,7 +1339,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "5f6a102d798d946700e5515739989f892c6cb22263bb663447f60ae4f1eb3f54",
+      "shapeHash": "1ed5ff93c622c6656239f97430524182d909f62774be6d10b8bff0ab101fa371",
       "transform": {
         "positionMm": [
           9.574999999827702,
@@ -1367,7 +1367,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "40fb89bac91de9c5d06b4c0930b029f5bbaa159607e6e7df8be3d1b0bf93d930",
+      "shapeHash": "0675dbc17bb19540d388ded50758ecf571219759dde6a3bd0d9156b3e48ef075",
       "transform": {
         "positionMm": [
           28.624999999827708,
@@ -1423,7 +1423,7 @@
       "b": "top"
     }
   ],
-  "updatedAt": "2026-11-06T03:44:38.045Z",
+  "updatedAt": "2026-11-06T09:14:35.887Z",
   "parameters": {
     "imports": {},
     "base": {

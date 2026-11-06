@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "coordinateFrame": "replicator-world-z-up",
+  "coordinateFrame": "makit-world-z-up",
   "placements": {
     "keycap_fit": {
       "positionMm": [
