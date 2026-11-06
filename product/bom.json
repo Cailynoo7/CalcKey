@@ -214,7 +214,7 @@
       "manufacturer": "",
       "mpn": "26AWG-150mm-direct-solder-lead",
       "source": "default",
-      "description": "10根：5行、4列及3V3，焊到板背J1-J10并平铺至Pico；不安装直立排针。",
+      "description": "10根：5行、4列及3V3，J1-J10底面直焊；每根总长150mm，其中跨上下壳固定点间保留≥65mm自由段；不安装直立排针。",
       "selection_reason": "矩阵PCB替代逐键飞线，仅保留主控维护线束；焊点绝缘并固定线皮。",
       "procurement_status": "external_procurement_required",
       "part_identity": "fa8a8bb32efce22c",
@@ -449,8 +449,8 @@
       "name": "聚酰亚胺胶带，宽10mm、总厚不大于0.1mm，1卷",
       "quantity": 1,
       "source": "default",
-      "description": "固定已经绝缘的线束；折返余线分层铺在底盖左侧，束高不大于4.5mm。",
-      "selection_reason": "补齐底盖线束固定材料，减少维护下放时焊点承受的拉力。",
+      "description": "五座一体穿带桥包夹已绝缘线皮；默认5条10×65mm、搭接≥15mm；矩阵两组各5线松放于前左右区，LCD余线另放左侧；桥顶含胶带束高≤1.5mm。",
+      "selection_reason": "沿用原10mm绝缘胶带，通过圆角穿带孔固定线皮；跨上下壳保留≥65mm自由段，LCD只固定到底盖。",
       "supply_risk": "胶带仅固定线束；裸铜及二极管脚继续使用热缩绝缘，黏附力未实测。",
       "part_identity": "df3f619804a92fdb"
     },
@@ -484,7 +484,7 @@
       "name": "LCD引线：26AWG柔性绝缘线，5根低位直焊",
       "quantity": 5,
       "source": "default",
-      "description": "5根26AWG软线，每根默认150mm；GDM0103 P1-P5低位直焊至Pico，P6-P9分别绝缘不接，LCD不经过矩阵PCB。",
+      "description": "5根26AWG软线，每根总长150mm；GDM0103 P1-P5低位直焊至Pico并固定于底盖穿带桥，P6-P9分别绝缘；不跨主壳，不经过矩阵PCB。",
       "selection_reason": "屏幕保留既有GPIO和独立安装，不经过矩阵PCB。",
       "part_identity": "df3f619804a92fdb"
     }

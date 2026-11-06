@@ -29,6 +29,16 @@ lcd_seat_offset_y=param("lcd_seat_offset_y",8.0)
 lip_depth=param("bottom_alignment_depth",2.0)
 lip_gap=param("bottom_alignment_clearance",0.3)
 lip_wall=param("bottom_alignment_wall",1.4)
+tape_bridge_width=param("tape_bridge_width",16.0)
+tape_slot_width=param("tape_slot_width",10.6)
+tape_slot_height=param("tape_slot_height",2.0)
+tape_bridge_roof=param("tape_bridge_roof",1.6)
+tape_bridge_wall=param("tape_bridge_wall",2.0)
+tape_bridge_round=param("tape_bridge_round",0.4)
+matrix_keeper_y=param("matrix_keeper_y",-29.0)
+lcd_keeper_y=param("lcd_keeper_y",23.0)
+loop_keeper_x=param("loop_keeper_x",-26.0)
+loop_keeper_y=param("loop_keeper_y",2.0)
 h=part("rear_foot_left")
 oled_z=lcd_z # compatibility name; the current module is GDM0103
 PITCH=19.05 # exact CHERRY MX2A-L1NN data sheet
@@ -99,6 +109,23 @@ for xx in (-h.hinge_x,h.hinge_x):
     body+=Pos(xx,h.hinge_y,h.hinge_z)*h.make_stop()
     low_stop_z=h.thickness/2-0.1
     body+=Pos(xx,h.hinge_y-h.length/2-1.25,h.hinge_z+low_stop_z)*Box(h.width,2.0,-h.hinge_z-low_stop_z+0.1,align=(Align.CENTER,Align.CENTER,Align.MIN))
+# Integral tape bridges: 10 mm polyimide tape passes through the rounded tunnel.
+# They clamp insulation only; no purchased clamp, screw, PCB hole or flexible snap.
+tape_bridge_depth=tape_slot_width+2*tape_bridge_wall
+tape_bridge_height=tape_slot_height+tape_bridge_roof
+bridge_blank=Pos(0,0,-0.1)*Box(tape_bridge_width,tape_bridge_depth,tape_bridge_height+0.1,
+    align=(Align.CENTER,Align.CENTER,Align.MIN))
+bridge_top_edges=[e for e in bridge_blank.edges() if
+    abs(e.bounding_box().min.Z-tape_bridge_height)<1e-6 and
+    abs(e.bounding_box().max.Z-tape_bridge_height)<1e-6]
+bridge_blank=fillet(bridge_top_edges,tape_bridge_round)
+bridge_tunnel=Pos(-tape_bridge_width/2-1,0,tape_slot_height/2)*extrude(
+    Plane.YZ*RectangleRounded(tape_slot_width,tape_slot_height,tape_bridge_round),
+    tape_bridge_width+2)
+tape_bridge=bridge_blank-bridge_tunnel
+base_keeper_xy=[(0,matrix_keeper_y),(0,lcd_keeper_y),(loop_keeper_x,loop_keeper_y)]
+for xx,yy in base_keeper_xy:
+    body+=Pos(xx,yy,floor)*tape_bridge
 connection_inventory={r[0]:"printed-screw-joint-v1" for r in joint_records}
 connection_inventory.update({"bottom_alignment":"free: clearance tongue",
     "lens_to_top":"free: PSA perimeter","switch_to_plate":"free: MX clip lands",
@@ -109,7 +136,8 @@ connection_inventory.update({"rear_left_hinge":"free: printed pin clevis with 11
     "rear_right_hinge":"free: printed pin clevis with 110 degree hard stop",
     "left_pin_retention":"free: bonded blind cap on axle only",
     "right_pin_retention":"free: bonded blind cap on axle only"})
-assert len(joint_records)==6 and len(connection_inventory)==16
+connection_inventory.update({"harness_retention":"free: three integral rounded tape bridges; insulation only"})
+assert len(joint_records)==6 and len(connection_inventory)==17
 assert floor>=2 and wall>=2 and pico_z+PICO_SEAT_BOTTOM>floor
 assert body.is_valid and len(body.solids())==1
 for record in joint_records: print(record)

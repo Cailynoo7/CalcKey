@@ -1,5 +1,3 @@
-# cell: top
-# cell: top
 
 b=part("base")
 key_hole=param("key_hole_size",14.2)
@@ -14,6 +12,9 @@ bevel=param("outer_edge_bevel",0.4)
 engrave=param("front_engrave_depth",0.35)
 mark_h=param("front_mark_height",3.2)
 mark_z=param("front_mark_z",10.8)
+matrix_relief_x=param("matrix_relief_x",17.0)
+matrix_relief_y=param("matrix_relief_y",-55.7)
+matrix_relief_z=param("matrix_relief_z",5.2)
 panel=b.roof_blank
 outer=Pos(0,0,b.floor)*extrude(RectangleRounded(b.case_w,b.case_d,b.corner),b.base_h-b.floor+0.1)
 inner=Pos(0,0,b.floor-0.1)*extrude(RectangleRounded(b.case_w-2*b.wall,b.case_d-2*b.wall,b.corner-b.wall),b.base_h-b.floor+0.3)
@@ -39,6 +40,11 @@ panel-=Pos(0,-b.case_d/2+engrave,mark_z)*extrude(Plane.XZ*Text("CALC",mark_h,fon
 for xx in (-34,-30,27,31):
     slash=Polygon((xx-0.4,mark_z-3),(xx+0.4,mark_z-3),(xx+2.8,mark_z+3),(xx+2.0,mark_z+3),align=None)
     panel-=Pos(0,-b.case_d/2+engrave,0)*extrude(Plane.XZ*slash,engrave+0.15)
+# Two front-wall bridges hold J1-J5 and J6-J10 independently.
+# The root overlaps the front wall by 0.4 mm; lowest face clears the cover lip.
+matrix_relief_xy=[(-matrix_relief_x,matrix_relief_y),(matrix_relief_x,matrix_relief_y)]
+for xx,yy in matrix_relief_xy:
+    panel+=Pos(xx,yy,matrix_relief_z)*b.tape_bridge
 assert panel.is_valid and len(panel.solids())==1
 print("integral upper housing",b.case_w,b.case_d,"bottom opening at",b.floor)
 print("window",window_w,window_d,"PCB columns now on bottom cover")

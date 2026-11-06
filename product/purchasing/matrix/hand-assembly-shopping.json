@@ -3,7 +3,7 @@
   "pcb_release_id": "17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727",
   "devices": 1,
   "quantity_policy": "Installed quantities are per one device; spare buying quantities are defaults only. Existing conforming items may be reused.",
-  "source_bom_sha256": "076caa30eaedbfa50220f6725b06f4c300240a9f88c3c6ef819171018cabe222",
+  "source_bom_sha256": "082d557798668b949353446e8c36873c26d1a323d3ed54d627e5c00f8375a91d",
   "source_requirements_sha256": "eeb4210757032741d8e6a72ad7b16969b2ed32ae5ee72f4384d45e3d02f58229",
   "source_bom_rows": 28,
   "printed_parts": 28,
@@ -424,7 +424,7 @@
       "procurement_quantity_source": "default",
       "product_url": "",
       "image_url": "",
-      "notes": ""
+      "notes": "沿用1卷10mm宽、总厚≤0.1mm胶带；五座一体桥默认裁5条10×65mm，搭接≥15mm，只固定线皮。"
     },
     {
       "category": "矩阵板与焊装",

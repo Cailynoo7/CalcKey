@@ -24,5 +24,5 @@
 打印件（可复用）,hinge_cap_right,CalcKey 右销轴盲帽，PETG，FDM打印,CalcKey,enclosure:hinge_cap_right,,1,件,1,件,default,,,沿用已交付的同名打印件；不另做试片。
 整机辅件,hinge_retaining_adhesive,双组份环氧胶，少量，用于PETG销轴盲帽,,epoxy-PETG-axle-cap,,1,件,1,件,default,,,一小套；只胶销轴端与盲帽孔，不粘转动面。
 整机辅件,lcd_mount_tape,绝缘丙烯酸双面压敏胶片，0.15mm厚，2×4mm小片,,LCD-PCB-PSA-2x4-T0.15,,4,片,8,片,default,,,
-整机辅件,wire_retaining_tape,聚酰亚胺胶带，宽10mm、总厚不大于0.1mm，1卷,,,,1,卷,1,卷,default,,,
+整机辅件,wire_retaining_tape,聚酰亚胺胶带，宽10mm、总厚不大于0.1mm，1卷,,,,1,卷,1,卷,default,,,沿用1卷10mm宽、总厚≤0.1mm胶带；五座一体桥默认裁5条10×65mm，搭接≥15mm，只固定线皮。
 矩阵板与焊装,matrix_pcb_board,CalcKey矩阵PCB，73×96mm、1.6mm、双层FR4、1oz,Project CalcKey,CALCKEY-MATRIX-A,,1,片,5,片,default,,,5片裸板只组装1片；不采购贴片服务或钢网。

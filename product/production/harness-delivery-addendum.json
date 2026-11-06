@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-06",
+  "cad_export": {
+    "revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
+    "export_id": "export-e2512c886e3d86731c45e9d47af2c1ff",
+    "receipt": "manufacturing/enclosure/releases/export-e2512c886e3d86731c45e9d47af2c1ff/receipt.json",
+    "step_sha256": "6b862bdb6c360934ce3597fa4814218ba5fa4faf1901aa8d1a013aa055d351ec"
+  },
+  "mesh_and_zip": {
+    "note": "Existing meshes and ZIP predate the integral harness bridges; base and top must be refreshed from the new STEP.",
+    "revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029",
+    "export_id": "export-b41154b115ba9c61a396ed39b36889a5",
+    "incompatible_meshes": [
+      "base",
+      "top"
+    ],
+    "remaining_printed_shapes_unchanged": 26,
+    "requires_refresh": true
+  },
+  "pcb_release_id": "17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727",
+  "firmware_version": "0.2.0",
+  "printed": false,
+  "powered": false,
+  "flashed": false
+}

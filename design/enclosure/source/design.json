@@ -33,7 +33,7 @@
           "target": "base",
           "order": 0,
           "path": "design/enclosure/source/parts/base/000-base.py",
-          "sha256": "47334b4ed11264b41e3a0065cc785291d15bed35b717162ef5844eb23d5576aa"
+          "sha256": "4534e32ee22bd24cad115f68e5404f09dea25c5c84fb03ca5bb4aa91c9c1a4ce"
         }
       ],
       "dependencies": [
@@ -49,7 +49,7 @@
           "target": "top",
           "order": 0,
           "path": "design/enclosure/source/parts/top/000-top.py",
-          "sha256": "aae529cb89b5e9520e9a92c786b9b58d4e3604256fb81d458b4a12742203bbaa"
+          "sha256": "6409411a5793ae942ac02e6b4d85925061a5ee4e07807d8f152979039fb96864"
         }
       ],
       "dependencies": [
@@ -563,7 +563,7 @@
       "label": "Bottom service cover",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "5745969626bd301a144934ba36f8826f72890f2de7eaf7ac59b25eb075c1f0a9",
+      "shapeHash": "4589b3f4cbe5c84199eebcf865822ec6c600826b8bc9f47958710446339e1a03",
       "transform": {
         "positionMm": [
           0,
@@ -590,7 +590,7 @@
       "label": "Main key housing",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "f3bb29cef42aa9fdd7b46f1aa240b0bf3323c4f1d4a9c24373210fb8e4cc7f34",
+      "shapeHash": "ae21ea5489e84dbc5671d66cdd887911d4cba08f70db9fdf40e7bf3766c20d93",
       "transform": {
         "positionMm": [
           0,
@@ -1423,7 +1423,7 @@
       "b": "top"
     }
   ],
-  "updatedAt": "2026-11-06T02:48:15.382Z",
+  "updatedAt": "2026-11-06T03:44:38.045Z",
   "parameters": {
     "imports": {},
     "base": {
@@ -1456,7 +1456,17 @@
       "lcd_seat_depth": 4,
       "lcd_fence_thickness": 2,
       "lcd_edge_clearance": 0.3,
-      "lcd_seat_offset_y": 8
+      "lcd_seat_offset_y": 8,
+      "tape_bridge_width": 16,
+      "tape_slot_width": 10.6,
+      "tape_slot_height": 2,
+      "tape_bridge_roof": 1.6,
+      "tape_bridge_wall": 2,
+      "tape_bridge_round": 0.4,
+      "matrix_keeper_y": -29,
+      "lcd_keeper_y": 23,
+      "loop_keeper_x": -26,
+      "loop_keeper_y": 2
     },
     "top": {
       "key_hole_size": 14.2,
@@ -1470,7 +1480,10 @@
       "outer_edge_bevel": 0.4,
       "front_engrave_depth": 0.35,
       "front_mark_height": 3.2,
-      "front_mark_z": 10.8
+      "front_mark_z": 10.8,
+      "matrix_relief_x": 17,
+      "matrix_relief_y": -55.7,
+      "matrix_relief_z": 5.2
     },
     "hardware": {
       "hardware_reference_scale": 1,

@@ -18,7 +18,7 @@
   "files": [
     {
       "name": "README.md",
-      "sha256": "7e592949c2303f3b746df5cde94eb21db080abc15d11eaad92f4ef895c6cdc54"
+      "sha256": "38bea9baa57bce1f1d2be6bab6b868959ed00c3924c623be362e9de8d3674326"
     },
     {
       "name": "pcb-order-parameters.json",
@@ -30,11 +30,11 @@
     },
     {
       "name": "hand-assembly-shopping.json",
-      "sha256": "16656c94fb369eb305cb9863bba43736bb3a3f36202da03ac4ecd8a6b207c2f5"
+      "sha256": "91d5a5926d5711d3ead81b932fe851fd37ba740fc9ccd6790482383074918d2d"
     },
     {
       "name": "hand-assembly-shopping.csv",
-      "sha256": "32893fa22a2e2ca73e0d9002212a31323da77fb184a50c773d98bd22d9ee30f6"
+      "sha256": "348ce40f45c9aec73e8008c21475bbc512c2967831bfd530e30a53e4f826510a"
     },
     {
       "name": "hand-soldering-tools.csv",
@@ -49,5 +49,15 @@
     "paid": false,
     "flashed": false
   },
-  "keycap_cad_revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029"
+  "keycap_cad_revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029",
+  "harness_addendum": {
+    "verification": "product/harness-routing-verification.json",
+    "printed_meshes_to_refresh": [
+      "base",
+      "top"
+    ],
+    "purchase_quantities_unchanged": true,
+    "pcb_release_unchanged": true,
+    "source_bom_sha256": "082d557798668b949353446e8c36873c26d1a323d3ed54d627e5c00f8375a91d"
+  }
 }

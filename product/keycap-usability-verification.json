@@ -319,5 +319,12 @@
   "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc",
   "exported_state_hash": "acbcac01dc1d8a6dd90a4ecba1b32a13d494793a450fda1e414a8aa9517589f4",
   "measurement_original_export_id": "export-99d34de5e31c8f3114ead4cf76d7de58",
-  "mesh_feature_record": "product/production/mesh-feature-checks.json"
+  "mesh_feature_record": "product/production/mesh-feature-checks.json",
+  "current_case_check": {
+    "cad_revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
+    "cad_export_id": "export-e2512c886e3d86731c45e9d47af2c1ff",
+    "record": "product/harness-routing-verification.json",
+    "all_20_keycap_shape_hashes_unchanged": true,
+    "case_motion_rechecked": true
+  }
 }
