@@ -1,8 +1,10 @@
+# cell: keycap_07
 master=part("keycaps")
-legend_size=param("keycap_07_legend_size",3.1)
+legend_size=master.digit_legend_size
 legend_depth=param("keycap_07_legend_depth",0.35)
 assert master.cap_roof>legend_depth+0.8
-cap=master.cap_blank-Pos(0,0,master.cap_h-legend_depth)*extrude(Text("9",legend_size,font="Arial"),legend_depth+0.05)
+legend_cutter=master.legend_cut("9",legend_size,legend_depth)
+cap=master.cap_blank-legend_cutter
 assert cap.is_valid and len(cap.solids())==1
 cap.color=srgb("#f1f0e8")
 publish("key_07",cap,"Key 9",material="petg",role="part")

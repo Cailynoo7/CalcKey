@@ -1,4 +1,5 @@
 # cell: top
+# cell: top
 
 b=part("base")
 key_hole=param("key_hole_size",14.2)
@@ -44,6 +45,5 @@ print("window",window_w,window_d,"PCB columns now on bottom cover")
 panel.color=srgb("#354151")
 publish("top",panel,"Main key housing",material="pla")
 
-# Only the small side locator ribs share volume; no flange is buried in the plate.
-for index in range(1,21):
-    fit("sw_%02d"%index,"top",kind="compliant",budget_mm=0.16,reason="KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested")
+# Same 20 nominal KS-9 locator ribs, now carried by the released PCB assembly.
+fit("matrix_pcb","top",kind="compliant",budget_mm=0.16,reason="Released matrix assembly contains the 20 original KS-9 locator ribs; original per-switch depth 0.1374 mm, physical retention remains untested")

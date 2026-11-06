@@ -163,7 +163,25 @@
     "switch_cad_identity": "KS-9H10B045NN-X14-FB",
     "step_path": "product/references/gateron-ks9/KS-9 Switch KS-9H10B045NN-X14-FB.stp",
     "step_sha256": "29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d",
-    "prototype_policy": "用户跳过打印试配；正式交付采用既定尺寸，试配设计仅保留为历史可选资料。"
+    "prototype_policy": "用户跳过打印试配；正式交付采用既定尺寸，试配设计仅保留为历史可选资料。",
+    "legend_layout": {
+      "font": "Arial Bold",
+      "word_font_mm": 3.3,
+      "digit_operator_font_mm": 4.8,
+      "engrave_depth_mm": 0.35,
+      "edge_margin_mm": 1.0,
+      "five_marker": {
+        "type": "spherical_recess",
+        "diameter_mm": 2,
+        "depth_mm": 0.35,
+        "center_xy_mm": [
+          0,
+          -4.6
+        ]
+      },
+      "enter_equals": "two centered rows; Enter y=2.4 and = y=-2.1",
+      "source": "default"
+    }
   },
   "ports": [
     {
@@ -232,10 +250,10 @@
       "key_20"
     ],
     "cut_acrylic_object_id": "screen_lens",
-    "reference_only": "Pico厂商STEP不打印；键帽为打印件；MX轴体和GDM0103无精确STEP，未用假模型替代。",
+    "reference_only": "Pico and KS-9 official STEP; GDM0103 drawing envelopes; matrix from current PCB release.",
     "foot_pad_thickness_mm": 2,
     "controller_pcb_z_mm": 5.3,
-    "estimated_overall_with_reference_caps_and_feet_mm": 41.597412043781056,
+    "estimated_overall_with_reference_caps_and_feet_mm": 42.096147047843374,
     "architecture": "integral top and side walls; bottom service cover",
     "bottom_cover_thickness_mm": 2.4,
     "controller_position_mm": [
@@ -365,7 +383,7 @@
         4.690580827709079
       ],
       "rear_foot_rotation_deg": 0,
-      "overall_height_mm": 38.99912975316323,
+      "overall_height_mm": 39.49865877163909,
       "source": "default"
     },
     "display_window_size_mm": [
@@ -388,7 +406,7 @@
         16
       ]
     },
-    "printing_note": "底盖带向外轴耳与限位，外侧朝下时底板下方需支撑；脚以X端面贴床；销轴轴线竖直、100%填充，盲帽闭口端贴床；先作铰链配合试片，不能沿整机倾斜姿态直接打印",
+    "printing_note": "底盖带向外轴耳与限位，外侧朝下时底板下方需支撑；脚以X端面贴床；销轴轴线竖直、100%填充，盲帽闭口端贴床；按用户选择跳过打印试片，实际铰链配合和承载未测；不能沿整机倾斜姿态直接打印。",
     "lcd_pcb_z_mm": 7.4
   },
   "power": {
@@ -415,5 +433,18 @@
     ],
     "source": "default",
     "note": "只读空间预算已检查；已绝缘余线平铺并用10mm胶带固定，不将全长线束实体或拉力当作已验证。"
+  },
+  "matrix_pcb": {
+    "design_id": "matrix",
+    "width_mm": 73,
+    "depth_mm": 96,
+    "thickness_mm": 1.6,
+    "center_local_xy_mm": [
+      0,
+      -14
+    ],
+    "top_local_z_mm": 16,
+    "bottom_local_z_mm": 14.4,
+    "assembly": "20 soldered switches retain PCB; switches clipped to unchanged top plate; underside diodes and 0805 pullups; 10 flat direct-solder leads to Pico"
   }
 }

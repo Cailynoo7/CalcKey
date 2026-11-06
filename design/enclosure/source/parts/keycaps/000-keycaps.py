@@ -1,3 +1,4 @@
+# cell: keycaps
 b=part("base")
 key_xy=b.key_xy
 
@@ -15,8 +16,22 @@ socket_depth=param("keycap_socket_depth",3.3)
 socket_inset=param("keycap_socket_mouth_inset",1.4)
 socket_delta=param("keycap_socket_fit_delta",0)
 socket_lead=param("keycap_socket_lead_in",0.0)
-legend_size=param("keycap_legend_size",3.1)
+legend_size=param("keycap_legend_size",3.3)
 legend_depth=param("keycap_legend_depth",0.35)
+digit_legend_size=param("keycap_digit_legend_size",4.8)
+operator_legend_size=param("keycap_operator_legend_size",4.8)
+word_legend_size=param("keycap_word_legend_size",3.3)
+legend_edge_margin=param("keycap_legend_edge_margin",1.0)
+
+def legend_cut(label, size, depth, x=0, y=0):
+    profile=Text(label,size,font="Arial",font_style=FontStyle.BOLD)
+    bb=profile.bounding_box()
+    profile=Pos(x-(bb.min.X+bb.max.X)/2,y-(bb.min.Y+bb.max.Y)/2)*profile
+    bb=profile.bounding_box()
+    assert max(abs(bb.min.X),abs(bb.max.X),abs(bb.min.Y),abs(bb.max.Y))<=cap_top/2-legend_edge_margin
+    assert 0<depth<cap_roof-0.8
+    print("Legend",label,"font",size,"ink bbox",[bb.min.X,bb.min.Y,bb.max.X,bb.max.Y],"roof remaining",cap_roof-depth)
+    return Pos(0,0,cap_h-depth)*extrude(profile,depth+0.05)
 hole_span=socket_span+socket_delta
 hole_arm=socket_arm+socket_delta
 socket_stop=socket_inset+socket_depth
@@ -41,7 +56,7 @@ if socket_lead>0:
     cap_blank-=loft([Pos(0,0,socket_inset-0.01)*Rectangle(hole_span+2*socket_lead,hole_arm+2*socket_lead),Pos(0,0,socket_inset+socket_lead)*Rectangle(hole_span,hole_arm)])
     cap_blank-=loft([Pos(0,0,socket_inset-0.01)*Rectangle(hole_arm+2*socket_lead,hole_span+2*socket_lead),Pos(0,0,socket_inset+socket_lead)*Rectangle(hole_arm,hole_span)])
 assert cap_blank.is_valid and len(cap_blank.solids())==1
-cap=cap_blank-Pos(0,0,cap_h-legend_depth)*extrude(Text("Num",legend_size,font="Arial"),legend_depth+0.05)
+cap=cap_blank-legend_cut("Num",legend_size,legend_depth)
 assert cap.is_valid and len(cap.solids())==1
 print("One fused printable cap", "cross",hole_span,hole_arm,"socket depth",socket_depth,"neck entry min wall",(socket_neck-hole_span-2*socket_lead)/2)
 

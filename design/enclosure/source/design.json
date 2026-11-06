@@ -15,11 +15,11 @@
           "sha256": "9f34e292f3e513037c32443077ed19b99ebc716af683cd28143be019d41a1164"
         },
         {
-          "id": "sw_01",
+          "id": "matrix_pcb",
           "target": "imports",
           "order": 1,
-          "path": "design/enclosure/source/parts/imports/001-sw_01.py",
-          "sha256": "1815cc270822ff63bdaca5966c79bbdbe1064f0a03974278078b3aaed08063aa"
+          "path": "design/enclosure/source/parts/imports/001-matrix_pcb.py",
+          "sha256": "44a3cb596ccdd750e4544de45d79a6652de5648e51902e4d0185632b4d2dfd1e"
         }
       ],
       "dependencies": []
@@ -49,7 +49,7 @@
           "target": "top",
           "order": 0,
           "path": "design/enclosure/source/parts/top/000-top.py",
-          "sha256": "dd85eec314e6a5c5872fa7b97e6f719ae9b4c926f9c0ea536ed497eea8b782d4"
+          "sha256": "aae529cb89b5e9520e9a92c786b9b58d4e3604256fb81d458b4a12742203bbaa"
         }
       ],
       "dependencies": [
@@ -81,7 +81,7 @@
           "target": "keycaps",
           "order": 0,
           "path": "design/enclosure/source/parts/keycaps/000-keycaps.py",
-          "sha256": "5862d3e320d6ba15f869ae8e97b901792b4ded14dc3e9c020405bafe53f549aa"
+          "sha256": "743479890b23be5cdcf79dfc0cdffe5e9c22be94b2aba7d81f357ec2578aef89"
         }
       ],
       "dependencies": [
@@ -208,7 +208,7 @@
           "target": "keycap_02",
           "order": 0,
           "path": "design/enclosure/source/parts/keycap_02/000-keycap_02.py",
-          "sha256": "c205946123a5cd882ee44aebf3fc542f647ec6a91a9555c49e98dfcb8a5023eb"
+          "sha256": "f31c4e7f49dcd55fdb0d43e80ef00126c27e9d111211f536b65e4177095a02d0"
         }
       ],
       "dependencies": [
@@ -224,7 +224,7 @@
           "target": "keycap_03",
           "order": 0,
           "path": "design/enclosure/source/parts/keycap_03/000-keycap_03.py",
-          "sha256": "cd6c071ca4b1a8ff54d123fdfe8b302fb0d9e7cddad9f04cecd3f7d153a6ea11"
+          "sha256": "b100d70a1659cbd99a4d5affeda0b10d1aaeede3c302a1d14745d006b86d803d"
         }
       ],
       "dependencies": [
@@ -240,7 +240,7 @@
           "target": "keycap_04",
           "order": 0,
           "path": "design/enclosure/source/parts/keycap_04/000-keycap_04.py",
-          "sha256": "0004a1637e74b2b57c925d8195b70c05b2f456546ba703ce0de340cca07c6b1a"
+          "sha256": "bc2372cc68c13817aab70a41ce7ec972071cfd7d0102f08747c73b8d0c5cb211"
         }
       ],
       "dependencies": [
@@ -256,7 +256,7 @@
           "target": "keycap_05",
           "order": 0,
           "path": "design/enclosure/source/parts/keycap_05/000-keycap_05.py",
-          "sha256": "35aeee8ebd74bc3156a4c254f97a40ccca39db453e7e4fa0ba461476f55ab0e6"
+          "sha256": "bae8b312bcd7d5eb92eadf090232e9d0b8e3e8e64e33ea8265e794a7139cf867"
         }
       ],
       "dependencies": [
@@ -272,7 +272,7 @@
           "target": "keycap_06",
           "order": 0,
           "path": "design/enclosure/source/parts/keycap_06/000-keycap_06.py",
-          "sha256": "126bed5ca631f351b131bf19ca961b5969e43614670c7af63e3152f15219ab83"
+          "sha256": "52f2e634fa50df55715363ab170dba352d9cf0f7f305628258ccd8b2c7468002"
         }
       ],
       "dependencies": [
@@ -288,7 +288,7 @@
           "target": "keycap_07",
           "order": 0,
           "path": "design/enclosure/source/parts/keycap_07/000-keycap_07.py",
-          "sha256": "ee8d3b67b834ea5cf9518723d011b17ae37ab05fdc5621251ab0fe433f0e3c49"
+          "sha256": "6d96b90a0c9f2b76b3fa865da88b2759f520e18d885e3ecd7273c85d7f367990"
         }
       ],
       "dependencies": [
@@ -304,7 +304,7 @@
           "target": "keycap_08",
           "order": 0,
           "path": "design/enclosure/source/parts/keycap_08/000-keycap_08.py",
-          "sha256": "6286fb198fc257de1cb0ac2c98f329dea95578b9b94e6003dae66b1806752d87"
+          "sha256": "43f056e4312e2c195035f2abd52530d48a2c669386cc5b856b81d9c07b9aa1ba"
         }
       ],
       "dependencies": [
@@ -320,7 +320,7 @@
           "target": "keycap_09",
           "order": 0,
           "path": "design/enclosure/source/parts/keycap_09/000-keycap_09.py",
-          "sha256": "9292793d02c64010e95f4d0b8635c6a0f5cebe764d4f478570a411b34145d054"
+          "sha256": "ad09dc592efecf85d35cf9e7ea18260782a2187aabf8c16021a6f25e10c91598"
         }
       ],
       "dependencies": [
@@ -336,7 +336,7 @@
           "target": "keycap_10",
           "order": 0,
           "path": "design/enclosure/source/parts/keycap_10/000-keycap_10.py",
-          "sha256": "66928ca35ecc746f70a6ba2391110ef0ed75ffc97d89d9ebb7fb11d364472d8e"
+          "sha256": "dccc012e781e064af02b80319374da8c6be78d8ceca1f5740dfdfa200e49a782"
         }
       ],
       "dependencies": [
@@ -352,7 +352,7 @@
           "target": "keycap_11",
           "order": 0,
           "path": "design/enclosure/source/parts/keycap_11/000-keycap_11.py",
-          "sha256": "a6b4af017b12292c9d1f5799d2595c431c779bcd32400f7ae7d1af98df43cac5"
+          "sha256": "4b1da42321c82a0439eeceffdebe97d03803de22d04e48bcb4248fff7412cf43"
         }
       ],
       "dependencies": [
@@ -368,7 +368,7 @@
           "target": "keycap_12",
           "order": 0,
           "path": "design/enclosure/source/parts/keycap_12/000-keycap_12.py",
-          "sha256": "8dac5fed24b13637a3c3dbbc8ec632bf04881f27f8982138f87bc92abfa03229"
+          "sha256": "e3d2253b831e70755bd57dd72dd3639eb15996ce13aa4ec79d8cd8a0efcba1d5"
         }
       ],
       "dependencies": [
@@ -384,7 +384,7 @@
           "target": "keycap_13",
           "order": 0,
           "path": "design/enclosure/source/parts/keycap_13/000-keycap_13.py",
-          "sha256": "ce9082c85385c80155bf8905e8fedf2a784430a17a3773e401d1c3c258f6aba2"
+          "sha256": "e5fb52890153b10ed90ce0f5f55112796ca4ad510166e7053434b8c15d0d96ac"
         }
       ],
       "dependencies": [
@@ -400,7 +400,7 @@
           "target": "keycap_14",
           "order": 0,
           "path": "design/enclosure/source/parts/keycap_14/000-keycap_14.py",
-          "sha256": "c593781f5aaae9472af0270996a17dd26f5769e618fc0b69505d8972a4413e5a"
+          "sha256": "51b4ad12d242e7aa0d469691b3a364d240ec7f0abb75ae4ffd2d3a74684e9853"
         }
       ],
       "dependencies": [
@@ -416,7 +416,7 @@
           "target": "keycap_15",
           "order": 0,
           "path": "design/enclosure/source/parts/keycap_15/000-keycap_15.py",
-          "sha256": "7d52399218f203dfcf523b292bb2d8cd04b8fbc78c9e9cb91ea911dbf22098db"
+          "sha256": "b4fb141c3824aa8b5936a25a15bebe0b0bf0a80e25cea284d41bda11b6eee4d1"
         }
       ],
       "dependencies": [
@@ -432,7 +432,7 @@
           "target": "keycap_16",
           "order": 0,
           "path": "design/enclosure/source/parts/keycap_16/000-keycap_16.py",
-          "sha256": "a3572a0dc5a1daeea564d1d9362335f83660448c276291aa5007f8a1c35bc952"
+          "sha256": "d60721b2802ecd494ae2549f4d44d4f2677ff60dc85b0ae081242d38c3080ad7"
         }
       ],
       "dependencies": [
@@ -448,7 +448,7 @@
           "target": "keycap_17",
           "order": 0,
           "path": "design/enclosure/source/parts/keycap_17/000-keycap_17.py",
-          "sha256": "846e8e93129d718ae3621cf09cf427d8879b59ae8fb4073dcd21a0bdf458329e"
+          "sha256": "8e7e53ebe8daf6e853c51ffc91add0dbed16b41cad0e03e2ad5d2fa23ba748e2"
         }
       ],
       "dependencies": [
@@ -464,7 +464,7 @@
           "target": "keycap_18",
           "order": 0,
           "path": "design/enclosure/source/parts/keycap_18/000-keycap_18.py",
-          "sha256": "d872fadbf35de0122072ac8bcbfa78e3e1600a42be9ded6a7d8ea53390d12022"
+          "sha256": "cfb6dffa88bff29519d54193954b60eca32d20e8ea87dc041f425213f9818752"
         }
       ],
       "dependencies": [
@@ -480,7 +480,7 @@
           "target": "keycap_19",
           "order": 0,
           "path": "design/enclosure/source/parts/keycap_19/000-keycap_19.py",
-          "sha256": "ed10b2f9600af56bbf582795d0abca89899b73191e5236f000bae7a7429fbf0d"
+          "sha256": "a7ee8627074bb956e5320c6e9cfbdfd539a2ba58932a8e37abf5ae6b41a69ea8"
         }
       ],
       "dependencies": [
@@ -496,281 +496,41 @@
           "target": "keycap_20",
           "order": 0,
           "path": "design/enclosure/source/parts/keycap_20/000-keycap_20.py",
-          "sha256": "d6c4ac3aeed895c453eb53c9c302004ae16210f3cc8db58cd5e7b9a4ffc486c5"
+          "sha256": "dfdc2d40f7d27f8a6272621d5cd71f6bba9fa1ef2822357a349d533d7117eee6"
         }
       ],
       "dependencies": [
         "keycaps"
       ]
-    },
-    {
-      "id": "switch_02",
-      "label": "switch_02",
-      "cells": [
-        {
-          "id": "switch_02",
-          "target": "switch_02",
-          "order": 0,
-          "path": "design/enclosure/source/parts/switch_02/000-switch_02.py",
-          "sha256": "3890b66170249cbdefcc15dcb6fdd93751825cee9b02a9e05b8deddb85c2bbe5"
-        }
-      ],
-      "dependencies": []
-    },
-    {
-      "id": "switch_03",
-      "label": "switch_03",
-      "cells": [
-        {
-          "id": "switch_03",
-          "target": "switch_03",
-          "order": 0,
-          "path": "design/enclosure/source/parts/switch_03/000-switch_03.py",
-          "sha256": "bb40b4c5ed9549edfb92298608929318618cf797a881f3b20ac9f8a6c8cf9a27"
-        }
-      ],
-      "dependencies": []
-    },
-    {
-      "id": "switch_04",
-      "label": "switch_04",
-      "cells": [
-        {
-          "id": "switch_04",
-          "target": "switch_04",
-          "order": 0,
-          "path": "design/enclosure/source/parts/switch_04/000-switch_04.py",
-          "sha256": "a20e8f4d63af8c398aafa560b3be939a2a9d22a9a065c46b8b7b918a87c808c4"
-        }
-      ],
-      "dependencies": []
-    },
-    {
-      "id": "switch_05",
-      "label": "switch_05",
-      "cells": [
-        {
-          "id": "switch_05",
-          "target": "switch_05",
-          "order": 0,
-          "path": "design/enclosure/source/parts/switch_05/000-switch_05.py",
-          "sha256": "5e2873d6a23309b0e8e0abd5d247240c331dba00c031f828c084d093320e7476"
-        }
-      ],
-      "dependencies": []
-    },
-    {
-      "id": "switch_06",
-      "label": "switch_06",
-      "cells": [
-        {
-          "id": "switch_06",
-          "target": "switch_06",
-          "order": 0,
-          "path": "design/enclosure/source/parts/switch_06/000-switch_06.py",
-          "sha256": "16321387b0e37a8bdac39900ffa7d58ecfb0e676aa83d9e57945cb8b3da95204"
-        }
-      ],
-      "dependencies": []
-    },
-    {
-      "id": "switch_07",
-      "label": "switch_07",
-      "cells": [
-        {
-          "id": "switch_07",
-          "target": "switch_07",
-          "order": 0,
-          "path": "design/enclosure/source/parts/switch_07/000-switch_07.py",
-          "sha256": "76fea78965fd42de5ef48c3a2d57b8d75f8c30f69398f0acd480701a5069122d"
-        }
-      ],
-      "dependencies": []
-    },
-    {
-      "id": "switch_08",
-      "label": "switch_08",
-      "cells": [
-        {
-          "id": "switch_08",
-          "target": "switch_08",
-          "order": 0,
-          "path": "design/enclosure/source/parts/switch_08/000-switch_08.py",
-          "sha256": "2bd6535ea728600d570a7c8a4c88df55bc3a4a8920b95fb6e3036b478a81b73d"
-        }
-      ],
-      "dependencies": []
-    },
-    {
-      "id": "switch_09",
-      "label": "switch_09",
-      "cells": [
-        {
-          "id": "switch_09",
-          "target": "switch_09",
-          "order": 0,
-          "path": "design/enclosure/source/parts/switch_09/000-switch_09.py",
-          "sha256": "79bced113ac07bf8ce115269b876da5b6b605d54982085c17b388259f2b639af"
-        }
-      ],
-      "dependencies": []
-    },
-    {
-      "id": "switch_10",
-      "label": "switch_10",
-      "cells": [
-        {
-          "id": "switch_10",
-          "target": "switch_10",
-          "order": 0,
-          "path": "design/enclosure/source/parts/switch_10/000-switch_10.py",
-          "sha256": "fa74faa32f6a52829074a1281a01e41d2e15a7542296313e70e5285e1ea434a5"
-        }
-      ],
-      "dependencies": []
-    },
-    {
-      "id": "switch_11",
-      "label": "switch_11",
-      "cells": [
-        {
-          "id": "switch_11",
-          "target": "switch_11",
-          "order": 0,
-          "path": "design/enclosure/source/parts/switch_11/000-switch_11.py",
-          "sha256": "706171157cb7f14a22aab4889bc5e75c75c52cee0cc293ebf39181ee19c241bf"
-        }
-      ],
-      "dependencies": []
-    },
-    {
-      "id": "switch_12",
-      "label": "switch_12",
-      "cells": [
-        {
-          "id": "switch_12",
-          "target": "switch_12",
-          "order": 0,
-          "path": "design/enclosure/source/parts/switch_12/000-switch_12.py",
-          "sha256": "c7a48b0861ae4accf20d2362ae26683bd52425b25c1126a72efbcda7b5bcf424"
-        }
-      ],
-      "dependencies": []
-    },
-    {
-      "id": "switch_13",
-      "label": "switch_13",
-      "cells": [
-        {
-          "id": "switch_13",
-          "target": "switch_13",
-          "order": 0,
-          "path": "design/enclosure/source/parts/switch_13/000-switch_13.py",
-          "sha256": "51e3346ea83e2401be3d7490841afc042138e1aff9f5865a3d857b85dac3ab33"
-        }
-      ],
-      "dependencies": []
-    },
-    {
-      "id": "switch_14",
-      "label": "switch_14",
-      "cells": [
-        {
-          "id": "switch_14",
-          "target": "switch_14",
-          "order": 0,
-          "path": "design/enclosure/source/parts/switch_14/000-switch_14.py",
-          "sha256": "99c254492dc5e21e33176a58901d9a8a57d2b8441046e1c09be2800ef59892e0"
-        }
-      ],
-      "dependencies": []
-    },
-    {
-      "id": "switch_15",
-      "label": "switch_15",
-      "cells": [
-        {
-          "id": "switch_15",
-          "target": "switch_15",
-          "order": 0,
-          "path": "design/enclosure/source/parts/switch_15/000-switch_15.py",
-          "sha256": "92a2f2b6feba444224db56c022169e353d3d89846293465e99c4677048077c10"
-        }
-      ],
-      "dependencies": []
-    },
-    {
-      "id": "switch_16",
-      "label": "switch_16",
-      "cells": [
-        {
-          "id": "switch_16",
-          "target": "switch_16",
-          "order": 0,
-          "path": "design/enclosure/source/parts/switch_16/000-switch_16.py",
-          "sha256": "2bd36670b0390e62676daf1ff3aa2b9fb3b91d1f93e2aecbc7a58a2aa5f1f031"
-        }
-      ],
-      "dependencies": []
-    },
-    {
-      "id": "switch_17",
-      "label": "switch_17",
-      "cells": [
-        {
-          "id": "switch_17",
-          "target": "switch_17",
-          "order": 0,
-          "path": "design/enclosure/source/parts/switch_17/000-switch_17.py",
-          "sha256": "26334ff014198835e210343e0ab641eff65796fef37827cc767941dac0a4762c"
-        }
-      ],
-      "dependencies": []
-    },
-    {
-      "id": "switch_18",
-      "label": "switch_18",
-      "cells": [
-        {
-          "id": "switch_18",
-          "target": "switch_18",
-          "order": 0,
-          "path": "design/enclosure/source/parts/switch_18/000-switch_18.py",
-          "sha256": "9008efeb7c182470b2b797ee8b83116612800a31528d9e44a35d0320c67f2793"
-        }
-      ],
-      "dependencies": []
-    },
-    {
-      "id": "switch_19",
-      "label": "switch_19",
-      "cells": [
-        {
-          "id": "switch_19",
-          "target": "switch_19",
-          "order": 0,
-          "path": "design/enclosure/source/parts/switch_19/000-switch_19.py",
-          "sha256": "eca91256e24809ab0da3465f10f98237e713d473246627c365d2db203f11faac"
-        }
-      ],
-      "dependencies": []
-    },
-    {
-      "id": "switch_20",
-      "label": "switch_20",
-      "cells": [
-        {
-          "id": "switch_20",
-          "target": "switch_20",
-          "order": 0,
-          "path": "design/enclosure/source/parts/switch_20/000-switch_20.py",
-          "sha256": "9db18cb3c46de787279297d027733f097013e7224a9e06744d70234985cdb40d"
-        }
-      ],
-      "dependencies": []
     }
   ],
   "objects": [
+    {
+      "id": "matrix_pcb",
+      "target": "imports",
+      "label": "Matrix PCB with 20 KS-9 switches",
+      "kind": "imported",
+      "shapeHash": "847fdb2bce480dfbff18317d2d362377fb79495e5217c944faba2c2a2476b8b0",
+      "transform": {
+        "positionMm": [
+          -100,
+          84.78566631806075,
+          26.82850930613121
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
     {
       "id": "pico2",
       "target": "imports",
@@ -787,32 +547,6 @@
           4,
           0,
           -90
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "sw_01",
-      "target": "imports",
-      "label": "KS9 red 01",
-      "kind": "imported",
-      "shapeHash": "7eb785ad97b0fb22149a7ee84418410d07afe7b99b323ddb90e6b55532b6ee78",
-      "transform": {
-        "positionMm": [
-          -78.4754975124378,
-          110.06523495791716,
-          18.967774517353856
-        ],
-        "rotationDeg": [
-          4,
-          0,
-          0
         ],
         "rotationOrder": "XYZ",
         "scale": [
@@ -912,7 +646,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "a8b66bed9cb24f82e4af69d0b545979d0b047f48a595f25a0df7fb8f2d5f48d2",
+      "shapeHash": "8ad574ace1704147f6d040a5500686c3e7c83135687ce7f11e51b217817b42a8",
       "transform": {
         "positionMm": [
           -28.525000000172298,
@@ -1125,11 +859,11 @@
     {
       "id": "key_02",
       "target": "keycap_02",
-      "label": "Key /",
+      "label": "Key ÷",
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "c4ab00e46cc257e765df8df8eecd741920b7ef9f77c7a63c852d337fad3e66af",
+      "shapeHash": "93af95f3db59dedd437978b7221a3873a4a4f42556462be6c47568a107b8747f",
       "transform": {
         "positionMm": [
           -9.4750000001723,
@@ -1153,11 +887,11 @@
     {
       "id": "key_03",
       "target": "keycap_03",
-      "label": "Key *",
+      "label": "Key ×",
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "22f3d767f61758c602eecbaa73eca60eeb045d0a4c7e436a4be3e0bb7ec42647",
+      "shapeHash": "b8a1a5dad4805df8e0e26188be94fdbc41ac7df70d3dc6bd92b5b7f910dc7dd8",
       "transform": {
         "positionMm": [
           9.574999999827702,
@@ -1185,7 +919,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "200cb3dbadb8e9904e07f74fdb9c5f8ae379dd82d7b704321cfbd78e161a250f",
+      "shapeHash": "be58ecd0c016793b741b55694fb4a95199fe719e8dbef61efec50549cd6bcc21",
       "transform": {
         "positionMm": [
           28.624999999827708,
@@ -1213,7 +947,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "a3ec218c2f38780ea4861900f01e27d107130807465888f569d18c4dd5cb303a",
+      "shapeHash": "3afc49131a66da63436fabc9f6bfba2e128702def4f3fe43f095512278574768",
       "transform": {
         "positionMm": [
           -28.525000000172298,
@@ -1241,7 +975,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "bc6b7c1bb79e13d27d5108bec95a0bba6638e9e13bf1f86913f5a95af3406af3",
+      "shapeHash": "1a59f7456b5a2afcc673a00b1a549f64c8cde77ce7111637d62240f379c6faf5",
       "transform": {
         "positionMm": [
           -9.4750000001723,
@@ -1269,7 +1003,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "80b6036cb54f7f30f54ebb3cb364fa566243948fd45c963c56f2bb0ebba6cad3",
+      "shapeHash": "ee588a4bde07793a7c6f4934be01466fe91c1e348f52c63cb9b4fc2b746dadb6",
       "transform": {
         "positionMm": [
           9.574999999827702,
@@ -1293,11 +1027,11 @@
     {
       "id": "key_08",
       "target": "keycap_08",
-      "label": "Key -",
+      "label": "Key −",
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "be053259b5481030f8e2ccd52299d9eeb0b2355c0df7da43ab40723f687b1a3a",
+      "shapeHash": "b7e75eda6c7c3be1e399b21fc6155900eb99c75cb07a1308453a4737527f7a5c",
       "transform": {
         "positionMm": [
           28.624999999827708,
@@ -1325,7 +1059,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "ddfd170e920a344af5b825f6031dff7a1e4a428e64aac99a03e3e39aadd21379",
+      "shapeHash": "5e9b5e8c697ce36c1c94cfc50f64acd68487a6e04392226fb3255adfd5fdf6c9",
       "transform": {
         "positionMm": [
           -28.525000000172298,
@@ -1353,7 +1087,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "e8cd20bdaa060421c7bacaea09de50e8e38f5956c1a7977029cc5496d7461b70",
+      "shapeHash": "845d73c27eab44cc9cb37f2653293872f4429a5179598bba797eed03c13ffa74",
       "transform": {
         "positionMm": [
           -9.4750000001723,
@@ -1381,7 +1115,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "4d736a075870db3184df71cb122869a28a5ba3a9a5e5c903f794652c7bffbb64",
+      "shapeHash": "77259274a4020818d1ae35b373bc4b8e5b0bc59cf8d741e130d9d21f31dde469",
       "transform": {
         "positionMm": [
           9.574999999827702,
@@ -1409,7 +1143,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "b335d0a0545ace7d04c1d53d55df09e3f39906065adb7fc90c3dbb278a54b40e",
+      "shapeHash": "cca7c3e94e95ecf52f30d8eac162c636af56092fa22caee0bf64b26487a6ab11",
       "transform": {
         "positionMm": [
           28.624999999827708,
@@ -1437,7 +1171,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "ecbb2c1e61703024e1953f52a6764e6726a02b1ae2ffe19cfec5095dc0821020",
+      "shapeHash": "cbf8fbf4f26c7315f546bae98f433837a618fffcdaf64b3710f60603894a9bab",
       "transform": {
         "positionMm": [
           -28.525000000172298,
@@ -1465,7 +1199,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "41ef62a454a552defddc7ff23a610449201f77d70ecae78dfced8224a0f4c544",
+      "shapeHash": "afb28d0c7b631a4c49de6d7f627b92a38a6666cde7273cc9e7a2945847d64d95",
       "transform": {
         "positionMm": [
           -9.4750000001723,
@@ -1493,7 +1227,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "993f16a8233eb25e21da500383855ac2c497497669e77ed83313a5fa279aaa1e",
+      "shapeHash": "612e38bc306ad523d6e8b1c43bfc7fa596c83a1314a7e000dfa97d40f2242746",
       "transform": {
         "positionMm": [
           9.574999999827702,
@@ -1517,11 +1251,11 @@
     {
       "id": "key_16",
       "target": "keycap_16",
-      "label": "Key =",
+      "label": "Key Enter / =",
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "3f8fe89d60639420ba1f94c38971b24b832e4eac6883b05798a2bb3e87b351c7",
+      "shapeHash": "f5591d27bb6695b863466813764cc9e937f58893140ac7c791fc559933a9bfed",
       "transform": {
         "positionMm": [
           28.624999999827708,
@@ -1549,7 +1283,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "786cdcfb6d85e28c3de02e094c7ef573b35c326e1e3bec79b49ee53d9382958b",
+      "shapeHash": "3f614f6bc61d754ee4e4f11bd26b1290fbac3a768d13cbca65227594cfefa4c3",
       "transform": {
         "positionMm": [
           -28.525000000172298,
@@ -1577,7 +1311,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "2f03e320ecbf99e3a0fb6ba333412e600532d547eb896846b78a4617f8ca77d1",
+      "shapeHash": "5fc2a4ea1912cc94515f254125d3454fd7702f3141ba9c12bb5fde74705a99fe",
       "transform": {
         "positionMm": [
           -9.4750000001723,
@@ -1605,7 +1339,7 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "0eceb7d596b72cc659398e870e73fdfd939893340ca2e45ab5cb64a38bf18d07",
+      "shapeHash": "5f6a102d798d946700e5515739989f892c6cb22263bb663447f60ae4f1eb3f54",
       "transform": {
         "positionMm": [
           9.574999999827702,
@@ -1633,525 +1367,12 @@
       "material": "petg",
       "role": "part",
       "kind": "generated",
-      "shapeHash": "aa2ee4d787e1ee804fea64ff1cfc82f85ebbc0fb87eae42ae7fb6fdc1a30312c",
+      "shapeHash": "40fb89bac91de9c5d06b4c0930b029f5bbaa159607e6e7df8be3d1b0bf93d930",
       "transform": {
         "positionMm": [
           28.624999999827708,
           -53.32352398022128,
           29.295508685764528
-        ],
-        "rotationDeg": [
-          4,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "sw_02",
-      "target": "switch_02",
-      "label": "KS9 red 2",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "a7186cdf5e98db35a1110b0d5ca5bff6c2a1231c98d2d57257df5438206db674",
-      "transform": {
-        "positionMm": [
-          -59.4254975124378,
-          110.06523495791716,
-          18.967774517353856
-        ],
-        "rotationDeg": [
-          4,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "sw_03",
-      "target": "switch_03",
-      "label": "KS9 red 3",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "c6a7fb5a8702b1e316871c3b892d6b94b0e71e3beacfb77cb5c0c266a6d74789",
-      "transform": {
-        "positionMm": [
-          -40.3754975124378,
-          110.06523495791716,
-          18.967774517353856
-        ],
-        "rotationDeg": [
-          4,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "sw_04",
-      "target": "switch_04",
-      "label": "KS9 red 4",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "bc06befb7789bf38dcdc6ef5cea27e59c32669f9be377587b06d0afc9d6d5905",
-      "transform": {
-        "positionMm": [
-          -21.325497512437796,
-          110.06523495791716,
-          18.967774517353856
-        ],
-        "rotationDeg": [
-          4,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "sw_05",
-      "target": "switch_05",
-      "label": "KS9 red 5",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "48ef46aafca85816b376e470f7a43bac21a5db92d3669d9bc2cdb325c68717b3",
-      "transform": {
-        "positionMm": [
-          -78.4754975124378,
-          91.06163980046749,
-          17.63891369252827
-        ],
-        "rotationDeg": [
-          4,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "sw_06",
-      "target": "switch_06",
-      "label": "KS9 red 6",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "c9557adbf00ff1b7257d50e2224769aa25820056510ae1457b63c43e3effcd39",
-      "transform": {
-        "positionMm": [
-          -59.4254975124378,
-          91.06163980046749,
-          17.63891369252827
-        ],
-        "rotationDeg": [
-          4,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "sw_07",
-      "target": "switch_07",
-      "label": "KS9 red 7",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "48c15cb090dedbb1f1402d26c8c8802229395ac1d16b02bacc283292364f044b",
-      "transform": {
-        "positionMm": [
-          -40.3754975124378,
-          91.06163980046749,
-          17.63891369252827
-        ],
-        "rotationDeg": [
-          4,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "sw_08",
-      "target": "switch_08",
-      "label": "KS9 red 8",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "a985f1bc50af28dcc620067eae009675f0599d0c92626e5de62e1ca34bad0c63",
-      "transform": {
-        "positionMm": [
-          -21.325497512437796,
-          91.06163980046749,
-          17.63891369252827
-        ],
-        "rotationDeg": [
-          4,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "sw_09",
-      "target": "switch_09",
-      "label": "KS9 red 9",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "9a71cc0d00fcbf6e887e9e49105dbad5697bef523e8323f3ec0f224485c8ced6",
-      "transform": {
-        "positionMm": [
-          -78.4754975124378,
-          72.05804464301785,
-          16.31005286770268
-        ],
-        "rotationDeg": [
-          4,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "sw_10",
-      "target": "switch_10",
-      "label": "KS9 red 10",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "972ad05a36a9eaff706c091df20898ca21d01a10dc63f58fc0fafb3c42ec5d39",
-      "transform": {
-        "positionMm": [
-          -59.4254975124378,
-          72.05804464301785,
-          16.31005286770268
-        ],
-        "rotationDeg": [
-          4,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "sw_11",
-      "target": "switch_11",
-      "label": "KS9 red 11",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "7a76a2e975cd0d2d450867830fbf33befab88475c70dbca879677b502e7f6fd4",
-      "transform": {
-        "positionMm": [
-          -40.3754975124378,
-          72.05804464301785,
-          16.31005286770268
-        ],
-        "rotationDeg": [
-          4,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "sw_12",
-      "target": "switch_12",
-      "label": "KS9 red 12",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "25ce9a3a33061c3aa3e271e2b2358f0112bfb74988aca5645faa2ebdcd546fb9",
-      "transform": {
-        "positionMm": [
-          -21.325497512437796,
-          72.05804464301785,
-          16.31005286770268
-        ],
-        "rotationDeg": [
-          4,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "sw_13",
-      "target": "switch_13",
-      "label": "KS9 red 13",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "ec93193398ce8732718346a57e4fdb1c073e8bf55432b1e90bc03d464c152d85",
-      "transform": {
-        "positionMm": [
-          -78.4754975124378,
-          53.05444948556819,
-          14.981192042877094
-        ],
-        "rotationDeg": [
-          4,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "sw_14",
-      "target": "switch_14",
-      "label": "KS9 red 14",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "6464ad5b0db622f490ddee6f9656d7ae2c8a55b489fe6af8d6c3469e2cdb4439",
-      "transform": {
-        "positionMm": [
-          -59.4254975124378,
-          53.05444948556819,
-          14.981192042877094
-        ],
-        "rotationDeg": [
-          4,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "sw_15",
-      "target": "switch_15",
-      "label": "KS9 red 15",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "4648e7e984a18c2f36c8ae697d5186ee048d75db855249061da0c488bc7fcdc6",
-      "transform": {
-        "positionMm": [
-          -40.3754975124378,
-          53.05444948556819,
-          14.981192042877094
-        ],
-        "rotationDeg": [
-          4,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "sw_16",
-      "target": "switch_16",
-      "label": "KS9 red 16",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "9162a7dda903eca3b7ea18e966dc8954c3779923027f24999f2b793fc18da8c9",
-      "transform": {
-        "positionMm": [
-          -21.325497512437796,
-          53.05444948556819,
-          14.981192042877094
-        ],
-        "rotationDeg": [
-          4,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "sw_17",
-      "target": "switch_17",
-      "label": "KS9 red 17",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "cdfc7dfa40285a9da8641a2f986e6a5a2577c14e21b57fd9ab448e9efbef2498",
-      "transform": {
-        "positionMm": [
-          -78.4754975124378,
-          34.05085432811855,
-          13.652331218051508
-        ],
-        "rotationDeg": [
-          4,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "sw_18",
-      "target": "switch_18",
-      "label": "KS9 red 18",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "3fd552c9a947a8748a407f714e6d02fc9ca21367fb9b0db3213ab8be94bb7b75",
-      "transform": {
-        "positionMm": [
-          -59.4254975124378,
-          34.05085432811855,
-          13.652331218051508
-        ],
-        "rotationDeg": [
-          4,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "sw_19",
-      "target": "switch_19",
-      "label": "KS9 red 19",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "60ed3a7969edf0516437d8f3aba8ee38c3e6b64eba316d3abcd098dbafc2e5fe",
-      "transform": {
-        "positionMm": [
-          -40.3754975124378,
-          34.05085432811855,
-          13.652331218051508
-        ],
-        "rotationDeg": [
-          4,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "sw_20",
-      "target": "switch_20",
-      "label": "KS9 red 20",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "6b4d8011812312e3fed7f0481f780111a793e2200ec5367d813ed5c2392254c8",
-      "transform": {
-        "positionMm": [
-          -21.325497512437796,
-          34.05085432811855,
-          13.652331218051508
         ],
         "rotationDeg": [
           4,
@@ -2183,17 +1404,13 @@
       }
     },
     {
-      "id": "sw_01",
+      "id": "matrix_pcb",
       "kind": "step",
-      "path": "design/enclosure/source/assets/29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d.step",
-      "sha256": "29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d",
-      "label": "KS9 red 01",
+      "path": "design/enclosure/source/assets/e2474c585d2693bb16227489b4c195a5ffbfa208a89e1ee4a6da6b9e6b1f5ef2.step",
+      "sha256": "e2474c585d2693bb16227489b4c195a5ffbfa208a89e1ee4a6da6b9e6b1f5ef2",
+      "label": "Matrix PCB with 20 KS-9 switches",
       "provenance": {
-        "sourcePath": "product/references/gateron-ks9/KS-9 Switch KS-9H10B045NN-X14-FB.stp",
-        "provider": "GATERON",
-        "sourceUrl": "https://gateron.com/u_file/2306/26/file/KS-9SwitchKS-9H10B045NN-X14-FB.rar",
-        "sourceVersion": "KS-9H10B045NN-X14-FB, manufacturer file 2023-06",
-        "declaredSha256": "29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d"
+        "sourcePath": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/assembly.step"
       }
     }
   ],
@@ -2201,145 +1418,12 @@
     {
       "kind": "compliant",
       "budget_mm": 0.16,
-      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
-      "a": "sw_01",
-      "b": "top"
-    },
-    {
-      "kind": "compliant",
-      "budget_mm": 0.16,
-      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
-      "a": "sw_02",
-      "b": "top"
-    },
-    {
-      "kind": "compliant",
-      "budget_mm": 0.16,
-      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
-      "a": "sw_03",
-      "b": "top"
-    },
-    {
-      "kind": "compliant",
-      "budget_mm": 0.16,
-      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
-      "a": "sw_04",
-      "b": "top"
-    },
-    {
-      "kind": "compliant",
-      "budget_mm": 0.16,
-      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
-      "a": "sw_05",
-      "b": "top"
-    },
-    {
-      "kind": "compliant",
-      "budget_mm": 0.16,
-      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
-      "a": "sw_06",
-      "b": "top"
-    },
-    {
-      "kind": "compliant",
-      "budget_mm": 0.16,
-      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
-      "a": "sw_07",
-      "b": "top"
-    },
-    {
-      "kind": "compliant",
-      "budget_mm": 0.16,
-      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
-      "a": "sw_08",
-      "b": "top"
-    },
-    {
-      "kind": "compliant",
-      "budget_mm": 0.16,
-      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
-      "a": "sw_09",
-      "b": "top"
-    },
-    {
-      "kind": "compliant",
-      "budget_mm": 0.16,
-      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
-      "a": "sw_10",
-      "b": "top"
-    },
-    {
-      "kind": "compliant",
-      "budget_mm": 0.16,
-      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
-      "a": "sw_11",
-      "b": "top"
-    },
-    {
-      "kind": "compliant",
-      "budget_mm": 0.16,
-      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
-      "a": "sw_12",
-      "b": "top"
-    },
-    {
-      "kind": "compliant",
-      "budget_mm": 0.16,
-      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
-      "a": "sw_13",
-      "b": "top"
-    },
-    {
-      "kind": "compliant",
-      "budget_mm": 0.16,
-      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
-      "a": "sw_14",
-      "b": "top"
-    },
-    {
-      "kind": "compliant",
-      "budget_mm": 0.16,
-      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
-      "a": "sw_15",
-      "b": "top"
-    },
-    {
-      "kind": "compliant",
-      "budget_mm": 0.16,
-      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
-      "a": "sw_16",
-      "b": "top"
-    },
-    {
-      "kind": "compliant",
-      "budget_mm": 0.16,
-      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
-      "a": "sw_17",
-      "b": "top"
-    },
-    {
-      "kind": "compliant",
-      "budget_mm": 0.16,
-      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
-      "a": "sw_18",
-      "b": "top"
-    },
-    {
-      "kind": "compliant",
-      "budget_mm": 0.16,
-      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
-      "a": "sw_19",
-      "b": "top"
-    },
-    {
-      "kind": "compliant",
-      "budget_mm": 0.16,
-      "reason": "KS-9 nominal side locator rib in 14.2 mm trial hole; measured 0.1374 mm, physical retention and elastic response remain untested",
-      "a": "sw_20",
+      "reason": "Released matrix assembly contains the 20 original KS-9 locator ribs; original per-switch depth 0.1374 mm, physical retention remains untested",
+      "a": "matrix_pcb",
       "b": "top"
     }
   ],
-  "updatedAt": "2026-11-05T14:33:18.570Z",
+  "updatedAt": "2026-11-06T02:48:15.382Z",
   "parameters": {
     "imports": {},
     "base": {
@@ -2396,7 +1480,7 @@
       "keycap_reference_width": 18.2,
       "keycap_reference_top_width": 14.4,
       "keycap_reference_height": 7,
-      "keycap_legend_size": 3.1,
+      "keycap_legend_size": 3.3,
       "keycap_reference_wall_thickness": 1.2,
       "keycap_reference_roof_thickness": 1.6,
       "keycap_socket_outer_diameter": 5.6,
@@ -2408,7 +1492,11 @@
       "keycap_socket_lead_in": 0,
       "keycap_legend_depth": 0.35,
       "keycap_socket_neck_width": 4.9,
-      "keycap_socket_neck_top": 5.1
+      "keycap_socket_neck_top": 5.1,
+      "keycap_digit_legend_size": 4.8,
+      "keycap_operator_legend_size": 4.8,
+      "keycap_word_legend_size": 3.3,
+      "keycap_legend_edge_margin": 1
     },
     "screen_lens": {
       "lens_width": 67.6,
@@ -2493,7 +1581,11 @@
     },
     "keycap_10": {
       "keycap_10_legend_size": 3.1,
-      "keycap_10_legend_depth": 0.35
+      "keycap_10_legend_depth": 0.35,
+      "keycap_10_marker_diameter": 2,
+      "keycap_10_marker_depth": 0.35,
+      "keycap_10_marker_y": -4.6,
+      "keycap_10_digit_y": 0.6
     },
     "keycap_11": {
       "keycap_11_legend_size": 3.1,
@@ -2517,7 +1609,10 @@
     },
     "keycap_16": {
       "keycap_16_legend_size": 3.1,
-      "keycap_16_legend_depth": 0.35
+      "keycap_16_legend_depth": 0.35,
+      "keycap_16_enter_size": 3.3,
+      "keycap_16_enter_y": 2.4,
+      "keycap_16_equals_y": -2.1
     },
     "keycap_17": {
       "keycap_17_legend_size": 3.1,
@@ -2534,63 +1629,6 @@
     "keycap_20": {
       "keycap_20_legend_size": 3.1,
       "keycap_20_legend_depth": 0.35
-    },
-    "switch_02": {
-      "sw_02_orientation_deg": 0
-    },
-    "switch_03": {
-      "sw_03_orientation_deg": 0
-    },
-    "switch_04": {
-      "sw_04_orientation_deg": 0
-    },
-    "switch_05": {
-      "sw_05_orientation_deg": 0
-    },
-    "switch_06": {
-      "sw_06_orientation_deg": 0
-    },
-    "switch_07": {
-      "sw_07_orientation_deg": 0
-    },
-    "switch_08": {
-      "sw_08_orientation_deg": 0
-    },
-    "switch_09": {
-      "sw_09_orientation_deg": 0
-    },
-    "switch_10": {
-      "sw_10_orientation_deg": 0
-    },
-    "switch_11": {
-      "sw_11_orientation_deg": 0
-    },
-    "switch_12": {
-      "sw_12_orientation_deg": 0
-    },
-    "switch_13": {
-      "sw_13_orientation_deg": 0
-    },
-    "switch_14": {
-      "sw_14_orientation_deg": 0
-    },
-    "switch_15": {
-      "sw_15_orientation_deg": 0
-    },
-    "switch_16": {
-      "sw_16_orientation_deg": 0
-    },
-    "switch_17": {
-      "sw_17_orientation_deg": 0
-    },
-    "switch_18": {
-      "sw_18_orientation_deg": 0
-    },
-    "switch_19": {
-      "sw_19_orientation_deg": 0
-    },
-    "switch_20": {
-      "sw_20_orientation_deg": 0
     }
   }
 }

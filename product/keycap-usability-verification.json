@@ -1,0 +1,322 @@
+{
+  "date": "2026-11-06",
+  "design_id": "enclosure",
+  "revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029",
+  "previous_revision": "bb0a8e71a8c0bd3bb7c53e2c2961b190d24c58ea8feda5c0ab35672099b0d8de",
+  "measured_geometry": {
+    "caps": [
+      {
+        "key": 1,
+        "valid": true,
+        "solids": 1,
+        "size_mm": [
+          18.200000199999998,
+          18.200000199999998,
+          7.0000002000000014
+        ],
+        "removed_mm3": 2.5637019885519163,
+        "removed_min_z_mm": 6.6499999,
+        "added_outside_blank_mm3": 0,
+        "legend_font_mm": 3.3
+      },
+      {
+        "key": 2,
+        "valid": true,
+        "solids": 1,
+        "size_mm": [
+          18.200000199999998,
+          18.200000199999998,
+          7.0000002000000014
+        ],
+        "removed_mm3": 0.8219089050292966,
+        "removed_min_z_mm": 6.65,
+        "added_outside_blank_mm3": 0,
+        "legend_font_mm": 4.8
+      },
+      {
+        "key": 3,
+        "valid": true,
+        "solids": 1,
+        "size_mm": [
+          18.200000199999998,
+          18.200000199999998,
+          7.0000002000000014
+        ],
+        "removed_mm3": 0.9865513916015611,
+        "removed_min_z_mm": 6.65,
+        "added_outside_blank_mm3": 0,
+        "legend_font_mm": 4.8
+      },
+      {
+        "key": 4,
+        "valid": true,
+        "solids": 1,
+        "size_mm": [
+          18.200000199999998,
+          18.200000199999998,
+          7.0000002000000014
+        ],
+        "removed_mm3": 1.8108484993673928,
+        "removed_min_z_mm": 6.6499999,
+        "added_outside_blank_mm3": 0,
+        "legend_font_mm": 3.3
+      },
+      {
+        "key": 5,
+        "valid": true,
+        "solids": 1,
+        "size_mm": [
+          18.200000199999998,
+          18.200000199999998,
+          7.0000002000000014
+        ],
+        "removed_mm3": 1.087347926247983,
+        "removed_min_z_mm": 6.6499999,
+        "added_outside_blank_mm3": 0,
+        "legend_font_mm": 4.8
+      },
+      {
+        "key": 6,
+        "valid": true,
+        "solids": 1,
+        "size_mm": [
+          18.200000199999998,
+          18.200000199999998,
+          7.0000002000000014
+        ],
+        "removed_mm3": 1.7347492545106915,
+        "removed_min_z_mm": 6.6499999,
+        "added_outside_blank_mm3": 0,
+        "legend_font_mm": 4.8
+      },
+      {
+        "key": 7,
+        "valid": true,
+        "solids": 1,
+        "size_mm": [
+          18.200000199999998,
+          18.200000199999998,
+          7.0000002000000014
+        ],
+        "removed_mm3": 1.7100160043444501,
+        "removed_min_z_mm": 6.6499999,
+        "added_outside_blank_mm3": 0,
+        "legend_font_mm": 4.8
+      },
+      {
+        "key": 8,
+        "valid": true,
+        "solids": 1,
+        "size_mm": [
+          18.200000199999998,
+          18.200000199999998,
+          7.0000002000000014
+        ],
+        "removed_mm3": 0.518286895751953,
+        "removed_min_z_mm": 6.65,
+        "added_outside_blank_mm3": 0,
+        "legend_font_mm": 4.8
+      },
+      {
+        "key": 9,
+        "valid": true,
+        "solids": 1,
+        "size_mm": [
+          18.200000199999998,
+          18.200000199999998,
+          7.0000002000000014
+        ],
+        "removed_mm3": 1.48244856262207,
+        "removed_min_z_mm": 6.65,
+        "added_outside_blank_mm3": 0,
+        "legend_font_mm": 4.8
+      },
+      {
+        "key": 10,
+        "valid": true,
+        "solids": 1,
+        "size_mm": [
+          18.200000199999998,
+          18.200000199999998,
+          7.0000002000000014
+        ],
+        "removed_mm3": 2.1359687671754255,
+        "removed_min_z_mm": 6.6499999,
+        "added_outside_blank_mm3": 0,
+        "legend_font_mm": 4.8
+      },
+      {
+        "key": 11,
+        "valid": true,
+        "solids": 1,
+        "size_mm": [
+          18.200000199999998,
+          18.200000199999998,
+          7.0000002000000014
+        ],
+        "removed_mm3": 1.7074010223840794,
+        "removed_min_z_mm": 6.6499999,
+        "added_outside_blank_mm3": 0,
+        "legend_font_mm": 4.8
+      },
+      {
+        "key": 12,
+        "valid": true,
+        "solids": 1,
+        "size_mm": [
+          18.200000199999998,
+          18.200000199999998,
+          7.0000002000000014
+        ],
+        "removed_mm3": 0.8933337707519527,
+        "removed_min_z_mm": 6.65,
+        "added_outside_blank_mm3": 0,
+        "legend_font_mm": 4.8
+      },
+      {
+        "key": 13,
+        "valid": true,
+        "solids": 1,
+        "size_mm": [
+          18.200000199999998,
+          18.200000199999998,
+          7.0000002000000014
+        ],
+        "removed_mm3": 0.9791820376735393,
+        "removed_min_z_mm": 6.6499999,
+        "added_outside_blank_mm3": 0,
+        "legend_font_mm": 4.8
+      },
+      {
+        "key": 14,
+        "valid": true,
+        "solids": 1,
+        "size_mm": [
+          18.200000199999998,
+          18.200000199999998,
+          7.0000002000000014
+        ],
+        "removed_mm3": 1.516628457331778,
+        "removed_min_z_mm": 6.6499999,
+        "added_outside_blank_mm3": 0,
+        "legend_font_mm": 4.8
+      },
+      {
+        "key": 15,
+        "valid": true,
+        "solids": 1,
+        "size_mm": [
+          18.200000199999998,
+          18.200000199999998,
+          7.0000002000000014
+        ],
+        "removed_mm3": 1.3974260279875683,
+        "removed_min_z_mm": 6.6499999,
+        "added_outside_blank_mm3": 0,
+        "legend_font_mm": 4.8
+      },
+      {
+        "key": 16,
+        "valid": true,
+        "solids": 1,
+        "size_mm": [
+          18.200000199999998,
+          18.200000199999998,
+          7.0000002000000014
+        ],
+        "removed_mm3": 3.981098927645738,
+        "removed_min_z_mm": 6.6499999,
+        "added_outside_blank_mm3": 0,
+        "legend_font_mm": 4.8
+      },
+      {
+        "key": 17,
+        "valid": true,
+        "solids": 1,
+        "size_mm": [
+          18.200000199999998,
+          18.200000199999998,
+          7.0000002000000014
+        ],
+        "removed_mm3": 3.3907173614412622,
+        "removed_min_z_mm": 6.6499999,
+        "added_outside_blank_mm3": 0,
+        "legend_font_mm": 3.3
+      },
+      {
+        "key": 18,
+        "valid": true,
+        "solids": 1,
+        "size_mm": [
+          18.200000199999998,
+          18.200000199999998,
+          7.0000002000000014
+        ],
+        "removed_mm3": 1.6650378976230469,
+        "removed_min_z_mm": 6.6499999,
+        "added_outside_blank_mm3": 0,
+        "legend_font_mm": 4.8
+      },
+      {
+        "key": 19,
+        "valid": true,
+        "solids": 1,
+        "size_mm": [
+          18.200000199999998,
+          18.200000199999998,
+          7.0000002000000014
+        ],
+        "removed_mm3": 0.1518110046386718,
+        "removed_min_z_mm": 6.65,
+        "added_outside_blank_mm3": 0,
+        "legend_font_mm": 4.8
+      },
+      {
+        "key": 20,
+        "valid": true,
+        "solids": 1,
+        "size_mm": [
+          18.200000199999998,
+          18.200000199999998,
+          7.0000002000000014
+        ],
+        "removed_mm3": 1.6687724380204574,
+        "removed_min_z_mm": 6.6499999,
+        "added_outside_blank_mm3": 0,
+        "legend_font_mm": 3.3
+      }
+    ],
+    "minimum_roof_under_features_mm": 1.25,
+    "marker_diameter_mm": 2,
+    "marker_depth_mm": 0.35,
+    "enter_font_mm": 3.3,
+    "socket": {
+      "span_mm": 4.1,
+      "arm_mm": 1.4,
+      "depth_mm": 3.3,
+      "stop_z_mm": 4.699999999999999
+    }
+  },
+  "external_travel_checks": [
+    "CAD path at revision 79bb392: {\"moving\":[\"key_01\",\"key_02\",\"key_03\",\"key_04\",\"key_05\",\"key_06\",\"key_07\",\"key_08\",\"key_09\",\"key_10\"],\"path_length_mm\":4,\"first_contact\":null,\"first_overlap\":null,\"objects\":[{\"object_id\":\"top\",\"min_clearance_mm\":1.5,\"min_clearance_at\":{\"step\":1,\"fraction\":1,\"travel_mm\":4,\"offset_mm\":[0,0.279,-3.99]}},{\"object_id\":\"screen_lens\",\"min_clearance_mm\":6.4146,\"min_clearance_at\":{\"step\":1,\"fraction\":1,\"travel_mm\":4,\"offset_mm\":[0,0.279,-3.99]}}],\"objects_never_within\":{\"mm\":10,\"count\":2},\"precision\":{\"method\":\"triangle meshes (Manifold)\",\"mesh_tolerance_mm\":0.02,\"note\":\"Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.\",\"step_mm\":0.25,\"poses\":17,\"contact_located_within_mm\":0.001,\"sampling\":\"No point of the moving objects travels more than 0.25 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 1 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them.\"},\"query_ms\":83}. Geometry facts support visual judgment; they are not a quality verdict.",
+    "CAD path at revision 79bb392: {\"moving\":[\"key_11\",\"key_12\",\"key_13\",\"key_14\",\"key_15\",\"key_16\",\"key_17\",\"key_18\",\"key_19\",\"key_20\"],\"path_length_mm\":4,\"first_contact\":null,\"first_overlap\":null,\"objects\":[{\"object_id\":\"top\",\"min_clearance_mm\":1.5,\"min_clearance_at\":{\"step\":1,\"fraction\":1,\"travel_mm\":4,\"offset_mm\":[0,0.279,-3.99]}}],\"objects_never_within\":{\"mm\":10,\"count\":3},\"precision\":{\"method\":\"triangle meshes (Manifold)\",\"mesh_tolerance_mm\":0.02,\"note\":\"Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.\",\"step_mm\":0.25,\"poses\":17,\"contact_located_within_mm\":0.001,\"sampling\":\"No point of the moving objects travels more than 0.25 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 1 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them.\"},\"query_ms\":89}. Geometry facts support visual judgment; they are not a quality verdict."
+  ],
+  "visual_review": {
+    "full_assembly": "committed iso preview inspected",
+    "all_keycaps": "20-cap isolated iso with ghost assembly inspected",
+    "detail": "key_10 and key_16 iso/top inspected"
+  },
+  "change_scope": "20 keycap top faces only; no added volume outside unchanged cap blank; socket and case profiles unchanged",
+  "limitations": [
+    "Physical tactile feel, print shrinkage, strength, insertion force and wear not measured.",
+    "Motion checks cover the external case, bottom cover, Pico and screen lens, sampled at 0.25 mm / 17 poses / 0.02 mm mesh tolerance; they do not certify a fused vendor switch's internal mechanism.",
+    "Previous STL and complete production ZIP retain the earlier keycap geometry; current CAD STEP is the new-keycap delivery."
+  ],
+  "printing_started": false,
+  "powered": false,
+  "flashed": false,
+  "export_id": "export-99d34de5e31c8f3114ead4cf76d7de58",
+  "export_receipt": "manufacturing/enclosure/releases/export-99d34de5e31c8f3114ead4cf76d7de58/receipt.json",
+  "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc",
+  "exported_state_hash": "059881c15df00eff84c98a99eb8964e8e77fd86231dd683a7f859def5b45edb8"
+}

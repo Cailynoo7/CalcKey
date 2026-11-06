@@ -1,0 +1,1 @@
+publish("matrix_pcb", asset("design/enclosure/source/assets/e2474c585d2693bb16227489b4c195a5ffbfa208a89e1ee4a6da6b9e6b1f5ef2.step"), "Matrix PCB with 20 KS-9 switches")

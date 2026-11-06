@@ -288,7 +288,7 @@
       "source": "default"
     },
     "switch_family": {
-      "value": "GATERON KS-9 三脚红轴，普通机械触点、手焊矩阵",
+      "value": "GATERON KS-9三脚红轴，普通机械触点，焊接到20键矩阵PCB",
       "source": "user"
     },
     "switch_variant": {
@@ -302,6 +302,53 @@
     "flashing_policy": {
       "value": "本次完成固件设计与编译验证，先不烧录。",
       "source": "user"
+    },
+    "matrix_pcb": {
+      "value": "保留Pico 2和GDM0103，设计20键矩阵PCB并核对与现有外壳的装配。",
+      "source": "user"
+    },
+    "matrix_pcb_implementation": {
+      "value": {
+        "width_mm": 73,
+        "depth_mm": 96,
+        "thickness_mm": 1.6,
+        "layers": 2,
+        "assembly": "焊接式KS-9，背面轴向二极管、0805上拉、10根直焊软线连接Pico；LCD仍直接接Pico",
+        "board_top_local_z_mm": 16,
+        "board_center_local_y_mm": -14
+      },
+      "source": "default"
+    },
+    "keycap_usability": {
+      "value": {
+        "five_key_tactile_marker": true,
+        "enter_equals_dual_legend": true,
+        "unified_legend_layout": true
+      },
+      "source": "user"
+    },
+    "keycap_legend_defaults": {
+      "value": {
+        "font": "Arial Bold",
+        "word_font_mm": 3.3,
+        "digit_operator_font_mm": 4.8,
+        "engrave_depth_mm": 0.35,
+        "edge_margin_mm": 1.0,
+        "enter_layout": "Enter above =; both centered",
+        "enter_centers_y_mm": [
+          2.4,
+          -2.1
+        ],
+        "five_marker": "shallow spherical recess, no raised feature",
+        "five_marker_diameter_mm": 2.0,
+        "five_marker_depth_mm": 0.35,
+        "five_marker_center_xy_mm": [
+          0,
+          -4.6
+        ],
+        "five_digit_center_y_mm": 0.6
+      },
+      "source": "default"
     }
   },
   "open_questions": []
