@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "models": [
+    {
+      "file": "models/enclosure.glb",
+      "design": "enclosure"
+    },
+    {
+      "file": "models/matrix.glb",
+      "design": "matrix"
+    }
+  ]
+}

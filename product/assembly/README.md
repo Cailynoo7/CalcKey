@@ -1,3 +1,5 @@
+> 历史资料：手焊行列版九页焊接手册，不是当前MATRIX A矩阵PCB的操作依据。当前请用product/matrix-assembly-diagrams中的四页焊装图、guided-soldering操作手册与59项待测记录；不要按本目录重新并行列或采购轴向上拉电阻。
+
 # CalcKey GDM0103断电焊接操作包（LCD-B / 固件v0.2.0）
 
 提供9页A4打印指南、同内容Markdown和5张可填写CSV记录表。CSV以UTF-8 BOM编码，所有实物状态均为“待测”。配合4页A3接线图；操作包中附有该PDF、四张SVG、逐键表及9端子LCD对照表。

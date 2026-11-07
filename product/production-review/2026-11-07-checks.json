@@ -1,0 +1,133 @@
+{
+  "kind": "one_device_production_materials_review",
+  "review_date": "2026-11-07",
+  "scope": "Existing part identities/counts, PCB order parameters and print materials only; no design or procurement changes.",
+  "pcb_release_id": "17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727",
+  "pcb_build_id": "6a333818c3a79007ec3a24727eed3008848215ed1c5c0238051beffaecfde0e3",
+  "fabrication_package_sha256": "e6ae9edbe31d184a3f1e57cffe2535466c04d0af143dc57ccf06d5e4a0b65dc8",
+  "verified": {
+    "bom_rows": 28,
+    "shopping_rows": 27,
+    "coverage_exact": true,
+    "board_mm": [
+      73,
+      96,
+      1.6
+    ],
+    "copper_layers": 2,
+    "copper_um": [
+      35,
+      35
+    ],
+    "fabrication_files": 13,
+    "zip_entries": 14,
+    "crc_and_published_bytes_match": true,
+    "component_counts": {
+      "SW": 20,
+      "D": 20,
+      "R": 4,
+      "J": 10
+    },
+    "pth_counts_by_mm": {
+      "0.3": 8,
+      "0.8": 40,
+      "1.5": 40
+    },
+    "npth_counts_by_mm": {
+      "4.0": 20
+    },
+    "printed_parts": 28,
+    "printed_materials": {
+      "PLA": 2,
+      "PETG": 26
+    },
+    "all_stl_hashes_match": true,
+    "installed_wire_count": 15,
+    "installed_wire_m": 2.25,
+    "recommended_wire_m": 3,
+    "wire_insulated_od_max_mm": 1.3
+  },
+  "dimensional_note": {
+    "gerber_profile_stroke_mm": 0.1,
+    "profile_centerline_size_mm": [
+      73,
+      96
+    ],
+    "job_ink_bounds_mm": [
+      73.1,
+      96.1
+    ],
+    "action": "Use nominal 73x96mm and original profile; do not scale to remove stroke envelope."
+  },
+  "purchase_cautions": [
+    "26AWG is conductor gauge: also require insulated OD <=1.3mm as existing constraints specify.",
+    "LCD must be the 3.3V, 6-o-clock variant, 78x26x<=10mm with low-profile wiring.",
+    "USB Micro-B data plug <=12x8mm; use 0.15mm specified adhesives, not thick foam.",
+    "20 switches installed; 22 recommended when available split. Current official page lists 35-piece packs; one pack if buying there."
+  ],
+  "evidence_limits": [
+    "C917479 and C17414 live supplier detail lookup returned supplier_search_failed with bot challenge; exact codes retained, no live stock or price claim.",
+    "Vishay PDF confirms 1N4148-TAP DO-35 black cathode band; UNI-ROYAL PDF pages 1-2 confirm 0805/W8/F/1002 coding.",
+    "LCD manufacturer-labelled cached PDF pages 3/7/8 and live module page used; no physical module inspected.",
+    "No printer/filament brand specified and no slicing performed; filament mass and print duration not estimated.",
+    "No bought parts, glue bond, printed fit or electrical functionality accepted as physically verified."
+  ],
+  "web_evidence": [
+    {
+      "url": "https://jlcpcb.com/capabilities/pcb-capabilities/",
+      "observed": "2026-11-07",
+      "use": "FR4, layers, 1.6mm thickness, 1oz and standard fabrication capabilities; no quote."
+    },
+    {
+      "url": "https://www.gateron.com/products/gateron-ks-9-switch-set",
+      "observed": "2026-11-07",
+      "use": "3-pin Red option and 35-piece packing; existing user-confirmed X14/FB mapping retained."
+    },
+    {
+      "url": "https://www.qiyun-display.cn/Products_1/55.html",
+      "observed": "2026-11-07",
+      "use": "GDM0103/HT1621B module dimensions and supply variants."
+    },
+    {
+      "url": "https://help.prusa3d.com/article/petg_2059",
+      "observed": "2026-11-07",
+      "use": "PETG material and print-surface limitations."
+    },
+    {
+      "url": "https://help.prusa3d.com/article/pla_2062",
+      "observed": "2026-11-07",
+      "use": "PLA indoor shell and heat limitations."
+    }
+  ],
+  "input_sha256": {
+    "product/bom.json": "082d557798668b949353446e8c36873c26d1a323d3ed54d627e5c00f8375a91d",
+    "product/constraints.json": "b08a30f3a47ca90c5ff62c3c18f85415f25ea8f66b5ecd9ef0b2ff206fe172ca",
+    "product/purchasing/matrix/hand-assembly-shopping.json": "19b32676b6a354f2aab28a8f9627293ceb3e68482d8d9b97ff0f2c72052350e8",
+    "product/purchasing/matrix/pcb-order-parameters.json": "e81e9861cbadce277881ca18f8469a4d0c3193ea7739296fcfe3265b74e3a00b",
+    "product/production/model-manifest.json": "d0458382a789b6beb67189ec4a1d8ea22edb69ebff3b966b78e795dff291af7b",
+    "product/print-preparation/part-settings.csv": "e0d29ae47d55776398bd67e0d0d22dd176af99f41972411a7db8325ede04a925",
+    "product/references/gdm0103-specification.pdf": "5a99da5743955683150a6527b8757073570189a4aa4ce2f4131a8d0baec73ba8",
+    "product/references/vishay-1n4148.pdf": "aefe85400a427ed886a4e1c88205ceabb9f9b38044b29c6acee4bb00146a44b7",
+    "references/suppliers/c17414/c17414-datasheet.pdf": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+    "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/release-manifest.json": "9172a35ff855e1a0376d32d8fdec4b7b9c46065f73d87cf83b2dc1758306e969",
+    "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/circuit.json": "8a779318bd5c6954efa04725872f7ac9e82beba712a5fcde15156b1b5dae9171",
+    "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/gerbers/board-Edge_Cuts.gm1": "ddfd2b6ca573be2fc886c649bc3596040628908c7cdeb03fbc58e7df445bafcf",
+    "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/gerbers/board-job.gbrjob": "0ab65a9000892b6a203accc96c980d71bd98a51ff5020e64d91b5557b7d9d931",
+    "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/drill/board-PTH.drl": "e31a1900f52877882f709e7c68eb62d9a4004f0ce6175f60a0ce519e6e3749fb",
+    "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/drill/board-NPTH.drl": "3fc8f757df9607863d3c996740d24af9c689e2c87cee08304daea7480d4f2afa",
+    "product/production/matrix-fabrication.zip": "e6ae9edbe31d184a3f1e57cffe2535466c04d0af143dc57ccf06d5e4a0b65dc8"
+  },
+  "actions": {
+    "order_placed": false,
+    "supplier_upload": false,
+    "paid": false,
+    "printed": false,
+    "powered": false,
+    "flashed": false,
+    "design_changed": false,
+    "bom_changed": false,
+    "git_rules_changed": false,
+    "historical_materials_changed": false,
+    "complete_package_rebuilt": false
+  }
+}

@@ -33,7 +33,7 @@
           "target": "base",
           "order": 0,
           "path": "design/enclosure/source/parts/base/000-base.py",
-          "sha256": "f2366e1341930f5298b749353bab6b14798142c8591f225f202cd3a50d88df25"
+          "sha256": "711b94b0b0f4368ce7fab60de46d6b36d3d873375fdcc00637921b129b45f800"
         }
       ],
       "dependencies": [
@@ -49,7 +49,7 @@
           "target": "top",
           "order": 0,
           "path": "design/enclosure/source/parts/top/000-top.py",
-          "sha256": "6409411a5793ae942ac02e6b4d85925061a5ee4e07807d8f152979039fb96864"
+          "sha256": "09732fb6019466bab403af4bccd872884a0d02ddc91cf51334bc90cd03aec35d"
         }
       ],
       "dependencies": [
@@ -506,32 +506,6 @@
   ],
   "objects": [
     {
-      "id": "pico2",
-      "target": "imports",
-      "label": "Pico 2 reference",
-      "kind": "imported",
-      "shapeHash": "6961e1d319940ab51b8707b697ab4f76192cc345b18893eb9ed480cc62abc42a",
-      "transform": {
-        "positionMm": [
-          16.4,
-          -10.345349813442107,
-          11.049067149079484
-        ],
-        "rotationDeg": [
-          4,
-          0,
-          -90
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
       "id": "matrix_pcb",
       "target": "imports",
       "label": "Matrix PCB with 20 KS-9 switches",
@@ -558,12 +532,38 @@
       "datums": []
     },
     {
+      "id": "pico2",
+      "target": "imports",
+      "label": "Pico 2 reference",
+      "kind": "imported",
+      "shapeHash": "6961e1d319940ab51b8707b697ab4f76192cc345b18893eb9ed480cc62abc42a",
+      "transform": {
+        "positionMm": [
+          16.4,
+          -10.345349813442107,
+          11.049067149079484
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          -90
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
       "id": "base",
       "target": "base",
       "label": "Bottom service cover",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "85eecebb749f060a9eec5642c9fa709a35d5b5d0405e2ece79d1b4c43c812bcd",
+      "shapeHash": "02c6400688191afd62a813977242e20a2273921186d32670fcee767c69cbe73b",
       "transform": {
         "positionMm": [
           0,
@@ -590,7 +590,7 @@
       "label": "Main key housing",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "71f60600ad8ac6ac85c0fa4863f12dd9714371fb4b484bd46a81053ae89ceb33",
+      "shapeHash": "182cacc766d3b9586ae6a4635875fce3985a2fc345c554fc724b8f065be5480a",
       "transform": {
         "positionMm": [
           0,
@@ -1423,7 +1423,7 @@
       "b": "top"
     }
   ],
-  "updatedAt": "2026-11-06T10:09:21.688Z",
+  "updatedAt": "2026-11-07T01:42:11.246Z",
   "parameters": {
     "imports": {},
     "base": {

@@ -1,6 +1,6 @@
-# Replicator — managed block, edited by the app. Your own rules go above.
+# Makit — managed block, edited by the app. Your own rules go above.
 /.work/
-/.replicator/
+/.makit/
 .history/
 .DS_Store
 *.tmp-*
@@ -29,34 +29,7 @@ manufacturing/**
 !manufacturing/**/*.json
 !manufacturing/**/*.md
 
-/product/references/README.md
-/product/references/battery-holder-4193-back.jpg
-/product/references/battery-holder-4193-front.jpg
-/product/references/cherry-keymodule-mx-catalogue.pdf
-/product/references/cherry-mx2a-red-2026.pdf
-/product/references/cherry-mx2a-red-legacy.pdf
-/product/references/cherry-mx2a-red-mounting.pdf
-/product/references/eda-keypad-reference.md
-/product/references/gateron-gpro3-official.rar
-/product/references/gateron-gpro3/G PRO 3.0 Switch KS-9E10B055NN-Y51.stp
-/product/references/gateron-ks8-official.rar
-/product/references/gateron-ks8/KS-8 Switch KS-8-X5.stp
-/product/references/gateron-ks9-official.rar
-/product/references/gateron-ks9-product-spec.webp
-/product/references/gateron-ks9/KS-9 Switch KS-9H10B045NN-X14-FB.stp
-/product/references/gdm0103-specification.pdf
-/product/references/grove-1125r-4p.pdf
-/product/references/grove-1125s-4p.pdf
-/product/references/grove-oled-pinout.jpg
-/product/references/grove-oled-schematic.pdf
-/product/references/grove-oled-ssd1315-v1.brd
-/product/references/grove-oled-ssd1315-v1.sch
-/product/references/grove-oled-ssd1315-v1.zip
-/product/references/ht1621-v340.pdf
-/product/references/nhd-0108fz-rn-ybw.pdf
-/product/references/oel-display-module.pdf
-/product/references/pico2-vendor.step
-/product/references/rp-008299-ds.pdf
-/product/references/vishay-1n4148.pdf
-/product/references/vishay-1n5817.pdf
-# Replicator — end managed block
+/product/references/**
+!/product/references/**/
+!/product/references/index.json
+# Makit — end managed block

@@ -1,0 +1,144 @@
+{
+  "date": "2026-11-05",
+  "design_id": "switch_fit",
+  "revision": "1cd5ff0b9f9febf1171ab87eaad58a7932c48dd8b278b2e4072805015bd0eb75",
+  "baseline_enclosure_revision": "1a8921909f48be45a5d02566a8b252d95895c113139722146fb32324ca7933f8",
+  "dimensions_mm": [
+    70,
+    60,
+    3
+  ],
+  "source": "default",
+  "material": "PLA",
+  "stations": [
+    {
+      "id": "A",
+      "center_mm": [
+        -23,
+        12
+      ],
+      "measured_hole_xy_mm": [
+        14.0,
+        14.0
+      ],
+      "measured_pocket_xy_mm": [
+        16.4,
+        16.4
+      ],
+      "measured_land_mm": 1.5
+    },
+    {
+      "id": "B",
+      "center_mm": [
+        0,
+        12
+      ],
+      "measured_hole_xy_mm": [
+        14.1,
+        14.1
+      ],
+      "measured_pocket_xy_mm": [
+        16.4,
+        16.4
+      ],
+      "measured_land_mm": 1.5
+    },
+    {
+      "id": "C",
+      "center_mm": [
+        23,
+        12
+      ],
+      "measured_hole_xy_mm": [
+        14.2,
+        14.2
+      ],
+      "measured_pocket_xy_mm": [
+        16.4,
+        16.4
+      ],
+      "measured_land_mm": 1.5
+    },
+    {
+      "id": "D",
+      "center_mm": [
+        -23,
+        -12
+      ],
+      "measured_hole_xy_mm": [
+        14.3,
+        14.3
+      ],
+      "measured_pocket_xy_mm": [
+        16.4,
+        16.4
+      ],
+      "measured_land_mm": 1.5
+    },
+    {
+      "id": "E",
+      "center_mm": [
+        0,
+        -12
+      ],
+      "measured_hole_xy_mm": [
+        14.2,
+        14.2
+      ],
+      "measured_pocket_xy_mm": [
+        16.4,
+        16.4
+      ],
+      "measured_land_mm": 1.35
+    },
+    {
+      "id": "F",
+      "center_mm": [
+        23,
+        -12
+      ],
+      "measured_hole_xy_mm": [
+        14.2,
+        14.2
+      ],
+      "measured_pocket_xy_mm": [
+        16.4,
+        16.4
+      ],
+      "measured_land_mm": 1.65
+    }
+  ],
+  "checks": {
+    "method": "exact Boolean slices 0.02mm and land intersection columns 0.2mm square",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 8318.405744441328,
+    "minimum_hole_ligament_mm": 6.6,
+    "engraving_remaining_floor_mm": 2.7,
+    "full_press_cap_outer_envelope": {
+      "size_mm": [
+        18.2,
+        18.2,
+        7
+      ],
+      "cap_bottom_z_mm": 4,
+      "coupon_top_z_mm": 3,
+      "locations": 6,
+      "clearance_mm": 1,
+      "mesh_tolerance_mm": 0.02,
+      "height_source": "default; actual stem seating still unknown"
+    }
+  },
+  "physical_tested": false,
+  "printed": false,
+  "flashed": false,
+  "record_rows": {
+    "switch_fit": 6,
+    "switch_and_cap": 18
+  },
+  "limitations": [
+    "No exact CHERRY MX2A-L1NN STEP or complete toleranced mounting drawing.",
+    "All printed hole/clip stiffness, retention, cap stem fit and seating heights require actual measurement.",
+    "Existing enclosure and three cap sample geometries unchanged."
+  ]
+}

@@ -143,5 +143,5 @@ assert floor>=2 and wall>=2 and pico_z+PICO_SEAT_BOTTOM>floor
 assert body.is_valid and len(body.solids())==1
 for record in joint_records: print(record)
 print("compact envelope",case_w,case_d,base_h+top_t,"GDM0103 PCB bottom",lcd_z,"Pico bottom",pico_z)
-body.color=srgb("#273548")
+body.color=srgb("#C4E4DA")
 publish("base",body,"Bottom service cover",material="pla")

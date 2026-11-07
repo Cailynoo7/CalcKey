@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "units": "mm",
+  "coordinateFrame": "makit-world-z-up",
+  "targets": [
+    {
+      "id": "fit_00",
+      "label": "fit_00",
+      "cells": [
+        {
+          "id": "fit_00",
+          "target": "fit_00",
+          "order": 0,
+          "path": "design/keycap_fit/source/parts/fit_00/000-fit_00.py",
+          "sha256": "6f8ccfb6d28748ed69393a3345b96a7f0cd94e3a6cbe8af6409d2bc6c9ac9ab6"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "fit_05",
+      "label": "fit_05",
+      "cells": [
+        {
+          "id": "fit_05",
+          "target": "fit_05",
+          "order": 0,
+          "path": "design/keycap_fit/source/parts/fit_05/000-fit_05.py",
+          "sha256": "b50b03bf35acb01e89311bd0bed779a391a195f81e2f5979dc12c8b0542f4484"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "fit_10",
+      "label": "fit_10",
+      "cells": [
+        {
+          "id": "fit_10",
+          "target": "fit_10",
+          "order": 0,
+          "path": "design/keycap_fit/source/parts/fit_10/000-fit_10.py",
+          "sha256": "7bf2bbd54de277e40c0924114d70809c2a27b4fc75f3bca5f20d08754bdce558"
+        }
+      ],
+      "dependencies": []
+    }
+  ],
+  "objects": [
+    {
+      "id": "fit_00",
+      "target": "fit_00",
+      "label": "P0 fit cap",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "86366bff5e14054326ce17db487ff6128dc1ef9209c0254dbdf150d29b0f6af8",
+      "transform": {
+        "positionMm": [
+          -22,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "fit_05",
+      "target": "fit_05",
+      "label": "P5 fit cap",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "00911e422a79f9158a7afc905d55b2947981dacb1785f091911de9c1c44121e4",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "fit_10",
+      "target": "fit_10",
+      "label": "P10 fit cap",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "6524260acad5497a8ebc7d7fabcc43591a668ae82a1342d85ce977771f06fbeb",
+      "transform": {
+        "positionMm": [
+          22,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    }
+  ],
+  "assets": [],
+  "fits": [],
+  "updatedAt": "2026-11-05T09:28:32.958Z",
+  "parameters": {
+    "fit_00": {
+      "fit_00_width": 18.2,
+      "fit_00_top_width": 14.4,
+      "fit_00_height": 7,
+      "fit_00_wall": 1.2,
+      "fit_00_roof": 1.6,
+      "fit_00_socket_outer_diameter": 5.6,
+      "fit_00_socket_span": 4.1,
+      "fit_00_socket_arm": 1.4,
+      "fit_00_socket_depth": 3.3,
+      "fit_00_socket_mouth_inset": 1.4,
+      "fit_00_socket_fit_delta": 0,
+      "fit_00_socket_lead_in": 0.1,
+      "fit_00_legend_size": 3.1,
+      "fit_00_legend_depth": 0.35,
+      "fit_00_socket_neck_width": 4.8,
+      "fit_00_socket_neck_top": 5.1
+    },
+    "fit_05": {
+      "fit_05_width": 18.2,
+      "fit_05_top_width": 14.4,
+      "fit_05_height": 7,
+      "fit_05_wall": 1.2,
+      "fit_05_roof": 1.6,
+      "fit_05_socket_outer_diameter": 5.6,
+      "fit_05_socket_span": 4.1,
+      "fit_05_socket_arm": 1.4,
+      "fit_05_socket_depth": 3.3,
+      "fit_05_socket_mouth_inset": 1.4,
+      "fit_05_socket_fit_delta": 0.05,
+      "fit_05_socket_lead_in": 0.1,
+      "fit_05_legend_size": 3.1,
+      "fit_05_legend_depth": 0.35,
+      "fit_05_socket_neck_width": 4.8,
+      "fit_05_socket_neck_top": 5.1
+    },
+    "fit_10": {
+      "fit_10_width": 18.2,
+      "fit_10_top_width": 14.4,
+      "fit_10_height": 7,
+      "fit_10_wall": 1.2,
+      "fit_10_roof": 1.6,
+      "fit_10_socket_outer_diameter": 5.6,
+      "fit_10_socket_span": 4.1,
+      "fit_10_socket_arm": 1.4,
+      "fit_10_socket_depth": 3.3,
+      "fit_10_socket_mouth_inset": 1.4,
+      "fit_10_socket_fit_delta": 0.1,
+      "fit_10_socket_lead_in": 0.1,
+      "fit_10_legend_size": 3.1,
+      "fit_10_legend_depth": 0.35,
+      "fit_10_socket_neck_width": 4.8,
+      "fit_10_socket_neck_top": 5.1
+    }
+  }
+}

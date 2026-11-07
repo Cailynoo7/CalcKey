@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "units": "mm",
+  "coordinateFrame": "makit-world-z-up",
+  "targets": [
+    {
+      "id": "coupon",
+      "label": "coupon",
+      "cells": [
+        {
+          "id": "coupon",
+          "target": "coupon",
+          "order": 0,
+          "path": "design/switch_fit/source/parts/coupon/000-coupon.py",
+          "sha256": "cf9410452ff008659e4c4beb11d000555627d955afd587d1bbf39df70ab07435"
+        }
+      ],
+      "dependencies": []
+    }
+  ],
+  "objects": [
+    {
+      "id": "plate",
+      "target": "coupon",
+      "label": "Six-hole switch fit coupon",
+      "material": "pla",
+      "kind": "generated",
+      "shapeHash": "9fea7244d3e6a707541531aec894b8d4b47b4ea681146800d239274ad8d72268",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    }
+  ],
+  "assets": [],
+  "fits": [],
+  "updatedAt": "2026-11-05T08:47:53.810Z",
+  "parameters": {
+    "coupon": {
+      "plate_width": 70,
+      "plate_depth": 60,
+      "plate_thickness": 3,
+      "outer_corner_radius": 3,
+      "station_pitch_x": 23,
+      "station_pitch_y": 24,
+      "current_hole_width": 14.2,
+      "hole_width_step": 0.1,
+      "clip_pocket_width": 16.4,
+      "current_clip_land": 1.5,
+      "clip_land_step": 0.15,
+      "label_font_size": 4.2,
+      "label_engrave_depth": 0.3
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "reviewed_at": "2026-11-05",
+  "requested_part": {
+    "manufacturer": "CHERRY",
+    "mpn": "MX2A-L1NN",
+    "ean": "4025112104640",
+    "quantity": 20,
+    "mount": "3-pin plate mount",
+    "rgb": false
+  },
+  "design_id": "enclosure",
+  "revision": "e91ebb786b2947414eb4ac10786b0ea728dacdf24428674faa5e2d591ebd7d0e",
+  "acquisition_observation": "No exact STEP/STP acquired; no substitute model imported; geometry unchanged.",
+  "catalog_search": {
+    "queries": [
+      "CHERRY MX2A-L1NN keyswitch"
+    ],
+    "matches": 0
+  },
+  "step_parts_search": [
+    {
+      "query": "CHERRY MX2A-L1NN",
+      "matches": 0
+    },
+    {
+      "query": "MX2A",
+      "matches": 0
+    },
+    {
+      "query": "Cherry MX",
+      "matches": 0
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.cherry.de/en-us/product/mx2a-red",
+      "observation": "Manufacturer page explicitly lists selected part and EAN; full travel 4mm."
+    },
+    {
+      "url": "https://www.cherry.de/en-us/product/mx2a-red/downloads",
+      "observation": "Visible resources were multilingual datasheets; no exact STEP link identified."
+    },
+    {
+      "url": "https://pim.cherry-world.net/datasheet/23119?locale=en_US",
+      "http_status": 403,
+      "read": false
+    },
+    {
+      "url": "https://www.cherry.de/fileadmin/media/Industrial/Switch/MX_RED/Data_sheet_MX2A_Red.pdf",
+      "http_status": 404,
+      "read": false
+    },
+    {
+      "url": "https://www.jw-shop.com/pdf/spec-MX2A.pdf",
+      "path": "product/references/cherry-mx2a-red-mounting.pdf",
+      "sha256": "0807a2f6ab50673bf41827d79a80da74791cfa6906cec448e1a996a8d9246c9f",
+      "author": "CHERRY",
+      "pages_read": [
+        7,
+        8
+      ],
+      "supports": [
+        "4mm total travel",
+        "MX2A-L1NN 3-pin frame snap fastening"
+      ],
+      "does_not_support": [
+        "exact clip geometry",
+        "stem/keycap seating height"
+      ]
+    },
+    {
+      "url": "https://deskthority.net/wiki/images/d/de/Keymodule_MX.pdf",
+      "path": "product/references/cherry-keymodule-mx-catalogue.pdf",
+      "sha256": "2a276cd96599fb8ac674f75e2c7f783212493858b8e643b9a20f5a9ddaf86a4d",
+      "author": "CHERRY",
+      "page_rendered": 3,
+      "scope": "Historical generic MX, not exact MX2A-L1NN",
+      "plate_opening_mm": {
+        "nominal": 14,
+        "tolerance": 0.05
+      },
+      "plate_thickness_mm": {
+        "nominal": 1.5,
+        "tolerance": 0.1
+      },
+      "corner_radius_max_mm": 0.3
+    },
+    {
+      "url": "https://polyzon.org/en/model/grabcad/gc-cherry-mx-1",
+      "classification": "rejected",
+      "reason": "Search excerpt identifies 2018 generic model described by author as ~85% accurate; not exact MX2A. Not downloaded."
+    },
+    {
+      "url": "https://componentsearchengine.com/part-view/MX2A-L1NN/CHERRY",
+      "observation": "Fetch unavailable; no model existence or accuracy inferred."
+    },
+    {
+      "url": "https://www.snapeda.com/parts/MX2A-L1NN/Cherry/view-part/",
+      "observation": "Fetch unavailable; no model acquired."
+    }
+  ],
+  "current_geometry_measurements": {
+    "units": "mm",
+    "frame": "unrotated enclosure local frame",
+    "measured_holes": 20,
+    "upper_hole_at_z20_5": [
+      14.2,
+      14.2
+    ],
+    "lower_pocket_at_z18_75": [
+      16.4,
+      16.4
+    ],
+    "panel_top_z": 21,
+    "roof_thickness": 3,
+    "clip_land_thickness": 1.5,
+    "clip_release_plane_z": 19.5,
+    "reference_cap_bottom_z": 26,
+    "reference_cap_top_z": 33,
+    "reference_cap_inner_roof_z": 31.6,
+    "released_reference_cap_gap": 5,
+    "full_travel_reference_cap_gap": 1,
+    "real_keycap_socket_modeled": false,
+    "cap_path_length": 4,
+    "path_mesh_tolerance": 0.02,
+    "path_step": 0.5,
+    "path_poses_per_batch": 9
+  },
+  "model_candidates_selected": [],
+  "required_followup_evidence": [
+    "Exact switch STEP/STP, revision, provenance and shoulder datum",
+    "Toleranced exact-part cutout/clip/plate-thickness/stem-height drawing",
+    "Purchased DSA 1U keycap socket geometry and insertion stop/depth"
+  ],
+  "physical_fit_tested": false,
+  "cap_path_tool_results": [
+    "CAD path at revision e91ebb7: {\"moving\":[\"key_01\",\"key_02\",\"key_03\",\"key_04\",\"key_05\",\"key_06\",\"key_07\",\"key_08\",\"key_09\",\"key_10\",\"key_11\",\"key_12\",\"key_13\",\"key_14\",\"key_15\",\"key_16\"],\"path_length_mm\":4,\"first_contact\":null,\"first_overlap\":null,\"objects\":[{\"object_id\":\"top\",\"min_clearance_mm\":1,\"min_clearance_at\":{\"step\":1,\"fraction\":1,\"travel_mm\":4,\"offset_mm\":[0,0.279,-3.99]}}],\"objects_never_within\":{\"mm\":10,\"count\":3},\"precision\":{\"method\":\"triangle meshes (Manifold)\",\"mesh_tolerance_mm\":0.02,\"note\":\"Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.\",\"step_mm\":0.5,\"poses\":9,\"contact_located_within_mm\":0.002,\"sampling\":\"No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 1 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them.\"},\"query_ms\":76}. Geometry facts support visual judgment; they are not a quality verdict.",
+    "CAD path at revision e91ebb7: {\"moving\":[\"key_17\",\"key_18\",\"key_19\",\"key_20\"],\"path_length_mm\":4,\"first_contact\":null,\"first_overlap\":null,\"objects\":[{\"object_id\":\"top\",\"min_clearance_mm\":1,\"min_clearance_at\":{\"step\":1,\"fraction\":1,\"travel_mm\":4,\"offset_mm\":[0,0.279,-3.99]}}],\"objects_never_within\":{\"mm\":10,\"count\":3},\"precision\":{\"method\":\"triangle meshes (Manifold)\",\"mesh_tolerance_mm\":0.02,\"note\":\"Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.\",\"step_mm\":0.5,\"poses\":9,\"contact_located_within_mm\":0.002,\"sampling\":\"No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 1 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them.\"},\"query_ms\":236}. Geometry facts support visual judgment; they are not a quality verdict."
+  ]
+}

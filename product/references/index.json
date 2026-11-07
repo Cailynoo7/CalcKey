@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "file": "README.md",
+      "sha256": "0c2893dd52aa838bd5aaca51a09c65340103f035f29206e9dfaec46bdf7196f8",
+      "bytes": 2176,
+      "addedAt": "2026-11-04T11:56:29.350Z",
+      "share": false
+    },
+    {
+      "file": "battery-holder-4193-back.jpg",
+      "sha256": "ed2b2fd334b4072d8c5e8fe10190359df6a500c8ba649db259d8fa2c63132d50",
+      "bytes": 103328,
+      "addedAt": "2026-11-04T12:12:10.315Z",
+      "share": false
+    },
+    {
+      "file": "battery-holder-4193-front.jpg",
+      "sha256": "54d1749feb6ae7f647c3ade0fc1f40d315380b35d232d72ae550af3d706dc797",
+      "bytes": 102913,
+      "addedAt": "2026-11-04T12:12:08.072Z",
+      "share": false
+    },
+    {
+      "file": "cherry-keymodule-mx-catalogue.pdf",
+      "sha256": "2a276cd96599fb8ac674f75e2c7f783212493858b8e643b9a20f5a9ddaf86a4d",
+      "bytes": 2842336,
+      "addedAt": "2026-11-05T06:35:12.817Z",
+      "share": false
+    },
+    {
+      "file": "cherry-mx2a-red-2026.pdf",
+      "sha256": "edc84247bbff978d9c1f161c9060d46909c2542d838e30018eb56322a8752f3a",
+      "bytes": 2094795,
+      "addedAt": "2026-11-04T13:42:55.803Z",
+      "share": false
+    },
+    {
+      "file": "cherry-mx2a-red-legacy.pdf",
+      "sha256": "53e5f85cf0d7664c79c8e4de06917f77f8a702992f331e8d56259ac844b097c3",
+      "bytes": 466820,
+      "addedAt": "2026-11-04T13:46:29.410Z",
+      "share": false
+    },
+    {
+      "file": "cherry-mx2a-red-mounting.pdf",
+      "sha256": "0807a2f6ab50673bf41827d79a80da74791cfa6906cec448e1a996a8d9246c9f",
+      "bytes": 428487,
+      "addedAt": "2026-11-05T06:34:33.499Z",
+      "share": false
+    },
+    {
+      "file": "eda-keypad-reference.md",
+      "sha256": "b8cd4fbaa0bc6f121dbcb44a9cd4fb4c2b517f6be6b705526c6a0b9c57134fa4",
+      "bytes": 670,
+      "addedAt": "2026-11-04T12:07:48.956Z",
+      "share": false
+    },
+    {
+      "file": "gateron-gpro3-official.rar",
+      "sha256": "29ec1dae4204eb737b7fa427c2d9e6d1bc08873df9dbc97f39601e210f64dcde",
+      "bytes": 184792,
+      "addedAt": "2026-11-05T09:03:12.232Z",
+      "share": false
+    },
+    {
+      "file": "gateron-gpro3/G PRO 3.0 Switch KS-9E10B055NN-Y51.stp",
+      "sha256": "e79fe9e7dc135368ffb1f5da48ae14366b913192207bcb43dac3b870c987ecc6",
+      "bytes": 1327834,
+      "addedAt": "2026-11-05T09:03:12.241Z",
+      "share": false
+    },
+    {
+      "file": "gateron-ks8-official.rar",
+      "sha256": "669b6e4d4d6fc5a39f66bac429d4c81032d01ff4aedc203fb36d2c75bb036e3a",
+      "bytes": 193582,
+      "addedAt": "2026-11-05T09:03:12.243Z",
+      "share": false
+    },
+    {
+      "file": "gateron-ks8/KS-8 Switch KS-8-X5.stp",
+      "sha256": "b675df604f1d6bcf85b790d20b5ea399f2064d8fd77b85369c33c2282340b37c",
+      "bytes": 1344862,
+      "addedAt": "2026-11-05T09:03:12.249Z",
+      "share": false
+    },
+    {
+      "file": "gateron-ks9-official.rar",
+      "sha256": "ef0d67fed08a2f78abd9ae45b4b08eb2b4b3012a089358758933b8109e21947d",
+      "bytes": 148849,
+      "addedAt": "2026-11-05T09:03:12.251Z",
+      "share": false
+    },
+    {
+      "file": "gateron-ks9-product-spec.webp",
+      "sha256": "37aff0e10a0d533b15e8c6e95bf5e542a65914ba3db32cb6cc54bb693c7e638c",
+      "bytes": 17490,
+      "addedAt": "2026-11-05T09:03:12.252Z",
+      "share": false
+    },
+    {
+      "file": "gateron-ks9/KS-9 Switch KS-9H10B045NN-X14-FB.stp",
+      "sha256": "29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d",
+      "bytes": 1080795,
+      "addedAt": "2026-11-05T09:03:12.258Z",
+      "share": false
+    },
+    {
+      "file": "gdm0103-specification.pdf",
+      "sha256": "5a99da5743955683150a6527b8757073570189a4aa4ce2f4131a8d0baec73ba8",
+      "bytes": 3582964,
+      "addedAt": "2026-11-05T07:26:23.246Z",
+      "share": false
+    },
+    {
+      "file": "generated/exec-cc582a8f-f6b3-430f-9318-896f36bda976.png",
+      "sha256": "83ae57fba8fd5df59f08f742c197b926786ba6378253ba324caf7cf52796398d",
+      "bytes": 1591575,
+      "addedAt": "2026-11-07T01:35:38.940Z",
+      "share": false
+    },
+    {
+      "file": "grove-1125r-4p.pdf",
+      "sha256": "4ea11a6f4b254ad5d033c6d4ea8678f187829b6b2d4cbe39db0e52951cc7696f",
+      "bytes": 203936,
+      "addedAt": "2026-11-04T13:36:33.414Z",
+      "share": false
+    },
+    {
+      "file": "grove-1125s-4p.pdf",
+      "sha256": "4f2085845d76747e1a970b6e304c3894b7e54567afc90a614327fa6a228d4fb7",
+      "bytes": 190482,
+      "addedAt": "2026-11-04T13:35:07.441Z",
+      "share": false
+    },
+    {
+      "file": "grove-oled-pinout.jpg",
+      "sha256": "e7667d854c24eb30ad96f0a923ea985309adace9a6cb464810a123446c076d6b",
+      "bytes": 81251,
+      "addedAt": "2026-11-04T11:56:29.351Z",
+      "share": false
+    },
+    {
+      "file": "grove-oled-schematic.pdf",
+      "sha256": "a977c8b7d7b5f63021b6b3d5677837e9cacf4991afb852f9a44a7b903de86fbf",
+      "bytes": 49001,
+      "addedAt": "2026-11-04T11:56:29.351Z",
+      "share": false
+    },
+    {
+      "file": "grove-oled-ssd1315-v1.brd",
+      "sha256": "67d5d8dfb422f09284cec9b4d6c5d9858997bc0b3148bcfc8e74d9f038086713",
+      "bytes": 110592,
+      "addedAt": "2026-11-04T11:56:29.351Z",
+      "share": false
+    },
+    {
+      "file": "grove-oled-ssd1315-v1.sch",
+      "sha256": "0f2ab13b1528aa3fc184db4f14accf7419b55322e9c0e72cf634fc9e05fa9551",
+      "bytes": 409170,
+      "addedAt": "2026-11-04T11:56:29.352Z",
+      "share": false
+    },
+    {
+      "file": "grove-oled-ssd1315-v1.zip",
+      "sha256": "5259c3bfc5eae681dc24e35bde3b4c2b2c9e757609df5fee1aa0cf9e36eb522f",
+      "bytes": 112043,
+      "addedAt": "2026-11-04T11:56:29.352Z",
+      "share": false
+    },
+    {
+      "file": "ht1621-v340.pdf",
+      "sha256": "e066c0d4f202324656e074f935e50cc49dfa87debd8af27c893309c4c5eb4e76",
+      "bytes": 756067,
+      "addedAt": "2026-11-05T08:03:32.369Z",
+      "share": false
+    },
+    {
+      "file": "nhd-0108fz-rn-ybw.pdf",
+      "sha256": "53f75fdaebbd1e6d7826527f8ab7463695080d581bd951ffab925871c01e5d01",
+      "bytes": 815794,
+      "addedAt": "2026-11-05T07:26:23.254Z",
+      "share": false
+    },
+    {
+      "file": "oel-display-module.pdf",
+      "sha256": "298d155e00da1cc8fb7a2a4a2c0149973a3b238694e0b594b9bd85f12c68be5c",
+      "bytes": 762294,
+      "addedAt": "2026-11-04T11:56:29.353Z",
+      "share": false
+    },
+    {
+      "file": "pico2-vendor.step",
+      "sha256": "d49ada10d893cfcb07cb4abced0a0a0cadca4c4150f153d874268ca06171a24f",
+      "bytes": 12391657,
+      "addedAt": "2026-11-04T11:56:29.364Z",
+      "share": false
+    },
+    {
+      "file": "rp-008299-ds.pdf",
+      "sha256": "cbcfaf881018c686495a2e53c7bd281e7e0a8217d79447d73eda7c8f74b7f675",
+      "bytes": 3016817,
+      "addedAt": "2026-11-04T11:56:29.369Z",
+      "share": false
+    },
+    {
+      "file": "vishay-1n4148.pdf",
+      "sha256": "aefe85400a427ed886a4e1c88205ceabb9f9b38044b29c6acee4bb00146a44b7",
+      "bytes": 93384,
+      "addedAt": "2026-11-04T11:56:29.370Z",
+      "share": false
+    },
+    {
+      "file": "vishay-1n5817.pdf",
+      "sha256": "4465c825da3be36cc8a180c252d5d80e7651d9dc237cd3d09822a759f39c970b",
+      "bytes": 70784,
+      "addedAt": "2026-11-04T11:56:29.371Z",
+      "share": false
+    }
+  ]
+}

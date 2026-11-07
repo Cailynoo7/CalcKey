@@ -1,0 +1,4 @@
+﻿sample,cross_span_mm,arm_width_mm,socket_depth_mm,material,nozzle_mm,layer_mm,insertion_fit,seated_cap_to_panel_mm,full_travel_return,removal,crack_check,status,notes
+P0,4.1,1.4,3.3,PETG,0.2,0.1,,,,,,待测,KS-9版本；下段削平宽4.8mm，入口局部最薄壁约0.25mm；先检查成型/裂纹
+P5,4.15,1.45,3.3,PETG,0.2,0.1,,,,,,待测,KS-9版本；下段削平宽4.8mm，入口局部最薄壁约0.225mm；先检查成型/裂纹
+P10,4.2,1.5,3.3,PETG,0.2,0.1,,,,,,待测,KS-9版本；下段削平宽4.8mm，入口局部最薄壁约0.2mm；先检查成型/裂纹

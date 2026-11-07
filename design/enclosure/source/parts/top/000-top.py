@@ -48,7 +48,7 @@ for xx,yy in matrix_relief_xy:
 assert panel.is_valid and len(panel.solids())==1
 print("integral upper housing",b.case_w,b.case_d,"bottom opening at",b.floor)
 print("window",window_w,window_d,"PCB columns now on bottom cover")
-panel.color=srgb("#354151")
+panel.color=srgb("#C4E4DA")
 publish("top",panel,"Main key housing",material="pla")
 
 # Same 20 nominal KS-9 locator ribs, now carried by the released PCB assembly.

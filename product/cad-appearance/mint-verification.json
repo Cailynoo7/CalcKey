@@ -1,0 +1,45 @@
+{
+  "before_revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
+  "after_revision": "648e0de434e2480bae9317b2a998e8a3c3e3b8d0ddf485cb9da1ca46572bf5ea",
+  "color_srgb": "#C4E4DA",
+  "objects": [
+    "base",
+    "top"
+  ],
+  "source_checks": {
+    "base": "Only srgb color literal changed",
+    "top": "Only srgb color literal changed"
+  },
+  "baseline_step_from": "Git HEAD:manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/model.step",
+  "baseline_step_sha256": "2a25d479d1fcf8d9261fa256df79eda8be7058511812ad56d7365d322c386c35",
+  "new_step": "manufacturing/enclosure/releases/export-941be886cd5bb212567a2c6dc012d6eb/model.step",
+  "new_step_sha256": "351cd71568815bf00f6ae0c7b6ba1ef7bf1d215b541b9ae1904ba21cee2390da",
+  "geometry_comparison": {
+    "objects_checked": 32,
+    "normalized_geometry_blocks_exactly_equal": 31,
+    "top_entities_with_roundoff": 12,
+    "top_roundoff_entity_types": [
+      "B_SPLINE_CURVE_WITH_KNOTS",
+      "CARTESIAN_POINT",
+      "DIRECTION"
+    ],
+    "maximum_numeric_delta": 1.0005885009434223e-14,
+    "numeric_comparison_tolerance": 1e-12,
+    "bbox_and_topology_unchanged": true,
+    "note": "STEP color/style statements and assembly uncertainty metadata excluded; top differences limited to numeric floating roundoff. All geometric source statements unchanged."
+  },
+  "interference": {
+    "undeclared": 0,
+    "over_budget": 0,
+    "declared_pair": [
+      "matrix_pcb",
+      "top"
+    ],
+    "depth_mm": 0.1374,
+    "budget_mm": 0.16
+  },
+  "complete_zip_rebuilt": false,
+  "printed": false,
+  "powered": false,
+  "flashed": false
+}

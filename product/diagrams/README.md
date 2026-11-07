@@ -1,3 +1,5 @@
+> 历史资料：手焊行列版接线图，不是当前MATRIX A矩阵PCB的操作依据。当前请用product/matrix-assembly-diagrams中的四页焊装图、guided-soldering操作手册与59项待测记录；不要按本目录重新并行列或采购轴向上拉电阻。
+
 # CalcKey GDM0103 LCD接线焊接图（LCD-B / 固件v0.2.0）
 
 交付四页A3横向矢量PDF、4张可编辑SVG、20键映射CSV和9端子LCD对照CSV。本版替换旧OLED图，适用于现有Pico 2、GDM0103/HT1621B的3.3V版本和20键矩阵，不改变硬件网络、固件或CAD。全程断电，不烧录。

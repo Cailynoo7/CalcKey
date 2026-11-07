@@ -1,5 +1,12 @@
 {
   "formatVersion": 4,
   "name": "CalcKey",
+  "summary": "两用键盘，连接电脑时能当扩展键盘，单独使用时能当计算器",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "QY G"
+    }
+  ],
   "artifacts": "rebuild"
 }

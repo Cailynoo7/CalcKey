@@ -1,26 +1,26 @@
 {
   "designId": "enclosure",
-  "revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
+  "revision": "648e0de434e2480bae9317b2a998e8a3c3e3b8d0ddf485cb9da1ca46572bf5ea",
   "schemaVersion": 3,
-  "exportId": "export-e9d67ce8536f1f9b0574ccf294968294",
-  "generatedAt": "2026-11-06T10:09:21.688Z",
-  "designSha256": "5f2dec7f259faa9700c6c9ddd9432c10d3603ab31fb7a5f786b479bc1c6c8b80",
+  "exportId": "export-941be886cd5bb212567a2c6dc012d6eb",
+  "generatedAt": "2026-11-07T01:42:11.246Z",
+  "designSha256": "61badb9f97ae3f2eb5f43ad0a0ff5fbdf1e76f6fe648ae48eabf757ebeef2279",
   "role": "enclosure",
-  "stateHash": "5803cea7700c96a73b4dcdfab828bb515c39d35adfcd6cb1217f3dc2a401c2f4",
+  "stateHash": "19635e4413c30394ac57d96e3c1f4f52d7d699bc8318e76ec0087dd4ac38bd2e",
   "stateManifest": {
     "schemaVersion": 4,
     "designId": "enclosure",
     "role": "enclosure",
     "design": {
-      "revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
-      "designSha256": "03fd50e62c3b8db9d7e0cc70c3764246c5ef1fe66da89f7f83245f50a8ea2f73",
-      "manifestSha256": "ee54d8b121d9e9bb9dc14b75a741d358ed5012e7f0de89ec385d1f2ddc9e1378",
-      "modelSha256": "50421ecb398cd856397a3b7a47291ee9b9e95ec2c6c1820247c05f4a9acd2321",
+      "revision": "648e0de434e2480bae9317b2a998e8a3c3e3b8d0ddf485cb9da1ca46572bf5ea",
+      "designSha256": "0a640e6772f4a8408df25a44fffd2762ca603f2716b4a09a880a8739624cf022",
+      "manifestSha256": "d241d1b8ad4eaff010937df03a1cf8c7d768d6f8daa7e4d98d0f2d71119b64aa",
+      "modelSha256": "5e8dbadbcfab410d86dbad3608d680444a4db4360b651eaee214f5748afaaff5",
       "pcbReleases": []
     },
     "brief": {
       "path": "design/enclosure/README.md",
-      "sha256": "420bda34922944f373d50c7970ce442b9002fb1b2253c0db8e33353e1b62f58c"
+      "sha256": "9ea99f1c06f1d79311076a877b7c3c2df8ec0241ae83c754edb8d6312d299866"
     },
     "requirement": {
       "artifactContractPath": "product/contract.json",
@@ -63,18 +63,18 @@
         "step"
       ]
     },
-    "stateHash": "5803cea7700c96a73b4dcdfab828bb515c39d35adfcd6cb1217f3dc2a401c2f4"
+    "stateHash": "19635e4413c30394ac57d96e3c1f4f52d7d699bc8318e76ec0087dd4ac38bd2e"
   },
   "buildArtifacts": {
-    "manifestSha256": "ee54d8b121d9e9bb9dc14b75a741d358ed5012e7f0de89ec385d1f2ddc9e1378",
-    "modelSha256": "50421ecb398cd856397a3b7a47291ee9b9e95ec2c6c1820247c05f4a9acd2321"
+    "manifestSha256": "d241d1b8ad4eaff010937df03a1cf8c7d768d6f8daa7e4d98d0f2d71119b64aa",
+    "modelSha256": "5e8dbadbcfab410d86dbad3608d680444a4db4360b651eaee214f5748afaaff5"
   },
   "exportAlgorithm": {
     "version": 1,
     "bootstrapSha256": "73e2a6d20ca2ee605997d4e1a375b8831f0b363e3d66e5778b9738224ab9bcea"
   },
   "sourceHashes": {
-    "base/base": "f2366e1341930f5298b749353bab6b14798142c8591f225f202cd3a50d88df25",
+    "base/base": "711b94b0b0f4368ce7fab60de46d6b36d3d873375fdcc00637921b129b45f800",
     "hardware/hardware": "8abca34cb28e4c4e9616c841ccf205cec120484fc8a4242d9bd71e81e96ec6f2",
     "hinge_axle_left/hinge_axle_left": "40c2aa0ed12c6b766b926f69644b40ae34728d58b0d7cd90677b0294124c080f",
     "hinge_axle_right/hinge_axle_right": "27ab835acf24d0a1e28f16fa85c865c4df381263b8eed2c0d23f42de5e0168bf",
@@ -105,14 +105,14 @@
     "rear_foot_left/rear_foot_left": "66104a09850759b66d5a40acebbfe3a57d8b669f4d2f21704585a00d1a86763d",
     "rear_foot_right/rear_foot_right": "b741e17896928fb86d392403eaf9e577b2a54c6476a554d05bcaa92e998c8863",
     "screen_lens/screen_lens": "fa8278a96e401a9f046e9998631fded0b95af6c325dc5ecbb9f73f513fa4a3eb",
-    "top/top": "6409411a5793ae942ac02e6b4d85925061a5ee4e07807d8f152979039fb96864"
+    "top/top": "09732fb6019466bab403af4bccd872884a0d02ddc91cf51334bc90cd03aec35d"
   },
   "assetHashes": {
     "matrix_pcb": "e2474c585d2693bb16227489b4c195a5ffbfa208a89e1ee4a6da6b9e6b1f5ef2",
     "pico2": "d49ada10d893cfcb07cb4abced0a0a0cadca4c4150f153d874268ca06171a24f"
   },
   "shapeHashes": {
-    "base": "85eecebb749f060a9eec5642c9fa709a35d5b5d0405e2ece79d1b4c43c812bcd",
+    "base": "02c6400688191afd62a813977242e20a2273921186d32670fcee767c69cbe73b",
     "hinge_axle_left": "65f0189a5e1df94ec70a281c0cc18586f5cf03adba6e091c5ab8c1585570e74d",
     "hinge_axle_right": "0ce2dd5a1fe4f59b38c62a742b456764de1988a40138d9503e2c41d45d1592df",
     "hinge_cap_left": "5503662ca21b1d2216553e38ba0040baba33c1a03a0a2e501c49990436e9be61",
@@ -143,7 +143,7 @@
     "rear_foot_right": "295dce06e3a657f86a14b4179a7aa2d9909727985bee56bc46e279a2b9c77c0d",
     "screen_lens": "073f5485da2f07fd7e954f6370f589d2b17a4d1040c316a8d7be37ce263a1161",
     "screws": "cfe05b5a8085417aaee06efd92401381d056a0d9f5ae2aa90099a3be495f6378",
-    "top": "71f60600ad8ac6ac85c0fa4863f12dd9714371fb4b484bd46a81053ae89ceb33"
+    "top": "182cacc766d3b9586ae6a4635875fce3985a2fc345c554fc724b8f065be5480a"
   },
   "runtime": {
     "manifestHash": "89fbd67628fc4aa1a6f5d4ca88257e7c32f414feb41d8a69ebbe972ad7b600a6",
@@ -154,10 +154,10 @@
   },
   "artifacts": [
     {
-      "path": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/model.step",
+      "path": "manufacturing/enclosure/releases/export-941be886cd5bb212567a2c6dc012d6eb/model.step",
       "role": "model/step",
-      "sha256": "2a25d479d1fcf8d9261fa256df79eda8be7058511812ad56d7365d322c386c35",
-      "sizeBytes": 58998648
+      "sha256": "351cd71568815bf00f6ae0c7b6ba1ef7bf1d215b541b9ae1904ba21cee2390da",
+      "sizeBytes": 58998556
     }
   ],
   "interference": {
@@ -166,8 +166,8 @@
       "objects": 32,
       "pairs": 496,
       "exact": 1,
-      "mesh": 18,
-      "cached": 39,
+      "mesh": 16,
+      "cached": 41,
       "interference": 1,
       "undeclared": 0,
       "over_budget": 0,
@@ -181,7 +181,7 @@
         "kind": "compliant",
         "reason": "Released matrix assembly contains the 20 original KS-9 locator ribs; original per-switch depth 0.1374 mm, physical retention remains untested",
         "maxDepthMm": 0.1374,
-        "volumeMm3": 3.187261,
+        "volumeMm3": 3.187321,
         "budgetMm": 0.16
       }
     ]
@@ -191,9 +191,9 @@
     "algorithm": "hmac-sha256",
     "keyId": "fd030f31395bfd9affa2deffb8feedf2",
     "projectId": "ea194205-8bce-4fe7-ae6f-aecccc1a553c",
-    "receiptPath": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
-    "payloadSha256": "2337ef4277ad378a18c7c14238153d6c6071b05df8e82f0e9bef935924fca533",
-    "mac": "9c190fd7dab66698109962dc6fb4f3c9f62ef8a5fc9562b76b279925cf462f0a"
+    "receiptPath": "manufacturing/enclosure/releases/export-941be886cd5bb212567a2c6dc012d6eb/receipt.json",
+    "payloadSha256": "955ca8e6cc6704f86b1348d65586d95702248e725500454c606e1055a6491059",
+    "mac": "dd226fc76db4192a146d497e4630c0cedc4645fdbc17d8902f93e4a50fb91019"
   },
   "status": "handoff"
 }

@@ -1,0 +1,224 @@
+{
+  "researched_on": "2026-11-05",
+  "scope": "Alternative switch research only; no selection/BOM/wiring/CAD/requirements changes",
+  "current_selected_part": "GATERON KS-9H10B045NN-X14",
+  "proposed_primary": "gateron_ks9_red_3pin",
+  "adoption_authorized": true,
+  "candidates": [
+    {
+      "contact_type": "ordinary mechanical electrical contacts",
+      "intended_interface": "existing handwired 4x5 matrix, per-key diode",
+      "cap_interface": "MX-style cross; actual printed socket fit remains untested",
+      "actuation_force_gf": {
+        "nominal": 45,
+        "tolerance": 15
+      },
+      "pretravel_mm": {
+        "nominal": 2,
+        "tolerance": 0.6
+      },
+      "total_travel_mm": {
+        "maximum": 4
+      },
+      "physical_tested": false,
+      "id": "gateron_ks9_red_3pin",
+      "rank": 1,
+      "manufacturer": "GATERON",
+      "product_name": "GATERON KS-9 Switch Set",
+      "variant": "Red / 3-Pin",
+      "product_url": "https://www.gateron.com/products/gateron-ks-9-switch-set",
+      "force_travel_evidence": "https://ueeshop.ly200-cdn.com/u_file/UPAW/UPAW819/2603/03/photo/gateron-KS-9-Switch-3pin-SMD16.webp",
+      "pins": 3,
+      "prelubed": false,
+      "matching_asset": "KS-9H10B045NN-X14-FB",
+      "classification": "conditional candidate",
+      "identity_gap": "Manufacturer series listing does not expose full orderable suffix. Retailer maps KS-9H10B045NN-X14 to Red but -FB identity and housing revision remain unconfirmed.",
+      "migration_checks": [
+        "plate shoulder and clip geometry",
+        "stem seating height and cross tolerances",
+        "bottom wiring space",
+        "full travel clearance"
+      ]
+    },
+    {
+      "contact_type": "ordinary mechanical electrical contacts",
+      "intended_interface": "existing handwired 4x5 matrix, per-key diode",
+      "cap_interface": "MX-style cross; actual printed socket fit remains untested",
+      "actuation_force_gf": {
+        "nominal": 45,
+        "tolerance": 15
+      },
+      "pretravel_mm": {
+        "nominal": 2,
+        "tolerance": 0.6
+      },
+      "total_travel_mm": {
+        "maximum": 4
+      },
+      "physical_tested": false,
+      "id": "gateron_ks8_red_5pin",
+      "rank": 2,
+      "manufacturer": "GATERON",
+      "product_name": "GATERON KS-8 Switch Set",
+      "variant": "Red / 5-Pin",
+      "product_url": "https://www.gateron.com/products/gateron-ks-8-mechanical-switch-set-1",
+      "pins": 5,
+      "prelubed": false,
+      "matching_asset": "KS-8-X5",
+      "classification": "family-level candidate",
+      "identity_gap": "STEP filename identifies a family, not an exact red orderable MPN.",
+      "migration_checks": [
+        "two extra plastic positioning posts",
+        "plate clip retention",
+        "printed keycap socket and height"
+      ]
+    },
+    {
+      "contact_type": "ordinary mechanical electrical contacts",
+      "intended_interface": "existing handwired 4x5 matrix, per-key diode",
+      "cap_interface": "MX-style cross; actual printed socket fit remains untested",
+      "actuation_force_gf": {
+        "nominal": 45,
+        "tolerance": 15
+      },
+      "pretravel_mm": {
+        "nominal": 2,
+        "tolerance": 0.6
+      },
+      "total_travel_mm": {
+        "maximum": 4
+      },
+      "physical_tested": false,
+      "id": "gateron_gpro3_red_3pin",
+      "rank": 3,
+      "manufacturer": "GATERON",
+      "product_name": "GATERON G Pro 3.0 Switch Set",
+      "variant": "Red / select 3-Pin",
+      "product_url": "https://www.gateron.com/products/gateron-g-pro-30-switch-set",
+      "pins": 3,
+      "prelubed": true,
+      "matching_asset": null,
+      "related_asset": "KS-9E10B055NN-Y51",
+      "classification": "partial model match",
+      "identity_gap": "The official G PRO 3.0 file bears B055, not a confirmed exact Red MPN. Do not substitute it as an exact Red switch.",
+      "migration_checks": [
+        "resolve exact red 3-pin model",
+        "plate clip retention",
+        "printed keycap socket and height"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "file_model_identity": "KS-9H10B045NN-X14-FB",
+      "manufacturer": "GATERON",
+      "listing_url": "https://www.gateron.com/pages/3d",
+      "download_url": "https://gateron.com/u_file/2306/26/file/KS-9SwitchKS-9H10B045NN-X14-FB.rar",
+      "retrieved_on": "2026-11-05",
+      "archive": {
+        "path": "product/references/gateron-ks9-official.rar",
+        "bytes": 148849,
+        "sha256": "ef0d67fed08a2f78abd9ae45b4b08eb2b4b3012a089358758933b8109e21947d"
+      },
+      "step": {
+        "path": "product/references/gateron-ks9/KS-9 Switch KS-9H10B045NN-X14-FB.stp",
+        "bytes": 1080795,
+        "sha256": "29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d",
+        "part21_markers_checked": true
+      },
+      "geometry_import_validated": false,
+      "assembly_fit_validated": false,
+      "license_note": "Public manufacturer download for keyboard design; no separate redistribution license found on landing page. Preserve provenance."
+    },
+    {
+      "file_model_identity": "KS-8-X5",
+      "manufacturer": "GATERON",
+      "listing_url": "https://www.gateron.com/pages/3d",
+      "download_url": "https://gateron.com/u_file/2306/26/file/KS-8SwitchKS-8-X5.rar",
+      "retrieved_on": "2026-11-05",
+      "archive": {
+        "path": "product/references/gateron-ks8-official.rar",
+        "bytes": 193582,
+        "sha256": "669b6e4d4d6fc5a39f66bac429d4c81032d01ff4aedc203fb36d2c75bb036e3a"
+      },
+      "step": {
+        "path": "product/references/gateron-ks8/KS-8 Switch KS-8-X5.stp",
+        "bytes": 1344862,
+        "sha256": "b675df604f1d6bcf85b790d20b5ea399f2064d8fd77b85369c33c2282340b37c",
+        "part21_markers_checked": true
+      },
+      "geometry_import_validated": false,
+      "assembly_fit_validated": false,
+      "license_note": "Public manufacturer download for keyboard design; no separate redistribution license found on landing page. Preserve provenance."
+    },
+    {
+      "file_model_identity": "KS-9E10B055NN-Y51",
+      "manufacturer": "GATERON",
+      "listing_url": "https://www.gateron.com/pages/3d",
+      "download_url": "https://gateron.com/u_file/2306/26/file/GPRO30SwitchKS-9E10B055NN-Y51.rar",
+      "retrieved_on": "2026-11-05",
+      "archive": {
+        "path": "product/references/gateron-gpro3-official.rar",
+        "bytes": 184792,
+        "sha256": "29ec1dae4204eb737b7fa427c2d9e6d1bc08873df9dbc97f39601e210f64dcde"
+      },
+      "step": {
+        "path": "product/references/gateron-gpro3/G PRO 3.0 Switch KS-9E10B055NN-Y51.stp",
+        "bytes": 1327834,
+        "sha256": "e79fe9e7dc135368ffb1f5da48ae14366b913192207bcb43dac3b870c987ecc6",
+        "part21_markers_checked": true
+      },
+      "geometry_import_validated": false,
+      "assembly_fit_validated": false,
+      "license_note": "Public manufacturer download for keyboard design; no separate redistribution license found on landing page. Preserve provenance."
+    }
+  ],
+  "additional_candidates": [
+    {
+      "manufacturer": "Kailh",
+      "family": "CPG1511 BOX / BOX Red",
+      "classification": "partial; not ready for dimensional adoption",
+      "primary_url": "https://www.kailhswitch.com/info/box-switch-product-detail-drawing-26296554.html",
+      "observed": "Official page lists BOX Red and links a drawing. Image download timed out. No exact STEP acquired in searches performed.",
+      "drawing_image_url": "https://www.kailhswitch.com/Content/upload/2018306614/201805301543268675429.jpg",
+      "exact_generation_mpn_resolved": false
+    }
+  ],
+  "search_scope": {
+    "verified_parametric_catalog": "No suitable switch candidate; unrelated fasteners rejected.",
+    "step_parts": "Kailh mechanical keyboard switch, Cherry MX1A, Gateron KS-9: no usable model acquired.",
+    "manufacturer_downloads": "Three official GATERON STEP assets acquired.",
+    "negative_claim_limit": "Not finding a file does not establish that no model exists anywhere."
+  },
+  "reconstruction": {
+    "possible_for": "parameterized external assembly reference with shoulder datum, moving stem and terminals",
+    "not_equivalent_to": "manufacturer production model or functioning printable switch",
+    "minimum_inputs": [
+      "exact MPN and revision",
+      "plate opening/radii/thickness tolerances",
+      "shoulder-to-top/bottom dimensions",
+      "clip hook and deflection envelope",
+      "stem cross span/arm width/taper/engagement depth",
+      "released and fully depressed stem heights",
+      "terminal and locating post positions/sizes",
+      "measured data for dimensions absent from drawings"
+    ],
+    "insufficient_inputs": [
+      "overall length/width/height alone",
+      "operating force and total travel alone",
+      "uncalibrated photos"
+    ],
+    "if_data_missing": "Record unknowns; restrict model to envelope and travel studies, with no clip/keycap fit claim.",
+    "physical_trial": "Use existing six-hole coupon with P0/P5/P10 printed keycaps before changing whole enclosure."
+  },
+  "validation": {
+    "archives_extracted": true,
+    "three_step_files_nonempty": true,
+    "step_start_end_markers": true,
+    "geometry_validation": "Not completed. Read-only CAD evaluation could not access unbound reference assets with either relative or absolute filenames. No geometry result obtained; bind via normal import in a subsequent integration task.",
+    "cad_modified": false,
+    "bom_modified": false,
+    "physical_tested": false
+  },
+  "research_snapshot_notice": "Current integration supersedes original research-only state; see ks9-assembly-verification.json."
+}
