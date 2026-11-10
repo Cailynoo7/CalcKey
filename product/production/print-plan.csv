@@ -27,3 +27,5 @@ key_17,product/production/models/key_17.stl,1,PETG,0.2,0.1,mm,100
 key_18,product/production/models/key_18.stl,1,PETG,0.2,0.1,mm,100
 key_19,product/production/models/key_19.stl,1,PETG,0.2,0.1,mm,100
 key_20,product/production/models/key_20.stl,1,PETG,0.2,0.1,mm,100
+controller_clamp_a,product/production/models/controller_clamp_a.stl,1,PLA,0.4,0.15,mm,100
+controller_clamp_b,product/production/models/controller_clamp_b.stl,1,PLA,0.4,0.15,mm,100

@@ -1,4 +1,4 @@
-"""Read-only checks for the 28-part printing advice bundled with the handoff."""
+"""Read-only checks for the 30-part printing advice bundled with the handoff."""
 import csv
 import hashlib
 import json
@@ -21,9 +21,9 @@ def verify(receipt):
     model_rows = {r['object_id']: r for r in models['meshes']}
     with (guide/'part-settings.csv').open(encoding='utf-8-sig', newline='') as stream:
         rows = list(csv.DictReader(stream))
-    assert len(rows) == len(model_rows) == 28
+    assert len(rows) == len(model_rows) == 30
     assert {r['object_id'] for r in rows} == model_rows.keys()
-    assert sum(r['material'] == 'PLA' for r in rows) == 2
+    assert sum(r['material'] == 'PLA' for r in rows) == 4
     assert sum(r['material'] == 'PETG' for r in rows) == 26
     for row in rows:
         m = model_rows[row['object_id']]

@@ -1,4 +1,4 @@
-﻿部件,焊点,信号,Pico信号,Pico物理脚号,说明
+﻿部件,焊点,信号,主控信号,主控物理脚号,说明
 矩阵PCB,J1,ROW0,GP2,4,26AWG约150mm；底面平面直焊
 矩阵PCB,J2,ROW1,GP3,5,26AWG约150mm；底面平面直焊
 矩阵PCB,J3,ROW2,GP4,6,26AWG约150mm；底面平面直焊
@@ -9,11 +9,11 @@
 矩阵PCB,J8,COL2,GP9,12,26AWG约150mm；底面平面直焊
 矩阵PCB,J9,COL3,GP10,14,26AWG约150mm；底面平面直焊
 矩阵PCB,J10,V3V3,3V3 OUT,36,26AWG约150mm；底面平面直焊
-GDM0103,P1,/CS,GP11,15,约150mm；直接到Pico
-GDM0103,P2,/WR,GP1,2,约150mm；直接到Pico
-GDM0103,P3,DATA,GP0,1,约150mm；直接到Pico
-GDM0103,P4,VSS,GND,38,约150mm；直接到Pico
-GDM0103,P5,VDD,3V3 OUT,36,约150mm；直接到Pico
+GDM0103,P1,/CS,GP11,15,约150mm；直接到主控
+GDM0103,P2,/WR,GP1,2,约150mm；直接到主控
+GDM0103,P3,DATA,GP0,1,约150mm；直接到主控
+GDM0103,P4,VSS,GND,38,约150mm；直接到主控
+GDM0103,P5,VDD,3V3 OUT,36,约150mm；直接到主控
 GDM0103,P6,/INT,NC,,分别绝缘，不接外部线
 GDM0103,P7,BL+,NC,,分别绝缘，不接外部线
 GDM0103,P8,BL-,NC,,分别绝缘，不接外部线

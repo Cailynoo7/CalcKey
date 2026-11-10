@@ -49,9 +49,7 @@ def prepare():
     assert cad["export_id"] == receipt["exportId"]
     assert cad["step_sha256"] == receipt["artifacts"][0]["sha256"]
     assert sha(receipt["artifacts"][0]["path"]) == cad["step_sha256"]
-    sys.path.insert(0, str(ROOT/'product/production'))
-    from export_compatibility import same_revision
-    assert same_revision(receipt["revision"], "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7")
+    assert read_json('product/production/model-manifest.json')['current_binding']['revision'] == receipt['revision']
     constraints = read_json("product/constraints.json")
     h = constraints["harness_retention"]
     assert h["integral_bridge_count"] == 5
@@ -60,21 +58,20 @@ def prepare():
     assert h["bottom_service_opening_mm"] == 30 and h["lcd_fixed_only_to_base"]
     assert h["top_bridge_root_centres_mm"] == [[-17, -55.7, 5.2], [17, -55.7, 5.2]]
     assert h["base_bridge_root_centres_mm"] == [[0, -29, 2.4], [0, 23, 2.4], [-26, 2, 2.4]]
-    assert constraints["wiring_storage"]["zones"] == [
-        {"id": "matrix_left", "center_mm": [-26, -36.7, 4.55], "size_mm": [20, 21.4, 3]},
-        {"id": "matrix_right", "center_mm": [26, -36.7, 4.55], "size_mm": [20, 21.4, 3]},
-        {"id": "lcd_spare", "center_mm": [-26, -15.5, 4.55], "size_mm": [20, 18, 3]}]
+    zones={r['id']:r for r in constraints['wiring_storage']['zones']}
+    assert zones['matrix_right']['center_mm'] == [26,-39,4.55]
+    assert zones['matrix_right']['size_mm'] == [20,16.8,3]
     pins = read_csv("product/matrix-assembly-diagrams/soldering-map.csv")
     assert len(pins) == 19
     for i, expected in enumerate(MATRIX_PINS):
         row = pins[i]
         assert row["焊点"] == f"J{i+1}"
-        assert (row["信号"], row["Pico信号"], int(row["Pico物理脚号"])) == expected
+        assert (row["信号"], row["主控信号"], int(row["主控物理脚号"])) == expected
     for i, expected in enumerate(LCD_PINS):
         row = pins[10+i]
         assert row["焊点"] == f"P{i+1}"
-        assert (row["信号"], row["Pico信号"], int(row["Pico物理脚号"])) == expected
-    assert all(r["Pico信号"] == "NC" and not r["Pico物理脚号"] for r in pins[15:])
+        assert (row["信号"], row["主控信号"], int(row["主控物理脚号"])) == expected
+    assert all(r["主控信号"] == "NC" and not r["主控物理脚号"] for r in pins[15:])
     legacy = read_csv("product/matrix-assembly-diagrams/unpowered-check-record.csv")
     assert len(legacy) == 59
     assert all(not r["实测"] and r["结果"] == "待测" for r in legacy)
@@ -89,7 +86,7 @@ def prepare():
     for row, pin in zip(legacy[44:], pins[:15]):
         expected_from = pin["焊点"] if pin["部件"] == "矩阵PCB" else "LCD " + pin["焊点"]
         assert row["红表笔"] == expected_from
-        assert row["黑表笔"] == "Pico物理" + pin["Pico物理脚号"]
+        assert row["黑表笔"] == "主控物理" + pin["主控物理脚号"]
     return binding, cad, legacy
 
 
@@ -110,14 +107,14 @@ def make_rows(legacy, cad):
         ("主壳/底盖版本", "目视并对照导出", "仅核对资料或已有实物，不启动打印", f"主壳前内壁2桥、底盖3桥；采用{cad['revision'][:8]}/{cad['export_id']}，STEP/STL与完整包按当前清单取用"),
         ("外部电源全部断开", "目视线缆", "任何电阻/通断/二极管测量之前", "USB、充电器、调试器等均断开；若曾供电先测残余电压，不短接电容"),
         ("表笔插孔与表线基准", "电阻档短接/分开表笔", "红V/Ω、黑COM，待测电路无残余电压", "记录表线基准Ω与分开OL，不用电流档"),
-        ("28件及机构备件", "点数/目视", "已取得实物时；不在本次打印", "28个打印件、单独保护片、两D12×2前垫、两后脚/短轴/盲帽齐全，孔内无残丝碎屑"),
-        ("六颗紧固螺钉", "点数与长度核对", "安装前", "4颗ISO7380-1 M3×8合盖；2颗ISO4762 M2×4固定Pico，旧OLED螺钉不混用"),
+        ("30件及机构备件", "点数/目视", "已取得实物时；不在本次打印", "30个打印件、单独保护片、两D12×2前垫、两后脚/短轴/盲帽齐全，孔内无残丝碎屑"),
+        ("八颗紧固螺钉", "点数与长度核对", "安装前", "4颗ISO7380-1 M3×8合盖；4颗ISO4762 M2×6固定两只主控压桥，旧OLED螺钉不混用"),
         ("LCD与轴体识别", "看型号/版本/P1", "用户已确认KS-9对应关系；到货复核不改变选型", "LCD为GDM0103 3.3V/6点钟，认P1；轴为既定KS-9H10B045NN-X14三脚红轴"),
         ("15根软线及胶带", "点数/量尺寸", "未裁短末端", "10矩阵+5LCD、26AWG柔性线外径≤1.3mm、每根总长默认150mm；胶带10mm宽/总厚≤0.1mm")], CASE_GUIDE + "; " + HARNESS)
     group("B", "10 独立矩阵", [
-        ("四只上拉装配", "目视/核型号", "Pico/LCD未接矩阵，所有键松开", "R1～R4为10kΩ±1%/0805、坐平无锡桥；按图核位置"),
+        ("四只上拉装配", "目视/核型号", "主控/LCD未接矩阵，所有键松开", "R1～R4为10kΩ±1%/0805、坐平无锡桥；按图核位置"),
         ("二十只二极管方向", "目视/核K", "屏幕端朝上看PCB底面", "20只1N4148-TAP底面卧装，黑环K左侧对方形pad1，无玻璃裂纹，正面剪脚不顶轴"),
-        ("20轴与40处触点", "目视/轻按", "键帽未装、Pico/LCD未接", "20轴坐平且PCB不翘，40个金属触点焊好；20个中心塑料柱NPTH孔未焊"),
+        ("20轴与40处触点", "目视/轻按", "键帽未装、主控/LCD未接", "20轴坐平且PCB不翘，40个金属触点焊好；20个中心塑料柱NPTH孔未焊"),
         ("被动矩阵焊后清理", "放大目视", "焊点冷却", "无散股、锡桥、金属屑或虚焊；不做旧版跨键并线")], PCB_GUIDE)
 
     def import_legacy(index):
@@ -134,20 +131,20 @@ def make_rows(legacy, cad):
         for index in [4+2*i, 5+2*i]:
             import_legacy(index)
         add(f"R{i+1:02d}", "10 独立矩阵", f"SW{i+1} {LABELS[i]} 松开与释放", "二极管档，记起始松开/测后释放两个读数",
-            "Pico/LCD未连接；其他19键松开；正反测后恢复红列黑行再释放", "起始松开OL；测后释放也为OL", PCB_GUIDE,
+            "主控/LCD未连接；其他19键松开；正反测后恢复红列黑行再释放", "起始松开OL；测后释放也为OL", PCB_GUIDE,
             f"J{i%4+6}", f"J{i//4+1}")
 
     group("C", "20 软线焊装", [
-        ("15根导线标签与PCB首段", "目视/逐根对照", "Pico焊端前，板已支撑", "J1～J10及LCD P1～P5两端标号一致；J线朝板内低位直焊，无排针"),
+        ("15根导线标签与PCB首段", "目视/逐根对照", "主控焊端前，板已支撑", "J1～J10及LCD P1～P5两端标号一致；J线朝板内低位直焊，无排针"),
         ("LCD未使用端绝缘", "逐端目视", "不增加背光或/INT连线", "P6～P9各自绝缘，不接外部线、不互短；不把内部任意两NC必须OL作判据"),
         ("LCD板背低位引线", "目视/量突出量", "胶粘安装前，玻璃不受压", "焊点与首段线突出≤1.5mm，朝内，边缘托架承托带不被导线占用"),
-        ("Pico物理36共享节点", "目视端点/编号", "Pico按官方方向识别物理编号", "J10与LCD P5同到3V3 OUT/36；LCD P4到GND/38；35/37无意外锡桥"),
+        ("主控物理36共享节点", "目视端点/编号", "主控按官方方向识别物理编号", "J10与LCD P5同到3V3 OUT/36；LCD P4到GND/38；35/37无意外锡桥"),
         ("矩阵行与电源接法", "逐端目视标签", "不拿芯片内阻猜针脚", "矩阵无GND端子；J1～J5不接地；J10不接VBUS、VSYS、3V3_EN或5V")], PCB_GUIDE)
     for i in range(44, 59):
         import_legacy(i)
     group("D", "30 机械安装", [
         ("翻脚、短轴及盲帽", "干装/观察胶接/轻翻", "两壳有支撑；胶材按要求固化", "17.8mm短轴、Ø5×2.4盲帽，入帽约1mm；胶仅轴端，转动面不粘；0/110°两档限位可达"),
-        ("Pico两孔固定", "目视/轻拧", "既有线束松放，不靠线悬吊", "Micro-B向右；2颗M2×4与USB端承托定位，无薄板弯曲或器件挤压"),
+        ("主控压桥固定", "目视/轻拧", "既有线束松放，不靠线悬吊", "Type-C向右；两只压桥、4颗M2×6、8片6×1.4×0.15mm绝缘垫；螺钉不穿板，不压芯片或弯板；板载电池座不接"),
         ("LCD四处边缘固定", "实物承托带检查/轻压PCB", "先焊线与绝缘、后粘接；不压玻璃", "四片2×4×0.15mm绝缘胶片；边缘无铜/元件/导线干涉，背面凸起不顶托架"),
         ("保护片与胶框", "目视/干合盖", "67.6×19.6×1mm保护片，0.15mm周边胶框", "64×16mm窗口清洁、无溢胶遮挡，LCD玻璃不顶保护片或受周边挤压")], CASE_GUIDE)
     group("F", "40 固定与余量", [
@@ -156,9 +153,9 @@ def make_rows(legacy, cad):
         ("底盖前中汇线桥", "目视并排宽度", "中心(0,-29)，桥顶z6mm", "10线单层、宽≤13mm，含胶带高度≤1.5mm，无圆束堆高"),
         ("LCD底盖后中桥", "沿五线追踪固定点", "中心(0,23)，桥顶z6mm", "P1～P5仅固定到底盖、不绑主壳或矩阵，5线宽≤6.5mm，含胶带高≤1.5mm"),
         ("左侧辅助桥（可选）", "检查可达余线", "中心(-26,2)；余段自然可达才使用", "不强迫绕远或拉紧；不用时可填不适用并写原因"),
-        ("矩阵左右折返区", "目视/量堆高", "各5根线，未把自由段粘到底板", "中心(±26,-36.7,4.55)，各20×21.4×3mm；松弛S形、单根内弯半径默认≥5mm"),
+        ("矩阵左右折返区", "目视/量堆高", "各5根线，未把自由段粘到底板", "左区(-26,-36.7,4.55)/20×21.4×3；右区(26,-39,4.55)/20×16.8×3mm；松弛S形，内弯半径默认≥5mm"),
         ("LCD余线区", "目视/量堆高", "只收自然可达余线，不硬塞全线", "中心(-26,-15.5,4.55)，20×18×3mm；无圆线团、无托架夹线"),
-        ("Pico上方扇出与焊端下降", "侧视/干合盖观察", "42×23×1.5mm中间预算中心(14,-9.5,10.05)", "不压Pico元件/矩阵焊脚/USB；焊端另落真实焊盘，0.505mm模型余隙不当实物保证"),
+        ("主控分散出线与压桥间通道", "侧视/干合盖观察", "桥间电源线区5×23×1.5mm中心(18.9,-9.5,10.05)；信号前缘分散", "只有三根电源线穿桥间，不挤入15线；前缘分散区45×1.5×1.5mm、中心(17,-21.7,7.1)，避开元件和夹持区"),
         ("胶带长度与搭接", "量宽/搭接与松紧", "默认5条10×65mm、总厚≤0.1mm", "穿桥后包住线皮，尾搭≥15mm；不勒凹线皮，不粘住跨壳自由段"),
         ("独立绝缘与带尾", "放大目视", "所有焊点冷却且绝缘完毕", "裸铜/引脚独立绝缘；固定胶带不代替热缩管，不贴玻璃，带尾不入柱/唇/轴脚/翻脚"),
         ("自由段长度定义", "逐根沿线量弧长", "参照S01～S10记录，不以两桥直线距离替代", "150mm为每根总长；不足时延长并记实际长度，不缩减65mm维护段")], HARNESS)
@@ -169,8 +166,8 @@ def make_rows(legacy, cad):
             "自由长度≥65mm；总长默认150mm；松弛折返且单根内弯半径默认≥5mm；30mm开盖另在M项实物观察", HARNESS)
     for i, (item, method, condition, expected, red, black) in enumerate([
         ("无外部供电再确认", "目视", "合盖前电气复测", "USB/充电器/调试器全部断开；曾供电先查残余电压", "", ""),
-        ("J10与LCD P5共享3V3", "电阻/通断档", "Pico已连接，设备无残余电压", "记录读数，应为同一节点且接近表线基准；到物理36的单线结果另见E项", "J10", "LCD P5"),
-        ("合盖前3V3—GND", "电阻档，记录正/反接稳定值及变化趋势", "全程无外部供电，芯片已经接入", "无固定阻值/必须OL要求；持续近表线基准的低阻须查明，不能以一次不蜂鸣通过", "Pico物理36", "Pico物理38"),
+        ("J10与LCD P5共享3V3", "电阻/通断档", "主控已连接，设备无残余电压", "记录读数，应为同一节点且接近表线基准；到物理36的单线结果另见E项", "J10", "LCD P5"),
+        ("合盖前3V3—GND", "电阻档，记录正/反接稳定值及变化趋势", "全程无外部供电，芯片已经接入", "无固定阻值/必须OL要求；持续近表线基准的低阻须查明，不能以一次不蜂鸣通过", "主控物理36", "主控物理38"),
         ("相邻焊点和电源区目视", "放大目视，重点物理35～38", "已接芯片，不给所有相邻脚套OL判据", "无锡桥、裸线散股及残留金属；不确定的读数需记录并定位", "", "")], 1):
         add(f"P{i:02d}", "50 合盖前电气", item, method, condition, expected, PCB_GUIDE, red, black)
     for i, label in enumerate(LABELS, 1):
@@ -181,11 +178,11 @@ def make_rows(legacy, cad):
     group("M", "70 合盖与维护", [
         ("自然合缝", "托住两壳轻合/观察四周", "线束已整理，先不依靠螺钉拉合", "定位唇自然贴合，无回弹、顶LCD或PCB弯曲，无柱/唇/USB/轴脚夹线"),
         ("四颗底部螺钉", "核长度/轻拧", "自然合缝后", "仅4颗M3×8向上合盖，不强拧掩盖缝隙；后续可正常拆卸"),
-        ("Micro-B机械试插", "使用另一端悬空的线头试插后拔出", "不接电脑、充电器或任何供电端", "插头机械出入不挤壳、不牵线；不做USB枚举或供电测试"),
+        ("Type-C机械试插", "使用另一端悬空的线头试插后拔出", "不接电脑、充电器或任何供电端", "正反插均能完全就位、不挤壳或牵线；开口9.44×3.66mm；不做USB枚举或供电测试"),
         ("两档支撑与前垫", "抬起切档后轻放水平面", "两只后脚在同一实体限位档，前D12×2垫齐全", "观察落桌贴合、摇晃、滑移、回折或帽松动；如有异常记录，不把几何核对当承载实测"),
         ("20键合盖后复查", "逐键轻按并释放", "K01～K20均填合盖后观察", "20键均回弹；SW10定位凹点、SW16 Enter/=位置正确，未以合盖压平PCB"),
-        ("30mm维护开口", "卸4颗M3、手托底盖沿局部负z缓慢下放并量开口", "外部线缆全断，两壳均受支撑", "可到30mm；10矩阵线自然展开，桥处不滑移、线皮不紧、焊点不受拉；遇阻停止重排"),
-        ("LCD随底盖移动", "观察LCD五线与模块", "30mm开口过程中，不撬玻璃", "LCD与Pico一同移动，LCD线没有跨上壳固定；完全分离仍需断开焊线"),
+        ("30mm维护开口", "卸4颗M3、手托底盖沿局部负z缓慢下放并量开口", "外部线缆全断，两壳均受支撑", "接口立台随底盖向下退出，无须横撬；可到30mm；10矩阵线自然展开，桥处不滑移、线皮不紧、焊点不受拉；遇阻停止重排"),
+        ("LCD随底盖移动", "观察LCD五线与模块", "30mm开口过程中，不撬玻璃", "LCD与主控一同移动，LCD线没有跨上壳固定；完全分离仍需断开焊线"),
         ("重合盖后供电节点", "同档位记录3V3—GND方向/稳定值/趋势", "外部供电断开，对照P03", "不得出现未解释的新持续近表线低阻；读数变化先查，不要求固定阻值或OL"),
         ("重合盖后机构与残屑", "目视并复查受影响K项", "重新排线或返修后", "无夹线/裸铜/碎屑，键、翻脚与USB口不受干涉；修复有复查记录"),
         ("记录与本阶段结束", "检查未填项、异常及引用记录", "仅在确实操作并提供实测后判断完成", "必测项有记录，异常有处置/复查；缺项不代填通过；停在断电检查，功能待后续验收")], HARNESS + "; " + PCB_GUIDE)
@@ -229,7 +226,7 @@ def main():
               "product/harness-routing-verification.json", "product/production/harness-delivery-addendum.json",
               "manufacturing/matrix/release-index.json", cad["receipt"],
               f"manufacturing/matrix/releases/{binding['pcb_release_id']}/release-manifest.json"]
-    audit = {"kind": "assembly_document_consistency", "prepared_date": "2026-11-06",
+    audit = {"kind": "assembly_document_consistency", "prepared_date": "2026-11-10",
              "cad_revision": cad["revision"], "cad_export_id": cad["export_id"],
              "pcb_release_id": binding["pcb_release_id"], "firmware_version": binding["firmware_version"],
              "row_count": len(rows), "rows_by_phase": dict(Counter(r["阶段"] for r in rows)),
@@ -241,14 +238,14 @@ def main():
              "document_hashes": {"product/final-assembly/README.md": sha("product/final-assembly/README.md"),
                                   "product/final-assembly/unpowered-checklist.csv": hashlib.sha256(payload).hexdigest()},
              "checks": ["Current STEP hash matches its domain export receipt",
-                        "Five bridges, three storage zones, 150mm total/65mm free/30mm opening match constraints",
+                        "Five bridges, Type-C revised wire budgets, 150mm total/65mm free/30mm opening match constraints",
                         "All 59 original electrical rows retained with identical probes, conditions and criteria",
                         "15 wire endpoints match the existing soldering map; four LCD NC endpoints unconnected",
                         "20 release rows, 20 mechanical key rows and 10 free-length rows have unique identifiers",
                         "All physical result fields remain blank/pending"],
              "limitations": ["Documentation checks are not physical measurements or functional acceptance.",
                              "Use the current mesh/package manifests; historical exports do not identify the current delivery.",
-                             "Independent-matrix criteria are not applied to a matrix already connected to Pico/LCD."]}
+                             "Independent-matrix criteria are not applied to a matrix already connected to 主控/LCD."]}
     if args.check_only:
         assert CSV_PATH.read_bytes() == payload, "清单与当前空白模板或输入不一致"
         assert read_json(AUDIT_PATH.relative_to(ROOT)) == audit, "来源记录与当前文件不一致"

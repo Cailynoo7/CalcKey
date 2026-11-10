@@ -43,6 +43,7 @@ def main():
  ap=argparse.ArgumentParser();ap.add_argument('receipt')
  modes=ap.add_mutually_exclusive_group()
  modes.add_argument('--keycaps-only',action='store_true',help='Regenerate 20 caps; verify and reuse the historical 8 mechanisms')
+ modes.add_argument('--typec-only',action='store_true',help='Tessellate base/top/two controller bridges; verify and reuse 26 other meshes')
  modes.add_argument('--case-only',action='store_true',help='Regenerate base/top; verify and reuse 26 meshes against the saved pre-harness export')
  args=ap.parse_args()
  receipt_path=(ROOT/args.receipt).resolve();r=json.loads(receipt_path.read_text())
@@ -55,19 +56,20 @@ def main():
    key=t['id']+'/'+c['id']
    assert sha(ROOT/c['path'])==r['sourceHashes'][key],key
  transforms={o['id']:o['transform'] for o in design['objects']}
- baseline_path='product/production/history/before-harness-model-manifest.json' if args.case_only else 'product/production/history/matrix-before-keycap-model-manifest.json'
- baseline_receipt='product/production/history/before-harness-cad-receipt.json' if args.case_only else None
- previous=json.loads((ROOT/baseline_path).read_text()) if args.keycaps_only or args.case_only else None
+ baseline_path='product/production/history/before-typec-model-manifest.json' if args.typec_only else 'product/production/history/before-harness-model-manifest.json' if args.case_only else 'product/production/history/matrix-before-keycap-model-manifest.json'
+ baseline_receipt='product/production/history/before-typec-cad-receipt.json' if args.typec_only else 'product/production/history/before-harness-cad-receipt.json' if args.case_only else None
+ previous=json.loads((ROOT/baseline_path).read_text()) if args.keycaps_only or args.case_only or args.typec_only else None
  baseline_receipt=baseline_receipt or (previous['source_receipt'] if previous else None)
  prior_receipt=json.loads((ROOT/baseline_receipt).read_text()) if previous else None
- prior_transforms=({m['object_id']:m['object_transform'] for m in previous['meshes']} if args.case_only else
+ prior_transforms=({m['object_id']:m['object_transform'] for m in previous['meshes']} if args.case_only or args.typec_only else
                    json.loads((OUT/'mesh-reuse-evidence.json').read_text())['original_printed_transforms']) if previous else {}
  previous_rows={m['object_id']:m for m in previous['meshes']} if previous else {}
  printed=['base','top','rear_foot_left','rear_foot_right','hinge_axle_left',
           'hinge_axle_right','hinge_cap_left','hinge_cap_right']
  printed += ['key_%02d'%i for i in range(1,21)]
- assert len(printed)==28 and len(set(printed))==28
- regenerate={n for n in printed if n in {'base','top'}} if args.case_only else {n for n in printed if n.startswith('key_')} if args.keycaps_only else set(printed)
+ if args.typec_only: printed += ['controller_clamp_a','controller_clamp_b']
+ assert len(printed)==len(set(printed)) and len(printed)==(30 if args.typec_only else 28)
+ regenerate={'base','top','controller_clamp_a','controller_clamp_b'} if args.typec_only else {n for n in printed if n in {'base','top'}} if args.case_only else {n for n in printed if n.startswith('key_')} if args.keycaps_only else set(printed)
  models=OUT/'models';models.mkdir(parents=True,exist_ok=True);rows=[]
  cache_path=ROOT/'.work/production-mesh-cache.json'
  cache_key=sha(Path(__file__))+'-'+a['sha256']+'-'+sha(ROOT/'design/enclosure/source/design.json')
@@ -142,7 +144,7 @@ def main():
   # Exact solid validity is checked above. Preserve mesh diagnostics for review.
   assert checks['non_two_incidence_edges_at_1e5mm']==0,(name,checks)
   row={'object_id':name,'file':str(dest.relative_to(ROOT)),'quantity':1,
-       'material':'PLA' if name in ['base','top'] else 'PETG',
+       'material':'PLA' if name in ['base','top','controller_clamp_a','controller_clamp_b'] else 'PETG',
        'nozzle_mm':0.2 if name.startswith('key_') else 0.4,
        'layer_mm':0.1 if name.startswith('key_') else 0.15,
        'local_print_rotation_deg':list(rotation),'units':'mm','scale_percent':100,
@@ -163,14 +165,14 @@ def main():
  manifest={'source_receipt':str(receipt_path.relative_to(ROOT)),'revision':r['revision'],
            'export_id':r['exportId'],'source_step_sha256':a['sha256'],
            'conversion_only':True,'tolerance_mm_by_object':True,'angular_tolerance_rad':0.05,
-           'units':'mm','printed_objects':28,'meshes':rows,
+           'units':'mm','printed_objects':len(printed),'meshes':rows,
            'printer_started':False,'sliced':False}
  manifest['current_binding']={'receipt':str(receipt_path.relative_to(ROOT)),'revision':r['revision'],
           'export_id':r['exportId'],'step_sha256':a['sha256'],
-          'method':'base/top tessellated from current STEP; 26 unchanged meshes verified by shape, transform and bytes' if args.case_only else '20 caps tessellated from current STEP; 8 unchanged meshes verified by shape, transform and bytes' if args.keycaps_only else 'all parts tessellated from current STEP'}
+          'method':'Type-C base/top/two controller bridges tessellated; 26 unchanged meshes verified by exact shape, transform and bytes' if args.typec_only else 'base/top tessellated from current STEP; 26 unchanged meshes verified by shape, transform and bytes' if args.case_only else '20 caps tessellated from current STEP; 8 unchanged meshes verified by shape, transform and bytes' if args.keycaps_only else 'all parts tessellated from current STEP'}
  (OUT/'model-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
  with (OUT/'print-plan.csv').open('w',encoding='utf-8-sig',newline='') as f:
   fields=['object_id','file','quantity','material','nozzle_mm','layer_mm','units','scale_percent']
   w=csv.DictWriter(f,fields,extrasaction='ignore',lineterminator='\n');w.writeheader();w.writerows(rows)
- print('28 STL meshes derived from the committed STEP; no slicing or printer action.')
+ print(str(len(printed))+' STL meshes bound to committed STEP; no slicing or printer action.')
 if __name__=='__main__':main()

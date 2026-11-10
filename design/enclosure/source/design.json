@@ -8,18 +8,18 @@
       "label": "imports",
       "cells": [
         {
-          "id": "pico2",
-          "target": "imports",
-          "order": 0,
-          "path": "design/enclosure/source/parts/imports/000-pico2.py",
-          "sha256": "9f34e292f3e513037c32443077ed19b99ebc716af683cd28143be019d41a1164"
-        },
-        {
           "id": "matrix_pcb",
           "target": "imports",
-          "order": 1,
-          "path": "design/enclosure/source/parts/imports/001-matrix_pcb.py",
+          "order": 0,
+          "path": "design/enclosure/source/parts/imports/000-matrix_pcb.py",
           "sha256": "44a3cb596ccdd750e4544de45d79a6652de5648e51902e4d0185632b4d2dfd1e"
+        },
+        {
+          "id": "pico2",
+          "target": "imports",
+          "order": 1,
+          "path": "design/enclosure/source/parts/imports/001-pico2.py",
+          "sha256": "6ed7595278cfbae03f39eecf0a86bd1a153ed8a4de03b7869011070d157e09ea"
         }
       ],
       "dependencies": []
@@ -33,7 +33,7 @@
           "target": "base",
           "order": 0,
           "path": "design/enclosure/source/parts/base/000-base.py",
-          "sha256": "711b94b0b0f4368ce7fab60de46d6b36d3d873375fdcc00637921b129b45f800"
+          "sha256": "9857225159e0a004f0988a9411e3858ae59fb623f99456e28908b8742eb7c0c1"
         }
       ],
       "dependencies": [
@@ -49,7 +49,7 @@
           "target": "top",
           "order": 0,
           "path": "design/enclosure/source/parts/top/000-top.py",
-          "sha256": "09732fb6019466bab403af4bccd872884a0d02ddc91cf51334bc90cd03aec35d"
+          "sha256": "93fd0aaef9934e9cc2323f9494f9db8f14d8ba241736009202b08269a6091e1e"
         }
       ],
       "dependencies": [
@@ -65,7 +65,7 @@
           "target": "hardware",
           "order": 0,
           "path": "design/enclosure/source/parts/hardware/000-hardware.py",
-          "sha256": "8abca34cb28e4c4e9616c841ccf205cec120484fc8a4242d9bd71e81e96ec6f2"
+          "sha256": "a234c384e8450dee1fc7522b5985c8a3b56f15e037db5346ac95f2b56e5a0f32"
         }
       ],
       "dependencies": [
@@ -502,6 +502,38 @@
       "dependencies": [
         "keycaps"
       ]
+    },
+    {
+      "id": "controller_clamp_a",
+      "label": "controller_clamp_a",
+      "cells": [
+        {
+          "id": "controller_clamp_a",
+          "target": "controller_clamp_a",
+          "order": 0,
+          "path": "design/enclosure/source/parts/controller_clamp_a/000-controller_clamp_a.py",
+          "sha256": "12c6bb971b7de68aca3a39a8137380765b23d6c9f12d45694bdff1101bcd795d"
+        }
+      ],
+      "dependencies": [
+        "base"
+      ]
+    },
+    {
+      "id": "controller_clamp_b",
+      "label": "controller_clamp_b",
+      "cells": [
+        {
+          "id": "controller_clamp_b",
+          "target": "controller_clamp_b",
+          "order": 0,
+          "path": "design/enclosure/source/parts/controller_clamp_b/000-controller_clamp_b.py",
+          "sha256": "4c4da25438afe6da6edf4041d86978bb92cbfaa3348683be60e72bee86aabe2c"
+        }
+      ],
+      "dependencies": [
+        "base"
+      ]
     }
   ],
   "objects": [
@@ -534,14 +566,14 @@
     {
       "id": "pico2",
       "target": "imports",
-      "label": "Pico 2 reference",
+      "label": "RP2350 Plus 16MB",
       "kind": "imported",
-      "shapeHash": "6961e1d319940ab51b8707b697ab4f76192cc345b18893eb9ed480cc62abc42a",
+      "shapeHash": "769f49fdd32710d8c20dbfbd767d940d32e2d09e3c18ae9ed13dc24d47079a11",
       "transform": {
         "positionMm": [
-          16.4,
-          -10.345349813442107,
-          11.049067149079484
+          -8.2,
+          0.08024337,
+          12.47980496
         ],
         "rotationDeg": [
           4,
@@ -563,7 +595,7 @@
       "label": "Bottom service cover",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "02c6400688191afd62a813977242e20a2273921186d32670fcee767c69cbe73b",
+      "shapeHash": "f7339cf912c37cbc027b0c9adf7687c05eab19dd2f632866236a956dd858d4e7",
       "transform": {
         "positionMm": [
           0,
@@ -590,7 +622,35 @@
       "label": "Main key housing",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "182cacc766d3b9586ae6a4635875fce3985a2fc345c554fc724b8f065be5480a",
+      "shapeHash": "79744257b4928e40ceb5fc3f1fdeb142caabf6a8455c70c6113c497326be4add",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          6.459542420143668
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "controller_screws",
+      "target": "hardware",
+      "label": "Controller bridge screws",
+      "material": "stainless_steel",
+      "role": "fastener",
+      "kind": "generated",
+      "shapeHash": "bee7bc80f5d1196dea44b57fdba0bdef1da68b026df98dbb949bd2a5c1e680cb",
       "transform": {
         "positionMm": [
           0,
@@ -614,11 +674,11 @@
     {
       "id": "screws",
       "target": "hardware",
-      "label": "Assembly screws",
+      "label": "Case screws",
       "material": "stainless_steel",
       "role": "fastener",
       "kind": "generated",
-      "shapeHash": "cfe05b5a8085417aaee06efd92401381d056a0d9f5ae2aa90099a3be495f6378",
+      "shapeHash": "5ea3a6bf24e41e9cde5639dfae861818f87e3691534671d5a4462ab28e4719ec",
       "transform": {
         "positionMm": [
           0,
@@ -1387,22 +1447,63 @@
         ]
       },
       "datums": []
+    },
+    {
+      "id": "controller_clamp_a",
+      "target": "controller_clamp_a",
+      "label": "Controller pressure bridge A",
+      "material": "pla",
+      "kind": "generated",
+      "shapeHash": "919d6ad3a76144421d1d750198536a9cc74dde40f1e8a8c370db6e45989992f8",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          6.459542420143668
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "controller_clamp_b",
+      "target": "controller_clamp_b",
+      "label": "Controller pressure bridge B",
+      "material": "pla",
+      "kind": "generated",
+      "shapeHash": "499c5dd75a1f03403419d5bb1f1694573eb369a2e1b8ebbb5b67a9e718597275",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          6.459542420143668
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
     }
   ],
   "assets": [
-    {
-      "id": "pico2",
-      "kind": "step",
-      "path": "design/enclosure/source/assets/d49ada10d893cfcb07cb4abced0a0a0cadca4c4150f153d874268ca06171a24f.step",
-      "sha256": "d49ada10d893cfcb07cb4abced0a0a0cadca4c4150f153d874268ca06171a24f",
-      "label": "Pico 2 reference",
-      "provenance": {
-        "sourcePath": "product/references/pico2-vendor.step",
-        "provider": "Raspberry Pi",
-        "sourceUrl": "https://pip.raspberrypi.com/documents/RP-009061-CA",
-        "declaredSha256": "d49ada10d893cfcb07cb4abced0a0a0cadca4c4150f153d874268ca06171a24f"
-      }
-    },
     {
       "id": "matrix_pcb",
       "kind": "step",
@@ -1411,6 +1512,20 @@
       "label": "Matrix PCB with 20 KS-9 switches",
       "provenance": {
         "sourcePath": "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/assembly.step"
+      }
+    },
+    {
+      "id": "pico2",
+      "kind": "step",
+      "path": "design/enclosure/source/assets/a6dc199a3a4e298685d6ed8e8ca74fd55980cce419e5dcee973fb04c4cd22006.step",
+      "sha256": "a6dc199a3a4e298685d6ed8e8ca74fd55980cce419e5dcee973fb04c4cd22006",
+      "label": "RP2350 Plus 16MB",
+      "provenance": {
+        "sourcePath": "product/references/type-c-controllers/waveshare-rp2350-plus-nurbs-repaired.step",
+        "provider": "Waveshare source; CalcKey topology repair",
+        "sourceUrl": "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus_STEP.zip",
+        "sourceVersion": "Derived from 650977cc5a1bbeaab4eabdefd3f547642a1c34a5a8e5cbf49ac6f8b575c979f4; only USB shell leaf converted to NURBS after geometry comparison; remaining 121 solids unchanged",
+        "declaredSha256": "a6dc199a3a4e298685d6ed8e8ca74fd55980cce419e5dcee973fb04c4cd22006"
       }
     }
   ],
@@ -1423,7 +1538,7 @@
       "b": "top"
     }
   ],
-  "updatedAt": "2026-11-07T01:42:11.246Z",
+  "updatedAt": "2026-11-10T04:36:28.430Z",
   "parameters": {
     "imports": {},
     "base": {
@@ -1434,9 +1549,9 @@
       "floor_thickness": 2.4,
       "corner_radius": 6,
       "top_panel_thickness": 3,
-      "pico_x": 16.4,
+      "pico_x": 17.3,
       "pico_y": -10,
-      "pico_pcb_z": 5.3,
+      "pico_pcb_z": 6,
       "usb_cutout_width": 13,
       "usb_cutout_height": 9,
       "usb_cutout_z": 7.3,
@@ -1466,7 +1581,21 @@
       "matrix_keeper_y": -29,
       "lcd_keeper_y": 23,
       "loop_keeper_x": -26,
-      "loop_keeper_y": 2
+      "loop_keeper_y": 2,
+      "controller_clamp_width": 6,
+      "controller_clamp_thickness": 3,
+      "controller_clamp_roof_z": 8.2,
+      "controller_clamp_offset_a": -4.4,
+      "controller_clamp_offset_b": 7.6,
+      "controller_clamp_screw_offset_y": 16,
+      "controller_insulation_thickness": 0.15,
+      "controller_edge_land": 1.4,
+      "controller_edge_stop_gap": 0.3,
+      "usb_c_extra_clearance": 0.25,
+      "usb_service_tongue_width": 14.5,
+      "usb_service_tongue_height": 11.2,
+      "usb_service_tongue_gap": 0.25,
+      "usb_c_front_rim_depth": 0.7
     },
     "top": {
       "key_hole_size": 14.2,
@@ -1642,6 +1771,12 @@
     "keycap_20": {
       "keycap_20_legend_size": 3.1,
       "keycap_20_legend_depth": 0.35
+    },
+    "controller_clamp_a": {
+      "controller_clamp_index_a": 0
+    },
+    "controller_clamp_b": {
+      "controller_clamp_index_b": 1
     }
   }
 }

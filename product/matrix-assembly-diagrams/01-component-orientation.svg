@@ -409,6 +409,6 @@
 <text x="78" y="1044" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="23" fill="#203346" text-anchor="start">正面第一排：SW1 Num、SW2 /、SW3 *、SW4 Bk；底面第一排顺序相反。</text>
 <text x="78" y="1080" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#203346" text-anchor="start">单键电路：COL → 轴触点1 → 轴触点2 → 二极管 A → K（黑环）→ ROW。铜线已由PCB连接。</text>
 <line x1="56" y1="1137" x2="1624" y2="1137" stroke="#ccd9e1" stroke-width="2" stroke-linecap="round"/>
-<text x="56" y="1167" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="17" fill="#647787" text-anchor="start">CalcKey · MATRIX A / Pico 2 / GDM0103 · 断开USB焊装 · 非1:1加工模板</text>
-<text x="1624" y="1167" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="17" fill="#647787" text-anchor="end">PCB 17123bc08553 · 2026-11-06 · 1/4</text>
+<text x="56" y="1167" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="17" fill="#647787" text-anchor="start">CalcKey · MATRIX A / RP2350-Plus / GDM0103 · 断开USB焊装 · 非1:1加工模板</text>
+<text x="1624" y="1167" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="17" fill="#647787" text-anchor="end">PCB 17123bc08553 · 2026-11-10 · 1/4</text>
 </svg>

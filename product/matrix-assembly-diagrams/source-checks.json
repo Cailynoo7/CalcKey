@@ -7,9 +7,10 @@
   ],
   "source_hashes": {
     "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/package/circuit.json": "8a779318bd5c6954efa04725872f7ac9e82beba712a5fcde15156b1b5dae9171",
-    "design/enclosure/source/wiring.json": "ba92aa5d7554b7d56ab5506cac6462c8b075e56c1b9bc9547d3a93b939c08cb8",
-    "design/firmware/source/board_config.hpp": "c1a7148c127f99e477a89444ba9242b9bb749eec8028d3db9983b9ef2766d558",
-    "product/references/rp-008299-ds.pdf": "cbcfaf881018c686495a2e53c7bd281e7e0a8217d79447d73eda7c8f74b7f675",
+    "design/enclosure/source/wiring.json": "971f141830cee5b17721e2f3e3cce99e9df8be33373712ba7d627fbb8630b603",
+    "design/firmware/source/board_config.hpp": "1597d86f89eb0272a649f25769e52196e50d05113822fae0cb11144737d686d6",
+    "product/references/type-c-controllers/waveshare-rp2350-plus-schematic.pdf": "9f695f99aabd7b8f77d04e1da25335299ef2f3a2fbe1c1d612fcdad05faadff2",
+    "product/references/type-c-controllers/waveshare-plus-pinout.jpg": "73cec7af97a4413bd2cd55c50dedf2a3f2fdb0acf199ce4f97ac16c204e6d2c4",
     "product/references/gdm0103-specification.pdf": "5a99da5743955683150a6527b8757073570189a4aa4ce2f4131a8d0baec73ba8"
   },
   "checked": {
@@ -24,8 +25,8 @@
   },
   "sources": [
     {
-      "url": "https://pip.raspberrypi.com/documents/RP-008299-DS",
-      "pdf_page": 5
+      "url": "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+      "scope": "RP2350-Plus compatible 40-pin physical numbering"
     },
     {
       "url": "https://www.radiomag.com.de/datasheets/gdm0103_specification.pdf",

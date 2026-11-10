@@ -1,0 +1,1829 @@
+{
+  "source_receipt": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
+  "revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
+  "export_id": "export-e9d67ce8536f1f9b0574ccf294968294",
+  "source_step_sha256": "2a25d479d1fcf8d9261fa256df79eda8be7058511812ad56d7365d322c386c35",
+  "conversion_only": true,
+  "tolerance_mm_by_object": true,
+  "angular_tolerance_rad": 0.05,
+  "units": "mm",
+  "printed_objects": 28,
+  "meshes": [
+    {
+      "object_id": "base",
+      "file": "product/production/models/base.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "nozzle_mm": 0.4,
+      "layer_mm": 0.15,
+      "local_print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "local_print_translation_mm": [
+        -0.0,
+        -2.842170943040401e-14,
+        6.200000000000047
+      ],
+      "bbox_mm": [
+        89.0,
+        130.0,
+        15.500000000000124
+      ],
+      "min_z_mm": -4.440892098500626e-16,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "exact_zero_area_facets_removed": 0,
+      "volume_mm3": 31418.834378786432,
+      "bytes": 1489084,
+      "sha256": "02ef41a0aa7402ce1450d1fe474c6393639520d45185a07ebf8f31fbc7bc5fd2",
+      "shape_sha256": "85eecebb749f060a9eec5642c9fa709a35d5b5d0405e2ece79d1b4c43c812bcd",
+      "object_transform": {
+        "positionMm": [
+          0,
+          0,
+          6.459542420143668
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "step_tessellation",
+        "receipt": "product/production/history/harness-tessellation-cad-receipt.json",
+        "step_sha256": "6b862bdb6c360934ce3597fa4814218ba5fa4faf1901aa8d1a013aa055d351ec",
+        "binding_note": "Original tessellation preserved. Export-refresh and explicit seat-fix comparisons prove compatibility with the current source-only repair; no mesh regenerated in this update."
+      },
+      "triangles": 29780,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "top",
+      "file": "product/production/models/top.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "nozzle_mm": 0.4,
+      "layer_mm": 0.15,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "local_print_translation_mm": [
+        -0.0,
+        -4.999988334475347e-08,
+        21.000000000000828
+      ],
+      "bbox_mm": [
+        89.0,
+        130.00000010000014,
+        18.6000001
+      ],
+      "min_z_mm": -5.023146163975381e-16,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "exact_zero_area_facets_removed": 0,
+      "volume_mm3": 35110.80791637768,
+      "bytes": 1468384,
+      "sha256": "11b4573079e66c7cbd9e2a33620b5b34c0b12988b5628676d04ddf229ef9e41d",
+      "shape_sha256": "71f60600ad8ac6ac85c0fa4863f12dd9714371fb4b484bd46a81053ae89ceb33",
+      "object_transform": {
+        "positionMm": [
+          0,
+          0,
+          6.459542420143668
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "step_tessellation",
+        "receipt": "product/production/history/harness-tessellation-cad-receipt.json",
+        "step_sha256": "6b862bdb6c360934ce3597fa4814218ba5fa4faf1901aa8d1a013aa055d351ec",
+        "binding_note": "Original tessellation preserved. Export-refresh and explicit seat-fix comparisons prove compatibility with the current source-only repair; no mesh regenerated in this update."
+      },
+      "triangles": 29366,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "rear_foot_left",
+      "file": "product/production/models/rear_foot_left.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.4,
+      "layer_mm": 0.15,
+      "local_print_rotation_deg": [
+        0,
+        90,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        6.200000000000005,
+        10.35000000000062,
+        10.00000000000674
+      ],
+      "min_z_mm": -1.0078839350582087e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 347.9159269622337,
+      "bytes": 90284,
+      "sha256": "bbcb5a1f1f3fa0bdce6daf1746f113fc14a234f8cd8b0bfb8a98969f93142866",
+      "triangles": 1804,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0,
+      "shape_sha256": "897201121a43ae4001f468e6b9d0921956fda852f40ddae83ab1f79fecc9f4b9",
+      "object_transform": {
+        "positionMm": [
+          -29.5,
+          50.10142322897241,
+          6.755161146518494
+        ],
+        "rotationDeg": [
+          114,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "bbcb5a1f1f3fa0bdce6daf1746f113fc14a234f8cd8b0bfb8a98969f93142866",
+        "original_derivation": {
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/handwired-cad-receipt.json",
+          "mesh_manifest": "product/production/history/matrix-before-keycap-model-manifest.json"
+        }
+      }
+    },
+    {
+      "object_id": "rear_foot_right",
+      "file": "product/production/models/rear_foot_right.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.4,
+      "layer_mm": 0.15,
+      "local_print_rotation_deg": [
+        0,
+        90,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        6.200000000000005,
+        10.35000000000062,
+        10.00000000000674
+      ],
+      "min_z_mm": 2.5448297437422923e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 347.9159269622337,
+      "bytes": 90284,
+      "sha256": "11a77dc9681bc6aca2c54b5041b04a271560deba90c1843d7c13632ae579c7e4",
+      "triangles": 1804,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0,
+      "shape_sha256": "295dce06e3a657f86a14b4179a7aa2d9909727985bee56bc46e279a2b9c77c0d",
+      "object_transform": {
+        "positionMm": [
+          29.5,
+          50.10142322897241,
+          6.755161146518494
+        ],
+        "rotationDeg": [
+          114,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "11a77dc9681bc6aca2c54b5041b04a271560deba90c1843d7c13632ae579c7e4",
+        "original_derivation": {
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/handwired-cad-receipt.json",
+          "mesh_manifest": "product/production/history/matrix-before-keycap-model-manifest.json"
+        }
+      }
+    },
+    {
+      "object_id": "hinge_axle_left",
+      "file": "product/production/models/hinge_axle_left.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.4,
+      "layer_mm": 0.15,
+      "local_print_rotation_deg": [
+        0,
+        -90,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        5.0,
+        5.0,
+        19.3
+      ],
+      "min_z_mm": -1.776356839400339e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 109.97773402421633,
+      "bytes": 100684,
+      "sha256": "6d62b491d0eae5af62c8d0b261496954481df8c39fd8c43ddcd0eb505d834228",
+      "triangles": 2012,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0,
+      "shape_sha256": "65f0189a5e1df94ec70a281c0cc18586f5cf03adba6e091c5ab8c1585570e74d",
+      "object_transform": {
+        "positionMm": [
+          -29.5,
+          50.10142322897241,
+          6.755161146518494
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          180
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "6d62b491d0eae5af62c8d0b261496954481df8c39fd8c43ddcd0eb505d834228",
+        "original_derivation": {
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/handwired-cad-receipt.json",
+          "mesh_manifest": "product/production/history/matrix-before-keycap-model-manifest.json"
+        }
+      }
+    },
+    {
+      "object_id": "hinge_axle_right",
+      "file": "product/production/models/hinge_axle_right.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.4,
+      "layer_mm": 0.15,
+      "local_print_rotation_deg": [
+        0,
+        -90,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        5.0,
+        5.0,
+        19.3
+      ],
+      "min_z_mm": -1.776356839400329e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 109.97773402421632,
+      "bytes": 100684,
+      "sha256": "cab6359550d32c7578f75439939392900b6020c89a62110c40979fc3e020f599",
+      "triangles": 2012,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0,
+      "shape_sha256": "0ce2dd5a1fe4f59b38c62a742b456764de1988a40138d9503e2c41d45d1592df",
+      "object_transform": {
+        "positionMm": [
+          29.5,
+          50.10142322897241,
+          6.755161146518494
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "cab6359550d32c7578f75439939392900b6020c89a62110c40979fc3e020f599",
+        "original_derivation": {
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/handwired-cad-receipt.json",
+          "mesh_manifest": "product/production/history/matrix-before-keycap-model-manifest.json"
+        }
+      }
+    },
+    {
+      "object_id": "hinge_cap_left",
+      "file": "product/production/models/hinge_cap_left.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.4,
+      "layer_mm": 0.15,
+      "local_print_rotation_deg": [
+        0,
+        90,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        5.000000000000001,
+        5.0,
+        2.400000000000002
+      ],
+      "min_z_mm": 2.442490654175425e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 40.75273990236719,
+      "bytes": 100684,
+      "sha256": "7c7bfcf810ecefe4f16ed65cfb4400197b5ced9b3f9e1de838116febfa1ce284",
+      "triangles": 2012,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0,
+      "shape_sha256": "5503662ca21b1d2216553e38ba0040baba33c1a03a0a2e501c49990436e9be61",
+      "object_transform": {
+        "positionMm": [
+          -29.5,
+          50.10142322897241,
+          6.755161146518494
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          180
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "7c7bfcf810ecefe4f16ed65cfb4400197b5ced9b3f9e1de838116febfa1ce284",
+        "original_derivation": {
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/handwired-cad-receipt.json",
+          "mesh_manifest": "product/production/history/matrix-before-keycap-model-manifest.json"
+        }
+      }
+    },
+    {
+      "object_id": "hinge_cap_right",
+      "file": "product/production/models/hinge_cap_right.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.4,
+      "layer_mm": 0.15,
+      "local_print_rotation_deg": [
+        0,
+        90,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        5.000000000000001,
+        5.0,
+        2.400000000000002
+      ],
+      "min_z_mm": 2.4424906541754225e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 40.75273990236717,
+      "bytes": 100684,
+      "sha256": "8e212d049ec6ae9c2f20e0d824d7cd13396b8e42b3d4e76749afa13113a9b206",
+      "triangles": 2012,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0,
+      "shape_sha256": "611a869cb5a3ea77356f3990774697484c6020655ee4a12c271ccf9f81d90f3d",
+      "object_transform": {
+        "positionMm": [
+          29.5,
+          50.10142322897241,
+          6.755161146518494
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "8e212d049ec6ae9c2f20e0d824d7cd13396b8e42b3d4e76749afa13113a9b206",
+        "original_derivation": {
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/handwired-cad-receipt.json",
+          "mesh_manifest": "product/production/history/matrix-before-keycap-model-manifest.json"
+        }
+      }
+    },
+    {
+      "object_id": "key_01",
+      "file": "product/production/models/key_01.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 812.0241306297354,
+      "bytes": 614984,
+      "sha256": "47b668f21605a484b370ae45f394189963b0950ca7c62c7ab0cc2aa03d19ca51",
+      "shape_sha256": "50204e98d0f0bb9a79705c9404445231b4240e415d04647b615612dbcc48a8b7",
+      "object_transform": {
+        "positionMm": [
+          -28.525000000172298,
+          22.69085664957732,
+          34.610951985066876
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "47b668f21605a484b370ae45f394189963b0950ca7c62c7ab0cc2aa03d19ca51",
+        "original_derivation": {
+          "method": "step_tessellation",
+          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+        }
+      },
+      "triangles": 12298,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_02",
+      "file": "product/production/models/key_02.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 813.7659244828004,
+      "bytes": 160684,
+      "sha256": "03782036bec97451708fa221977bf24764f4aa069293149883e9fb2b36ea0b23",
+      "shape_sha256": "88f6cca3a98d9fde97e011d82cbc96b6ad9ed24745aa6838a09f6012f7d61cca",
+      "object_transform": {
+        "positionMm": [
+          -9.4750000001723,
+          22.69085664957732,
+          34.610951985066876
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "03782036bec97451708fa221977bf24764f4aa069293149883e9fb2b36ea0b23",
+        "original_derivation": {
+          "method": "step_tessellation",
+          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+        }
+      },
+      "triangles": 3212,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_03",
+      "file": "product/production/models/key_03.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 813.6012819962281,
+      "bytes": 160684,
+      "sha256": "b49f64adef3446512abbcee79820ae1137ab18f0844fabebfba6ab40c6e0acd1",
+      "shape_sha256": "6845eee5cf31762e90b123f62fb53d9b41567863e049bbde6dc6a2c8d8060467",
+      "object_transform": {
+        "positionMm": [
+          9.574999999827702,
+          22.69085664957732,
+          34.610951985066876
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "b49f64adef3446512abbcee79820ae1137ab18f0844fabebfba6ab40c6e0acd1",
+        "original_derivation": {
+          "method": "step_tessellation",
+          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+        }
+      },
+      "triangles": 3212,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_04",
+      "file": "product/production/models/key_04.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 812.7769840800935,
+      "bytes": 498384,
+      "sha256": "4721d0c03dd6914e826f8abeaa54dec1afb5865fe9229e42990d339a7b242eb8",
+      "shape_sha256": "485e98b0b8f86bad936d0d695f80316505787b6ca84a733d5641fc9e2747b711",
+      "object_transform": {
+        "positionMm": [
+          28.624999999827708,
+          22.69085664957732,
+          34.610951985066876
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "4721d0c03dd6914e826f8abeaa54dec1afb5865fe9229e42990d339a7b242eb8",
+        "original_derivation": {
+          "method": "step_tessellation",
+          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+        }
+      },
+      "triangles": 9966,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_05",
+      "file": "product/production/models/key_05.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 813.5004861109833,
+      "bytes": 173984,
+      "sha256": "19b2e8bc53dbc2debd7235e945909b3527c3e81836a39ea8bb7841992c025e2e",
+      "shape_sha256": "de771d51503154f17263234df1d6f773d3383d62354171bfa2ffd6aa9b06f6b7",
+      "object_transform": {
+        "positionMm": [
+          -28.525000000172298,
+          3.6872614921276674,
+          33.282091160241286
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "19b2e8bc53dbc2debd7235e945909b3527c3e81836a39ea8bb7841992c025e2e",
+        "original_derivation": {
+          "method": "step_tessellation",
+          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+        }
+      },
+      "triangles": 3478,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_06",
+      "file": "product/production/models/key_06.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 812.8530845691552,
+      "bytes": 695784,
+      "sha256": "52da9af08a8137ca5061c5c47d02262e8484f8d5db3d4b2e8e99efe1d22dc353",
+      "shape_sha256": "c68d7316cb8fb84806df9f2cb6f6555f4cca81bd072c01aff9277098b9486b2a",
+      "object_transform": {
+        "positionMm": [
+          -9.4750000001723,
+          3.6872614921276674,
+          33.282091160241286
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "52da9af08a8137ca5061c5c47d02262e8484f8d5db3d4b2e8e99efe1d22dc353",
+        "original_derivation": {
+          "method": "step_tessellation",
+          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+        }
+      },
+      "triangles": 13914,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_07",
+      "file": "product/production/models/key_07.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 812.8778192857721,
+      "bytes": 541984,
+      "sha256": "8921fa28d16d956f57dad2ec209962a6cc070a8d087733d5cb5a4909e4e21730",
+      "shape_sha256": "40fc9bcfeab2f16612a17cbb7f8b3e58f494a18200471b8ff3ad80a0ac2d036e",
+      "object_transform": {
+        "positionMm": [
+          9.574999999827702,
+          3.6872614921276674,
+          33.282091160241286
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "8921fa28d16d956f57dad2ec209962a6cc070a8d087733d5cb5a4909e4e21730",
+        "original_derivation": {
+          "method": "step_tessellation",
+          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+        }
+      },
+      "triangles": 10838,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_08",
+      "file": "product/production/models/key_08.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 814.0695468998703,
+      "bytes": 159584,
+      "sha256": "83f584c97ee0bcadd5a4a2492d4255a566bc0d657b6e791d8056467ad27164fd",
+      "shape_sha256": "53c02340d0038937949aec224524e3d19dbe588244f367437a36809998d42929",
+      "object_transform": {
+        "positionMm": [
+          28.624999999827708,
+          3.6872614921276674,
+          33.282091160241286
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "83f584c97ee0bcadd5a4a2492d4255a566bc0d657b6e791d8056467ad27164fd",
+        "original_derivation": {
+          "method": "step_tessellation",
+          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+        }
+      },
+      "triangles": 3190,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_09",
+      "file": "product/production/models/key_09.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "volume_mm3": 813.1053847449476,
+      "bytes": 161084,
+      "sha256": "c6ffbcc5ad3ed2cb98c84dcdc6535d833ae0e117e913c9cb2335290fbc12b666",
+      "shape_sha256": "2152dd8f42692e8d2328b708369ad5beac59ec1fde3f5ad1c8fa003c5b24d167",
+      "object_transform": {
+        "positionMm": [
+          -28.525000000172298,
+          -15.316333665321983,
+          31.9532303354157
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "c6ffbcc5ad3ed2cb98c84dcdc6535d833ae0e117e913c9cb2335290fbc12b666",
+        "original_derivation": {
+          "method": "step_tessellation",
+          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+        }
+      },
+      "triangles": 3220,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_10",
+      "file": "product/production/models/key_10.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "exact_zero_area_facets_removed": 1,
+      "volume_mm3": 812.4518634499394,
+      "bytes": 746084,
+      "sha256": "e879a73d1be04f53fa02b7ccfa07a612418e9cd85f69fd4fee46109172fe1357",
+      "shape_sha256": "07ae845e7ed9ad7c42e20d2d23b5fdb6720b6688fb77afe26ffe448d150c0ffa",
+      "object_transform": {
+        "positionMm": [
+          -9.4750000001723,
+          -15.316333665321983,
+          31.9532303354157
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "e879a73d1be04f53fa02b7ccfa07a612418e9cd85f69fd4fee46109172fe1357",
+        "original_derivation": {
+          "method": "step_tessellation",
+          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+        }
+      },
+      "triangles": 14920,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_11",
+      "file": "product/production/models/key_11.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "exact_zero_area_facets_removed": 0,
+      "volume_mm3": 812.8804313360386,
+      "bytes": 541584,
+      "sha256": "0b44d249af5447622593f87cb8204f160ffa91f2be47439985aed6577a9daf88",
+      "shape_sha256": "b1c78f60deab646304f8480e2d2267c713e89f205da28919ccbfd333505cc2a5",
+      "object_transform": {
+        "positionMm": [
+          9.574999999827702,
+          -15.316333665321983,
+          31.9532303354157
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "0b44d249af5447622593f87cb8204f160ffa91f2be47439985aed6577a9daf88",
+        "original_derivation": {
+          "method": "step_tessellation",
+          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+        }
+      },
+      "triangles": 10830,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_12",
+      "file": "product/production/models/key_12.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "exact_zero_area_facets_removed": 0,
+      "volume_mm3": 813.6944996170778,
+      "bytes": 160684,
+      "sha256": "af05d786f9e4fb3d9b5353386baa574ebce1b8bdea18af2d792094e1f3330e87",
+      "shape_sha256": "0f038ca583cbed42b9dae0fef07e5f93c1881e8e59b4111dfe1853722a380b7e",
+      "object_transform": {
+        "positionMm": [
+          28.624999999827708,
+          -15.316333665321983,
+          31.9532303354157
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "af05d786f9e4fb3d9b5353386baa574ebce1b8bdea18af2d792094e1f3330e87",
+        "original_derivation": {
+          "method": "step_tessellation",
+          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+        }
+      },
+      "triangles": 3212,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_13",
+      "file": "product/production/models/key_13.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "exact_zero_area_facets_removed": 0,
+      "volume_mm3": 813.6086514772385,
+      "bytes": 176584,
+      "sha256": "9a107cc0950d500b6869690391196ec2abbda88ec230901d79f0241b5090967d",
+      "shape_sha256": "21e51cb28359aa9d7296874e543541a91a31798efda1acad3098e213fe5cca6e",
+      "object_transform": {
+        "positionMm": [
+          -28.525000000172298,
+          -34.31992882277164,
+          30.624369510590114
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "9a107cc0950d500b6869690391196ec2abbda88ec230901d79f0241b5090967d",
+        "original_derivation": {
+          "method": "step_tessellation",
+          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+        }
+      },
+      "triangles": 3530,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_14",
+      "file": "product/production/models/key_14.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "exact_zero_area_facets_removed": 0,
+      "volume_mm3": 813.0712085725633,
+      "bytes": 327084,
+      "sha256": "e7b38470d909e23dfd9c2a25588ac49792e76efa407d9772b477fed7fb4520e7",
+      "shape_sha256": "810ee6536c0f366b43c626baef498f3a0f5ce9da6b3a34ed2b493ee50da87cba",
+      "object_transform": {
+        "positionMm": [
+          -9.4750000001723,
+          -34.31992882277164,
+          30.624369510590114
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "e7b38470d909e23dfd9c2a25588ac49792e76efa407d9772b477fed7fb4520e7",
+        "original_derivation": {
+          "method": "step_tessellation",
+          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+        }
+      },
+      "triangles": 6540,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_15",
+      "file": "product/production/models/key_15.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "exact_zero_area_facets_removed": 0,
+      "volume_mm3": 813.1904088728646,
+      "bytes": 561384,
+      "sha256": "0c04ce66c40bba7931a77e28b4eed47a9539b65daeabed9726d299e6863c21a1",
+      "shape_sha256": "8f4b12d11d2db39e992148d3f418a311239b5ed4e73387de500e5839bcc61bbe",
+      "object_transform": {
+        "positionMm": [
+          9.574999999827702,
+          -34.31992882277164,
+          30.624369510590114
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "0c04ce66c40bba7931a77e28b4eed47a9539b65daeabed9726d299e6863c21a1",
+        "original_derivation": {
+          "method": "step_tessellation",
+          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+        }
+      },
+      "triangles": 11226,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_16",
+      "file": "product/production/models/key_16.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "exact_zero_area_facets_removed": 0,
+      "volume_mm3": 810.606733864861,
+      "bytes": 847284,
+      "sha256": "8dbc2a78f35759553ce45322ae60f50b17b4f0f4ab16e8754929d3da19e9b172",
+      "shape_sha256": "0cab678c09bbd88d25a39632603b0fcaab624b8b592e59268a03577ee12e2dee",
+      "object_transform": {
+        "positionMm": [
+          28.624999999827708,
+          -34.31992882277164,
+          30.624369510590114
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "8dbc2a78f35759553ce45322ae60f50b17b4f0f4ab16e8754929d3da19e9b172",
+        "original_derivation": {
+          "method": "step_tessellation",
+          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+        }
+      },
+      "triangles": 16944,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_17",
+      "file": "product/production/models/key_17.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "exact_zero_area_facets_removed": 0,
+      "volume_mm3": 811.1971175771216,
+      "bytes": 1069184,
+      "sha256": "5906ad71e889846f8704b13930a9f975fdbe61d6b112a6c79a98837680d405e3",
+      "shape_sha256": "b3622acb8f061ac1cd74c6d1e91fc56607c801e36b64086c151459ad524a49e0",
+      "object_transform": {
+        "positionMm": [
+          -28.525000000172298,
+          -53.32352398022128,
+          29.295508685764528
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "5906ad71e889846f8704b13930a9f975fdbe61d6b112a6c79a98837680d405e3",
+        "original_derivation": {
+          "method": "step_tessellation",
+          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+        }
+      },
+      "triangles": 21382,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_18",
+      "file": "product/production/models/key_18.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "exact_zero_area_facets_removed": 0,
+      "volume_mm3": 812.9228103490967,
+      "bytes": 418484,
+      "sha256": "e92fdf1e73cc3db34add5c65aa41c03285edf0483a973a7c876651591f7ad671",
+      "shape_sha256": "5106bf74519f46133493cb4776600901819325906f816fe55c6eb8fee1da6fc4",
+      "object_transform": {
+        "positionMm": [
+          -9.4750000001723,
+          -53.32352398022128,
+          29.295508685764528
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "e92fdf1e73cc3db34add5c65aa41c03285edf0483a973a7c876651591f7ad671",
+        "original_derivation": {
+          "method": "step_tessellation",
+          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+        }
+      },
+      "triangles": 8368,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_19",
+      "file": "product/production/models/key_19.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "exact_zero_area_facets_removed": 0,
+      "volume_mm3": 814.4360227909833,
+      "bytes": 159084,
+      "sha256": "77712f685eb1aa4cc5bceb83e261349f68bec7534f8ec8e5624520f3de47ac19",
+      "shape_sha256": "1ed5ff93c622c6656239f97430524182d909f62774be6d10b8bff0ab101fa371",
+      "object_transform": {
+        "positionMm": [
+          9.574999999827702,
+          -53.32352398022128,
+          29.295508685764528
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "77712f685eb1aa4cc5bceb83e261349f68bec7534f8ec8e5624520f3de47ac19",
+        "original_derivation": {
+          "method": "step_tessellation",
+          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+        }
+      },
+      "triangles": 3180,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "key_20",
+      "file": "product/production/models/key_20.stl",
+      "quantity": 1,
+      "material": "PETG",
+      "nozzle_mm": 0.2,
+      "layer_mm": 0.1,
+      "local_print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "bbox_mm": [
+        18.200000199999998,
+        18.200000199999998,
+        7.000000200000278
+      ],
+      "min_z_mm": 2.9449665862334748e-15,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "exact_zero_area_facets_removed": 0,
+      "volume_mm3": 812.919060189836,
+      "bytes": 397484,
+      "sha256": "bac45ace766ecc45b29e035cab1215377c3105124db98474239f15a17b5dafdc",
+      "shape_sha256": "0675dbc17bb19540d388ded50758ecf571219759dde6a3bd0d9156b3e48ef075",
+      "object_transform": {
+        "positionMm": [
+          28.624999999827708,
+          -53.32352398022128,
+          29.295508685764528
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "reuse_unchanged_shape",
+        "receipt": "product/production/history/before-harness-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "source_mesh_sha256": "bac45ace766ecc45b29e035cab1215377c3105124db98474239f15a17b5dafdc",
+        "original_derivation": {
+          "method": "step_tessellation",
+          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+        }
+      },
+      "triangles": 7948,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    }
+  ],
+  "printer_started": false,
+  "sliced": false,
+  "current_binding": {
+    "receipt": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
+    "revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
+    "export_id": "export-e9d67ce8536f1f9b0574ccf294968294",
+    "step_sha256": "2a25d479d1fcf8d9261fa256df79eda8be7058511812ad56d7365d322c386c35",
+    "method": "All 28 original meshes retained by byte hash, placement and verified export/seat-fix geometry equivalence; no retessellation in this package update",
+    "tessellation_receipt": "product/production/history/harness-tessellation-cad-receipt.json",
+    "source_compatibility_evidence": "product/cad-compatibility/verification.json"
+  }
+}

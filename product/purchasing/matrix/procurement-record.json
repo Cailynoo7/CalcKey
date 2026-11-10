@@ -1,8 +1,71 @@
 {
-  "prepared_date": "2026-11-06",
+  "prepared_date": "2026-11-10",
   "pcb_release_id": "17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727",
   "source_release_manifest_sha256": "9172a35ff855e1a0376d32d8fdec4b7b9c46065f73d87cf83b2dc1758306e969",
   "checks": {
+    "bom_rows_covered": 31,
+    "shopping_rows": 30,
+    "shared_wire_m": 3,
+    "wire_installed_m": 2.25,
+    "firmware_version": "0.3.0",
+    "printed_parts_total": 30,
+    "current_type_c_stl_generated": true,
+    "order_placed": false,
+    "price_or_stock_quote": false,
+    "matrix_fabrication_unchanged": true,
+    "regenerated_meshes": 4,
+    "reused_meshes": 26
+  },
+  "files": [
+    {
+      "name": "README.md",
+      "sha256": "4111d5063b39ae3234955fc1e02f2cd1b9e73a36c87200b5b2b316e27079625e"
+    },
+    {
+      "name": "pcb-order-parameters.json",
+      "sha256": "e81e9861cbadce277881ca18f8469a4d0c3193ea7739296fcfe3265b74e3a00b"
+    },
+    {
+      "name": "pcb-order-parameters.csv",
+      "sha256": "1bdeeae80e5eb72433e140bea10a00fe76fdde7a0726e9aef1e58033c88b947c"
+    },
+    {
+      "name": "hand-assembly-shopping.json",
+      "sha256": "f5387c9d64a1e2d6421f081d5345c36b4054c1391c0ad3f510534698989140bb"
+    },
+    {
+      "name": "hand-assembly-shopping.csv",
+      "sha256": "1abd351b16cfba57a7ea0ae76e0b7fe75a96221ed0f0eeaa0fbdfd95b2cd822b"
+    },
+    {
+      "name": "hand-soldering-tools.csv",
+      "sha256": "d9b1d3b8febbc122f8dd71f90cad8b5b26489a5f1ef276af8afd227bb9fed302"
+    }
+  ],
+  "actions": {
+    "source_bom_modified": true,
+    "pcb_rebuilt": false,
+    "uploaded_to_supplier": false,
+    "order_placed": false,
+    "paid": false,
+    "flashed": false
+  },
+  "keycap_cad_revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029",
+  "harness_addendum": {
+    "verification": "product/harness-routing-verification.json",
+    "purchase_quantities_unchanged": true,
+    "pcb_release_unchanged": true,
+    "source_bom_sha256": "005602c8a160c05fa760821735287cc5e70efe9ceda4eabf9bcb14e2f4497934",
+    "regenerated_meshes": [
+      "base",
+      "top",
+      "controller_clamp_a",
+      "controller_clamp_b"
+    ],
+    "enclosure_export_id": "export-fa411383a0f6c23d36fed4b6df68eda5",
+    "assembly_record_rows": 154
+  },
+  "historical_pre_type_c_checks": {
     "release_package_hashes_matched": true,
     "fabrication_zip_crc_passed": true,
     "fabrication_files_matched": 13,
@@ -16,48 +79,6 @@
     "unchanged_printed_meshes": 28,
     "retained_keycap_meshes": 20
   },
-  "files": [
-    {
-      "name": "README.md",
-      "sha256": "8f41efdabaa426cf7907d65be19a6ab94158e5302c174dc44d706f594643d244"
-    },
-    {
-      "name": "pcb-order-parameters.json",
-      "sha256": "e81e9861cbadce277881ca18f8469a4d0c3193ea7739296fcfe3265b74e3a00b"
-    },
-    {
-      "name": "pcb-order-parameters.csv",
-      "sha256": "1bdeeae80e5eb72433e140bea10a00fe76fdde7a0726e9aef1e58033c88b947c"
-    },
-    {
-      "name": "hand-assembly-shopping.json",
-      "sha256": "19b32676b6a354f2aab28a8f9627293ceb3e68482d8d9b97ff0f2c72052350e8"
-    },
-    {
-      "name": "hand-assembly-shopping.csv",
-      "sha256": "77bc69f5f34581acbb8bd4c7aeb24aba255adab66951e5cedadb9277b50a1ea9"
-    },
-    {
-      "name": "hand-soldering-tools.csv",
-      "sha256": "d9b1d3b8febbc122f8dd71f90cad8b5b26489a5f1ef276af8afd227bb9fed302"
-    }
-  ],
-  "actions": {
-    "source_bom_modified": false,
-    "pcb_rebuilt": false,
-    "uploaded_to_supplier": false,
-    "order_placed": false,
-    "paid": false,
-    "flashed": false
-  },
-  "keycap_cad_revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029",
-  "harness_addendum": {
-    "verification": "product/harness-routing-verification.json",
-    "purchase_quantities_unchanged": true,
-    "pcb_release_unchanged": true,
-    "source_bom_sha256": "082d557798668b949353446e8c36873c26d1a323d3ed54d627e5c00f8375a91d",
-    "regenerated_meshes": [],
-    "enclosure_export_id": "export-e9d67ce8536f1f9b0574ccf294968294",
-    "assembly_record_rows": 154
-  }
+  "source_bom_sha256": "005602c8a160c05fa760821735287cc5e70efe9ceda4eabf9bcb14e2f4497934",
+  "source_requirements_sha256": "bbebf85b417675d389cec31f61bc7d5d213ad83247849ea6f2dae69f8d151c86"
 }

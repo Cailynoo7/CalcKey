@@ -1,88 +1,30 @@
 {
   "kind": "printing_advice_document_consistency",
-  "prepared_date": "2026-11-06",
-  "scope": "Document preparation; no slicing, print plates, G-code, printer task, physical testing or device power/flash.",
   "current_cad_binding": {
-    "receipt": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
-    "revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
-    "export_id": "export-e9d67ce8536f1f9b0574ccf294968294",
-    "step_sha256": "2a25d479d1fcf8d9261fa256df79eda8be7058511812ad56d7365d322c386c35",
-    "method": "All 28 original meshes retained by byte hash, placement and verified export/seat-fix geometry equivalence; no retessellation in this package update",
-    "tessellation_receipt": "product/production/history/harness-tessellation-cad-receipt.json",
-    "source_compatibility_evidence": "product/cad-compatibility/verification.json"
+    "receipt": "manufacturing/enclosure/releases/export-fa411383a0f6c23d36fed4b6df68eda5/receipt.json",
+    "revision": "18faaed5c6a9c41229a5fc888c20458ccf315f3c0712424836f5007b8f745c59",
+    "export_id": "export-fa411383a0f6c23d36fed4b6df68eda5",
+    "step_sha256": "6d490cd297d2bd98776b914db083af3270665d0d4482ccf33df5b4c3f972d8d6"
   },
   "counts": {
-    "total_parts": 28,
-    "PLA_parts": 2,
-    "PETG_parts": 26,
-    "case_parts": 2,
-    "mechanism_parts": 6,
-    "keycaps": 20
-  },
-  "checks": [
-    "28 unique one-each rows exactly match current mesh manifest",
-    "All 28 STL byte hashes match manifest",
-    "Material, nozzle, layer and already-applied rotation match mesh records",
-    "Case support exclusions include all five tape tunnels",
-    "No physical result fields written; existing observation forms untouched"
-  ],
-  "source_classification": {
-    "model_facts": "published CAD, saved parameters, STEP and mesh records",
-    "retained_material_nozzle_layer": "default, retained from current print plan",
-    "additional_process_advice": "default, untested; printer, filament brand and plate unspecified",
-    "general_material_and_support_notes": "research, official manufacturer guidance"
-  },
-  "references": [
-    {
-      "url": "https://help.prusa3d.com/article/pla_2062",
-      "supports": "PLA printability, heat sensitivity and material suitability",
-      "source": "research"
-    },
-    {
-      "url": "https://help.prusa3d.com/article/petg_2059",
-      "supports": "PETG toughness, small-detail/bridge limitations and print surface precautions",
-      "source": "research"
-    },
-    {
-      "url": "https://help.prusa3d.com/article/support-material_1698",
-      "supports": "Support enforcers/blockers, build-plate-only limits and interface gaps",
-      "source": "research"
-    }
-  ],
-  "read_only_geometry_observation": {
-    "base_valid": true,
-    "base_solids": 1,
-    "top_valid": true,
-    "top_solids": 1,
-    "parts_run": []
-  },
-  "source_parameter_read_attempt": {
-    "completed": false,
-    "error": "make_screw_joint_v1() missing 1 required keyword-only argument: 'seat'",
-    "resolution": "Used saved design parameters and committed objects/meshes; no source rebuild or edit. Compatibility repair is separate future CAD work.",
-    "resolved_by": "product/cad-compatibility/verification.json",
-    "historical_error_resolved": true
+    "total_parts": 30,
+    "PLA_parts": 4,
+    "PETG_parts": 26
   },
   "input_sha256": {
-    "product/production/model-manifest.json": "d0458382a789b6beb67189ec4a1d8ea22edb69ebff3b966b78e795dff291af7b",
-    "product/production/print-plan.csv": "8c12e51daba9984128579dd6942c05f3fd31db6c3dbc67dd9ddf21fbee1c5189",
-    "product/production/case-mesh-checks.json": "8f8800d97a750c3ed79628bb2611033f5e49b2de04a08dc3abb6f83c11ba9c98",
-    "product/production/mesh-feature-checks.json": "ec0cb4c69a4c4a605be8d437d6cdad6162aef58e7cb648e432c3a4830d3e056c",
-    "product/production/design-verification.json": "aac53b2a10b054bd3237a7b049fe55bcf5c418f69f46ba5e4bc977490c8ecc0f",
-    "design/enclosure/source/design.json": "31db57ab267eca39b7d5f41be29e3f10e8c8a3bb017a4149e02e3726c0f3d0ef",
-    "design/enclosure/source/parts/base/000-base.py": "f2366e1341930f5298b749353bab6b14798142c8591f225f202cd3a50d88df25",
-    "design/enclosure/source/parts/top/000-top.py": "6409411a5793ae942ac02e6b4d85925061a5ee4e07807d8f152979039fb96864",
-    "design/enclosure/source/parts/keycaps/000-keycaps.py": "743479890b23be5cdcf79dfc0cdffe5e9c22be94b2aba7d81f357ec2578aef89",
-    "design/enclosure/source/parts/rear_foot_left/000-rear_foot_left.py": "66104a09850759b66d5a40acebbfe3a57d8b669f4d2f21704585a00d1a86763d",
-    "design/enclosure/source/parts/hinge_axle_left/000-hinge_axle_left.py": "40c2aa0ed12c6b766b926f69644b40ae34728d58b0d7cd90677b0294124c080f",
-    "design/enclosure/source/parts/hinge_cap_left/000-hinge_cap_left.py": "7616f169b66d7bc4b8244e49c19ae7e02c285f130dd10bc77ac89fccf9288a82",
-    "product/cad-compatibility/before-seat-fix-receipt.json": "fe03cf1a2a926783b78ebee1438eb3f319aa4eda4588f8f92e1e0478e954f791",
-    "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json": "e967f0a941c885739de18476ae323078deb9cf78db43f53430dd51d8c67d9302",
-    "product/cad-compatibility/verification.json": "5cb555c160024e9b78ba93b54cfff63188bb5707b1029f77283242b312d26640"
+    "product/production/model-manifest.json": "4436f09eb697100276ef26472fb13b7f9f1aa9a5a142e307ad395dded7e7bcb3",
+    "product/production/print-plan.csv": "20740276fd4d1ac6f0b43d0af140d0696de5c8351e2d542b4a324e5de12ae374",
+    "product/production/case-mesh-checks.json": "2a25f69b88e4bf95ab7e68fc3e539b1c9728b60e19228bff496b9c598444ecb0",
+    "product/production/mesh-feature-checks.json": "2efca42638f865b6e26b300ca0fc47b3747111d75cbb0f3c5e8e0c9b9e96f1af",
+    "product/production/design-verification.json": "218fbd86fd7f5c768fa2a7702645c2a93eb9d7996480750a58f6c5b31fff0b35",
+    "design/enclosure/source/design.json": "00a4a7a02afc28e104a7c5b92694698698a140a8054ae3a389da9db8f004d686",
+    "design/enclosure/source/parts/base/000-base.py": "9857225159e0a004f0988a9411e3858ae59fb623f99456e28908b8742eb7c0c1",
+    "design/enclosure/source/parts/top/000-top.py": "93fd0aaef9934e9cc2323f9494f9db8f14d8ba241736009202b08269a6091e1e",
+    "manufacturing/enclosure/releases/export-fa411383a0f6c23d36fed4b6df68eda5/receipt.json": "44561fef6faae2eaedd0be7466449151bd137f8577edb664230563a1bffc8ad7"
   },
   "mesh_sha256": {
-    "product/production/models/base.stl": "02ef41a0aa7402ce1450d1fe474c6393639520d45185a07ebf8f31fbc7bc5fd2",
-    "product/production/models/top.stl": "11b4573079e66c7cbd9e2a33620b5b34c0b12988b5628676d04ddf229ef9e41d",
+    "product/production/models/base.stl": "8dbadbe84ef31a977737732a5aae7f748d22391339f11a00c898c8612992575d",
+    "product/production/models/top.stl": "d890005daf3ba04562d0bf551e93d4b9521c080fb444981d32556bc6156ef0fb",
     "product/production/models/rear_foot_left.stl": "bbcb5a1f1f3fa0bdce6daf1746f113fc14a234f8cd8b0bfb8a98969f93142866",
     "product/production/models/rear_foot_right.stl": "11a77dc9681bc6aca2c54b5041b04a271560deba90c1843d7c13632ae579c7e4",
     "product/production/models/hinge_axle_left.stl": "6d62b491d0eae5af62c8d0b261496954481df8c39fd8c43ddcd0eb505d834228",
@@ -108,43 +50,13 @@
     "product/production/models/key_17.stl": "5906ad71e889846f8704b13930a9f975fdbe61d6b112a6c79a98837680d405e3",
     "product/production/models/key_18.stl": "e92fdf1e73cc3db34add5c65aa41c03285edf0483a973a7c876651591f7ad671",
     "product/production/models/key_19.stl": "77712f685eb1aa4cc5bceb83e261349f68bec7534f8ec8e5624520f3de47ac19",
-    "product/production/models/key_20.stl": "bac45ace766ecc45b29e035cab1215377c3105124db98474239f15a17b5dafdc"
+    "product/production/models/key_20.stl": "bac45ace766ecc45b29e035cab1215377c3105124db98474239f15a17b5dafdc",
+    "product/production/models/controller_clamp_a.stl": "fc2d2e26d92a25bd2f221dcefcd778b340cab22b48cc27139704e0c0a24591ff",
+    "product/production/models/controller_clamp_b.stl": "ecdd3bde7a18aaf01ec85c3166c5a1a3310815b2de1432b1dd71fcc88a4dfafd"
   },
   "document_sha256": {
-    "product/print-preparation/README.md": "89641ba563cf82cd208a4e5cd5d6609f37fafab281285366c67851b8ab88e700",
-    "product/print-preparation/part-settings.csv": "e0d29ae47d55776398bd67e0d0d22dd176af99f41972411a7db8325ede04a925"
+    "product/print-preparation/part-settings.csv": "508d10d8a375da4e3c8289eb06927585ad22c3158ba1bdc60bb18773f26990bf",
+    "product/print-preparation/README.md": "1b651873b9d0963c014a783c7642183744768e6d13a84fd2c9db4d84438bb0f3"
   },
-  "actions_performed": {
-    "sliced": false,
-    "plate_arranged": false,
-    "printer_started": false,
-    "powered": false,
-    "flashed": false,
-    "cad_geometry_changed": false,
-    "models_changed": false,
-    "complete_package_rebuilt": false,
-    "cad_source_compatibility_followup": true
-  },
-  "baseline_cad_binding": {
-    "receipt": "manufacturing/enclosure/releases/export-6578a384546c9664928efcc137896bcd/receipt.json",
-    "revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7",
-    "export_id": "export-6578a384546c9664928efcc137896bcd",
-    "step_sha256": "2ed308e4af22be754961ced6498c88baff8cd9457007e27f461ae12d222934bc",
-    "method": "2 fixed-bridge case meshes and 26 retained meshes, verified by source, placement, mesh bytes and measured STEP equivalence across runtime refresh",
-    "tessellation_receipt": "product/production/history/harness-tessellation-cad-receipt.json"
-  },
-  "compatibility_followup": {
-    "source_rebuilt": true,
-    "geometry_unchanged": true,
-    "evidence": "product/cad-compatibility/verification.json",
-    "all_28_mesh_files_unchanged": true
-  },
-  "package_inclusion": {
-    "manifest": "product/production/package-manifest.json",
-    "entries": [
-      "product/print-preparation/README.md",
-      "product/print-preparation/part-settings.csv",
-      "product/print-preparation/source-checks.json"
-    ]
-  }
+  "physical_printing": false
 }

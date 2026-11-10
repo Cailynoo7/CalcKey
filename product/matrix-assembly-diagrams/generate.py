@@ -88,10 +88,17 @@ for i in range(4):
     assert any(c['to'] == {'part': f'SW{i+1:02}', 'pin': '1'} and
                c['from'] == {'part': 'MCU', 'pin': f'GP{i+7}'} for c in wiring['connections'])
 
+# Never overwrite a real observation table when refreshing diagrams.
+record_path=OUT/'unpowered-check-record.csv'
+if record_path.exists():
+    with record_path.open(encoding='utf-8-sig',newline='') as f:
+        pending=list(csv.DictReader(f))
+    assert all(not r['实测'] and r['结果']=='待测' for r in pending), 'Existing observations must be retained'
+
 pdfmetrics.registerFont(TTFont('Guide', os.environ.get('CALCKEY_DIAGRAM_FONT',
                            '/System/Library/Fonts/Supplemental/Arial Unicode.ttf')))
 pdf = canvas.Canvas(str(OUT / 'calckey-matrix-pcb-assembly.pdf'), pagesize=landscape(A3))
-pdf.setTitle('CalcKey MATRIX A - PCB / Pico 2 / GDM0103 soldering illustrations')
+pdf.setTitle('CalcKey MATRIX A - PCB / RP2350-Plus / GDM0103 soldering illustrations')
 pdf.setAuthor('CalcKey')
 
 class Sheet:
@@ -144,8 +151,8 @@ class Sheet:
 
     def finish(self, name):
         self.line(56, 1137, 1624, 1137, BORDER)
-        self.text(56, 1167, 'CalcKey · MATRIX A / Pico 2 / GDM0103 · 断开USB焊装 · 非1:1加工模板', 17, MUTED)
-        self.text(1624, 1167, f'PCB 17123bc08553 · 2026-11-06 · {self.number}/4', 17, MUTED, 'end')
+        self.text(56, 1167, 'CalcKey · MATRIX A / RP2350-Plus / GDM0103 · 断开USB焊装 · 非1:1加工模板', 17, MUTED)
+        self.text(1624, 1167, f'PCB 17123bc08553 · 2026-11-10 · {self.number}/4', 17, MUTED, 'end')
         self.svg.append('</svg>')
         (OUT / name).write_text('\n'.join(self.svg)+'\n')
         pdf.restoreState(); pdf.showPage()
@@ -193,8 +200,8 @@ def board_picture(s, x, y, back=False, scale=7):
 def pico(s, x, y, pitch=22):
     s.rect(x, y-28, 240, 20*pitch+30, '#d5eadc', '#648f76', 15)
     s.rect(x+84, y-50, 72, 48, '#d3dbe1', INK, 5)
-    s.text(x+120, y-61, 'USB ↑', 23, INK, 'middle')
-    s.text(x+120, y+18*pitch, 'Pico 2', 22, '#63846e', 'middle')
+    s.text(x+120, y-61, 'Type-C ↑', 23, INK, 'middle')
+    s.text(x+120, y+18*pitch, 'RP2350-Plus', 22, '#63846e', 'middle')
     active = {v:k for k,v in PIN.items()}
     for i in range(20):
         yy = y+i*pitch
@@ -231,7 +238,7 @@ def page1():
     s.finish('01-component-orientation.svg')
 
 def page2():
-    s = Sheet(2, 'J1～J10｜矩阵板到Pico 2', 'J是矩阵板焊点编号；GP是GPIO；“物理”是Pico针脚号。三者不能互换。')
+    s = Sheet(2, 'J1～J10｜矩阵板到RP2350-Plus', 'J是矩阵板焊点编号；GP是GPIO；“物理”是主控针脚号。三者不能互换。')
     s.rect(56, 166, 1568, 150, LIGHT, None, 12)
     s.text(80, 200, '实际底面近端焊盘：屏幕端保持朝上，左 → 右', 23)
     for i in range(10):
@@ -261,11 +268,11 @@ def page2():
     s.text(75, 967, '导线交叉无圆点＝不连接；按两端标签逐根核对。线色只是识别建议。', 20, MUTED)
     s.rect(56, 995, 1568, 111, LIGHT, None, 12)
     s.text(78, 1030, '矩阵板没有GND接点：J1～J5是扫描行，不能接地。J10只接3V3 OUT，不能接VBUS、VSYS或5V。', 22, RED)
-    s.text(78, 1068, 'Pico为了读脚号画成USB朝上；实际装机USB朝机身右侧。翻到Pico背面焊接时左右会反转。', 22)
-    s.finish('02-j1-j10-to-pico.svg')
+    s.text(78, 1068, '主控元件面朝你、Type-C朝上；官方背面图需左右镜像。实际装机接口朝右。', 22)
+    s.finish('02-j1-j10-to-controller.svg')
 
 def page3():
-    s = Sheet(3, 'GDM0103｜端子方向与独立五线', '按厂家外形图显示方向定位P1；这是HT1621B三线写接口。LCD导线直接到Pico，不经过矩阵板。')
+    s = Sheet(3, 'GDM0103｜端子方向与独立五线', '按厂家外形图显示方向定位P1；这是HT1621B三线写接口。LCD导线直接到主控，不经过矩阵板。')
     for back, x in [(False,170),(True,950)]:
         s.text(x+265, 191, 'B  背面：保持上边朝上翻转' if back else 'A  正面：显示字符朝向你', 24, INK, 'middle')
         s.text(x+265, 228, '↑ 显示上边', 20, MUTED, 'middle')
@@ -298,12 +305,12 @@ def page3():
         s.text(828, yy-10, '独立软线 · 约150mm', 18, color, 'middle')
         s.dot(550, yy, color); s.dot(1105, yy, color)
         s.rect(1105, yy-25, 490, 47, LIGHT, None, 7)
-        s.text(1128, yy+7, f'Pico 物理{PIN[gpio]} · '+('3V3 OUT' if gpio=='3V3' else gpio), 24, color)
+        s.text(1128, yy+7, f'主控 物理{PIN[gpio]} · '+('3V3 OUT' if gpio=='3V3' else gpio), 24, color)
     s.text(80, 1016, '同一3V3节点（圆点＝相连）', 22, RED)
     s.line(500, 979, 805, 979, RED, 4); s.dot(805, 979, RED, 6)
     s.path([(805,979),(805,956),(1060,956)], RED, 4)
     s.path([(805,979),(805,1011),(1060,1011)], RED, 4)
-    s.text(490, 985, 'Pico 物理36', 22, RED, 'end')
+    s.text(490, 985, '主控 物理36', 22, RED, 'end')
     s.text(1080, 964, '矩阵 J10', 22, RED)
     s.text(1080, 1019, 'LCD P5 / VDD', 22, RED)
     s.rect(56, 1042, 1568, 64, LIGHT, None, 9)
@@ -311,7 +318,7 @@ def page3():
     s.finish('03-lcd-orientation-and-wiring.svg')
 
 def page4():
-    s = Sheet(4, '焊装细节｜放大方向与断电核对', '全程断开USB；先测被动矩阵，合格后再焊Pico和LCD。这里没有填写任何实物测量结果。')
+    s = Sheet(4, '焊装细节｜放大方向与断电核对', '全程断开USB；先测被动矩阵，合格后再焊主控和LCD。这里没有填写任何实物测量结果。')
     s.rect(56, 168, 750, 332, LIGHT, None, 12)
     s.text(80, 211, 'A  底面二极管：黑环 → 左侧方形K焊盘', 26)
     s.line(135, 305, 710, 305, INK, 6)
@@ -344,7 +351,7 @@ def page4():
         s.dot(x+29, 615, BLUE, 17); s.text(x+29, 622, n, 23, WHITE, 'middle')
         s.text(x+58, 622, title, 24)
         s.text(x+17, 670, body, 20)
-    s.text(56, 762, '断电检查：先不连Pico和LCD，测矩阵；接线后再逐根对表查通断。', 25)
+    s.text(56, 762, '断电检查：先不连主控和LCD，测矩阵；接线后再逐根对表查通断。', 25)
     checks = [
         ('4列上拉', 'J6/J7/J8/J9各对J10约10kΩ；列间约20kΩ可来自两个上拉。'),
         ('20键二极管', '逐键按下：红表笔接列J6～J9，黑表笔接行J1～J5，测正向压降。'),
@@ -364,36 +371,36 @@ def page4():
 page1(); page2(); page3(); page4(); pdf.save()
 
 with (OUT/'soldering-map.csv').open('w', encoding='utf-8-sig', newline='') as f:
-    out = csv.writer(f)
-    out.writerow(['部件', '焊点', '信号', 'Pico信号', 'Pico物理脚号', '说明'])
+    out = csv.writer(f, lineterminator="\n")
+    out.writerow(['部件', '焊点', '信号', '主控信号', '主控物理脚号', '说明'])
     for ref, net, gpio, color in J:
         out.writerow(['矩阵PCB', ref, net, '3V3 OUT' if gpio=='3V3' else gpio, PIN[gpio], '26AWG约150mm；底面平面直焊'])
     for pad_name, signal, gpio, color in LCD:
-        out.writerow(['GDM0103', pad_name, signal, '3V3 OUT' if gpio=='3V3' else gpio, PIN[gpio], '约150mm；直接到Pico'])
+        out.writerow(['GDM0103', pad_name, signal, '3V3 OUT' if gpio=='3V3' else gpio, PIN[gpio], '约150mm；直接到主控'])
     for pad_name, signal in [('P6','/INT'),('P7','BL+'),('P8','BL-'),('P9','Ctrl')]:
         out.writerow(['GDM0103', pad_name, signal, 'NC', '', '分别绝缘，不接外部线'])
 with (OUT/'unpowered-check-record.csv').open('w', encoding='utf-8-sig', newline='') as f:
-    out = csv.writer(f)
+    out = csv.writer(f, lineterminator="\n")
     out.writerow(['项目', '红表笔', '黑表笔', '条件', '预期', '实测', '结果'])
-    for col in range(4): out.writerow([f'COL{col}上拉',f'J{col+6}','J10','Pico/LCD未连接','约10kΩ','','待测'])
+    for col in range(4): out.writerow([f'COL{col}上拉',f'J{col+6}','J10','主控/LCD未连接','约10kΩ','','待测'])
     for k in KEYS:
         for reverse in [False, True]:
             a,b=f'J{k["col"]+6}',f'J{k["row"]+1}'
             out.writerow([f'SW{k["n"]}/D{k["n"]}', b if reverse else a, a if reverse else b,
-                          '对应按键按下；Pico/LCD未连接', '截止' if reverse else '二极管正向压降','','待测'])
+                          '对应按键按下；主控/LCD未连接', '截止' if reverse else '二极管正向压降','','待测'])
     for ref, net, gpio, color in J:
-        out.writerow([f'{ref}导线', ref, f'Pico物理{PIN[gpio]}', '断电', '端到端通断','','待测'])
+        out.writerow([f'{ref}导线', ref, f'主控物理{PIN[gpio]}', '断电', '端到端通断','','待测'])
     for pad_name, signal, gpio, color in LCD:
-        out.writerow([f'LCD {pad_name}导线', f'LCD {pad_name}', f'Pico物理{PIN[gpio]}', '断电','端到端通断','','待测'])
+        out.writerow([f'LCD {pad_name}导线', f'LCD {pad_name}', f'主控物理{PIN[gpio]}', '断电','端到端通断','','待测'])
 
 inputs = [circuit_path, wiring_path, ROOT/'design/firmware/source/board_config.hpp',
-          ROOT/'product/references/rp-008299-ds.pdf', ROOT/'product/references/gdm0103-specification.pdf']
+          ROOT/'product/references/type-c-controllers/waveshare-rp2350-plus-schematic.pdf', ROOT/'product/references/type-c-controllers/waveshare-plus-pinout.jpg', ROOT/'product/references/gdm0103-specification.pdf']
 record = dict(pcb_release=release_id, pcb_dimensions_mm=[73,96,1.6],
               source_hashes={str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in inputs},
               checked=dict(key_branches=20, pullups=4, matrix_leads=10, lcd_leads=5, lcd_nc=4,
                            rear_view='mirror X, retain far/LCD edge at top', diode_cathode_in_rear_view='left',
                            footprint_coordinates='from immutable released circuit.json'),
-              sources=[dict(url='https://pip.raspberrypi.com/documents/RP-008299-DS',pdf_page=5),
+              sources=[dict(url='https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg',scope='RP2350-Plus compatible 40-pin physical numbering'),
                        dict(url='https://www.radiomag.com.de/datasheets/gdm0103_specification.pdf',pdf_pages=[7,8])],
               physical_tests='not performed; all check record fields left pending', firmware_action='none')
 (OUT/'source-checks.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n')

@@ -1,10 +1,10 @@
-# CalcKey Pico 2 固件 v0.2.0：GDM0103 八位LCD
+# CalcKey Waveshare RP2350-Plus-16MB 固件 v0.3.0：GDM0103 八位LCD
 
-已按现有Pico 2、20键二极管矩阵和GDM0103/HT1621B三线接线实现双模式。使用Pico SDK 2.2.0、TinyUSB 0.18.0及Arm GNU Toolchain 14.2.Rel1，版本固定于依赖锁定记录。本版本替换SSD1315 OLED显示实现；旧v0.1.0 ZIP保留作历史，不用于新LCD。
+已按现有Waveshare RP2350-Plus-16MB、20键二极管矩阵和GDM0103/HT1621B三线接线实现双模式。使用Pico SDK 2.2.0、TinyUSB 0.18.0及Arm GNU Toolchain 14.2.Rel1，版本固定于依赖锁定记录。本版本替换SSD1315 OLED显示实现；旧v0.1.0 ZIP保留作历史，不用于新LCD。
 
-整机采用MATRIX A矩阵PCB：20键、4个10kΩ/0805上拉和J1～J10的10根引线；LCD五线独立接Pico，共15根。PCB替代逐键飞线，GPIO及二极管方向保持不变，固件版本仍为v0.2.0。制作使用矩阵PCB四页焊装图和逐项断电手册；旧手焊行列图及九页指南不用于本PCB焊盘定位。
+整机采用MATRIX A矩阵PCB：20键、4个10kΩ/0805上拉和J1～J10的10根引线；LCD五线独立接Pico，共15根。PCB替代逐键飞线，GPIO及二极管方向保持不变，固件版本仍为v0.3.0。制作使用矩阵PCB四页焊装图和逐项断电手册；旧手焊行列图及九页指南不用于本PCB焊盘定位。
 
-用户要求先不烧录。本次只做源码、桌面测试、Pico 2交叉编译和交付文件检查，没有连接设备、烧录、通电或实机验收。编译和模拟测试通过不代表显示玻璃、矩阵、USB及供电已实测。
+用户要求先不烧录。本次只做源码、桌面测试、Waveshare RP2350-Plus-16MB交叉编译和交付文件检查，没有连接设备、烧录、通电或实机验收。编译和模拟测试通过不代表显示玻璃、矩阵、USB及供电已实测。
 
 ## GPIO和模块
 
@@ -68,9 +68,9 @@ python3 design/firmware/build.py
 
 工具已在项目缓存时无需重新bootstrap。bootstrap下载固定版本并检查锁定SHA256，只写项目工具缓存，不安装系统软件；自动下载针对macOS arm64。其他环境设置PICO_SDK_PATH、PICO_TINYUSB_PATH、PICO_TOOLCHAIN_PATH、CALCKEY_PICOTOOL_DIR，必要时CALCKEY_CMAKE、CALCKEY_NINJA、CXX_HOST。桌面测试需要Clang的AddressSanitizer/UndefinedBehaviorSanitizer。
 
-构建依次检查接线、计算器/模式/去抖、独立GPIO波形解码和物理段码、2500组内部算术Python decimal对照、3023组8位符号/舍入/溢出对照，再交叉编译Pico 2。picotool只读取生成的UF2文件，确认RP2350 ARM Secure、pico2和版本0.2.0；另外检查所有UF2块、地址、family和RP2350-E10忽略块。不执行load、reboot或任何写设备命令。
+构建依次检查接线、计算器/模式/去抖、独立GPIO波形解码和物理段码、2500组内部算术Python decimal对照、3023组8位符号/舍入/溢出对照，再交叉编译Waveshare RP2350-Plus-16MB。picotool只读取生成的UF2文件，确认RP2350 ARM Secure、pico2和版本0.2.0；另外检查所有UF2块、地址、family和RP2350-E10忽略块。不执行load、reboot或任何写设备命令。
 
-当前交付为release/v0.2.0中的UF2、ELF、BIN、许可与verification.json，以及产品目录的calckey-firmware-v0.2.0.zip（含源码、测试、锁定版本、接线、需求和LCD说明）。验证记录包含命令输出、测试数量、日期、源码/接线/数据表SHA256和交付件哈希，flashed和hardware_tested均false。旧根release中的v0.1.0二进制及旧ZIP仅供历史查阅，不混入新包。
+当前交付为release/v0.3.0中的UF2、ELF、BIN、许可与verification.json，以及产品目录的calckey-firmware-v0.3.0.zip（含源码、测试、锁定版本、接线、需求和LCD说明）。验证记录包含命令输出、测试数量、日期、源码/接线/数据表SHA256和交付件哈希，flashed和hardware_tested均false。旧根release中的v0.1.0二进制及旧ZIP仅供历史查阅，不混入新包。
 
 ## 后续实机验收（本次不执行）
 
@@ -80,7 +80,12 @@ python3 design/firmware/build.py
 
 - GDM0103厂商署名手册镜像：https://www.radiomag.com.de/datasheets/gdm0103_specification.pdf ，PDF第8页引脚/RAM、第9–11页协议、第12页物理数字/小数点/冒号分布。
 - Holtek HT1621/1621G Rev3.40（含HT1621B）：https://www.holtek.com/webapi/116711/HT1621_21Gv340.pdf ，PDF第8页3V时序、第16–17页命令；本地保留原PDF及哈希。
-- Pico 2：https://pip.raspberrypi.com/documents/RP-008299-DS ，第5页GPIO。
+- Waveshare RP2350-Plus-16MB：https://pip.raspberrypi.com/documents/RP-008299-DS ，第5页GPIO。
 - 固定SDK：https://github.com/raspberrypi/pico-sdk/tree/2.2.0 ，TinyUSB：https://github.com/hathach/tinyusb/tree/0.18.0 。本次沿用现有构建/API，没有升级依赖。
 
 VID 0xCAFE/PID 0x2350仅为样机测试标识，未声明商业分配。SDK BSD-3-Clause、TinyUSB MIT许可随包；项目自身尚未设置对外发布许可证。本次只构建和打包，不执行设备写入。
+
+
+## Type-C主控版本
+
+目标板为waveshare_rp2350_plus_16mb，16MB Flash、无排针，固件v0.3.0。GPIO0～11及电源接法保持，板载电池口不接。旧v0.2.0针对Pico 2保存为历史，不改写其验证记录。本版重新编译和桌面测试，未连接、烧录或通电。

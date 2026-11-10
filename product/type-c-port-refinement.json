@@ -1,0 +1,65 @@
+{
+  "revision": "17314e9fed192360dda5e6b94297dc7408d5b44b49f4310cb473d41486c82d34",
+  "previous_revision": "11757369fc865329b57143527f274604ab828e0487b5811184f93b5e1e7c0f2d",
+  "source": "Waveshare original STEP Type_C1 front face 427, native coordinates",
+  "vendor_step_sha256": "650977cc5a1bbeaab4eabdefd3f547642a1c34a5a8e5cbf49ac6f8b575c979f4",
+  "front_metal_profile_mm": {
+    "width": 8.94,
+    "height": 3.16,
+    "radius": 1.28,
+    "native_z_center": 1.669521495
+  },
+  "opening_mm": {
+    "width": 9.44,
+    "height": 3.66,
+    "radius": 1.53,
+    "clearance_per_side": 0.25,
+    "center_local": [
+      44.5,
+      -9.9900469477,
+      7.669521495
+    ],
+    "upward_correction": 0.49999974085,
+    "outer_rim_depth": 0.7,
+    "inner_relief": [
+      10.18,
+      4.76
+    ]
+  },
+  "checks": {
+    "base_valid": true,
+    "base_solids": 1,
+    "base_controller_exact_overlap_mm3": 0,
+    "base_top_exact_overlap_mm3": 0,
+    "new_undeclared_overlaps": false,
+    "bottom_cover_travel_mm": 30,
+    "path_first_overlap": null,
+    "path_step_mm": 0.5,
+    "mesh_tolerance_mm": 0.02,
+    "poses": 62
+  },
+  "scope": "Only port refinement; connector proposal does not alter PCB, wiring, BOM or CAD geometry. CAD comparison also reports top geometryChanged with unchanged topology/bbox due dependent rebuild; static overlap and path checks repeated.",
+  "handoff": {
+    "export_id": "export-b7f82e97cb895f74ebf77fba5318d5a4",
+    "revision": "18faaed5c6a9c41229a5fc888c20458ccf315f3c0712424836f5007b8f745c59",
+    "state_hash": "db0ac745e0a40297cf7769e1f801ea527b9291fec3a96cba9d56a3c991aa5c77",
+    "status_from_receipt": "handoff",
+    "elapsed_seconds": 22.858,
+    "receipt": "manufacturing/enclosure/releases/export-b7f82e97cb895f74ebf77fba5318d5a4/receipt.json",
+    "receipt_sha256": "7e5c84b5f5a91674e5bba09cabe07c5c2ae52200eac246c0f468c606f9e5ece3",
+    "model": "manufacturing/enclosure/releases/export-b7f82e97cb895f74ebf77fba5318d5a4/model.step",
+    "model_sha256": "6d490cd297d2bd98776b914db083af3270665d0d4482ccf33df5b4c3f972d8d6",
+    "undeclared_overlap_pairs": 0,
+    "over_budget_overlap_pairs": 0
+  },
+  "physical_tests": "Not printed, powered or flashed; real plug seating and fit untested.",
+  "historical_handoff_before_reference_repair": {
+    "status": "failed",
+    "reason": "cad_workbench_timeout:300000",
+    "intent": "handoff",
+    "revision": "17314e9fed192360dda5e6b94297dc7408d5b44b49f4310cb473d41486c82d34",
+    "verified": false
+  },
+  "subsequent_reference_repair_record": "product/type-c-reference-repair.json",
+  "current_handoff_revision": "18faaed5c6a9c41229a5fc888c20458ccf315f3c0712424836f5007b8f745c59"
+}

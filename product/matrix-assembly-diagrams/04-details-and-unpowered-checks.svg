@@ -3,7 +3,7 @@
 <desc>Source-derived assembly illustration; not a fabrication or 1:1 drilling template. PCB release 17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727</desc>
 <rect x="0" y="0" width="1680" height="1188" rx="0" fill="#ffffff" stroke="none" stroke-width="2"/>
 <text x="56" y="66" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="37" fill="#203346" text-anchor="start">焊装细节｜放大方向与断电核对</text>
-<text x="56" y="110" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#647787" text-anchor="start">全程断开USB；先测被动矩阵，合格后再焊Pico和LCD。这里没有填写任何实物测量结果。</text>
+<text x="56" y="110" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#647787" text-anchor="start">全程断开USB；先测被动矩阵，合格后再焊主控和LCD。这里没有填写任何实物测量结果。</text>
 <text x="1624" y="65" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#647787" text-anchor="end">4 / 4</text>
 <line x1="56" y1="135" x2="1624" y2="135" stroke="#ccd9e1" stroke-width="2" stroke-linecap="round"/>
 <rect x="56" y="168" width="750" height="332" rx="12" fill="#edf4f7" stroke="none" stroke-width="2"/>
@@ -64,7 +64,7 @@
 <text x="1270" y="622" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="23" fill="#ffffff" text-anchor="middle">4</text>
 <text x="1299" y="622" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="start">15根线</text>
 <text x="1258" y="670" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="20" fill="#203346" text-anchor="start">10根矩阵线＋5根LCD线。</text>
-<text x="56" y="762" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="25" fill="#203346" text-anchor="start">断电检查：先不连Pico和LCD，测矩阵；接线后再逐根对表查通断。</text>
+<text x="56" y="762" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="25" fill="#203346" text-anchor="start">断电检查：先不连主控和LCD，测矩阵；接线后再逐根对表查通断。</text>
 <rect x="56" y="781" width="1568" height="45" rx="0" fill="#edf4f7" stroke="none" stroke-width="2"/>
 <rect x="73" y="793" width="18" height="18" rx="0" fill="#ffffff" stroke="#ccd9e1" stroke-width="2"/>
 <text x="106" y="809" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#203346" text-anchor="start">4列上拉</text>
@@ -92,6 +92,6 @@
 <text x="1596" y="1005" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="18" fill="#647787" text-anchor="end">待测</text>
 <text x="56" y="1100" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#647787" text-anchor="start">每根软线约150mm留维护余量，沿底盖平铺；避开USB、合盖柱和翻脚机构。只做断电检查，不烧录。</text>
 <line x1="56" y1="1137" x2="1624" y2="1137" stroke="#ccd9e1" stroke-width="2" stroke-linecap="round"/>
-<text x="56" y="1167" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="17" fill="#647787" text-anchor="start">CalcKey · MATRIX A / Pico 2 / GDM0103 · 断开USB焊装 · 非1:1加工模板</text>
-<text x="1624" y="1167" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="17" fill="#647787" text-anchor="end">PCB 17123bc08553 · 2026-11-06 · 4/4</text>
+<text x="56" y="1167" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="17" fill="#647787" text-anchor="start">CalcKey · MATRIX A / RP2350-Plus / GDM0103 · 断开USB焊装 · 非1:1加工模板</text>
+<text x="1624" y="1167" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="17" fill="#647787" text-anchor="end">PCB 17123bc08553 · 2026-11-10 · 4/4</text>
 </svg>

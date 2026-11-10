@@ -1,18 +1,18 @@
 ﻿category,bom_item_ids,name,manufacturer,mpn,lcsc_code,per_device_quantity,installed_unit,recommended_purchase_quantity,purchase_unit,procurement_quantity_source,product_url,image_url,notes
-保留模块与外接线,controller,Raspberry Pi Pico 2,Raspberry Pi,,,1,块,1,块,default,,,已有符合规格的器件可复用，避免重复购买。
+保留模块与外接线,controller,Waveshare RP2350-Plus-16MB，无排针版,Waveshare,RP2350-Plus-16MB,,1,块,1,块,default,https://www.waveshare.net/shop/RP2350-Plus-16MB.htm,,RP2350A、16MB外部Flash、原生USB Type-C、无排针；SKU 29761；电池座悬空不使用。
 保留模块与外接线,display,Good Display / 大连佳显 GDM0103 8位段码LCD模组，HT1621B，3.3V，6点钟视角,Dalian Good Display,GDM0103,,1,块,1,块,default,https://www.logifind.com/products/gdm0103-ht1621-driver-8-bit-wide-temperature-lcd-module-segment-code-lcd-module-lcm-lcd-display-module,,已有符合规格的器件可复用，避免重复购买。 GDM0103/HT1621B，3.3V、6点钟视角；P6-P9分别绝缘。
 矩阵板与焊装,switches,GATERON KS-9 Red 三脚红轴 KS-9H10B045NN-X14,GATERON,KS-9H10B045NN-X14,,20,枚,22,枚,default,https://www.gateron.com/products/gateron-ks-9-switch-set,,三脚红轴，用户已确认与-FB模型对应；不改五脚/光轴/热插拔座。
 打印件（可复用）,keycaps,CalcKey 自制1U等高键帽，PETG，含MX十字盲孔和刻字,CalcKey,enclosure:key_01..key_20,,20,只,20,只,default,,,20只新版正式键帽，含5键浅圆定位凹点和Enter/=双行标识；使用同版STEP/STL，PETG、0.2mm喷嘴/0.1mm层高，不另做试片。
 矩阵板与焊装,matrix_diodes,Vishay 1N4148-TAP,VISHAY(威世),1N4148-TAP,C917479,20,只,30,只,default,https://item.szlcsc.com/992944.html,https://alimg.szlcsc.com/upload/public/product/source/20260721/85700D8CF2B10FA977E4864FD5ED244A.jpg,DO-35轴向1N4148-TAP，黑环K；不是1N4148W/WS。
 矩阵板与焊装,column_pullups,UNI-ROYAL 0805W8F1002T5E 10kΩ ±1% 1/8W 0805电阻,UNI-ROYAL(厚声),0805W8F1002T5E,C17414,4,只,20,只,default,https://item.szlcsc.com/18102.html,https://alimg.szlcsc.com/upload/public/product/source/20221228/9FAC57B04CBA608011C05FA2B3C494C9.jpg,0805贴片、10k±1%、125mW；不是旧轴向电阻或0603。
-保留模块与外接线,usb_cable,USB-A 至 Micro-USB-B USB 2.0 数据线，1m,,,,1,件,1,件,default,,,已有符合规格的器件可复用，避免重复购买。 USB-A至Micro-B数据线，设备侧线头≤12×8mm。
+保留模块与外接线,usb_cable,USB-A至USB-C USB 2.0数据线，1m,,,,1,件,1,件,default,,,USB-A至USB-C、1m、支持USB数据与5V供电；默认设备侧胶壳不超过12.35×6.5mm，USB-C金属头应能在插座前缘内缩0.3881mm时完全就位；实物插头仍待测。
 整机辅件,"signal_wire,lcd_signal_wire",26AWG柔性绝缘多股线，矩阵与LCD合并采购,,26AWG-150mm-direct-solder-lead,,15,根,3,米,default,,,装机15根，每根默认150mm，共2.25m；采购3m含0.75m余量，10根矩阵+5根LCD。
 整机辅件,heatshrink,内径2mm、3mm热缩管混合包，合计1m,,,,1,混合包,1,混合包,default,,,内径2mm/3mm混合，总长1m。
-打印件,enclosure_base,CalcKey 独立底部盖板，PLA，FDM打印,CalcKey,enclosure:base,,1,件,1,件,default,,,使用含五处固定桥的STEP及原主壳/底盖STL，mm、100%；本次仅修复CAD源码接口，全部28件网格经几何与哈希核对复用，按打印准备说明设置局部支撑，不另做试片。
-打印件,enclosure_top,CalcKey 顶侧一体主壳，PLA，FDM打印,CalcKey,enclosure:top,,1,件,1,件,default,,,使用含五处固定桥的STEP及原主壳/底盖STL，mm、100%；本次仅修复CAD源码接口，全部28件网格经几何与哈希核对复用，按打印准备说明设置局部支撑，不另做试片。
+打印件,enclosure_base,CalcKey 独立底部盖板，PLA，FDM打印,CalcKey,enclosure:base,,1,件,1,件,default,,,采用Type-C版30件模型清单，mm/100%；主壳、底盖和两只压桥来自当前STEP，其余26件经形状、安装位置和字节核对复用。
+打印件,enclosure_top,CalcKey 顶侧一体主壳，PLA，FDM打印,CalcKey,enclosure:top,,1,件,1,件,default,,,采用Type-C版30件模型清单，mm/100%；主壳、底盖和两只压桥来自当前STEP，其余26件经形状、安装位置和字节核对复用。
 整机辅件,screen_lens,透明亚克力保护片，67.6×19.6×1mm，四角R1,,acrylic-67.6x19.6x1-R1,,1,件,1,件,default,,,
 整机辅件,case_screws,ISO 7380-1 M3-0.5x8mm 内六角圆头机螺钉,,ISO7380-1-M3x8,,4,颗,6,颗,default,,,
-整机辅件,board_screws,ISO 4762 M2-0.4x4mm 内六角圆柱头螺钉,,ISO4762-M2x4,,2,颗,4,颗,default,,,
+整机辅件,board_screws,ISO 4762 M2-0.4×6mm 内六角圆柱头螺钉,,ISO4762-M2x6,,4,颗,6,颗,default,,,两只主控绝缘压桥各2颗，沉孔安装；kit实际选定M2×6，不穿过PCB。
 整机辅件,rubber_feet,前端自粘硅胶防滑垫，直径12mm，厚2mm,,silicone-pad-D12-T2,,2,个,4,个,default,,,
 整机辅件,lens_adhesive,0.15mm压敏胶框，外67.6×19.6mm、内64×16mm,,PSA-67.6x19.6-0.15,,1,件,1,件,default,,,
 保留模块与外接线,usb_power_adapter,USB-A输出5V/1A稳压USB充电器,,USB-A-5V-1A,,1,件,1,件,default,,,已有符合规格的器件可复用，避免重复购买。
@@ -26,3 +26,6 @@
 整机辅件,lcd_mount_tape,绝缘丙烯酸双面压敏胶片，0.15mm厚，2×4mm小片,,LCD-PCB-PSA-2x4-T0.15,,4,片,8,片,default,,,
 整机辅件,wire_retaining_tape,聚酰亚胺胶带，宽10mm、总厚不大于0.1mm，1卷,,,,1,卷,1,卷,default,,,沿用1卷10mm宽、总厚≤0.1mm胶带；五座一体桥默认裁5条10×65mm，搭接≥15mm，只固定线皮。
 矩阵板与焊装,matrix_pcb_board,CalcKey矩阵PCB，73×96mm、1.6mm、双层FR4、1oz,Project CalcKey,CALCKEY-MATRIX-A,,1,片,5,片,default,,,5片裸板只组装1片；不采购贴片服务或钢网。
+Type-C主控固定,controller_clamp_a,CalcKey主控绝缘压桥A，PLA，FDM打印,CalcKey,enclosure:controller_clamp_a,,1,件,1,件,default,,,采用Type-C版30件模型清单，mm/100%；主壳、底盖和两只压桥来自当前STEP，其余26件经形状、安装位置和字节核对复用。
+Type-C主控固定,controller_clamp_b,CalcKey主控绝缘压桥B，PLA，FDM打印,CalcKey,enclosure:controller_clamp_b,,1,件,1,件,default,,,采用Type-C版30件模型清单，mm/100%；主壳、底盖和两只压桥来自当前STEP，其余26件经形状、安装位置和字节核对复用。
+Type-C主控固定,controller_insulation_pads,绝缘丙烯酸胶片，0.15mm厚，6×1.4mm,,,,8,片,8,片,default,,,4片位于主控边缘座面，4片位于压桥夹持面；避开裸铜焊点，不用厚泡棉替代。

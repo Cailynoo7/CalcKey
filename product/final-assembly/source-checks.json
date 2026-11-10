@@ -1,10 +1,10 @@
 {
   "kind": "assembly_document_consistency",
-  "prepared_date": "2026-11-06",
-  "cad_revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
-  "cad_export_id": "export-e9d67ce8536f1f9b0574ccf294968294",
+  "prepared_date": "2026-11-10",
+  "cad_revision": "18faaed5c6a9c41229a5fc888c20458ccf315f3c0712424836f5007b8f745c59",
+  "cad_export_id": "export-fa411383a0f6c23d36fed4b6df68eda5",
   "pcb_release_id": "17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727",
-  "firmware_version": "0.2.0",
+  "firmware_version": "0.3.0",
   "row_count": 154,
   "rows_by_phase": {
     "00 版本与准备": 7,
@@ -25,31 +25,31 @@
   "physical_checks_executed": 0,
   "scope": "Document preparation only; no printing, external power, flashing or physical assembly.",
   "input_hashes": {
-    "product/final-assembly/generate.py": "f6a445e741ca320cf8f20fa15b01fd022f74b4e419967a6674809d8e12069fb2",
-    "README.md": "681eb8c1492a6afeccd2624b230456290f07ad428d0e5855fad7519e59e10a80",
-    "product/production/README.md": "a6040a1ae1fa3a8ae0a98856cdc3b46d873d89debcba031b038054b5e343dafa",
-    "product/matrix-assembly-diagrams/README.md": "3640c9bb1309982dd471d01b7c65df0016d0bde5786075f71d2bef6cb320a559",
-    "product/matrix-assembly-diagrams/unpowered-check-record.csv": "8627550579c2c388c7a905258edff7ee222059204ae7037fdf166a8736d5f500",
-    "product/matrix-assembly-diagrams/soldering-map.csv": "80f80ed2086e7e535c792fbeeb687c360367de537facaeada32ff973f9cd73f9",
-    "product/matrix-assembly-diagrams/guided-soldering.md": "d7915bcbf4f2039571c64cda0f4ef95d742207b21b14a540d7002ee783e81224",
-    "product/harness-routing.md": "da11f2f2334fa53a96f904e244fe2a8fb7699b30fddc2345f10e6211a9a8f99c",
-    "design/enclosure/README.md": "420bda34922944f373d50c7970ce442b9002fb1b2253c0db8e33353e1b62f58c",
-    "product/constraints.json": "b08a30f3a47ca90c5ff62c3c18f85415f25ea8f66b5ecd9ef0b2ff206fe172ca",
-    "product/bom.json": "082d557798668b949353446e8c36873c26d1a323d3ed54d627e5c00f8375a91d",
-    "design/enclosure/source/wiring.json": "ba92aa5d7554b7d56ab5506cac6462c8b075e56c1b9bc9547d3a93b939c08cb8",
-    "product/harness-routing-verification.json": "3f957a9d0249e5873f8ffbf5051327e4cf3b7926e1f9e3c2e9751548641ec8d8",
-    "product/production/harness-delivery-addendum.json": "6dd231e6f8e933aab267be8a61522e49a2e491b416a02ffbc572bb2f350acd4b",
+    "product/final-assembly/generate.py": "d850550424282483c97e035ed9ed2c64ad2e0de1fe88544b5a2808b39072aab8",
+    "README.md": "35ce8d1e38124ccaaa66eae07af65566c43d778e7d3c22e1acc41c0da801c513",
+    "product/production/README.md": "c01fc54fccd8e1cc5615abe1b1cd80106d2660ff26e22f6895a4e6ae971d7e79",
+    "product/matrix-assembly-diagrams/README.md": "c1bba5b9d58c06de834ecfaa13ea90803bd10dd4b084a174fe31183fd627706c",
+    "product/matrix-assembly-diagrams/unpowered-check-record.csv": "55bf3d82feb2cec20a3493ee815abda9afcfa170172200b9bd0dfdfb420e7102",
+    "product/matrix-assembly-diagrams/soldering-map.csv": "5dae01f4ab1fac1e73c6d0f3b1e91b75c0a49008475e72170f1059b6ea0cb85b",
+    "product/matrix-assembly-diagrams/guided-soldering.md": "95fbe30857f08baadcaa99abd23a71b29d1437e62603bc3504c6034e053c5493",
+    "product/harness-routing.md": "027851e202bef9e83ed4efe59cb55df3839021fc62f23ade5da3c7ebe5a65fcb",
+    "design/enclosure/README.md": "c8108b5980ebeea4afb8ecf0af1112c60101512856de31cac8c6c0f052234ad9",
+    "product/constraints.json": "dbf451a351c6e5158217305b22f2c40c05fc9fde9b0b330fca866972674b9d66",
+    "product/bom.json": "005602c8a160c05fa760821735287cc5e70efe9ceda4eabf9bcb14e2f4497934",
+    "design/enclosure/source/wiring.json": "971f141830cee5b17721e2f3e3cce99e9df8be33373712ba7d627fbb8630b603",
+    "product/harness-routing-verification.json": "a7aacbce9ac9110fc1d68aeeb9be0b4cf673f80f61069f8a4c807b4aad42749a",
+    "product/production/harness-delivery-addendum.json": "33f40c2637d9b192737540ff429dbe22ee6b289f4ede0a82b68a9c4548404b7a",
     "manufacturing/matrix/release-index.json": "fce291b9305cafe82dcd2ce361a59d794b6706e4b3ec125fb366ac1d0f0373c7",
-    "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json": "e967f0a941c885739de18476ae323078deb9cf78db43f53430dd51d8c67d9302",
+    "manufacturing/enclosure/releases/export-fa411383a0f6c23d36fed4b6df68eda5/receipt.json": "44561fef6faae2eaedd0be7466449151bd137f8577edb664230563a1bffc8ad7",
     "manufacturing/matrix/releases/17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727/release-manifest.json": "9172a35ff855e1a0376d32d8fdec4b7b9c46065f73d87cf83b2dc1758306e969"
   },
   "document_hashes": {
-    "product/final-assembly/README.md": "8595630692ae808b977b8b9cf4888f2cc8bae095bd498d9d2c94c64dfa5647a4",
-    "product/final-assembly/unpowered-checklist.csv": "292a4c85ae651a9fcbc732a3437268afc4e15a8e69abc5f8b40636d75ae28713"
+    "product/final-assembly/README.md": "28fe1ce7375ba5e0e42c4cf97d7835b019b10372c160c4e3015a1f7fdc07e099",
+    "product/final-assembly/unpowered-checklist.csv": "11bc5d11844570c5be87a2e1edfe14feac59a61fe1932ed94f297cee697b4221"
   },
   "checks": [
     "Current STEP hash matches its domain export receipt",
-    "Five bridges, three storage zones, 150mm total/65mm free/30mm opening match constraints",
+    "Five bridges, Type-C revised wire budgets, 150mm total/65mm free/30mm opening match constraints",
     "All 59 original electrical rows retained with identical probes, conditions and criteria",
     "15 wire endpoints match the existing soldering map; four LCD NC endpoints unconnected",
     "20 release rows, 20 mechanical key rows and 10 free-length rows have unique identifiers",
@@ -58,6 +58,6 @@
   "limitations": [
     "Documentation checks are not physical measurements or functional acceptance.",
     "Use the current mesh/package manifests; historical exports do not identify the current delivery.",
-    "Independent-matrix criteria are not applied to a matrix already connected to Pico/LCD."
+    "Independent-matrix criteria are not applied to a matrix already connected to 主控/LCD."
   ]
 }

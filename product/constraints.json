@@ -7,37 +7,24 @@
       "w": 21,
       "d": 51
     },
-    "pcb_thickness_mm": 1,
-    "board_retention": "两孔固定，USB侧被动承托；横放，原生+Y旋转到机身+X",
-    "native_usb": "Micro-B",
-    "step_path": "product/references/pico2-vendor.step",
-    "step_sha256": "d49ada10d893cfcb07cb4abced0a0a0cadca4c4150f153d874268ca06171a24f",
+    "pcb_thickness_mm": 0.41148,
+    "board_retention": "两只独立PLA绝缘压桥，4颗M2×6沉孔座螺钉；四处PCB边缘座面和夹持面各贴0.15mm绝缘胶片；不在PCB钻孔。",
+    "native_usb": "USB Type-C",
+    "step_path": "product/references/type-c-controllers/waveshare-rp2350-plus-nurbs-repaired.step",
+    "step_sha256": "a6dc199a3a4e298685d6ed8e8ca74fd55980cce419e5dcee973fb04c4cd22006",
     "source": "research",
-    "evidence": "Pico 2 数据手册PDF第8页；原生STEP",
-    "mounting_holes": [
-      {
-        "x": -5.7,
-        "y": -23.5,
-        "diameter_mm": 2.1
-      },
-      {
-        "x": -5.7,
-        "y": 23.5,
-        "diameter_mm": 2.1
-      },
-      {
-        "x": 5.7,
-        "y": -23.5,
-        "diameter_mm": 2.1
-      },
-      {
-        "x": 5.7,
-        "y": 23.5,
-        "diameter_mm": 2.1
-      }
-    ],
+    "evidence": "https://www.waveshare.net/wiki/RP2350-Plus; shared family STEP; source pinout and schematic saved.",
+    "mounting_holes": [],
     "mounting_hole_coordinate_frame": "板中心原点，x为21mm宽方向，y为51mm长方向；USB在+y端",
-    "step_note": "厂商STEP原始资产副本，与下载返回sha256相同；CAD阶段直接导入。"
+    "step_note": "无排针系列原厂STEP，16MB Flash芯片封装按厂家系列资料；未验证实物元件高度公差。",
+    "model": "Waveshare RP2350-Plus-16MB",
+    "sku": "29761",
+    "pcb_thickness_note": "仅原厂STEP几何厚度，原厂尺寸图未给出实物板厚公差；实物座高、胶片和夹持松紧必须检查。",
+    "original_vendor_step": {
+      "path": "product/references/type-c-controllers/waveshare-rp2350-plus.step",
+      "sha256": "650977cc5a1bbeaab4eabdefd3f547642a1c34a5a8e5cbf49ac6f8b575c979f4"
+    },
+    "topology_repair_note": "Only USB shell leaf converted to equivalent NURBS after placed-coordinate topology healing; source/destination difference solids empty; two valid STEP round trips, 121 other solids unchanged. See type-c-reference-repair.json. Envelope and placement unchanged."
   },
   "display": {
     "bom_id": "display",
@@ -186,27 +173,31 @@
   "ports": [
     {
       "id": "host_usb",
-      "connector": "Pico 2原生Micro-B",
+      "connector": "Waveshare RP2350-Plus-16MB原生USB Type-C",
       "face": "right",
       "cutout_mm": {
-        "w": 13,
-        "h": 9.5
+        "w": 9.44,
+        "h": 3.66,
+        "shape": "rounded_oblong",
+        "corner_radius": 1.53,
+        "vertical_straight_segment": 0.6
       },
       "external_plug_straight_keepout_mm": 25,
       "source": "default",
       "center_mm": [
         44.5,
-        -10,
-        7.15
+        -9.9900469477,
+        7.669521495
       ],
-      "note": "U形口下缘z2.4由底盖形成，上缘z11.9，便于向下拆盖。"
+      "note": "按原厂STEP Type_C1正面金属口8.94×3.16、R1.28外扩每边0.25mm；不再用含焊脚的组件包络取中心。外唇深0.7mm，内部10.18×4.76避空。接口立台与主壳维护缝保持；插座前缘内缩0.3881mm，实际插头仍待断电试插。",
+      "extra_clearance_per_side_mm": 0.25
     }
   ],
   "wall_thickness_mm": 2.4,
   "wiring_bend_clearance_mm": 5,
   "fasteners": {
     "case": "4 x ISO7380-1 M3x8; two D12x2 front pads and two folding rear feet; lowest metal high/low 1.788/1.217mm above table",
-    "board": "2 x ISO4762 M2x4, Pico only; LCD bonded onto four PCB edge seats",
+    "board": "4 x ISO4762 M2x6 for two pressure bridges; PCB has no mounting holes",
     "joint_strategy": "printed-screw-joint-v1; PLA self-forming polygonal holes, no inserts"
   },
   "open_questions": [],
@@ -247,19 +238,21 @@
       "key_17",
       "key_18",
       "key_19",
-      "key_20"
+      "key_20",
+      "controller_clamp_a",
+      "controller_clamp_b"
     ],
     "cut_acrylic_object_id": "screen_lens",
-    "reference_only": "Pico and KS-9 official STEP; GDM0103 drawing envelopes; matrix from current PCB release.",
+    "reference_only": "Waveshare RP2350-Plus family original STEP; matrix PCB released STEP including original KS-9 switches; GDM0103 drawing envelopes.",
     "foot_pad_thickness_mm": 2,
-    "controller_pcb_z_mm": 5.3,
+    "controller_pcb_z_mm": 6.0,
     "estimated_overall_with_reference_caps_and_feet_mm": 42.096147047843374,
     "architecture": "integral top and side walls; bottom service cover",
     "bottom_cover_thickness_mm": 2.4,
     "controller_position_mm": [
-      16.4,
+      17.3,
       -10,
-      5.3
+      6.0
     ],
     "controller_rotation_deg": [
       0,
@@ -414,8 +407,8 @@
     "mode": "external_usb_only",
     "input_V": 5,
     "adapter_rating_A": 1,
-    "connector": "Pico2 native Micro-USB-B",
-    "notes": "取消所有外部电池支路、仓盖及电池开关",
+    "connector": "Waveshare native USB Type-C",
+    "notes": "不配电池，板载电池座保持悬空；外接5V供电，无PD升压请求。",
     "decision_source": "user"
   },
   "wiring_service_allowance_mm": 150,
@@ -440,12 +433,12 @@
         "id": "matrix_right",
         "center_mm": [
           26,
-          -36.7,
+          -39,
           4.55
         ],
         "size_mm": [
           20,
-          21.4,
+          16.8,
           3
         ]
       },
@@ -538,18 +531,32 @@
     "lcd_fixed_only_to_base": true,
     "fanout_crossing_budget": {
       "center_mm": [
-        14,
+        18.9,
         -9.5,
         10.05
       ],
       "size_mm": [
-        42,
+        5,
         23,
         1.5
-      ]
+      ],
+      "note": "Only three power leads cross between bridges, not all fifteen wires."
     },
     "guide": "product/harness-routing.md",
     "verification": "product/harness-routing-verification.json",
-    "note": "150mm为每根总线长，不是额外余量；空间与直线长度预算不认证真实柔性线变形或胶带受力。左桥辅助可达余段，不强制绕远。"
+    "note": "150mm为每根总线长，不是额外余量；空间与直线长度预算不认证真实柔性线变形或胶带受力。左桥辅助可达余段，不强制绕远。",
+    "front_signal_distribution_budget": {
+      "center_mm": [
+        17,
+        -21.7,
+        7.1
+      ],
+      "size_mm": [
+        45,
+        1.5,
+        1.5
+      ],
+      "note": "Signals fan out along the front PCB edge; this is not a uniform full-bundle duct."
+    }
   }
 }

@@ -4,19 +4,20 @@
     {
       "id": "controller",
       "role": "controller",
-      "name": "Raspberry Pi Pico 2",
+      "name": "Waveshare RP2350-Plus-16MB，无排针版",
       "quantity": 1,
-      "manufacturer": "Raspberry Pi",
-      "mpn": "",
+      "manufacturer": "Waveshare",
+      "mpn": "RP2350-Plus-16MB",
       "source": "manufacturer",
-      "platform_ref": "raspberrypi/pico-2",
-      "datasheet_url": "https://pip.raspberrypi.com/documents/RP-008299-DS",
-      "description": "无无线版，原生 Micro-USB 数据接口，直接焊线",
-      "selection_reason": "保留RP2350 USB HID技术路线；原生Micro-USB支持电脑数据连接或外部5V供电，不需要电池支路",
+      "datasheet_url": "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf",
+      "description": "RP2350A、16MB外部Flash、原生USB Type-C、无排针；SKU 29761；电池座悬空不使用。",
+      "selection_reason": "用户指定Type-C主控替换Pico 2；现有GP0至GP11及3V3/GND映射沿用，原厂提供共享系列STEP，SDK有16MB板级配置。",
       "cad_relevance": {
-        "notes": "横放按键下方，(16.4,-10,5.3)，绕Z=-90度，Micro-B右侧出线，前端两孔固定及两处承托。"
+        "notes": "原厂系列STEP共用外形，板中心(17.3,-10)，模型PCB顶z6；四处边缘座及两只PLA压桥，以4颗M2×6固定；无排针，Type-C母座前缘距壳外面0.3881mm。原厂STEP的PCB厚0.41148mm，未将其当作实物板厚公差，须装配核对。"
       },
-      "part_identity": "f036811870a2e25b"
+      "source_url": "https://www.waveshare.net/shop/RP2350-Plus-16MB.htm",
+      "procurement_status": "external_procurement_required",
+      "platform_index_status": "not_indexed_user_selected"
     },
     {
       "id": "display",
@@ -190,17 +191,16 @@
     {
       "id": "usb_cable",
       "role": "cable",
-      "name": "USB-A 至 Micro-USB-B USB 2.0 数据线，1m",
+      "name": "USB-A至USB-C USB 2.0数据线，1m",
       "quantity": 1,
       "manufacturer": "",
       "mpn": "",
       "source": "default",
-      "description": "USB-A至Micro-USB-B USB2.0数据线，1m，兼用于电脑和5V USB-A充电器；设备侧线头最大12×8mm",
-      "selection_reason": "Pico 2 原生USB口为Micro-B；数据线同时供电及HID通信",
+      "description": "USB-A至USB-C、1m、支持USB数据与5V供电；默认设备侧胶壳不超过12.35×6.5mm，USB-C金属头应能在插座前缘内缩0.3881mm时完全就位；实物插头仍待测。",
+      "selection_reason": "用户要求机身Type-C口；保留已有USB-A 5V适配器，改配Type-C设备端数据线。",
       "procurement_status": "external_procurement_required",
-      "part_identity": "df3f619804a92fdb",
       "cad_relevance": {
-        "notes": "右侧13x9.5mm U形口，下缘z2.4、上缘z11.9，底盖形成下缘，线头不大于12x8mm。"
+        "notes": "外壳胶囊孔10.0×4.3mm；无大方孔，主控与孔位已按原厂STEP对齐；首段线缆留25mm。"
       }
     },
     {
@@ -299,14 +299,13 @@
     {
       "id": "board_screws",
       "role": "fastener",
-      "name": "ISO 4762 M2-0.4x4mm 内六角圆柱头螺钉",
-      "quantity": 2,
+      "name": "ISO 4762 M2-0.4×6mm 内六角圆柱头螺钉",
+      "quantity": 4,
       "manufacturer": "",
-      "part_number": "ISO4762-M2x4",
+      "part_number": "ISO4762-M2x6",
       "source": "default",
-      "description": "仅Pico两颗；LCD使用边缘托架和绝缘胶片，不使用OLED旧螺钉。",
-      "selection_reason": "保留Pico M2x4，两处Pico与四处合盖共6处螺钉连接。",
-      "part_identity": "d27a41e3c679c140"
+      "description": "两只主控绝缘压桥各2颗，沉孔安装；kit实际选定M2×6，不穿过PCB。",
+      "selection_reason": "压桥厚3mm、沉孔座、接合5mm，经printed-screw-joint-v1选长为6mm。"
     },
     {
       "id": "rubber_feet",
@@ -339,7 +338,7 @@
       "quantity": 1,
       "source": "default",
       "part_number": "USB-A-5V-1A",
-      "description": "通过原有Micro-USB数据线供电；可复用已有合适的5V适配器",
+      "description": "保留USB-A输出5V/1A适配器，配USB-A至USB-C数据线；可复用已有合适的5V适配器。",
       "selection_reason": "用户选择接充电器的独立计算器模式，无主机枚举时运行本机计算",
       "procurement_status": "external_procurement_required",
       "part_identity": "87323ac15274f7ae"
@@ -484,6 +483,37 @@
       "description": "5根26AWG软线，每根总长150mm；GDM0103 P1-P5低位直焊至Pico并固定于底盖穿带桥，P6-P9分别绝缘；不跨主壳，不经过矩阵PCB。",
       "selection_reason": "屏幕保留既有GPIO和独立安装，不经过矩阵PCB。",
       "part_identity": "df3f619804a92fdb"
+    },
+    {
+      "id": "controller_clamp_a",
+      "role": "printed_part",
+      "name": "CalcKey主控绝缘压桥A，PLA，FDM打印",
+      "quantity": 1,
+      "manufacturer": "CalcKey",
+      "part_number": "enclosure:controller_clamp_a",
+      "source": "project",
+      "description": "主控板边压桥，顶端沉孔隐藏M2头；不压芯片或按键，夹持面贴0.15mm绝缘胶片。",
+      "selection_reason": "适配无安装孔的Waveshare RP2350-Plus-16MB，同时保留底盖维护。"
+    },
+    {
+      "id": "controller_clamp_b",
+      "role": "printed_part",
+      "name": "CalcKey主控绝缘压桥B，PLA，FDM打印",
+      "quantity": 1,
+      "manufacturer": "CalcKey",
+      "part_number": "enclosure:controller_clamp_b",
+      "source": "project",
+      "description": "主控板边压桥，顶端沉孔隐藏M2头；不压芯片或按键，夹持面贴0.15mm绝缘胶片。",
+      "selection_reason": "适配无安装孔的Waveshare RP2350-Plus-16MB，同时保留底盖维护。"
+    },
+    {
+      "id": "controller_insulation_pads",
+      "role": "adhesive",
+      "name": "绝缘丙烯酸胶片，0.15mm厚，6×1.4mm",
+      "quantity": 8,
+      "source": "default",
+      "description": "4片位于主控边缘座面，4片位于压桥夹持面；避开裸铜焊点，不用厚泡棉替代。",
+      "selection_reason": "隔离PCB焊盘与夹持面并固定装配高度。"
     }
   ],
   "alternatives": [
@@ -535,5 +565,5 @@
     ],
     "catalog_result": "平台索引/元件目录/STEP检索无精确型号，按原厂手册设计，不伪造索引id或STEP。"
   },
-  "requirements_digest": "749b83af5a3c75d92a7a871e74a28e05556ee36e007d460f408de5e40cd2cc35"
+  "requirements_digest": "ce3da30b62b7e5f63c70d8b33e1c3306ba3e69c3aadf54a89f132ae45942110e"
 }

@@ -1,16 +1,39 @@
 {
-  "revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
-  "export_id": "export-e9d67ce8536f1f9b0574ccf294968294",
-  "source_receipt": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
+  "revision": "18faaed5c6a9c41229a5fc888c20458ccf315f3c0712424836f5007b8f745c59",
+  "export_id": "export-fa411383a0f6c23d36fed4b6df68eda5",
+  "source_receipt": "manufacturing/enclosure/releases/export-fa411383a0f6c23d36fed4b6df68eda5/receipt.json",
   "changed_meshes": [
     "base",
     "top"
   ],
   "unchanged_mesh_count": 26,
+  "new_controller_clamps": {
+    "controller_clamp_a": {
+      "triangles": 4084,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0,
+      "inconsistent_edge_orientations": 0,
+      "connected_surface_components": 1,
+      "mesh_sha256": "fc2d2e26d92a25bd2f221dcefcd778b340cab22b48cc27139704e0c0a24591ff"
+    },
+    "controller_clamp_b": {
+      "triangles": 4084,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0,
+      "inconsistent_edge_orientations": 0,
+      "connected_surface_components": 1,
+      "mesh_sha256": "ecdd3bde7a18aaf01ec85c3166c5a1a3310815b2de1432b1dd71fcc88a4dfafd"
+    }
+  },
+  "type_c_port": {
+    "width_from_stl_mm": 9.440000057220459,
+    "height_from_stl_mm": 3.6599998474121094,
+    "profile_sampling_x_local_mm": 44.4
+  },
   "coordinate_rounding_mm": 1e-05,
   "results": {
     "base": {
-      "triangles": 29780,
+      "triangles": 42804,
       "collapsed_triangles_at_1e5mm": 0,
       "non_two_incidence_edges_at_1e5mm": 0,
       "inconsistent_edge_orientations": 0,
@@ -18,7 +41,7 @@
       "bbox_from_stl_mm": [
         89.0,
         130.0,
-        15.499999999999998
+        17.399999618530273
       ],
       "min_z_from_stl_mm": 1.7763568394002505e-15,
       "bridges": [
@@ -275,10 +298,10 @@
           "roof_and_leg_material_present": true
         }
       ],
-      "mesh_sha256": "02ef41a0aa7402ce1450d1fe474c6393639520d45185a07ebf8f31fbc7bc5fd2"
+      "mesh_sha256": "8dbadbe84ef31a977737732a5aae7f748d22391339f11a00c898c8612992575d"
     },
     "top": {
-      "triangles": 29366,
+      "triangles": 29894,
       "collapsed_triangles_at_1e5mm": 0,
       "non_two_incidence_edges_at_1e5mm": 0,
       "inconsistent_edge_orientations": 0,
@@ -459,7 +482,7 @@
           "roof_and_leg_material_present": true
         }
       ],
-      "mesh_sha256": "11b4573079e66c7cbd9e2a33620b5b34c0b12988b5628676d04ddf229ef9e41d"
+      "mesh_sha256": "d890005daf3ba04562d0bf551e93d4b9521c080fb444981d32556bc6156ef0fb"
     }
   },
   "scope": "STL surface samples and connectivity, not print accuracy, tape holding force or full flexible-wire motion.",

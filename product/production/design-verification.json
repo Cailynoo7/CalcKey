@@ -1,112 +1,31 @@
 {
-  "date": "2026-11-06",
   "design_id": "enclosure",
-  "revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
-  "export_id": "export-e9d67ce8536f1f9b0574ccf294968294",
-  "source_receipt": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
+  "revision": "18faaed5c6a9c41229a5fc888c20458ccf315f3c0712424836f5007b8f745c59",
+  "export_id": "export-fa411383a0f6c23d36fed4b6df68eda5",
+  "source_receipt": "manufacturing/enclosure/releases/export-fa411383a0f6c23d36fed4b6df68eda5/receipt.json",
   "pcb_release_id": "17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727",
-  "printed_parts": 28,
-  "mesh_binding": "product/production/model-manifest.json",
+  "printed_parts": 30,
   "geometry_checks": {
     "retained_keycap_measurements": {
       "path": "product/keycap-usability-verification.json",
-      "revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029",
-      "binding": {
-        "receipt": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
-        "revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
-        "export_id": "export-e9d67ce8536f1f9b0574ccf294968294",
-        "step_sha256": "2a25d479d1fcf8d9261fa256df79eda8be7058511812ad56d7365d322c386c35",
-        "method": "All 28 original meshes retained by byte hash, placement and verified export/seat-fix geometry equivalence; no retessellation in this package update",
-        "tessellation_receipt": "product/production/history/harness-tessellation-cad-receipt.json",
-        "source_compatibility_evidence": "product/cad-compatibility/verification.json",
-        "measurement_revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029",
-        "baseline_receipt": "product/production/history/before-harness-cad-receipt.json",
-        "all_20_keycap_shapes_unchanged": true
-      }
+      "measurement_revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029"
     },
-    "current_case_and_harness": {
-      "path": "product/harness-routing-verification.json",
-      "revision": "fbc7b5b086d7cbc1a9d57411878b97d43cc429c3d95ad141d3f641841fb9ded7"
-    },
-    "actual_stl_keycap_features": {
-      "path": "product/production/mesh-feature-checks.json",
-      "checks": {
-        "keycaps_with_current_legends": 20,
-        "retained_keycap_meshes": 20,
-        "updated_case_meshes": 2,
-        "unchanged_meshes": 26,
-        "five_recess_depth_from_stl_mm": 0.35000001164297495,
-        "five_adjacent_top_z_mm": 1.0000002202132769e-07,
-        "enter_recess_y_range_print_frame_mm": [
-          -3.6004395484924316,
-          -1.1995606422424316
-        ],
-        "equals_recess_y_range_print_frame_mm": [
-          1.27734375,
-          2.922656297683716
-        ],
-        "legend_depth_mm": 0.35
-      }
-    },
-    "actual_stl_case_features": {
-      "path": "product/production/case-mesh-checks.json",
-      "changed_meshes": [
-        "base",
-        "top"
-      ]
-    },
-    "retained_pcb_assembly": {
-      "path": "product/matrix-pcb-verification.json",
-      "binding": {
-        "cad_revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
-        "cad_export_id": "export-e9d67ce8536f1f9b0574ccf294968294",
-        "receipt": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
-        "baseline_receipt": "product/production/history/before-harness-cad-receipt.json",
-        "retained_inspection_revision": "bb0a8e71a8c0bd3bb7c53e2c2961b190d24c58ea8feda5c0ab35672099b0d8de",
-        "unchanged_objects": [
-          "hinge_axle_left",
-          "hinge_axle_right",
-          "hinge_cap_left",
-          "hinge_cap_right",
-          "matrix_pcb",
-          "pico2",
-          "rear_foot_left",
-          "rear_foot_right",
-          "screen_lens",
-          "screws"
-        ],
-        "changed_objects_with_new_checks": [
-          "base",
-          "top"
-        ],
-        "geometry_check_record": "product/harness-routing-verification.json",
-        "scope": "PCB/Pico/lens/fasteners/feet unchanged; base and top changed with five integral tape bridges, rechecked bottom 30mm removal and cap 4mm motion.",
-        "source_compatibility_evidence": "product/cad-compatibility/verification.json"
-      }
-    },
-    "source_compatibility": "product/cad-compatibility/verification.json",
-    "regenerated_case_meshes": 0,
-    "unchanged_meshes": 28
-  },
-  "assembly_template": {
-    "path": "product/final-assembly/unpowered-checklist.csv",
-    "rows": 154,
-    "physical_results": "pending"
+    "type_c_assembly": "product/type-c-integration-verification.json",
+    "reference_repair": "product/type-c-reference-repair.json",
+    "actual_stl_case_features": "product/production/case-mesh-checks.json",
+    "actual_stl_keycap_features": "product/production/mesh-feature-checks.json",
+    "regenerated_meshes": 4,
+    "unchanged_meshes": 26
   },
   "limitations": [
-    "Physical tactile feel, print shrinkage, strength, insertion force and wear not measured.",
-    "Motion checks cover the external case, bottom cover, Pico and screen lens, sampled at 0.25 mm / 17 poses / 0.02 mm mesh tolerance; they do not certify a fused vendor switch's internal mechanism.",
-    "No physical soldering, clip retention, PCB flexure or strength test; printed fit trials skipped by user.",
-    "GDM0103 remains a manufacturer-drawing envelope; no exact model of the LCD board.",
-    "Switch actuator and housing are fused in vendor STEP. Full-stroke check uses the shared unengraved cap blank and excludes the measured actuator projection; internal switch mechanism is not independently verified.",
-    "Wire strain relief and solder fillets are assembly allowances, not measured real wire geometry.",
-    "LCD checked with manufacturer drawing envelopes, not an exact module STEP.",
-    "Space budgets do not model the complete flexible harness or certify cable strain and tape holding force."
+    "Physical fit, board thickness, clamp retention, print shrinkage and strength remain untested.",
+    "GDM0103 uses vendor drawing envelopes, not an exact board model.",
+    "Flexible wires and tape holding force are not physically verified.",
+    "No printed fit test, electrical power or flashing performed."
   ],
-  "physical_print_trial_skipped_by_user": true,
   "device_actions": {
-    "printing_started": false,
-    "flashed": false,
-    "powered": false
+    "printed": false,
+    "powered": false,
+    "flashed": false
   }
 }

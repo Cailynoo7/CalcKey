@@ -1,13 +1,13 @@
 {
-  "source_receipt": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
-  "revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
-  "export_id": "export-e9d67ce8536f1f9b0574ccf294968294",
-  "source_step_sha256": "2a25d479d1fcf8d9261fa256df79eda8be7058511812ad56d7365d322c386c35",
+  "source_receipt": "manufacturing/enclosure/releases/export-fa411383a0f6c23d36fed4b6df68eda5/receipt.json",
+  "revision": "18faaed5c6a9c41229a5fc888c20458ccf315f3c0712424836f5007b8f745c59",
+  "export_id": "export-fa411383a0f6c23d36fed4b6df68eda5",
+  "source_step_sha256": "6d490cd297d2bd98776b914db083af3270665d0d4482ccf33df5b4c3f972d8d6",
   "conversion_only": true,
   "tolerance_mm_by_object": true,
   "angular_tolerance_rad": 0.05,
   "units": "mm",
-  "printed_objects": 28,
+  "printed_objects": 30,
   "meshes": [
     {
       "object_id": "base",
@@ -31,7 +31,7 @@
       "bbox_mm": [
         89.0,
         130.0,
-        15.500000000000124
+        17.4000000000005
       ],
       "min_z_mm": -4.440892098500626e-16,
       "tolerance_mm": 0.01,
@@ -42,10 +42,10 @@
         }
       ],
       "exact_zero_area_facets_removed": 0,
-      "volume_mm3": 31418.834378786432,
-      "bytes": 1489084,
-      "sha256": "02ef41a0aa7402ce1450d1fe474c6393639520d45185a07ebf8f31fbc7bc5fd2",
-      "shape_sha256": "85eecebb749f060a9eec5642c9fa709a35d5b5d0405e2ece79d1b4c43c812bcd",
+      "volume_mm3": 32357.878307938456,
+      "bytes": 2140284,
+      "sha256": "8dbadbe84ef31a977737732a5aae7f748d22391339f11a00c898c8612992575d",
+      "shape_sha256": "f7339cf912c37cbc027b0c9adf7687c05eab19dd2f632866236a956dd858d4e7",
       "object_transform": {
         "positionMm": [
           0,
@@ -66,11 +66,10 @@
       },
       "derivation": {
         "method": "step_tessellation",
-        "receipt": "product/production/history/harness-tessellation-cad-receipt.json",
-        "step_sha256": "6b862bdb6c360934ce3597fa4814218ba5fa4faf1901aa8d1a013aa055d351ec",
-        "binding_note": "Original tessellation preserved. Export-refresh and explicit seat-fix comparisons prove compatibility with the current source-only repair; no mesh regenerated in this update."
+        "receipt": "manufacturing/enclosure/releases/export-fa411383a0f6c23d36fed4b6df68eda5/receipt.json",
+        "step_sha256": "6d490cd297d2bd98776b914db083af3270665d0d4482ccf33df5b4c3f972d8d6"
       },
-      "triangles": 29780,
+      "triangles": 42804,
       "collapsed_triangles_at_1e5mm": 0,
       "non_two_incidence_edges_at_1e5mm": 0
     },
@@ -107,10 +106,10 @@
         }
       ],
       "exact_zero_area_facets_removed": 0,
-      "volume_mm3": 35110.80791637768,
-      "bytes": 1468384,
-      "sha256": "11b4573079e66c7cbd9e2a33620b5b34c0b12988b5628676d04ddf229ef9e41d",
-      "shape_sha256": "71f60600ad8ac6ac85c0fa4863f12dd9714371fb4b484bd46a81053ae89ceb33",
+      "volume_mm3": 35057.41492982852,
+      "bytes": 1494784,
+      "sha256": "d890005daf3ba04562d0bf551e93d4b9521c080fb444981d32556bc6156ef0fb",
+      "shape_sha256": "79744257b4928e40ceb5fc3f1fdeb142caabf6a8455c70c6113c497326be4add",
       "object_transform": {
         "positionMm": [
           0,
@@ -131,11 +130,10 @@
       },
       "derivation": {
         "method": "step_tessellation",
-        "receipt": "product/production/history/harness-tessellation-cad-receipt.json",
-        "step_sha256": "6b862bdb6c360934ce3597fa4814218ba5fa4faf1901aa8d1a013aa055d351ec",
-        "binding_note": "Original tessellation preserved. Export-refresh and explicit seat-fix comparisons prove compatibility with the current source-only repair; no mesh regenerated in this update."
+        "receipt": "manufacturing/enclosure/releases/export-fa411383a0f6c23d36fed4b6df68eda5/receipt.json",
+        "step_sha256": "6d490cd297d2bd98776b914db083af3270665d0d4482ccf33df5b4c3f972d8d6"
       },
-      "triangles": 29366,
+      "triangles": 29894,
       "collapsed_triangles_at_1e5mm": 0,
       "non_two_incidence_edges_at_1e5mm": 0
     },
@@ -193,13 +191,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "bbcb5a1f1f3fa0bdce6daf1746f113fc14a234f8cd8b0bfb8a98969f93142866",
         "original_derivation": {
           "method": "reuse_unchanged_shape",
-          "receipt": "product/production/history/handwired-cad-receipt.json",
-          "mesh_manifest": "product/production/history/matrix-before-keycap-model-manifest.json"
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "bbcb5a1f1f3fa0bdce6daf1746f113fc14a234f8cd8b0bfb8a98969f93142866",
+          "original_derivation": {
+            "method": "reuse_unchanged_shape",
+            "receipt": "product/production/history/handwired-cad-receipt.json",
+            "mesh_manifest": "product/production/history/matrix-before-keycap-model-manifest.json"
+          }
         }
       }
     },
@@ -257,13 +261,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "11a77dc9681bc6aca2c54b5041b04a271560deba90c1843d7c13632ae579c7e4",
         "original_derivation": {
           "method": "reuse_unchanged_shape",
-          "receipt": "product/production/history/handwired-cad-receipt.json",
-          "mesh_manifest": "product/production/history/matrix-before-keycap-model-manifest.json"
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "11a77dc9681bc6aca2c54b5041b04a271560deba90c1843d7c13632ae579c7e4",
+          "original_derivation": {
+            "method": "reuse_unchanged_shape",
+            "receipt": "product/production/history/handwired-cad-receipt.json",
+            "mesh_manifest": "product/production/history/matrix-before-keycap-model-manifest.json"
+          }
         }
       }
     },
@@ -321,13 +331,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "6d62b491d0eae5af62c8d0b261496954481df8c39fd8c43ddcd0eb505d834228",
         "original_derivation": {
           "method": "reuse_unchanged_shape",
-          "receipt": "product/production/history/handwired-cad-receipt.json",
-          "mesh_manifest": "product/production/history/matrix-before-keycap-model-manifest.json"
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "6d62b491d0eae5af62c8d0b261496954481df8c39fd8c43ddcd0eb505d834228",
+          "original_derivation": {
+            "method": "reuse_unchanged_shape",
+            "receipt": "product/production/history/handwired-cad-receipt.json",
+            "mesh_manifest": "product/production/history/matrix-before-keycap-model-manifest.json"
+          }
         }
       }
     },
@@ -385,13 +401,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "cab6359550d32c7578f75439939392900b6020c89a62110c40979fc3e020f599",
         "original_derivation": {
           "method": "reuse_unchanged_shape",
-          "receipt": "product/production/history/handwired-cad-receipt.json",
-          "mesh_manifest": "product/production/history/matrix-before-keycap-model-manifest.json"
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "cab6359550d32c7578f75439939392900b6020c89a62110c40979fc3e020f599",
+          "original_derivation": {
+            "method": "reuse_unchanged_shape",
+            "receipt": "product/production/history/handwired-cad-receipt.json",
+            "mesh_manifest": "product/production/history/matrix-before-keycap-model-manifest.json"
+          }
         }
       }
     },
@@ -449,13 +471,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "7c7bfcf810ecefe4f16ed65cfb4400197b5ced9b3f9e1de838116febfa1ce284",
         "original_derivation": {
           "method": "reuse_unchanged_shape",
-          "receipt": "product/production/history/handwired-cad-receipt.json",
-          "mesh_manifest": "product/production/history/matrix-before-keycap-model-manifest.json"
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "7c7bfcf810ecefe4f16ed65cfb4400197b5ced9b3f9e1de838116febfa1ce284",
+          "original_derivation": {
+            "method": "reuse_unchanged_shape",
+            "receipt": "product/production/history/handwired-cad-receipt.json",
+            "mesh_manifest": "product/production/history/matrix-before-keycap-model-manifest.json"
+          }
         }
       }
     },
@@ -513,13 +541,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "8e212d049ec6ae9c2f20e0d824d7cd13396b8e42b3d4e76749afa13113a9b206",
         "original_derivation": {
           "method": "reuse_unchanged_shape",
-          "receipt": "product/production/history/handwired-cad-receipt.json",
-          "mesh_manifest": "product/production/history/matrix-before-keycap-model-manifest.json"
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "8e212d049ec6ae9c2f20e0d824d7cd13396b8e42b3d4e76749afa13113a9b206",
+          "original_derivation": {
+            "method": "reuse_unchanged_shape",
+            "receipt": "product/production/history/handwired-cad-receipt.json",
+            "mesh_manifest": "product/production/history/matrix-before-keycap-model-manifest.json"
+          }
         }
       }
     },
@@ -574,13 +608,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "47b668f21605a484b370ae45f394189963b0950ca7c62c7ab0cc2aa03d19ca51",
         "original_derivation": {
-          "method": "step_tessellation",
-          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
-          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "47b668f21605a484b370ae45f394189963b0950ca7c62c7ab0cc2aa03d19ca51",
+          "original_derivation": {
+            "method": "step_tessellation",
+            "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+            "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          }
         }
       },
       "triangles": 12298,
@@ -638,13 +678,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "03782036bec97451708fa221977bf24764f4aa069293149883e9fb2b36ea0b23",
         "original_derivation": {
-          "method": "step_tessellation",
-          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
-          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "03782036bec97451708fa221977bf24764f4aa069293149883e9fb2b36ea0b23",
+          "original_derivation": {
+            "method": "step_tessellation",
+            "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+            "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          }
         }
       },
       "triangles": 3212,
@@ -702,13 +748,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "b49f64adef3446512abbcee79820ae1137ab18f0844fabebfba6ab40c6e0acd1",
         "original_derivation": {
-          "method": "step_tessellation",
-          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
-          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "b49f64adef3446512abbcee79820ae1137ab18f0844fabebfba6ab40c6e0acd1",
+          "original_derivation": {
+            "method": "step_tessellation",
+            "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+            "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          }
         }
       },
       "triangles": 3212,
@@ -766,13 +818,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "4721d0c03dd6914e826f8abeaa54dec1afb5865fe9229e42990d339a7b242eb8",
         "original_derivation": {
-          "method": "step_tessellation",
-          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
-          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "4721d0c03dd6914e826f8abeaa54dec1afb5865fe9229e42990d339a7b242eb8",
+          "original_derivation": {
+            "method": "step_tessellation",
+            "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+            "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          }
         }
       },
       "triangles": 9966,
@@ -830,13 +888,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "19b2e8bc53dbc2debd7235e945909b3527c3e81836a39ea8bb7841992c025e2e",
         "original_derivation": {
-          "method": "step_tessellation",
-          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
-          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "19b2e8bc53dbc2debd7235e945909b3527c3e81836a39ea8bb7841992c025e2e",
+          "original_derivation": {
+            "method": "step_tessellation",
+            "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+            "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          }
         }
       },
       "triangles": 3478,
@@ -894,13 +958,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "52da9af08a8137ca5061c5c47d02262e8484f8d5db3d4b2e8e99efe1d22dc353",
         "original_derivation": {
-          "method": "step_tessellation",
-          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
-          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "52da9af08a8137ca5061c5c47d02262e8484f8d5db3d4b2e8e99efe1d22dc353",
+          "original_derivation": {
+            "method": "step_tessellation",
+            "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+            "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          }
         }
       },
       "triangles": 13914,
@@ -958,13 +1028,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "8921fa28d16d956f57dad2ec209962a6cc070a8d087733d5cb5a4909e4e21730",
         "original_derivation": {
-          "method": "step_tessellation",
-          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
-          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "8921fa28d16d956f57dad2ec209962a6cc070a8d087733d5cb5a4909e4e21730",
+          "original_derivation": {
+            "method": "step_tessellation",
+            "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+            "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          }
         }
       },
       "triangles": 10838,
@@ -1022,13 +1098,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "83f584c97ee0bcadd5a4a2492d4255a566bc0d657b6e791d8056467ad27164fd",
         "original_derivation": {
-          "method": "step_tessellation",
-          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
-          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "83f584c97ee0bcadd5a4a2492d4255a566bc0d657b6e791d8056467ad27164fd",
+          "original_derivation": {
+            "method": "step_tessellation",
+            "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+            "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          }
         }
       },
       "triangles": 3190,
@@ -1086,13 +1168,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "c6ffbcc5ad3ed2cb98c84dcdc6535d833ae0e117e913c9cb2335290fbc12b666",
         "original_derivation": {
-          "method": "step_tessellation",
-          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
-          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "c6ffbcc5ad3ed2cb98c84dcdc6535d833ae0e117e913c9cb2335290fbc12b666",
+          "original_derivation": {
+            "method": "step_tessellation",
+            "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+            "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          }
         }
       },
       "triangles": 3220,
@@ -1151,13 +1239,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "e879a73d1be04f53fa02b7ccfa07a612418e9cd85f69fd4fee46109172fe1357",
         "original_derivation": {
-          "method": "step_tessellation",
-          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
-          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "e879a73d1be04f53fa02b7ccfa07a612418e9cd85f69fd4fee46109172fe1357",
+          "original_derivation": {
+            "method": "step_tessellation",
+            "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+            "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          }
         }
       },
       "triangles": 14920,
@@ -1216,13 +1310,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "0b44d249af5447622593f87cb8204f160ffa91f2be47439985aed6577a9daf88",
         "original_derivation": {
-          "method": "step_tessellation",
-          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
-          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "0b44d249af5447622593f87cb8204f160ffa91f2be47439985aed6577a9daf88",
+          "original_derivation": {
+            "method": "step_tessellation",
+            "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+            "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          }
         }
       },
       "triangles": 10830,
@@ -1281,13 +1381,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "af05d786f9e4fb3d9b5353386baa574ebce1b8bdea18af2d792094e1f3330e87",
         "original_derivation": {
-          "method": "step_tessellation",
-          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
-          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "af05d786f9e4fb3d9b5353386baa574ebce1b8bdea18af2d792094e1f3330e87",
+          "original_derivation": {
+            "method": "step_tessellation",
+            "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+            "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          }
         }
       },
       "triangles": 3212,
@@ -1346,13 +1452,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "9a107cc0950d500b6869690391196ec2abbda88ec230901d79f0241b5090967d",
         "original_derivation": {
-          "method": "step_tessellation",
-          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
-          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "9a107cc0950d500b6869690391196ec2abbda88ec230901d79f0241b5090967d",
+          "original_derivation": {
+            "method": "step_tessellation",
+            "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+            "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          }
         }
       },
       "triangles": 3530,
@@ -1411,13 +1523,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "e7b38470d909e23dfd9c2a25588ac49792e76efa407d9772b477fed7fb4520e7",
         "original_derivation": {
-          "method": "step_tessellation",
-          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
-          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "e7b38470d909e23dfd9c2a25588ac49792e76efa407d9772b477fed7fb4520e7",
+          "original_derivation": {
+            "method": "step_tessellation",
+            "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+            "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          }
         }
       },
       "triangles": 6540,
@@ -1476,13 +1594,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "0c04ce66c40bba7931a77e28b4eed47a9539b65daeabed9726d299e6863c21a1",
         "original_derivation": {
-          "method": "step_tessellation",
-          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
-          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "0c04ce66c40bba7931a77e28b4eed47a9539b65daeabed9726d299e6863c21a1",
+          "original_derivation": {
+            "method": "step_tessellation",
+            "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+            "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          }
         }
       },
       "triangles": 11226,
@@ -1541,13 +1665,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "8dbc2a78f35759553ce45322ae60f50b17b4f0f4ab16e8754929d3da19e9b172",
         "original_derivation": {
-          "method": "step_tessellation",
-          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
-          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "8dbc2a78f35759553ce45322ae60f50b17b4f0f4ab16e8754929d3da19e9b172",
+          "original_derivation": {
+            "method": "step_tessellation",
+            "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+            "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          }
         }
       },
       "triangles": 16944,
@@ -1606,13 +1736,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "5906ad71e889846f8704b13930a9f975fdbe61d6b112a6c79a98837680d405e3",
         "original_derivation": {
-          "method": "step_tessellation",
-          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
-          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "5906ad71e889846f8704b13930a9f975fdbe61d6b112a6c79a98837680d405e3",
+          "original_derivation": {
+            "method": "step_tessellation",
+            "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+            "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          }
         }
       },
       "triangles": 21382,
@@ -1671,13 +1807,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "e92fdf1e73cc3db34add5c65aa41c03285edf0483a973a7c876651591f7ad671",
         "original_derivation": {
-          "method": "step_tessellation",
-          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
-          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "e92fdf1e73cc3db34add5c65aa41c03285edf0483a973a7c876651591f7ad671",
+          "original_derivation": {
+            "method": "step_tessellation",
+            "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+            "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          }
         }
       },
       "triangles": 8368,
@@ -1736,13 +1878,19 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "77712f685eb1aa4cc5bceb83e261349f68bec7534f8ec8e5624520f3de47ac19",
         "original_derivation": {
-          "method": "step_tessellation",
-          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
-          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "77712f685eb1aa4cc5bceb83e261349f68bec7534f8ec8e5624520f3de47ac19",
+          "original_derivation": {
+            "method": "step_tessellation",
+            "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+            "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          }
         }
       },
       "triangles": 3180,
@@ -1801,16 +1949,150 @@
       },
       "derivation": {
         "method": "reuse_unchanged_shape",
-        "receipt": "product/production/history/before-harness-cad-receipt.json",
-        "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+        "receipt": "product/production/history/before-typec-cad-receipt.json",
+        "mesh_manifest": "product/production/history/before-typec-model-manifest.json",
         "source_mesh_sha256": "bac45ace766ecc45b29e035cab1215377c3105124db98474239f15a17b5dafdc",
         "original_derivation": {
-          "method": "step_tessellation",
-          "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
-          "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          "method": "reuse_unchanged_shape",
+          "receipt": "product/production/history/before-harness-cad-receipt.json",
+          "mesh_manifest": "product/production/history/before-harness-model-manifest.json",
+          "source_mesh_sha256": "bac45ace766ecc45b29e035cab1215377c3105124db98474239f15a17b5dafdc",
+          "original_derivation": {
+            "method": "step_tessellation",
+            "receipt": "manufacturing/enclosure/releases/export-b41154b115ba9c61a396ed39b36889a5/receipt.json",
+            "step_sha256": "c69dd31c2a284bf947feab5499fa3938c3ebb3a26fbd057fca8693398a15adfc"
+          }
         }
       },
       "triangles": 7948,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "controller_clamp_a",
+      "file": "product/production/models/controller_clamp_a.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "nozzle_mm": 0.4,
+      "layer_mm": 0.15,
+      "local_print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "local_print_translation_mm": [
+        -12.9,
+        9.999999999999897,
+        -6.150000000000327
+      ],
+      "bbox_mm": [
+        6.0,
+        38.00000000000002,
+        5.050000000000222
+      ],
+      "min_z_mm": -8.881784197001252e-16,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "exact_zero_area_facets_removed": 0,
+      "volume_mm3": 644.905241303551,
+      "bytes": 204284,
+      "sha256": "fc2d2e26d92a25bd2f221dcefcd778b340cab22b48cc27139704e0c0a24591ff",
+      "shape_sha256": "919d6ad3a76144421d1d750198536a9cc74dde40f1e8a8c370db6e45989992f8",
+      "object_transform": {
+        "positionMm": [
+          0,
+          0,
+          6.459542420143668
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "step_tessellation",
+        "receipt": "manufacturing/enclosure/releases/export-fa411383a0f6c23d36fed4b6df68eda5/receipt.json",
+        "step_sha256": "6d490cd297d2bd98776b914db083af3270665d0d4482ccf33df5b4c3f972d8d6"
+      },
+      "triangles": 4084,
+      "collapsed_triangles_at_1e5mm": 0,
+      "non_two_incidence_edges_at_1e5mm": 0
+    },
+    {
+      "object_id": "controller_clamp_b",
+      "file": "product/production/models/controller_clamp_b.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "nozzle_mm": 0.4,
+      "layer_mm": 0.15,
+      "local_print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "units": "mm",
+      "scale_percent": 100,
+      "local_print_translation_mm": [
+        -24.9,
+        9.999999999999897,
+        -6.150000000000327
+      ],
+      "bbox_mm": [
+        6.0,
+        38.00000000000002,
+        5.050000000000222
+      ],
+      "min_z_mm": -8.881784197001252e-16,
+      "tolerance_mm": 0.01,
+      "tessellation_attempts": [
+        {
+          "tolerance_mm": 0.01,
+          "writer_return": true
+        }
+      ],
+      "exact_zero_area_facets_removed": 0,
+      "volume_mm3": 644.9052413035508,
+      "bytes": 204284,
+      "sha256": "ecdd3bde7a18aaf01ec85c3166c5a1a3310815b2de1432b1dd71fcc88a4dfafd",
+      "shape_sha256": "499c5dd75a1f03403419d5bb1f1694573eb369a2e1b8ebbb5b67a9e718597275",
+      "object_transform": {
+        "positionMm": [
+          0,
+          0,
+          6.459542420143668
+        ],
+        "rotationDeg": [
+          4,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "derivation": {
+        "method": "step_tessellation",
+        "receipt": "manufacturing/enclosure/releases/export-fa411383a0f6c23d36fed4b6df68eda5/receipt.json",
+        "step_sha256": "6d490cd297d2bd98776b914db083af3270665d0d4482ccf33df5b4c3f972d8d6"
+      },
+      "triangles": 4084,
       "collapsed_triangles_at_1e5mm": 0,
       "non_two_incidence_edges_at_1e5mm": 0
     }
@@ -1818,12 +2100,10 @@
   "printer_started": false,
   "sliced": false,
   "current_binding": {
-    "receipt": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
-    "revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
-    "export_id": "export-e9d67ce8536f1f9b0574ccf294968294",
-    "step_sha256": "2a25d479d1fcf8d9261fa256df79eda8be7058511812ad56d7365d322c386c35",
-    "method": "All 28 original meshes retained by byte hash, placement and verified export/seat-fix geometry equivalence; no retessellation in this package update",
-    "tessellation_receipt": "product/production/history/harness-tessellation-cad-receipt.json",
-    "source_compatibility_evidence": "product/cad-compatibility/verification.json"
+    "receipt": "manufacturing/enclosure/releases/export-fa411383a0f6c23d36fed4b6df68eda5/receipt.json",
+    "revision": "18faaed5c6a9c41229a5fc888c20458ccf315f3c0712424836f5007b8f745c59",
+    "export_id": "export-fa411383a0f6c23d36fed4b6df68eda5",
+    "step_sha256": "6d490cd297d2bd98776b914db083af3270665d0d4482ccf33df5b4c3f972d8d6",
+    "method": "Type-C base/top/two controller bridges tessellated; 26 unchanged meshes verified by exact shape, transform and bytes"
   }
 }

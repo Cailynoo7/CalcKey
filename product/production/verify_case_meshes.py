@@ -88,7 +88,7 @@ def verify():
     previous = json.loads((OUT / "history/before-harness-model-manifest.json").read_text())
     old = {r["object_id"]: r for r in previous["meshes"]}
     current = {r["object_id"]: r for r in model["meshes"]}
-    changed = sorted(n for n in current if current[n]["sha256"] != old[n]["sha256"])
+    changed = sorted(n for n in current if n in old and current[n]["sha256"] != old[n]["sha256"])
     assert changed == ["base", "top"]
     report = {}
     centres = {"base": [(0, -29, 2.4), (0, 23, 2.4), (-26, 2, 2.4)],
@@ -131,9 +131,21 @@ def verify():
                              "roof_and_leg_material_present": True})
         report[name] = {**checks, "bbox_from_stl_mm": size, "min_z_from_stl_mm": low[2],
                         "bridges": passages, "mesh_sha256": row["sha256"]}
+    clamp_report = {}
+    for name in ('controller_clamp_a','controller_clamp_b'):
+        row=current[name]; tris=triangles(ROOT/row['file']); checks=topology(tris)
+        assert checks['connected_surface_components']==1
+        assert all(checks[k]==0 for k in ['collapsed_triangles_at_1e5mm','non_two_incidence_edges_at_1e5mm','inconsistent_edge_orientations'])
+        clamp_report[name]={**checks,'mesh_sha256':row['sha256']}
+    row=current['base'];tris=triangles(ROOT/row['file'])
+    p=to_print(row,44.4,-9.9900469477,7.669521495)
+    width=void_bounds(tris,1,p);height=void_bounds(tris,2,p)
+    assert abs(width[1]-width[0]-9.44)<0.025
+    assert abs(height[1]-height[0]-3.66)<0.025
+    port={'width_from_stl_mm':width[1]-width[0],'height_from_stl_mm':height[1]-height[0],'profile_sampling_x_local_mm':44.4}
     return {"revision": model["revision"], "export_id": model["export_id"],
             "source_receipt": model["current_binding"]["receipt"], "changed_meshes": changed,
-            "unchanged_mesh_count": 26, "coordinate_rounding_mm": 1e-5, "results": report,
+            "unchanged_mesh_count": 26, "new_controller_clamps":clamp_report, "type_c_port":port, "coordinate_rounding_mm": 1e-5, "results": report,
             "scope": "STL surface samples and connectivity, not print accuracy, tape holding force or full flexible-wire motion.",
             "printed": False, "powered": False, "flashed": False}
 

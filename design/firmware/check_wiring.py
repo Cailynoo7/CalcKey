@@ -36,5 +36,5 @@ for col,pin in enumerate(cols):
     assert linked(f'RPU{col}','1')==['3V3']
     assert len([c for c in connections if c['from']=={'part':f'RPU{col}','pin':'2'}
                 and c['to']=={'part':'MCU','pin':f'GP{pin}'}])==1
-assert any(p.get('platform')=='raspberrypi/pico-2' for p in wiring['parts'])
+assert any(p.get('ref')=='MCU' and 'Waveshare RP2350-Plus-16MB' in p.get('name','') for p in wiring['parts'])
 print('PASS LCD GPIO/power/unused terminals, 20 switches/diodes and 4 pullups match wiring.json')

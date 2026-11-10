@@ -38,7 +38,7 @@ def verify():
     assert all(current[n]['sha256']!=old[n]['sha256'] for n in keys)
     before_harness=json.loads((OUT/'history/before-harness-model-manifest.json').read_text())
     before={m['object_id']:m for m in before_harness['meshes']}
-    assert all(current[n]['sha256']==before[n]['sha256'] for n in current if n not in {'base','top'})
+    assert all(current[n]['sha256']==before[n]['sha256'] for n in before if n not in {'base','top'})
     five=triangles(OUT/'models/key_10.stl')
     # STL is print-oriented with the cap top down: local (0,-4.6,7) -> (0,+4.6,0).
     center=first_z(five,0,4.6)
@@ -57,7 +57,7 @@ def verify():
     paths=['product/production/models/key_10.stl','product/production/models/key_16.stl']
     return {'revision':manifest['revision'],'export_id':manifest['export_id'],
             'checks':{'keycaps_with_current_legends':20,'retained_keycap_meshes':20,
-                      'updated_case_meshes':2,'unchanged_meshes':26,
+                      'updated_case_meshes':2,'new_controller_clamp_meshes':2,'unchanged_meshes':26,
                       'five_recess_depth_from_stl_mm':center-beside,
                       'five_adjacent_top_z_mm':beside,
                       'enter_recess_y_range_print_frame_mm':top_y,

@@ -3,7 +3,7 @@
 <desc>Source-derived assembly illustration; not a fabrication or 1:1 drilling template. PCB release 17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727</desc>
 <rect x="0" y="0" width="1680" height="1188" rx="0" fill="#ffffff" stroke="none" stroke-width="2"/>
 <text x="56" y="66" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="37" fill="#203346" text-anchor="start">GDM0103｜端子方向与独立五线</text>
-<text x="56" y="110" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#647787" text-anchor="start">按厂家外形图显示方向定位P1；这是HT1621B三线写接口。LCD导线直接到Pico，不经过矩阵板。</text>
+<text x="56" y="110" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="21" fill="#647787" text-anchor="start">按厂家外形图显示方向定位P1；这是HT1621B三线写接口。LCD导线直接到主控，不经过矩阵板。</text>
 <text x="1624" y="65" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#647787" text-anchor="end">3 / 4</text>
 <line x1="56" y1="135" x2="1624" y2="135" stroke="#ccd9e1" stroke-width="2" stroke-linecap="round"/>
 <text x="435" y="191" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#203346" text-anchor="middle">A  正面：显示字符朝向你</text>
@@ -80,7 +80,7 @@
 <circle cx="550" cy="642" r="5" fill="#7652a1" stroke="#7652a1" stroke-width="2"/>
 <circle cx="1105" cy="642" r="5" fill="#7652a1" stroke="#7652a1" stroke-width="2"/>
 <rect x="1105" y="617" width="490" height="47" rx="7" fill="#edf4f7" stroke="none" stroke-width="2"/>
-<text x="1128" y="649" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#7652a1" text-anchor="start">Pico 物理15 · GP11</text>
+<text x="1128" y="649" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#7652a1" text-anchor="start">主控 物理15 · GP11</text>
 <rect x="80" y="685" width="470" height="47" rx="7" fill="#edf4f7" stroke="none" stroke-width="2"/>
 <text x="103" y="717" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="25" fill="#197b8d" text-anchor="start">LCD P2 · /WR</text>
 <line x1="550" y1="710" x2="1105" y2="710" stroke="#197b8d" stroke-width="4" stroke-linecap="round"/>
@@ -88,7 +88,7 @@
 <circle cx="550" cy="710" r="5" fill="#197b8d" stroke="#197b8d" stroke-width="2"/>
 <circle cx="1105" cy="710" r="5" fill="#197b8d" stroke="#197b8d" stroke-width="2"/>
 <rect x="1105" y="685" width="490" height="47" rx="7" fill="#edf4f7" stroke="none" stroke-width="2"/>
-<text x="1128" y="717" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#197b8d" text-anchor="start">Pico 物理2 · GP1</text>
+<text x="1128" y="717" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#197b8d" text-anchor="start">主控 物理2 · GP1</text>
 <rect x="80" y="753" width="470" height="47" rx="7" fill="#edf4f7" stroke="none" stroke-width="2"/>
 <text x="103" y="785" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="25" fill="#246eae" text-anchor="start">LCD P3 · DATA</text>
 <line x1="550" y1="778" x2="1105" y2="778" stroke="#246eae" stroke-width="4" stroke-linecap="round"/>
@@ -96,7 +96,7 @@
 <circle cx="550" cy="778" r="5" fill="#246eae" stroke="#246eae" stroke-width="2"/>
 <circle cx="1105" cy="778" r="5" fill="#246eae" stroke="#246eae" stroke-width="2"/>
 <rect x="1105" y="753" width="490" height="47" rx="7" fill="#edf4f7" stroke="none" stroke-width="2"/>
-<text x="1128" y="785" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#246eae" text-anchor="start">Pico 物理1 · GP0</text>
+<text x="1128" y="785" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#246eae" text-anchor="start">主控 物理1 · GP0</text>
 <rect x="80" y="821" width="470" height="47" rx="7" fill="#edf4f7" stroke="none" stroke-width="2"/>
 <text x="103" y="853" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="25" fill="#354350" text-anchor="start">LCD P4 · VSS</text>
 <line x1="550" y1="846" x2="1105" y2="846" stroke="#354350" stroke-width="4" stroke-linecap="round"/>
@@ -104,7 +104,7 @@
 <circle cx="550" cy="846" r="5" fill="#354350" stroke="#354350" stroke-width="2"/>
 <circle cx="1105" cy="846" r="5" fill="#354350" stroke="#354350" stroke-width="2"/>
 <rect x="1105" y="821" width="490" height="47" rx="7" fill="#edf4f7" stroke="none" stroke-width="2"/>
-<text x="1128" y="853" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#354350" text-anchor="start">Pico 物理38 · GND</text>
+<text x="1128" y="853" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#354350" text-anchor="start">主控 物理38 · GND</text>
 <rect x="80" y="889" width="470" height="47" rx="7" fill="#edf4f7" stroke="none" stroke-width="2"/>
 <text x="103" y="921" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="25" fill="#c53849" text-anchor="start">LCD P5 · VDD</text>
 <line x1="550" y1="914" x2="1105" y2="914" stroke="#c53849" stroke-width="4" stroke-linecap="round"/>
@@ -112,18 +112,18 @@
 <circle cx="550" cy="914" r="5" fill="#c53849" stroke="#c53849" stroke-width="2"/>
 <circle cx="1105" cy="914" r="5" fill="#c53849" stroke="#c53849" stroke-width="2"/>
 <rect x="1105" y="889" width="490" height="47" rx="7" fill="#edf4f7" stroke="none" stroke-width="2"/>
-<text x="1128" y="921" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#c53849" text-anchor="start">Pico 物理36 · 3V3 OUT</text>
+<text x="1128" y="921" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="24" fill="#c53849" text-anchor="start">主控 物理36 · 3V3 OUT</text>
 <text x="80" y="1016" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#c53849" text-anchor="start">同一3V3节点（圆点＝相连）</text>
 <line x1="500" y1="979" x2="805" y2="979" stroke="#c53849" stroke-width="4" stroke-linecap="round"/>
 <circle cx="805" cy="979" r="6" fill="#c53849" stroke="#c53849" stroke-width="2"/>
 <polyline points="805,979 805,956 1060,956" fill="none" stroke="#c53849" stroke-width="4"/>
 <polyline points="805,979 805,1011 1060,1011" fill="none" stroke="#c53849" stroke-width="4"/>
-<text x="490" y="985" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#c53849" text-anchor="end">Pico 物理36</text>
+<text x="490" y="985" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#c53849" text-anchor="end">主控 物理36</text>
 <text x="1080" y="964" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#c53849" text-anchor="start">矩阵 J10</text>
 <text x="1080" y="1019" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#c53849" text-anchor="start">LCD P5 / VDD</text>
 <rect x="56" y="1042" width="1568" height="64" rx="9" fill="#edf4f7" stroke="none" stroke-width="2"/>
 <text x="78" y="1081" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="22" fill="#203346" text-anchor="start">P1～P5低位直焊，不装直立排针；板背焊点/首段导线突出≤1.5mm。P4接GND/物理38。</text>
 <line x1="56" y1="1137" x2="1624" y2="1137" stroke="#ccd9e1" stroke-width="2" stroke-linecap="round"/>
-<text x="56" y="1167" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="17" fill="#647787" text-anchor="start">CalcKey · MATRIX A / Pico 2 / GDM0103 · 断开USB焊装 · 非1:1加工模板</text>
-<text x="1624" y="1167" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="17" fill="#647787" text-anchor="end">PCB 17123bc08553 · 2026-11-06 · 3/4</text>
+<text x="56" y="1167" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="17" fill="#647787" text-anchor="start">CalcKey · MATRIX A / RP2350-Plus / GDM0103 · 断开USB焊装 · 非1:1加工模板</text>
+<text x="1624" y="1167" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="17" fill="#647787" text-anchor="end">PCB 17123bc08553 · 2026-11-10 · 3/4</text>
 </svg>

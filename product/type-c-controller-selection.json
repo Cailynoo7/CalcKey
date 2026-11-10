@@ -1,0 +1,343 @@
+{
+  "date": "2026-11-10",
+  "scope": "Accepted 16MB no-header replacement; CAD, wiring and firmware implementation recorded separately in type-c-integration verification.",
+  "outside_platform_index_authorized_by_user": true,
+  "preferred_replacement": {
+    "manufacturer": "Waveshare",
+    "name": "RP2350-Plus-16MB",
+    "variant": "16MB Flash, without pre-soldered headers",
+    "sku": "29761",
+    "quantity": 1,
+    "platform_ref": null,
+    "not_in_platform_index": true,
+    "manufacturer_product_url": "https://www.waveshare.net/shop/RP2350-Plus-16MB.htm",
+    "manufacturer_wiki_url": "https://www.waveshare.net/wiki/RP2350-Plus",
+    "source": "user",
+    "board_outline_mm": [
+      51,
+      21
+    ],
+    "header_row_spacing_mm": 17.78,
+    "header_pitch_mm": 2.54,
+    "usb_c_body_width_mm": 8.95,
+    "usb_c_protrusion_from_board_mm": 1.37,
+    "drawing_values_note": "Read from manufacturer mechanical image; full body/height/clearance still requires CAD STEP verification.",
+    "native_usb": true,
+    "cc_resistors": {
+      "cc1_to_gnd_ohms": 5100,
+      "cc2_to_gnd_ohms": 5100,
+      "evidence": "schematic page 1 R3/R9"
+    },
+    "existing_pin_mapping": [
+      {
+        "signal": "LCD DATA",
+        "gpio": 0,
+        "physical_pin": 1
+      },
+      {
+        "signal": "LCD WR",
+        "gpio": 1,
+        "physical_pin": 2
+      },
+      {
+        "signal": "LCD CS",
+        "gpio": 11,
+        "physical_pin": 15
+      },
+      {
+        "signal": "R0",
+        "gpio": 2,
+        "physical_pin": 4
+      },
+      {
+        "signal": "R1",
+        "gpio": 3,
+        "physical_pin": 5
+      },
+      {
+        "signal": "R2",
+        "gpio": 4,
+        "physical_pin": 6
+      },
+      {
+        "signal": "R3",
+        "gpio": 5,
+        "physical_pin": 7
+      },
+      {
+        "signal": "R4",
+        "gpio": 6,
+        "physical_pin": 9
+      },
+      {
+        "signal": "C0",
+        "gpio": 7,
+        "physical_pin": 10
+      },
+      {
+        "signal": "C1",
+        "gpio": 8,
+        "physical_pin": 11
+      },
+      {
+        "signal": "C2",
+        "gpio": 9,
+        "physical_pin": 12
+      },
+      {
+        "signal": "C3",
+        "gpio": 10,
+        "physical_pin": 14
+      },
+      {
+        "signal": "3V3 OUT",
+        "physical_pin": 36
+      },
+      {
+        "signal": "GND",
+        "physical_pin": 38
+      }
+    ],
+    "pin_evidence": "waveshare-plus-pinout.jpg and schematic page 1",
+    "sdk_board": "waveshare_rp2350_plus_16mb",
+    "sdk_2_2_0_header_sha256": "900ac3417ac8df5b537164954cac5d568b998312ac7cb66e90d390d0b73b78d3",
+    "gpio_changes_required_for_matrix_and_lcd": false,
+    "firmware_rebuild_required": true,
+    "mounting": "两只独立绝缘压桥和4颗M2×6沉孔螺钉，底盖四个边缘座；孔位不穿过主控板。",
+    "battery_connector": "Present on board, leave unconnected; no battery added to CalcKey.",
+    "usb_c_right_shell_edge_to_board_edge_mm": 6.17
+  },
+  "alternatives": [
+    {
+      "manufacturer": "WeAct Studio",
+      "model": "RP2350A_V20",
+      "variant": "4MB, no headers",
+      "board_outline_mm": [
+        51,
+        21
+      ],
+      "native_usb_type_c": true,
+      "official_step_saved": true,
+      "rank": 2,
+      "reason": "Pico-compatible pinout and body, no battery connector; however lacks original mounting holes too, and project SDK 2.2.0 has no dedicated RP2350A_V20 header. Do not use the similarly named RP2350B core header.",
+      "evidence": "Manufacturer V20 introduction PNG, schematic and dimensions PDF; local board header inventory."
+    },
+    {
+      "manufacturer": "Pimoroni",
+      "model": "Pico Plus 2",
+      "mpn": "PIM724",
+      "pcb_outline_mm": [
+        51,
+        21
+      ],
+      "overall_including_connectors_mm": [
+        53,
+        21,
+        9
+      ],
+      "rank": 3,
+      "reason": "RP2350B, 16MB Flash and 8MB PSRAM with extra connectors; more height and board-profile differences for no required calculator feature.",
+      "evidence": "Manufacturer product page and mechanical PDF."
+    },
+    {
+      "manufacturer": "Waveshare",
+      "model": "RP2350-USB-C",
+      "rank": null,
+      "rejected": true,
+      "reason": "Despite name, different compact layout with 15 exported GPIO and additional PIO USB; not 40-pin Pico-compatible replacement.",
+      "evidence": "https://docs.waveshare.com/RP2350-USB-C"
+    }
+  ],
+  "integration_remaining": [
+    "Redesign main-controller retention; do not reuse Pico two-hole screw geometry without model verification.",
+    "Reposition/check Type-C opening using actual official STEP including asymmetric socket position.",
+    "Check board underside, battery connector and USB plug clearance against PCB, cover and wire bridges.",
+    "Change CMake/build script board checks and rebuild/test firmware; do not label old Pico 2 UF2 validated for replacement.",
+    "Update formal BOM, wiring, constraints, purchasing and production handoff only as replacement implementation proceeds."
+  ],
+  "source_access_notes": [
+    "www.waveshare.com pages returned HTTP 403; used manufacturer waveshare.net pages and files.waveshare.com downloads.",
+    "api.github.com returned HTTP 403; used manufacturer GitHub web pages and raw.githubusercontent.com resources.",
+    "Waveshare wiki incorrectly calls external flash on-chip; schematic shows discrete W25Q32JVSSIQ. Treat capacity as external board Flash.",
+    "No live stock or price commitment; no order placed."
+  ],
+  "references": [
+    {
+      "file": "product/references/type-c-controllers/waveshare-rp2350-plus-schematic.pdf",
+      "source_url": "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf",
+      "sha256": "9f695f99aabd7b8f77d04e1da25335299ef2f3a2fbe1c1d612fcdad05faadff2",
+      "bytes": 455248
+    },
+    {
+      "file": "product/references/type-c-controllers/waveshare-rp2350-plus-step.zip",
+      "source_url": "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus_STEP.zip",
+      "sha256": "c63006a1730a1b23821a874196299d983fc95d0859bde7686014434275d37db0",
+      "bytes": 4736014
+    },
+    {
+      "file": "product/references/type-c-controllers/waveshare-rp2350-plus.step",
+      "source_url": "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus_STEP.zip",
+      "sha256": "650977cc5a1bbeaab4eabdefd3f547642a1c34a5a8e5cbf49ac6f8b575c979f4",
+      "bytes": 28834772
+    },
+    {
+      "file": "product/references/type-c-controllers/waveshare-plus-dimensions.jpg",
+      "source_url": "https://www.waveshare.net/w/upload/4/43/RP2350-Plus-details-3-1.jpg",
+      "sha256": "15769f10730e1fe20f9ca324a9f24154d534efd859e39b059525475a318efadd",
+      "bytes": 44106
+    },
+    {
+      "file": "product/references/type-c-controllers/waveshare-plus-mechanical.jpg",
+      "source_url": "https://www.waveshare.net/w/upload/d/d8/RP2350-Plus-details-size.jpg",
+      "sha256": "545f1b778412bc326beddf50a85194d95be48c0dfd42ce28565d380dc6f99b68",
+      "bytes": 112304
+    },
+    {
+      "file": "product/references/type-c-controllers/waveshare-plus-pinout.jpg",
+      "source_url": "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+      "sha256": "73cec7af97a4413bd2cd55c50dedf2a3f2fdb0acf199ce4f97ac16c204e6d2c4",
+      "bytes": 257012
+    },
+    {
+      "file": "product/references/type-c-controllers/weact-v20-schematic.pdf",
+      "source_url": "https://raw.githubusercontent.com/WeActStudio/WeActStudio.RP2350ACoreBoard/main/RP2350A_V20/HDK/V20_SCH.pdf",
+      "sha256": "71786636efc0f9f667960398a3d586b6deddf60c12ae2840025aefe687b9c5b6",
+      "bytes": 1236060
+    },
+    {
+      "file": "product/references/type-c-controllers/weact-v20-dimensions.pdf",
+      "source_url": "https://raw.githubusercontent.com/WeActStudio/WeActStudio.RP2350ACoreBoard/main/RP2350A_V20/HDK/%E5%B0%BA%E5%AF%B8%E5%9B%BE.pdf",
+      "sha256": "18697f13c867584fdb58bb4bd8f7ca2c8540f2880bd3a74cfe2e00add20eac66",
+      "bytes": 302153
+    },
+    {
+      "file": "product/references/type-c-controllers/weact-v20-introduction.png",
+      "source_url": "https://raw.githubusercontent.com/WeActStudio/WeActStudio.RP2350ACoreBoard/main/RP2350A_V20/HDK/%E4%BB%8B%E7%BB%8D%20-%201.png",
+      "sha256": "c30d1b6ba49ee36584fbc76970d789d13571a298d187bcd8030cb6efd29ecf4d",
+      "bytes": 905588
+    },
+    {
+      "file": "product/references/type-c-controllers/weact-v20.step",
+      "source_url": "https://raw.githubusercontent.com/WeActStudio/WeActStudio.RP2350ACoreBoard/main/RP2350A_V20/HDK/V20_3D.step",
+      "sha256": "c1aa93f4bcf3d623b6670113d7fbedbcee22987d4e9bc5ef01a5ed500b04bbaa",
+      "bytes": 23472149
+    },
+    {
+      "file": "product/references/type-c-controllers/pimoroni-pico-plus2-mechanical.pdf",
+      "source_url": "https://cdn.shopify.com/s/files/1/0174/1800/files/pimoroni-pico-plus-2-mechanical-diagram.pdf?v=1725452657",
+      "sha256": "8a265a01f188e749dc653f240d83d6bca8136ce119e7755cd00942bbe0819d91",
+      "bytes": 84986
+    }
+  ],
+  "ordered": false,
+  "printed": false,
+  "powered": false,
+  "flashed": false,
+  "firmware_compiled_for_replacement": false,
+  "mechanical_fit_verified": false,
+  "original_research_preferred_replacement": {
+    "manufacturer": "Waveshare",
+    "name": "RP2350-Plus",
+    "variant": "4MB Flash, without pre-soldered headers",
+    "sku": "29370",
+    "quantity": 1,
+    "platform_ref": null,
+    "not_in_platform_index": true,
+    "manufacturer_product_url": "https://www.waveshare.net/shop/RP2350-Plus.htm",
+    "manufacturer_wiki_url": "https://www.waveshare.net/wiki/RP2350-Plus",
+    "source": "default",
+    "board_outline_mm": [
+      51,
+      21
+    ],
+    "header_row_spacing_mm": 17.78,
+    "header_pitch_mm": 2.54,
+    "usb_c_body_width_mm": 8.95,
+    "usb_c_protrusion_from_board_mm": 1.37,
+    "usb_c_center_to_right_board_edge_mm": 6.17,
+    "drawing_values_note": "Read from manufacturer mechanical image; full body/height/clearance still requires CAD STEP verification.",
+    "native_usb": true,
+    "cc_resistors": {
+      "cc1_to_gnd_ohms": 5100,
+      "cc2_to_gnd_ohms": 5100,
+      "evidence": "schematic page 1 R3/R9"
+    },
+    "existing_pin_mapping": [
+      {
+        "signal": "LCD DATA",
+        "gpio": 0,
+        "physical_pin": 1
+      },
+      {
+        "signal": "LCD WR",
+        "gpio": 1,
+        "physical_pin": 2
+      },
+      {
+        "signal": "LCD CS",
+        "gpio": 11,
+        "physical_pin": 15
+      },
+      {
+        "signal": "R0",
+        "gpio": 2,
+        "physical_pin": 4
+      },
+      {
+        "signal": "R1",
+        "gpio": 3,
+        "physical_pin": 5
+      },
+      {
+        "signal": "R2",
+        "gpio": 4,
+        "physical_pin": 6
+      },
+      {
+        "signal": "R3",
+        "gpio": 5,
+        "physical_pin": 7
+      },
+      {
+        "signal": "R4",
+        "gpio": 6,
+        "physical_pin": 9
+      },
+      {
+        "signal": "C0",
+        "gpio": 7,
+        "physical_pin": 10
+      },
+      {
+        "signal": "C1",
+        "gpio": 8,
+        "physical_pin": 11
+      },
+      {
+        "signal": "C2",
+        "gpio": 9,
+        "physical_pin": 12
+      },
+      {
+        "signal": "C3",
+        "gpio": 10,
+        "physical_pin": 14
+      },
+      {
+        "signal": "3V3 OUT",
+        "physical_pin": 36
+      },
+      {
+        "signal": "GND",
+        "physical_pin": 38
+      }
+    ],
+    "pin_evidence": "waveshare-plus-pinout.jpg and schematic page 1",
+    "sdk_board": "waveshare_rp2350_plus_4mb",
+    "sdk_2_2_0_header_sha256": "9b7161d58122e6bd65bc6bf46524e8664e01302cf1d657d52df1874ec194a674",
+    "gpio_changes_required_for_matrix_and_lcd": false,
+    "firmware_rebuild_required": true,
+    "mounting": "No original Pico four mounting holes shown in manufacturer mechanical image; current two M2 screw mounting must be redesigned, pending STEP check.",
+    "battery_connector": "Present on board, leave unconnected; no battery added to CalcKey."
+  }
+}

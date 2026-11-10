@@ -1,30 +1,30 @@
 {
-  "prepared_date": "2026-11-06",
+  "prepared_date": "2026-11-10",
   "pcb_release_id": "17123bc08553010640eaa377912e790923ec95a26949b1e102fa73c7f9b2c727",
   "devices": 1,
   "quantity_policy": "Installed quantities are per one device; spare buying quantities are defaults only. Existing conforming items may be reused.",
-  "source_bom_sha256": "082d557798668b949353446e8c36873c26d1a323d3ed54d627e5c00f8375a91d",
-  "source_requirements_sha256": "eeb4210757032741d8e6a72ad7b16969b2ed32ae5ee72f4384d45e3d02f58229",
-  "source_bom_rows": 28,
-  "printed_parts": 28,
+  "source_bom_sha256": "005602c8a160c05fa760821735287cc5e70efe9ceda4eabf9bcb14e2f4497934",
+  "source_requirements_sha256": "bbebf85b417675d389cec31f61bc7d5d213ad83247849ea6f2dae69f8d151c86",
+  "source_bom_rows": 31,
+  "printed_parts": 30,
   "price_or_stock_quote": false,
   "order_placed": false,
   "items": [
     {
       "category": "保留模块与外接线",
       "bom_item_ids": "controller",
-      "name": "Raspberry Pi Pico 2",
-      "manufacturer": "Raspberry Pi",
-      "mpn": "",
+      "name": "Waveshare RP2350-Plus-16MB，无排针版",
+      "manufacturer": "Waveshare",
+      "mpn": "RP2350-Plus-16MB",
       "lcsc_code": "",
       "per_device_quantity": 1,
       "installed_unit": "块",
       "recommended_purchase_quantity": 1,
       "purchase_unit": "块",
       "procurement_quantity_source": "default",
-      "product_url": "",
+      "product_url": "https://www.waveshare.net/shop/RP2350-Plus-16MB.htm",
       "image_url": "",
-      "notes": "已有符合规格的器件可复用，避免重复购买。"
+      "notes": "RP2350A、16MB外部Flash、原生USB Type-C、无排针；SKU 29761；电池座悬空不使用。"
     },
     {
       "category": "保留模块与外接线",
@@ -109,7 +109,7 @@
     {
       "category": "保留模块与外接线",
       "bom_item_ids": "usb_cable",
-      "name": "USB-A 至 Micro-USB-B USB 2.0 数据线，1m",
+      "name": "USB-A至USB-C USB 2.0数据线，1m",
       "manufacturer": "",
       "mpn": "",
       "lcsc_code": "",
@@ -120,7 +120,7 @@
       "procurement_quantity_source": "default",
       "product_url": "",
       "image_url": "",
-      "notes": "已有符合规格的器件可复用，避免重复购买。 USB-A至Micro-B数据线，设备侧线头≤12×8mm。"
+      "notes": "USB-A至USB-C、1m、支持USB数据与5V供电；默认设备侧胶壳不超过12.35×6.5mm，USB-C金属头应能在插座前缘内缩0.3881mm时完全就位；实物插头仍待测。"
     },
     {
       "category": "整机辅件",
@@ -168,7 +168,7 @@
       "procurement_quantity_source": "default",
       "product_url": "",
       "image_url": "",
-      "notes": "使用含五处固定桥的STEP及原主壳/底盖STL，mm、100%；本次仅修复CAD源码接口，全部28件网格经几何与哈希核对复用，按打印准备说明设置局部支撑，不另做试片。"
+      "notes": "采用Type-C版30件模型清单，mm/100%；主壳、底盖和两只压桥来自当前STEP，其余26件经形状、安装位置和字节核对复用。"
     },
     {
       "category": "打印件",
@@ -184,7 +184,7 @@
       "procurement_quantity_source": "default",
       "product_url": "",
       "image_url": "",
-      "notes": "使用含五处固定桥的STEP及原主壳/底盖STL，mm、100%；本次仅修复CAD源码接口，全部28件网格经几何与哈希核对复用，按打印准备说明设置局部支撑，不另做试片。"
+      "notes": "采用Type-C版30件模型清单，mm/100%；主壳、底盖和两只压桥来自当前STEP，其余26件经形状、安装位置和字节核对复用。"
     },
     {
       "category": "整机辅件",
@@ -221,18 +221,18 @@
     {
       "category": "整机辅件",
       "bom_item_ids": "board_screws",
-      "name": "ISO 4762 M2-0.4x4mm 内六角圆柱头螺钉",
+      "name": "ISO 4762 M2-0.4×6mm 内六角圆柱头螺钉",
       "manufacturer": "",
-      "mpn": "ISO4762-M2x4",
+      "mpn": "ISO4762-M2x6",
       "lcsc_code": "",
-      "per_device_quantity": 2,
+      "per_device_quantity": 4,
       "installed_unit": "颗",
-      "recommended_purchase_quantity": 4,
+      "recommended_purchase_quantity": 6,
       "purchase_unit": "颗",
       "procurement_quantity_source": "default",
       "product_url": "",
       "image_url": "",
-      "notes": ""
+      "notes": "两只主控绝缘压桥各2颗，沉孔安装；kit实际选定M2×6，不穿过PCB。"
     },
     {
       "category": "整机辅件",
@@ -441,12 +441,60 @@
       "product_url": "",
       "image_url": "",
       "notes": "5片裸板只组装1片；不采购贴片服务或钢网。"
+    },
+    {
+      "category": "Type-C主控固定",
+      "bom_item_ids": "controller_clamp_a",
+      "name": "CalcKey主控绝缘压桥A，PLA，FDM打印",
+      "manufacturer": "CalcKey",
+      "mpn": "enclosure:controller_clamp_a",
+      "lcsc_code": "",
+      "per_device_quantity": 1,
+      "installed_unit": "件",
+      "recommended_purchase_quantity": 1,
+      "purchase_unit": "件",
+      "procurement_quantity_source": "default",
+      "product_url": "",
+      "image_url": "",
+      "notes": "采用Type-C版30件模型清单，mm/100%；主壳、底盖和两只压桥来自当前STEP，其余26件经形状、安装位置和字节核对复用。"
+    },
+    {
+      "category": "Type-C主控固定",
+      "bom_item_ids": "controller_clamp_b",
+      "name": "CalcKey主控绝缘压桥B，PLA，FDM打印",
+      "manufacturer": "CalcKey",
+      "mpn": "enclosure:controller_clamp_b",
+      "lcsc_code": "",
+      "per_device_quantity": 1,
+      "installed_unit": "件",
+      "recommended_purchase_quantity": 1,
+      "purchase_unit": "件",
+      "procurement_quantity_source": "default",
+      "product_url": "",
+      "image_url": "",
+      "notes": "采用Type-C版30件模型清单，mm/100%；主壳、底盖和两只压桥来自当前STEP，其余26件经形状、安装位置和字节核对复用。"
+    },
+    {
+      "category": "Type-C主控固定",
+      "bom_item_ids": "controller_insulation_pads",
+      "name": "绝缘丙烯酸胶片，0.15mm厚，6×1.4mm",
+      "manufacturer": "",
+      "mpn": "",
+      "lcsc_code": "",
+      "per_device_quantity": 8,
+      "installed_unit": "片",
+      "recommended_purchase_quantity": 8,
+      "purchase_unit": "片",
+      "procurement_quantity_source": "default",
+      "product_url": "",
+      "image_url": "",
+      "notes": "4片位于主控边缘座面，4片位于压桥夹持面；避开裸铜焊点，不用厚泡棉替代。"
     }
   ],
   "firmware_version": "0.2.0",
   "assembly_documents": "product/matrix-assembly-diagrams",
   "keycap_cad_revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029",
   "keycap_export_id": "export-b41154b115ba9c61a396ed39b36889a5",
-  "enclosure_cad_revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
-  "enclosure_export_id": "export-e9d67ce8536f1f9b0574ccf294968294"
+  "enclosure_cad_revision": "18faaed5c6a9c41229a5fc888c20458ccf315f3c0712424836f5007b8f745c59",
+  "enclosure_export_id": "export-fa411383a0f6c23d36fed4b6df68eda5"
 }

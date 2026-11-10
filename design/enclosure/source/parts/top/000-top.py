@@ -26,7 +26,8 @@ for x,y in b.key_xy:
     panel-=Pos(x,y,b.base_h-0.5)*Box(clip_pocket,clip_pocket,b.top_t-clip_land+0.5,align=(Align.CENTER,Align.CENTER,Align.MIN))
 panel-=Pos(0,b.oled_y,b.base_h-1)*extrude(RectangleRounded(window_w,window_d,1),b.top_t+2)
 panel-=Pos(0,b.oled_y,b.base_h-0.1)*extrude(RectangleRounded(pocket_w,pocket_d,1.2),lens_pocket_depth+0.1)
-panel-=Pos(b.case_w/2,b.pico_y,b.floor-0.1)*Box(12,b.usb_w,b.usb_z+b.usb_h/2-b.floor+0.2,align=(Align.CENTER,Align.CENTER,Align.MIN))
+panel-=b.port_service_bay
+panel-=b.controller_wall_service_relief
 assert b.wall-engrave>=2.0
 outer_edges=[]
 for edge in panel.edges():

@@ -2,8 +2,8 @@
   "parts": [
     {
       "ref": "MCU",
-      "platform": "raspberrypi/pico-2",
-      "quantity": 1
+      "quantity": 1,
+      "name": "Waveshare RP2350-Plus-16MB，无排针版，SKU 29761"
     },
     {
       "ref": "LCD",
@@ -12,7 +12,7 @@
     },
     {
       "ref": "USB",
-      "name": "电脑USB接口或5V USB-A充电器，通过USB-A至Micro-B数据线连接；两者择一",
+      "name": "电脑USB或5V USB充电器，经USB数据线接主控原生Type-C口；择一供电",
       "quantity": 1
     },
     {
@@ -217,22 +217,22 @@
     },
     {
       "ref": "RPU0",
-      "name": "10kΩ ±1% 1/8W 轴向上拉电阻",
+      "name": "UNI-ROYAL 0805W8F1002T5E，10kΩ ±1%，0805，1/8W",
       "quantity": 1
     },
     {
       "ref": "RPU1",
-      "name": "10kΩ ±1% 1/8W 轴向上拉电阻",
+      "name": "UNI-ROYAL 0805W8F1002T5E，10kΩ ±1%，0805，1/8W",
       "quantity": 1
     },
     {
       "ref": "RPU2",
-      "name": "10kΩ ±1% 1/8W 轴向上拉电阻",
+      "name": "UNI-ROYAL 0805W8F1002T5E，10kΩ ±1%，0805，1/8W",
       "quantity": 1
     },
     {
       "ref": "RPU3",
-      "name": "10kΩ ±1% 1/8W 轴向上拉电阻",
+      "name": "UNI-ROYAL 0805W8F1002T5E，10kΩ ±1%，0805，1/8W",
       "quantity": 1
     }
   ],
@@ -249,10 +249,11 @@
       "bus": "power",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.radiomag.com.de/datasheets/gdm0103_specification.pdf#page=8"
+        "https://www.radiomag.com.de/datasheets/gdm0103_specification.pdf#page=8",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
-      "notes": "Pico物理pin38 → LCD P4 VSS；三线位操作写入，不是I2C；3.3V，低位短软线直焊，焊后突出板背≤1.5mm，150mm维护余量。LCD P6 /INT、P7 BL+、P8 BL-、P9 Ctrl分别绝缘不接。"
+      "notes": "RP2350-Plus物理pin38 → LCD P4 VSS；三线位操作写入，不是I2C；3.3V，低位短软线直焊，焊后突出板背≤1.5mm，150mm维护余量。LCD P6 /INT、P7 BL+、P8 BL-、P9 Ctrl分别绝缘不接。"
     },
     {
       "from": {
@@ -266,10 +267,11 @@
       "bus": "power",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.radiomag.com.de/datasheets/gdm0103_specification.pdf#page=8"
+        "https://www.radiomag.com.de/datasheets/gdm0103_specification.pdf#page=8",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
-      "notes": "Pico物理pin36 → LCD P5 VDD；三线位操作写入，不是I2C；3.3V，低位短软线直焊，焊后突出板背≤1.5mm，150mm维护余量。LCD P6 /INT、P7 BL+、P8 BL-、P9 Ctrl分别绝缘不接。"
+      "notes": "RP2350-Plus物理pin36 → LCD P5 VDD；三线位操作写入，不是I2C；3.3V，低位短软线直焊，焊后突出板背≤1.5mm，150mm维护余量。LCD P6 /INT、P7 BL+、P8 BL-、P9 Ctrl分别绝缘不接。"
     },
     {
       "from": {
@@ -283,10 +285,11 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.radiomag.com.de/datasheets/gdm0103_specification.pdf#page=8"
+        "https://www.radiomag.com.de/datasheets/gdm0103_specification.pdf#page=8",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
-      "notes": "Pico物理pin15 → LCD P1 /CS；三线位操作写入，不是I2C；3.3V，低位短软线直焊，焊后突出板背≤1.5mm，150mm维护余量。LCD P6 /INT、P7 BL+、P8 BL-、P9 Ctrl分别绝缘不接。"
+      "notes": "RP2350-Plus物理pin15 → LCD P1 /CS；三线位操作写入，不是I2C；3.3V，低位短软线直焊，焊后突出板背≤1.5mm，150mm维护余量。LCD P6 /INT、P7 BL+、P8 BL-、P9 Ctrl分别绝缘不接。"
     },
     {
       "from": {
@@ -300,10 +303,11 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.radiomag.com.de/datasheets/gdm0103_specification.pdf#page=8"
+        "https://www.radiomag.com.de/datasheets/gdm0103_specification.pdf#page=8",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
-      "notes": "Pico物理pin2 → LCD P2 /WR；三线位操作写入，不是I2C；3.3V，低位短软线直焊，焊后突出板背≤1.5mm，150mm维护余量。LCD P6 /INT、P7 BL+、P8 BL-、P9 Ctrl分别绝缘不接。"
+      "notes": "RP2350-Plus物理pin2 → LCD P2 /WR；三线位操作写入，不是I2C；3.3V，低位短软线直焊，焊后突出板背≤1.5mm，150mm维护余量。LCD P6 /INT、P7 BL+、P8 BL-、P9 Ctrl分别绝缘不接。"
     },
     {
       "from": {
@@ -317,10 +321,11 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.radiomag.com.de/datasheets/gdm0103_specification.pdf#page=8"
+        "https://www.radiomag.com.de/datasheets/gdm0103_specification.pdf#page=8",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
-      "notes": "Pico物理pin1 → LCD P3 DATA；三线位操作写入，不是I2C；3.3V，低位短软线直焊，焊后突出板背≤1.5mm，150mm维护余量。LCD P6 /INT、P7 BL+、P8 BL-、P9 Ctrl分别绝缘不接。"
+      "notes": "RP2350-Plus物理pin1 → LCD P3 DATA；三线位操作写入，不是I2C；3.3V，低位短软线直焊，焊后突出板背≤1.5mm，150mm维护余量。LCD P6 /INT、P7 BL+、P8 BL-、P9 Ctrl分别绝缘不接。"
     },
     {
       "from": {
@@ -334,9 +339,10 @@
       "bus": "usb",
       "via": "other",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=10"
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
-      "notes": "原生Micro-B数据口内置连接，不另焊测试点"
+      "notes": "原生Type-C数据口内置连接，不另焊测试点"
     },
     {
       "from": {
@@ -350,9 +356,10 @@
       "bus": "usb",
       "via": "other",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=10"
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
-      "notes": "原生Micro-B数据口内置连接，不另焊测试点"
+      "notes": "原生Type-C数据口内置连接，不另焊测试点"
     },
     {
       "from": {
@@ -366,9 +373,10 @@
       "bus": "power",
       "via": "other",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=16"
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
-      "notes": "原生Micro-B口及板载D1 → VSYS；不得短接VBUS和VSYS"
+      "notes": "原生Type-C口及板载D1 → VSYS；不得短接VBUS和VSYS"
     },
     {
       "from": {
@@ -382,9 +390,10 @@
       "bus": "power",
       "via": "other",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=16"
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
-      "notes": "原生Micro-B口内置地连接"
+      "notes": "原生Type-C口内置地连接"
     },
     {
       "from": {
@@ -398,8 +407,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+        "https://www.gateron.com/products/gateron-ks-9-switch-set",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "C0列总线；GP7输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -432,8 +442,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "R0行总线，二极管色环朝行；扫描此行时GP2输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -449,8 +460,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+        "https://www.gateron.com/products/gateron-ks-9-switch-set",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "C1列总线；GP8输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -483,8 +495,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "R0行总线，二极管色环朝行；扫描此行时GP2输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -500,8 +513,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+        "https://www.gateron.com/products/gateron-ks-9-switch-set",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "C2列总线；GP9输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -534,8 +548,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "R0行总线，二极管色环朝行；扫描此行时GP2输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -551,8 +566,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+        "https://www.gateron.com/products/gateron-ks-9-switch-set",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "C3列总线；GP10输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -585,8 +601,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "R0行总线，二极管色环朝行；扫描此行时GP2输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -602,8 +619,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+        "https://www.gateron.com/products/gateron-ks-9-switch-set",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "C0列总线；GP7输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -636,8 +654,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "R1行总线，二极管色环朝行；扫描此行时GP3输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -653,8 +672,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+        "https://www.gateron.com/products/gateron-ks-9-switch-set",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "C1列总线；GP8输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -687,8 +707,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "R1行总线，二极管色环朝行；扫描此行时GP3输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -704,8 +725,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+        "https://www.gateron.com/products/gateron-ks-9-switch-set",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "C2列总线；GP9输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -738,8 +760,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "R1行总线，二极管色环朝行；扫描此行时GP3输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -755,8 +778,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+        "https://www.gateron.com/products/gateron-ks-9-switch-set",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "C3列总线；GP10输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -789,8 +813,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "R1行总线，二极管色环朝行；扫描此行时GP3输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -806,8 +831,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+        "https://www.gateron.com/products/gateron-ks-9-switch-set",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "C0列总线；GP7输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -840,8 +866,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "R2行总线，二极管色环朝行；扫描此行时GP4输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -857,8 +884,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+        "https://www.gateron.com/products/gateron-ks-9-switch-set",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "C1列总线；GP8输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -891,8 +919,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "R2行总线，二极管色环朝行；扫描此行时GP4输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -908,8 +937,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+        "https://www.gateron.com/products/gateron-ks-9-switch-set",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "C2列总线；GP9输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -942,8 +972,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "R2行总线，二极管色环朝行；扫描此行时GP4输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -959,8 +990,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+        "https://www.gateron.com/products/gateron-ks-9-switch-set",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "C3列总线；GP10输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -993,8 +1025,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "R2行总线，二极管色环朝行；扫描此行时GP4输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -1010,8 +1043,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+        "https://www.gateron.com/products/gateron-ks-9-switch-set",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "C0列总线；GP7输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -1044,8 +1078,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "R3行总线，二极管色环朝行；扫描此行时GP5输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -1061,8 +1096,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+        "https://www.gateron.com/products/gateron-ks-9-switch-set",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "C1列总线；GP8输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -1095,8 +1131,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "R3行总线，二极管色环朝行；扫描此行时GP5输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -1112,8 +1149,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+        "https://www.gateron.com/products/gateron-ks-9-switch-set",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "C2列总线；GP9输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -1146,8 +1184,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "R3行总线，二极管色环朝行；扫描此行时GP5输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -1163,8 +1202,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+        "https://www.gateron.com/products/gateron-ks-9-switch-set",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "C3列总线；GP10输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -1197,8 +1237,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "R3行总线，二极管色环朝行；扫描此行时GP5输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -1214,8 +1255,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+        "https://www.gateron.com/products/gateron-ks-9-switch-set",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "C0列总线；GP7输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -1248,8 +1290,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "R4行总线，二极管色环朝行；扫描此行时GP6输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -1265,8 +1308,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+        "https://www.gateron.com/products/gateron-ks-9-switch-set",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "C1列总线；GP8输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -1299,8 +1343,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "R4行总线，二极管色环朝行；扫描此行时GP6输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -1316,8 +1361,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+        "https://www.gateron.com/products/gateron-ks-9-switch-set",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "C2列总线；GP9输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -1350,8 +1396,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "R4行总线，二极管色环朝行；扫描此行时GP6输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -1367,8 +1414,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.gateron.com/products/gateron-ks-9-switch-set"
+        "https://www.gateron.com/products/gateron-ks-9-switch-set",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "C3列总线；GP10输入由外部10k上拉；所有同列开关一端相连；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -1401,8 +1449,9 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5",
-        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1"
+        "https://www.vishay.com/docs/81857/1n4148.pdf#page=1",
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "R4行总线，二极管色环朝行；扫描此行时GP6输出低，其他行高阻；矩阵至主控柔性主线留150mm维护余量，断电后底盖可下放30mm；完全分离需断开焊线。"
     },
@@ -1418,7 +1467,8 @@
       "bus": "power",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=10"
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "上拉电阻一端 → 3V3"
     },
@@ -1434,7 +1484,8 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5"
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "上拉电阻另一端 → C0列线"
     },
@@ -1450,7 +1501,8 @@
       "bus": "power",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=10"
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "上拉电阻一端 → 3V3"
     },
@@ -1466,7 +1518,8 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5"
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "上拉电阻另一端 → C1列线"
     },
@@ -1482,7 +1535,8 @@
       "bus": "power",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=10"
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "上拉电阻一端 → 3V3"
     },
@@ -1498,7 +1552,8 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5"
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "上拉电阻另一端 → C2列线"
     },
@@ -1514,7 +1569,8 @@
       "bus": "power",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=10"
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "上拉电阻一端 → 3V3"
     },
@@ -1530,7 +1586,8 @@
       "bus": "gpio",
       "via": "solder",
       "evidence": [
-        "https://pip.raspberrypi.com/documents/RP-008299-DS#page=5"
+        "https://www.waveshare.net/w/upload/c/ca/RP2350-Plus-details-inter.jpg",
+        "https://files.waveshare.com/wiki/RP2350-Plus/RP2350_Plus.pdf#page=1"
       ],
       "notes": "上拉电阻另一端 → C3列线"
     }

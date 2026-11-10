@@ -2,7 +2,7 @@
 #include <array>
 #include <cstdint>
 namespace calckey {
-// Pin evidence: enclosure wiring.json; Pico RP-008299-DS p5;
+// Pin evidence: enclosure wiring.json; Waveshare RP2350-Plus pinout / RP2350_Plus.pdf p1;
 // GDM0103 manual PDF p8 (P1 /CS, P2 /WR, P3 DATA).
 inline constexpr std::array<unsigned,5> row_pins={2,3,4,5,6};
 inline constexpr std::array<unsigned,4> column_pins={7,8,9,10};

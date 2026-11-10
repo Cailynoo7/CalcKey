@@ -328,15 +328,12 @@
     "case_motion_rechecked": true
   },
   "current_assembly_binding": {
-    "receipt": "manufacturing/enclosure/releases/export-e9d67ce8536f1f9b0574ccf294968294/receipt.json",
-    "revision": "2eb56aacf9c6b0addd5214ae11923067f8b2d31bba71151d294eb014e255a7a9",
-    "export_id": "export-e9d67ce8536f1f9b0574ccf294968294",
-    "step_sha256": "2a25d479d1fcf8d9261fa256df79eda8be7058511812ad56d7365d322c386c35",
-    "method": "All 28 original meshes retained by byte hash, placement and verified export/seat-fix geometry equivalence; no retessellation in this package update",
-    "tessellation_receipt": "product/production/history/harness-tessellation-cad-receipt.json",
-    "source_compatibility_evidence": "product/cad-compatibility/verification.json",
+    "receipt": "manufacturing/enclosure/releases/export-fa411383a0f6c23d36fed4b6df68eda5/receipt.json",
+    "revision": "18faaed5c6a9c41229a5fc888c20458ccf315f3c0712424836f5007b8f745c59",
+    "export_id": "export-fa411383a0f6c23d36fed4b6df68eda5",
+    "step_sha256": "6d490cd297d2bd98776b914db083af3270665d0d4482ccf33df5b4c3f972d8d6",
     "measurement_revision": "79bb3920607b22d93adb45046fa462c6ba5a68dd72b7da308167e3e5d5f81029",
-    "baseline_receipt": "product/production/history/before-harness-cad-receipt.json",
+    "baseline_receipt": "product/production/history/before-typec-cad-receipt.json",
     "all_20_keycap_shapes_unchanged": true
   },
   "case_check_compatibility_binding": {

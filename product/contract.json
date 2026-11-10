@@ -2,12 +2,12 @@
   "version": 2,
   "artifact_level": "product_kit",
   "deliverable_intent": "manufacturing_package",
-  "summary": "89×130×21mm紧凑USB数字键盘/计算器，Pico 2、20个KS-9三脚红轴及打印键帽、GDM0103八位LCD；独立底盖与两档翻折角柱脚；交付正式整机设计，用户跳过打印试配，先不烧录。",
+  "summary": "89×130×21mm紧凑USB数字键盘/计算器，Waveshare RP2350-Plus-16MB、20个KS-9三脚红轴及打印键帽、GDM0103八位LCD；独立底盖与两档翻折角柱脚；交付正式整机设计，用户跳过打印试配，先不烧录。",
   "required_interfaces": [
     {
       "id": "controller_fit",
       "kind": "internal_fit",
-      "description": "固定选定的现成主控板，保留原生 USB 插拔、数据线弯曲和维护空间",
+      "description": "固定Waveshare RP2350-Plus-16MB无排针主控，核对Type-C插拔和底盖维护空间。",
       "source": "contract_interface",
       "required": true
     },
@@ -28,7 +28,7 @@
     {
       "id": "power_fit",
       "kind": "internal_fit",
-      "description": "原生USB电源与数据接口，外接5V充电器；不设置电池、仓盖或电池开关",
+      "description": "原生USB Type-C供电与USB数据接口，外接5V充电器或电脑；板载电池座不接。",
       "source": "contract_interface",
       "required": true
     },
@@ -50,8 +50,8 @@
     {
       "id": "pico2_vendor",
       "source": "experience_pack_recommendation",
-      "description": "Raspberry Pi Pico 2 官方文档；主控能力依据，机械与引脚证据在选型阶段补齐",
-      "path": "product/references/rp-008299-ds.pdf"
+      "description": "Waveshare RP2350-Plus系列原厂STEP，16MB无排针版共用机械接口；原pico2_vendor标识保留为接口引用。",
+      "path": "product/references/type-c-controllers/waveshare-rp2350-plus.step"
     },
     {
       "id": "gdm0103_vendor",
@@ -67,7 +67,7 @@
     }
   ],
   "assembly_story": {
-    "installation": "两只后脚放入底盖轴耳，以打印销轴贯穿并在外端用少量环氧胶固定盲帽，胶不得进入转动面；固定Pico、边缘托架上粘接的GDM0103 LCD和保护片、完成矩阵接线后，从底部合壳拧4颗M3，前端贴两只D12×2mm硅胶垫。",
+    "installation": "两只后脚放入底盖轴耳，以打印销轴贯穿并在外端用少量环氧胶固定盲帽，胶不得进入转动面；以两只绝缘压桥及4颗M2固定Type-C主控、边缘托架上粘接的GDM0103 LCD和保护片、完成矩阵接线后，从底部合壳拧4颗M3，前端贴两只D12×2mm硅胶垫。",
     "maintenance": "拔USB、抬起或翻转设备；底部4颗M3卸下后底盖携主控、LCD及完整翻脚机构沿局部负Z移出30mm；矩阵留150mm柔性余量，完全分离需断开焊线。抬起键盘后再切换两个后脚，两脚都到限位后落桌。",
     "user_access": [
       "机械按键",

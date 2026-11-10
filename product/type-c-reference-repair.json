@@ -1,0 +1,115 @@
+{
+  "method": "Only USB shell leaf: fix topology then exact analytic-to-NURBS conversion; retain XCAF names/colors/assembly labels",
+  "source_sha256": "650977cc5a1bbeaab4eabdefd3f547642a1c34a5a8e5cbf49ac6f8b575c979f4",
+  "source": "product/references/type-c-controllers/waveshare-rp2350-plus.step",
+  "source_leaf_high_precision": {
+    "volume_mm3": 65.63874618356128,
+    "area_mm2": 245.3917882522712
+  },
+  "repaired_leaf_high_precision": {
+    "volume_mm3": 65.6387419049071,
+    "area_mm2": 245.3917848563487
+  },
+  "source_minus_repaired_mm3": 0,
+  "repaired_minus_source_mm3": 0,
+  "maximum_board_bbox_coordinate_delta_mm": 0.0,
+  "solids": 122,
+  "roundtrip_valid": [
+    true,
+    true
+  ],
+  "unchanged_other_solids": 121,
+  "cad_source_replayed": false,
+  "written": true,
+  "output": "product/references/type-c-controllers/waveshare-rp2350-plus-nurbs-repaired.step",
+  "output_sha256": "a6dc199a3a4e298685d6ed8e8ca74fd55980cce419e5dcee973fb04c4cd22006",
+  "before_revision": "17314e9fed192360dda5e6b94297dc7408d5b44b49f4310cb473d41486c82d34",
+  "after_revision": "18faaed5c6a9c41229a5fc888c20458ccf315f3c0712424836f5007b8f745c59",
+  "unchanged_existing_cad_source_files": 38,
+  "changed_existing_cad_source_files": [
+    "design/enclosure/source/design.json",
+    "design/enclosure/source/parts/imports/001-pico2.py"
+  ],
+  "cad_compare_result": {
+    "added": [],
+    "changed": [
+      "pico2"
+    ],
+    "removed": [],
+    "topologyChanges": [
+      {
+        "objectId": "pico2",
+        "topologyChanged": false,
+        "geometryChanged": true,
+        "bboxChanged": false,
+        "countDelta": {
+          "faceCount": 0,
+          "edgeCount": 0,
+          "vertexCount": 0,
+          "shapeCount": 0
+        }
+      }
+    ]
+  },
+  "cad_compare_interpretation": "Only imported controller representation reported changed; other 34 objects unchanged. Representation hash changes on analytic-to-NURBS conversion, with empty two-way geometric difference and unchanged bbox.",
+  "port_mm": {
+    "width": 9.44,
+    "height": 3.66,
+    "local_center": [
+      44.5,
+      -9.9900469477,
+      7.669521495
+    ]
+  },
+  "controller_placement": {
+    "position_mm": [
+      -8.2,
+      0.08024337,
+      12.47980496
+    ],
+    "rotation_deg": [
+      4,
+      0,
+      -90
+    ]
+  },
+  "assembly_roundtrip": {
+    "solids": 565,
+    "valid": true,
+    "method": "read-only Workbench in-memory STEP round trip after actual import"
+  },
+  "assembly_checks": {
+    "base_to_controller_clearance_mm": 0.15,
+    "matrix_to_controller_clearance_mm": 3.8989,
+    "bottom_cover_travel_mm": 30,
+    "path_step_mm": 0.5,
+    "mesh_tolerance_mm": 0.02,
+    "path_first_overlap": null
+  },
+  "handoff": {
+    "export_id": "export-b7f82e97cb895f74ebf77fba5318d5a4",
+    "revision": "18faaed5c6a9c41229a5fc888c20458ccf315f3c0712424836f5007b8f745c59",
+    "state_hash": "db0ac745e0a40297cf7769e1f801ea527b9291fec3a96cba9d56a3c991aa5c77",
+    "status_from_receipt": "handoff",
+    "elapsed_seconds": 22.858,
+    "receipt": "manufacturing/enclosure/releases/export-b7f82e97cb895f74ebf77fba5318d5a4/receipt.json",
+    "receipt_sha256": "7e5c84b5f5a91674e5bba09cabe07c5c2ae52200eac246c0f468c606f9e5ece3",
+    "model": "manufacturing/enclosure/releases/export-b7f82e97cb895f74ebf77fba5318d5a4/model.step",
+    "model_sha256": "6d490cd297d2bd98776b914db083af3270665d0d4482ccf33df5b4c3f972d8d6",
+    "undeclared_overlap_pairs": 0,
+    "over_budget_overlap_pairs": 0
+  },
+  "physical_actions": {
+    "printed": false,
+    "powered": false,
+    "flashed": false
+  },
+  "manufacturing_zip_regenerated": false,
+  "git_committed": false,
+  "current_package_handoff": {
+    "receipt": "manufacturing/enclosure/releases/export-fa411383a0f6c23d36fed4b6df68eda5/receipt.json",
+    "revision": "18faaed5c6a9c41229a5fc888c20458ccf315f3c0712424836f5007b8f745c59",
+    "export_id": "export-fa411383a0f6c23d36fed4b6df68eda5",
+    "step_sha256": "6d490cd297d2bd98776b914db083af3270665d0d4482ccf33df5b4c3f972d8d6"
+  }
+}

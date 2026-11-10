@@ -1,0 +1,1 @@
+publish("pico2", asset("design/enclosure/source/assets/a6dc199a3a4e298685d6ed8e8ca74fd55980cce419e5dcee973fb04c4cd22006.step"), "RP2350 Plus 16MB")

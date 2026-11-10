@@ -17,11 +17,11 @@
       "source": "user"
     },
     "base_board": {
-      "value": "raspberrypi/pico-2",
-      "source": "default"
+      "value": "Waveshare RP2350-Plus-16MB，无排针版，SKU 29761；用户指定、平台索引外器件",
+      "source": "user"
     },
     "host_interface": {
-      "value": "USB HID 标准数字键盘，采用主控板原生 USB 数据接口",
+      "value": "USB HID标准数字键盘，采用Waveshare主控板原生Type-C USB数据接口",
       "source": "default"
     },
     "host_os": {
@@ -134,11 +134,11 @@
       "source": "user"
     },
     "external_power_supply": {
-      "value": "通过主控原生Micro-USB-B口输入5V；配USB-A输出5V/1A充电器与数据线，可复用已有适配器",
+      "value": "主控原生USB Type-C口输入5V；默认USB-A输出5V/1A适配器及USB-A至USB-C数据线；板载电池座不接，不增加电池。",
       "source": "default"
     },
     "power_behavior": {
-      "value": "USB接电脑并完成枚举时默认数字键盘；仅接USB充电器时默认本机计算器；断开USB即关机，不含电池或充电电路",
+      "value": "USB接电脑并完成枚举时默认数字键盘；仅接USB充电器时默认本机计算器；断开USB即关机，不配电池，主控板载充电支路不使用。",
       "source": "default"
     },
     "enclosure_body_height_target_mm": {
@@ -166,7 +166,7 @@
       "source": "default"
     },
     "usb_port_position": {
-      "value": "Pico横放按键下方，原生Micro-B从右侧接入",
+      "value": "Waveshare RP2350-Plus-16MB横放按键下方，Type-C从机身右侧接入；按原厂STEP核对口位与插头凹位。",
       "source": "default"
     },
     "foot_pad_thickness_mm": {
@@ -304,7 +304,7 @@
       "source": "user"
     },
     "matrix_pcb": {
-      "value": "保留Pico 2和GDM0103，设计20键矩阵PCB并核对与现有外壳的装配。",
+      "value": "保留GDM0103和现有20键矩阵PCB；主控替换为Waveshare RP2350-Plus-16MB，GPIO关系保持并重新核对外壳。",
       "source": "user"
     },
     "matrix_pcb_implementation": {
@@ -349,6 +349,10 @@
         "five_digit_center_y_mm": 0.6
       },
       "source": "default"
+    },
+    "external_usb_connector": {
+      "value": "机身外露接口采用USB Type-C母座，兼顾USB 2.0 HID数据与5V供电，正反插可用；不增加电池或充电功能。",
+      "source": "user"
     }
   },
   "open_questions": []

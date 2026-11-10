@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run host tests, build Pico 2 firmware, validate UF2, and stage the release."""
+"""Run host tests, build Waveshare RP2350-Plus-16MB firmware, validate UF2, and stage the release."""
 import datetime
 import hashlib
 import json
@@ -17,7 +17,7 @@ ROOT=HERE.parents[1]
 SOURCE=HERE/'source'
 VERSION=re.search(r'project\(calckey VERSION ([0-9.]+)',(SOURCE/'CMakeLists.txt').read_text()).group(1)
 CACHE=ROOT/'.work/firmware-tools'
-BUILD=ROOT/'.work/firmware-build'
+BUILD=ROOT/'.work/firmware-build-waveshare16'
 TESTS=ROOT/'.work/firmware-tests'
 RELEASE=HERE/'release'/('v'+VERSION)
 TESTS.mkdir(parents=True,exist_ok=True)
@@ -53,11 +53,11 @@ for test,extra in [('core_tests',[]),('lcd_tests',['-I',HERE/'tests/fakes',SOURC
 run([sys.executable,HERE/'tests/decimal_oracle.py'])
 run([sys.executable,HERE/'tests/lcd_decimal_oracle.py'])
 run([cmake,'-S',SOURCE,'-B',BUILD,'-G','Ninja','-DCMAKE_MAKE_PROGRAM='+str(ninja),
-     '-DPICO_BOARD=pico2','-DPICO_SDK_PATH='+str(sdk),'-DPICO_TOOLCHAIN_PATH='+str(compiler),
+     '-DPICO_BOARD=waveshare_rp2350_plus_16mb','-DPICO_SDK_PATH='+str(sdk),'-DPICO_TOOLCHAIN_PATH='+str(compiler),
      '-DPICO_TINYUSB_PATH='+str(tinyusb),'-Dpicotool_DIR='+str(picotool_dir),'-DCMAKE_BUILD_TYPE=Release'])
 run([cmake,'--build',BUILD,'--parallel','6'])
 info=run([picotool_dir/'picotool','info','-a',BUILD/'calckey.uf2'])
-assert "'rp2350-arm-s'" in info and 'pico2' in info and 'CalcKey' in info and VERSION in info
+assert "'rp2350-arm-s'" in info and 'waveshare_rp2350_plus_16mb' in info and 'CalcKey' in info and VERSION in info
 size=run([compiler/'bin/arm-none-eabi-size',BUILD/'calckey.elf'])
 uf2=(BUILD/'calckey.uf2').read_bytes()
 assert len(uf2)%512==0
@@ -81,7 +81,7 @@ for i in range(total):
         ignored_blocks+=1
     else:
         assert family==0xe48bff59 and flags==0x2000
-        assert 0x10000000<=address<0x10400000 and address%256==0
+        assert 0x10000000<=address<0x11000000 and address%256==0
         addresses.append(address);payload_blocks.append((block,blocks))
 assert ignored_blocks<=1 and len(set(addresses))==len(addresses)
 assert payload_blocks==[(i,len(addresses)) for i in range(len(addresses))]
@@ -89,7 +89,7 @@ RELEASE.mkdir(parents=True,exist_ok=True)
 artifacts={}
 for suffix in ('uf2','elf','bin'):
     source=BUILD/f'calckey.{suffix}'
-    target=RELEASE/f'calckey-pico2-v{VERSION}.{suffix}'
+    target=RELEASE/f'calckey-rp2350-plus-16mb-v{VERSION}.{suffix}'
     shutil.copy2(source,target)
     artifacts[target.name]={'bytes':target.stat().st_size,'sha256':hashlib.sha256(target.read_bytes()).hexdigest()}
 inputs={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest()
@@ -98,7 +98,7 @@ for p in [ROOT/'design/enclosure/source/wiring.json',ROOT/'product/requirements.
           ROOT/'product/references/gdm0103-specification.pdf',ROOT/'product/references/ht1621-v340.pdf']:
     inputs[str(p.relative_to(ROOT))]=hashlib.sha256(p.read_bytes()).hexdigest()
 counts=[int(n) for c in commands for n in re.findall(r'PASS (\d+)',c['output'])]
-report={'version':VERSION,'board':'pico2','platform':'rp2350-arm-s',
+report={'version':VERSION,'board':'waveshare_rp2350_plus_16mb','flash_size_bytes':16*1024*1024,'platform':'rp2350-arm-s',
         'display':'GDM0103 / HT1621B, 3.3V','lcd_gpio':{'data':0,'wr':1,'cs':11},
         'display_cells':8,'flashed':False,'display_ack_available':False,
         'built_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
@@ -121,4 +121,4 @@ with zipfile.ZipFile(package,'w',zipfile.ZIP_DEFLATED) as z:
     for item in [ROOT/'product/requirements.json',ROOT/'design/enclosure/source/wiring.json',
                  ROOT/'product/lcd-upgrade.md']:
         z.write(item,f'CalcKey-v{VERSION}/project/'+str(item.relative_to(ROOT)))
-print('Verified Pico 2 UF2 and staged release artifacts.')
+print('Verified Waveshare RP2350-Plus-16MB UF2 and staged release artifacts.')
