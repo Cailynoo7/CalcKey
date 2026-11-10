@@ -1,0 +1,75 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-10T03:46:31.687Z",
+  "lcsc_code": "C339046",
+  "manufacturer": "CJT(长江连接器)",
+  "manufacturer_part_number": "A1257H-10P",
+  "description": "Connector Housing 10 Position 1.25mm Pitch Single Row",
+  "category": "胶壳(线对板/线对线)",
+  "package": "P=1.25mm",
+  "jlcpcb_part_class": "unknown",
+  "parameters": {
+    "Pitch": "1.25mm",
+    "Gender": "Male",
+    "Flame Retardant Rating": "UL94V-0",
+    "Number of Rows": "1",
+    "With Wings": "Without Fins",
+    "Operating Temperature": "-40°C~+105°C",
+    "Holes Structure": "1x10P",
+    "Plastic Material": "PA66",
+    "Color": "White",
+    "Number of PINs Per Row": "10",
+    "With Locker": "Locking"
+  },
+  "lcsc_stock": 76,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 0.5628,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.4428,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.3828,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.0923,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.0726,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.0628,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.0554,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.0495,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0466,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/316484.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/091caf015cfe36f8964d5886d8432c5f.pdf?productCode=C339046",
+  "datasheet_file": "references/suppliers/c339046/c339046-datasheet.pdf"
+}

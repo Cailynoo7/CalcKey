@@ -2,9 +2,14 @@
   "schemaVersion": 1,
   "entries": [
     {
-      "file": "calckey-mint-cover.png",
+      "file": "8fa5844386364da2.jpg",
       "kind": "render",
+      "generated": true
+    },
+    {
+      "file": "calckey-mint-cover.png",
       "caption": "CalcKey 浅薄荷绿机身配色效果图",
+      "kind": "render",
       "design": "enclosure"
     }
   ]

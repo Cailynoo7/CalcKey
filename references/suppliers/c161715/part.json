@@ -1,0 +1,80 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-10T03:47:50.406Z",
+  "lcsc_code": "C161715",
+  "manufacturer": "JST",
+  "manufacturer_part_number": "SMR-05V-B",
+  "description": "Connector Housing 5 Position 2.5mm Pitch Single Row SM Series PA6 -25°C~+85°C",
+  "category": "胶壳(线对板/线对线)",
+  "package": "P=2.5mm",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Pitch": "2.5mm",
+    "Flame Retardant Rating": "UL94V-0",
+    "Number of Rows": "1",
+    "With Wings": "Without Fins",
+    "Operating Temperature": "-25°C~+85°C",
+    "Reference Series": "SM",
+    "Holes Structure": "1x5P",
+    "Color": "Black",
+    "Plastic Material": "PA6",
+    "Number of PINs Per Row": "5",
+    "With Locker": "Locking"
+  },
+  "lcsc_stock": 406,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 0.7917,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.625,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.5416,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.4467,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.1304,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.1029,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.0892,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.0736,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2500,
+      "unitPrice": 0.0654,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0612,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/173096.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/8cb360384cfdb73c6d07424ad221c077.pdf?productCode=C161715",
+  "datasheet_file": "references/suppliers/c161715/c161715-datasheet.pdf"
+}

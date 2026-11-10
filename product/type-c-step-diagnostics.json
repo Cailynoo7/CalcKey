@@ -1,0 +1,221 @@
+{
+  "purpose": "Locate STEP handoff timeout without changing committed geometry or generating production artifacts",
+  "revision": "17314e9fed192360dda5e6b94297dc7408d5b44b49f4310cb473d41486c82d34",
+  "cad_state_hash": "654e42c09ee5483bd4f33e2fdca884d6c5210cac4530d2391f8a1d94ecfd86b8",
+  "unchanged_evidence": {
+    "source_file_count": 40,
+    "source_tree_bytes_hash_before": "16db27f3579ab88c7ad7a7a14eedf474d5e737e948f65b55c853306f66ab4102",
+    "source_tree_bytes_hash_after": "16db27f3579ab88c7ad7a7a14eedf474d5e737e948f65b55c853306f66ab4102",
+    "source_file_sha256": {
+      "design/enclosure/source/assets/29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d.step": "29f4d60beb57a869d233939c629de23319458d225f0be6644fd86258533e3c9d",
+      "design/enclosure/source/assets/650977cc5a1bbeaab4eabdefd3f547642a1c34a5a8e5cbf49ac6f8b575c979f4.step": "650977cc5a1bbeaab4eabdefd3f547642a1c34a5a8e5cbf49ac6f8b575c979f4",
+      "design/enclosure/source/assets/d49ada10d893cfcb07cb4abced0a0a0cadca4c4150f153d874268ca06171a24f.step": "d49ada10d893cfcb07cb4abced0a0a0cadca4c4150f153d874268ca06171a24f",
+      "design/enclosure/source/assets/e2474c585d2693bb16227489b4c195a5ffbfa208a89e1ee4a6da6b9e6b1f5ef2.step": "e2474c585d2693bb16227489b4c195a5ffbfa208a89e1ee4a6da6b9e6b1f5ef2",
+      "design/enclosure/source/design.json": "fa2f5daa84cdd35021580e0e3bb2aa39e5386a2b12edbc9230e0164fb30d5f03",
+      "design/enclosure/source/parts/base/000-base.py": "9857225159e0a004f0988a9411e3858ae59fb623f99456e28908b8742eb7c0c1",
+      "design/enclosure/source/parts/controller_clamp_a/000-controller_clamp_a.py": "12c6bb971b7de68aca3a39a8137380765b23d6c9f12d45694bdff1101bcd795d",
+      "design/enclosure/source/parts/controller_clamp_b/000-controller_clamp_b.py": "4c4da25438afe6da6edf4041d86978bb92cbfaa3348683be60e72bee86aabe2c",
+      "design/enclosure/source/parts/hardware/000-hardware.py": "a234c384e8450dee1fc7522b5985c8a3b56f15e037db5346ac95f2b56e5a0f32",
+      "design/enclosure/source/parts/hinge_axle_left/000-hinge_axle_left.py": "40c2aa0ed12c6b766b926f69644b40ae34728d58b0d7cd90677b0294124c080f",
+      "design/enclosure/source/parts/hinge_axle_right/000-hinge_axle_right.py": "27ab835acf24d0a1e28f16fa85c865c4df381263b8eed2c0d23f42de5e0168bf",
+      "design/enclosure/source/parts/hinge_cap_left/000-hinge_cap_left.py": "7616f169b66d7bc4b8244e49c19ae7e02c285f130dd10bc77ac89fccf9288a82",
+      "design/enclosure/source/parts/hinge_cap_right/000-hinge_cap_right.py": "ced4fdb435ede99efbad2a773f478fe8bd08934590c6cda268668e59afac17aa",
+      "design/enclosure/source/parts/imports/000-matrix_pcb.py": "44a3cb596ccdd750e4544de45d79a6652de5648e51902e4d0185632b4d2dfd1e",
+      "design/enclosure/source/parts/imports/001-pico2.py": "60ba42915fe79322f9745eb94cfa43d47f8cee12639c085da94db8e54cede2fd",
+      "design/enclosure/source/parts/keycap_02/000-keycap_02.py": "f31c4e7f49dcd55fdb0d43e80ef00126c27e9d111211f536b65e4177095a02d0",
+      "design/enclosure/source/parts/keycap_03/000-keycap_03.py": "b100d70a1659cbd99a4d5affeda0b10d1aaeede3c302a1d14745d006b86d803d",
+      "design/enclosure/source/parts/keycap_04/000-keycap_04.py": "bc2372cc68c13817aab70a41ce7ec972071cfd7d0102f08747c73b8d0c5cb211",
+      "design/enclosure/source/parts/keycap_05/000-keycap_05.py": "bae8b312bcd7d5eb92eadf090232e9d0b8e3e8e64e33ea8265e794a7139cf867",
+      "design/enclosure/source/parts/keycap_06/000-keycap_06.py": "52f2e634fa50df55715363ab170dba352d9cf0f7f305628258ccd8b2c7468002",
+      "design/enclosure/source/parts/keycap_07/000-keycap_07.py": "6d96b90a0c9f2b76b3fa865da88b2759f520e18d885e3ecd7273c85d7f367990",
+      "design/enclosure/source/parts/keycap_08/000-keycap_08.py": "43f056e4312e2c195035f2abd52530d48a2c669386cc5b856b81d9c07b9aa1ba",
+      "design/enclosure/source/parts/keycap_09/000-keycap_09.py": "ad09dc592efecf85d35cf9e7ea18260782a2187aabf8c16021a6f25e10c91598",
+      "design/enclosure/source/parts/keycap_10/000-keycap_10.py": "dccc012e781e064af02b80319374da8c6be78d8ceca1f5740dfdfa200e49a782",
+      "design/enclosure/source/parts/keycap_11/000-keycap_11.py": "4b1da42321c82a0439eeceffdebe97d03803de22d04e48bcb4248fff7412cf43",
+      "design/enclosure/source/parts/keycap_12/000-keycap_12.py": "e3d2253b831e70755bd57dd72dd3639eb15996ce13aa4ec79d8cd8a0efcba1d5",
+      "design/enclosure/source/parts/keycap_13/000-keycap_13.py": "e5fb52890153b10ed90ce0f5f55112796ca4ad510166e7053434b8c15d0d96ac",
+      "design/enclosure/source/parts/keycap_14/000-keycap_14.py": "51b4ad12d242e7aa0d469691b3a364d240ec7f0abb75ae4ffd2d3a74684e9853",
+      "design/enclosure/source/parts/keycap_15/000-keycap_15.py": "b4fb141c3824aa8b5936a25a15bebe0b0bf0a80e25cea284d41bda11b6eee4d1",
+      "design/enclosure/source/parts/keycap_16/000-keycap_16.py": "d60721b2802ecd494ae2549f4d44d4f2677ff60dc85b0ae081242d38c3080ad7",
+      "design/enclosure/source/parts/keycap_17/000-keycap_17.py": "8e7e53ebe8daf6e853c51ffc91add0dbed16b41cad0e03e2ad5d2fa23ba748e2",
+      "design/enclosure/source/parts/keycap_18/000-keycap_18.py": "cfb6dffa88bff29519d54193954b60eca32d20e8ea87dc041f425213f9818752",
+      "design/enclosure/source/parts/keycap_19/000-keycap_19.py": "a7ee8627074bb956e5320c6e9cfbdfd539a2ba58932a8e37abf5ae6b41a69ea8",
+      "design/enclosure/source/parts/keycap_20/000-keycap_20.py": "dfdc2d40f7d27f8a6272621d5cd71f6bba9fa1ef2822357a349d533d7117eee6",
+      "design/enclosure/source/parts/keycaps/000-keycaps.py": "743479890b23be5cdcf79dfc0cdffe5e9c22be94b2aba7d81f357ec2578aef89",
+      "design/enclosure/source/parts/rear_foot_left/000-rear_foot_left.py": "66104a09850759b66d5a40acebbfe3a57d8b669f4d2f21704585a00d1a86763d",
+      "design/enclosure/source/parts/rear_foot_right/000-rear_foot_right.py": "b741e17896928fb86d392403eaf9e577b2a54c6476a554d05bcaa92e998c8863",
+      "design/enclosure/source/parts/screen_lens/000-screen_lens.py": "fa8278a96e401a9f046e9998631fded0b95af6c325dc5ecbb9f73f513fa4a3eb",
+      "design/enclosure/source/parts/top/000-top.py": "93fd0aaef9934e9cc2323f9494f9db8f14d8ba241736009202b08269a6091e1e",
+      "design/enclosure/source/wiring.json": "971f141830cee5b17721e2f3e3cce99e9df8be33373712ba7d627fbb8630b603"
+    },
+    "opening_width_height_mm": [
+      9.44,
+      3.66
+    ],
+    "cad_parameters_placements_and_imports_changed": false
+  },
+  "method": "Read-only CAD inspector on committed objects. OpenCASCADE STEPControl and STEPCAF serializers tested in io.BytesIO. Build123d serializer tested with its writer output redirected only to RAM within the isolated inspector. No source replay, persistent geometry mutation, file export, or published model replacement.",
+  "inspection": [
+    {
+      "object": "base",
+      "solids": 1,
+      "faces": 367,
+      "edges": 944,
+      "valid_before": true
+    },
+    {
+      "object": "top",
+      "solids": 1,
+      "faces": 443,
+      "edges": 1155,
+      "valid_before": true
+    },
+    {
+      "object": "pico2",
+      "solids": 122,
+      "faces": 8957,
+      "edges": 23551,
+      "valid_before": true
+    },
+    {
+      "object": "matrix_pcb",
+      "solids": 404,
+      "faces": 15199,
+      "edges": 40477,
+      "valid_before": true
+    }
+  ],
+  "individual_stepcontrol_roundtrips": [
+    {
+      "object": "base",
+      "bytes": 1345730,
+      "seconds": {
+        "transfer": 0.048,
+        "write": 0.014,
+        "parse": 0.027,
+        "read_transfer": 0.056,
+        "validate": 0.028
+      },
+      "valid_after": true
+    },
+    {
+      "object": "top",
+      "bytes": 1736284,
+      "seconds": {
+        "transfer": 0.04,
+        "write": 0.017,
+        "parse": 0.034,
+        "read_transfer": 0.071,
+        "validate": 0.035
+      },
+      "valid_after": true
+    },
+    {
+      "object": "pico2",
+      "bytes": 33235152,
+      "seconds": {
+        "transfer": 0.853,
+        "write": 0.341,
+        "parse": 0.669,
+        "read_transfer": 1.362,
+        "validate": 1.485
+      },
+      "valid_after": false
+    },
+    {
+      "object": "matrix_pcb",
+      "bytes": 70718568,
+      "seconds": {
+        "transfer": 1.23,
+        "write": 0.765,
+        "parse": 1.398,
+        "read_transfer": 2.752,
+        "validate": 1.66
+      },
+      "valid_after": true
+    }
+  ],
+  "build123d_xde_document_seconds": {
+    "base": 0.019,
+    "pico2": 0.817,
+    "matrix_pcb": 0.824
+  },
+  "full_build123d_memory_test": {
+    "objects": 35,
+    "solids_after": 565,
+    "bytes": 49467556,
+    "document_and_transfer_seconds": 1.498,
+    "write_seconds": 0.559,
+    "read_seconds_excluding_validation": 3.098,
+    "valid_after": false
+  },
+  "negative_control": {
+    "excluded_only_in_temporary_memory_test": "pico2",
+    "committed_design_still_contains_controller": true,
+    "bytes": 81086803,
+    "solids_after": 443,
+    "write_seconds": 2.302,
+    "read_and_validate_seconds": 6.902,
+    "valid_after": true,
+    "serializer": "STEPControl",
+    "manufacturing_delivery": false
+  },
+  "localized_failure": {
+    "import_object": "pico2",
+    "display_part": "Waveshare RP2350-Plus-16MB",
+    "vendor_child": "Type_C1",
+    "solid_index_zero_based": 16,
+    "source_and_readback_solids": 122,
+    "invalid_readback_solid_volume_mm3": 65.63854607976528,
+    "world_bounds_mm": {
+      "min": [
+        36.761928876215244,
+        -14.665784087373815,
+        10.92700536060936
+      ],
+      "max": [
+        43.8119174131505,
+        -6.277809142919063,
+        14.911368945616404
+      ]
+    },
+    "invalid_faces": [
+      {
+        "index_zero_based": 565,
+        "surface": "plane",
+        "area_mm2": 0.09758073580374398
+      },
+      {
+        "index_zero_based": 566,
+        "surface": "cone",
+        "area_mm2": 0.17122152042134908
+      },
+      {
+        "index_zero_based": 612,
+        "surface": "cone",
+        "area_mm2": 0.17122152601602944
+      }
+    ],
+    "face_status": "BRepCheck_UnorientableShape",
+    "face_indices_note": "Indices refer only to this in-memory STEPControl readback, not stable CAD topology references",
+    "source_asset_sha256": "650977cc5a1bbeaab4eabdefd3f547642a1c34a5a8e5cbf49ac6f8b575c979f4"
+  },
+  "conclusions": {
+    "confirmed": "Current vendor controller USB shell loses valid topology on STEP round trip. Other committed objects pass the negative control. Standard serialization and readback finish in seconds in isolation.",
+    "timeout_phase": "Not fully identified: previous handoff returned only cad_workbench_timeout:300000, with no phase timing. These memory tests are not the complete handoff pipeline and do not prove which validation/postprocessing step consumed 300s.",
+    "not_concluded": [
+      "Do not attribute timeout solely to face count or opening complexity",
+      "Do not claim the exact retry/healing stage was measured",
+      "Do not claim handoff is repaired or verified",
+      "Do not deliver the negative-control model with controller missing"
+    ]
+  },
+  "follow_up": "Repair only the vendor STEP topology or obtain an equivalent valid vendor mechanical model, prove geometric equivalence before import, and complete exact-revision handoff. If timeout persists, phase-level handoff diagnostics are needed; the exposed tools currently supply no such option.",
+  "cad_handoff_observed": "export-required",
+  "physical_actions": {
+    "printed": false,
+    "powered": false,
+    "flashed": false
+  },
+  "git_committed": false
+}

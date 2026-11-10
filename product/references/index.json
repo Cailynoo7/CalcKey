@@ -205,6 +205,90 @@
       "share": false
     },
     {
+      "file": "type-c-controllers/pimoroni-pico-plus2-mechanical.pdf",
+      "sha256": "8a265a01f188e749dc653f240d83d6bca8136ce119e7755cd00942bbe0819d91",
+      "bytes": 84986,
+      "addedAt": "2026-11-10T02:00:03.206Z",
+      "share": false
+    },
+    {
+      "file": "type-c-controllers/waveshare-plus-dimensions.jpg",
+      "sha256": "15769f10730e1fe20f9ca324a9f24154d534efd859e39b059525475a318efadd",
+      "bytes": 44106,
+      "addedAt": "2026-11-10T02:00:55.253Z",
+      "share": false
+    },
+    {
+      "file": "type-c-controllers/waveshare-plus-mechanical.jpg",
+      "sha256": "545f1b778412bc326beddf50a85194d95be48c0dfd42ce28565d380dc6f99b68",
+      "bytes": 112304,
+      "addedAt": "2026-11-10T02:01:07.775Z",
+      "share": false
+    },
+    {
+      "file": "type-c-controllers/waveshare-plus-pinout.jpg",
+      "sha256": "73cec7af97a4413bd2cd55c50dedf2a3f2fdb0acf199ce4f97ac16c204e6d2c4",
+      "bytes": 257012,
+      "addedAt": "2026-11-10T02:01:07.775Z",
+      "share": false
+    },
+    {
+      "file": "type-c-controllers/waveshare-rp2350-plus-nurbs-repaired.step",
+      "sha256": "a6dc199a3a4e298685d6ed8e8ca74fd55980cce419e5dcee973fb04c4cd22006",
+      "bytes": 27626207,
+      "addedAt": "2026-11-10T04:35:58.920Z",
+      "share": false
+    },
+    {
+      "file": "type-c-controllers/waveshare-rp2350-plus-schematic.pdf",
+      "sha256": "9f695f99aabd7b8f77d04e1da25335299ef2f3a2fbe1c1d612fcdad05faadff2",
+      "bytes": 455248,
+      "addedAt": "2026-11-10T01:59:17.510Z",
+      "share": false
+    },
+    {
+      "file": "type-c-controllers/waveshare-rp2350-plus-step.zip",
+      "sha256": "c63006a1730a1b23821a874196299d983fc95d0859bde7686014434275d37db0",
+      "bytes": 4736014,
+      "addedAt": "2026-11-10T02:01:07.778Z",
+      "share": false
+    },
+    {
+      "file": "type-c-controllers/waveshare-rp2350-plus.step",
+      "sha256": "650977cc5a1bbeaab4eabdefd3f547642a1c34a5a8e5cbf49ac6f8b575c979f4",
+      "bytes": 28834772,
+      "addedAt": "2026-11-10T02:01:07.796Z",
+      "share": false
+    },
+    {
+      "file": "type-c-controllers/weact-v20-dimensions.pdf",
+      "sha256": "18697f13c867584fdb58bb4bd8f7ca2c8540f2880bd3a74cfe2e00add20eac66",
+      "bytes": 302153,
+      "addedAt": "2026-11-10T01:59:58.673Z",
+      "share": false
+    },
+    {
+      "file": "type-c-controllers/weact-v20-introduction.png",
+      "sha256": "c30d1b6ba49ee36584fbc76970d789d13571a298d187bcd8030cb6efd29ecf4d",
+      "bytes": 905588,
+      "addedAt": "2026-11-10T01:59:58.674Z",
+      "share": false
+    },
+    {
+      "file": "type-c-controllers/weact-v20-schematic.pdf",
+      "sha256": "71786636efc0f9f667960398a3d586b6deddf60c12ae2840025aefe687b9c5b6",
+      "bytes": 1236060,
+      "addedAt": "2026-11-10T01:59:58.675Z",
+      "share": false
+    },
+    {
+      "file": "type-c-controllers/weact-v20.step",
+      "sha256": "c1aa93f4bcf3d623b6670113d7fbedbcee22987d4e9bc5ef01a5ed500b04bbaa",
+      "bytes": 23472149,
+      "addedAt": "2026-11-10T02:00:01.588Z",
+      "share": false
+    },
+    {
       "file": "vishay-1n4148.pdf",
       "sha256": "aefe85400a427ed886a4e1c88205ceabb9f9b38044b29c6acee4bb00146a44b7",
       "bytes": 93384,

@@ -1,0 +1,164 @@
+{
+  "scope": "Evaluation only; no connector added to CAD, PCB, released BOM or wiring",
+  "design_revision": "17314e9fed192360dda5e6b94297dc7408d5b44b49f4310cb473d41486c82d34",
+  "preferred_architecture": "One keyed locking inline 10-circuit crimp connector between matrix and controller; preserve PCB and GPIO",
+  "primary_candidate": {
+    "family": "JST SM 2.5mm",
+    "housing_pair": [
+      {
+        "mpn": "SMR-10V-B",
+        "lcsc": "C566663",
+        "quantity": 1,
+        "stock_observed": 0
+      },
+      {
+        "mpn": "SMP-10V-BC",
+        "lcsc": "C595196",
+        "quantity": 1,
+        "stock_observed": 428
+      }
+    ],
+    "contacts": [
+      {
+        "mpn": "SYM-001T-P0.6",
+        "quantity": 10
+      },
+      {
+        "mpn": "SHF-001T-0.8BS",
+        "quantity": 10
+      }
+    ],
+    "source_pdf": "references/suppliers/c566663/c566663-datasheet.pdf",
+    "source_pdf_pages": [
+      1,
+      2,
+      4
+    ],
+    "mated_length_mm": 22.9,
+    "body_width_mm": 28,
+    "mated_height_with_latch_mm": 8.7,
+    "wire_awg_range": [
+      28,
+      22
+    ],
+    "wire_insulation_od_mm": [
+      1.2,
+      1.8
+    ],
+    "existing_wire_restriction": "26AWG insulation OD must be 1.2 to 1.3mm to satisfy connector and existing wire routing simultaneously",
+    "rating_note": "3A maximum family rating; not an allowed product load or permission to hot plug",
+    "procurement_state": "Proposal only, housing stock risk; no order"
+  },
+  "alternatives": [
+    {
+      "name": "Two 5-circuit JST SM pairs",
+      "housing_pairs": [
+        "SMR-05V-B / C161715",
+        "SMP-05V-BC / C385124"
+      ],
+      "reason": "Both housing sides observed stocked; separate rows and columns/power",
+      "risks": [
+        "Two interchangeable identical 5P plugs can be confused; reverse housing genders or add distinct physical keying before adoption",
+        "Requires two exact placements and wire service paths; not verified"
+      ]
+    },
+    {
+      "name": "CJT A1257H-10P / A1257WR-S-10P board-to-wire 1.25mm family",
+      "housing_lcsc": "C339046",
+      "reason": "Compact latched board connector alternative",
+      "risks": [
+        "Requires new PCB footprint and release; existing J1-J10 are separated solder points, not a header footprint",
+        "A1257-TP terminal supports 28-32AWG and insulation OD at most 1mm; existing 26AWG is incompatible",
+        "Not recommended as a drop-in change"
+      ]
+    },
+    {
+      "name": "CJT A1256H-10P / C339021",
+      "decision": "Do not confuse with inline pair; board-to-wire family, not directly a flying male/female cable connector"
+    }
+  ],
+  "space_probe": {
+    "type": "Temporary rectangular clearance probe, not CAD geometry or exact connector model",
+    "local_center_mm": [
+      -24,
+      -29,
+      7
+    ],
+    "size_mm": [
+      24,
+      35,
+      9
+    ],
+    "mesh_tolerance_mm": 0.02,
+    "clearance_mm": {
+      "base": 0.1,
+      "matrix_pcb": 0.31,
+      "top": 1.0597,
+      "controller": 3.796
+    },
+    "interpretation": "Nominal static space only, very little tolerance height. Does not reserve occupied flexible wire loops or validate latch travel, finger access, wire exit/bend, actual molding dimensions, strain relief or extraction."
+  },
+  "proposed_pin_map": [
+    {
+      "pin": 1,
+      "matrix_pad": "J1"
+    },
+    {
+      "pin": 2,
+      "matrix_pad": "J2"
+    },
+    {
+      "pin": 3,
+      "matrix_pad": "J3"
+    },
+    {
+      "pin": 4,
+      "matrix_pad": "J4"
+    },
+    {
+      "pin": 5,
+      "matrix_pad": "J5"
+    },
+    {
+      "pin": 6,
+      "matrix_pad": "J6"
+    },
+    {
+      "pin": 7,
+      "matrix_pad": "J7"
+    },
+    {
+      "pin": 8,
+      "matrix_pad": "J8"
+    },
+    {
+      "pin": 9,
+      "matrix_pad": "J9"
+    },
+    {
+      "pin": 10,
+      "matrix_pad": "J10"
+    }
+  ],
+  "service_sequence": [
+    "Unplug USB",
+    "Support bottom cover, remove four M3 screws, lower no more than validated 30mm",
+    "Release connector latch while holding both housings, never pull wires",
+    "Separate cover with controller and LCD; reconnect by marked cavity numbers and perform unpowered checks"
+  ],
+  "mandatory_before_implementation": [
+    "Acquire exact connector CAD or dimensioned tolerances and validate fully mated body plus latch",
+    "Design retention and reroute left matrix spare wire zone, do not stack wire loop under connector",
+    "Preserve at least 65mm free wire service span excluding connector body; verify actual pigtail lengths",
+    "Check end-to-end mapping, no reverse cavity numbering or reliance on cable colors; live plugging prohibited"
+  ],
+  "model_changed_for_connector": false,
+  "pcb_changed": false,
+  "bom_changed_for_connector": false,
+  "physical_actions": {
+    "printed": false,
+    "powered": false,
+    "flashed": false,
+    "ordered": false
+  }
+}

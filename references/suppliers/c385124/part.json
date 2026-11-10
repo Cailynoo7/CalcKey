@@ -1,0 +1,90 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-10T03:47:54.846Z",
+  "lcsc_code": "C385124",
+  "manufacturer": "JST",
+  "manufacturer_part_number": "SMP-05V-BC",
+  "description": "Connector Housing 5 Position 2.5mm Pitch Single Row SM Series PA6 -25°C~+85°C",
+  "category": "胶壳(线对板/线对线)",
+  "package": "P=2.5mm",
+  "jlcpcb_part_class": "unknown",
+  "parameters": {
+    "Pitch": "2.5mm",
+    "Flame Retardant Rating": "UL94V-0",
+    "Number of Rows": "1",
+    "With Wings": "With Fins",
+    "Operating Temperature": "-25°C~+85°C",
+    "Reference Series": "SM",
+    "Holes Structure": "1x5P",
+    "Color": "Black",
+    "Plastic Material": "PA6",
+    "Number of PINs Per Row": "5",
+    "With Locker": "Non-Latching"
+  },
+  "lcsc_stock": 1180,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 1.0289,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.8179,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.7124,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.6332,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.5699,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.5382,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.169,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.1343,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.117,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.104,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.0936,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0884,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/358939.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/9fcc1316028f80f45a7d55312b82c235.pdf?productCode=C385124",
+  "datasheet_file": "references/suppliers/c385124/c385124-datasheet.pdf"
+}
